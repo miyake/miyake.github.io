@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title lang="ja">miyake.github.io | 数学</title>
+  <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+      }
+    });
+  </script>
+</head>
+
+<body>
+
+<h1>位相</h1>
+
+<hr />
+<h2>位相空間</h2>
+
+<p>
+集合 $X$ の部分集合系（$X$ のべき集合の部分集合、$X$ の部分集合からなる集合）
+$\mathcal{O}$ が次の条件を満たすとき、
+$(X, \mathcal{O})$ を <em>位相空間</em> (topological space) といいます。
+<br />
+また、$\mathcal{O}$ を <em>位相</em> (topology) あるいは <em>開集合系</em> といい、
+$\mathcal{O}$ の要素を <em>開集合</em> (open set) といいます。
+<br />
+<ol>
+  <li>$\emptyset, X \in \mathcal{O}$</li>
+  <li>$O_1, O_2 \in \mathcal{O} \Rightarrow O_1 \cap O_2 \in \mathcal{O}$</li>
+  <li>
+  すべての $\lambda \in \Lambda $ について 
+  $O_\lambda \in \mathcal{O} \Rightarrow \cup_{\lambda \in \Lambda} O_\lambda \in \mathcal{O}$
+  （添え字集合 $\Lambda$ はどんな濃度の集合でもよい）
+  </li>
+</ol>
+これらの条件は、距離空間の開集合系が満たす基本的な性質を抜き出したもので、
+<em>開集合系の公理</em> と呼ばれます。
+</p>
+
+<p>
+$X$ の <em>密着位相</em> (trivial topology) とは、
+$\{\emptyset, X \}$ のことです。
+<br />
+$X$ の <em>離散位相</em> (discrete topology) とは、$X$ のべき集合のことです。
+<br />
+これらが開集合系の公理を満たすことは確かめてみてください。
+</p>
+
+<hr />
+<h2>距離空間と位相空間</h2>
+
+<hr />
+<h2>閉集合</h2>
+
+<p>
+位相空間 $(X, \mathcal{O})$ を考えます。
+<br />
+$F \subset X$ が <em>閉集合</em> であるとは、
+$F$ の補集合が開集合であること
+（$F^c \in \mathcal{O}$ が成り立つこと）です。
+</p>
+
+<hr />
+<h2>内部，外部，境界</h2>
+
+位相空間 $(X, \mathcal{O})$ を考えます。
+<br />
+
+<hr />
+<h2>近傍</h2>
+
+<p>
+位相空間 $(X, \mathcal{O})$ を考えます。
+<br />
+$U \subset X$ が $x \in X$ の <em>近傍</em> であるとは、
+$ x \in U^i $ となることです。
+<br />
+$O \in \mathcal{O}$ が $x \in X$ の <em>開近傍</em> であるとは、
+$ x \in O $ となることです。
+<br />
+$x$ の近傍全体を <em>$x$ の近傍系</em> といい、
+$x$ の開近傍全体を <em>$x$ の開近傍系</em> といいます。
+</p>
+
+<hr />
+<h2>連続写像</h2>
+
+<hr />
+<h2>位相同型</h2>
+
+<hr />
+<h2>相対位相，位相部分空間</h2>
+
+<p>
+位相空間 $(X, \mathcal{O})$ を考えます。
+<br />
+$Y \subset X$ について、
+$ \mathcal{O}_Y := \left\{ O \cap Y | O \in \mathcal{O} \right\} $
+は開集合系の公理を満たし、$(Y, \mathcal{O}_Y)$ は位相空間となります。
+<br />
+（証明は考えてみてください。）
+<br/>
+このとき、
+$\mathcal{O}_Y$ を $\mathcal{O}$ の $Y$ に関する <em>相対位相</em> といい、
+$(Y, \mathcal{O}_Y)$ を $(X, \mathcal{O})$ の <em>位相部分空間</em> といいます。
+</p>
+
+</body>
+</html>
+
