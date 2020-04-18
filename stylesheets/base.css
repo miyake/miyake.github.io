@@ -1,9 +1,15 @@
 
+body {
+  margin-left:2em;
+  margin-right: 2em;
+}
+
 a { text-decoration:none; }
 
 a:hover { color:#CC6600; }
 
-p { margin-left:1em; }
+p { margin-left:2em; }
+ul { margin-left:2em; }
 table { margin-left:2em; }
 
 div { margin-left: 2em; }
