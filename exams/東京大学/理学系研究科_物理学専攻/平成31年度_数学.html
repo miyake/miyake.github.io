@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 理学系研究科 物理学専攻
+      平成31年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東京大学 大学院 理学系研究科 物理学専攻
+      <br />
+      平成31年度 数学
+  </h1>
+
+  <p>
+  <a href="https://www.phys.s.u-tokyo.ac.jp/about/125/">
+    問題はこちらから入手してください。
+  </a>
+  </p>
+
+  <hr />
+  <h2>第1問</h2>
+
+  <h3>1.</h3>
+
+  <h4>(i)</h4>
+
+  <p>
+  \begin{align}
+  \left( i [A, B] \right)^\dagger
+  &= \left( i \left( AB - BA \right)  \right)^\dagger \\
+  &= -i \left( B^\dagger A^\dagger - A^\dagger B^\dagger \right) \\
+  &= -i \left( BA - AB \right) \\
+  &= i \left( AB - BA \right) \\
+  &= i [A, B]
+  \\ \\
+  \text{tr} \left( i [A, B] \right)
+  &= i \left( \text{tr} (AB) - \text{tr} (BA) \right) \\
+  &= i \left( \text{tr} (AB) - \text{tr} (AB) \right) \\
+  &= 0
+  \end{align}
+  </p>
+
+  <h4>(ii)</h4>
+
+  <p>
+  \begin{align}
+  U^\dagger U
+  &= \left( e^{iA} \right)^\dagger e^{iA} \\
+  &= e^{-i A^\dagger} e^{iA} \\
+  &= e^{-iA} e^{iA} \\
+  &= I
+  \end{align}
+  </p>
+
+  <h4>(iii)</h4>
+
+  <p>
+  \begin{align}
+  \det U
+  = \det e^{iA}
+  = e^{i \text{tr} A}
+  = e^0
+  = 1
+  \end{align}
+  </p>
+
+  <h3>2.</h3>
+
+  <p>
+  \begin{align}
+  T_1 = \begin{pmatrix} 0 & 1  & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  ,
+  T_2 = \begin{pmatrix} 0 & -i & 0 \\ i & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  ,
+  T_7 = \begin{pmatrix} 1 &  0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -1 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h3>3.</h3>
+
+  <p>
+  \begin{align}
+  [T_7, T_1]
+  &=
+  \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -1 \end{pmatrix}
+  \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  -
+  \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -1 \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  -
+  \begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  =
+  i \begin{pmatrix} 0 & -i & 0 \\ i & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  =
+  i T_2
+
+  \\
+  \therefore
+  A_{71,2} &= 1
+
+  \\
+  [T_5, T_6]
+  &=
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 &  1 \\ 0 & 1 & 0 \end{pmatrix}
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -i \\ 0 & i & 0 \end{pmatrix}
+  -
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -i \\ 0 & i & 0 \end{pmatrix}
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 &  1 \\ 0 & 1 & 0 \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 &  i & 0 \\ 0 & 0 & -i \end{pmatrix}
+  -
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & -i & 0 \\ 0 & 0 &  i \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 2i & 0 \\ 0 & 0 & -2i \end{pmatrix}
+  =
+  2i \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1 \end{pmatrix}
+  =
+  2i T_8
+
+  \\
+  \therefore
+  A_{56,8} &= 2
+
+  \end{align}
+  </p>
+
+  <h3>4.</h3>
+
+  <h4>(i)</h4>
+
+  <p>
+  \begin{align}
+  G'_a
+  &= x'^\dagger T_a y'
+  = (Ux)^\dagger T_a (Uy)
+  = x^\dagger U^\dagger T_a U y
+  \\
+  &\simeq x^\dagger (I - i \theta T) T_a (I + i \theta T) y
+  \\
+  &\simeq x^\dagger (T_a + i \theta T_a T - i \theta T T_a ) y
+  \\
+  &= G_a + i \theta x^\dagger \left(
+  T_a \sum_{c=1}^8 \alpha_c T_c - \sum_{c=1}^8 \alpha_c T_c T_a \right) y
+  \\
+  &= G_a + i \theta x^\dagger \sum_{c=1}^8 \alpha_c [T_a, T_c] y
+  \\
+  &= G_a + i \theta x^\dagger \sum_{c=1}^8 \alpha_c
+  \left( i \sum_{b=1}^8 A_{ac,b} T_b \right) y
+  \\
+  &= G_a + i \theta \sum_{b=1}^8
+  \left( \sum_{c=1}^8 i \alpha_c A_{ac,b} \right) G_b
+
+  \\
+  \therefore
+  H_{ab} &= \sum_{c=1}^8 i \alpha_c A_{ac,b}
+  \end{align}
+
+  </p>
+
+  <h4>(ii)</h4>
+
+
+  <hr />
+  <h2>第2問</h2>
+
+
+
+  <hr />
+  <p>
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
