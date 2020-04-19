@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 理学系研究科 物理学専攻
+      平成31年度 筆記試験
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東北大学 大学院 理学系研究科 物理学専攻
+    <br />
+    平成31年度 筆記試験
+  </h1>
+
+  <p>
+  <a href="http://www.phys.tohoku.ac.jp/admission/graduate-school_entrance/nyushimondai-archives/">
+    問題はこちらから入手してください。
+  </a>
+  </p>
+
+  <hr />
+  <h2>問題1 （基礎数学）</h2>
+
+  <h3>[1]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  余緯角（方位角）を $\theta$ 、緯度角（偏角）を $\varphi$ とすると、
+  $ dx dy dz = r^2 \sin \theta dr d \theta d \varphi $ であるから、
+  \begin{align}
+  \iiint_{r \leq a} \frac{1}{r^2} dx dy dz
+  &= \int_0^a dr \int_0^\pi d \theta \int_0^{2 \pi} d \varphi
+  \frac{r^2 \sin \theta}{r^2}
+  \\
+  &= 2 \pi a \left[ - \cos \theta \right]_0^\pi
+  \\
+  &= 4 \pi a
+  \end{align}
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  与えられた行列の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \begin{vmatrix}
+  \lambda + 1 & 1 & -1 \\
+  1 & \lambda + 1 & 1 \\
+  -1 & 1 & \lambda + 1
+  \end{vmatrix}
+  = (\lambda - 1)(\lambda + 2)^2
+  \\
+  \therefore \lambda &= 1, -2
+  \end{align}
+  </p>
+
+  <p>
+  (i)
+  固有値 $1$ に対応する固有ベクトルを求めるため、次のようにおく：
+  \begin{align}
+  \begin{pmatrix}
+  -1 & -1 &  1 \\ -1 & -1 & -1 \\ 1 & -1 & -1
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  \end{align}
+  これを整理すると、 $x+y=0, x=z$ であるから、例えば、
+  \begin{align}
+  v_1 = \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}
+  \end{align}
+  が規格化された固有ベクトルである。
+  </p>
+
+  <p>
+  (ii)
+  固有値 $-2$ に対応する固有ベクトルを求めるため、次のようにおく：
+  \begin{align}
+  \begin{pmatrix}
+  -1 & -1 &  1 \\ -1 & -1 & -1 \\ 1 & -1 & -1
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  = -2
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  \end{align}
+  これを整理すると、 $y=x+z$ であるから、例えば、
+  \begin{align}
+  v_2 = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}
+  ,
+  v_3 = \frac{1}{\sqrt{2}} \begin{pmatrix} -1 \\ 1 \\ 2 \end{pmatrix}
+  \end{align}
+  が規格化された互いに直交する固有ベクトルである。
+  <!--
+  v_3' = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+  ここで、$v_2, v_3'$ はそれぞれ $v_1$ と直交するが、
+  $v_2$ と $v_3'$ は直交しない。
+  $v_2$ と $v_3'$ から $v_2$ と直交するベクトルは次のようにして作ることができる。
+  -->
+  </p>
+
+  <p>
+  $v_1$ と $v_2$ 、 $v_1$ と $v_3$ も互いに直交している。
+  </p>
+
+  <h3>[2]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  $\Delta y = 0$ のとき、 $\Delta h = \Delta x$ であり、次のようになる：
+  \begin{align}
+  \lim_{\Delta h \to 0} \frac{f(z + \Delta h) - f(z)}{\Delta h}
+  &=
+  \lim_{\Delta x \to 0}
+  \frac{ \left\{ u(x + \Delta x, y) + i v(x + \Delta x, y) \right\}
+  - \left\{ u(x,y) + i v(x,y) \right\} }
+  {\Delta x}
+  \\
+  &= \frac{\partial u(x,y)}{\partial x} + i \frac{\partial v(x,y)}{\partial x}
+  \end{align}
+
+  $\Delta x = 0$ のとき、 $\Delta h = i \Delta y$ であり、次のようになる：
+  \begin{align}
+  \lim_{\Delta h \to 0} \frac{f(z + \Delta h) - f(z)}{\Delta h}
+  &=
+  \lim_{\Delta y \to 0}
+  \frac{ \left\{ u(x, y + \Delta y) + i v(x, y + \Delta y) \right\}
+  - \left\{ u(x,y) + i v(x,y) \right\} }
+  {i \Delta y}
+  \\
+  &= -i \frac{\partial u(x,y)}{\partial y} + \frac{\partial v(x,y)}{\partial y}
+  \end{align}
+
+  これらの実部どうし・虚部どうしが等しいので、次を得る：
+  \begin{align}
+  \frac{\partial u(x,y)}{\partial x} = \frac{\partial v(x,y)}{\partial y}
+  ,
+  \frac{\partial v(x,y)}{\partial x} = - \frac{\partial u(x,y)}{\partial y}
+  \end{align}
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  $C$ の内部で $e^{iz}/z$ は特異点を持たないので、 $I=0$ である。
+  </p>
+
+  <p>
+  また、$I$ は次のように4つの積分に分けて計算できる：
+  \begin{align}
+  I_1
+  &= \int_\varepsilon^R \frac{e^{ix}}{x} dx
+  \\
+  &= \int_\varepsilon^R \frac{\cos x}{x} dx
+  + i \int_\varepsilon^R \frac{\sin x}{x} dx
+
+  \\
+  I_2
+  &= \int_{-\varepsilon}^{-R} \frac{e^{ix}}{x} dx
+  \\
+  &= - \int_\varepsilon^R \frac{\cos x}{x} dx
+  + i \int_\varepsilon^R \frac{\sin x}{x} dx
+
+  \\
+  I_3
+  &= \int_\pi^0
+  \frac{e^{i \varepsilon \exp(i \theta)}}{\varepsilon e^{i \theta}}
+  i \varepsilon e^{i \theta} d \theta
+  \\
+  &= -i \int_0^\pi e^{i \varepsilon \exp (i \theta)} d \theta
+  \\
+  &\xrightarrow{\varepsilon \to 0}
+  -i \int_0^\pi d \theta
+  = -i \pi
+
+  \\
+  I_4
+  &= \int_0^\pi
+  \frac{e{iR \exp (i \theta)}}{R e^{i \theta}} i R e^{i \theta} d \theta
+  \\
+  &= i \int_0^\pi e^{iR \exp (i \theta)} d \theta
+  \\
+  &= i \int_0^\pi e^{R ( i \cos \theta - \sin \theta)} d \theta
+
+  \\
+  \left| I_4 \right|
+  &\leq \int_0^\pi \left| e^{R ( i \cos \theta - \sin \theta)} \right| d \theta
+  \\
+  &= \int_0^\pi e^{-R \sin \theta} d \theta
+  \\
+  &\lt \frac{\pi}{R}
+  \xrightarrow{R \to \infty} 0
+  \end{align}
+
+  以上より、$I=I_1+I_2+I_3+I_4=0$ は $\varepsilon \to 0, R \to \infty$ において、
+  \begin{align}
+  2i \int_0^\infty \frac{\sin x}{x} dx - i \pi = 0
+  \end{align}
+  となり、
+  \begin{align}
+  \int_0^\infty \frac{\sin x}{x} dx = \frac{\pi}{2}
+  \end{align}
+  を得る。
+  </p>
+
+  <hr />
+  <h2>問題2 （力学）</h2>
+
+  <h3>1)</h3>
+
+  <p>
+  \begin{align}
+  X &= x + l \sin \theta
+  \\
+  Y &= - l \cos \theta
+  \\
+  \dot{X} &= \dot{x} + l \dot{\theta} \cos \theta
+  \\
+  \dot{Y} &= l \dot{\theta} \sin \theta
+  \end{align}
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  ラグランジアンは、(運動エネルギー) - (位置エネルギー) であるから、
+  \begin{align}
+  L &=
+  \frac{1}{2} 2m \dot{x}^2 +
+  \frac{1}{2} m \left( \dot{X}^2 + \dot{Y}^2 \right)
+  - \frac{1}{2} k x^2 - mgY
+  \\
+  &=
+  \frac{1}{2} m
+  \left( 3 \dot{x}^2 + 2 l \dot{x} \dot{\theta} \cos \theta
+  + l^2 \dot{\theta}^2 \right)
+  - \frac{1}{2} k x^2 + mgl \cos \theta
+  \end{align}
+  </p>
+
+  <h3>3)</h3>
+
+  <p>
+  問2) で求めた $L$ は $x, \dot{x}, \theta, \dot{\theta}$ の2次までで、
+  \begin{align}
+  L &=
+  \frac{1}{2} m
+  \left( 3 \dot{x}^2 + 2 l \dot{x} \dot{\theta}
+  + l^2 \dot{\theta}^2 \right)
+  - \frac{1}{2} k x^2 + mgl \left( 1 - \frac{1}{2} \theta^2 \right)
+  \end{align}
+  </p>
+
+  <h3>4)</h3>
+
+  <p>
+  問3) で求めた $L$ について、次のように計算する：
+  \begin{align}
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{x}}
+  &= \frac{d}{dt} \left( 3m \dot{x} + ml \dot{\theta} \right)
+  = 3m \ddot{x} + ml \ddot{\theta}
+  = 3m \ddot{x} + m \ddot{s}
+  \\
+
+  \frac{\partial L}{\partial x}
+  &= -kx
+  = -2m \Omega^2 x
+  \\
+
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}}
+  &= \frac{d}{dt} \left( ml \dot{x} + ml^2 \dot{\theta} \right)
+  = ml \ddot{x} + ml^2 \ddot{\theta}
+  = ml \ddot{x} + ml \ddot{s}
+  \\
+
+  \frac{\partial L}{\partial \theta}
+  &= -mgl \theta
+  = -mgs
+  \end{align}
+
+  よって、運動方程式は次のようになる：
+  \begin{align}
+  &
+  \begin{cases}
+  3m \ddot{x} + m \ddot{s} = -2m \Omega^2 x
+  \\
+  ml \ddot{x} + ml \ddot{s} = -mgs
+  \end{cases}
+  \\
+  \therefore \ \ \ \ 
+  &
+  \begin{cases}
+  3 \ddot{x} + \ddot{s} = - 2 \Omega^2 x
+  \\
+  \ddot{x} + \ddot{s} = - \Omega^2 s
+  \end{cases}
+  \end{align}
+  </p>
+
+  <h3>5)</h3>
+
+  <p>
+  問4) で求めた運動方程式に
+  $x=A \sin \omega t, s=B \sin \omega t$ を代入すると、
+  \begin{align}
+  &
+  \begin{cases}
+  -3 \omega^2 A \sin \omega t - \omega^2 B \sin \omega t
+  = -2 \Omega^2 A \sin \omega t
+  \\
+  - \omega^2 A \sin \omega t - \omega^2 B \sin \omega t
+  = - \Omega^2 B \sin \omega t
+  \end{cases}
+  \\
+  \therefore \ \ \ \ 
+  &
+  \begin{cases}
+  \left( 3 \omega^2 - 2 \Omega^2 \right) A + \omega^2 B = 0
+  \\
+  \omega^2 A + \left( \omega^2 - \Omega^2 \right) B = 0
+  \end{cases}
+  \tag{1}
+  \end{align}
+
+  自明でない解をもつための条件は、
+  \begin{align}
+  0
+  =
+  \begin{vmatrix}
+  3 \omega^2 - 2 \Omega^2 & \omega^2
+  \\
+  \omega^2 & \omega^2 - \Omega^2
+  \end{vmatrix}
+  = (\omega + \sqrt{2} \Omega) (\omega - \sqrt{2} \Omega)
+  (\sqrt{2} \omega + \Omega) (\sqrt{2} \omega - \Omega)
+  \end{align}
+
+  $\omega_1 \gt \omega_2 \gt 0$ であるから、
+  \begin{align}
+  \omega_1 = \sqrt{2} \Omega,
+  \omega_2 = \frac{\Omega}{\sqrt{2}}
+  \end{align}
+  </p>
+
+  <h3>6)</h3>
+
+  <p>
+  (i)
+  $\omega = \omega_1$ を式(1)に代入して、
+  \begin{align}
+  \frac{A}{B} = - \frac{1}{2}
+  \end{align}
+
+  </p>
+
+  <p>
+  (ii)
+  $\omega = \omega_2$ を式(1)に代入して、
+  \begin{align}
+  \frac{A}{B} = 1
+  \end{align}
+
+  </p>
+
+  <hr />
+  <h2>問題3 （電磁気学）</h2>
+
+  <h3>[1]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  微小区間にある電荷は $\rho dl$ で、APの長さは $\sqrt{a^2+z^2}$ であるから、
+  求める電場の大きさは、
+  \begin{align}
+  \frac{1}{4 \pi \varepsilon_0} \frac{\rho dl}{a^2+z^2}
+  \end{align}
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  z軸に垂直な成分は打ち消し合うことを考慮して、
+  求める電場の大きさは、
+  \begin{align}
+  \frac{1}{4 \pi \varepsilon_0} \frac{\rho dl}{a^2+z^2}
+  \frac{|z|}{\sqrt{a^2+z^2}} \cdot 2
+  =
+  \frac{1}{2 \pi \varepsilon_0} \frac{|z| \rho dl}{(a^2+z^2)^{3/2}}
+  \end{align}
+  また、電場の向きは、 $z \gt 0$ のときは +z方向、
+  $z \lt 0$ のときは -z方向である。
+  </p>
+
+  <h4>3)</h4>
+
+  <p>
+  z方向の単位ベクトルを $\hat{z}$ として、
+  \begin{align}
+  \vec{E}
+  &=
+  \int_0^{\pi a}
+  \frac{1}{2 \pi \varepsilon_0} \frac{z \rho dl}{(a^2+z^2)^{3/2}} \hat{z}
+  \\
+  &=
+  \frac{1}{2 \pi \varepsilon_0}
+  \frac{z \rho \cdot \pi a}{(a^2+z^2)^{3/2}} \hat{z}
+  \\
+  &=
+  \frac{1}{2 \varepsilon_0} \frac{az \rho}{(a^2+z^2)^{3/2}} \hat{z}
+  \end{align}
+  </p>
+
+  <h4>4)</h4>
+
+  <h4>5)</h4>
+
+  <p>
+  z方向の単位ベクトルを $\hat{z}$ として、
+  \begin{align}
+  \vec{B}
+  &=
+  \int_0^{2 \pi a}
+  \frac{\mu_0}{4 \pi} \frac{a \omega \rho dl}{a^2+z^2}
+  \frac{a}{\sqrt{a^2+z^2}} \hat{z}
+  \\
+  &=
+  \int_0^{2 \pi a}
+  \frac{\mu_0}{4 \pi} \frac{a^2 \omega \rho dl}{(a^2+z^2)^{3/2}}
+  \hat{z}
+  \\
+  &=
+  \frac{\mu_0}{4 \pi} \frac{a^2 \omega \rho \cdot 2 \pi a}{(a^2+z^2)^{3/2}}
+  \hat{z}
+  \\
+  &=
+  \frac{\mu_0 a^3 \omega \rho}{2 (a^2+z^2)^{3/2}} \hat{z}
+  \end{align}
+  </p>
+
+  <h3>[2]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  式(1)より
+  \begin{align}
+  0
+  = \vec{\nabla} \cdot \vec{E}
+  = \frac{\partial E_x}{\partial x}
+  + \frac{\partial E_y}{\partial y}
+  + \frac{\partial E_z}{\partial z}
+  = \frac{\partial E_z}{\partial z}
+  = X(x) Y(y) \frac{dZ(z)}{dz} \sin \omega t
+  \end{align}
+  であるから、
+  \begin{align}
+  \frac{dZ(z)}{dz} = 0
+  \end{align}
+  であり、 $Z(z)$ は $z$ に依存しない定数である。
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  式(5)のz成分の両辺に $E_z(x,y,t) = X(x) Y(y) Z \sin \omega t$ を代入すると、
+  \begin{align}
+  \frac{d^2 X(x)}{dx^2} Y(y) Z \sin \omega t
+  + X(x) \frac{d^2 Y(y)}{dy^2} Z \sin \omega t
+  = - \varepsilon_0 \mu_0 \omega^2 X(x) Y(y) Z \sin \omega t
+  \end{align}
+  であるから、
+  \begin{align}
+  \frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2}
+  = - \varepsilon_0 \mu_0 \omega^2
+  \end{align}
+  </p>
+
+  <h4>3)</h4>
+
+  <p>
+  \begin{align}
+  \frac{1}{X} \frac{d^2 X}{dx^2} = -k_x^2
+  , \ \ \ \ 
+  \frac{1}{Y} \frac{d^2 Y}{dy^2} = -k_y^2
+  \end{align}
+  より、
+  \begin{align}
+  \frac{d^2 X}{dx^2} = -k_x^2 X
+  , \ \ \ \ 
+  \frac{d^2 Y}{dy^2} = -k_y^2 Y
+  \end{align}
+  であるから、 $X, Y$ の一般解は、次のようになる：
+  \begin{align}
+  \begin{cases}
+  X(x) = A \sin k_x x + B \cos k_x x
+  \\
+  Y(y) = C \sin k_y y + D \cos k_y y
+  \end{cases}
+  \end{align}
+  ここで、 $A, B, C, D$ は積分定数である。
+  </p>
+
+  <h4>4)</h4>
+
+  <p>
+  (i)
+  $X(0)=0$ より、 $B=0$ であり、
+  \begin{align}
+  X(x) = A \sin k_x x
+  \end{align}
+
+  $Y(0)=0$ より、 $D=0$ であり、
+  \begin{align}
+  Y(y) = C \sin k_y y
+  \end{align}
+
+  よって、
+  \begin{align}
+  E_z
+  &= A \sin k_x x \cdot C \sin k_y y \cdot Z \sin \omega t
+  \\
+  &= E_{z0} \sin k_x x \sin k_y y \sin \omega t
+  \end{align}
+  を得る。
+  ここで、 $E_{z0} = A C Z$ とした。
+  </p>
+
+  <p>
+  (ii)
+  $X(a)=0$ より、
+  \begin{align}
+  k_x = \frac{\pi}{a} n_x
+  \ \ \ \ (n_x = 1, 2, \cdots)
+  \end{align}
+
+  $Y(a)=0$ より、
+  \begin{align}
+  k_y = \frac{\pi}{a} n_y
+  \ \ \ \ (n_y = 1, 2, \cdots)
+  \end{align}
+  </p>
+
+  <h4>5)</h4>
+
+  <p>
+  問2),3)より、
+  \begin{align}
+  -k_x^2 - k_y^2 = - \varepsilon_0 \mu_0 \omega^2
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \omega^2 = \frac{k_x^2 + k_y^2}{\varepsilon_0 \mu_0}
+  \end{align}
+
+  これに、問4)で得た $k_x = \pi n_x / a, k_y = \pi n_y / a$ を代入すると、
+  \begin{align}
+  \omega^2 = \frac{\pi^2 (n_x^2 + n_y^2)}{\varepsilon_0 \mu_0 a^2}
+  \end{align}
+
+  $\omega = \omega_0$ となるのは $n_x=n_y=1$ のときなので、
+  \begin{align}
+  \omega_0^2 &= \frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}
+  \\
+  \therefore \ \ 
+  \omega_0 &= \sqrt{\frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}}
+  \end{align}
+  </p>
+
+  <h4>6)</h4>
+
+  <p>
+  </p>
+
+
+  <hr />
+  <p>
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
