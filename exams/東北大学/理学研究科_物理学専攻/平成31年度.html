@@ -596,6 +596,160 @@
   <p>
   </p>
 
+  <hr />
+  <h2>問題4 （量子力学）</h2>
+
+  <h3>[1]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  $\psi(0)=0$ であるから、
+  \begin{align}
+  \psi(0) = B = 0
+  \end{align}
+  よって、
+  \begin{align}
+  \psi(x) = A \sin kx
+  \end{align}
+  また、 $\psi(L)=0$ であるから、
+  \begin{align}
+  \psi(L) = A \sin kL = 0
+  \end{align}
+  よって、 $k$ は、正の整数 $n$ を使って、
+  \begin{align}
+  k_n L = \pi n
+  , \ \ \ \ \therefore \ 
+  k_n = \frac{\pi}{L} n
+  \end{align}
+  と書かれる。
+  よって、固有状態の波動関数は、
+  \begin{align}
+  \psi_n(x) = A \sin k_n x = A \sin \frac{n \pi x}{L}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  波動関数の規格化条件から $A$ を求める：
+  \begin{align}
+  1
+  &= \int_0^L | \psi_n(x) |^2 dx
+  = |A|^2 \int_0^L \sin^2 k_n x dx
+  = |A|^2 \int_0^L \frac{1 - \cos 2k_nx}{2} dx
+  \\
+  &= \frac{|A|^2}{2} \left[ x - \frac{1}{2} \sin 2k_nx \right]_0^L
+  = \frac{|A|^2 L}{2}
+  \end{align}
+  よって、 $A = \sqrt{2/L}$ とすればよく、
+  \begin{align}
+  \psi_n(x) = \sqrt{\frac{2}{L}} \sin k_n x
+  = \sqrt{\frac{2}{L}} \sin \frac{n \pi x}{L}
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  最後に、エネルギー固有値 $E_n$ を求めるため、次のように計算する：
+  \begin{align}
+  - \frac{\hbar^2}{2m} \frac{d^2}{dx^2} \psi_n(x)
+  &= - \frac{\hbar^2}{2m} \frac{d^2}{dx^2} A \sin \frac{n \pi x}{L}
+  = \frac{\hbar^2 \pi^2 n^2}{2m L^2} A \sin \frac{n \pi x}{L}
+  \\
+  &= \frac{\hbar^2 \pi^2 n^2}{2m L^2} \psi_n(x)
+  \end{align}
+  よって、
+  \begin{align}
+  E_n = \frac{\hbar^2 \pi^2 n^2}{2m L^2}
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  \begin{align}
+  \psi_3(x) &= \sqrt{\frac{2}{L}} \sin \frac{3 \pi x}{L}
+  \\
+  \left| \psi_3(x) \right|^2 &= \frac{2}{L} \sin^2 \frac{3 \pi x}{L}
+  \end{align}
+  </p>
+
+  <h4>3)</h4>
+
+  <p>
+  \begin{align}
+  \varphi(x)
+  &= C \sin^3 \frac{\pi x}{L}
+  = C \left( \frac{3}{4} \sin \frac{\pi x}{L}
+  - \frac{1}{4} \sin \frac{3 \pi x}{L} \right)
+  \\
+  &= \frac{C}{4} \sqrt{\frac{L}{2}} \left( 3 \psi_1(x) - \psi_3(x) \right)
+  \end{align}
+  したがって、
+  $\varphi(x)$ は $\psi_1(x)$ と $\psi_3(x)$ の重ね合わせで表された。
+  </p>
+
+  <p>
+  次に、 $\varphi(x)$ の規格化条件から $C$ を求める：
+  \begin{align}
+  1
+  &= \int_0^L \left| \varphi(x) \right|^2 dx
+  = \frac{|C|^2 L}{32} \int_0^L
+  \left( 9 \psi_1^2(x) - 6 \psi_1(x) \psi_3(x) + \psi_3^2(x) \right) dx
+  \\
+  &= \frac{|C|^2 L}{32} \cdot 10
+  = \frac{5 L |C|^2}{16}
+  \end{align}
+  よって、 $C = 4/\sqrt{5L}$ とすればよく、
+  \begin{align}
+  \varphi(x)
+  = \frac{1}{\sqrt{10}} \left( 3 \psi_1(x) - \psi_3(x) \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  最後に、 $\psi_1(x), \psi_3(x)$ に存在する確率は、それぞれ、
+  \begin{align}
+  \left( \frac{3}{\sqrt{10}} \right)^2 = \frac{9}{10}
+  , \ \ 
+  \left( \frac{1}{\sqrt{10}} \right)^2 = \frac{1}{10}
+  \end{align}
+  である。
+  </p>
+
+  <h4>4)</h4>
+
+  <p>
+  $\varphi(x)$ におけるエネルギー期待値は、次のように計算できる：
+  \begin{align}
+  \int_0^L \varphi(x) \mathcal{H} \varphi(x)
+  &= \frac{1}{10} \int_0^L
+  \left\{ 3 \psi_1(x) - \psi_3(x) \right\} \mathcal{H}
+  \left\{ 3 \psi_1(x) - \psi_3(x) \right\} dx
+  \\
+  &= \frac{1}{10} \int_0^L
+  \left\{ 3 \psi_1(x) - \psi_3(x) \right\}
+  \left\{ 3 E_1 \psi_1(x) - E_3 \psi_3(x) \right\} dx
+  \\
+  &= \frac{1}{10} \left( 9 E_1 + E_3 \right)
+  \\
+  &= \frac{1}{10} \frac{\hbar^2 \pi^2}{2m L^2} \cdot 18
+  \\
+  &= \frac{9 \hbar^2 \pi^2}{10 m L^2}
+  \end{align}
+  </p>
+
+  <h3>[2]</h3>
+
+  <h4>1)</h4>
+
+  <p>
+  \begin{align}
+  \end{align}
+  </p>
+
 
   <hr />
   <p>
