@@ -747,9 +747,245 @@
 
   <p>
   \begin{align}
+  \left| 00 \right\rangle
+  = \frac{1}{\sqrt{2}} \left[
+  \left| \uparrow \right\rangle
+  \left| \downarrow \right\rangle
+  -
+  \left| \downarrow \right\rangle
+  \left| \uparrow \right\rangle
+  \right]
   \end{align}
   </p>
 
+  <h4>2)</h4>
+
+  <p>
+  固有値方程式
+  \begin{align}
+  \mathcal{H} \psi(\vec{r})
+  = \left( -\frac{\hbar^2}{2 \mu} \nabla^2
+  + \frac{1}{2} \mu \omega^2 r^2 \right) \psi(\vec{r})
+  = E \psi(\vec{r})
+  \end{align}
+  に $\psi(\vec{r}) = X(x)Y(y)Z(z)$ を代入して整理すると、
+  \begin{align}
+  \left( -\frac{\hbar^2}{2 \mu} \frac{X''(x)}{X(x)}
+  + \frac{1}{2} \mu \omega^2 x^2 \right)
+  + \left( -\frac{\hbar^2}{2 \mu} \frac{Y''(y)}{Y(y)}
+  + \frac{1}{2} \mu \omega^2 y^2 \right)
+  + \left( -\frac{\hbar^2}{2 \mu} \frac{Z''(z)}{Z(z)}
+  + \frac{1}{2} \mu \omega^2 z^2 \right)
+  = E
+  \end{align}
+  となるので、 $x,y,z$ 成分がそれぞれ独立に
+  質量 $\mu$ , 角振動数 $\omega$ の
+  1次元調和振動子とみなせることがわかる。
+  </p>
+
+  <p>
+  したがって、このハミルトニアン $\mathcal{H}$
+  の基底状態の空間部分の波動関数は
+  \begin{align}
+  \psi_{000} (\vec{r}) = \phi_0(x) \phi_0(y) \phi_0(z)
+  \end{align}
+  であり、第1励起状態の空間部分の波動関数は
+  \begin{align}
+  \psi_{100} (\vec{r}) &= \phi_1(x) \phi_0(y) \phi_0(z)
+  \\
+  \psi_{010} (\vec{r}) &= \phi_0(x) \phi_1(y) \phi_0(z)
+  \\
+  \psi_{001} (\vec{r}) &= \phi_0(x) \phi_0(y) \phi_1(z)
+  \end{align}
+  である。
+  </p>
+
+  <h4>3)</h4>
+
+  <p>
+  $\phi_0(-x)=\phi_0(x), \ \ \phi_1(-x) = - \phi(x)$ であるから、
+  \begin{align}
+  \psi_{000} (-\vec{r}) &= \psi_{000} (\vec{r})
+  \\
+  \psi_{100} (-\vec{r}) &= - \psi_{100} (\vec{r})
+  \\
+  \psi_{010} (-\vec{r}) &= - \psi_{010} (\vec{r})
+  \\
+  \psi_{001} (-\vec{r}) &= - \psi_{001} (\vec{r})
+  \end{align}
+  である。
+  </p>
+
+  <h4>4)</h4>
+
+  <p>
+  考えている2粒子は同種フェルミ粒子であるから、
+  粒子の入れ替えに対して波動関数の符号が変わる。
+  基底状態の波動関数の空間部分は $\psi_{000} (\vec{r})$ で
+  符号が変わらないので、
+  これと組み合わせられるスピン部分は、
+  $\left| 00 \right\rangle$ である。
+  つまり、基底状態の波動関数は、
+  \begin{align}
+  \psi_{000} (\vec{r}) \left| 00 \right\rangle
+  = \phi_0(x) \phi_0(y) \phi_0(z) \left| 00 \right\rangle
+  \end{align}
+  である。
+  </p>
+
+  <h4>5)</h4>
+
+  <p>
+  第1励起状態の波動関数の空間部分は
+  $\psi_{100} (\vec{r}), \psi_{010} (\vec{r}) \psi_{001} (\vec{r})$
+  であり、
+  これと組み合わせられるスピン部分は
+  $\left| 11 \right\rangle, \left| 10 \right\rangle, \left| 1 \  -1 \right\rangle$
+  である。
+  これらのすべての組み合わせが第1励起状態なので、
+  縮退度は $3 \times 3 = 9$ である。
+  </p>
+
+  <h4>6)</h4>
+
+  <h5>a)</h5>
+
+  <p>
+  \begin{align}
+  \left( \vec{r} \cdot \vec{s} \right)
+  \left| \uparrow \right\rangle
+  &=
+  \left( x s_x + y s_y + z s_z \right)
+  \left| \uparrow \right\rangle
+  \\
+  &=
+  \frac{\hbar}{2} \left\{
+  x \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
+  + y \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+  + z \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+  \right\}
+  \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  \\
+  &=
+  \frac{\hbar}{2}
+  \begin{pmatrix} z & x-iy \\ x+iy & -z \end{pmatrix}
+  \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  \\
+  &=
+  \frac{\hbar}{2}
+  \begin{pmatrix} z \\ x+iy \end{pmatrix}
+  \\
+  &=
+  \frac{\hbar}{2}
+  \left\{ z \left| \uparrow \right\rangle
+  + (x+iy) \left| \downarrow \right\rangle
+  \right\}
+  \end{align}
+  </p>
+
+  <h5>b)</h5>
+
+  <p>
+  a) と同様にして、
+  \begin{align}
+  \left( \vec{r} \cdot \vec{s} \right)
+  \left| \downarrow \right\rangle
+  =
+  \frac{\hbar}{2}
+  \left\{ (x-iy) \left| \uparrow \right\rangle
+  -z \left| \downarrow \right\rangle
+  \right\}
+  \end{align}
+  である。
+
+  よって、
+  \begin{align}
+  \Delta V \left| 00 \right\rangle
+  &=
+  - \frac{g}{\sqrt{2}}
+  \left( \vec{r} \cdot \vec{s}_1 \right)
+  \left( \vec{r} \cdot \vec{s}_2 \right)
+  \left(
+  \left| \uparrow \right\rangle
+  \left| \downarrow \right\rangle
+  -
+  \left| \downarrow \right\rangle
+  \left| \uparrow \right\rangle
+  \right)
+
+  \\
+  &=
+  - \frac{g}{\sqrt{2}}
+  \frac{\hbar^2}{4}
+  \left[
+  \left\{
+  z \left| \uparrow \right\rangle
+  + (x+iy) \left| \downarrow \right\rangle
+  \right\}
+  \left\{
+  (x-iy) \left| \uparrow \right\rangle
+  -z \left| \downarrow \right\rangle
+  \right\}
+  -
+  \left\{
+  (x-iy) \left| \uparrow \right\rangle
+  -z \left| \downarrow \right\rangle
+  \right\}
+  \left\{
+  z \left| \uparrow \right\rangle
+  + (x+iy) \left| \downarrow \right\rangle
+  \right\}
+  \right]
+
+  \\
+  &= \frac{g \hbar^2}{4} \left( x^2+y^2+z^2 \right)
+  \left| 00 \right\rangle
+
+  \\
+  \therefore \ \ 
+  \left\langle 00 \right| \Delta V \left| 00 \right\rangle
+  &= \frac{g \hbar^2}{4} \left( x^2+y^2+z^2 \right)
+  \end{align}
+  </p>
+
+  <p>
+  よって、求めるエネルギー変化は、
+  \begin{align}
+  &
+  \iiint \psi_{000}(\vec{r})
+  \left\langle 00 \right| \Delta V \left| 00 \right\rangle
+  \psi_{000}(\vec{r}) dx dy dz
+  \\
+
+  &= \frac{g \hbar^2}{4}
+  \iiint
+  \left( x^2+y^2+z^2 \right)
+  \psi_0^2(x) \psi_0^2(y) \psi_0^2(z) dx dy dz
+  \\
+
+  &= \frac{g \hbar^2}{4}
+  \left( \frac{\mu \omega}{\pi \hbar} \right)^{6/4}
+  \int_0^\infty r^2
+  e^{-\frac{\mu \omega}{\hbar} r^2} \cdot 4 \pi r^2 dr
+  \\
+
+  &= \pi g \hbar^2
+  \left( \frac{\mu \omega}{\pi \hbar} \right)^{3/2}
+  \int_0^\infty r^4
+  e^{-\frac{\mu \omega}{\hbar} r^2} dr
+  \\
+
+  &= \pi g \hbar^2
+  \left( \frac{\mu \omega}{\pi \hbar} \right)^{3/2}
+  \frac{3!!}{2^3}
+  \sqrt{\pi \left( \frac{\hbar}{\mu \omega} \right)^5}
+  \\
+
+  &= \frac{3}{8} \frac{g \hbar^3}{\mu \omega}
+
+  \end{align}
+  である。
+  </p>
 
   <hr />
   <p>
