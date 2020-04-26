@@ -23,3 +23,9 @@ table { margin-left:2em; }
 
 div { margin-left: 2em; }
 
+p.toc {
+  margin-left: 2em;
+  font-size: 90%;
+  border: solid 1px #000000;
+  padding: 1em;
+}
