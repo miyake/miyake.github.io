@@ -1,0 +1,12 @@
+
+h3 { font-weight: normal; }
+
+p.toc, p.bookreviewtoc {
+  margin-left: 1em;
+  font-size: 90%;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  margin-right: 2em;
+}
+
