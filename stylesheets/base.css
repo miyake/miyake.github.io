@@ -12,13 +12,21 @@ h3 { margin-left: 3em; }
 
 // h2 { background: #99FF99; }
 
-a { text-decoration:none; }
+a {
+  text-decoration: none;
+  // color: blue;
+}
 
-a:hover { color:#CC6600; }
+// a:visited { color: darkred; }
+
+a:hover {
+  text-decoration: underline;
+  color: sienna;
+}
 
 p { margin-left: 2em; }
 ul { margin-left: 2em; }
-table { margin-left:2em; }
+table { margin-left: 2em; }
 
 div { margin-left: 2em; }
 
