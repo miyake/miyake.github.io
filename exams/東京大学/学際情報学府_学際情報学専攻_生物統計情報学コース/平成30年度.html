@@ -158,16 +158,40 @@
   <h3>(1-12)</h3>
 
   <p>
+  エ. 0.50
   </p>
 
   <p>
+  なぜなら、疾患を $D$, 疾患でないことを $\bar{D}$,
+  検査の陽性を $+$, 陰性を $-$ とすると、
+  \begin{align}
+  P(D) = \frac{5}{100}
+  , \ \ 
+  P(+|D) = \frac{95}{100}
+  , \ \ 
+  P(+|\bar{D}) = \frac{5}{100}
+  \end{align}
+  であるから、ベイズの定理より、
+  \begin{align}
+  P(D|+)
+  = \frac{P(D \cap +)}{P(+)}
+  = \frac{P(+|D) P(D)}{P(+|D) P(D) + P(+|\bar{D}) P(\bar{D})}
+  = \frac{\frac{95}{100} \frac{5}{100}}
+  {\frac{95}{100} \frac{5}{100} + \frac{5}{100} \frac{95}{100}}
+  = \frac{1}{2}
+  \end{align}
   </p>
 
   <h3>(1-13)</h3>
 
+  <p>
+  イ. 2
+  </p>
+
   <h3>(1-14)</h3>
 
   <p>
+  ア. $ \lambda_1 + \lambda_2 $
   </p>
 
   <p>
@@ -176,31 +200,53 @@
   <h3>(1-15)</h3>
 
   <p>
+  ウ. 0.20
   </p>
 
   <h3>(1-16)</h3>
 
   <p>
+  ウ. 信頼区間幅がおよそ $1/\sqrt{2}$ 倍になる。
   </p>
 
   <h3>(1-17)</h3>
 
   <p>
+  エ. 自由度n-1のカイ2乗分布
+  </p>
+
+  <p>
+  参考 : 
+  <a href="https://www.amazon.co.jp/dp/4320013816/ref=nosim?tag=msscee0a-22">
+    小寺平治「明解演習 数理統計」 第4章 例題14
+  </a>
+  あるいは
+  <a href="https://www.amazon.co.jp/dp/4785314117/ref=nosim?tag=msscee0a-22">
+    稲垣宣生「数理統計学」6.2
+  </a>
+  など
   </p>
 
   <h3>(1-18)</h3>
 
   <p>
-  </p>
-
-  <p>
+  ア. (a)
   </p>
 
   <h3>(1-19)</h3>
 
+  <p>
+  イ. 0.02
+  </p>
+
   <h3>(1-20)</h3>
 
   <p>
+  エ. $\bar{x}+3$
+  </p>
+
+  <p>
+  なぜなら、 $m=1$ であるから、 $y=x+3$ よって $\bar{y}=\bar{x}+3$
   </p>
 
   <hr />
@@ -209,29 +255,119 @@
   <h3>(2-1)</h3>
 
   <p>
+  \begin{align}
+  \iint_{0 \lt x \lt y \lt 2} xy dx dy
+  &= \int_0^2 \left( \int_0^y x dx \right) y dy
+  \\
+  &= \int_0^2 \left[ \frac{x^2}{2} \right]_0^y y dy
+  \\
+  &= \frac{1}{2} \int_0^2 y^3 dy
+  \\
+  &= \frac{1}{2} \left[ \frac{y^4}{4} \right]_0^2
+  \\
+  &= 2
+  \\
+
+  \therefore \ \ \ \ 
+  c &= \frac{1}{2}
+  \end{align}
   </p>
 
   <h3>(2-2)</h3>
 
   <p>
-  </p>
+  \begin{align}
+  \int_0^{1/2} f_{X,Y} \left(x, \frac{1}{2} \right) dx
+  &= \frac{1}{4} \int_0^{1/2} x dx
+  = \frac{1}{4} \left[ \frac{x^2}{2} \right]_0^{1/2}
+  = \frac{1}{2^5}
+  \\
 
-  <p>
+  \int_0^{1/4} f_{X,Y} \left(x, \frac{1}{2} \right) dx
+  &= \frac{1}{4} \int_0^{1/4} x dx
+  = \frac{1}{4} \left[ \frac{x^2}{2} \right]_0^{1/4}
+  = \frac{1}{2^7}
+  \end{align}
+
+  であるから、
+  \begin{align}
+  P(0 \lt X \lt 1/4 | Y=1/2)
+  = \frac{\frac{1}{2^7}}{\frac{1}{2^5}}
+  = \frac{1}{4}
+  \end{align}
   </p>
 
   <h3>(2-3)</h3>
 
   <p>
+  $X,Y$ の周辺密度関数をそれぞれ $f_X(x), f_Y(y)$ とすると、
+  \begin{align}
+  f_X(x)
+  &= \int_x^2 f_{X,Y}(x,y) dy
+  = \frac{x}{2} \int_x^2 y dy
+  = \frac{x}{2} \left[ \frac{y^2}{2} \right]_x^2
+  = \frac{x}{4} \left( 4 - x^2 \right)
+  = x - \frac{x^3}{4}
+  \\
+
+  f_Y(y)
+  &= \int_0^y f_{X,Y}(x,y) dx
+  = \frac{y}{2} \int_0^y x dx
+  = \frac{y}{2} \left[ \frac{x^2}{2} \right]_0^y
+  = \frac{y^3}{4}
+  \end{align}
+
+  であるから、
+  $f_{X,Y}(x,y) \neq f_X(x) f_Y(y)$
+  であり、
+  $X$ と $Y$ は独立ではない。
   </p>
 
   <h3>(2-4)</h3>
 
   <p>
+  期待値を $E$ で表すと、
+  \begin{align}
+  E(X)
+  &= \int_0^2 x f_X(x) dx
+  = \int_0^2 \left( x^2 - \frac{x^4}{4} \right) dx
+  = \left[ \frac{x^3}{3} - \frac{x^5}{4 \cdot 5} \right]_0^2 
+  = \frac{8}{3} - \frac{8}{5}
+  = \frac{16}{15}
+  \\
+
+  E(Y)
+  &= \int_0^2 y f_Y(y) dy
+  = \int_0^2 \frac{y^4}{4} dy
+  = \left[ \frac{y^5}{4 \cdot 5} \right]_0^2 
+  = \frac{2^5}{4 \cdot 5}
+  = \frac{8}{5}
+  \\
+
+  E(XY)
+  &= \iint_{0 \lt x \lt y \lt 2} xy f_{X,Y}(x,y) dx dy
+  = \frac{1}{2} \int_0^2 \left( \int_0^y x^2 dx \right) y^2 dy
+  \\
+  &= \frac{1}{2} \int_0^2 \left[ \frac{x^3}{3} \right]_0^y y^2 dy
+  = \frac{1}{6} \int_0^2 y^5 dy
+  = \frac{1}{6} \left[ \frac{y^6}{6} \right]_0^2
+  = \frac{16}{9}
+  \\
+
+  \therefore \ \ \ \ 
+  r_{XY}
+  &= E(XY) - E(X) E(Y)
+  = \frac{16}{9} - \frac{16}{15} \cdot \frac{8}{5}
+  = \frac{16}{225}
+
+  \end{align}
   </p>
 
   <h3>(2-5)</h3>
 
   <p>
+  $r_{UV} = ac r_{XY}$ であるから、
+  $ac \lt 0$ のとき正負が逆になる。
   </p>
 
   <p>
