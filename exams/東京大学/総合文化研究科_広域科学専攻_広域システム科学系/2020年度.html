@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 総合文化研究科 広域科学専攻 広域システム科学系
+      2020年度 総合科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京大学 大学院 総合文化研究科
+    <br />
+    広域科学専攻 広域システム科学系
+    <br />
+    2020年度 総合科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.c.u-tokyo.ac.jp/graduate/admission/master-doctor/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+  </p>
+
+  <hr />
+  <h2>第3問 物理・宇宙物理 (1)</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  題意より、
+  \begin{align}
+  m_1 \vec{r}_1 + m_2 \vec{r}_2 = \vec{0}
+  , \ \ \ \ 
+  \vec{r} = \vec{r}_1 - \vec{r}_2
+  \end{align}
+  であるから、
+  \begin{align}
+  \vec{r}_1 = \frac{m_2}{m_1+m_2} \vec{r}
+  , \ \ \ \ 
+  \vec{r}_2 = - \frac{m_1}{m_1+m_2} \vec{r}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $\vec{r}$ のデカルト座標による成分を $(x,y)$ とすると、
+  \begin{align}
+  x &= r \cos \phi
+  \\
+  y &= r \sin \phi
+  \\
+  \dot{x} &= \dot{r} \cos \phi - r \dot{\phi} \sin \phi
+  \\
+  \dot{y} &= \dot{r} \sin \phi + r \dot{\phi} \cos \phi
+  \\
+  \left| \dot{\vec{r}} \right|^2
+  &= \dot{x}^2 + \dot{y}^2
+  = \dot{r}^2 + r^2 \dot{\phi}^2
+  \end{align}
+  である。
+
+  よって、求める運動エネルギー $K$ は、
+  \begin{align}
+  K
+  &= \frac{1}{2} m_1 \left| \dot{\vec{r}_1} \right|^2
+  + \frac{1}{2} m_2 \left| \dot{\vec{r}_2} \right|^2
+  \\
+  &= \frac{1}{2} \frac{m_1 m_2^2 + m_1^2 m_2}{(m_1+m_2)^2}
+  \left| \dot{\vec{r}} \right|^2
+  \\
+  &= \frac{1}{2} \frac{m_1 m_2}{m_1+m_2}
+  \left( \dot{r}^2 + r^2 \dot{\phi}^2 \right)
+  \\
+  &= \frac{1}{2} \mu \left( \dot{r}^2 + r^2 \dot{\phi}^2 \right)
+  \end{align}
+  となる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  求める重力ポテンシャルエネルギー $U$ は、
+  \begin{align}
+  U = - G \frac{m_1 m_2}{r}
+  = - \frac{G \mu M}{r}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  この系のラグランジアン $L$ は、
+  \begin{align}
+  L = K - U
+  = \frac{1}{2} \mu \left( \dot{r}^2 + r^2 \dot{\phi}^2 \right)
+  + \frac{G \mu M}{r}
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{\partial L}{\partial \phi}
+  &= 0
+  \\
+  \frac{\partial L}{\partial \dot{\phi}}
+  &= \mu r^2 \dot{\phi}
+  = \mu l
+  \end{align}
+  であるから、 $\phi$ に関する運動方程式より、
+  $l$ が保存量であることがわかる。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  上で求めたラグランジアン $L$ から、
+  \begin{align}
+  \frac{\partial L}{\partial r}
+  &= \mu r \dot{\phi}^2 - \frac{G \mu M}{r^2}
+  = \frac{\mu l^2}{r^3} - \frac{G \mu M}{r^2}
+  \\
+  \frac{\partial L}{\partial \dot{r}}
+  &= \mu \dot{r}
+  \end{align}
+  であるから、 $r$ に関する運動方程式は、
+  \begin{align}
+  \mu \ddot{r}
+  &= \frac{\mu l^2}{r^3} - \frac{G \mu M}{r^2}
+  \\
+  \therefore \ \ \ \ 
+  \ddot{r}
+  &= \frac{l^2}{r^3} - \frac{G M}{r^2}
+  \end{align}
+  となる。
+  </p>
+
+  <h3>(6)</h3>
+
+  <p>
+  \begin{align}
+  E = K + U
+  &= \frac{1}{2} \mu \left( \dot{r}^2 + r^2 \dot{\phi}^2 \right)
+  - \frac{G \mu M}{r}
+  \\
+  &= \frac{1}{2} \mu \left( \dot{r}^2 + \frac{l^2}{r^2} \right)
+  - \frac{G \mu M}{r}
+  \end{align}
+  </p>
+
+  <h3>(7)</h3>
+
+  <p>
+  \begin{align}
+  V(r)
+  = \frac{1}{2} \mu \frac{l^2}{r^2} - \frac{G \mu M}{r}
+  \end{align}
+  とすると、
+  \begin{align}
+  V'(r)
+  &= - \mu \frac{l^2}{r^3} + \frac{G \mu M}{r^2}
+  \\
+  &= \mu \frac{- l^2 + G M r}{r^3}
+  \end{align}
+  となるので、
+  \begin{align}
+  r_0 = \frac{l^2}{GM}
+  \end{align}
+  とすると、 $V(r)$ が最小値をとるのは $r=r_0$ のときで、
+  \begin{align}
+  V(r_0)
+  = - \frac{1}{2} \frac{G^2 \mu M^2}{l^2}
+  \end{align}
+  となる。
+
+  $E$ が最小値 $E_0$ をとるのもこのときで、
+  \begin{align}
+  E_0
+  = - \frac{1}{2} \frac{G^2 \mu M^2}{l^2}
+  \end{align}
+  である。
+  </p>
+
+  <hr />
+  <p>
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
