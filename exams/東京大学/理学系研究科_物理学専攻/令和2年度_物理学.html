@@ -51,6 +51,309 @@
   </p>
 
   <hr />
+  <h2>第1問</h2>
+
+  <h3>1.</h3>
+
+  <p>
+  $ \sigma_z \left| \uparrow \right\rangle = \left| \uparrow \right\rangle $
+  であるから、
+  $ \left| \uparrow \right\rangle $ は
+  $\sigma_z$ の固有値 $1$ に属する固有ベクトルであり、
+  $ s_z = 1 $ である。
+  </p>
+
+  <p>
+  また、期待値は、
+  $
+  \left\langle \uparrow \right| \sigma_z \left| \uparrow \right\rangle
+  = 1
+  $
+  である。
+  </p>
+
+  <h3>2.</h3>
+
+  <p>
+  $ \sigma_x $ の固有値は $\pm 1$ であり、
+  固有値 $ 1$ に属する固有ベクトル $ \left| x \uparrow \right\rangle $ ,
+  固有値 $-1$ に属する固有ベクトル $ \left| x \downarrow \right\rangle $
+  はそれぞれ、
+  \begin{align}
+  \left| x \uparrow \right\rangle = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+  , \ \ \ \ 
+  \left| x \downarrow \right\rangle = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  \end{align}
+  である。
+
+  よって、
+  \begin{align}
+  \left| \uparrow \right\rangle
+  = \frac{1}{\sqrt{2}} \left| x \uparrow \right\rangle
+  + \frac{1}{\sqrt{2}} \left| x \downarrow \right\rangle
+  \end{align}
+  が成り立つから、 $s_x = \pm 1$ である。
+  </p>
+
+  <p>
+  また、期待値は、
+  $
+  \left\langle \uparrow \right| \sigma_x \left| \uparrow \right\rangle
+  = 0
+  $
+  である。
+  </p>
+
+  <h3>3.</h3>
+
+  <p>
+  \begin{align}
+  \sigma ( \theta )
+  = (\cos \theta) \sigma_z + (\sin \theta) \sigma_x
+  = \begin{pmatrix}
+  \cos \theta & \sin \theta \\ \sin \theta & - \cos \theta
+  \end{pmatrix}
+  \end{align}
+  の固有値は $\pm 1$ であり、
+  固有値 $ 1$ に属する固有ベクトル $ \left| \theta \uparrow \right\rangle $ ,
+  固有値 $-1$ に属する固有ベクトル $ \left| \theta \downarrow \right\rangle $
+  はそれぞれ、
+  \begin{align}
+  \left| \theta \uparrow \right\rangle
+  =
+  \begin{pmatrix} \cos \frac{\theta}{2} \\ \sin \frac{\theta}{2} \end{pmatrix}
+  , \ \ \ \ 
+  \left| \theta \downarrow \right\rangle
+  =
+  \begin{pmatrix} \sin \frac{\theta}{2} \\ - \cos \frac{\theta}{2} \end{pmatrix}
+  \end{align}
+  である。
+
+  よって、
+  \begin{align}
+  \left| \uparrow \right\rangle
+  = \cos \frac{\theta}{2} \left| \theta \uparrow \right\rangle
+  + \sin \frac{\theta}{2} \left| \theta \downarrow \right\rangle
+  \end{align}
+  が成り立つから、 $s_\theta = \pm 1$ である。
+
+  （ただし、
+  $ \theta = 0 $ のときは $s_\theta = 1$ 、
+  $ \theta = \pi $ のときは $s_\theta = -1$
+  である。）
+  </p>
+
+  <p>
+  また、期待値は、
+  $
+  \left\langle \uparrow \right| \sigma(\theta) \left| \uparrow \right\rangle
+  = \cos \theta
+  $
+  である。
+  </p>
+
+  <h3>4.</h3>
+
+  <p>
+  $ \left( s_z^A, s_z^B \right) = (1, -1), (-1, 1) $
+  であり、
+  $ s_z^A s_z^B $ の期待値は $-1$ である。
+  </p>
+
+  <h3>5.</h3>
+
+  <p>
+  上の 2. で考えたように、
+  \begin{align}
+  \left| \uparrow \right\rangle
+  &= \frac{1}{\sqrt{2}} \left| x \uparrow \right\rangle
+  + \frac{1}{\sqrt{2}} \left| x \downarrow \right\rangle
+  \\
+  \left| \downarrow \right\rangle
+  &= \frac{1}{\sqrt{2}} \left| x \uparrow \right\rangle
+  - \frac{1}{\sqrt{2}} \left| x \downarrow \right\rangle
+  \end{align}
+  であるから、
+  \begin{align}
+  \left| \Psi \right\rangle
+  &= \frac{1}{\sqrt{2}} \left(
+  \left| \uparrow \right\rangle_A \left| \downarrow \right\rangle_B
+  -
+  \left| \downarrow \right\rangle_A \left| \uparrow \right\rangle_B
+  \right)
+  \\
+  &= \frac{1}{2 \sqrt{2}} \left(
+  \left( \left| x \uparrow \right\rangle_A
+  + \left| x \downarrow \right\rangle_A \right)
+  \left( \left| x \uparrow \right\rangle_B
+  - \left| x \downarrow \right\rangle_B \right)
+  -
+  \left( \left| x \uparrow \right\rangle_A
+  - \left| x \downarrow \right\rangle_A \right)
+  \left( \left| x \uparrow \right\rangle_B
+  + \left| x \downarrow \right\rangle_B \right)
+  \right)
+  \\
+  &= - \frac{1}{\sqrt{2}} \left(
+  \left| x \uparrow \right\rangle_A \left| x \downarrow \right\rangle_B
+  -
+  \left| x \downarrow \right\rangle_A \left| x \uparrow \right\rangle_B
+  \right)
+  \end{align}
+  となる。
+
+  よって、
+  $ \left( s_x^A, s_x^B \right) = (1, -1), (-1, 1) $
+  であり、
+  $ s_x^A s_x^B $ の期待値は $-1$ である。
+  </p>
+
+  <h3>6.</h3>
+
+  <p>
+  上の 3. で考えたように、
+  \begin{align}
+  \left| \uparrow \right\rangle
+  &= \cos \frac{\theta}{2} \left| \theta \uparrow \right\rangle
+  + \sin \frac{\theta}{2} \left| \theta \downarrow \right\rangle
+  \\
+  \left| \downarrow \right\rangle
+  &= \sin \frac{\theta}{2} \left| \theta \uparrow \right\rangle
+  - \cos \frac{\theta}{2} \left| \theta \downarrow \right\rangle
+  \end{align}
+  であるから、
+
+  \begin{align}
+  \left| \Psi \right\rangle
+  &= \frac{1}{\sqrt{2}} \left(
+  \left| \uparrow \right\rangle_A \left| \downarrow \right\rangle_B
+  -
+  \left| \downarrow \right\rangle_A \left| \uparrow \right\rangle_B
+  \right)
+  \\
+
+  &= \frac{1}{\sqrt{2}} \left(
+  \left(
+  \cos \frac{\theta}{2} \left| \theta \uparrow \right\rangle_A
+  + \sin \frac{\theta}{2} \left| \theta \downarrow \right\rangle_A
+  \right)
+  \left(
+  \sin \frac{\theta}{2} \left| \theta \uparrow \right\rangle_B
+  - \cos \frac{\theta}{2} \left| \theta \downarrow \right\rangle_B
+  \right)
+  -
+  \left(
+  \sin \frac{\theta}{2} \left| \theta \uparrow \right\rangle_A
+  - \cos \frac{\theta}{2} \left| \theta \downarrow \right\rangle_A
+  \right)
+  \left(
+  \cos \frac{\theta}{2} \left| \theta \uparrow \right\rangle_B
+  + \sin \frac{\theta}{2} \left| \theta \downarrow \right\rangle_B
+  \right)
+  \right)
+  \\
+  &= - \frac{1}{\sqrt{2}} \left(
+  \left| \theta \uparrow \right\rangle_A \left| \theta \downarrow \right\rangle_B
+  -
+  \left| \theta \downarrow \right\rangle_A \left| \theta \uparrow \right\rangle_B
+  \right)
+  \end{align}
+  となる。
+
+  よって、
+  $ \left( s_\theta^A, s_\theta^B \right) = (1, -1), (-1, 1) $
+  である。
+  </p>
+
+  <h3>7.</h3>
+
+  <p>
+  \begin{align}
+  \left| \Psi \right\rangle
+  &= \frac{1}{\sqrt{2}} \left(
+  \left| \uparrow \right\rangle_A \left| \downarrow \right\rangle_B
+  -
+  \left| \downarrow \right\rangle_A \left| \uparrow \right\rangle_B
+  \right)
+  \\
+
+  &= \frac{1}{\sqrt{2}} \left(
+  \left(
+  \cos \frac{\theta}{2} \left| \theta \uparrow \right\rangle_A
+  + \sin \frac{\theta}{2} \left| \theta \downarrow \right\rangle_A
+  \right)
+  \left(
+  \sin \frac{\varphi}{2} \left| \varphi \uparrow \right\rangle_B
+  - \cos \frac{\varphi}{2} \left| \varphi \downarrow \right\rangle_B
+  \right)
+  -
+  \left(
+  \sin \frac{\theta}{2} \left| \theta \uparrow \right\rangle_A
+  - \cos \frac{\theta}{2} \left| \theta \downarrow \right\rangle_A
+  \right)
+  \left(
+  \cos \frac{\varphi}{2} \left| \varphi \uparrow \right\rangle_B
+  + \sin \frac{\varphi}{2} \left| \varphi \downarrow \right\rangle_B
+  \right)
+  \right)
+  \\
+
+  &= \frac{1}{\sqrt{2}} \left(
+  \sin \frac{\varphi - \theta}{2}
+  \left| \theta \uparrow \right\rangle_A
+  \left| \theta \uparrow \right\rangle_B
+  +
+  \sin \frac{\varphi - \theta}{2}
+  \left| \theta \downarrow \right\rangle_A
+  \left| \theta \downarrow \right\rangle_B
+  -
+  \cos \frac{\varphi - \theta}{2}
+  \left| \theta \uparrow \right\rangle_A
+  \left| \theta \downarrow \right\rangle_B
+  +
+  \cos \frac{\varphi - \theta}{2}
+  \left| \theta \downarrow \right\rangle_A
+  \left| \theta \uparrow \right\rangle_B
+  \right)
+  \end{align}
+  となる。
+
+  よって、
+  $ \varphi - \theta = 0 $ のときは
+  $ \left( s_\theta^A, s_\varphi^B \right) = (1, -1), (-1, 1) $
+  、
+  $ \varphi - \theta = \pm \pi $ のときは
+  $ \left( s_\theta^A, s_\varphi^B \right) = (1, 1), (-1, -1) $
+  、
+  それ以外のときは
+  $ \left( s_\theta^A, s_\varphi^B \right) = (1, 1), (-1, -1), (1, -1), (-1, 1)$
+  である。
+  </p>
+
+  <p>
+  また、 $ s_\theta^A s_\varphi^B $ の期待値は、次のように計算できる：
+  \begin{align}
+  &\frac{1}{2} \sin^2 \frac{\varphi - \theta}{2} \cdot 2 \cdot 1
+  +
+  \frac{1}{2} \cos^2 \frac{\varphi - \theta}{2} \cdot 2 \cdot (-1)
+  \\
+  &=
+  \sin^2 \frac{\varphi - \theta}{2}
+  -
+  \cos^2 \frac{\varphi - \theta}{2}
+  \\
+  &=
+  - \cos ( \varphi - \theta )
+  \end{align}
+  </p>
+
+  <h3>8.</h3>
+
+  <h3>9.</h3>
+
+  <hr />
   <h2>第2問</h2>
 
   <h3>1.</h3>
@@ -223,6 +526,9 @@
   \end{align}
   </p>
 
+  <h3>8.</h3>
+
+  <h3>9.</h3>
 
 
   <hr />
