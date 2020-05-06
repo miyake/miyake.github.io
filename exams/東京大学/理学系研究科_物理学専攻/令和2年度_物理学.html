@@ -255,9 +255,11 @@
   \right)
   \\
   &= - \frac{1}{\sqrt{2}} \left(
-  \left| \theta \uparrow \right\rangle_A \left| \theta \downarrow \right\rangle_B
+  \left| \theta \uparrow \right\rangle_A
+  \left| \theta \downarrow \right\rangle_B
   -
-  \left| \theta \downarrow \right\rangle_A \left| \theta \uparrow \right\rangle_B
+  \left| \theta \downarrow \right\rangle_A
+  \left| \theta \uparrow \right\rangle_B
   \right)
   \end{align}
   となる。
@@ -303,19 +305,19 @@
   &= \frac{1}{\sqrt{2}} \left(
   \sin \frac{\varphi - \theta}{2}
   \left| \theta \uparrow \right\rangle_A
-  \left| \theta \uparrow \right\rangle_B
+  \left| \varphi \uparrow \right\rangle_B
   +
   \sin \frac{\varphi - \theta}{2}
   \left| \theta \downarrow \right\rangle_A
-  \left| \theta \downarrow \right\rangle_B
+  \left| \varphi \downarrow \right\rangle_B
   -
   \cos \frac{\varphi - \theta}{2}
   \left| \theta \uparrow \right\rangle_A
-  \left| \theta \downarrow \right\rangle_B
+  \left| \varphi \downarrow \right\rangle_B
   +
   \cos \frac{\varphi - \theta}{2}
   \left| \theta \downarrow \right\rangle_A
-  \left| \theta \uparrow \right\rangle_B
+  \left| \varphi \uparrow \right\rangle_B
   \right)
   \end{align}
   となる。
@@ -350,6 +352,88 @@
   </p>
 
   <h3>8.</h3>
+
+  <p>
+  $\varphi - \theta$ のとりうる値は、
+  $\varphi - \theta = -240^\circ, -120^\circ, 0^\circ, 120^\circ, 240^\circ$ 
+  であり、その確率はそれぞれ
+  \begin{align}
+  \frac{1}{9}, \frac{2}{9}, \frac{3}{9}, \frac{2}{9}, \frac{1}{9}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  例えば、 $\varphi - \theta = -240^\circ$ のとき、
+  \begin{align}
+  \left| \Psi \right\rangle
+
+  = \frac{1}{\sqrt{2}} \left(
+  - \frac{\sqrt{3}}{2}
+  \left| \theta \uparrow \right\rangle_A
+  \left| \varphi \uparrow \right\rangle_B
+  -
+  \frac{\sqrt{3}}{2}
+  \left| \theta \downarrow \right\rangle_A
+  \left| \varphi \downarrow \right\rangle_B
+  -
+  \frac{1}{2}
+  \left| \theta \uparrow \right\rangle_A
+  \left| \varphi \downarrow \right\rangle_B
+  +
+  \frac{1}{2}
+  \left| \theta \downarrow \right\rangle_A
+  \left| \varphi \uparrow \right\rangle_B
+  \right)
+  \end{align}
+
+  であるから、このとき、$s^A s^B$ のとりうる値は、
+  $ \pm 1 $ であり、 $1, -1$ である確率はそれぞれ、
+  \begin{align}
+  \frac{3}{8} \cdot 2 = \frac{3}{4}
+  , \ \ 
+  \frac{1}{8} \cdot 2 = \frac{1}{4}
+  \end{align}
+  である。
+  また、 $(s^A, s^B)$ がとりうる値は、
+  $(s^A, s^B) = (1, 1), (1, -1), (1, -1), (-1, 1)$
+  である。
+
+  $\varphi - \theta = -120^\circ, 120^\circ, 240^\circ$ のときも同様である。
+  </p>
+
+  <p>
+  $\varphi - \theta = 0^\circ$ のときは、
+  \begin{align}
+  \left| \Psi \right\rangle
+  = - \frac{1}{\sqrt{2}} \left(
+  \left| \theta \uparrow \right\rangle_A
+  \left| \varphi \downarrow \right\rangle_B
+  -
+  \left| \theta \downarrow \right\rangle_A
+  \left| \varphi \uparrow \right\rangle_B
+  \right)
+  \end{align}
+  であるから、
+  $(s^A, s^B)$ がとりうる値は $(s^A, s^B) = (1, -1), (-1, 1)$ であり、
+  $s^A s^B$ のとりうる値は $-1$ のみである。
+  </p>
+
+  <p>
+  以上より、
+  $(s^A, s^B)$ がとりうる値は、
+  $(s^A, s^B) = (1, 1), (1, -1), (1, -1), (-1, 1)$
+  であり、
+  $s^A s^B$ の期待値は、
+  \begin{align}
+  \frac{6}{9} \cdot
+  \left( \frac{3}{4} \cdot 1 + \frac{1}{4} \cdot (-1) \right)
+  + \frac{3}{9} \cdot (-1)
+  = 0
+  \end{align}
+  である。
+  </p>
+
 
   <h3>9.</h3>
 
