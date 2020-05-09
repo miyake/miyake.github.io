@@ -233,6 +233,109 @@
   となる。
   </p>
 
+  <hr />
+  <h2>第2問 （数学）</h2>
+
+  <h3>（問1）</h3>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0 =
+  \begin{vmatrix}
+  1 - \lambda & 0 & 0 & 0 \\
+  0 & - \lambda & 1 & 1 \\
+  0 & 0 & 1 - \lambda & 1 \\
+  0 & 1 & 1 & - \lambda
+  \end{vmatrix}
+  = \lambda (\lambda - 1) (\lambda - 2) (\lambda + 1)
+  \end{align}
+  が成り立つから、
+  \begin{align}
+  \lambda_1 = -1,
+  \lambda_2 = 0,
+  \lambda_3 = 1,
+  \lambda_4 = 2
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  固有ベクトル $e_1$ を求めるため、次のようにおく：
+  \begin{align}
+  \begin{pmatrix}
+  1 & 0 & 0 & 0 \\
+  0 & 0 & 1 & 1 \\
+  0 & 0 & 1 & 1 \\
+  0 & 1 & 1 & 0
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \\ w \end{pmatrix}
+  = -
+  \begin{pmatrix} x \\ y \\ z \\ w \end{pmatrix}
+  \end{align}
+  よって、 $x=0, y=z, 2z+w=0$ を得るので、例えば、
+  \begin{align}
+  e_1 =
+  \begin{pmatrix} 0 \\ 1 \\ 1 \\ -2 \end{pmatrix}
+  \end{align}
+  とすればよい。
+
+  同様にして、例えば、
+  \begin{align}
+  e_2 = \begin{pmatrix} 0 \\ 1 \\ -1 \\ 1 \end{pmatrix}
+  ,
+  e_3 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}
+  ,
+  e_4 = \begin{pmatrix} 0 \\ 1 \\ 1 \\ 1 \end{pmatrix}
+  \end{align}
+  とすればよい。
+  </p>
+
+  <h3>（問2）</h3>
+
+  <p>
+  \begin{align}
+  A \begin{pmatrix} x \\ y \\ z \\ w \end{pmatrix}
+  =
+  \begin{pmatrix} x \\ z+w \\ z+w \\ y+z \end{pmatrix}
+  =
+  x \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}
+  + (z+w) \begin{pmatrix} 0 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  + (y+z) \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  であるから、 $Q$ の次元は3であり、
+  \begin{align}
+  \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}
+  ,
+  \begin{pmatrix} 0 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  ,
+  \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  は $Q$ の基底となる。
+  </p>
+
+  <h3>（問3）</h3>
+
+  <p>
+  \begin{align}
+  g
+  =
+  \begin{cases}
+  0 \ \ \ \ &( -a \leq \vec{n} \cdot \vec{c} \leq a )
+  \\
+  \vec{n} \cdot \vec{c} - a \ \ \ \ &( \vec{n} \cdot \vec{c} \gt a )
+  \\
+  - \vec{n} \cdot \vec{c} - a \ \ \ \ &( \vec{n} \cdot \vec{c} \lt -a )
+  \end{cases}
+  \end{align}
+  </p>
+
+  <h3>（問4）</h3>
+
+  <p>
+  \begin{align}
+  \end{align}
+  </p>
 
   <hr />
   <p>
