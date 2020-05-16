@@ -333,9 +333,233 @@
   <h3>（問4）</h3>
 
   <p>
+  <!-- TODO -->
   \begin{align}
   \end{align}
   </p>
+
+  <hr />
+  <h2>第3問 （数学）</h2>
+
+  <h3>（問1）</h3>
+
+  <p>
+  \begin{align}
+  \left| \int_0^Y e^{-a(X+iy)^2} dy \right|
+  &\le
+  \int_0^Y \left| e^{-a(X^2+2iXy-y^2)} \right| dy
+  \\
+  &= 
+  e^{-aX^2} \int_0^Y e^{ay^2} dy
+  \\
+  &\xrightarrow{X \to \infty} 0
+  \end{align}
+  </p>
+
+  <h3>（問2）</h3>
+
+  <p>
+  (問1) と同様に、
+  \begin{align}
+  \left| \int_0^Y e^{-a(-X+iy)^2} dy \right|
+  &\le
+  \int_0^Y \left| e^{-a(X^2-2iXy-y^2)} \right| dy
+  \\
+  &= 
+  e^{-aX^2} \int_0^Y e^{ay^2} dy
+  \\
+  &\xrightarrow{X \to \infty} 0
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  複素数 $z$ の関数 $e^{-az^2}$
+  は与えられた積分経路の内側で特異点を持たないので、
+  積分は $0$ となる：
+  \begin{align}
+  0
+  &=
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  + \int_X^{-X} e^{-a(x+iY)^2} dx
+  + \int_Y^0 e^{-a(-X+iy)^2} dy
+  \\
+  &=
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  - \int_{-X}^X e^{-a(x+iY)^2} dx
+  - \int_0^Y e^{-a(-X+iy)^2} dy
+  \end{align}
+  よって、
+  \begin{align}
+  \int_{-X}^X e^{-a(x+iY)^2} dx
+  =
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  - \int_0^Y e^{-a(-X+iy)^2} dy
+  \end{align}
+  ここで、 $X \to \infty$ とすると、
+  \begin{align}
+  \int_{-\infty}^\infty e^{-a(x+iY)^2} dx
+  =
+  \sqrt{\frac{\pi}{a}}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>（問3）</h3>
+
+  <p>
+  \begin{align}
+  \frac{\partial U(k,t)}{\partial t}
+  &= \int_{-\infty}^\infty \frac{\partial u(x,t)}{\partial t} e^{-ikx} dx
+  \\
+  &= \int_{-\infty}^\infty \frac{\partial^2 u(x,t)}{\partial x^2} e^{-ikx} dx
+  \\
+  &= \left[ \frac{\partial u(x,t)}{\partial x} e^{-ikx} \right]_{-\infty}^\infty
+  +ik \int_{-\infty}^\infty \frac{\partial u(x,t)}{\partial x} e^{-ikx} dx
+  \\
+  &= ik \left[ u(x,t) e^{-ikx} \right]_{-\infty}^\infty
+  -k^2 \int_{-\infty}^\infty u(x,t) e^{-ikx} dx
+  \\
+  &= -k^2 U(k,t)
+  \end{align}
+  </p>
+
+  <h3>（問4）</h3>
+
+  <p>
+  (問3) で得た微分方程式より、
+  \begin{align}
+  U(k,t) = U(k,0) e^{-k^2 t}
+  \end{align}
+  がわかる。
+
+  さらに、条件 $u(x,0)=\delta(x-1)$ より、
+  \begin{align}
+  U(k,0)
+  &= \int_{-\infty}^\infty u(x,0) e^{-ikx} dx
+  \\
+  &= \int_{-\infty}^\infty \delta(x-1) e^{-ikx} dx
+  \\
+  &= e^{-ik}
+  \end{align}
+  <!--
+  デルタ関数の与えられた定義を使わなくてよい？
+  -->
+  であるから、
+  \begin{align}
+  U(k,t) = e^{-k^2 t - ik}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>（問5）</h3>
+
+  <p>
+  \begin{align}
+  u(x,t)
+  &= \frac{1}{2 \pi} \int_{-\infty}^\infty U(k,t) e^{ikx} dk
+  \\
+  &= \frac{1}{2 \pi} \int_{-\infty}^\infty e^{-k^2t+ik(x-1)} dk
+  \\
+  &= \frac{1}{2 \pi} e^{-\frac{(x-1)^2}{4t}}
+  \int_{-\infty}^\infty e^{-t \left( k - i \frac{x-1}{2t} \right)^2} dk
+  \\
+  &= \frac{1}{2 \pi} e^{-\frac{(x-1)^2}{4t}} \sqrt{\frac{\pi}{t}}
+  \\
+  &= \frac{1}{\sqrt{4 \pi t}} e^{-\frac{(x-1)^2}{4t}}
+  \end{align}
+  </p>
+
+  <hr />
+  <h2>第4問 （数学）</h2>
+
+  <h3>（問1）</h3>
+
+  <p>
+  与えられた条件より、
+  \begin{align}
+  0 = \alpha \mu + \beta
+  , \ \ \ \ 
+  1 = \alpha^2 \sigma^2
+  \end{align}
+  であるから、
+
+  $\alpha \gt 0$ とすると、
+  \begin{align}
+  \alpha = \frac{1}{\sigma}
+  , \ \ \ \ 
+  \beta = - \alpha \mu = - \frac{\mu}{\sigma}
+  \end{align}
+  であり、
+
+  $\alpha \lt 0$ とすると、
+  \begin{align}
+  \alpha = - \frac{1}{\sigma}
+  , \ \ \ \ 
+  \beta = - \alpha \mu = \frac{\mu}{\sigma}
+  \end{align}
+  である。
+  </p>
+
+  <h3>（問2）</h3>
+
+  <p>
+  まず、 平均 $\mu$ 、標準偏差 $\sigma$ の確率変数 $X$ の
+  モーメント母関数 $M_X(t)$ は、次のように求められる：
+  \begin{align}
+  M_X(t)
+  &= E_X \left[ \exp (tX) \right]
+  \\
+  &= \frac{1}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty
+  \exp \left(- \frac{(x-\mu)^2}{2 \sigma^2} \right)
+  \exp \left( tx \right) dx
+  \\
+  &= \frac{\exp \left( \mu t + \frac{\sigma^2 t^2}{2} \right) }
+  {\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty
+  \exp \left(- \frac
+  {\left\{ x - (\mu - \sigma^2 t) \right\}^2 }{2 \sigma^2} \right)
+  dx
+  \\
+  &= \exp \left( \mu t + \frac{\sigma^2 t^2}{2} \right)
+  .
+  \end{align}
+  </p>
+
+  <p>
+  そこで、 $X_1$ と $X_2$ が独立であることを考慮して、
+  \begin{align}
+  M_{aX_1+bX_2}(t)
+  &=
+  E_{X_1} \left[ \exp (taX_1) \right]
+  E_{X_2} \left[ \exp (tbX_2) \right]
+  \\
+  &=
+  \exp \left( \mu_1 ta + \frac{\sigma_1^2 t^2 a^2}{2} \right)
+  \exp \left( \mu_2 tb + \frac{\sigma_2^2 t^2 b^2}{2} \right)
+  \\
+  &=
+  \exp \left( \frac{a^2 \sigma_1^2 + b^2 \sigma_2^2 }{2} t^2
+  + (a \mu_1 + b \mu_2 ) t \right)
+  \end{align}
+  であるから、
+  \begin{align}
+  A = \frac{a^2 \sigma_1^2 + b^2 \sigma_2^2 }{2}
+  , \ \ \ \ 
+  B = a \mu_1 + b \mu_2
+  , \ \ \ \ 
+  C = 0
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>（問3）</h3>
+  <h3>（問4）</h3>
+  <h3>（問5）</h3>
+
+
 
   <hr />
   <p>
