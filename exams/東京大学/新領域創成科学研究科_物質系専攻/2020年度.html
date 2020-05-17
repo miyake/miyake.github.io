@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 新領域創成科学研究科 物質系専攻
+      2020年度 物理学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東京大学 大学院 新領域創成科学研究科 物質系専攻
+      <br />
+      2020年度 物理学
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.k.u-tokyo.ac.jp/materials/mondai.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+  </p>
+
+  <hr />
+  <h2>第3問</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  A^\dagger A
+  &= \frac{m \omega}{2 \hbar}
+  \left( x - \frac{ip}{m \omega} \right)
+  \left( x + \frac{ip}{m \omega} \right)
+  \\
+  &= \frac{m \omega}{2 \hbar}
+  \left( x^2 + \frac{p^2}{m^2 \omega^2} + \frac{i}{m \omega}[x,p] \right)
+  \\
+  &= \frac{m \omega}{2 \hbar}
+  \left( x^2 + \frac{p^2}{m^2 \omega^2} - \frac{\hbar}{m \omega} \right)
+  \\
+  &= \frac{1}{\hbar \omega}
+  \left( \frac{p^2}{2 m} + \frac{1}{2} m \omega^2 x^2 \right)
+  - \frac{1}{2}
+  \\
+  &= \frac{1}{\hbar \omega} H - \frac{1}{2}
+  \\
+
+  \therefore \ \ 
+  H &= \hbar \omega \left( A^\dagger A + \frac{1}{2} \right)
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  H \varphi_0
+  &=
+  \hbar \omega \left( A^\dagger A + \frac{1}{2} \right) \varphi_0
+  \\
+  &=
+  \frac{1}{2} \hbar \omega \varphi_0
+  \\
+
+  \therefore \ \ 
+  E_0 &= \frac{1}{2} \hbar \omega
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  \left[ A, A^\dagger \right]
+  &=
+  \frac{m \omega}{2 \hbar}
+  \left[ x + \frac{ip}{m \omega}, x - \frac{ip}{m \omega} \right]
+  \\
+  &=
+  \frac{m \omega}{2 \hbar} \frac{i}{m \omega}
+  \left\{ -[x,p] + [p,x] \right\}
+  \\
+  &=
+  \frac{i}{2 \hbar} \cdot (-2i \hbar)
+  \\
+  &= 1
+  \\
+
+  H \varphi_1
+  &=
+  \hbar \omega \left( A^\dagger A + \frac{1}{2} \right) A^\dagger \varphi_0
+  \\
+  &=
+  \hbar \omega
+  \left( A^\dagger (A^\dagger A + 1) + \frac{1}{2} A^\dagger \right)
+  \varphi_0
+  \\
+  &=
+  \frac{3}{2} \hbar \omega A^\dagger \varphi_0
+  \\
+  &=
+  \frac{3}{2} \hbar \omega \varphi_1
+  \\
+
+  \therefore \ \ 
+  E_1 &= \frac{3}{2} \hbar \omega
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  $ \left\langle \varphi_0 \right| A \left| \varphi_0 \right\rangle = 0 $
+  で、かつ、
+  \begin{align}
+  \left\langle \varphi_{n+1} \right| A \left| \varphi_{n+1} \right\rangle
+  &=
+  \frac{1}{n+1}
+  \left\langle \varphi_n \right| A A A^\dagger \left| \varphi_n \right\rangle
+  \\
+  &=
+  \frac{1}{n+1}
+  \left\langle \varphi_n \right|
+  A ( A^\dagger A + 1 ) \left| \varphi_n \right\rangle
+  \\
+  &=
+  \frac{1}{n+1}
+  \left\langle \varphi_n \right|
+  A \left( \frac{H}{\hbar \omega} - \frac{1}{2} + 1 \right)
+  \left| \varphi_n \right\rangle
+  \\
+  &=
+  \frac{1}{n+1}
+  \left( \frac{E_n}{\hbar \omega} + \frac{1}{2} \right)
+  \left\langle \varphi_n \right| A \left| \varphi_n \right\rangle
+  \end{align}
+
+  であるから、数学的帰納法により、 $n=0,1,2, \cdots$ に対して、
+  \begin{align}
+  \left\langle \varphi_n \right| A \left| \varphi_n \right\rangle = 0
+  \end{align}
+  が成り立つ。
+
+  同様にして、
+  \begin{align}
+  \left\langle \varphi_n \right| A^\dagger \left| \varphi_n \right\rangle = 0
+  \end{align}
+  も成り立つ。
+  </p>
+
+  <p>
+  さらに、
+  \begin{align}
+  x = \sqrt{\frac{\hbar}{2m \omega}} \left( A + A^\dagger \right)
+  \end{align}
+  であるから、
+  \begin{align}
+  \left\langle \varphi_n \right| x \left| \varphi_n \right\rangle = 0
+  \end{align}
+  が $n=0,1,2, \cdots$ について成り立つ。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
