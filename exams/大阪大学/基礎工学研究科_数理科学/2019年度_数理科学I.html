@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院 基礎工学研究科
+      システム創成専攻（数理科学）
+      2019年度 数理科学I
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      大阪大学 大学院 基礎工学研究科
+      <br />
+      システム創成専攻（数理科学）
+      <br />
+      2019年度 数理科学I
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.sigmath.es.osaka-u.ac.jp/entrance_exam/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+  </p>
+
+  <hr />
+  <h2>[5]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  E [ T(\alpha) ]
+  &= \sum_{i=1}^n \alpha_i E[X_i]
+  \\
+  &= \mu \sum_{i=1}^n \alpha_i
+  \\
+
+  \text{Cov} [ T(\alpha), T(\beta) ]
+  &= \sum_{i=1}^n \sum_{j=1}^n \alpha_i \beta_j \text{Cov} [X_i, X_j]
+  \\
+  &= \sum_{i=1}^n \alpha_i \beta_i V [X_i]
+  + \sum_{i \neq j} \alpha_i \beta_j \text{Cov} [X_i, X_j]
+  \\
+  &= \sigma^2 \sum_{i=1}^n \alpha_i \beta_i
+  + \theta \sum_{i \neq j} \alpha_i \beta_j
+  \\
+  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i \beta_i
+  + \theta \sum_{i=1}^n \sum_{j=1}^n \alpha_i \beta_j
+  \\
+  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i \beta_i
+  + \theta \sum_{i=1}^n \alpha_i \sum_{j=1}^n \beta_j
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  V[T(\alpha)]
+  &= \text{Cov} [ T(\alpha), T(\alpha) ]
+  \\
+  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
+  + \theta \sum_{i=1}^n \alpha_i \sum_{j=1}^n \alpha_j
+  \\
+  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
+  + \theta \left\{ \sum_{i=1}^n \alpha_i \right\}^2
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $\mu$ が $T(\alpha)$ の不偏推定量であるための条件は、(1) より、
+  \begin{align}
+  \sum_{i=1}^n \alpha_i = 1
+  \end{align}
+  であり、このとき、
+  \begin{align}
+  V[T(\alpha)]
+  = \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
+  + \theta
+  \end{align}
+  となる。
+
+  これを最小化するために、
+  ラグランジュの未定乗数 $\lambda$ を導入して、
+  \begin{align}
+  f(\alpha)
+  = \sum_{i=1}^n \alpha_i^2 - \lambda \sum_{i=1}^n \alpha_i
+  \end{align}
+  を考えると、
+  \begin{align}
+  \frac{\partial f}{\partial \alpha_i}
+  = 2 \alpha_i - \lambda
+  \end{align}
+  であるから、
+  \begin{align}
+  \alpha_1 = \alpha_2 = \cdots = \alpha_n = \frac{1}{n}
+  , \ \ 
+  \lambda = \frac{2}{n}
+  \end{align}
+  のとき、 $f(\alpha)$ したがって $V[T(\alpha)]$ が最小になる。
+
+  このとき、
+  \begin{align}
+  V[T(\alpha)]
+  &= \left( \sigma^2 - \theta \right) \cdot 1 + \theta
+  \\
+  &= \sigma^2
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
