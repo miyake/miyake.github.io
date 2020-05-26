@@ -131,6 +131,127 @@
   </p>
 
   <hr />
+  <h2>[4]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \lim_{t \ \downarrow \ 0} \frac{d^2 y(t)}{dt^2}
+  &=
+  \lim_{t \ \downarrow \ 0} \left( 2 x(t) - 2 \right)
+  = -2
+  \\
+
+  \lim_{t \to \infty} \frac{d^2 y(t)}{dt^2}
+  &=
+  \lim_{t \to \infty} \left( 2 x(t) - 2 \right)
+  = 0
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  (D) の2番目の式を $t$ で2回微分して、1番目の式を使うと、
+  \begin{align}
+  \frac{d^4 y(t)}{dt^4} - 2 \cdot \left( - 2 y(t) \right) &= 0
+  \\
+  \therefore \ \ 
+  \frac{d^4 y(t)}{dt^4} + 4 y(t) &= 0
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $y(t) = e^{kt}$ を (2) で得た微分方程式に代入すると、
+  特性方程式
+  \begin{align}
+  k^4 + 4 = 0
+  \end{align}
+  を得る。
+  したがって、特性根は、
+  \begin{align}
+  k = 1+i, 1-i, -1+i, -1-i
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  (2) で得た微分方程式の独立な特殊解は、
+  \begin{align}
+  e^{(1+i)t}, e^{(1-i)t}, e^{(-1+i)t}, e^{(-1-i)t}
+  \end{align}
+  であるが、実数値関数の
+  \begin{align}
+  e^t \sin t, e^t \cos t, e^{-t} \sin t, e^{-t} \cos t
+  \end{align}
+  も同様である。
+  したがって、実数解 $y(t)$ は、実数 $A, B, C, D$ を使って、
+  \begin{align}
+  y(t) =
+  A e^t \sin t + B e^t \cos t + C e^{-t} \sin t + D e^{-t} \cos t
+  \end{align}
+  と書ける。
+  </p>
+
+  <p>
+  条件 $\lim_{t \to \infty} y(t) = 0$ より $A=B=0$ であり、
+  条件 $\lim_{t \ \downarrow \ 0} y(t) = 0$ より $D=0$
+  であることがわかる。
+  よって、
+  \begin{align}
+  y(t) = C e^{-t} \sin t
+  \end{align}
+  となり、
+  \begin{align}
+  \frac{dy(t)}{dt} &= C e^{-t} (\cos t - \sin t)
+  \\
+  \frac{d^2 y(t)}{dt^2} &= -2C e^{-t} \cos t
+  \end{align}
+  となる。
+
+  ここで、条件
+  $\lim_{t \ \downarrow \ 0} d^2 y(t) / dt^2 = -2$ より $C=1$
+  がわかり、
+  \begin{align}
+  y(t) &= e^{-t} \sin t
+  \\
+  \frac{d^2 y(t)}{dt^2} &= -2 e^{-t} \cos t
+  \end{align}
+  を得る。
+  これは、条件
+  $\lim_{t \to \infty} d^2 y(t) / dt^2 = 0$ を満たす。
+  </p>
+
+  <p>
+  また、このとき、
+  \begin{align}
+  x(t)
+  &=
+  \frac{1}{2} \frac{d^2 y(t)}{dt^2} + 1
+  \\
+  &=
+  - e^{-t} \cos t + 1
+  \end{align}
+  となる。
+  </p>
+
+  <p>
+  以上より、求める実数解 $x(t), y(t)$ は、
+  \begin{align}
+  x(t) &= - e^{-t} \cos t + 1
+  \\
+  y(t) &= e^{-t} \sin t
+  \end{align}
+  である。
+  </p>
+
+  <hr />
   <h2>[5]</h2>
 
   <h3>(1)</h3>
