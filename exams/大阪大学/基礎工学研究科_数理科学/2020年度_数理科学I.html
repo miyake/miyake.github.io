@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院 基礎工学研究科
+      システム創成専攻（数理科学）
+      2020年度 数理科学I
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      大阪大学 大学院 基礎工学研究科
+      <br />
+      システム創成専攻（数理科学）
+      <br />
+      2020年度 数理科学I
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.sigmath.es.osaka-u.ac.jp/entrance_exam/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[4]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  まず、 $y(0)=0$ から $C_0=0$ がわかる。
+  よって、
+  \begin{align}
+  y(x) &= \sum_{k=1}^\infty C_k x^k
+  \\
+  \frac{dy(x)}{dx} &= \sum_{k=1}^\infty k C_k x^{k-1}
+  \end{align}
+  となる。
+  これを与えられた微分方程式に代入すると、
+  \begin{align}
+  \sum_{k=1}^\infty k C_k x^{k-1}
+  + \sum_{k=1}^\infty (-2 C_k) x^{k+1}
+  = 2x^3
+  \tag{A}
+  \end{align}
+  となる。
+  </p>
+
+  <p>
+  定数項に注目すると、 $1 C_1 = 0$ であるから、
+  $C_1=0$ がわかる。
+  </p>
+
+  <p>
+  $x$ の項に注目すると、 $2C_2=0$ であるから、
+  $C_2=0$ がわかる。
+  </p>
+
+  <p>
+  $x^2$ の項に注目すると、 $3C_3-2C_1=0$ であるから、
+  $C_1=0$ より $C_3=0$ がわかる。
+  </p>
+
+  <p>
+  $x^3$ の項に注目すると、 $4C_4-2C_2=2$ であるから、
+  $C_2=0$ より $C_4=1/2$ がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $j$ を非負の整数とする。
+  (A)式の $x^{2j+2}$ の項に注目すると、
+  \begin{align}
+  (2j+3) C_{2j+3} - 2 C_{2j+1} &= 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  C_{2j+3} &= \frac{2}{2j+3} C_{2j+1}
+  \end{align}
+  がわかる。
+  さらに $C_1=0$ であるから、
+  \begin{align}
+  C_{2j+1} &= 0
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $j$ を $2$ 以上の整数とする。
+  (A)式の $x^{2j+1}$ の項に注目すると、
+  \begin{align}
+  (2j+2) C_{2j+2} - 2 C_{2j} &= 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  C_{2j+2} &= \frac{1}{j+1} C_{2j}
+  \end{align}
+  がわかる。
+  さらに $C_4=1/2$ であるから、
+  \begin{align}
+  C_{2j} &= \frac{1}{j!}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  (1), (2), (3) より、
+  \begin{align}
+  y(x)
+  &=
+  \sum_{j=2}^\infty \frac{1}{j!} x^{2j}
+  \\
+  &=
+  \sum_{j=0}^\infty \frac{1}{j!} \left( x^2 \right)^j
+  - \left( 1 + x^2 \right)
+  \\
+  &=
+  \exp \left( x^2 \right) - x^2 - 1
+  \end{align}
+  を得る。
+  これが与えられた微分方程式と条件を満たすことも確かめられる。
+  </p>
+
+  <hr />
+  <h2>[4]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  (D) の2番目の式を $t$ で2回微分して、1番目の式を使うと、
+  \begin{align}
+  \frac{d^4 y(t)}{dt^4} - 2 \cdot \left( - 2 y(t) \right) &= 0
+  \\
+  \therefore \ \ 
+  \frac{d^4 y(t)}{dt^4} + 4 y(t) &= 0
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  (D) の2番目の式を $t$ で2回微分して、1番目の式を使うと、
+  \begin{align}
+  \frac{d^4 y(t)}{dt^4} - 2 \cdot \left( - 2 y(t) \right) &= 0
+  \\
+  \therefore \ \ 
+  \frac{d^4 y(t)}{dt^4} + 4 y(t) &= 0
+  \end{align}
+  を得る。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
