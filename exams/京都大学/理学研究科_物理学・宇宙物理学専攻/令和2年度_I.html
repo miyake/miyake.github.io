@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 理学研究科
+      物理学・宇宙物理学専攻
+      令和2年度 I
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 理学研究科
+      <br />
+      物理学・宇宙物理学専攻
+      <br />
+      令和2年度 I
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.scphys.kyoto-u.ac.jp/education/inshi/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>I-2A （統計力学）</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  まず、ボルツマン定数を $k_B$ , 絶対温度を $T$ ,
+  カノニカル分布の分配関数を $Z(T)$ ,
+  ヘルムホルツの自由エネルギーを $F(T)$ ,
+  内部エネルギーを $U(T)$ ,
+  エントロピーを $S(T)$ ,
+  比熱を $C(T)$ とすると、
+  \begin{align}
+  F(T) &= - k_B T \log Z(T)
+  \\
+  S(T) &= - \frac{dF(T)}{dT}
+  \\
+  U(T)
+  &= F(T) + T S(T)
+  \\
+  &= F(T) - T \frac{dF(T)}{dT}
+  \\
+  &= - k_B T \log Z(T) + k_B T \frac{d}{dT} T \log Z(T)
+  \\
+  &= k_B T^2 \frac{d}{dT} \log Z(T)
+  \\
+  C(T) &= \frac{d U(T)}{dT}
+  \end{align}
+  <!-- 比熱はNで割る必要がある？ -->
+  である。
+  </p>
+
+  <p>
+  与えられたハミルトニアンに対する分配関数を求めるため、
+  次の積分を計算しておく
+  （ $\hbar$ はプランク定数を $2 \pi$ で割ったものである）：
+  \begin{align}
+  &\frac{1}{2 \pi \hbar}
+  \int_{- \infty}^\infty \exp \left( - \frac{p^2}{2m k_B T} \right) dp
+  \int_{- \infty}^\infty \exp \left( - \frac{m \omega^2 x^2}{2 k_B T} \right) dx
+  \\
+  &= \frac{1}{2 \pi \hbar}
+  \sqrt{2 \pi m k_B T}
+  \sqrt{\frac{2 \pi k_B T}{m \omega^2}}
+  \\
+  &= \frac{k_B T}{\hbar \omega}
+  \end{align}
+
+  よって、分配関数 $Z(T)$ , 内部エネルギー $U(T)$ , 比熱 $C(T)$ 
+  は次のように計算できる：
+  \begin{align}
+  Z(T)
+  &= \left( \frac{k_B T}{\hbar \omega} \right)^{3N}
+  \\
+
+  U(T)
+  &= k_B T^2 \frac{d}{dT} \log Z(T)
+  \\
+  &= 3N k_B T^2 \frac{d}{dT} \log \left( \frac{k_B T}{\hbar \omega} \right)
+  \\
+  &= 3N k_B T
+  \\
+
+  C(T)
+  &= \frac{d U(T)}{dT}
+  \\
+  &= 3N k_B
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  1自由度の分配関数は次のように計算できる：
+  \begin{align}
+  \sum_{n=0}^\infty \exp
+  \left( - \left(n + \frac{1}{2} \right) \frac{\hbar \omega}{k_B T} \right)
+  &=
+  \frac{ \exp \left( - \frac{\hbar \omega}{2k_BT} \right)}
+  {1 - \exp \left( - \frac{\hbar \omega}{k_BT} \right)}
+  \\
+  &=
+  \frac{1}
+  {\exp \left( \frac{\hbar \omega}{2k_BT} \right)
+  - \exp \left( - \frac{\hbar \omega}{2k_BT} \right)}
+  \\
+  &=
+  \frac{1}{2 \sinh \frac{\hbar \omega}{2k_BT}}
+  \end{align}
+  </p>
+
+  <p>
+  よって、分配関数 $Z(T)$ , 内部エネルギー $U(T)$ , 比熱 $C(T)$ 
+  は次のように計算できる：
+  \begin{align}
+  Z(T)
+  &= \left( 2 \sinh \frac{\hbar \omega}{2k_BT} \right)^{-3N}
+  \\
+
+  U(T)
+  &= k_B T^2 \frac{d}{dT} \log Z(T)
+  \\
+  &= -3N k_B T^2 \frac{d}{dT}
+  \log \left( 2 \sinh \frac{\hbar \omega}{2k_BT} \right)
+  \\
+  &= -3N k_B T^2
+  \frac{ \cosh \frac{\hbar \omega}{2k_BT} }
+  { \sinh \frac{\hbar \omega}{2k_BT} }
+  \cdot \left( - \frac{\hbar \omega}{2k_BT^2} \right)
+  \\
+  &= \frac{3}{2} N \hbar \omega
+  \frac{ \cosh \frac{\hbar \omega}{2k_BT} }
+  { \sinh \frac{\hbar \omega}{2k_BT} }
+  \\
+
+  C(T)
+  &= \frac{d U(T)}{dT}
+  \\
+  &=
+  \frac{3}{2} N \hbar \omega
+  \frac{1}
+  { \sinh^2 \frac{\hbar \omega}{2k_BT} }
+  \cdot \left( - \frac{\hbar \omega}{2k_BT^2} \right)
+  \\
+  &=
+  \frac{3 N \hbar^2 \omega^2}
+  { 4 k_B T^2 \sinh^2 \frac{\hbar \omega}{2k_BT} }
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  (i)
+  高温すなわち $k_BT \gg \hbar \omega$ のとき、
+  \begin{align}
+  \sinh \frac{\hbar \omega}{2k_BT}
+  \simeq \frac{\hbar \omega}{2k_BT}
+  \end{align}
+  であるから、
+  \begin{align}
+  C(T)
+  &\simeq
+  \frac{3 N \hbar^2 \omega^2}
+  { 4 k_B T^2 \left( \frac{\hbar \omega}{2k_BT} \right)^2 }
+  \\
+  &=
+  3Nk_B
+  \end{align}
+  となり、 (1) の結果が再現される。
+  </p>
+
+  <p>
+  (ii)
+  低温すなわち $k_BT \ll \hbar \omega$ のとき、
+  \begin{align}
+  \sinh \frac{\hbar \omega}{2k_BT}
+  \simeq \frac{1}{2} \exp \left( \frac{\hbar \omega}{2k_BT} \right)
+  \end{align}
+  であるから、
+  \begin{align}
+  C(T)
+  &\simeq
+  \frac{3 N \hbar^2 \omega^2}
+  { 4 k_B T^2
+  \left( \frac{1}{2} \exp \left( \frac{\hbar \omega}{2k_BT} \right) \right)^2 }
+  \\
+  &=
+  3Nk_B
+  \left( \frac{\hbar \omega}{k_BT} \right)^2
+  \exp \left( - \frac{\hbar \omega}{k_BT} \right)
+  \end{align}
+  となる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
