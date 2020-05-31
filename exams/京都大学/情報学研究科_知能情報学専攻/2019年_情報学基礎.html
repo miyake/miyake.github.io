@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 情報学研究科
+      知能情報学専攻
+      2019年 情報学基礎
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 情報学研究科
+      <br />
+      知能情報学専攻
+      <br />
+      2019年 情報学基礎
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.ist.i.kyoto-u.ac.jp/ist-exam/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>F-1-1</h2>
+
+  <h3>設問 1</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  \det A
+  = 4 \cdot 7 - (-2) \cdot (-2)
+  = 24
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  A^{-1}
+  = \frac{1}{24}
+  \begin{pmatrix}
+  7 & 2 \\ 2 & 4
+  \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  $A$ の固有値 $\lambda$ は次のように求められる：
+  \begin{align}
+  0
+  &=
+  \det
+  \begin{pmatrix}
+  4 - \lambda & -2 \\ -2 & 7 - \lambda
+  \end{pmatrix}
+  = (4 - \lambda)(7 - \lambda) - 4
+  = (\lambda - 3)(\lambda - 8)
+  \\
+  \therefore \ \ 
+  \lambda &= 3, 8
+  \end{align}
+  </p>
+
+  <p>
+  (i)
+  固有値 $\lambda = 3$ に属する固有ベクトルを求めるために、
+  次のようにおく：
+  \begin{align}
+  \begin{pmatrix} 4 & -2 \\ -2 & 7 \end{pmatrix}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  =
+  3
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \end{align}
+  これから $x=2y$ がわかるので、例えば、
+  \begin{align}
+  \begin{pmatrix} 2 \\ 1 \end{pmatrix}
+  \end{align}
+  が求める固有ベクトルである。
+  </p>
+
+  <p>
+  (ii)
+  固有値 $\lambda = 8$ に属する固有ベクトルを求めるために、
+  次のようにおく：
+  \begin{align}
+  \begin{pmatrix} 4 & -2 \\ -2 & 7 \end{pmatrix}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  =
+  8
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \end{align}
+  これから $2x=-y$ がわかるので、例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ -2 \end{pmatrix}
+  \end{align}
+  が求める固有ベクトルである。
+  </p>
+
+  <h4>(4)</h4>
+
+  <p>
+  任意の実数 $x,y$ について次のように計算できる：
+  \begin{align}
+  \begin{pmatrix} x & y \end{pmatrix}
+  A
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  &=
+  \begin{pmatrix} x & y \end{pmatrix}
+  \begin{pmatrix} 4 & -2 \\ -2 & 7 \end{pmatrix}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \\
+  &=
+  4x^2 - 4xy + 7y^2
+  \\
+  &=
+  4 \left( x - \frac{1}{2} y \right)^2 + 6y^2
+  .
+  \end{align}
+  これは $x=y=0$ のときを除いて正の数であるので、
+  $A$ は正定値行列である。
+  </p>
+
+  <h4>(5)</h4>
+
+  <p>
+  (3) で求めた固有ベクトルを使って、
+  \begin{align}
+  V
+  =
+  \frac{1}{\sqrt{5}}
+  \begin{pmatrix} 2 & 1 \\ 1 & -2 \end{pmatrix}
+  \end{align}
+  とおくと、その転置行列は、
+  \begin{align}
+  V^T
+  =
+  \frac{1}{\sqrt{5}}
+  \begin{pmatrix} 2 & 1 \\ 1 & -2 \end{pmatrix}
+  \end{align}
+  となる。
+
+  これらを使って、次のように $A$ を対角化できる：
+  \begin{align}
+  V^T A V
+  &=
+  \frac{1}{5}
+  \begin{pmatrix} 2 & 1 \\ 1 & -2 \end{pmatrix}
+  \begin{pmatrix} 4 & -2 \\ -2 & 7 \end{pmatrix}
+  \begin{pmatrix} 2 & 1 \\ 1 & -2 \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 3 & 0 \\ 0 & 8 \end{pmatrix}
+  .
+  \end{align}
+  </p>
+
+  <h3>設問 2</h3>
+
+  <p>
+  行列やベクトルのエルミート共役を $\dagger$ ,
+  複素数の複素共役を $\ast$ で表す。
+  </p>
+
+  <h4>(1)</h4>
+
+  <p>
+  実対称行列 $A$ の固有値を $\alpha$ とし、
+  これに属する固有ベクトルを $x$ とする：
+  \begin{align}
+  A x = \alpha x
+  \end{align}
+  両辺に左から $x^\dagger$ をかけると、次を得る：
+  \begin{align}
+  x^\dagger A x = \alpha x^\dagger x
+  \end{align}
+  これのエルミート共役をとり、 $A = A^\dagger$ を使うと、次を得る：
+  \begin{align}
+  x^\dagger A x = \alpha^\ast x^\dagger x
+  \end{align}
+  よって、次を得る：
+  \begin{align}
+  \alpha^\ast x^\dagger x = \alpha x^\dagger x
+  \end{align}
+  $x$ はゼロベクトルではなく $x^\dagger x \gt 0$ なので、
+  次を得る：
+  \begin{align}
+  \alpha^\ast = \alpha
+  \end{align}
+  すなわち、固有値 $\alpha$ は実数である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  実対称行列 $A$ の固有値の2つの相異なる固有値を $\alpha, \beta$ とし、
+  それぞれに属する固有ベクトルを $x, y$ とする：
+  \begin{align}
+  A x = \alpha x
+  , \ \ 
+  A y = \beta y
+  \end{align}
+  1番目の式の両辺に左から $y^\dagger$ をかけ、
+  2番目の式の両辺に左から $x^\dagger$ をかけると、
+  次のようになる：
+  \begin{align}
+  y^\dagger A x = \alpha y^\dagger x
+  , \ \ 
+  x^\dagger A y = \beta x^\dagger y
+  \end{align}
+  これの2番目の式のエルミート共役をとって、
+  $A^\dagger = A, \beta^\ast = \beta$ を使うと、次のようになる：
+  \begin{align}
+  y^\dagger A x = \beta y^\dagger x
+  \end{align}
+  よって、次を得る：
+  \begin{align}
+  (\alpha - \beta) y^\dagger x = 0
+  \end{align}
+
+  $ \alpha \ne \beta $ であるから、 $ y^\dagger x = 0 $
+  すなわち $x$ と $y$ は直交する。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
