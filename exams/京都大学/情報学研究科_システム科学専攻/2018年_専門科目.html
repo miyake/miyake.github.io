@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 情報学研究科
+      システム科学専攻
+      2018年 専門科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 情報学研究科
+      <br />
+      システム科学専攻
+      <br />
+      2018年 専門科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.sys.i.kyoto-u.ac.jp/exam/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>【確率統計】</h2>
+
+  <h3>問題 1</h3>
+
+  <p>
+  $y = \log x$ とおくと、
+  $x = \exp(y), dx = \exp(y) dy$ である。
+  </p>
+
+  <p>
+  期待値を $E$ , 分散を $V$ で表して、次のように計算する：
+  \begin{align}
+  E(X)
+  &=
+  \int_0^\infty x f(x) dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_0^\infty
+  \exp \left[ - \frac{1}{2} \left( \log x - \mu \right)^2 \right]
+  dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty
+  \exp \left[ - \frac{1}{2} \left( y - \mu \right)^2 \right]
+  \exp(y) dy
+  \\
+  &=
+  \frac{\exp \left( \mu + \frac{1}{2} \right) }{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty
+  \exp \left[ - \frac{1}{2} \left\{ y - (\mu + 1) \right\}^2 \right]
+  dy
+  \\
+  &=
+  \exp \left( \mu + \frac{1}{2} \right)
+  \\
+
+  E \left( X^2 \right)
+  &=
+  \int_0^\infty x^2 f(x) dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_0^\infty
+  x
+  \exp \left[ - \frac{1}{2} \left( \log x - \mu \right)^2 \right]
+  dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty
+  \exp \left[ - \frac{1}{2} \left( y - \mu \right)^2 \right]
+  \exp(2y) dy
+  \\
+  &=
+  \frac{\exp \left( 2 \mu + 2 \right) }{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty
+  \exp \left[ - \frac{1}{2} \left\{ y - (\mu + 2) \right\}^2 \right]
+  dy
+  \\
+  &=
+  \exp \left( 2 \mu + 2 \right)
+  \\
+
+  V(X)
+  &=
+  E \left( X^2 \right) - E(X)^2
+  \\
+  &=
+  \exp \left( 2 \mu + 2 \right)
+  - \exp \left( 2 \mu + 1 \right)
+  \\
+  &=
+  \exp \left( 2 \mu + 1 \right) (e-1)
+  \end{align}
+  </p>
+
+  <h3>問題 2</h3>
+
+  <h4>(1)</h4>
+
+  <h5>(1-1)</h5>
+
+  <p>
+  \begin{align}
+  \frac{d}{d \mu} \log f(x;\mu)
+  &=
+  \frac{d}{d \mu} \log
+  \left[ \frac{1}{\mu} \exp \left( - \frac{x}{\mu} \right) \right]
+  \\
+  &=
+  \frac{d}{d \mu} \left( - \log \mu - \frac{x}{\mu} \right)
+  \\
+  &=
+  - \frac{1}{\mu} + \frac{x}{\mu^2}
+  \\
+  &=
+  \frac{\mu - x}{\mu^2}
+  \end{align}
+  であるから、
+  \begin{align}
+  \hat{\mu} = X
+  \end{align}
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
