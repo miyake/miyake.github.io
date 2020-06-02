@@ -227,7 +227,115 @@
   となる。
   </p>
 
+  <hr />
+  <h2>I-2B （量子力学）</h2>
 
+  <h3>(1)</h3>
+
+  <p>
+  与えられたシュレディンガー方程式に $\Psi(x,t)=e^{-iEt/\hbar} \phi(x)$
+  を代入して整理すると、次を得る：
+  \begin{align}
+  E \phi (x) &= - \frac{\hbar^2}{2m} \phi^{''} (x) + V(x) \phi(x)
+  \\
+  \therefore \ \ 
+  \frac{\hbar^2}{2m} \phi^{''} (x) &= \left( V(x) - E \right) \phi(x)
+  \end{align}
+
+  $x_1 \lt 0 \lt x_2$ について、上の式を $x_1$ から $x_2$ まで積分すると、
+  \begin{align}
+  \frac{\hbar^2}{2m} \left\{ \phi^{'} (x_2) - \phi^{'} (x_1) \right\}
+  &=
+  \int_{x_1}^{x_2} \left( V(x) - E \right) \phi(x) dx
+  \\
+  &=
+  - E \int_{x_1}^0 \phi(x) dx
+  + (V_0-E) \int_0^{x_2} \phi(x) dx
+  \end{align}
+  である。
+
+  $\phi(x)$ は有界であるから、
+  \begin{align}
+  \lim_{x_1 \to -0} \int_{x_1}^0 \phi(x) dx = 0
+  , \ \ 
+  \lim_{x_2 \to +0} \int_0^{x_2} \phi(x) dx = 0
+  \end{align}
+  なので、次を得る：
+  \begin{align}
+  \lim_{x_1 \to -0} \phi^{'} (x_1)
+  = \lim_{x_2 \to +0} \phi^{'} (x_2)
+  \\
+  \end{align}
+  すなわち、$\phi^{'} (x)$ は $x=0$ において連続である。
+  </p>
+
+  <p>
+  同様にして、$\phi^{'} (x)$ は $x=a$ においても連続である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  次のようにおくことができる：
+  \begin{align}
+  \phi(x) =
+  \begin{cases}
+  e^{ikx} + R e^{-ikx}
+  &( x \leq 0 )
+  \\
+  A e^{\beta x} + B e^{- \beta x}
+  &( 0 \leq x \leq a )
+  \\
+  T e^{ikx}
+  &( a \leq x )
+  \end{cases}
+  \end{align}
+  ここで、複素数 $R,A,B,T$ は次のような接続の条件から決めることができる。
+  </p>
+
+  <p>
+  $x=0$ における $\phi(x), \phi^{'}(x)$ の連続性から次を得る：
+  \begin{align}
+  1+R=A+B
+  , \ \ 
+  ik-ikR= \beta A - \beta B
+  \end{align}
+
+  $x=a$ における $\phi(x), \phi^{'}(x)$ の連続性から次を得る：
+  \begin{align}
+  A e^{\beta a} + B e^{- \beta a} = T e^{ika}
+  , \ \ 
+  \beta A e^{\beta a} - \beta B e^{- \beta a} = ik T e^{ika}
+  \end{align}
+
+  これを $T$ について解くと、次を得る：
+  \begin{align}
+  T =
+  \frac{2ik \beta e^{-ika}}
+  { - (\beta^2 - k^2) \sinh \beta a + 2ik \beta \cosh \beta a }
+  \end{align}
+  </p>
+
+  <p>
+  よって、透過率は次のようになる：
+  \begin{align}
+  |T|^2
+  &=
+  \frac{4 k^2 \beta^2}
+  {4 k^2 \beta^2 + (\beta^2 + k^2)^2 \sinh^2 \beta a }
+  \\
+  &=
+  \frac{1}
+  { 1 + \frac{(\beta^2 + k^2)^2}{4k^2 \beta^2} \sinh^2 \beta a }
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $\beta a \to \infty$ のとき、 $ \sinh \beta a \to \infty $
+  であるから、 $|T|^2 \to 0$ となる。
+  </p>
 
   <hr />
   <p>
