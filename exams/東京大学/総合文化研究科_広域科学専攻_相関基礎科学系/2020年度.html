@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 総合文化研究科 広域科学専攻 相関基礎科学系
+      2020年度 総合科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京大学 大学院 総合文化研究科
+    <br />
+    広域科学専攻 相関基礎科学系
+    <br />
+    2020年度 総合科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.c.u-tokyo.ac.jp/graduate/admission/master-doctor/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+  </p>
+
+  <hr />
+  <h2>第2問 物理学 (1)</h2>
+
+  <h3>I</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  $x \lt 0$ のとき、与えられた方程式は、
+  \begin{align}
+  - \frac{\hbar^2}{2m} \frac{d^2 \psi(x)}{dx^2} = E \psi(x)
+  \end{align}
+  となるから、これに $\psi(x)=Ae^{ik_1x}+Be^{-ik_1x}$ を代入して、
+  次を得る：
+  \begin{align}
+  \frac{\hbar^2 k_1^2}{2m} = E
+  , \ \ 
+  \therefore \ \ 
+  k_1 = \frac{\sqrt{2mE}}{\hbar}
+  \end{align}
+  </p>
+
+  <p>
+  $x \gt 0$ のとき、与えられた方程式は、
+  \begin{align}
+  - \frac{\hbar^2}{2m} \frac{d^2 \psi(x)}{dx^2} = (E-V_0) \psi(x)
+  \end{align}
+  となるから、これに $\psi(x)=Ce^{ik_2x}$ を代入して、
+  次を得る：
+  \begin{align}
+  \frac{\hbar^2 k_2^2}{2m} = E-V_0
+  , \ \ 
+  \therefore \ \ 
+  k_2 = \frac{\sqrt{2m(E-V_0)}}{\hbar}
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  $x=0$ において、 $\psi(x), d \psi(x) / dx$ は連続であるから、
+  \begin{align}
+  A+B=C
+  , \ \ 
+  ik_1(A-B)=ik_2C
+  \end{align}
+  が成り立つ。
+  $B$ を消去して $C$ について解くと、次を得る：
+  \begin{align}
+  C = \frac{2k_1}{k_1+k_2} A
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  (2) より、
+  \begin{align}
+  B = \frac{k_1-k_2}{k_1+k_2} A
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  k_2 |C|^2
+  &= k_2 \frac{4k_1^2}{(k_1+k_2)^2} |A|^2
+  \end{align}
+  </p>
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+  </p>
+
+</body>
+</html>
+
