@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 情報科学研究科
+      数学
+      2019年8月実施
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      情報科学研究科 数学
+      <br />
+      2019年8月実施
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.math.is.tohoku.ac.jp/admission/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[6]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  単位円板 $\Omega$ の面積は $\pi$ であるから、
+  $X, Y$ の同時密度関数 $f(x,y)$ は、
+  \begin{align}
+  f(x,y) = \frac{1}{\pi}
+  \ \ \ \ 
+  \left( (x,y) \in \Omega \right)
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  f_X(x)
+  &= \int_{- \sqrt{1 - x^2}}^{\sqrt{1 - x^2}} f(x,y) dy
+  \\
+  &= \frac{1}{\pi} \int_{- \sqrt{1 - x^2}}^{\sqrt{1 - x^2}} dy
+  \\
+  &= \frac{2}{\pi} \sqrt{1 - x^2}
+  \ \ \ \ \ \ \ \ 
+  ( -1 \leq x \leq 1 )
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $f_X(x)$ は 偶関数であるから、明らかに、
+  \begin{align}
+  E[X] = 0
+  \end{align}
+  である。
+  また、
+  \begin{align}
+  E[X^2]
+  &=
+  \int_{-1}^1 x^2 f_X(x) dx
+  \\
+  &=
+  \frac{2}{\pi} \int_{-1}^1 x^2 \sqrt{1 - x^2} dx
+  \\
+  &=
+  \frac{4}{\pi} \int_0^1 x^2 \sqrt{1 - x^2} dx
+  \\
+  &=
+  \frac{4}{\pi} \int_0^{\pi / 2} \sin^2 \theta \cos^2 \theta d \theta
+  \ \ \ \ \ \ \ \ 
+  ( x = \sin \theta )
+  \\
+  &=
+  \frac{1}{\pi} \int_0^{\pi / 2} \sin^2 2 \theta d \theta
+  \\
+  &=
+  \frac{1}{\pi} \int_0^{\pi / 2} \frac{1 - \cos 4 \theta}{2} d \theta
+  \\
+  &=
+  \frac{1}{2 \pi} \left[ \theta - \frac{1}{4} \sin 4 \theta \right]_0^{\pi / 2}
+  \\
+  &=
+  \frac{1}{4}
+  \end{align}
+  であるから、
+
+  \begin{align}
+  V[X]
+  &= E[X^2] - E[X]^2
+  \\
+  &=
+  \frac{1}{4}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $E[X] = 0$ と同様に $E[Y] = 0$ である。
+  また、 $ E[XY] = 0 $ でもある。
+  よって、
+  \begin{align}
+  \text{Cov} (X, Y) = 0
+  \end{align}
+  である。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  $Y$ の確率密度関数 $f_Y(y)$ は (1) と同様にして、
+  \begin{align}
+  f_Y(y) = \frac{2}{\pi} \sqrt{ 1 - y^2 }
+  \ \ \ \ \ \ \ \ 
+  ( -1 \leq y \leq 1 )
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  f(x,y) \neq f_X(x) f_Y(y)
+  \end{align}
+  であるから、 $X,Y$ は独立でない。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
