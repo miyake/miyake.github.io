@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院 理学院
+      物理学系
+      平成30年度 午前
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    理学院 物理学系
+    <br />
+    平成30年度 午前
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html#h2-science">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[1]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  I_l
+  &= \int_0^l \xi^2 \frac{m}{l} d \xi
+  = \frac{m}{l} \left[ \frac{\xi^3}{3} \right]_0^l
+  = \frac{1}{3} m l^2
+  \\
+  I_a
+  &= \int_0^a r^2 M \frac{2 \pi r}{\pi a^2} dr
+  = \frac{2M}{a^2} \int_0^a r^3 dr
+  = \frac{2M}{a^2} \left[ \frac{r^4}{4} \right]_0^a
+  = \frac{1}{2} M a^2
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  V
+  &= mg \frac{l}{2} ( 1 - \cos \theta )
+  + Mg \left\{ l ( 1 - \cos \theta ) + a ( 1 - \cos \phi ) \right\}
+  \\
+  &= \frac{m+2M}{2} gl ( 1 - \cos \theta ) + Mga ( 1 - \cos \phi )
+  \\
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $O$ の座標を $(X,Y)$ とすると、
+  \begin{align}
+  X &= l \cos \theta + a \cos \phi
+  , \ \ \ \ 
+  Y = l \sin \theta + a \sin \phi
+  \\
+  \therefore \ \ \ \ 
+  \dot{X} &= - l \dot{\theta} \sin \theta - a \dot{\phi} \sin \phi
+  , \ \ \ \ 
+  \dot{Y} = l \dot{\theta} \cos \theta + a \dot{\phi} \cos \phi
+  \end{align}
+  であるから、
+  \begin{align}
+  T
+  &=
+  \frac{1}{2} I_l \dot{\theta}^2
+  + \frac{1}{2} M \left( \dot{X}^2 + \dot{Y}^2 \right)
+  + \frac{1}{2} I_a \dot{\phi}^2
+  \\
+  &=
+  \frac{1}{6} m l^2 \dot{\theta}^2
+  + \frac{1}{2} M \left( l^2 \dot{\theta}^2 + a^2 \dot{\phi}^2
+  + 2la \dot{\theta} \dot{\phi} \cos (\theta - \phi) \right)
+  + \frac{1}{4} M a^2 \dot{\phi}^2
+  \\
+  &=
+  \frac{m+3M}{6} l^2 \dot{\theta}^2
+  + \frac{3}{4} M a^2 \dot{\phi}^2
+  + Mla \dot{\theta} \dot{\phi} \cos (\theta - \phi)
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  $\theta, \phi, \dot{\theta}, \dot{\phi}$ の2次までで、
+  \begin{align}
+  V
+  &= \frac{m+2M}{4} gl \theta^2 + \frac{1}{2} Mga \phi^2
+  \\
+  T
+  &=
+  \frac{m+3M}{6} l^2 \dot{\theta}^2
+  + \frac{3}{4} M a^2 \dot{\phi}^2
+  + Mla \dot{\theta} \dot{\phi}
+  \end{align}
+  であるから、ラグランジアン $L$ は
+  \begin{align}
+  L
+  &= T - V
+  \\
+  &=
+  \frac{m+3M}{6} l^2 \dot{\theta}^2
+  + \frac{3}{4} M a^2 \dot{\phi}^2
+  + Mla \dot{\theta} \dot{\phi}
+  - \frac{m+2M}{4} gl \theta^2 - \frac{1}{2} Mga \phi^2
+  \end{align}
+  となる。
+  よって、
+  \begin{align}
+  \frac{\partial L}{\partial \dot{\theta}}
+  &=
+  \frac{m+3M}{3} l^2 \dot{\theta}
+  + Mla \dot{\phi}
+  \\
+  \frac{\partial L}{\partial \theta}
+  &=
+  - \frac{m+2M}{2} gl \theta
+  \\
+  \frac{\partial L}{\partial \dot{\phi}}
+  &=
+  \frac{3}{2} M a^2 \dot{\phi}
+  + Mla \dot{\theta}
+  \\
+  \frac{\partial L}{\partial \phi}
+  &=
+  - Mga \phi
+  \end{align}
+  であるから、 $\theta, \phi$
+  に関するオイラー-ラグランジュの方程式は、それぞれ、
+  \begin{align}
+  \frac{m+3M}{3} l^2 \ddot{\theta} + Mla \ddot{\phi}
+  &=
+  - \frac{m+2M}{2} gl \theta
+  \\
+  \frac{3}{2} M a^2 \ddot{\phi} + Mla \ddot{\theta}
+  &=
+  - Mga \phi
+  \end{align}
+  よって、
+  \begin{align}
+  \frac{m+3M}{3} l \ddot{\theta} + Ma \ddot{\phi}
+  &=
+  - \frac{m+2M}{2} g \theta
+  \\
+  \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
+  &=
+  - g \phi
+  \end{align}
+  である。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  (4) で得た運動方程式は、 $m/M \to 0$ で次のようになる：
+  \begin{align}
+  l \ddot{\theta} + a \ddot{\phi}
+  &=
+  - g \theta
+  \\
+  \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
+  &=
+  - g \phi
+  \end{align}
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
