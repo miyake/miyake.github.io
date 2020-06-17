@@ -168,27 +168,31 @@
   - Mga \phi
   \end{align}
   であるから、 $\theta, \phi$
-  に関するオイラー-ラグランジュの方程式は、それぞれ、
+  に関するオイラー-ラグランジュの方程式は、次のようになる：
   \begin{align}
+  &
+  \begin{cases}
   \frac{m+3M}{3} l^2 \ddot{\theta} + Mla \ddot{\phi}
-  &=
+  =
   - \frac{m+2M}{2} gl \theta
   \\
   \frac{3}{2} M a^2 \ddot{\phi} + Mla \ddot{\theta}
-  &=
+  =
   - Mga \phi
-  \end{align}
-  よって、
-  \begin{align}
+  \end{cases}
+  \\
+  \therefore \ \ \ \ 
+  &
+  \begin{cases}
   \frac{m+3M}{3} l \ddot{\theta} + Ma \ddot{\phi}
-  &=
+  =
   - \frac{m+2M}{2} g \theta
   \\
   \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
-  &=
+  =
   - g \phi
+  \end{cases}
   \end{align}
-  である。
   </p>
 
   <h3>(5)</h3>
@@ -196,14 +200,87 @@
   <p>
   (4) で得た運動方程式は、 $m/M \to 0$ で次のようになる：
   \begin{align}
+  \begin{cases}
   l \ddot{\theta} + a \ddot{\phi}
-  &=
+  =
   - g \theta
   \\
   \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
-  &=
+  =
   - g \phi
+  \end{cases}
   \end{align}
+  基準振動を求めるために、
+  $ \theta = A \sin \omega t, \phi = B \sin \omega t $
+  とすると、次のようになる：
+  \begin{align}
+  &
+  \begin{cases}
+  - l \omega^2 A - a \omega^2 B
+  =
+  - g A
+  \\
+  - \frac{3}{2} a \omega^2 B - l \omega^2 A
+  =
+  - g B
+  \end{cases}
+  \\
+  \therefore \ \ \ \ 
+  &
+  \begin{cases}
+  \left( l \omega^2 - g \right) A + a \omega^2 B
+  =
+  0
+  \\
+  l \omega^2 A
+  + \left( \frac{3}{2} a \omega^2 - g \right) B
+  =
+  0
+  \end{cases}
+  \end{align}
+
+  $A=B=0$ 以外の解をもつための条件は、
+  \begin{align}
+  0
+  &=
+  \begin{vmatrix}
+  l \omega^2 - g & a \omega^2 \\
+  l \omega^2 & \frac{3}{2} a \omega^2 - g
+  \end{vmatrix}
+  \\
+  &=
+  \frac{1}{2} \left\{ la \omega^4 - (2l+3a) g \omega^2 + g^2 \right\}
+  \end{align}
+  であるから、
+  \begin{align}
+  \omega_{\pm}^2
+  &=
+  \frac{(2l+3a)g \pm \sqrt{(2l+3a)^2 g^2 - 4lag^2}}{2la}
+  \\
+  &=
+  \frac{g}{2la}
+  \left\{ 2l+3a \pm \sqrt{4l^2 + 8la + 9a^2} \right\}
+  \end{align}
+  を得る（複合同順）。
+  </p>
+
+  <h3>(6)</h3>
+
+  <p>
+  (5) より、
+  角振動数 $\omega_+$ の基準振動の場合、
+  $ l \gg a $ では、
+  \begin{align}
+  B \simeq - \frac{l}{a} A
+  \end{align}
+  であるから、適切な模式図は図Aである。
+  また、
+  角振動数 $\omega_-$ の基準振動の場合、
+  $ l \gg a $ では、
+  \begin{align}
+  B \simeq \frac{l}{a} A
+  \end{align}
+  であるから、適切な模式図は図Cである。
   </p>
 
 
