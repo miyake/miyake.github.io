@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      応用物理学専攻
+      令和元年度 基礎科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      工学研究科 応用物理学専攻
+      <br />
+      令和元年度 基礎科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.eng.tohoku.ac.jp/admission/grad/past_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[問題1] 量子力学</h2>
+
+  <h3>(1)</h3>
+
+  <h4>a)</h4>
+
+  <p>
+  \begin{align}
+  - \frac{\hbar^2}{2m} \psi''(x) + \frac{1}{2} kx^2 \psi(x)
+  = E \psi(x)
+  \end{align}
+  </p>
+
+  <h4>b)</h4>
+
+  <p>
+  \begin{align}
+  1
+  &=
+  \int_{- \infty}^\infty \left| \psi_0(x) \right|^2 dx
+  \\
+  &=
+  | C_0 |^2
+  \int_{- \infty}^\infty \exp
+  \left( - \frac{\sqrt{mk}}{\hbar} x^2 \right) dx
+  \\
+  &=
+  | C_0 |^2
+  \sqrt{\frac{\pi \hbar}{\sqrt{mk}}}
+  \\
+  &=
+  | C_0 |^2
+  \left( \frac{\pi^2 \hbar^2}{mk} \right)^{1/4}
+  \end{align}
+  であるから、
+  \begin{align}
+  C_0
+  =
+  \left( \frac{mk}{\pi^2 \hbar^2} \right)^{1/8}
+  \end{align}
+  とすればよい。
+  </p>
+
+  <h4>c)</h4>
+
+  <p>
+  \begin{align}
+  \psi_0'(x)
+  &=
+  - C_0 \frac{\sqrt{mk}}{\hbar} x \exp
+  \left( - \frac{\sqrt{mk}}{2 \hbar} x^2 \right)
+  \\
+  &=
+  - \frac{\sqrt{mk}}{\hbar} x \psi_0(x)
+  \\
+  \psi_0''(x)
+  &=
+  - \frac{\sqrt{mk}}{\hbar} \psi_0(x)
+  - \frac{\sqrt{mk}}{\hbar} x \psi_0'(x)
+  \\
+  &=
+  - \frac{\sqrt{mk}}{\hbar} \psi_0(x)
+  + \frac{mk}{\hbar^2} x^2 \psi_0(x)
+  \end{align}
+  より、
+  \begin{align}
+  - \frac{\hbar^2}{2m} \psi_0''(x) + \frac{1}{2} kx^2 \psi_0(x)
+  &=
+  \frac{\hbar}{2} \sqrt{\frac{k}{m}} \psi_0(x)
+  - \frac{1}{2} k x^2 \psi_0(x)
+  + \frac{1}{2} k x^2 \psi_0(x)
+  \\
+  &=
+  \frac{\hbar}{2} \sqrt{\frac{k}{m}} \psi_0(x)
+  \end{align}
+  であるから、
+  \begin{align}
+  E_0 =
+  \frac{\hbar}{2} \sqrt{\frac{k}{m}}
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>d)</h4>
+
+  <p>
+  \begin{align}
+  \langle x \rangle
+  &=
+  \int_{- \infty}^\infty \psi_0^*(x) x \psi_0(x) dx
+  \\
+  &=
+  C_0^2 \int_{- \infty}^\infty x
+  \exp \left( - \frac{\sqrt{mk}}{\hbar} x^2 \right) dx
+  \end{align}
+  であるが、被積分関数は奇関数なので、
+  \begin{align}
+  \langle x \rangle
+  = 0
+  \end{align}
+  がわかる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
