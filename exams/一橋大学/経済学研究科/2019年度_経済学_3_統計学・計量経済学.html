@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      一橋大学 大学院
+      経済学研究科
+      2019年度 経済学
+      3 統計学・計量経済学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    一橋大学 大学院 経済学研究科
+    <br />
+    2019年度 経済学
+    <br />
+    3 統計学・計量経済学
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.econ.hit-u.ac.jp/jpn/page/examinee/graduate_admissions/past_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>第2題</h2>
+
+  <h3>1.</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  \begin{align}
+  P(x)
+  &=
+  \frac{(x+r-1)!}{x! \ (r-1)!} p^{r-1} (1-p)^x \cdot p
+  \\
+  &=
+  \frac{(x+r-1)!}{x! \ (r-1)!} p^r (1-p)^x
+  \end{align}
+  </p>
+
+  <p>
+  （これは
+  <a href="https://ja.wikipedia.org/wiki/負の二項分布">負の2項分布</a>
+  である。）
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  期待値を $E$, 分散を $V$ で表して、次のように計算する：
+  \begin{align}
+  E(X)
+  &=
+  \sum_{x=0}^\infty x P(x)
+  \\
+  &=
+  \sum_{x=1}^\infty \frac{(x+r-1)!}{(x-1)! \ (r-1)!} p^r (1-p)^x
+  \\
+  &=
+  \sum_{y=0}^\infty
+  \frac{(y+s-1)!}{y! \ (s-2)!} p^{s-1} (1-p)^{y+1}
+  \ \ \ \ \ \ \ \ 
+  (y = x-1, s = r+1)
+  \\
+  &=
+  \frac{(s-1) (1-p)}{p}
+  \sum_{y=0}^\infty
+  \frac{(y+s-1)!}{y! \ (s-1)!} p^s (1-p)^y
+  \\
+  &=
+  r \frac{1-p}{p}
+  \\
+  E(X(X-1))
+  &=
+  \sum_{x=0}^\infty x (x-1) P(x)
+  \\
+  &=
+  \sum_{x=2}^\infty \frac{(x+r-1)!}{(x-2)! \ (r-1)!} p^r (1-p)^x
+  \\
+  &=
+  \sum_{y=0}^\infty
+  \frac{(y+s-1)!}{y! \ (s-3)!} p^{s-2} (1-p)^{y+2}
+  \ \ \ \ \ \ \ \ 
+  (y = x-2, s = r+2)
+  \\
+  &=
+  \frac{(s-1)(s-2) (1-p)^2}{p^2}
+  \sum_{y=0}^\infty
+  \frac{(y+s-1)!}{y! \ (s-1)!} p^s (1-p)^y
+  \\
+  &=
+  r(r+1) \left( \frac{1-p}{p} \right)^2
+  \\
+  V(X)
+  &=
+  E(X(X-1)) + E(X) - E(X)^2
+  \\
+  &=
+  r(r+1) \left( \frac{1-p}{p} \right)^2
+  + r \frac{1-p}{p}
+  - \left( r \frac{1-p}{p} \right)^2
+  \\
+  &=
+  r \frac{1-p}{p^2}
+  \end{align}
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  対数尤度関数は、
+  \begin{align}
+  L
+  &=
+  \log \frac{(x+r-1)!}{x! \ (r-1)!} + r \log p + x \log (1-p)
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{dL}{dp}
+  &=
+  r \frac{1}{p} + x \frac{-1}{1-p}
+  \\
+  &=
+  \frac{r-(r+x)p}{p(1-p)}
+  \end{align}
+  であるから、
+  $p$ の最尤推定量 $\hat{p}$ は、
+  \begin{align}
+  \hat{p} = \frac{r}{r+x}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(d)</h4>
+
+  <p>
+  $ r(1-p) = \lambda$ とおくと、
+  $ p = 1 - \lambda / r $ であり、
+  \begin{align}
+  P(x)
+  &=
+  \frac{(x+r-1)!}{x! \ (r-1)!} p^r (1-p)^x
+  \\
+  &=
+  \frac{(x+r-1)(x+r-2) \cdots (r-1)}{x!}
+  \left( 1 - \frac{\lambda}{r} \right)^r
+  \left( \frac{\lambda}{r} \right)^x
+  \\
+  &=
+  \frac{1}{x!}
+  \left(1 + \frac{x-1}{r} \right)
+  \left(1 + \frac{x-2}{r} \right)
+  \cdots
+  \left(1 + \frac{-1}{r} \right)
+  \left( 1 - \frac{\lambda}{r} \right)^r
+  \lambda^x
+  \\
+  &\xrightarrow{r \to \infty}
+  \frac{1}{x!} e^{- \lambda} \lambda^x
+  \end{align}
+  を得る。
+  （これは
+  <a href="https://ja.wikipedia.org/wiki/ポアソン分布">
+    ポアソン分布
+  </a>
+  である。）
+  </a>
+  </p>
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
