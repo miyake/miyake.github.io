@@ -156,6 +156,100 @@
   がわかる。
   </p>
 
+  <h3>(2)</h3>
+
+  <h4>a)</h4>
+
+  <p>
+  1次の摂動論で、基底状態の波動関数は、
+  \begin{align}
+  &\psi_0(x) + \sum_{n=1}^\infty \frac{\psi_n(x)}{E_0-E_n}
+  \int_{- \infty}^\infty \psi_n^*(x) U(x) \psi_0(x) dx
+  \\
+  &=
+  \psi_0(x) - F \sum_{n=1}^\infty \frac{\psi_n(x)}{E_0-E_n}
+  \int_{- \infty}^\infty x \psi_n^*(x) \psi_0(x) dx
+  \\
+  &=
+  \psi_0(x) + F \frac{1}{\hbar} \sqrt{\frac{m}{k}}
+  \left( \frac{\hbar}{2 \sqrt{mk}} \right)^{1/2} \psi_1(x)
+  \\
+  &=
+  \psi_0(x) + C_1 \psi_1(x)
+  \end{align}
+  である。
+  ただし、
+  \begin{align}
+  C_1 =
+  F \frac{1}{\hbar} \sqrt{\frac{m}{k}}
+  \left( \frac{\hbar}{2 \sqrt{mk}} \right)^{1/2}
+  \end{align}
+  とおいた。
+  よって、この場合、
+  \begin{align}
+  \langle x \rangle
+  &=
+  \int_{- \infty}^\infty
+  \left(\psi_0(x) + C_1 \psi_1(x) \right)^* x
+  \left(\psi_0(x) + C_1 \psi_1(x) \right) dx
+  \\
+  &=
+  2 C_1 \int_{- \infty}^\infty x
+  \psi_1^*(x) \psi_0(x) dx
+  \\
+  &=
+  2 F \frac{1}{\hbar} \sqrt{\frac{m}{k}}
+  \left( \frac{\hbar}{2 \sqrt{mk}} \right)^{1/2}
+  \left( \frac{\hbar}{2 \sqrt{mk}} \right)^{1/2}
+  \\
+  &=
+  \frac{F}{k}
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>b)</h4>
+
+  <p>
+  \begin{align}
+  V(x) + U(x)
+  &=
+  \frac{1}{2} k x^2 - F x
+  \\
+  &=
+  \frac{1}{2} k \left( x - \frac{F}{k} \right)^2
+  - \frac{F^2}{2k}
+  \end{align}
+  であるから、シュレディンガー方程式は次のようになる：
+  \begin{align}
+  - \frac{\hbar^2}{2m} \psi''(x)
+  + \frac{1}{2} k \left( x - \frac{F}{k} \right)^2 \psi(x)
+  = \left(E + \frac{F^2}{2k} \right) \psi(x)
+  \end{align}
+  ここで、
+  \begin{align}
+  \xi = x - \frac{F}{k}
+  , \ \ \ \ 
+  \phi(\xi) = \psi \left( \xi + \frac{F}{k} \right)
+  \end{align}
+  とおくと、
+  \begin{align}
+  - \frac{\hbar^2}{2m} \phi''(\xi)
+  + \frac{1}{2} k \xi^2 \phi(\xi)
+  = \left(E + \frac{F^2}{2k} \right) \phi(\xi)
+  \end{align}
+  となるから、 (1) d) と同様にして、
+  \begin{align}
+  \langle \xi \rangle = 0
+  \end{align}
+  がわかる。
+  よって、
+  \begin{align}
+  \langle x \rangle = \frac{F}{k}
+  \end{align}
+  を得る。
+  </p>
+
 
 
   <hr />
