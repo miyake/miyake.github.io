@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 学際情報学府 学際情報学専攻 生物統計情報学コース
+      2020年度 専門科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京大学 大学院 学際情報学府
+    <br />
+    学際情報学専攻 生物統計情報学コース
+    <br />
+    2020年度 専門科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.iii.u-tokyo.ac.jp/admissions#master">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>第1問 （必須問題）</h2>
+
+  <h3>(1-1)</h3>
+
+  <p>
+  イ. 61点
+  </p>
+
+  <h3>(1-2)</h3>
+
+  <p>
+  オ. (b), (e)
+  </p>
+
+  <h3>(1-3)</h3>
+
+  <p>
+  エ. 40
+  </p>
+
+  <p>
+  なぜなら、
+  <br />
+  \begin{align}
+  E(Y)
+  &=
+  E(2X^2)
+  =
+  2 E(X^2)
+  =
+  2 \left( V(X) + E(X)^2 \right)
+  \\
+  &=
+  2 \cdot \left( 4^2 + 2^2 \right)
+  =
+  40
+  \end{align}
+  </p>
+
+  <h3>(1-4)</h3>
+
+  <p>
+  イ. 0.16
+  </p>
+
+  <h3>(1-5)</h3>
+
+  <p>
+  ウ. $ \rho $
+  </p>
+
+  <h3>(1-6)</h3>
+
+  <p>
+  ア. 0.1
+  </p>
+
+  <h3>(1-7)</h3>
+
+  <p>
+  エ. 62.5%
+  </p>
+
+  <p>
+  なぜなら、
+  \begin{align}
+  1 - {}_4 C_2 \left( \frac{1}{2} \right)^4
+  = \frac{5}{8}
+  = 0.625
+  \end{align}
+  </p>
+
+  <!--
+  <h3>(1-8)</h3>
+
+  <p>
+  エ. 1/p + 1/(1-p)
+  </p>
+
+  <p>
+  なぜなら、
+  \begin{align}
+  \frac{d}{dp} \log \frac{p}{1-p}
+  &= \frac{d}{dp} \left( \log p - \log (1-p) \right)
+  \\
+  &= \frac{1}{p} - \frac{-1}{1-p}
+  \\
+  &= \frac{1}{p} + \frac{1}{1-p}
+  \end{align}
+  </p>
+
+  <h3>(1-9)</h3>
+
+  <p>
+  エ.
+  $ ( \mu + \sigma^2 t ) \exp \left( \mu t + \sigma^2 t^2 / 2 \right)$
+  </p>
+
+  <h3>(1-10)</h3>
+
+  <p>
+  オ. 30
+  </p>
+
+  <p>
+  なぜなら、
+  \begin{align}
+  \int_0^1 x^2 (1-x)^2 dx
+  &= \int_0^1 (x^4 - 2x^3 + x^2) dx
+  = \left[ \frac{x^5}{5} - \frac{x^4}{2} + \frac{x^3}{3} \right]_0^1
+  \\
+  &= \frac{1}{5} - \frac{1}{2} + \frac{1}{3}
+  = \frac{6-15+10}{30}
+  = \frac{1}{30}
+  \end{align}
+  </p>
+
+  <h3>(1-11)</h3>
+
+  <p>
+  ウ.
+  $ \sqrt{\pi} $
+  </p>
+
+  <p>
+  なぜなら、
+  $ x = \sqrt{t} $
+  とおくと、
+  $ x^2 = t, \ 2xdx=dt $ であり、
+  \begin{align}
+  \int_0^\infty t^{-1/2} e^{-t} dt
+  &= \int_0^\infty x^{-1} e^{-x^2} 2xdx
+  = 2 \int_0^\infty e^{-x^2} dx
+  = 2 \cdot \frac{\sqrt{\pi}}{2}
+  = \sqrt{\pi}
+  \end{align}
+  </p>
+
+  <h3>(1-12)</h3>
+
+  <p>
+  オ. 26
+  </p>
+
+  <p>
+  なぜなら、期待値と分散をそれぞれ $E, V$ で表すと、
+  \begin{align}
+  E(X^2) &= V(X) + E(X)^2 = 9 + 3^2 = 18
+  \\
+  E(Y^2) &= V(Y) + E(Y)^2 = 4 + 2^2 = 8
+  \\
+  E(X^2+Y^2) &= E(X^2) + E(Y^2) = 18 + 8 = 26
+  \end{align}
+  </p>
+
+  <h3>(1-13)</h3>
+
+  <h3>(1-14)</h3>
+
+  <p>
+  オ. $\exp (-0.3(t_2-t_1))$
+  </p>
+
+  <p>
+  なぜなら、 $f(t) = \lambda \exp(- \lambda t)$ とすると、
+  \begin{align}
+  P(T \gt t)
+  &= 1 - \int_0^t f(s) ds
+  = 1 - \lambda \int_0^t e^{- \lambda s} ds
+  \\
+  &= 1 + \left[ e^{- \lambda s} \right]_0^t
+  = e^{- \lambda t}
+  \\
+
+  \therefore \ \ 
+  P(T \gt t_2 | T \gt t_1)
+  &= \frac{P(T \gt t_2)}{P(T \gt t_1)}
+  = \frac{e^{- \lambda t_2}}{e^{- \lambda t_1}}
+  = e^{- \lambda (t_2 - t_1)}
+  \end{align}
+  </p>
+
+  <h3>(1-15)</h3>
+
+  <p>
+  オ. $ \left( \bar{X}_n - p \right) / \sqrt{p(1-p)/n} $
+  </p>
+
+  <h3>(1-16)</h3>
+
+  <p>
+  オ. 対立仮説 $H_1$ が正しいとき、
+  帰無仮説 $H_0$ が棄却されない確率は $0.2$ である。
+  </p>
+
+  <h3>(1-17)</h3>
+
+  <p>
+  ア. (0.21, 0.39)
+  </p>
+
+  <h3>(1-18)</h3>
+
+  <p>
+  オ. 2.67
+  </p>
+
+  <p>
+  なぜなら、
+  \begin{align}
+  \frac{\frac{132}{88}}{\frac{108}{192}}
+  = \frac{132}{88} \cdot \frac{192}{108}
+  = 2.66 \cdots
+  \end{align}
+  </p>
+
+  <h3>(1-19)</h3>
+
+  <h3>(1-20)</h3>
+
+  <p>
+  エ.
+  Adjusted R-squared が 0.0007579 なので、
+  TV により SBP の変動は十分説明されない。
+  </p>
+
+  <hr />
+  <h2>第2問 （選択問題）</h2>
+
+  <h3>(2-1)</h3>
+
+  <p>
+  期待値, 分散をそれぞれ $E, V$ で表すと、
+  \begin{align}
+  E(X)
+  &= \int_{- \infty}^\infty x f(x) dx
+  \\
+  &= \frac{\lambda}{2} \int_{- \infty}^\infty x e^{- \lambda |x - \mu| } dx
+  \\
+  &= \frac{\lambda}{2} \int_{- \infty}^\infty (y + \mu) e^{- \lambda |y| } dy
+  \ \ \ \ \ \ \ \ ( y = x - \mu )
+  \\
+  &= \mu
+  \\
+
+  E(X^2)
+  &= \int_{- \infty}^\infty x^2 f(x) dx
+  \\
+  &= \frac{\lambda}{2} \int_{- \infty}^\infty x^2 e^{- \lambda |x - \mu| } dx
+  \\
+  &= \frac{\lambda}{2} \int_{- \infty}^\infty
+  (y^2 + 2 \mu y + \mu^2) e^{- \lambda |y| } dy
+  \ \ \ \ \ \ \ \ ( y = x - \mu )
+  \\
+  &= \lambda \int_0^\infty y^2 e^{- \lambda y } dy + \mu^2
+  \\
+
+  \int_0^\infty y^2 e^{- \lambda y } dy
+  &= - \frac{1}{\lambda} \int_0^\infty y^2 \left( e^{- \lambda y } \right)' dy
+  = - \frac{2}{\lambda} \int_0^\infty y e^{- \lambda y } dy
+  \\
+  &= \frac{2}{\lambda^2} \int_0^\infty y \left( e^{- \lambda y } \right)' dy
+  = \frac{2}{\lambda^2} \int_0^\infty e^{- \lambda y } dy
+  \\
+  &= - \frac{2}{\lambda^3} \left[ e^{- \lambda y } \right]_0^\infty
+  = \frac{2}{\lambda^3}
+  \\
+
+  E(X^2)
+  &= \lambda \cdot \frac{2}{\lambda^3} + \mu^2
+  = \frac{2}{\lambda^2} + \mu^2
+  \\
+
+  V(X) &= E(X^2) - E(X)^2
+  = \frac{2}{\lambda^2} + \mu^2 - \mu^2
+  = \frac{2}{\lambda^2}
+  \end{align}
+  </p>
+
+  <h3>(2-2)</h3>
+
+  <p>
+  (i) $ x \leq \mu $ のとき、
+  \begin{align}
+  F(x)
+  &= \frac{\lambda}{2} \int_{- \infty}^x e^{ \lambda (z - \mu) } dz
+  = \frac{1}{2} \left[ e^{ \lambda (z - \mu) } \right]_{- \infty}^x
+  = \frac{1}{2} e^{ \lambda (x - \mu) }
+  \end{align}
+  </p>
+
+  <p>
+  (ii) $ x \geq \mu $ のとき、
+  \begin{align}
+  F(x)
+  &= \frac{1}{2} + \frac{\lambda}{2} \int_\mu^x e^{ - \lambda (z - \mu) } dz
+  = \frac{1}{2} - \frac{1}{2} \left[ e^{ - \lambda (z - \mu) } \right]_\mu^x
+  = 1 - \frac{1}{2} e^{ - \lambda (x - \mu) }
+  \end{align}
+  </p>
+
+  <h3>(2-3)</h3>
+
+  <p>
+  求める $x$ の値を $x_0 (\gt \mu)$ とすると、
+  \begin{align}
+  F(x_0)
+  = 1 - \frac{1}{2} e^{ - \lambda (x_0 - \mu) }
+  = 1 - \alpha
+  \end{align}
+  よって、
+  \begin{align}
+  e^{ - \lambda (x_0 - \mu) } &= 2 \alpha
+  \\
+  - \lambda (x_0 - \mu) &= \log 2 \alpha
+  \\
+  \therefore \ \ 
+  x_0 &= \mu - \frac{\log 2 \alpha}{\lambda}
+  \end{align}
+  </p>
+
+  <h3>(2-4)</h3>
+
+  <p>
+  \begin{align}
+  x \gt - \frac{\log 2 \alpha}{\lambda}
+  \end{align}
+  </p>
+
+  <h3>(2-5)</h3>
+
+  <p>
+  次のようにおく：
+  \begin{align}
+  x_1 = - \frac{\log 2 \alpha}{\lambda}
+  \end{align}
+  このとき、
+  \begin{align}
+  e^{\lambda x_1} = \frac{1}{2 \alpha}
+  , \ \ \ \ 
+  e^{- \lambda x_1} = 2 \alpha
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  (i) $ \mu \geq x_1 $ のとき、
+  \begin{align}
+  \beta_\lambda (\mu)
+  &= \frac{1}{2} + \frac{\lambda}{2} \int_{x_1}^\mu e^{\lambda (x-\mu)} dx
+  \\
+  &= \frac{1}{2} + \frac{1}{2} \left[ e^{\lambda (x-\mu)} \right]_{x_1}^\mu
+  \\
+  &= \frac{1}{2} + \frac{1}{2} \left( 1 - e^{\lambda (x_1-\mu)} \right)
+  \\
+  &= 1 - \frac{1}{2} e^{\lambda (x_1-\mu)}
+  \\
+  &= 1 - \frac{e^{- \lambda \mu}}{4 \alpha}
+  \end{align}
+  </p>
+
+  <p>
+  (ii) $ 0 \lt \mu \leq x_1 $ のとき、
+  \begin{align}
+  \beta_\lambda (\mu)
+  &= \frac{\lambda}{2} \int_{x_1}^\infty e^{- \lambda (x-\mu)} dx
+  \\
+  &= - \frac{1}{2} \left[ e^{- \lambda (x-\mu)} \right]_{x_1}^\infty
+  \\
+  &= \frac{1}{2} e^{- \lambda (x_1-\mu)}
+  \\
+  &= \alpha e^{\lambda \mu}
+  \end{align}
+  </p>
+  -->
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
