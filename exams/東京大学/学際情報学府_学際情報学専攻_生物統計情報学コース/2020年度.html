@@ -124,133 +124,106 @@
   \end{align}
   </p>
 
-  <!--
   <h3>(1-8)</h3>
 
   <p>
-  エ. 1/p + 1/(1-p)
+  イ. 70
   </p>
 
   <p>
-  なぜなら、
+  なぜなら、求める対象者数を $n$ とすると、
   \begin{align}
-  \frac{d}{dp} \log \frac{p}{1-p}
-  &= \frac{d}{dp} \left( \log p - \log (1-p) \right)
+  0.99^n &= 0.5
   \\
-  &= \frac{1}{p} - \frac{-1}{1-p}
+  n \ln 0.99 &= \ln 0.5
   \\
-  &= \frac{1}{p} + \frac{1}{1-p}
+  n \cdot \left( 0.99 - 1 \right) &\approx - 0.69
+  \\
+  n &\approx 69
   \end{align}
   </p>
 
   <h3>(1-9)</h3>
 
   <p>
-  エ.
-  $ ( \mu + \sigma^2 t ) \exp \left( \mu t + \sigma^2 t^2 / 2 \right)$
+  イ. 1/2倍
   </p>
 
   <h3>(1-10)</h3>
 
   <p>
-  オ. 30
-  </p>
-
-  <p>
-  なぜなら、
-  \begin{align}
-  \int_0^1 x^2 (1-x)^2 dx
-  &= \int_0^1 (x^4 - 2x^3 + x^2) dx
-  = \left[ \frac{x^5}{5} - \frac{x^4}{2} + \frac{x^3}{3} \right]_0^1
-  \\
-  &= \frac{1}{5} - \frac{1}{2} + \frac{1}{3}
-  = \frac{6-15+10}{30}
-  = \frac{1}{30}
-  \end{align}
+  イ. (b), (d)
   </p>
 
   <h3>(1-11)</h3>
 
   <p>
-  ウ.
-  $ \sqrt{\pi} $
+  オ. 0.0975
   </p>
 
   <p>
   なぜなら、
-  $ x = \sqrt{t} $
-  とおくと、
-  $ x^2 = t, \ 2xdx=dt $ であり、
   \begin{align}
-  \int_0^\infty t^{-1/2} e^{-t} dt
-  &= \int_0^\infty x^{-1} e^{-x^2} 2xdx
-  = 2 \int_0^\infty e^{-x^2} dx
-  = 2 \cdot \frac{\sqrt{\pi}}{2}
-  = \sqrt{\pi}
+  0.05 + 0.05 - 0.05^2 = 0.0975
   \end{align}
   </p>
 
   <h3>(1-12)</h3>
 
   <p>
-  オ. 26
+  エ. 0.85倍
   </p>
 
   <p>
-  なぜなら、期待値と分散をそれぞれ $E, V$ で表すと、
+  なぜなら、
   \begin{align}
-  E(X^2) &= V(X) + E(X)^2 = 9 + 3^2 = 18
-  \\
-  E(Y^2) &= V(Y) + E(Y)^2 = 4 + 2^2 = 8
-  \\
-  E(X^2+Y^2) &= E(X^2) + E(Y^2) = 18 + 8 = 26
+  \frac{1.65}{1.96} \approx 0.8418
   \end{align}
   </p>
 
   <h3>(1-13)</h3>
 
+  <p>
+  オ. (d)
+  </p>
+
   <h3>(1-14)</h3>
 
   <p>
-  オ. $\exp (-0.3(t_2-t_1))$
+  オ. 535人
   </p>
 
   <p>
-  なぜなら、 $f(t) = \lambda \exp(- \lambda t)$ とすると、
+  なぜなら、
   \begin{align}
-  P(T \gt t)
-  &= 1 - \int_0^t f(s) ds
-  = 1 - \lambda \int_0^t e^{- \lambda s} ds
-  \\
-  &= 1 + \left[ e^{- \lambda s} \right]_0^t
-  = e^{- \lambda t}
-  \\
-
-  \therefore \ \ 
-  P(T \gt t_2 | T \gt t_1)
-  &= \frac{P(T \gt t_2)}{P(T \gt t_1)}
-  = \frac{e^{- \lambda t_2}}{e^{- \lambda t_1}}
-  = e^{- \lambda (t_2 - t_1)}
+  40 \cdot \frac{9}{10} + 4960 \cdot \frac{1}{10}
+  = 532
   \end{align}
   </p>
 
   <h3>(1-15)</h3>
 
   <p>
-  オ. $ \left( \bar{X}_n - p \right) / \sqrt{p(1-p)/n} $
+  オ. (b), (e)
+  </p>
+
+  <p>
+  参考：
+  <a href="https://www.amazon.co.jp/dp/4130420658/ref=nosim?tag=msscee0a-22">
+    東大統計学教室 「統計学入門」 12.4
+  </a>
   </p>
 
   <h3>(1-16)</h3>
 
   <p>
-  オ. 対立仮説 $H_1$ が正しいとき、
-  帰無仮説 $H_0$ が棄却されない確率は $0.2$ である。
+  イ. 登録期間
   </p>
 
   <h3>(1-17)</h3>
 
   <p>
-  ア. (0.21, 0.39)
+  ウ. 40%
   </p>
 
   <h3>(1-18)</h3>
@@ -270,14 +243,21 @@
 
   <h3>(1-19)</h3>
 
+  <p>
+  エ.
+  </p>
+
   <h3>(1-20)</h3>
 
   <p>
-  エ.
-  Adjusted R-squared が 0.0007579 なので、
-  TV により SBP の変動は十分説明されない。
+  ア. (a)
   </p>
 
+  <p>
+  なぜなら、感度と特異度がともに1に近いところを通っているから。
+  </p>
+
+  <!--
   <hr />
   <h2>第2問 （選択問題）</h2>
 
