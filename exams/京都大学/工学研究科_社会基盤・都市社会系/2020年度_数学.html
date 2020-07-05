@@ -215,6 +215,95 @@
   すなわち、地区Aの人口の割合は 3/4 になる。
   </p>
 
+  <hr />
+  <h2>[2]</h2>
+
+  <h3>[2-1]</h3>
+
+  <p>
+  \begin{align}
+  \mathcal{F} \left\{ \frac{\partial}{\partial x} y(x,t) \right\}
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty \frac{\partial y(x,t)}{\partial x}
+  e^{-ikx} dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \left[ y(x,t) e^{-ikx} \right]_{- \infty}^\infty
+  + \frac{ik}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty y(x,t) e^{-ikx} dx
+  \\
+  &=
+  ik \mathcal{F} \left\{ y(x,t) \right\}
+  \\
+  &=
+  ik Y(k,t)
+  \end{align}
+  </p>
+
+  <h3>[2-2]</h3>
+
+  <p>
+  [2-1] と同様にして、
+  \begin{align}
+  \mathcal{F} \left\{ \frac{\partial^2}{\partial x^2} y(x,t) \right\}
+  &=
+  ik
+  \mathcal{F} \left\{ \frac{\partial}{\partial x} y(x,t) \right\}
+  \\
+  &=
+  -k^2
+  \mathcal{F} \left\{ y(x,t) \right\}
+  \\
+  &=
+  -k^2 Y(k,t)
+  \end{align}
+  であるから、式(2-1)より、
+  \begin{align}
+  \frac{\partial Y(k,t)}{\partial t}
+  &=
+  ikC Y(k,t) - k^2 D Y(k,t)
+  \\
+  &=
+  \left( ikC-k^2D \right) Y(k,t)
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>[2-3]</h3>
+
+  <p>
+  [2-2] で得た方程式より、
+  \begin{align}
+  Y(k,t)
+  =
+  Y(k,0) e^{(ikC-k^2D)t}
+  \end{align}
+  である。
+  さらに、
+  \begin{align}
+  Y(k,0)
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty y(x,0) e^{-ikx} dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \int_{- \infty}^\infty \delta (x) e^{-ikx} dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi}}
+  \end{align}
+  であるから、
+  \begin{align}
+  Y(k,t)
+  =
+  \frac{1}{\sqrt{2 \pi}}
+  e^{(ikC-k^2D)t}
+  \end{align}
+  を得る。
+  </p>
 
   <hr />
   <p>
