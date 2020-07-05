@@ -306,6 +306,92 @@
   </p>
 
   <hr />
+  <h2>[3]</h2>
+
+  <h3>[3-1]</h3>
+
+  <p>
+  \begin{align}
+  p_x(t) \left( 1 - \lambda \Delta t \right)
+  \end{align}
+  </p>
+
+  <h3>[3-2]</h3>
+
+  <p>
+  \begin{align}
+  p_x( t + \Delta t )
+  =
+  p_x(t) \left( 1 - \lambda \Delta t \right)
+  +
+  p_{x-1}(t) \cdot \lambda \Delta t
+  \end{align}
+  より、
+  \begin{align}
+  \frac{p_x( t + \Delta t ) - p_x(t)}{\Delta t}
+  = - \lambda p_x(t) + \lambda p_{x-1}(t)
+  \end{align}
+  であるから、 $\Delta t \to 0$ として、式(3-1) を得る。
+  </p>
+
+  <h3>[3-3]</h3>
+
+  <h4>[3-3-1]</h4>
+
+  <p>
+  式(3-1) で $x=0$ とすると、
+  \begin{align}
+  \frac{d}{dt} p_0(t)
+  &= - \lambda p_0(t) + \lambda p_{-1}(t)
+  \\
+  &= - \lambda p_0(t)
+  \end{align}
+  であるから、
+  \begin{align}
+  p_0(t)
+  &= p_0(0) e^{- \lambda t}
+  \\
+  &= e^{- \lambda t}
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>[3-3-2]</h4>
+
+  <p>
+  式(3-1) で $x=k$ とすると、
+  \begin{align}
+  \frac{d}{dt} p_k(t)
+  &= - \lambda p_k(t) + \lambda p_{k-1}(t)
+  \\
+  &= - \lambda p_k(t) + \frac{(\lambda t)^{k-1}}{(k-1)!} e^{- \lambda t}
+  \end{align}
+  となる。
+  これの解は、 $A(t)$ を適当な関数として、
+  \begin{align}
+  p_k(t) = A(t) e^{- \lambda t}
+  \end{align}
+  と書けるが、これを上の微分方程式に代入して、整理すると、
+  \begin{align}
+  \frac{d}{dt} A(t)
+  = \frac{\lambda^k t^{k-1}}{(k-1)!}
+  \end{align}
+  よって、
+  \begin{align}
+  A(t) = \frac{(\lambda t)^k}{k!} + C
+  \end{align}
+  である（ここで $C$ は積分定数である）。
+  よって、
+  \begin{align}
+  p_k(t) = \left( \frac{(\lambda t)^k}{k!} + C \right) e^{- \lambda t}
+  \end{align}
+  となるが、 $p_k(0)=0$ なので、 $C=0$ であり、式(3-2)が成り立つことがわかる。
+  </p>
+
+
+
+
+  <hr />
   <p>
   <nav id="footer_breadcrumbs">
   <a href="../../../index.html">miyake.github.io</a> &gt;
