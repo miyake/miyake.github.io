@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋工業大学 大学院
+      工学研究科 情報工学系
+      2020年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋工業大学 大学院
+    <br />
+    工学研究科 情報工学系
+    <br />
+    2020年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.nitech.ac.jp/examination/in/test.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題31 数理科学2</h2>
+
+  <h3>I</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  P(X=k)
+  &=
+  \left( \frac{5}{6} \right)^{k-1} \cdot \frac{1}{6}
+  \\
+  &=
+  \frac{1}{5} \left( \frac{5}{6} \right)^k
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  M(t)
+  &=
+  \sum_{k=1}^\infty e^{tk} P(X=k)
+  \\
+  &=
+  \frac{1}{5} \sum_{k=1}^\infty e^{tk} \left( \frac{5}{6} \right)^k
+  \\
+  &=
+  \frac{1}{5} \sum_{k=1}^\infty \left( \frac{5}{6} e^t \right)^k
+  \\
+  &=
+  \frac{1}{5} \frac{5}{6} e^t \frac{1}{1 - \frac{5}{6} e^t }
+  \\
+  &=
+  \frac{e^t}{6 - 5 e^t }
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  \begin{align}
+  M'(t)
+  &=
+  \frac{6 e^t}{\left( 6 - 5 e^t \right)^2 }
+  \end{align}
+  </p>
+
+  <h4>(4)</h4>
+
+  <p>
+  \begin{align}
+  E[X] = M'(0) = 6
+  \end{align}
+  </p>
+
+  <h4>(5)</h4>
+
+  <p>
+  \begin{align}
+  M''(t)
+  &=
+  \frac{6 e^t \left( 6 + 5 e^t \right) }{\left( 6 - 5 e^t \right)^3 }
+  \end{align}
+  であるから、
+  \begin{align}
+  E[X^2] = M''(0) = 66
+  \end{align}
+  より、
+  \begin{align}
+  V[X] = E[X^2] - E[X]^2 = 30
+  \end{align}
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
