@@ -53,6 +53,170 @@
   </ul>
 
   <hr />
+  <h2>問題28 情報数学</h2>
+
+  <h3>I</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  P_X (i)
+  &=
+  \sum_{j=1}^N P_{XY}(i,j)
+  \\
+  P_{X \mid Y} (i \mid j)
+  &=
+  \frac{ P_{XY} (i, j) }{ P_Y(j) }
+  \\
+  &=
+  \frac{ P_{XY} (i, j) }{ \sum_{i=1}^N P_{XY}(i,j) }
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  H (X)
+  &=
+  \sum_{i=1}^N P_X(i) \log_2 \frac{1}{P_X(i)}
+  \\
+  &=
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{1}{\sum_{k=1}^N P_{XY}(i,k)}
+  \\
+  H (X \mid Y)
+  &=
+  \sum_{j=1}^N P_Y(j) \sum_{i=1}^N P_{X \mid Y}(i \mid j)
+  \log_2 \frac{1}{P_{X \mid Y}(i \mid j)}
+  \\
+  &=
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{\sum_{k=1}^N P_{XY}(k,j)}{ P_{XY}(i,j) }
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  \begin{align}
+  I (X;Y)
+  &=
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{P_{XY}(i,j)}{P_X(i) P_Y(j)}
+  \\
+  &=
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{1}{P_X(i)}
+  +
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{P_{XY}(i,j)}{P_Y(j)}
+  \\
+  &=
+  \sum_{i=1}^N P_X(i)
+  \log_2 \frac{1}{P_X(i)}
+  -
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{1}{P_{X \mid Y}(i \mid j)}
+  \\
+  &=
+  H(X) - H(X \mid Y)
+  \end{align}
+  </p>
+
+  <h4>(4)</h4>
+
+  <p>
+  \begin{align}
+  I (X;Y)
+  &=
+  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{P_{XY}(i,j)}{P_X(i) P_Y(j)}
+  \\
+  &=
+  - \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \log_2 \frac{P_X(i) P_Y(j)}{P_{XY}(i,j)}
+  \\
+  &\geq
+  - \log_2 \left( \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
+  \frac{P_X(i) P_Y(j)}{P_{XY}(i,j)} \right)
+  \\
+  &=
+  - \log_2 \left( \sum_{i=1}^N \sum_{j=1}^N
+  P_X(i) P_Y(j) \right)
+  \\
+  &=
+  - \log_2 1
+  \\
+  &=
+  0
+  \end{align}
+  </p>
+
+  <h4>(5)</h4>
+
+  <p>
+  $I(X;Y)$ が最小値 $0$ となるのは、
+  $X$ と $Y$ が独立のときなので、
+  例えば、
+  \begin{align}
+  P
+  =
+  \begin{pmatrix}
+  1/4 & 1/4 \\ 1/4 & 1/4
+  \end{pmatrix}
+  \end{align}
+  のときである。
+  </p>
+
+  <h4>(6)</h4>
+
+  <p>
+  (3) で示したように、
+  \begin{align}
+  I (X;Y)
+  &=
+  H(X) - H(X \mid Y)
+  \end{align}
+  である。
+  ここで、 $H(X)$ が最大となるのは、 $X$ が一様分布のとき、
+  すなわち、
+  \begin{align}
+  P_X(1) = P_X(2) = \frac{1}{2}
+  \end{align}
+  ときである。
+  また、 $H(X \mid Y)$ が最小となるのは、
+  $Y$ によって $X$ が完全に決まるとき、
+  すなわち、
+  \begin{align}
+  P_{X \mid Y} (1 \mid 1) = P_{X \mid Y} (2 \mid 2) = 1
+  , \ \ 
+  P_{X \mid Y} (1 \mid 2) = P_{X \mid Y} (2 \mid 1) = 0
+  \end{align}
+  または、
+  \begin{align}
+  P_{X \mid Y} (1 \mid 1) = P_{X \mid Y} (2 \mid 2) = 0
+  , \ \ 
+  P_{X \mid Y} (1 \mid 2) = P_{X \mid Y} (2 \mid 1) = 1
+  \end{align}
+  のときである。
+  よって、 $I(X;Y)$ が最大となるのは、
+  \begin{align}
+  P
+  =
+  \begin{pmatrix}
+  1/2 & 0 \\ 0 & 1/2
+  \end{pmatrix}
+  ,
+  \begin{pmatrix}
+  0 & 1/2 \\ 1/2 & 0
+  \end{pmatrix}
+  \end{align}
+  のときである。
+  </p>
+
+  <hr />
   <h2>問題31 数理科学2</h2>
 
   <h3>I</h3>
