@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      工学院 経営工学系
+      2020年度 午前
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    工学院 経営工学系
+    <br />
+    2020年度 午前
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>数理 B</h2>
+
+  <h3>[2]</h3>
+
+  <h4>(1)</h4>
+
+  <h5>(a)</h5>
+
+  <p>
+  $(Z-E(Z))^2$ は非負の値をとる確率変数であるから、
+  与えられた不等式において、
+  $X=(Z-E(Z))^2, b=c$ とおくと、
+  \begin{align}
+  P \left( (Z-E(Z))^2 \geq c \right)
+  &\leq \frac{E \left( (Z-E(Z))^2 \right)}{c}
+  \\
+  &= \frac{V(Z)}{c}
+  \end{align}
+  を得る。
+  </p>
+
+  <h5>(b)</h5>
+
+  <p>
+  (a) で示した不等式を使って、次のように示せる：
+  \begin{align}
+  P \left( | X-E(X) | \geq a \right)
+  &=
+  P \left( ( X-E(X) )^2 \geq a^2 \right)
+  \\
+  &\leq \frac{V(X)}{a^2}
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <h4>(3)</h4>
+
+  <h5>(a)</h5>
+
+  <p>
+  \begin{align}
+  E(X) &= \frac{n}{2}
+  \\
+  V(X) &= \frac{n}{4}
+  \end{align}
+  </p>
+
+  <h5>(b)</h5>
+
+  <p>
+  \begin{align}
+  P \left( X \geq \frac{3n}{4} \right)
+  &=
+  P \left( X - \frac{n}{2} \geq \frac{n}{4} \right)
+  \\
+  &=
+  \frac{1}{2} P \left( \left| X - \frac{n}{2} \right|
+  \geq \frac{n}{4} \right)
+  \\
+  &\leq
+  \frac{1}{2} \frac{\frac{n}{4}}{\left( \frac{n}{4} \right)^2} 
+  \ \ \ \ \ \ \ \ 
+  ( \because (1)(b) )
+  \\
+  &=
+  \frac{2}{n}
+  \end{align}
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
