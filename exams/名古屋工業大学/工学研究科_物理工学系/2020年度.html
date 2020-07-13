@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋工業大学 大学院
+      工学研究科 物理工学系
+      2020年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋工業大学 大学院
+    <br />
+    工学研究科 物理工学系
+    <br />
+    2020年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.nitech.ac.jp/examination/in/test.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題11 基礎物理数学</h2>
+
+  <h3>I</h3>
+
+  <h4>(1)</h4>
+
+  <h5>(1a)</h5>
+
+  <p>
+  \begin{align}
+  u(t)
+  &= u(0) e^{-kt}
+  \\
+  &= e^{-kt}
+  \end{align}
+  </p>
+
+  <h5>(1b)</h5>
+
+  <p>
+  適当な関数 $A(t)$ があって、
+  \begin{align}
+  u(t) = A(t) e^{-kt}
+  \end{align}
+  と書ける。
+  これを与えられた微分方程式に代入して整理すると、
+  \begin{align}
+  \frac{dA(t)}{dt}
+  &=
+  f e^{kt}
+  \end{align}
+  となるから、積分定数を $C$ として、
+  \begin{align}
+  A(t)
+  &=
+  \frac{f}{k} e^{kt} + C
+  \\
+  \therefore \ \ \ \ 
+  u(t)
+  &=
+  \frac{f}{k} + C e^{-kt}
+  \end{align}
+  を得る。
+  さらに、初期条件 $u(0)=1$ より、 $C = 1 - f/k$ であり、
+  \begin{align}
+  u(t)
+  &=
+  \frac{f}{k} + \left( 1 - \frac{f}{k} \right) e^{-kt}
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>(2)</h4>
+
+  <h5>(2a)</h5>
+
+  <p>
+  与えられた微分方程式に $x(t)=e^{\lambda t}$ を代入して整理すると、
+  \begin{align}
+  \lambda^2 + 2 \lambda + 2 = 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ \ \ 
+  \lambda = - 1 \pm i
+  \end{align}
+  を得る。
+  さらに、
+  \begin{align}
+  e^{(-1 \pm i)t} = e^{-t} ( \cos t \pm i \sin t )
+  \end{align}
+  であるから、
+  $A,B$ を任意定数として、
+  \begin{align}
+  x(t) = e^{-t} ( A \cos t + B \sin t )
+  \end{align}
+  が一般解である。
+  </p>
+
+  <h5>(2b)</h5>
+
+  <p>
+  まず、
+  \begin{align}
+  x(0) = A = 1
+  \end{align}
+  であるから、
+  \begin{align}
+  x(t) &= e^{-t} ( \cos t + B \sin t )
+  \\
+  \therefore \ \ \ \ 
+  \frac{dx(t)}{dt}
+  &=
+  e^{-t} \left\{ (B-1) \cos t - (B+1) \sin t \right\}
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{dx(0)}{dt} &= B-1 = 0
+  \\
+  \therefore \ \ \ \ 
+  B &= 1
+  \end{align}
+  であるから、
+  \begin{align}
+  x(t) = e^{-t} ( \cos t + \sin t )
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>(3)</h4>
+
+  <h5>(3a)</h5>
+
+  <p>
+  \begin{align}
+  \vec{V}
+  &=
+  \vec{\Omega} \times \vec{r}
+  \\
+  &=
+  \Omega \vec{k} \times ( x \vec{i} + y \vec{j} + z \vec{k} )
+  \\
+  &=
+  \Omega x \vec{j} - \Omega y \vec{i}
+  \\
+  \therefore \ \ \ \ 
+  (u,v,w)
+  &=
+  ( - \Omega y, \Omega x, 0 )
+  \end{align}
+  </p>
+
+  <h5>(3b)</h5>
+
+  <p>
+  \begin{align}
+  \text{rot } \vec{V}
+  &=
+  ( 0, 0, 2 \Omega )
+  \end{align}
+  </p>
+
+  <h3>II</h3>
+
+  <h4>(3)</h4>
+
+  <p>
+  与えられた $x_1, x_2, x_3$ を運動方程式に代入すると、
+  \begin{align}
+  - m \omega^2 A_1 &= k (A_2 - A_1)
+  \\
+  - m \omega^2 A_2 &= k (A_1 - 2A_2 + A_3)
+  \\
+  - m \omega^2 A_3 &= -k (A_3 - A_2)
+  \end{align}
+  となり、
+  \begin{align}
+  \begin{pmatrix}
+  1 & -1 & 0 \\ -1 & 2 & -1 \\ 0 & -1 & 1
+  \end{pmatrix}
+  \begin{pmatrix}
+  A_1 \\ A_2 \\ A_3
+  \end{pmatrix}
+  =
+  \frac{\omega^2}{\omega_0^2}
+  \begin{pmatrix}
+  A_1 \\ A_2 \\ A_3
+  \end{pmatrix}
+  \end{align}
+  となる。
+  この式の左辺の3次正方行列の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &=
+  \begin{vmatrix}
+  1 - \lambda & -1 & 0 \\ -1 & 2 - \lambda & -1 \\ 0 & -1 & 1 - \lambda
+  \end{vmatrix}
+  \\
+  &=
+  - \lambda ( \lambda - 1 ) ( \lambda - 3 )
+  \\
+  \therefore \ \ \ \ 
+  \lambda &= 0, 1, 3
+  \end{align}
+  となる。
+  よって、最大の固有値は $\lambda = 3$ すなわち $\omega^2 = 3 \omega_0^2$
+  であり、このとき
+  \begin{align}
+  2A_1 = - A_2 = 2A_3
+  \end{align}
+  となるから、大きさ $1$ の固有ベクトルは、
+  \begin{align}
+  \frac{1}{\sqrt{6}}
+  \begin{pmatrix}
+  1 \\ -2 \\ 1
+  \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
