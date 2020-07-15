@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      総合研究大学院大学 複合科学研究科 統計科学専攻
+      2020年1月 数理
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      総合研究大学院大学 複合科学研究科 統計科学専攻
+      <br />
+      2020年1月 数理
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.ism.ac.jp/senkou/5years.html#8">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>第3問</h2>
+
+  <h3>[問1]</h3>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix}
+  A_{11} & A_{12} \\
+  A_{21} & A_{22}
+  \end{pmatrix}
+  &=
+  \begin{pmatrix}
+  A_{11} & O \\
+  A_{21} & Q_1
+  \end{pmatrix}
+  \begin{pmatrix}
+  I & Q_2 \\
+  O & I
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  A_{11} & A_{11} Q_2 \\
+  A_{21} & A_{21} Q_2 + Q_1
+  \end{pmatrix}
+  \end{align}
+  であるから、
+  \begin{align}
+  Q_2
+  &=
+  A_{11}^{-1} A_{12}
+  \\
+  Q_1
+  &=
+  A_{22} - A_{21} Q_2
+  \\
+  &=
+  A_{22} - A_{21} A_{11}^{-1} A_{12}
+  \end{align}
+  </p>
+
+  <h3>[問2]</h3>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix}
+  I & O \\ O & I
+  \end{pmatrix}
+  &=
+  \begin{pmatrix}
+  B_{11} & O \\
+  B_{21} & B_{22}
+  \end{pmatrix}
+  \begin{pmatrix}
+  B_{11}^{-1} & O \\
+  Q_3 & B_{22}^{-1}
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  I & O \\
+  B_{21} B_{11}^{-1} + B_{22} Q_3 & I
+  \end{pmatrix}
+  \end{align}
+  であるから、
+  \begin{align}
+  Q_3
+  &=
+  - B_{22}^{-1} B_{21} B_{11}^{-1}
+  \end{align}
+  </p>
+
+  <h3>[問3]</h3>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix}
+  A^{11} & A^{12} \\
+  A^{21} & A^{22}
+  \end{pmatrix}
+  &=
+  \begin{pmatrix}
+  A_{11} & A_{12} \\
+  A_{21} & A_{22}
+  \end{pmatrix}^{-1}
+  \\
+  &=
+  \left[
+  \begin{pmatrix}
+  A_{11} & O \\
+  A_{21} & Q_1
+  \end{pmatrix}
+  \begin{pmatrix}
+  I & Q_2 \\
+  O & I
+  \end{pmatrix}
+  \right]^{-1}
+  \\
+  &=
+  \begin{pmatrix}
+  I & Q_2 \\
+  O & I
+  \end{pmatrix}^{-1}
+  \begin{pmatrix}
+  A_{11} & O \\
+  A_{21} & Q_1
+  \end{pmatrix}^{-1}
+  \\
+  &=
+  \begin{pmatrix}
+  I & - Q_2 \\
+  O & I
+  \end{pmatrix}
+  \begin{pmatrix}
+  A_{11}^{-1} & O \\
+  Q_4 & Q_1^{-1}
+  \end{pmatrix}
+  \ \ \ \ \ \ \ \ 
+  (Q_4 = - Q_1^{-1} A_{21} A_{11}^{-1})
+  \\
+  &=
+  \begin{pmatrix}
+  A_{11}^{-1} - Q_2 Q_4 & - Q_2 Q_1^{-1} \\
+  Q_4 & Q_1^{-1}
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  A_{11}^{-1} + A_{11}^{-1} A_{12} Q_1^{-1} A_{21} A_{11}^{-1}
+  &
+  - A_{11}^{-1} A_{12} Q_1^{-1} \\
+  - Q_1 A_{21} A_{11}^{-1} & Q_1^{-1}
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  A_{11}^{-1} + A_{11}^{-1} A_{12} \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)^{-1} A_{21} A_{11}^{-1}
+  &
+  - A_{11}^{-1} A_{12} \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)^{-1} \\
+  - \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)^{-1} A_{21} A_{11}^{-1}
+  &
+  \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)^{-1}
+  \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h3>[問4]</h3>
+
+  <p>
+  \begin{align}
+  \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)
+  \left[
+  A_{22}^{-1} + A_{22}^{-1} A_{21}
+  \left( A_{11} - A_{12} A_{22}^{-1} A_{21} \right)^{-1}
+  A_{12} A_{22}^{-1}
+  \right]
+  &=
+  \cdots
+  \\
+  &=
+  I
+  \end{align}
+  より、
+  \begin{align}
+  \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)^{-1}
+  =
+  A_{22}^{-1} + A_{22}^{-1} A_{21}
+  \left( A_{11} - A_{12} A_{22}^{-1} A_{21} \right)^{-1}
+  A_{12} A_{22}^{-1}
+  \end{align}
+  </p>
+
+  <!--
+  <p>
+  別解
+  </p>
+  -->
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
