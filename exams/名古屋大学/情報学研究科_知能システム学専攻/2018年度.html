@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋大学 大学院 情報学研究科
+      知能システム学専攻, 情報システム学専攻
+      2018年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋大学 大学院 情報学研究科
+    <br />
+    知能システム学専攻, 情報システム学専攻
+    <br />
+    2018年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.i.nagoya-u.ac.jp/gs/entranceexamination/exam_q/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>確率・統計</h2>
+
+  <h3>[1]</h3>
+
+  <p>
+  10分間でその事象が発生する確率の確率分布は、平均5のポアソン分布である。
+  よって、3回発生する確率は、
+  \begin{align}
+  \frac{5^3 e^{-5}}{3!}
+  &\approx
+  0.14
+  \end{align}
+  である。
+  <!--
+  &\approx
+  0.1395833
+  -->
+  </p>
+
+  <h3>[2]</h3>
+
+  <h3>[3]</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  求めるモーメント母関数 $M_X(t)$ は、
+  \begin{align}
+  M_X(t)
+  &=
+  E \left[ e^{tX} \right]
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty e^{tx} e^{- \frac{(x - \mu)^2}{2 \sigma^2}} dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty
+  e^{ - \frac{x^2 - 2 ( \mu + \sigma^2 t ) x + \mu^2}{2 \sigma^2}}
+  dx
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}} \cdot
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty
+  e^{- \frac{(x - (\mu + \sigma^2 t))^2}{2 \sigma^2}} dx
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
+  \end{align}
+  となる。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  求めるモーメント母関数 $M_Z(t)$ は、
+  \begin{align}
+  M_Z(t)
+  &=
+  E \left[ e^{tZ} \right]
+  \\
+  &=
+  E \left[ e^{t(X+Y)} \right]
+  \\
+  &=
+  E \left[ e^{tX} \right] E \left[ e^{tY} \right]
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
+  \cdot
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
+  \\
+  &=
+  e^{2 \mu t + \sigma^2 t^2}
+  \end{align}
+  となる。
+  したがって、
+  $Z$ は正規分布 $N(2 \mu, 2 \sigma^2)$ に従うことがわかる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
