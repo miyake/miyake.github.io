@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院 理学研究科
+      数理学府 MMAコース
+      2018年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    九州大学 大学院 理学研究科
+    <br />
+    数理学府 MMAコース
+    <br />
+    2018年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.math.kyushu-u.ac.jp/entryexams/view/6">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[6]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  E(X_i)
+  &=
+  \frac{1}{2} \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty x
+  \exp \left\{ - \frac{1}{2 \sigma^2} (x - \mu)^2 \right\} dx
+  \\
+  &\ \ \ \ +
+  \frac{1}{2} \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty x
+  \exp \left\{ - \frac{1}{2 \sigma^2} (x - c \mu)^2 \right\} dx
+  \\
+  &=
+  \frac{1}{2} \mu
+  + \frac{1}{2} c \mu
+  \\
+  &=
+  \frac{1+c}{2} \mu
+  \end{align}
+  であり、
+  \begin{align}
+  E(\bar{X})
+  &=
+  \frac{1+c}{2} \mu
+  \end{align}
+  であるから、
+  $\frac{2}{1+c} \bar{X}$ は $\mu$ の不偏推定量である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  E(X_i^2)
+  &=
+  \frac{1}{2} \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty x^2
+  \exp \left\{ - \frac{1}{2 \sigma^2} (x - \mu)^2 \right\} dx
+  \\
+  &\ \ \ \ +
+  \frac{1}{2} \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty x^2
+  \exp \left\{ - \frac{1}{2 \sigma^2} (x - c \mu)^2 \right\} dx
+  \\
+  &=
+  \frac{1}{2} ( \sigma^2 + \mu^2 )
+  + \frac{1}{2} ( \sigma^2 + c^2 \mu^2 )
+  \\
+  &=
+  \sigma^2 + \frac{1+c^2}{2} \mu^2
+  \\
+  V(X_i)
+  &=
+  E(X_i^2) - E(X_i)^2
+  \\
+  &=
+  \sigma^2 + \frac{1+c^2}{2} \mu^2
+  - \left( \frac{1+c}{2} \mu \right)^2
+  \\
+  &=
+  \sigma^2 + \frac{(1-c)^2}{4} \mu^2
+  \end{align}
+  であるから、
+  \begin{align}
+  V(\bar{X})
+  &=
+  \frac{1}{n} \left( \sigma^2 + \frac{(1-c)^2}{4} \mu^2 \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  (2) より、 $V(\bar{X})$ が最小になるのは、
+  $c=1$ のときである。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
