@@ -179,6 +179,133 @@
   である。
   </p>
 
+  <hr />
+  <h2>専門科目（二） : 土木計画学</h2>
+
+  <h3>3.</h3>
+
+  <p>
+  \begin{align}
+  Q
+  =
+  \sum_{i=1}^n
+  \left( a + bx_i + cx_i^2 - y_i \right)^2
+  \end{align}
+  とおくと、
+  $a,b,c$ が最小2乗推定値であるための条件は、
+  \begin{align}
+  \frac{\partial Q}{\partial a}
+  &= 2 \sum_{i=1}^n
+  \left( a + bx_i + cx_i^2 - y_i \right)
+  = 0
+  \\
+  \frac{\partial Q}{\partial b}
+  &= 2 \sum_{i=1}^n
+  \left( a + bx_i + cx_i^2 - y_i \right) x_i
+  = 0
+  \\
+  \frac{\partial Q}{\partial c}
+  &= 2 \sum_{i=1}^n
+  \left( a + bx_i + cx_i^2 - y_i \right) x_i^2
+  = 0
+  \end{align}
+  である。
+  これを整理すると、
+  \begin{align}
+  &
+  a + b \overline{x} + c \overline{x^2} - \overline{y} = 0
+  \\
+  &
+  a \overline{x} + b \overline{x^2} + c \overline{x^3}
+  - \overline{xy} = 0
+  \\
+  &
+  a \overline{x^2} + b \overline{x^3} + c \overline{x^4}
+  - \overline{x^2y} = 0
+  \tag{A}
+  \end{align}
+  となる。
+  ここで、
+  \begin{align}
+  &
+  \overline{x} = \frac{1}{n} \sum_{i=1}^n x_i
+  , \ \ \ \ 
+  \overline{x^2} = \frac{1}{n} \sum_{i=1}^n x_i^2
+  , \ \ \ \ 
+  \overline{x^3} = \frac{1}{n} \sum_{i=1}^n x_i^3
+  , \ \ \ \ 
+  \overline{x^4} = \frac{1}{n} \sum_{i=1}^n x_i^4
+  \\
+  &
+  \overline{y} = \frac{1}{n} \sum_{i=1}^n y_i
+  , \ \ \ \ 
+  \overline{xy} = \frac{1}{n} \sum_{i=1}^n x_i y_i
+  , \ \ \ \ 
+  \overline{x^2y} = \frac{1}{n} \sum_{i=1}^n x_i^2 y_i
+  \end{align}
+  とおいた。
+  よって、
+  \begin{align}
+  \sum_{i=1}^n e_i x_i^2
+  &=
+  \frac{1}{n} \sum_{i=1}^n (y_i - \overline{y}_{x_i}) x_i^2
+  \\
+  &=
+  \sum_{i=1}^n
+  \left( y_i - \left( a + bx_i + cx_i^2 \right) \right)
+  x_i^2
+  \\
+  &=
+  n
+  \left( \overline{x^2y} - a \overline{x^2} - b \overline{x^3}
+  - c \overline{x^4} \right)
+  \\
+  &=
+  0
+  \ \ \ \ \ \ \ \ 
+  (\because \text{ (A) })
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>4.</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  求める信頼区間は、
+  \begin{align}
+  \left[
+  \overline{X} - 1.96 \frac{\sigma}{\sqrt{n}}
+  ,
+  \overline{X} + 1.96 \frac{\sigma}{\sqrt{n}}
+  \right]
+  \end{align}
+  である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  与えられた条件は、
+  \begin{align}
+  &1.96 \frac{1200}{\sqrt{n}}
+  \leq 200
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  &
+  n
+  \geq
+  (6 \times 1.96)^2
+  \\
+  &\approx
+  138.2
+  \end{align}
+  である。
+  よって、対象者を139人以上にする必要がある。
+  </p>
+
 
 
   <hr />
