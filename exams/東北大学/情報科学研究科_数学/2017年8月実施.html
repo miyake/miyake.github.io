@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 情報科学研究科
+      数学
+      2017年8月実施
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      情報科学研究科 数学
+      <br />
+      2017年8月実施
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.math.is.tohoku.ac.jp/admission/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[6]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  F(x)
+  &=
+  P(M_2 \leq x)
+  \\
+  &=
+  P(X_1 \leq x \text{ and } X_2 \leq x)
+  \\
+  &=
+  P(X_1 \leq x) P(X_2 \leq x)
+  \\
+  &=
+  \begin{cases}
+  0   & (x \lt 0) \\
+  x^2 & (0 \leq x \leq 1) \\
+  1   & (1 \lt x)
+  \end{cases}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $M_2$ の確率密度関数 $f(x)$ は、
+  \begin{align}
+  f(x)
+  &=
+  \frac{d}{dx} F(x)
+  \\
+  &=
+  \begin{cases}
+  0   & (x \lt 0) \\
+  2x  & (0 \lt x \lt 1) \\
+  0   & (1 \lt x)
+  \end{cases}
+  \end{align}
+  であり、 $M_2$ の平均値は、
+  \begin{align}
+  E(M_2)
+  &=
+  \int_{-\infty}^\infty x f(x) dx
+  \\
+  &=
+  2 \int_0^1 x^2 dx
+  \\
+  &=
+  \frac{2}{3}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  P(L_n \leq x)
+  &=
+  1 - P(L_n \gt x)
+  \\
+  &=
+  1 - P(X_1 \gt x \text{ and } X_2 \gt x \text{ and } \cdots
+  \text{ and } X_n \gt x)
+  \\
+  &=
+  1 - P(X_1 \gt x) P(X_2 \gt x) \cdots P(X_n \gt x)
+  \\
+  &=
+  \begin{cases}
+  0   & (x \lt 0) \\
+  1 - (1-x)^n & (0 \leq x \leq 1) \\
+  1   & (1 \lt x)
+  \end{cases}
+  \end{align}
+  であるから、 $L_n$ の確率密度関数 $g(x)$ は、
+  \begin{align}
+  g(x)
+  &=
+  \frac{d}{dx} P(L_n \leq x)
+  \\
+  &=
+  \begin{cases}
+  0   & (x \lt 0) \\
+  n(1-x)^{n-1}  & (0 \lt x \lt 1) \\
+  0   & (1 \lt x)
+  \end{cases}
+  \end{align}
+  であり、 $L_n$ の平均値は、
+  \begin{align}
+  E(L_n)
+  &=
+  \int_{-\infty}^\infty x g(x) dx
+  \\
+  &=
+  n \int_0^1 x (1-x)^{n-1} dx
+  \\
+  &=
+  \frac{1}{n+1}
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
