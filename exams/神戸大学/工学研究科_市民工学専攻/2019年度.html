@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      神戸大学 大学院 工学研究科
+      市民工学専攻
+      2019年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    神戸大学 大学院
+    <br />
+    工学研究科 市民工学専攻
+    <br />
+    2019年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.math.kyushu-u.ac.jp/entryexams/view/6">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>専門科目（一） : 数学</h2>
+
+  <h3>3.</h3>
+
+  <p>
+  ABの順で開札されることを $S_{AB}$ ,
+  BAの順で開札されることを $S_{BA}$ で表す。
+  また、どちらも受注しないことを $J_0$ ,
+  Aのみ受注することを $J_A$ , Bのみ受注することを $J_B$ ,
+  両方受注することを $J_{AB}$ で表す。
+  このとき、 $S_{AB}, S_{BA}$ を与えたときの
+  $J_0, J_A, J_B, J_{AB}$ の条件付き確率は、
+  \begin{align}
+  P(J_0 \mid S_{AB})
+  &= (1-P(A)) (1-P(B))
+  &= 0.48
+  \\
+  P(J_A \mid S_{AB})
+  &= P(A) \left( 1-\frac{P(B)}{2} \right)
+  &= 0.36
+  \\
+  P(J_B \mid S_{AB})
+  &= (1-P(A)) P(B)
+  &= 0.12
+  \\
+  P(J_{AB} \mid S_{AB})
+  &= P(A) \frac{P(B)}{2}
+  &= 0.04
+  \\
+
+  P(J_0 \mid S_{BA})
+  &= (1-P(B)) (1-P(A))
+  &= 0.48
+  \\
+  P(J_A \mid S_{BA})
+  &= (1-P(B)) P(A)
+  &= 0.32
+  \\
+  P(J_B \mid S_{BA})
+  &= P(B) \left( 1-\frac{P(A)}{2} \right)
+  &= 0.16
+  \\
+  P(J_{AB} \mid S_{BA})
+  &= P(B) \frac{P(A)}{2}
+  &= 0.04
+  \end{align}
+  である。
+  </p>
+
+  <h4>(1)</h4>
+
+  <p>
+  求める確率は、
+  \begin{align}
+  P(J_A) + P(J_B) + P(J_{AB})
+  &=
+  1 - P(J_0)
+  \\
+  &=
+  1 - \frac{1}{2} P(J_0 \mid S_{AB})
+  - \frac{1}{2} P(J_0 \mid S_{BA})
+  \\
+  &=
+  0.52
+  \end{align}
+  である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  P(J_B)
+  &=
+  \frac{1}{2} P(J_B \mid S_{AB})
+  + \frac{1}{2} P(J_B \mid S_{BA})
+  \\
+  &=
+  0.14
+  \end{align}
+  であるから、求める確率は、
+  \begin{align}
+  \frac{P(J_A) + P(J_{AB})}{P(J_A) + P(J_B) + P(J_{AB})}
+  &=
+  \frac{(P(J_A) + P(J_B)+ P(J_{AB})) - P(J_B)}
+  {P(J_A) + P(J_B) + P(J_{AB})}
+  \\
+  &=
+  \frac{0.52-0.14}{0.52}
+  \\
+  &=
+  \frac{19}{26}
+  \\
+  &\approx
+  0.73
+  \end{align}
+  である。
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  \begin{align}
+  P(J_A)
+  &=
+  \frac{1}{2} P(J_A \mid S_{AB})
+  + \frac{1}{2} P(J_A \mid S_{BA})
+  \\
+  &=
+  0.34
+  \end{align}
+  であるから、求める確率は、
+  \begin{align}
+  \frac{P(J_A)}{P(J_A) + P(J_B)}
+  &=
+  \frac{0.34}{0.34+0.14}
+  \\
+  &=
+  \frac{17}{24}
+  \\
+  &\approx
+  0.71
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
