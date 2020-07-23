@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 情報科学研究科
+      数学
+      2016年8月実施
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      情報科学研究科 数学
+      <br />
+      2016年8月実施
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="http://www.math.is.tohoku.ac.jp/admission/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[6]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  E(Y)
+  &=
+  \int_0^1 g(x) dx
+  \\
+  &=
+  m
+  \\
+  E(Z)
+  &=
+  \frac{1}{2} \int_0^1 (g(x) + g(1-x)) dx
+  \\
+  &=
+  \frac{1}{2} m + \frac{1}{2} \int_0^1 g(\xi) d \xi
+  \ \ \ \ \ \ \ \ 
+  (\xi = 1-x)
+  \\
+  &=
+  m
+  \\
+  V(Y)
+  &=
+  E(Y^2) - E(Y)^2
+  \\
+  &=
+  \int_0^1 g(x)^2 dx - m^2
+  \\
+  V(Z)
+  &=
+  E(Z^2) - E(Z)^2
+  \\
+  &=
+  \frac{1}{4} \int_0^1 (g(x)+g(1-x))^2 dx - m^2
+  \\
+  &=
+  \frac{1}{2} \int_0^1 g(x)^2 dx
+  + \frac{1}{2} \int_0^1 g(x)g(1-x) dx - m^2
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $g$ が単調増加であるとし、 $x \leq y$ とすると、
+  $1-x \geq 1-y$ であり、
+  \begin{align}
+  g(x) \leq g(y)
+  , \ \ \ \ 
+  g(1-x) \geq g(1-y)
+  \end{align}
+  \begin{align}
+  \therefore \ \ \ \ 
+  g(x) - g(y) \leq 0
+  , \ \ \ \ 
+  g(1-x) - g(1-y) \geq 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ \ \ 
+  (g(x) - g(y))
+  (g(1-x) - g(1-y)) \leq 0
+  \end{align}
+  を得る。
+
+  $g$ が単調増加であるとし、 $x \geq y$ とすると、
+  $1-x \leq 1-y$ であり、
+  \begin{align}
+  g(x) \geq g(y)
+  , \ \ \ \ 
+  g(1-x) \leq g(1-y)
+  \end{align}
+  \begin{align}
+  \therefore \ \ \ \ 
+  g(x) - g(y) \geq 0
+  , \ \ \ \ 
+  g(1-x) - g(1-y) \leq 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ \ \ 
+  (g(x) - g(y))
+  (g(1-x) - g(1-y)) \leq 0
+  \end{align}
+  を得る。
+
+  $g$ が単調減少の場合も同様にして示せる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $g$ に対する条件より、
+  \begin{align}
+  m = g(\alpha)
+  , \ \ \ \ 
+  0 \leq \alpha \leq 1
+  \end{align}
+  なる $\alpha$ が存在する。
+  (2) で示した不等式において $y = \alpha$ として整理すると、
+  \begin{align}
+  g(x) g(1-x)
+  &\leq
+  g(x) g(1-\alpha) + g(\alpha) g(1-x) - g(\alpha) g(1-\alpha)
+  \\
+  &=
+  g(1-\alpha) g(x) + m g(1-x) - m g(1-\alpha)
+  \\
+  \therefore \ \ \ \ 
+  \int_0^1 g(x) g(1-x) dx
+  &\leq
+  g(1-\alpha) \int_0^1 g(x) dx
+  + m \int_0^1 g(1-x) dx - m g(1-\alpha)
+  \\
+  &=
+  m g(1-\alpha) + m^2 - m g(1-\alpha)
+  \\
+  &=
+  m^2
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  C &= \int_0^1 g(x)^2 dx
+  \\
+  D &= \int_0^1 g(x) g(1-x) dx
+  \end{align}
+  とおくと、(1) より、
+  \begin{align}
+  V(Y) &= C - m^2
+  \\
+  V(Z) &= \frac{1}{2} C + \frac{1}{2} D - m^2
+  \end{align}
+  であり、 (2) より、
+  \begin{align}
+  D \leq m^2
+  \end{align}
+  である。
+  そこで、与えられた $A_n, B_n$ の分散を計算すると、
+  \begin{align}
+  V(A_n)
+  &=
+  \frac{1}{4n^2} \sum_{i=1}^{2n} V(g(X_i))
+  \\
+  &=
+  \frac{1}{2n} V(Y)
+  \\
+  &=
+  \frac{1}{2n} (C - m^2)
+  \\
+  V(B_n)
+  &=
+  \frac{1}{n^2} \sum_{i=1}^n
+  V \left( \frac{g(X_i)+g(1-X_i)}{2} \right)
+  \\
+  &=
+  \frac{1}{n} V(Z)
+  \\
+  &=
+  \frac{1}{n} \left( \frac{1}{2} C + \frac{1}{2} D - m^2 \right)
+  \end{align}
+  であり、
+  \begin{align}
+  V(B_n) - V(A_n)
+  &=
+  \frac{1}{2n} (D - m^2)
+  \\
+  &\leq
+  0
+  \end{align}
+  であるから、 $B_n$ の方が有効な推定量である。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
