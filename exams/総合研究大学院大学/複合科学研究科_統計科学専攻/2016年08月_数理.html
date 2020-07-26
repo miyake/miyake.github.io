@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      総合研究大学院大学 複合科学研究科 統計科学専攻
+      2016年8月 数理
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      総合研究大学院大学 複合科学研究科 統計科学専攻
+      <br />
+      2016年8月 数理
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.ism.ac.jp/senkou/5years.html#8">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>第3問</h2>
+
+  <h3>[問1]</h3>
+
+  <p>
+  \begin{align}
+  \text{Pr} (Y \leq z, X \lt \lambda Y)
+  &=
+  \iint_{y \leq z, x \lt \lambda y} \phi(x) \phi(y) dx dy
+  \\
+  &=
+  \int_{- \infty}^z \phi(y)
+  \left\{ \int_{- \infty}^{\lambda y} \phi(x) dx \right\} dy
+  \\
+  &=
+  \int_{- \infty}^z \phi(y) \Phi(\lambda y) dy
+  \\
+  &=
+  \int_{- \infty}^z \Phi(\lambda v) \phi(v) dv
+  \end{align}
+  </p>
+
+  <h3>[問2]</h3>
+
+  <p>
+  $ \phi(-x) = \phi(x) $ であり、
+  \begin{align}
+  \Phi(-x)
+  &=
+  \int_{- \infty}^{-x} \phi(z) dz
+  \\
+  &=
+  1 - \int_{-x}^\infty \phi(z) dz
+  \\
+  &=
+  1 - \int_{-\infty}^x \phi(w) dw
+  \ \ \ \ \ \ \ \ 
+  (w = -z)
+  \\
+  &=
+  1 - \Phi(x)
+  \end{align}
+  であるから、 $ v=-y $ として、
+  \begin{align}
+  \int_{-z}^\infty \left\{ 1 - \Phi(\lambda y) \right\} \phi(y) dy
+  &=
+  \int_z^{- \infty} \left\{ 1 - \Phi(- \lambda v) \right\} \phi(-v)
+  (-dv)
+  \\
+  &=
+  \int_{- \infty}^z \Phi(\lambda v) \phi(v) dv
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>[問3]</h3>
+
+  <p>
+  [問1] より、
+  \begin{align}
+  \text{Pr} (Y \leq z, X \lt \lambda Y)
+  &=
+  \int_{- \infty}^z \Phi(\lambda v) \phi(v) dv
+  \end{align}
+  であり、
+  \begin{align}
+  \text{Pr} (- Y \leq z, X \geq \lambda Y)
+  &=
+  \text{Pr} (Y \gt -z, X \geq \lambda Y)
+  \\
+  &=
+  \iint_{y \gt -z, x \geq \lambda y} \phi(x) \phi(y) dx dy
+  \\
+  &=
+  \int_{-z}^\infty \phi(y)
+  \left\{ \int_{\lambda y}^\infty \phi(x) dx \right\} dy
+  \\
+  &=
+  \int_{-z}^\infty \left\{ 1 - \Phi(\lambda y) \right\} \phi(y) dy
+  \\
+  &=
+  \int_{- \infty}^z \Phi(\lambda v) \phi(v) dv
+  \ \ \ \ \ \ \ \ 
+  ( \because \text{ [問2]})
+  \end{align}
+  であるから、
+  \begin{align}
+  \text{Pr} (Z \leq z)
+  &=
+  \text{Pr} (Y \leq z, X \lt \lambda Y)
+  +
+  \text{Pr} (- Y \leq z, X \geq \lambda Y)
+  \\
+  &=
+  2 \int_{- \infty}^z \Phi(\lambda v) \phi(v) dv
+  \end{align}
+  を得る。
+  </p>
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
