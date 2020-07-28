@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋大学 大学院 情報学研究科
+      数理情報学専攻
+      2018年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋大学 大学院 情報学研究科
+    <br />
+    数理情報学専攻
+    <br />
+    2018年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.i.nagoya-u.ac.jp/gs/entranceexamination/exam_q/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題6. （量子力学）</h2>
+
+  <h3>(1)</h3>
+
+  <h3>(2)</h3>
+
+  <p>
+  $X$ の固有値は $1,-1$ であり、それぞれに属する固有状態は、
+  \begin{align}
+  | X=1 \rangle
+  = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+  , \ \ 
+  | X=-1 \rangle
+  = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  \end{align}
+  である。
+
+  $Y$ の固有値は $1,-1$ であり、それぞれに属する固有状態は、
+  \begin{align}
+  | Y=1 \rangle
+  = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ i \end{pmatrix}
+  , \ \ 
+  | Y=-1 \rangle
+  = \frac{1}{\sqrt{2}}
+  \begin{pmatrix} 1 \\ -i \end{pmatrix}
+  \end{align}
+  である。
+
+  $Z$ の固有値は $1,-1$ であり、それぞれに属する固有状態は、
+  \begin{align}
+  | Z=1 \rangle
+  = \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  , \ \ 
+  | Z=-1 \rangle
+  = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  次のようにおく：
+  \begin{align}
+  | \psi_1^X \rangle = | X=1  \rangle&, \ \ 
+  | \psi_2^X \rangle = | X=-1 \rangle,
+  \\
+  | \psi_1^Y \rangle = | Y=1  \rangle&, \ \ 
+  | \psi_2^Y \rangle = | Y=-1 \rangle,
+  \\
+  | \psi_1^Z \rangle = | Z=1  \rangle&, \ \ 
+  | \psi_2^Z \rangle = | Z=-1 \rangle
+  \end{align}
+  このとき、
+  \begin{align}
+  x_1 &= \frac{1}{2} (a+2b+d)
+  \\
+  x_2 &= \frac{1}{2} (a-2b+d)
+  \\
+  y_1 &= \frac{1}{2} (a+2c+d)
+  \\
+  y_2 &= \frac{1}{2} (a-2c+d)
+  \\
+  z_1 &= a
+  \\
+  z_2 &= d
+  \end{align}
+  である。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  (3) より、
+  \begin{align}
+  a &= z_1
+  \\
+  d &= z_2
+  \\
+  b &= x_1 - \frac{1}{2} z_1 - \frac{1}{2} z_2
+  \\
+  c &= y_1 - \frac{1}{2} z_1 - \frac{1}{2} z_2
+  \end{align}
+  であるから、
+  \begin{align}
+  A
+  &=
+  \begin{pmatrix}
+  z_1
+  &
+  x_1 - iy_1 - \frac{1}{2}(1-i)(z_1+z_2)
+  \\
+  x_1 + iy_1 - \frac{1}{2}(1+i)(z_1+z_2)
+  &
+  z_2
+  \end{pmatrix}
+  \end{align}
+  と書ける。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  \begin{align}
+  \langle \psi_1^Y | A | \psi_1^Y \rangle
+  &=
+  \frac{1}{2} (a+2c+d)
+  \\
+  \langle \psi_1^Y | A^2 | \psi_1^Y \rangle
+  &=
+  \frac{1}{2} (a^2 + d^2) + (a+d)c + b^2 + c^2
+  \end{align}
+  であるから、
+  \begin{align}
+  \tau
+  &=
+  \frac{1}{2} (a^2 + d^2) + (a+d)c + b^2 + c^2
+  - \left( \frac{1}{2} (a+2c+d) \right)^2
+  \\
+  &=
+  \frac{1}{4} (a-d)^2 + b^2
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(6)</h3>
+
+  <p>
+  (5) より、
+  \begin{align}
+  \tau = 0
+  &\Leftrightarrow
+  a=d, b=0
+  \\
+  &\Leftrightarrow
+  A
+  = \begin{pmatrix} a & -ic \\ ic & a \end{pmatrix}
+  = aI+cY
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(7)</h3>
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
