@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋大学 大学院 情報学研究科
+      数理情報学専攻
+      2019年度
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋大学 大学院 情報学研究科
+    <br />
+    数理情報学専攻
+    <br />
+    2019年度
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.i.nagoya-u.ac.jp/gs/entranceexamination/exam_q/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題6. （量子力学）</h2>
+
+  <h3>(1)</h3>
+
+  <h3>(2)</h3>
+
+  <p>
+  $A$ の固有値は $0,2$ であり、それぞれに属する固有状態は、
+  \begin{align}
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix}
+  , \ \ 
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -i \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $a,b \in \mathbb{R}$ で、
+  $ \langle \psi | \psi \rangle = a^2+b^2 = 1 $ であり、
+  \begin{align}
+  \langle A \rangle_\psi
+  &=
+  \begin{pmatrix} a & -ib \end{pmatrix}
+  \begin{pmatrix} 1 & i \\ -i & 1 \end{pmatrix}
+  \begin{pmatrix} a \\ ib \end{pmatrix}
+  \\
+  &=
+  (a-b)^2
+  \end{align}
+  であるから、$ \langle A \rangle_\psi = 0 $ となるのは、
+  \begin{align}
+  a = b = \frac{1}{\sqrt{2}}
+  \ ; \ \ 
+  a = b = - \frac{1}{\sqrt{2}}
+  \end{align}
+  の2通りである。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  \langle \psi | A^2 | \psi \rangle
+  &= 2 (a-b)^2
+  \\
+  \therefore \ \ 
+  \sigma(A)_\psi^2
+  &= 2 (a-b)^2 - (a-b)^4
+  \\
+  &= (a-b)^2 \left\{2 - (a-b)^2 \right\}
+  \end{align}
+  であるから、$ \sigma(A)_\psi^2 = 0 $ となるのは、
+  \begin{align}
+  a = b = \frac{1}{\sqrt{2}}
+  &\ ; \ \ 
+  a = b = - \frac{1}{\sqrt{2}}
+  \ ; \ \ 
+  \\
+  a = \frac{1}{\sqrt{2}},
+  b = - \frac{1}{\sqrt{2}}
+  &\ ; \ \ 
+  a = - \frac{1}{\sqrt{2}},
+  b = \frac{1}{\sqrt{2}}
+  \end{align}
+  の4通りである。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  $x,y,z,w \in \mathbb{C}$ について、
+  \begin{align}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \otimes
+  \begin{pmatrix} z \\ w \end{pmatrix}
+  =
+  \begin{pmatrix} xz \\ xw \\ yz \\ yw \end{pmatrix}
+  =
+  \begin{pmatrix} c  \\ 0  \\ 0  \\ id \end{pmatrix}
+  \end{align}
+  とおくと、
+  $xw=0$ であるから、
+  $x=0$ または $w=0$ であり、したがって $c=0$ または $d=0$ である。
+  よって、 $c \neq 0$ かつ $d \neq 0$ ならば、
+  上式を満たす $x,y,z,w$ は存在しないことがわかる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
