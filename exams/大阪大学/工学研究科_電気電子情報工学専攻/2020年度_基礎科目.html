@@ -161,7 +161,8 @@
 
   <h3>(c)</h3>
 
-  <!--
+  <!-- 要修正 -->
+
   <p>
   $C_2$ 上の $z$ は $z=Re^{i \theta} \ \ (0 \leq \theta \leq \pi)$ と書け、
   $dz = iRe^{i \theta} d \theta$
@@ -175,10 +176,14 @@
   であり、
   \begin{align}
   \left| \int_{C_2} f(z) dz \right|
-  &\leq \left| \int_0^\pi \frac{ e^{-rR \sin \theta} e^{irR \cos \theta} }{ 1 + \frac{m^2}{R^2} e^{- 2i \theta} } d \theta \right|
+  &\leq \int_{C_2} \left| f(z) \right| \left| dz \right|
+  \\
+  &= \int_0^\pi \left| \frac{ e^{-rR \sin \theta} e^{irR \cos \theta} }{ 1 + \frac{m^2}{R^2} e^{- 2i \theta} } \right| d \theta
+  \\
+  &\to 0 \ \ (R \to 0)
   \end{align}
+  である。
   </p>
-  -->
 
   <h3>(d)</h3>
 
