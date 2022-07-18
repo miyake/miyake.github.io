@@ -127,6 +127,81 @@
   \end{align}
   </p>
 
+  <hr />
+  <h2>【数学3】</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  \begin{align}
+  f(z)
+  = \frac{z e^{irz}}{z^2 + m^2}
+  = \frac{z e^{irz}}{(z+im)(z-im)}
+  \end{align}
+  であるから、 $z=im,-im$ が1位の極であり、それぞれにおける留数は、
+  \begin{align}
+  \lim_{z \to im} (z-im) f(z) = \frac{1}{2} e^{-rm}
+  , \ \ 
+  \lim_{z \to -im} (z+im) f(z) = \frac{1}{2} e^{rm}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(b)</h3>
+
+  <p>
+  留数定理より、
+  \begin{align}
+  \int_{C_1+C_2} f(z) dz
+  = 2 \pi i \cdot \frac{1}{2} e^{-rm}
+  = i \pi e^{-rm}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(c)</h3>
+
+  <!--
+  <p>
+  $C_2$ 上の $z$ は $z=Re^{i \theta} \ \ (0 \leq \theta \leq \pi)$ と書け、
+  $dz = iRe^{i \theta} d \theta$
+  なので、
+  \begin{align}
+  \int_{C_2} f(z) dz
+  &= \int_0^\pi \frac{R e^{i \theta} e^{irR \exp(i \theta)}}{R^2 e^{2i \theta} + m^2} \cdot iR e^{i \theta} d \theta
+  \\
+  &= i \int_0^\pi \frac{ e^{-rR \sin \theta} e^{irR \cos \theta} }{ 1 + \frac{m^2}{R^2} e^{- 2i \theta} } d \theta
+  \end{align}
+  であり、
+  \begin{align}
+  \left| \int_{C_2} f(z) dz \right|
+  &\leq \left| \int_0^\pi \frac{ e^{-rR \sin \theta} e^{irR \cos \theta} }{ 1 + \frac{m^2}{R^2} e^{- 2i \theta} } d \theta \right|
+  \end{align}
+  </p>
+  -->
+
+  <h3>(d)</h3>
+
+  <p>
+  (b),(c)より、
+  \begin{align}
+  \lim_{R \to \infty} \int_{C_1} f(z) dz = i \pi e^{-rm}
+  \end{align}
+  であるが、 $m=1$ とすると、
+  \begin{align}
+  \int_{- \infty}^\infty \frac{k e^{ik}}{k^2+1} dk = i \pi e^{-r}
+  \end{align}
+  となり、これの両辺の虚部を考えると、
+  \begin{align}
+  \int_{- \infty}^\infty \frac{k \sin k}{k^2+1} dk = \pi e^{-r}
+  \end{align}
+  したがって、
+  \begin{align}
+  \int_0^\infty \frac{2k \sin k}{k^2+1} dk = \pi e^{-r}
+  \end{align}
+  を得る。
+  </p>
+
 
 
 
