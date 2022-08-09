@@ -165,6 +165,59 @@
   $L$ を最大にするので、最尤推定量である。
   </p>
 
+  <hr />
+  <h2>[数学解析]</h2>
+
+  <h3>1.</h3>
+
+  <p>
+  まず、 $ x_0(t) = e^{-t} $ は、すぐにわかる。
+
+  $ x_1(t) $ については、
+  \begin{align}
+  \frac{dx_1(t)}{dt}
+  &= - x_1(t) + x_0(t) \\
+  &= - x_1(t) + e^{-t}
+  \end{align}
+  なので、適当な関数 $A(t)$ を使って $x_1(t) = A(t) e^{-t}$ と書いて、
+  上の微分方程式に代入すると、
+  \begin{align}
+  \frac{dA(t)}{dt} = 1
+  \end{align}
+  となるので、積分定数を $C$ として、
+  \begin{align}
+  A(t) &= t + C
+  \\
+  \therefore \ \  x_1(t) &= (t + C) e^{-t}
+  \end{align}
+  であるが、初期条件 $x_1(0)=0$ を満たすようにするには、 $C=0$ とすればよく、
+  \begin{align}
+  x_1(t) = t e^{-t}
+  \end{align}
+  を得る。
+
+  同様にして、
+  \begin{align}
+  x_2(t) = \frac{1}{2} t^2 e^{-t}
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  以上より、 $k=0,1,2,\cdots$ について、
+  \begin{align}
+  x_k(t) = \frac{1}{k!} t^k e^{-t}
+  \end{align}
+  と予想できるが、これは確かに初期条件を満たし、
+  \begin{align}
+  \frac{dx_k(t)}{dt}
+  &= \frac{1}{(k-1)!} t^{k-1} e^{-t} - \frac{1}{k!} t^k e^{-t}
+  \\
+  &= x_{k-1}(t) - x_k(t)
+  \end{align}
+  であるから微分方程式も満たす。
+  </p>
+
 
 
 
