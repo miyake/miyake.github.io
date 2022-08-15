@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院 基礎工学研究科
+      システム創成専攻 電子光科学
+      2022年度 数理科学 I
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      大阪大学 大学院 基礎工学研究科
+      <br />
+      システム創成専攻 電子光科学
+      <br />
+      2022年度 電子光科学 I
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.ee.es.osaka-u.ac.jp/mcexam.html#mcexam">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <!--
+  <hr />
+  <h2>[I-1]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  a - \lambda & 0 & b \\ 0 & a - \lambda & 0 \\ b & 0 & a - \lambda
+  \end{pmatrix}
+  \\
+  &= (a - \lambda)^3 - b^2(a - \lambda)
+  \\
+  &= - (\lambda - a)(\lambda - a - b)(\lambda - a + b)
+  \\
+  \therefore \ \ 
+  \lambda &= a-b, a, a+b
+  \end{align}
+  </p>
+  -->
+
+  <hr />
+  <h2>[I-2]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $z$ が線分OB上にあるとすると、
+  \begin{align}
+  z &= t e^{i \pi / 4}
+  \\
+  z^2 &= t^2 e^{i \pi / 2} = i t^2
+  \\
+  f(z) &= e^{- i t^2}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  求める積分を $I$ とすると、
+  \begin{align}
+  I^2
+  &= \int_0^\infty e^{-x^2} dx \int_0^\infty e^{-y^2} dy
+  \\
+  &= \int_0^{\pi/2} d \theta \int_0^\infty dr r e^{-r^2}
+  \ \ \ \ \text{(2次元極座標)}
+  \\
+  &= \frac{\pi}{2} \left[ - \frac{1}{2} e^{-r^2} \right]_0^\infty
+  \\
+  &= \frac{\pi}{4}
+  \\
+  \therefore \ \ 
+  I &= \frac{\sqrt{\pi}}{2}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  まず、
+  \begin{align}
+  C &= \int_0^\infty \cos (x^2) dx
+  \\
+  S &= \int_0^\infty \sin (x^2) dx
+  \end{align}
+  とおくと、 (1) より、
+  \begin{align}
+  \int_{\mathrm{BO}} f(z) dz
+  &= \int_r^0 e^{- it^2} \frac{1+i}{\sqrt{2}} dt
+  \\
+  &= - \frac{1}{\sqrt{2}} \int_0^r \left(
+  \left( \cos (t^2) + \sin (t^2) \right)
+  + i \left( \cos (t^2) - \sin (t^2) \right) \right) dt
+  \\
+  &\xrightarrow{r \to \infty}
+  - \frac{1}{\sqrt{2}} \left( (C+S) + i (C-S) \right)
+  \end{align}
+  となる。
+  </p>
+
+  <p>
+  $f(z)$ は正則関数であるから、
+  \begin{align}
+  \int_{\mathrm{OA}} f(z) dz
+  + \int_{\mathrm{AB}} f(z) dz
+  + \int_{\mathrm{BO}} f(z) dz
+  = 0
+  \end{align}
+  が成り立つが、 $r \to \infty$ とすると、
+  \begin{align}
+  \frac{\sqrt{\pi}}{2}
+  + 0
+  - \frac{1}{\sqrt{2}} \left( (C+S) + i (C-S) \right)
+  = 0
+  \end{align}
+  となり、
+  \begin{align}
+  C = \frac{\sqrt{\pi}}{2 \sqrt{2}}
+  \end{align}
+  を得る。
+  </p>
+
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
