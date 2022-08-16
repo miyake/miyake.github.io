@@ -88,7 +88,7 @@
   であり、
   $\partial f/\partial x = \partial f/\partial y = 0$
   となるのは、
-  $(x,y)=(0,0)=(1,1)$
+  $(x,y)=(0,0),(1,1)$
   のときである。
   </p>
 
@@ -98,7 +98,7 @@
   \begin{pmatrix} 0 & -3 \\ -3 & 0 \end{pmatrix}
   \end{align}
   であり、これの2つの固有値を $\alpha, \beta$ とすると、
-  $\alpha + \beta = 0, \alpha \beta = -9$ から異符号である。
+  $\alpha \beta = -9$ から異符号である。
   よって、この点は鞍点であり、極値を与えない。
   </p>
 
@@ -112,7 +112,6 @@
   よって、この点で極小値をとり、その値は $f(1,1)=-2$ である。
   </p>
 
-  <!--
   <h3>[3]</h3>
 
   <h4>(a)</h4>
@@ -120,6 +119,105 @@
   <p>
   \begin{align}
   A = \begin{pmatrix} a & a+1 \\ a+1 & a \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0 &= \det \begin{pmatrix} a - \lambda & a+1 \\ a+1 & a - \lambda \end{pmatrix}
+  \\
+  &= (\lambda + 1)(\lambda - 2a - 1)
+  \\
+  \therefore \ \ 
+  \lambda &= -1, 2a+1
+  \end{align}
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  2次形式 $Q$ が定符号であるということは、
+  対称行列 $A$ の2つの固有値が同符号であるということなので、
+  \begin{align}
+  2a+1 &\lt 0
+  \\
+  \therefore \ \ 
+  a &\lt - \frac{1}{2}
+  \end{align}
+  </p>
+
+  <h3>[4]</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  $y=x^m$ とすると、
+  \begin{align}
+  \frac{dy}{dx} &= m x^{m-1}
+  \\
+  \frac{d^2 y}{dx^2} &= m(m-1) x^{m-2}
+  \end{align}
+  であり、これらを与えられた微分方程式 (*) に代入して、 $x \gt 0$ に注意して整理すると、
+  \begin{align}
+  (m-2)^2 &= 0
+  \\
+  \therefore \ \ 
+  m &= 2
+  \end{align}
+  を得る。
+  実際、
+  \begin{align}
+  y = x^2
+  \end{align}
+  が (*) の解であることは簡単に確かめられる。
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  $y=x^2 u(x)$ として、 $z = du/dx$ を使うと、
+  \begin{align}
+  \frac{dy}{dx} &= 2xu + x^2 z
+  \\
+  \frac{d^2 y}{dx^2} &= 2u + 4xz + x^2 \frac{dz}{dx}
+  \end{align}
+  であり、これらを与えられた微分方程式 (*) に代入して、 $x \gt 0$ に注意して整理すると、
+  \begin{align}
+  x \frac{dz}{dx} + z = 0
+  \end{align}
+  を得る。
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  (b) で得られた微分方程式を積分して、積分定数を適当に選ぶと、
+  \begin{align}
+  z &= \frac{1}{x}
+  \\
+  u &= \log x
+  \end{align}
+  を得る。
+  実際、 $y = x^2 \log x$ は (*) を満たす。
+  以上より、 (*) の一般解は、任意定数を $A,B$ として、
+  \begin{align}
+  y = A x^2 + B x^2 \log x
+  \end{align}
+  である。
+  </p>
+
+  <!--
+  <hr />
+  <h2>確率・統計</h2>
+
+  <h3>[1]</h3>
+
+  <p>
+  \begin{align}
+  0.3 + 0.3 = 0.6 = \frac{3}{5}
   \end{align}
   </p>
   -->
