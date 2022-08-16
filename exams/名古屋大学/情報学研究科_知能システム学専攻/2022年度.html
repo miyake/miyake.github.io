@@ -209,18 +209,124 @@
   である。
   </p>
 
-  <!--
   <hr />
   <h2>確率・統計</h2>
 
   <h3>[1]</h3>
+
+  <h4>(1)</h4>
 
   <p>
   \begin{align}
   0.3 + 0.3 = 0.6 = \frac{3}{5}
   \end{align}
   </p>
-  -->
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \frac{3}{4}
+  \end{align}
+  </p>
+
+  <h3>[2]</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  $X$ の確率密度関数 $f(x)$ は、 $1 \leq x \leq 3$ において、
+  \begin{align}
+  f(x) = \frac{1}{2}
+  \end{align}
+  であり、それ以外では $0$ である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  $Y$ の確率密度関数 $g(y)$ は、 $0$ でないのは $3 \leq y \leq 11$ のときであり、このとき
+  \begin{align}
+  g(y)
+  &= f(x) \left| \frac{dx}{dy} \right|
+  \\
+  &= \frac{1}{2} \cdot \frac{1}{2 \sqrt{y-2}}
+  \\
+  &= \frac{1}{4 \sqrt{y-2}}
+  \end{align}
+  である。
+  </p>
+
+  <h3>[3]</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  P(X) = {}_n \mathrm{C}_X \left( \frac{1}{6} \right)^X \left( \frac{5}{6} \right)^{n-X}
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  サイコロを振る回数を $n$ とすると、求める条件は、
+  \begin{align}
+  \left( \frac{5}{6} \right)^n
+  &\geq 0.4
+  \\
+  &= \frac{2}{5}
+  \\
+  n \log_e \frac{5}{6} & \geq \log_e \frac{2}{5}
+  \\
+  n &\leq \frac{\log_e \frac{2}{5}}{\log_e \frac{5}{6}}
+  \\
+  &= \frac{\log_e 5 - \log_e 2}{\log_e 6 - \log_e 5}
+  \\
+  &\approx \frac{1.6094 - 0.6931}{1.7918 - 1.6094}
+  \\
+  &\approx 5.02
+  \end{align}
+  であるから、5回まで振ることができる。
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  サイコロを10回振ったとき1の目が出る回数が1回以下となる確率を $p$ とすると、
+  \begin{align}
+  p
+  &= \left( \frac{5}{6} \right)^{10}
+  + 10 \cdot \frac{1}{6} \cdot \left( \frac{5}{6} \right)^9
+  \\
+  &= \left( \frac{5}{6} \right)^9 \cdot \frac{5}{2}
+  \end{align}
+  なので、
+  \begin{align}
+  \log_e p
+  &= 9 (\log_e 5 - \log_e 6) + \log_e 5 - \log_e 2
+  \\
+  &= 10 \log_e 5 - 9 \log_e 6 - \log_e 2
+  \\
+  &\approx -0.7253
+  \end{align}
+  である。
+  一方、
+  \begin{align}
+  \log_e 0.5
+  &= \log_e \frac{1}{2}
+  \\
+  &= - \log_e 2
+  \\
+  &\approx - 0.6931
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  \log_e p \lt \log_e 0.5
+  \end{align}
+  であり、 $\log_e x$ は単調増加関数なので、 $p$ は $0.5$ 以上ではない。
+  </p>
 
 
 
