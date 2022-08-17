@@ -147,6 +147,97 @@
   のときであり、このとき、線分の長さは $a+b$ である。
   </p>
 
+  <hr />
+  <h2>数学1（主に「微分積分および微分方程式」と「級数・フーリエ解析および積分変換」）</h2>
+
+  <h3>II</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  \begin{align}
+  \mathcal{L} \left[ f'(t) \right]
+  &= \int_0^\infty e^{-st} f'(t) dt
+  \\
+  &= \left[ e^{-st} f(t) \right]_0^\infty + s \int_0^\infty e^{-st} f(t) dt
+  \\
+  &= -f(0) + s \mathcal{L} \left[ f(t) \right]
+  \\
+  \mathcal{L} \left[ f''(t) \right]
+  &= \int_0^\infty e^{-st} f''(t) dt
+  \\
+  &= \left[ e^{-st} f'(t) \right]_0^\infty + s \int_0^\infty e^{-st} f'(t) dt
+  \\
+  &= -f'(0) - s f(0) + s^2 \mathcal{L} \left[ f(t) \right]
+  \end{align}
+  </p>
+
+  <h4>2.</h4>
+
+  <p>
+  \begin{align}
+  \mathcal{L} \left[ g(t) \right]
+  &= \int_0^\infty e^{-(s+a)t} \cos (\omega t) dt
+  \\
+  &= \frac{1}{\omega} \left[ e^{-(s+a)t} \sin (\omega t) \right]_0^\infty
+  + \frac{s+a}{\omega} \int_0^\infty e^{-(s+a)t} \sin (\omega t) dt
+  \\
+  &= \frac{s+a}{\omega} \mathcal{L} \left[ h(t) \right]
+  \\
+  \mathcal{L} \left[ h(t) \right]
+  &= \int_0^\infty e^{-(s+a)t} \sin (\omega t) dt
+  \\
+  &= - \frac{1}{\omega} \left[ e^{-(s+a)t} \cos (\omega t) \right]_0^\infty
+  - \frac{s+a}{\omega} \int_0^\infty e^{-(s+a)t} \cos (\omega t) dt
+  \\
+  &= \frac{1}{\omega} - \frac{s+a}{\omega} \mathcal{L} \left[ g(t) \right]
+  \end{align}
+  より、
+  \begin{align}
+  \mathcal{L} \left[ g(t) \right]
+  &= \frac{s+a}{(s+a)^2 + \omega^2}
+  \\
+  \mathcal{L} \left[ h(t) \right]
+  &= \frac{\omega}{(s+a)^2 + \omega^2}
+  \end{align}
+  </p>
+
+  <h4>3.</h4>
+
+  <p>
+  与えられた微分方程式をラプラス変換して、上の 1. で得た式を使うと、
+  \begin{align}
+  \left( -f'(0) - s f(0) + s^2 \mathcal{L} \left[ f(t) \right] \right)
+  + 6 \left( -f(0) + s \mathcal{L} \left[ f(t) \right] \right)
+  + 13 \mathcal{L} \left[ f(t) \right]
+  = 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  -f'(0) - (s+6) f(0) + (s^2+6s+13) \mathcal{L} \left[ f(t) \right] = 0
+  \end{align}
+  さらに、初期値 $f(0)=5, f'(0)=-11$ を代入して整理すると、
+  \begin{align}
+  (s^2+6s+13) \mathcal{L} \left[ f(t) \right] = 5s+19
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \mathcal{L} \left[ f(t) \right]
+  &= \frac{5s+19}{s^2+6s+13}
+  \\
+  &= 2 \cdot \frac{2}{(s+3)^2+2^2} + 5 \cdot \frac{s+3}{(s+3)^2+2^2}
+  \end{align}
+  となる。
+  これは、上の 2. で $a=3, \omega=2$ の場合に相当するので、
+  \begin{align}
+  f(t)
+  &= 2 e^{-3t} \sin (2t) + 5 e^{-3t} \cos (2t)
+  \\
+  &= e^{-3t} \left( 2 \sin (2t) + 5 \cos (2t) \right)
+  \end{align}
+  がわかる。
+  </p>
+
 
   <hr />
   <p>
