@@ -111,6 +111,119 @@
   を得る。
   </p>
 
+  <h3>[3]</h3>
+
+  <p>
+  行列 $X$ やベクトル $\vec{x}$ の転置をそれぞれ $X^T, \vec{x}^T$ で表す。
+  内積 $\vec{x} \cdot \vec{y}$ は $\vec{x}^T \vec{y}$ とも書ける。
+  また、単位行列を $I$ で表す。
+  </p>
+
+  <p>
+  さらに、行列 $X$ やベクトル $\vec{x}$ の複素転置（エルミート共役）をそれぞれ
+  $X^\dagger, \vec{x}^\dagger$ で表す。
+  $X$ が実行列の場合は、 $X^\dagger = X^T$ である。
+  </p>
+
+  <h4>1)</h4>
+
+  <p>
+  $A$ が直交行列であり $A^T A = I$ が成り立つことから、次のように計算できる：
+  \begin{align}
+  \left( A \vec{a} \right) \cdot \left( A \vec{b} \right)
+  &= \left( A \vec{a} \right)^T \left( A \vec{b} \right)
+  \\
+  &=  \vec{a}^T A^T A \vec{b}
+  \\
+  &=  \vec{a}^T \vec{b}
+  \\
+  &=  \vec{a} \cdot \vec{b}
+  \end{align}
+  </p>
+
+  <h4>2)</h4>
+
+  <p>
+  $A$ の固有値を $\lambda$とし、対応する規格化された固有ベクトルを $\vec{v}$ とする
+  （ $\vec{v}^\dagger \vec{v} = 1$ ）：
+  \begin{align}
+  A \vec{v} = \lambda \vec{v}
+  \end{align}
+  両辺それぞれに自分自身の複素転置を左からかけると、
+  \begin{align}
+  (左辺)
+  &= \left( A \vec{v} \right)^\dagger A \vec{v}
+  \\
+  &= \vec{v}^\dagger A^\dagger A \vec{v}
+  \\
+  &= \vec{v}^\dagger A^T A \vec{v}
+  \\
+  &= \vec{v}^\dagger \vec{v}
+  \\
+  &= 1
+  \\
+  (右辺)
+  &= | \lambda |^2 \vec{v}^\dagger \vec{v}
+  \\
+  &= | \lambda |^2
+  \end{align}
+  となるので、 $|\lambda| = 1$ がわかる。
+  </p>
+
+  <h4>3)</h4>
+
+  <p>
+  \begin{align}
+  I
+  &= A^T A
+  \\
+  &= \begin{pmatrix} \vec{a}_1^T \\ \vec{a}_2^T \end{pmatrix}
+  \left( \vec{a}_1, \vec{a}_2 \right)
+  \\
+  &= \begin{pmatrix}
+  \vec{a}_1^T \vec{a}_1 & \vec{a}_1^T \vec{a}_2 \\
+  \vec{a}_2^T \vec{a}_1 & \vec{a}_2^T \vec{a}_2
+  \end{pmatrix}
+  \end{align}
+  であるから、$\vec{a}_1, \vec{a}_2$ それぞれのユークリッドノルムが $1$ であることと、
+  $\vec{a}_1, \vec{a}_2$ が直交することがわかる。
+  </p>
+
+  <h4>4)</h4>
+
+  <p>
+  \begin{align}
+  \vec{a}_2 = \begin{pmatrix} - \sin \theta \\ \cos \theta \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>5)</h4>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix} \cos \theta & \sin \theta \\ \sin \theta & - \cos \theta \end{pmatrix}
+  \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  &=
+  \begin{pmatrix} \cos \theta \\ \sin \theta \end{pmatrix}
+  ,
+  \\
+  \begin{pmatrix} \cos \theta & \sin \theta \\ \sin \theta & - \cos \theta \end{pmatrix}
+  \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  &=
+  \begin{pmatrix} \sin \theta \\ - \cos \theta \end{pmatrix}
+  \end{align}
+  であるから、求める直線は、原点を通り、
+  \begin{align}
+  \begin{pmatrix} \cos \frac{\theta}{2} \\ \sin \frac{\theta}{2} \end{pmatrix}
+  \end{align}
+  を方向ベクトルとするような直線である。
+  ベクトルの第1成分をx、第2成分をyで表すと、その直線の方程式は、
+  \begin{align}
+  y = x \tan \frac{\theta}{2}
+  \end{align}
+  である。
+  </p>
+
   <hr />
   <p>
   <nav id="footer_breadcrumbs">
