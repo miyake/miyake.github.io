@@ -40,9 +40,6 @@
   <p>
   <ul>
     <li>
-    <!--
-    <a href="http://www.see.eng.osaka-u.ac.jp/topics/exam/2386.html">
-    -->
     <a href="https://see.eng.osaka-u.ac.jp/exam">
       問題はこちらから入手してください。
     </a>
@@ -55,6 +52,211 @@
     </li>
   </ul>
 
+  <!--
+  <hr />
+  <h2>(1)</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  $k=1,2,\cdots$ について、 $k$ 階導関数は
+  \begin{align}
+  f^{(k)}(x) &= e^x
+  \end{align}
+  であり、 $x=a$ における $k$ 階微分係数は
+  \begin{align}
+  f^{(k)}(a) &= e^a
+  \end{align}
+  なので、
+  \begin{align}
+  f(x) = \sum_{k=0}^\infty \frac{e^a}{k!} (x-a)^k
+  \end{align}
+  である。
+  </p>
+
+  <h3>(b)</h3>
+
+  <p>
+  \begin{align}
+  f(x)
+  &= a^x
+  \\
+  &= e^{x \log a}
+  \\
+  \therefore \ \ 
+  f'(x)
+  &= e^{x \log a} \cdot \log a
+  \\
+  &= a^x \log a
+  \end{align}
+  </p>
+
+  <h3>(c)</h3>
+
+  <h4>(i)</h4>
+
+  <p>
+  \begin{align}
+  \mathrm{grad} \ h(x,y)
+  = \frac{\partial h(x,y)}{\partial x} \boldsymbol{i}
+  + \frac{\partial h(x,y)}{\partial y} \boldsymbol{j}
+  \end{align}
+  </p>
+
+  <h4>(ii)</h4>
+
+  <p>
+  等高線 $h(x,y)=c$ 上の点 $(X,Y)$ における接線の方程式は、
+  \begin{align}
+  \frac{\partial h(X,Y)}{\partial x} (x-X)
+  + \frac{\partial h(X,Y)}{\partial y} (y-Y)
+  = 0
+  \end{align}
+  であるが、これは $\mathrm{grad} \ h(X,Y)$ とベクトル
+  $ (x-X) \boldsymbol{i} + (y-Y) \boldsymbol{j}$
+  が直交していることを意味し、
+  つまり、 $\mathrm{grad} \ h(X,Y)$ と等位線が $(X,Y)$ において直交していることを意味する。
+  </p>
+
+  <h3>(d)</h3>
+
+  <h4>(i)</h4>
+
+  <p>
+  特性方程式は、
+  \begin{align}
+  \lambda^2 - 5 \lambda + 4 = 0
+  \end{align}
+  であり、特性根は、
+  \begin{align}
+  \lambda = 1, 4
+  \end{align}
+  である。
+  </p>
+
+  <h4>(ii)</h4>
+
+  <p>
+  特殊解として、定数解
+  \begin{align}
+  y = \frac{k}{4}
+  \end{align}
+  があるのは明らかなので、
+  (i) を考慮し、任意定数を $A, B$ として、
+  \begin{align}
+  y = A e^x + B e^{4x} + \frac{k}{4}
+  \end{align}
+  が一般解である。
+  </p>
+
+  <p>
+  実際、これは、
+  \begin{align}
+  y'  &= A e^x + 4B e^{4x}
+  \\
+  y'' &= A e^x + 16B e^{4x}
+  \end{align}
+  となり、
+  \begin{align}
+  y'' - 5 y' + 4 y = k
+  \end{align}
+  を満たす。
+  </p>
+  -->
+
+  <hr />
+  <h2>(2)</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  \begin{align}
+  \det A
+  &= \det \begin{pmatrix}
+  1 & a^2 & (b+c)^2 \\ 1 & b^2 & (c+a)^2 \\ 1 & c^2 & (a+b)^2
+  \end{pmatrix}
+  \\
+  &= \det \begin{pmatrix}
+  1 & a^2 & (b+c)^2 \\
+  0 & b^2 - a^2 & (c+a)^2 - (b+c)^2 \\
+  0 & c^2 - a^2 & (a+b)^2 - (b+c)^2
+  \end{pmatrix}
+  \\
+  &= \det \begin{pmatrix}
+  (b+a)(b-a) & (a+b+2c)(a-b) \\
+  (c+a)(c-a) & (a+2b+c)(a-c)
+  \end{pmatrix}
+  \\
+  &= (a-b)(c-a) \det \begin{pmatrix}
+  - (b+a) & a+b+2c \\
+  (c+a) & -(a+2b+c)
+  \end{pmatrix}
+  \\
+  &= (a-b)(c-a) \left\{ (b+a)(a+2b+c) - (a+b+2c)(c+a) \right\}
+  \\
+  &= 2(a+b+c)(a-b)(b-c)(c-a)
+  \end{align}
+  </p>
+
+  <!--
+  <p>
+  確認
+  <a href="https://www.wolframalpha.com/input?i=%E8%A1%8C%E5%88%97%E5%BC%8F&assumption=%7B%22C%22%2C+%22%E8%A1%8C%E5%88%97%E5%BC%8F%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22Determinant%22%2C+%22detmatrix%22%7D+-%3E%22%7B%7B1%2C+a%5E2%2C+%28b%2Bc%29%5E2%7D%2C+%7B1%2C+b%5E2%2C+%28c%2Ba%29%5E2%7D%2C+%7B1%2C+c%5E2%2C+%28a%2Bb%29%5E2%7D%7D%22&lang=ja">
+    WolframAlpha
+  </a>
+  </p>
+  -->
+
+  <h3>(c)</h3>
+
+  <!--
+  <p>
+  確認
+  <a href="https://www.wolframalpha.com/input?i=%E8%A1%8C%E5%88%97%E5%BC%8F&assumption=%7B%22C%22%2C+%22%E8%A1%8C%E5%88%97%E5%BC%8F%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22Determinant%22%2C+%22detmatrix%22%7D+-%3E%22%7B%7Ba%2C+b%2C+c%7D%2C+%7Ba%5E2%2C+b%5E2%2C+c%5E2%7D%2C+%7Ba%5E3%2C+b%5E3%2C+c%5E3%7D%7D%22&lang=ja">
+    WolframAlpha
+  </a>
+  </p>
+  -->
+
+  <p>
+  まず、
+  \begin{align}
+  \det \begin{pmatrix} a & b & c \\ a^2 & b^2 & c^2 \\ a^3 & b^3 & c^3 \end{pmatrix}
+  &= \det \begin{pmatrix}
+  a & b & c \\ 0 & b(b-a) & c(c-a) \\ 0 & b(b^2-a^2) & c(c^2-a^2)
+  \end{pmatrix}
+  \\
+  &= a \det \begin{pmatrix} b(b-a) & c(c-a) \\ b(b+a)(b-a) & c(c+a)(c-a) \end{pmatrix}
+  \\
+  &= abc(b-a)(c-a) \det \begin{pmatrix} 1 & 1 \\ b+a & c+a \end{pmatrix}
+  \\
+  &= abc(a-b)(b-c)(c-a)
+  \end{align}
+  であり、同様にして、
+  \begin{align}
+  \det \begin{pmatrix} k & b & c \\ k^2 & b^2 & c^2 \\ k^3 & b^3 & c^3 \end{pmatrix}
+  &= kbc(k-b)(b-c)(c-k)
+  \\
+  \det \begin{pmatrix} a & k & c \\ a^2 & k^2 & c^2 \\ a^3 & k^3 & c^3 \end{pmatrix}
+  &= akc(a-k)(k-c)(c-a)
+  \\
+  \det \begin{pmatrix} a & b & k \\ a^2 & b^2 & k^2 \\ a^3 & b^3 & k^3 \end{pmatrix}
+  &= abk(a-b)(b-k)(k-a)
+  \end{align}
+  である。
+
+  よって、クラメルの公式より、求める解は、
+  \begin{align}
+  x &= \frac{k(k-b)(c-k)}{a(a-b)(c-a)}
+  \\
+  y &= \frac{k(a-k)(k-c)}{b(a-b)(b-c)}
+  \\
+  z &= \frac{k(b-k)(k-a)}{c(b-c)(c-a)}
+  \end{align}
+  である。
+  </p>
+
+  <!--
   <hr />
   <h2>(3)</h2>
 
@@ -149,7 +351,7 @@
   {\sum_{l=1}^K P ( A \mid H_l ) P(H_l)}
   \end{align}
   </p>
-
+  -->
 
 
 
