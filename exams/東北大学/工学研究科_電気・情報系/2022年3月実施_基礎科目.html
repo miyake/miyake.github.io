@@ -128,6 +128,68 @@
   \end{align}
   </p>
 
+  <h3>(2)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  $\tau = at+b$ とると、 $a \gt 0$ より $t \to \infty$ のとき $\tau \to \infty$ であるから、
+  次のように計算できる：
+  \begin{align}
+  \mathcal{L} \left[ f(at+b) \right]
+  &= \int_0^\infty e^{-st} f(at+b) dt
+  \\
+  &= \int_b^\infty e^{-s(\tau-b)/a} f(\tau) \frac{d \tau}{a}
+  \\
+  &= \frac{e^{bs/a}}{a} \int_b^\infty e^{-s \tau /a} f(\tau) d \tau
+  \\
+  &= \frac{e^{bs/a}}{a} \left\{ \int_0^\infty e^{-s \tau /a} f(\tau) d \tau
+  - \int_0^b e^{-s \tau /a} f(\tau) d \tau \right\}
+  \\
+  &= \frac{e^{bs/a}}{a} \left\{ F \left( \frac{s}{a} \right)
+  - \int_0^b e^{-st /a} f(t) dt \right\}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  まず、
+  \begin{align}
+  \mathcal{L} \left[ t \right]
+  &= \int_0^\infty e^{-st} t dt
+  \\
+  &= \int_0^\infty \left( - \frac{1}{s} e^{-st} \right)' t dt
+  \\
+  &= \left[ - \frac{1}{s} e^{-st} t \right]_0^\infty + \frac{1}{s} \int_0^\infty e^{-st} dt
+  \\
+  &= - \frac{1}{s^2} \left[ e^{-st} \right]_0^\infty
+  \\
+  &= \frac{1}{s^2}
+  \end{align}
+  である。
+
+  よって、与えられた差分方程式をラプラス変換すると、(a)で得た式を使って、
+  \begin{align}
+  e^{2s} \left\{ F(s) - \int_0^2 e^{-st} f(t) dt \right\}
+  -3e^{s} \left\{ F(s) - \int_0^1 e^{-st} f(t) dt \right\}
+  + 2F(s)
+  = \frac{1}{s^2}
+  \end{align}
+  さらに、 $0 \leq t \leq 2$ で $f(t)=0$ であることを使って整理すると、
+  \begin{align}
+  \left( e^{2s} - 3 e^s + 2 \right) F(s) = \frac{1}{s^2}
+  \end{align}
+  なので、
+  \begin{align}
+  F(s)
+  &= \frac{1}{s^2 \left( e^{2s} - 3 e^s + 2 \right)}
+  \\
+  &= \frac{1}{s^2 \left( e^s -1 \right) \left( e^s -2 \right)}
+  \end{align}
+  を得る。
+  </p>
+
 
 
   <hr />
