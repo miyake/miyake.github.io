@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      電気・情報系
+      2022年2・3月実施 基礎科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      工学研究科 電気・情報系
+      <br />
+      2022年2・3月実施 基礎科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.eng.tohoku.ac.jp/admission/grad/past_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題6 数学基礎</h2>
+
+  <h3>(1)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix} 1-\lambda & 2 & 0 \\ -1 & -2-\lambda & 1 \\ 0 & 0 & 1-\lambda \end{pmatrix}
+  \\
+  &= - \lambda (\lambda+1)(\lambda-1)
+  \\
+  \therefore \ \ 
+  \lambda &= 0, \pm 1
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  固有値 $-1$ に対応する固有ベクトルを求めるために、
+  \begin{align}
+  \begin{pmatrix} 2 & 2 & 0 \\ -1 & -1 & 1 \\ 0 & 0 & 2 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x+y=0, z=0$ であるから、固有ベクトルは例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  同様にして、固有値 $0,1$ に対応する固有ベクトルは、それぞれ、例えば、
+  \begin{align}
+  \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  (a) で求めたように、 $A$ の固有多項式は $\lambda^3 - \lambda$ であるから、
+  ケーリー-ハミルトンの定理より、
+  \begin{align}
+  A^3 - A = O
+  \end{align}
+  が成り立つ。
+
+  つまり、
+  \begin{align}
+  a=0, b=-1, c=0
+  \end{align}
+  である。
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  \begin{align}
+  A^4+A^3-A^2+4A-5E
+  &= (A^3-A)(A+E) + 5A - 5E
+  \\
+  &= 5A - 5E
+  \\
+  &= \begin{pmatrix} 0 & 10 & 0 \\ -5 & -15 & 5 \\ 0 & 0 & 0 \end{pmatrix}
+  \end{align}
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
