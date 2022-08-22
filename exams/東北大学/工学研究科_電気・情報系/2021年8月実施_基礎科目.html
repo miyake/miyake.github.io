@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      電気・情報系
+      2021年8月実施 基礎科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東北大学 大学院
+      <br />
+      工学研究科 電気・情報系
+      <br />
+      2021年8月実施 基礎科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.eng.tohoku.ac.jp/admission/grad/past_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題6 数学基礎</h2>
+
+  <!--
+  (1) は対角化して計算するだけなので省略
+  -->
+
+  <h3>(2)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  \begin{align}
+  a_0
+  &=
+  \frac{1}{\pi} \int_0^{2 \pi} x dx
+  \\
+  &=
+  \frac{1}{\pi} \left[ \frac{x^2}{2} \right]_0^{2 \pi}
+  \\
+  &= 2 \pi
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  \begin{align}
+  a_n
+  &=
+  \frac{1}{\pi} \int_0^{2 \pi} x \cos nx dx
+  \\
+  &=
+  \frac{1}{n \pi} \left[ x \sin nx \right]_0^{2 \pi}
+  - \frac{1}{n \pi} \int_0^{2 \pi} \sin nx dx
+  \\
+  &= 0
+  \\
+  b_n
+  &=
+  \frac{1}{\pi} \int_0^{2 \pi} x \sin nx dx
+  \\
+  &=
+  - \frac{1}{n \pi} \left[ x \cos nx \right]_0^{2 \pi}
+  + \frac{1}{n \pi} \int_0^{2 \pi} \cos nx dx
+  \\
+  &=
+  - \frac{2}{n}
+  \end{align}
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  (a), (b) より、 $0 \lt x \lt 2 \pi$ のとき、
+  \begin{align}
+  x
+  &= \pi + \sum_{n=1}^\infty \left( - \frac{2}{n} \right) \sin nx
+  \\
+  &= \pi - 2 \sum_{n=1}^\infty \frac{\sin nx}{n}
+  \end{align}
+  したがって、
+  \begin{align}
+  \sum_{n=1}^\infty \frac{\sin nx}{n}
+  = \frac{\pi - x}{2}
+  \end{align}
+  が成り立つことがわかる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
