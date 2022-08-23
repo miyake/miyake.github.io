@@ -410,10 +410,15 @@
   つまり、6つのベクトル $\pm \boldsymbol{x}_1, \pm \boldsymbol{y}_1, \pm \boldsymbol{z}$
   は、規格化された同時固有ベクトルである。
   （これら以外にはないことは次のようにしてわかる。
-  $\alpha \ne 0, \beta \neq 0$ として、
-  $\alpha \boldsymbol{x}_1 + \beta \boldsymbol{y}_1$ は $A,B$ どちらの固有ベクトルでもなく、
-  $\alpha \boldsymbol{x}_1 + \beta \boldsymbol{z}$ は $B$ の固有ベクトルだが $A$ の固有ベクトルではなく、
-  $\alpha \boldsymbol{y}_1 + \beta \boldsymbol{z}$ は $A$ の固有ベクトルだが $B$ の固有ベクトルではない。）
+  $\alpha \ne 0, \beta \neq 0, \gamma \neq 0$ として、
+  $\alpha \boldsymbol{x}_1 + \beta \boldsymbol{y}_1$ は
+  $A,B$ どちらの固有ベクトルでもなく、
+  $\alpha \boldsymbol{x}_1 + \gamma \boldsymbol{z}$ は
+  $B$ の固有ベクトルだが $A$ の固有ベクトルではなく、
+  $\beta \boldsymbol{y}_1 + \gamma \boldsymbol{z}$ は
+  $A$ の固有ベクトルだが $B$ の固有ベクトルではなく、
+  $\alpha \boldsymbol{x}_1 + \beta \boldsymbol{y}_1 + \gamma \boldsymbol{z}$ は
+  $A,B$ どちらの固有ベクトルでもない。）
   </p>
 
   <p>
@@ -435,6 +440,205 @@
   \end{align}
   を得る。
   </p>
+
+  <hr />
+  <h2>数学2（主に「ベクトル・行列・固有値（線形代数）」と「曲線・曲面」）</h2>
+
+  <h3>II</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  \begin{align}
+  A = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 2 \\ 0 & 2 & 2 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{b} = \frac{1}{2 \sqrt{2}} \begin{pmatrix} 0 \\ -1 \\ 1 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>2.</h4>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det
+  \begin{pmatrix} 2-\lambda & 0 & 0 \\ 0 & 2-\lambda & 2 \\ 0 & 2 & 2-\lambda \end{pmatrix}
+  \\
+  &= - \lambda(\lambda-2)(\lambda-4)
+  \end{align}
+  となるので、
+  \begin{align}
+  d_1 = 4, d_2 = 2, d_3 = 0
+  \end{align}
+  つまり、
+  \begin{align}
+  D
+  = \begin{pmatrix} 4 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+  \end{align}
+  である。
+
+  固有値 $d_1, d_2, d_3$ に属する規格化された固有ベクトルは、それぞれ、
+  \begin{align}
+  \boldsymbol{v}_1 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{v}_2 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{v}_3 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}
+  \end{align}
+  なので、
+  \begin{align}
+  P^T
+  = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 & \sqrt{2} & 0 \\ 1 & 0 & 1 \\ 1 & 0 & -1 \end{pmatrix}
+  , \ \ 
+  P
+  = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 & 1 & 1 \\ \sqrt{2} & 0 & 0 \\ 0 & 1 & -1 \end{pmatrix}
+  \end{align}
+  とすると、 $A = P^T DP$ となる。
+  </p>
+
+  <h4>3.</h4>
+
+  <p>
+  \begin{align}
+  f(x,y,z)
+  &=
+  \begin{pmatrix} x & y & z \end{pmatrix} A \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  + 2 \boldsymbol{b}^T \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} x & y & z \end{pmatrix} P^T P A P^T P \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  + 2 \boldsymbol{b}^T P^T P \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} X & Y & Z \end{pmatrix} D \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
+  + 2 \boldsymbol{b}^T P^T \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
+  \\
+  &=
+  4X^2+2Y^2-Z
+  \end{align}
+  </p>
+
+  <h4>4.</h4>
+
+  <p>
+  平面 $y-z-\sqrt{2}=0$ は次のように書き直せる：
+  \begin{align}
+  \begin{pmatrix} 0 & 1 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \sqrt{2}
+  \\
+  \begin{pmatrix} 0 & 1 & -1 \end{pmatrix} P^T \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
+  &= \sqrt{2}
+  \end{align}
+  これを整理して $Z=1$ を得る。
+  </p>
+
+  <p>
+  また、 3. で得た
+  \begin{align}
+  4X^2 + 2Y^2 - Z = 0
+  \end{align}
+  は、 $Z (\gt 0)$ を固定すると、 $X,Y$ に関する楕円の方程式であり、その面積 $S(Z)$ は、
+  \begin{align}
+  S(Z)
+  = \pi \sqrt{\frac{Z}{4}} \sqrt{\frac{Z}{2}}
+  = \frac{\pi}{2 \sqrt{2}} Z
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  よって、求める体積は、
+  \begin{align}
+  \int_0^1 S(Z) dZ
+  = \frac{\pi}{2 \sqrt{2}} \int_0^1 Z dZ
+  = \frac{\pi}{4 \sqrt{2}}
+  \end{align}
+  である。
+  </p>
+
+  <hr />
+  <h2>数学3（主に「関数論・複素数」と「確率・統計，情報数学，その他」）</h2>
+
+  <h3>I</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  $I_1$ の被積分関数
+  \begin{align}
+  f(z) = \frac{z}{(z-i)(z-1)}
+  \end{align}
+  の極 $z=1,i$ における留数はそれぞれ
+  \begin{align}
+  R_1 &= \frac{1}{1-i} = \frac{1+i}{2}
+  , \\
+  R_i &= \frac{i}{i-1} = \frac{1-i}{2}
+  \end{align}
+  である。
+
+  $I_1$ は $z=1$ の周りを反時計回りに回る部分と $z=i$ の周りを時計回りに回る部分からなるから、
+  \begin{align}
+  I_1
+  &= 2 \pi i \left( R_1 - R_i \right)
+  \\
+  &= -2 \pi
+  \end{align}
+  である。
+  </p>
+
+  <!-- 未検証 -->
+
+  <h4>2.</h4>
+
+  <h5>2.1.</h5>
+
+  <p>
+  $|z|=1$ を満たす複素数 $z$ は、 $z=e^{i \theta} \ \ (0 \leq \theta \lt 2 \pi)$ と書ける。
+  このとき、
+  \begin{align}
+  dz &= i e^{i \theta} d \theta = iz d \theta
+  \\
+  z + \frac{1}{z} &= e^{i \theta} + e^{-i \theta} = 2 \cos \theta
+  \end{align}
+  であるから、
+  \begin{align}
+  I_2
+  &= \oint_{|z|=1} \frac{1}{10 + 4 \left( z + \frac{1}{z} \right)} \frac{dz}{iz}
+  \\
+  &= \oint_{|z|=1} \frac{-i}{2(z+2)(2z+1)} dz
+  \end{align}
+  よって、
+  \begin{align}
+  G(z) = \frac{-i}{2(z+2)(2z+1)}
+  \end{align}
+  である。
+  </p>
+
+  <h5>2.2.</h5>
+
+  <p>
+  $G(z)$ の特異点は $z=-1/2, 2$ である。
+  </p>
+
+  <h5>2.3.</h5>
+
+  <p>
+  $G(z)$ の $z=-1/2$ における留数は $-i/6$ であるから、留数定理により、
+  \begin{align}
+  I_2 = 2 \pi i \cdot \frac{-i}{6} = \frac{\pi}{3}
+  \end{align}
+  を得る。
+  </p>
+
+  <!--
+  <a href="https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%222pi%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%221%2F%2810%2B8cos%28x%29%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%220%22&lang=ja">
+    WolframAlpha
+  </a>
+  -->
+
+
+
 
   <hr />
   <p>
