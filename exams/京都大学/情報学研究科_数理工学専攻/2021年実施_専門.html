@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 情報学研究科
+      数理工学専攻
+      2021年実施 専門
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 情報学研究科
+      <br />
+      数理工学専攻
+      <br />
+      2021年実施 専門
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.i.kyoto-u.ac.jp/admission/guide.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>[5] 物理統計学</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  \begin{align}
+  Z
+  &= \sum_{n=0}^\infty \exp \left( - \frac{E_n}{kT} \right)
+  \\
+  &= \exp \left( - \frac{h \nu}{2kT} \right)
+  \sum_{n=0}^\infty \exp \left( - \frac{h \nu}{kT} n \right)
+  \\
+  &= \frac{ \exp \left( - \frac{h \nu}{2kT} \right) }{
+  1 - \exp \left( - \frac{h \nu}{kT} \right) }
+  \\
+  &= \frac{1}{2 \sinh \left( \frac{h \nu}{2kT} \right)}
+  \end{align}
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  \begin{align}
+  \langle E \rangle
+  &= \frac{1}{Z} \sum_{n=0}^\infty E_n \exp \left( - \frac{E_n}{kT} \right)
+  \\
+  &= \frac{1}{2} h \nu + \frac{h \nu \exp \left( - \frac{h \nu}{2kT} \right)}{Z}
+  \sum_{n=0}^\infty n \exp \left( - \frac{h \nu}{kT} n \right)
+  \\
+  &= \frac{1}{2} h \nu + \frac{h \nu \exp \left( - \frac{h \nu}{2kT} \right)}{Z}
+  \frac{\exp \left( - \frac{h \nu}{kT} \right)}
+  {\left( 1 - \exp \left( - \frac{h \nu}{kT} \right) \right)^2}
+  \\
+  &= \frac{1}{2} h \nu + \frac{h \nu}{\exp \left( \frac{h \nu}{kT} \right) -1}
+  \end{align}
+  </p>
+
+  <h3>(iii)</h3>
+
+  <p>
+  \begin{align}
+  C
+  &= \frac{d \langle E \rangle}{dT}
+  \\
+  &=  h \nu \cdot \frac{- \exp \left( \frac{h \nu}{kT} \right)}
+  {\left( \exp \left( \frac{h \nu}{kT} \right) -1 \right)^2}
+  \cdot \left( - \frac{h \nu}{kT^2} \right)
+  \\
+  &= \frac{(h \nu)^2}{kT^2}
+  \frac{\exp \left( \frac{h \nu}{kT} \right)}
+  {\left( \exp \left( \frac{h \nu}{kT} \right) -1 \right)^2}
+  \end{align}
+  </p>
+
+  <h3>(iv)</h3>
+
+  <p>
+  $x = h \nu /kT$ とおくと、
+  \begin{align}
+  C
+  &= kx^2 \frac{\exp x}{\left( \exp x -1 \right)^2}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  低温 $kT \ll h \nu$ では $x \gg 1$ であるから、
+  \begin{align}
+  \exp x - 1 \approx \exp x
+  \end{align}
+  よって、
+  \begin{align}
+  C \approx kx^2 \exp (-x)
+  \end{align}
+  であり、 $x \to \infty$ では $C \to 0$ であることがわかる。
+  </p>
+
+  <h3>(v)</h3>
+
+  <p>
+  $x$ は (iv) と同じとする。
+  </p>
+
+  <p>
+  高温 $kT \gg h \nu$ では $x \ll 1$ であるから、
+  \begin{align}
+  \exp x - 1 \approx x
+  \end{align}
+  よって、
+  \begin{align}
+  C \approx k \exp x
+  \end{align}
+  であり、 $x \to 0$ では $C \to k$ であることがわかる。
+  </p>
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
