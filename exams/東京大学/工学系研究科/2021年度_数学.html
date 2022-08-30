@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      2021年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      東京大学 大学院 工学系研究科
+      <br />
+      2021年度 数学
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.t.u-tokyo.ac.jp/soe/admission/general-past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <!--
+  <hr />
+  <h2>数学1（主に微分積分・微分方程式）</h2>
+
+  <h3>I</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  与えられた楕円の方程式を $x$ で微分して、
+  \begin{align}
+  \frac{2x}{a^2} + \frac{2y}{b^2} \frac{dy}{dx} = 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \frac{dy}{dx} = - \frac{b^2 x}{a^2 y}
+  \end{align}
+  なので、点 $(X,Y)$ における接線の方程式は、
+  \begin{align}
+  y-Y = - \frac{b^2 X}{a^2 Y} (x-X)
+  \end{align}
+  である。
+  </p>
+  -->
+
+  <hr />
+  <h2>数学2（主に線形代数）</h2>
+
+  <h3>III</h3>
+
+  <p>
+  \begin{align}
+  c_1 (\boldsymbol{a}_1 + \boldsymbol{a}_2) +
+  c_2 (\boldsymbol{a}_2 + \boldsymbol{a}_3) + \cdots +
+  c_m (\boldsymbol{a}_m + \boldsymbol{a}_1)
+  = \boldsymbol{0}
+  \end{align}
+  が成り立つとしたとき $c_1 = c_2 = \cdots = c_m = 0$
+  が導かれるかを検討する。
+  </p>
+
+  <p>
+  上の式を整理すると、
+  \begin{align}
+  (c_1+c_m) \boldsymbol{a}_1 +
+  (c_1+c_2) \boldsymbol{a}_2 +
+  (c_2+c_3) \boldsymbol{a}_3 + \cdots +
+  (c_{m-1}+c_m) \boldsymbol{a}_m
+  = \boldsymbol{0}
+  \end{align}
+  となり、
+  $\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_m$
+  が1次独立であることから、
+  \begin{align}
+  c_1+c_m = c_1+c_2 = c_2+c_3 = \cdots = c_{m-1}+c_m = 0
+  \end{align}
+  よって、
+  \begin{align}
+  c_2 &= c_4 = \cdots = -c_1
+  , \\
+  c_3 &= c_5 = \cdots =  c_1
+  , \\
+  c_m &= -c_1
+  \end{align}
+  を得る。
+  したがって、 $m$ が奇数のときは
+  $c_1 = c_2 = \cdots = c_m = 0$ が導かれるので
+  $
+  \boldsymbol{a}_1 + \boldsymbol{a}_2,
+  \boldsymbol{a}_2 + \boldsymbol{a}_3, \cdots,
+  \boldsymbol{a}_m + \boldsymbol{a}_1
+  $ は1次独立となる。
+  $m$ が偶数のときはそうならない。
+  </p>
+
+  <!--
+  <hr />
+  <h2>数学3（主に「関数論・複素数」と「確率・統計，情報数学，その他」）</h2>
+
+  <h3>I</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  $I_1$ の被積分関数
+  \begin{align}
+  f(z) = \frac{z}{(z-i)(z-1)}
+  \end{align}
+  の極 $z=1,i$ における留数はそれぞれ
+  \begin{align}
+  R_1 &= \frac{1}{1-i} = \frac{1+i}{2}
+  , \\
+  R_i &= \frac{i}{i-1} = \frac{1-i}{2}
+  \end{align}
+  である。
+
+  $I_1$ は $z=1$ の周りを反時計回りに回る部分と $z=i$ の周りを時計回りに回る部分からなるから、
+  \begin{align}
+  I_1
+  &= 2 \pi i \left( R_1 - R_i \right)
+  \\
+  &= -2 \pi
+  \end{align}
+  である。
+  </p>
+
+  <h4>2.</h4>
+
+  <h5>2.1.</h5>
+
+  <p>
+  $|z|=1$ を満たす複素数 $z$ は、 $z=e^{i \theta} \ \ (0 \leq \theta \lt 2 \pi)$ と書ける。
+  このとき、
+  \begin{align}
+  dz &= i e^{i \theta} d \theta = iz d \theta
+  \\
+  z + \frac{1}{z} &= e^{i \theta} + e^{-i \theta} = 2 \cos \theta
+  \end{align}
+  であるから、
+  \begin{align}
+  I_2
+  &= \oint_{|z|=1} \frac{1}{10 + 4 \left( z + \frac{1}{z} \right)} \frac{dz}{iz}
+  \\
+  &= \oint_{|z|=1} \frac{-i}{2(z+2)(2z+1)} dz
+  \end{align}
+  よって、
+  \begin{align}
+  G(z) = \frac{-i}{2(z+2)(2z+1)}
+  \end{align}
+  である。
+  </p>
+
+  <h5>2.2.</h5>
+
+  <p>
+  $G(z)$ の特異点は $z=-1/2, 2$ である。
+  </p>
+
+  <h5>2.3.</h5>
+
+  <p>
+  $G(z)$ の $z=-1/2$ における留数は $-i/6$ であるから、留数定理により、
+  \begin{align}
+  I_2 = 2 \pi i \cdot \frac{-i}{6} = \frac{\pi}{3}
+  \end{align}
+  を得る。
+  </p>
+
+  -->
+
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
