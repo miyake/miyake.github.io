@@ -49,7 +49,6 @@
     </li>
   </ul>
 
-  <!--
   <hr />
   <h2>数学1（主に微分積分・微分方程式）</h2>
 
@@ -58,19 +57,65 @@
   <h4>1.</h4>
 
   <p>
-  与えられた楕円の方程式を $x$ で微分して、
   \begin{align}
-  \frac{2x}{a^2} + \frac{2y}{b^2} \frac{dy}{dx} = 0
+  y(x)
+  &= (\arccos x)^{\log x}
+  \\
+  &= e^{\log x \cdot \log (\arccos x)}
   \end{align}
+  なので、
   \begin{align}
-  \therefore \ \ 
-  \frac{dy}{dx} = - \frac{b^2 x}{a^2 y}
+  \frac{dy(x)}{dx}
+  &= (\arccos x)^{\log x} \cdot
+  \frac{d}{dx} \left( \log x \cdot \log (\arccos x) \right)
+  \\
+  &= (\arccos x)^{\log x}
+  \left( \frac{1}{x} \cdot \log (\arccos x) + \log x \cdot
+  \frac{-\frac{1}{\sqrt{1-x^2}}}{\arccos x} \right)
+  \\
+  &= (\arccos x)^{\log x}
+  \left( \frac{\log (\arccos x)}{x} - 
+  \frac{\log x}{\arccos x \sqrt{1-x^2}} \right)
   \end{align}
-  なので、点 $(X,Y)$ における接線の方程式は、
+  </p>
+
+  <h4>2.</h4>
+
+  <p>
+  積分定数は $C$ で表す。
+  </p>
+
+  <p>
+  $p=0$ のときは、
   \begin{align}
-  y-Y = - \frac{b^2 X}{a^2 Y} (x-X)
+  \int \frac{x^2+x+2}{x^3} dx
+  &= \int \left( \frac{1}{x} + \frac{1}{x^2} + \frac{2}{x^3} \right) dx
+  \\
+  &= \log |x| - \frac{1}{x} - \frac{1}{x^2} + C
+  \end{align}
+  であり、 $p \ne 0$ のときは、
+  \begin{align}
+  \int \frac{x^2+x+2}{x^3-px^2} dx
+  &= \int \frac{x^2+x+2}{x^2(x-p)} dx
+  \\
+  &= \frac{1}{p^2} \int \left(
+  - \frac{p+2}{x} - \frac{2p}{x^2} + \frac{p^2+p-2}{x-p} \right) dx
+  \\
+  &= \frac{1}{p^2} \left(
+  - (p+2) \log |x| + \frac{2p}{x} + (p^2+p-2) \log |x-p| \right) + C
   \end{align}
   である。
+  </p>
+
+  <!--
+  <h4>3.</h4>
+
+  <p>
+  $x = \sin \phi \ \ (0 \leq \phi \leq \theta \lt \pi/2)$ として、
+  \begin{align}
+  I
+  = \int_0^{\sin \theta} \frac{\arctan(\arcsin x)}{\sqrt{1-x^2}} dx
+  \end{align}
   </p>
   -->
 
