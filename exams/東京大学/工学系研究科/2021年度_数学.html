@@ -130,6 +130,58 @@
   </p>
 
   <hr />
+  <h2>数学1（主に微分積分・微分方程式）</h2>
+
+  <h3>II</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  \begin{align}
+  \frac{df(x)}{dx}
+  &= \frac{dp(x)}{dx} \exp (iax) + iap(x) \exp (iax)
+  \\
+  &= -ibq(x) \exp (-iax) + iap(x) \exp (iax)
+  \\
+  &= iaf(x) - ibg(x)
+  \\
+  \frac{dg(x)}{dx}
+  &= \frac{dq(x)}{dx} \exp (iax) - iaq(x) \exp (-iax)
+  \\
+  &= -ibp(x) \exp (iax) - iaq(x) \exp (-iax)
+  \\
+  &= -ibf(x) - iag(x)
+  \end{align}
+  </p>
+
+  <h4>2.</h4>
+
+  <p>
+  複素数 $A$ の複素共役を $\bar{A}$ で表す。
+  \begin{align}
+  \frac{d}{dx} \left| f(x) \right|^2
+  &= \frac{d \overline{f(x)}}{dx} \cdot f(x) + \overline{f(x)} \cdot \frac{df(x)}{dx}
+  \\
+  &= \left( - ia \overline{f(x)} + ib \overline{g(x)} \right) f(x)
+  + \overline{f(x)} \left( ia f(x) - ib g(x) \right)
+  \\
+  \frac{d}{dx} \left| g(x) \right|^2
+  &= \frac{d \overline{g(x)}}{dx} \cdot g(x) + \overline{g(x)} \cdot \frac{dg(x)}{dx}
+  \\
+  &= \left( ib \overline{f(x)} + ia \overline{g(x)} \right) g(x)
+  + \overline{g(x)} \left( -ib f(x) - ia g(x) \right)
+  \end{align}
+  なので、
+  \begin{align}
+  \frac{d}{dx} \left( \left| f(x) \right|^2 + \left| g(x) \right|^2 \right) = 0
+  \end{align}
+  がわかる。
+  つまり、
+  $ \left| f(x) \right|^2 + \left| g(x) \right|^2 $
+  は $x$ に依存しない。
+  </p>
+
+  <hr />
   <h2>数学2（主に線形代数）</h2>
 
   <h3>III</h3>
