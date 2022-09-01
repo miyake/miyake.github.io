@@ -269,6 +269,82 @@
   <hr />
   <h2>数学2（主に線形代数）</h2>
 
+  <h3>II</h3>
+
+  <h4>1.</h4>
+
+  <p>
+  \begin{align}
+  P_A(n+1) &= P_A(n) (1-\alpha) + P_B(n) \beta
+  \\
+  P_B(n+1) &= P_A(n) \alpha + P_B(n) (1-\beta)
+  \end{align}
+  なので、
+  \begin{align}
+  M = \begin{pmatrix} 1-\alpha & \beta \\ \alpha & 1-\beta \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h4>2.</h4>
+
+  <p>
+  $M$ の固有値は $1, 1-\alpha-\beta$ であり、それぞれに対応する固有ベクトルは、例えば、
+  \begin{align}
+  \begin{pmatrix} \beta \\ \alpha \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h4>3.</h4>
+
+  <p>
+  A,Bである確率が一定値に収束するとすると、それは $M$ の固有ベクトルであり、確率は負にならないことを考慮して、
+  \begin{align}
+  \lim_{k \to \infty} P_A(k) = \frac{\beta}{\alpha+\beta}
+  , \ \ 
+  \lim_{k \to \infty} P_B(k) = \frac{\alpha}{\alpha+\beta}
+  \end{align}
+  であることがわかる。
+  </p>
+
+  <h4>4.</h4>
+
+  <p>
+  \begin{align}
+  P_A(\infty) = \lim_{k \to \infty} P_A(k) = \frac{\beta}{\alpha+\beta}
+  \end{align}
+  と書くことにする。
+  </p>
+
+  <p>
+  \begin{align}
+  R_A(n+1)
+  &= P_A(n+1) - P_A(\infty)
+  \\
+  &= P_A(n) (1-\alpha) + P_B(n) \beta - P_A(\infty)
+  \\
+  &= P_A(n) (1-\alpha) + \left(1 - P_A(n) \right) \beta - P_A(\infty)
+  \\
+  &= (1-\alpha-\beta) P_A(n) + \beta - P_A(\infty)
+  \\
+  R_A(n) &= P_A(n) - P_A(\infty)
+  \end{align}
+  であるから、 $P_A(n)$ を消去して、
+  \begin{align}
+  R_A(n+1)
+  &= (1-\alpha-\beta) \left( R_A(n) + P_A(\infty) \right) + \beta - P_A(\infty)
+  \\
+  &= (1-\alpha-\beta) R_A(n)
+  \end{align}
+  を得る。
+  </p>
+
+  <hr />
+  <h2>数学2（主に線形代数）</h2>
+
   <h3>III</h3>
 
   <p>
