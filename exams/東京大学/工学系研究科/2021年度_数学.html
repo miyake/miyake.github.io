@@ -392,79 +392,61 @@
   $m$ が偶数のときはそうは言えない。
   </p>
 
-  <!--
   <hr />
-  <h2>数学3（主に「関数論・複素数」と「確率・統計，情報数学，その他」）</h2>
+  <h2>数学3（主に複素関数論）</h2>
 
   <h3>I</h3>
 
   <h4>1.</h4>
 
   <p>
-  $I_1$ の被積分関数
+  $M(z)=z$ を整理すると、
   \begin{align}
-  f(z) = \frac{z}{(z-i)(z-1)}
+  (m-1)z(z-1)=0
   \end{align}
-  の極 $z=1,i$ における留数はそれぞれ
-  \begin{align}
-  R_1 &= \frac{1}{1-i} = \frac{1+i}{2}
-  , \\
-  R_i &= \frac{i}{i-1} = \frac{1-i}{2}
-  \end{align}
-  である。
-
-  $I_1$ は $z=1$ の周りを反時計回りに回る部分と $z=i$ の周りを時計回りに回る部分からなるから、
-  \begin{align}
-  I_1
-  &= 2 \pi i \left( R_1 - R_i \right)
-  \\
-  &= -2 \pi
-  \end{align}
-  である。
+  であり、 $m \ne 0$ なので、 $z=0,1$ を得る。
+  実際、 $M(0)=0, M(1)=1$ である。
   </p>
 
   <h4>2.</h4>
 
-  <h5>2.1.</h5>
-
   <p>
-  $|z|=1$ を満たす複素数 $z$ は、 $z=e^{i \theta} \ \ (0 \leq \theta \lt 2 \pi)$ と書ける。
-  このとき、
   \begin{align}
-  dz &= i e^{i \theta} d \theta = iz d \theta
+  \frac{dM(z)}{dz}
+  &= \frac{m(mz-z+1) - mz(m-1)}{(mz-z+1)^2}
   \\
-  z + \frac{1}{z} &= e^{i \theta} + e^{-i \theta} = 2 \cos \theta
-  \end{align}
-  であるから、
-  \begin{align}
-  I_2
-  &= \oint_{|z|=1} \frac{1}{10 + 4 \left( z + \frac{1}{z} \right)} \frac{dz}{iz}
+  &= \frac{m}{(mz-z+1)^2}
   \\
-  &= \oint_{|z|=1} \frac{-i}{2(z+2)(2z+1)} dz
+  \therefore \ \ 
+  \frac{dM(0)}{dz} &= m
   \end{align}
-  よって、
-  \begin{align}
-  G(z) = \frac{-i}{2(z+2)(2z+1)}
-  \end{align}
-  である。
   </p>
 
-  <h5>2.2.</h5>
+  <hr />
+  <h2>数学3（主に複素関数論）</h2>
+
+  <h3>II</h3>
 
   <p>
-  $G(z)$ の特異点は $z=-1/2, 2$ である。
-  </p>
-
-  <h5>2.3.</h5>
-
-  <p>
-  $G(z)$ の $z=-1/2$ における留数は $-i/6$ であるから、留数定理により、
+  $0$ でない複素数 $z$ を極形式で $z=re^{i \theta} \ \ (r \gt 0, 0 \leq \theta \lt 2 \pi)$
+  と表すと、
   \begin{align}
-  I_2 = 2 \pi i \cdot \frac{-i}{6} = \frac{\pi}{3}
+  J(z)
+  &= e^{-i \alpha} z + e^{i \alpha} z^{-1}
+  \\
+  &= r e^{i (\theta - \alpha)} + \frac{1}{r} e^{-i (\theta - \alpha)}
+  \\
+  &= \left( r + \frac{1}{r} \right) \cos (\theta - \alpha) + i \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
   \end{align}
-  を得る。
+  なので、これの虚部
+  \begin{align}
+  \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
+  \end{align}
+  が正となるのは、「 $r \gt 1$ かつ $ \alpha \lt \theta \lt \alpha + \pi$ 」
+  または「 $r \lt 1$ かつ $ 0 \lt \theta \lt \alpha, \alpha + \pi \lt \theta \lt 2 \pi$ 」
+  のときである。
+  （図示は省略。）
   </p>
-  -->
 
 
 
