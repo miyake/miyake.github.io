@@ -80,6 +80,46 @@
   を得る。
   </p>
 
+  <h3>問2</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  被積分関数の1位の極 $z= \pi i$ における留数は、
+  \begin{align}
+  \lim_{z \to \pi i} (z - \pi i) \cdot \frac{\cosh \frac{z}{4}}{z - \pi i}
+  = \cosh \frac{\pi i}{4}
+  = \cos \frac{\pi}{4}
+  = \frac{1}{\sqrt{2}}
+  \end{align}
+  なので、留数定理より、
+  \begin{align}
+  \oint \frac{\cosh \frac{z}{4}}{z - \pi i} dz
+  &= 2 \pi i \cdot \frac{1}{\sqrt{2}}
+  \\
+  &= \sqrt{2} \pi i
+  \end{align}
+  がわかる。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  被積分関数の3位の極 $z=-i$ における留数は、
+  \begin{align}
+  \frac{1}{2!} \lim_{z \to -i} \frac{d^2}{dz^2} (z+i)^3 \cdot \frac{e^{2z}}{(z+i)^3}
+  = 2 e^{-2i}
+  \end{align}
+  なので、留数定理より、
+  \begin{align}
+  \oint \frac{e^{2z}}{(z+i)^3} dz
+  &= 2 \pi i \cdot 2 e^{-2i}
+  \\
+  &= 4 \pi i e^{-2i}
+  \end{align}
+  がわかる。
+  </p>
+
 
 
 
