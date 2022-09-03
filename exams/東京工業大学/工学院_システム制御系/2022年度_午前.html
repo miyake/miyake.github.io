@@ -120,6 +120,123 @@
   がわかる。
   </p>
 
+  <hr />
+  <h2>問題3</h2>
+
+  <h3>問1</h3>
+
+  <p>
+  \begin{align}
+  \sigma_S^2
+  &= E \left[ \left( S - E[S] \right)^2 \right]
+  \\
+  &= E \left[ S^2 - 2E[S]S + \left( E[S] \right)^2 \right]
+  \\
+  &= E \left[ S^2 \right] - 2 \left( E[S] \right)^2 + \left( E[S] \right)^2
+  \\
+  &= E \left[ S^2 \right] - \left( E[S] \right)^2
+  \end{align}
+  </p>
+
+  <h3>問2</h3>
+
+  <p>
+  \begin{align}
+  \frac{dM_X(t)}{dt}
+  &= \lambda e^t \exp \left( \lambda (e^t-1) \right)
+  \\
+  \frac{d^2 M_X(t)}{dt^2}
+  &= \lambda e^t \left(\lambda e^t + 1 \right) \exp \left( \lambda (e^t-1) \right)
+  \end{align}
+  より、
+  \begin{align}
+  \mu_X
+  &= \frac{dM_X(0)}{dt}
+  \\
+  &= \lambda
+  \\
+  E \left[ X^2 \right]
+  &= \frac{d^2 M_X(0)}{dt^2}
+  \\
+  &= \lambda (\lambda + 1)
+  \\
+  \sigma_X^2
+  &= E \left[ X^2 \right] - \mu_X^2
+  \\
+  &= \lambda
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>問3</h3>
+
+  <p>
+  \begin{align}
+  M_Y(t)
+  &= \sum_{y=1}^\infty e^{yt} \cdot (1-q) q^{y-1}
+  \\
+  &= \frac{1-q}{q} \sum_{y=1}^\infty \left( q e^t \right)^y
+  \\
+  &= \frac{1-q}{q} \cdot q e^t \cdot \frac{1}{1-qe^t}
+  \\
+  &= \frac{(1-q)e^t}{1-qe^t}
+  \end{align}
+  </p>
+
+  <h3>問4</h3>
+
+  <p>
+  $X,Y$ が独立なので $E[XY]=E[X]E[Y]$ が成り立つことを考慮して、
+  \begin{align}
+  M_Z(t)
+  &= E \left[ e^{tZ} \right]
+  \\
+  &= E \left[ e^{t(X+Y)} \right]
+  \\
+  &= E \left[ e^{tX} e^{tY} \right]
+  \\
+  &= E \left[ e^{tX} \right] E \left[ e^{tY} \right]
+  \\
+  &= M_X(t) M_Y(t)
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>問5</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  M_Z(t)
+  &= M_X(t) M_Y(t)
+  \\
+  &= e^t \exp \left( e^t-1 \right) \cdot \frac{e^t}{2-e^t}
+  \\
+  &= \frac{\exp \left( e^t-1 \right)}{2e^{-t}-1}
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \frac{dM_Z(t)}{dt}
+  &= \frac{\exp \left( e^t-1 \right) \left( 2 - e^t + 2e^{-t} \right)}{\left( 2e^{-t}-1 \right)^2}
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  \begin{align}
+  \mu_Z
+  &= \left. \frac{dM_Z(t)}{dt} \right|_{t=0}
+  \\
+  &= 3
+  \end{align}
+  </p>
+
 
 
 
