@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      工学院 情報通信系
+      2020年度 午前
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    工学院 情報通信系
+    <br />
+    2020年度 午前
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>H2.</h2>
+
+  <h3>1)</h3>
+
+  <h4>a)</h4>
+
+  <p>
+  \begin{align}
+  \langle X-2Y, 2X+Y \rangle
+  &= {}^t(X-2Y) S (2X+Y)
+  \\
+  &= ({}^tX - 2 \ {}^t Y) S (2X+Y)
+  \\
+  &= 2 \ {}^tX SX + {}^tX SY -4 \ {}^tY SX -2 \ {}^tY SY
+  \\
+  &= 8
+  \end{align}
+  </p>
+
+  <h4>b)</h4>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>c)</h4>
+
+  <p>
+  \begin{align}
+  {}^t XSX
+  &= \begin{pmatrix} x & y \end{pmatrix}
+  \begin{pmatrix} a & b \\ b & d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
+  \\
+  &= ax^2 + 2bxy + dy^2
+  \\
+  &= a \left( x + \frac{b}{a} y \right)^2 + \left(-\frac{b^2}{a} + d \right) y^2
+  \end{align}
+  条件 [c-3] は、
+  \begin{align}
+  -\frac{b^2}{a} + d \gt 0
+  \end{align}
+  である。
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  与えられた部分空間のベクトルは、任意の実数 $x,y$ を使って、
+  \begin{align}
+  \begin{pmatrix} x \\ y \\ 2x+y \end{pmatrix}
+  \end{align}
+  と書けるから、この部分空間の次元は $2$ であり、
+  \begin{align}
+  \boldsymbol{u}_1 = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{u}_2 = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+  \end{align}
+  が基底となる。
+  $\boldsymbol{u}_2$ を正規化した
+  \begin{align}
+  \hat{\boldsymbol{u}}_2 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+  \end{align}
+  を考えると、これと直交する（与えられた部分空間に属する）ベクトル $\boldsymbol{v}_1$
+  を次のように作れる：
+  \begin{align}
+  \boldsymbol{v}_1
+  &= \boldsymbol{u}_1
+  - \left( {}^t \boldsymbol{u}_1 \hat{\boldsymbol{u}}_2 \right) \hat{\boldsymbol{u}}_2
+  \\
+  &= \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}
+  \end{align}
+  これを正規化して次を得る：
+  \begin{align}
+  \hat{\boldsymbol{v}}_1 = \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}
+  \end{align}
+  以上より、上で定義した $\hat{\boldsymbol{u}}_2, \hat{\boldsymbol{v}}_1$ は、
+  与えられた部分空間の正規直交基底になっている。
+  </p>
+
+  <h3>3)</h3>
+
+  <h4>a)</h4>
+
+  <p>
+  \begin{align}
+  {}^t F(A)
+  &= {}^t \left( \frac{A + {}^t A}{2} \right)
+  \\
+  &= \frac{{}^t A + {}^t \left( {}^t A \right)}{2}
+  \\
+  &= \frac{{}^t A + A}{2}
+  \\
+  &= F(A)
+  \end{align}
+  </p>
+
+  <h4>b)</h4>
+
+  <p>
+  \begin{align}
+  G(A)
+  &= A - F(A)
+  \\
+  &= A - \frac{A + {}^t A}{2}
+  \\
+  &= \frac{A - {}^t A}{2}
+  \\
+  \therefore \ \ 
+  {}^tG(A)
+  &= \frac{{}^t A - A}{2}
+  \\
+  &= - G(A)
+  \\
+  \therefore \ \ 
+  F \left( G(A) \right)
+  &= \frac{G(A) + {}^t G(A)}{2}
+  \\
+  &= O
+  \end{align}
+  </p>
+
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
