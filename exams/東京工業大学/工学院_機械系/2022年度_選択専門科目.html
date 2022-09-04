@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      工学院 機械系
+      2022年度 選択専門科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    工学院 機械系
+    <br />
+    2022年度 選択専門科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題5（工業数学）</h2>
+
+  <h3>問1</h3>
+
+  <h4>(2)</h4>
+
+  <p>
+  $u=x+y$ とおくと、
+  \begin{align}
+  \frac{du}{dx}
+  &= 1 + \frac{dy}{dx}
+  \\
+  &= 1 + u^2
+  \end{align}
+  となり、
+  \begin{align}
+  \frac{du}{1+u^2} &= dx
+  \\
+  \arctan u &= x + C
+  \\
+  u &= \tan (x+C)
+  \end{align}
+  したがって、
+  \begin{align}
+  y &= x + \tan (x+C)
+  \end{align}
+  を得る。
+  ここで $C$ は積分定数である。
+  </p>
+
+  <h3>問3</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  \frac{1}{1+z}
+  &= \frac{1}{1-(-z)}
+  \\
+  &= \sum_{n=0}^\infty (-z)^n
+  \\
+  &= 1 -z + z^2 - z^3 + z^4 - \cdots
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  $e^z$ のマクローリン展開が $e^z = 1 + z + (1/2)z^2 + \cdots$ であることを考慮すると、
+  与えられた関数は $z=0$ で2位の極をもつことがわかり、その留数は次のように計算できる：
+  \begin{align}
+  \lim_{z \to 0} \frac{d}{dz} z^2 \cdot \frac{1}{z \left( e^z - 1 \right) }
+  &= \lim_{z \to 0} \frac{d}{dz} \frac{z}{e^z - 1}
+  \\
+  &= \lim_{z \to 0} \frac{\left( e^z - 1 \right) - z e^z}{\left( e^z - 1 \right)^2}
+  \\
+  &= \lim_{z \to 0}
+  \frac{\left( z + \frac{1}{2} z^2 + \cdots \right) - z \left( 1 + z + \cdots \right)}
+  {\left( z + \frac{1}{2} z^2 + \cdots \right)^2}
+  \\
+  &= \lim_{z \to 0} \frac{- \frac{1}{2} z^2 + \cdots}{z^2 + \cdots}
+  \\
+  &= - \frac{1}{2}
+  \end{align}
+  </p>
+
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
