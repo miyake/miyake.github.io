@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      情報理工学院 情報工学系
+      2022年度 午前
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    情報理工学院 情報工学系
+    <br />
+    2022年度 午前
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>1.</h2>
+
+  <h3>1)</h3>
+
+  <p>
+  \begin{align}
+  \det A
+  &= \frac{1}{27} \left( (1-8-8) - (4+4+4) \right)
+  \\
+  &= -1
+  \end{align}
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  \begin{align}
+  \det (xI-A)
+  &= x^3-x^2-x+1
+  \\
+  &= (x+1)(x-1)^2
+  \end{align}
+  </p>
+
+  <h3>3)</h3>
+
+  <p>
+  2) より、 $A$ の固有値は $-1, 1$ である。
+  </p>
+
+  <h3>4)</h3>
+
+  <p>
+  $A$ の固有値 $-1$ に対する固有空間（これは1次元である）の基底を求めるために、
+  \begin{align}
+  \frac{1}{3} \begin{pmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x=y=z$ を得るので、例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+  \end{align}
+  が基底になる。
+  </p>
+
+  <p>
+  $A$ の固有値 $1$ に対する固有空間の基底を求めるために、
+  \begin{align}
+  \frac{1}{3} \begin{pmatrix} 2 & 2 & 2 \\ 2 & 2 & 2 \\ 2 & 2 & 2 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x+y+z=0$ を得るので、例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}
+  \end{align}
+  が基底になる。
+  </p>
+
+  <h3>5)</h3>
+
+  <p>
+  複素正方行列 $U$ とその複素転置 $U^*$ について、
+  \begin{align}
+  U^* U = U U^* = \text{単位行列}
+  \end{align}
+  が成り立つとき、 $U$ はユニタリ行列であるという。
+  </p>
+
+  <p>
+  与えられた $A$ について、
+  \begin{align}
+  A^* = A
+  \end{align}
+  であり、計算から
+  \begin{align}
+  A^2 = I
+  \end{align}
+  がわかるので、 $A$ はユニタリ行列である。
+  </p>
+
+  <h3>6)</h3>
+
+  <p>
+  複素正方行列 $H$ とその複素転置 $H^*$ について、
+  \begin{align}
+  H = H^*
+  \end{align}
+  が成り立つとき、 $H$ はエルミート行列であるという。
+  </p>
+
+  <p>
+  与えられた $A$ について、
+  \begin{align}
+  A^* = A
+  \end{align}
+  であるので、 $A$ はエルミート行列である。
+  </p>
+
+  <h3>7)</h3>
+
+  <p>
+  4) で $A$ の固有値 $1$ に対する固有空間の基底を求めたが、
+  \begin{align}
+  \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ 1 \\ -2 \end{pmatrix}
+  \end{align}
+  のように選ぶこともでき、このようにすると直交した基底になる。
+  </p>
+
+  <p>
+  したがって、規格化も考慮して、
+  \begin{align}
+  B
+  = \frac{1}{\sqrt{6}} \begin{pmatrix}
+  \sqrt{2} & \sqrt{3} & 1 \\ \sqrt{2} & -\sqrt{3} & 1 \\ \sqrt{2} & 0 & -2 \end{pmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  A = BDB^*
+  , \ \ 
+  D = \begin{pmatrix} -1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+  \end{align}
+  が成り立つことがわかる。
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
