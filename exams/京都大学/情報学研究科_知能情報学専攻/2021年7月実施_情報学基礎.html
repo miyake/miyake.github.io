@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 情報学研究科
+      知能情報学専攻
+      2021年7月実施 情報学基礎
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 情報学研究科
+      <br />
+      知能情報学専攻
+      <br />
+      2021年7月実施 情報学基礎
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.i.kyoto-u.ac.jp/admission/guide.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>F1-2</h2>
+
+  <h3>設問 1</h3>
+
+  <h4>(1)</h4>
+
+  <h5>A)</h5>
+
+  <p>
+  まず、 $y=1/(1+\exp(-x))$ より、 $\exp(-x) = (1-y)/y$ である。
+  よって、
+  \begin{align}
+  \frac{dy}{dx}
+  &= \frac{d}{dx} \frac{1}{1 + \exp(-x)}
+  \\
+  &= \frac{\exp(-x)}{\left( 1 + \exp(-x) \right)^2}
+  \\
+  &= y(1-y)
+  \\
+  &= -y^2 + y
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $dy/dx$ を $x$ で表した式からわかるように、
+  任意の実数 $x$ について、 $dy/dx \gt 0$ である。
+  また、
+  \begin{align}
+  \lim_{x \to -\infty} y = 0
+  , \ \ 
+  \lim_{x \to \infty} y = 1
+  \end{align}
+  なので、 $y$ の値域は $(0,1)$ である。
+  さらに、
+  \begin{align}
+  \frac{dy}{dx}
+  &= - \left( y - \frac{1}{2} \right)^2 + \frac{1}{4}
+  \end{align}
+  と書き換えられるので、 $dy/dx$ の値域は $(0,1/4]$ である。
+  </p>
+
+  <h5>B)</h5>
+
+  <p>
+  まず、
+  \begin{align}
+  \frac{dy}{dx}
+  &= \frac{d}{dx} \frac{\exp(x) - \exp(-x)}{\exp(x) + \exp(-x)}
+  \\
+  &= \frac{4}{\left( \exp(x) + \exp(-x) \right)^2}
+  \\
+  &= -y^2 + 1
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $dy/dx$ を $x$ で表した式からわかるように、
+  任意の実数 $x$ について、 $dy/dx \gt 0$ である。
+  また、
+  \begin{align}
+  \lim_{x \to -\infty} y = -1
+  , \ \ 
+  \lim_{x \to \infty} y = 1
+  \end{align}
+  なので、 $y$ の値域は $(-1,1)$ である。
+  そこで、 $dy/dx$ を $y$ で表した式からわかるように、
+  $dy/dx$ の値域は $(0,1]$ である。
+  </p>
+
+  <!--
+  <h4>(2)</h4>
+
+  <p>
+  まず、条件 $x^2+y^2-1=$ より、 $x = \cos \theta, y = \sin \theta$ と表せる。
+  また、条件 $0 \leq x, y \leq 1$ は $0 \leq \theta \leq \pi/2$ に相当する。
+  $f(x,y)$ を $\theta$ で表した関数を $g(\theta)$ と書く：
+  \begin{align}
+  g(\theta) = \cos^3 \theta + 2 \sin^3 \theta
+  \end{align}
+  このとき、
+  \begin{align}
+  \frac{dg(\theta)}{d \theta} = 3 \sin \theta \cos \theta (- \cos \theta + 2 \sin \theta)
+  \end{align}
+  なので、増減表は次のようになる：
+  </p>
+  -->
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
