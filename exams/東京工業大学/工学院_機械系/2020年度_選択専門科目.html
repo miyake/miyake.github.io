@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      工学院 機械系
+      2020年度 選択専門科目
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京工業大学 大学院
+    <br />
+    工学院 機械系
+    <br />
+    2020年度 選択専門科目
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr />
+  <h2>問題5（工業数学）</h2>
+
+  <h3>問1</h3>
+
+  <h4>(2)</h4>
+
+  <p>
+  与えられた微分方程式に $y = e^{\lambda x}$ を代入すると、
+  \begin{align}
+  \lambda^2 - 2 \lambda + 3 = 0
+  \\
+  \therefore \ \ 
+  \lambda = 1 \pm \sqrt{2} i
+  \end{align}
+  を得る。
+  よって、与えられた微分方程式の一般解は、積分定数を $A,B$ として、
+  \begin{align}
+  y = e^x \left( A \sin \sqrt{2} x + B \cos \sqrt{2} x \right)
+  \end{align}
+  である。
+  $x=0$ のとき、 $y=3$ から $B=3$ がわかり、 $dy/dx=0$ から $A = - \sqrt{2}$ がわかる。
+  つまり、求める解は、
+  \begin{align}
+  y = e^x \left( - \sqrt{2} \sin \sqrt{2} x + 3 \cos \sqrt{2} x \right)
+  \end{align}
+  である。
+  </p>
+
+  <h3>問2</h3>
+
+  <h4>(1)</h4>
+
+  <h5>(i)</h5>
+
+  <p>
+  \begin{align}
+  \boldsymbol{\nabla} \cdot \boldsymbol{A}
+  &= y^2 + 4yz + 6yz
+  \\
+  &= y^2 + 10yz
+  \end{align}
+  </p>
+
+  <h5>(ii)</h5>
+
+  <p>
+  \begin{align}
+  \boldsymbol{\nabla} f &= \left( y^2 z, 2xyz, xy^2 \right)
+  \\
+  \therefore \ \ 
+  \boldsymbol{A} \cdot \boldsymbol{\nabla} f
+  &= xy^4z + 4xy^3z^2 + 3xy^3z^2
+  \\
+  &= xy^4z + 7xy^3z^2
+  \end{align}
+  </p>
+
+  <h5>(iii)</h5>
+
+  <p>
+  \begin{align}
+  \boldsymbol{\nabla} \cdot \left( \boldsymbol{\nabla} f \right)
+  &= 0 + 2xz + 0
+  \\
+  &= 2xz
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \frac{dx(t)}{dt} = - \sin t
+  , \ \ 
+  \frac{dy(t)}{dt} = \cos t
+  , \ \ 
+  \frac{dz(t)}{dt} = 1
+  \end{align}
+  なので、
+  \begin{align}
+  \int_C \left( xdx + 2ydy + z^2 dz \right)
+  &= \int_0^{\pi/2} \left( \cos t \cdot (- \sin t) + 2 \sin t \cos t + t^2 \right) dt
+  \\
+  &= \int_0^{\pi/2} \left( \sin t \cos t + t^2 \right) dt
+  \\
+  &= \int_0^{\pi/2} \left( \frac{1}{2} \sin 2t + t^2 \right) dt
+  \\
+  &= \left[ -\frac{1}{4} \cos 2t + \frac{t^3}{3} \right]_0^{\pi/2}
+  \\
+  &= \frac{1}{2} + \frac{\pi^3}{24}
+  \end{align}
+  </p>
+
+  <h3>問3</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  求める複素数の絶対値を $r$ 偏角を $\theta$ とすると、
+  $r=1$ であり、 $\theta$ は整数 $n$ を使って、
+  \begin{align}
+  4 \theta &= \pi + 2n \pi
+  \end{align}
+  と書ける。
+  よって、求める複素数は、
+  \begin{align}
+  \frac{1+i}{\sqrt{2}}
+  , \ \ 
+  \frac{-1+i}{\sqrt{2}}
+  , \ \ 
+  \frac{-1-i}{\sqrt{2}}
+  , \ \ 
+  \frac{1-i}{\sqrt{2}}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \frac{\pi}{\sqrt{2}}
+  \end{align}
+  例えば、
+  <a href="">千葉逸人「工学部で学ぶ数学」</a> 例4.14
+  </p>
+
+
+
+  <hr />
+  <p>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
