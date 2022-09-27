@@ -206,6 +206,59 @@
   \end{align}
   </p>
 
+  <h3>問4</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  まず、
+  \begin{align}
+  c_n
+  &= \int_{-1}^1 p(x) e^{-in \pi x} dx
+  \\
+  &= \int_{-1/2}^{1/2} e^{-in \pi x} dx
+  \\
+  &= 2 \int_0^{1/2} \cos (n \pi x) dx
+  \end{align}
+  なので、
+  \begin{align}
+  c_0
+  &= 2 \int_0^{1/2} dx
+  \\
+  &= 1
+  \end{align}
+  であり、 $n \ne 0$ のときは、
+  \begin{align}
+  c_n
+  &= \frac{2}{n \pi} \left[ \sin (n \pi x) \right]_0^{1/2}
+  \\
+  &= \frac{2}{n \pi} \sin \frac{n \pi}{2}
+  \end{align}
+  なので、
+  \begin{align}
+  c_1 &= \frac{2}{\pi}
+  \\
+  c_2 &= 0
+  \\
+  c_3 &= - \frac{2}{3 \pi}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  q(x)
+  &= - \frac{2}{3 \pi} e^{-3i \pi x} + \frac{2}{\pi} e^{-i \pi x} + 1 + \frac{2}{\pi} e^{i \pi x} - \frac{2}{3 \pi} e^{-3i \pi x}
+  \end{align}
+  より、
+  \begin{align}
+  \int_0^2 \left\{ q(x) \right\}^2 dx &= 2 + \frac{160}{9 \pi^2}
+  \end{align}
+  である。
+  </p>
+
 
 
 
