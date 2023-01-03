@@ -234,6 +234,96 @@
   である。
   </p>
 
+  <hr>
+  <h2>第5問</h2>
+
+  <h3>1)</h3>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix} a-\lambda & 1-a \\ 1-a & a-\lambda \end{pmatrix}
+  \\
+  &= (\lambda - 1)(\lambda - 2a + 1)
+  \\
+  \therefore \ \ 
+  \lambda &= 1, 2a-1
+  \end{align}
+  を得る。 $a \ne 1$ なので、これらは相異なる固有値である。
+  </p>
+
+  <p>
+  固有値 $1$ に属する固有ベクトルを求めるために
+  \begin{align}
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  &= \begin{pmatrix} a-1 & 1-a \\ 1-a & a-1 \end{pmatrix}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \end{align}
+  とおくと $x=y$ であり、
+  固有値 $2a-1$ に属する固有ベクトルを求めるために
+  \begin{align}
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  &= \begin{pmatrix} 1-a & 1-a \\ 1-a & 1-a \end{pmatrix}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  \end{align}
+  とおくと $x+y=0$ であるから、それぞれに属する固有ベクトルは例えば
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+  ,
+  \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  1) で求めた固有ベクトルを使って、
+  \begin{align}
+  P
+  &= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  P^2 &= \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+  \\
+  PAP &= \begin{pmatrix} 1 & 0 \\ 0 & 2a-1 \end{pmatrix}
+  \end{align}
+  が成り立つので、
+  \begin{align}
+  A^n
+  &= P \begin{pmatrix} 1 & 0 \\ 0 & 2a-1 \end{pmatrix}^n P
+  \\
+  &= P \begin{pmatrix} 1 & 0 \\ 0 & (2a-1)^n \end{pmatrix} P
+  \\
+  &= \frac{1}{2} \begin{pmatrix}
+  1+(2a-1)^n & 1-(2a-1)^n \\ 1-(2a-1)^n & 1+(2a-1)^n
+  \end{pmatrix}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>3)</h3>
+
+  <p>
+  $0 \lt a \lt 1$ より $-1 \lt 2a-1 \lt 1$ なので、
+  $\lim_{n \to \infty} (2a-1)^n = 0$ であり、
+  \begin{align}
+  \lim_{n \to \infty} A^n
+  &= \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>[参考]</h3>
+
+  <p>
+  <a href="https://www.amazon.co.jp/dp/4785310626/ref=nosim?tag=msscee0a-22">
+    矢野・石原「線形代数」
+  </a>
+  </p>
+
 
 
   <hr>
