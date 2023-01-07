@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京農工大学 大学院
+      工学府
+      2023年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京農工大学 大学院
+    <br>
+    工学府
+    <br>
+    2023年度 数学
+  </h1>
+
+  <ul>
+    <li>
+    <a href="http://web.tuat.ac.jp/~tkakomon/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>[1]</h2>
+
+  <p>
+  $x^2 + 4y^2 = 4, \ x \gt 0$ より、
+  \begin{align}
+  x = \cos \theta, \ \ 
+  y = 2 \sin \theta, \ \ 
+  - \frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}
+  \end{align}
+  とおける。
+  このとき、
+  \begin{align}
+  g(\theta)
+  &= f(x,y)
+  \\
+  &= 2 \tan \theta + \frac{1}{\cos^3 \theta}
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{dg(\theta)}{d \theta}
+  &= \frac{2}{\cos^2 \theta} + \frac{3 \sin \theta}{\cos^4 \theta}
+  \\
+  &= - \frac{(\sin \theta - 2)(2 \sin \theta + 1)}{\cos^4 \theta}
+  \\
+  &\begin{cases}
+  \lt 0 & , - \frac{\pi}{2} \lt \theta \lt - \frac{\pi}{6} \\
+  =   0 & , \theta = - \frac{\pi}{6} \\
+  \gt 0 & , - \frac{\pi}{6} \lt \theta \lt \frac{\pi}{2}
+  \end{cases}
+  \end{align}
+  であるから、
+  $\theta = -\pi/6$ すなわち $x=\sqrt{3}/2, \ y=-1$ のとき、
+  $f(x,y)$ は極小値
+  \begin{align}
+  f \left( \frac{\sqrt{3}}{2}, -1 \right)
+  = \frac{2}{3 \sqrt{3}}
+  \end{align}
+  をとる。
+  </p>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
