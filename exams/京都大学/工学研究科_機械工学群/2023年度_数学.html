@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 工学研究科
+      機械工学群 (機械理工学専攻, マイクロエンジニアリング専攻, 航空宇宙工学専攻)
+      2023年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+      京都大学 大学院 工学研究科
+      <br>
+      機械工学群 (機械理工学専攻, マイクロエンジニアリング専攻, 航空宇宙工学専攻)
+      <br>
+      2023年度 数学
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.t.kyoto-u.ac.jp/ja/admissions/graduate/exam1">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>1.</h2>
+
+  <h3>1-1</h3>
+
+  <p>
+  \begin{align}
+  \left( 1, 1 \right)
+  &= \int_{- \pi}^\pi dx = 2 \pi
+  \\
+  \left( \cos x, \cos x \right)
+  &= \int_{- \pi}^\pi \cos^2 x dx = \pi
+  \\
+  \left( \sin x, \sin x \right)
+  &= \int_{- \pi}^\pi \sin^2 x dx = \pi
+  \\
+  \left( 1, \cos x \right)
+  = \left( \cos x, 1 \right)
+  &= \int_{- \pi}^\pi \cos x dx = 0
+  \\
+  \left( 1, \sin x \right)
+  = \left( \sin x, 1 \right)
+  &= \int_{- \pi}^\pi \sin x dx = 0
+  \\
+  \left( \cos x, \sin x \right)
+  = \left( \sin x, \cos x \right)
+  &= \int_{- \pi}^\pi \cos x \sin x dx = 0
+  \end{align}
+  より、
+  \begin{align}
+  \left( f(x), g(x) \right)
+  = a_0 b_0 + a_1 b_1 + a_2 b_2
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>1-2</h3>
+
+  <p>
+  \begin{align}
+  \hat{O}_1 g(x)
+  = \frac{2b_0}{\sqrt{2 \pi}}
+  + \frac{2b_1+b_2}{\sqrt{\pi}} \cos x + \frac{-b_1+2b_2}{\sqrt{\pi}} \sin x
+  \end{align}
+  より、
+  \begin{align}
+  \left( f(x), \hat{O}_1 g(x) \right)
+  &= 2 a_0 b_0 + a_1 (2b_1+b_2) + a_2 (-b_1+2b_2)
+  \\
+  &=
+  \begin{pmatrix} a_0 & a_1 & a_2 \end{pmatrix}
+  \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 1 \\ 0 & -1 & 2 \end{pmatrix}
+  \begin{pmatrix} b_0 \\ b_1 \\ b_2 \end{pmatrix}
+  \end{align}
+  であるから、
+  \begin{align}
+  A = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 1 \\ 0 & -1 & 2 \end{pmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
