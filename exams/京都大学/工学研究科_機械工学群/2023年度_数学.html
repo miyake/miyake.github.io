@@ -122,6 +122,74 @@
   がわかる。
   </p>
 
+  <h3>1-3</h3>
+
+  <p>
+  $\hat{O}_2$ に対応する行列は
+  \begin{align}
+  B = \begin{pmatrix} 1 & 0 & 0 \\ 0 & -1 & 2 \\ 0 & -2 & -1 \end{pmatrix}
+  \end{align}
+  であるから、
+  $(\hat{O}_2)^3$ に対応する行列は
+  \begin{align}
+  B^3 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 11 & -2 \\ 0 & 2 & 11 \end{pmatrix}
+  \end{align}
+  であり、
+  \begin{align}
+  \left( f(x), (\hat{O}_2)^3 f(x) \right)
+  &=
+  \begin{pmatrix} a_0 & a_1 & a_2 \end{pmatrix}
+  \begin{pmatrix} 1 & 0 & 0 \\ 0 & 11 & -2 \\ 0 & 2 & 11 \end{pmatrix}
+  \begin{pmatrix} a_0 \\ a_1 \\ a_2 \end{pmatrix}
+  \\
+  &= a_0^2 + 11a_1^2 + 11a_2^2
+  \end{align}
+  </p>
+
+  <h3>1-4</h3>
+
+  <p>
+  演算子 $2 \frac{d^4}{dx^4} + \frac{d^2}{dx^2} $ に対応する行列は
+  \begin{align}
+  C = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+  \end{align}
+  である。
+  これの固有値は $0, 1$ であり、それぞれに属する固有ベクトルは、
+  $u \ne 0, \ vw \ne 0$ として、
+  \begin{align}
+  \begin{pmatrix} u \\ 0 \\ 0 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 0 \\ v \\ w \end{pmatrix}
+  \end{align}
+  である。
+  よって、求める $\lambda$ の値は $0, 1$ である。
+  </p>
+
+  <p>
+  $\lambda = 0$ のとき、 $a_1 = a_2 = 0$ であり、
+  \begin{align}
+  f(x) = \frac{a_0}{\sqrt{2 \pi}}
+  \end{align}
+  であるが、 $f(\pi)=-1, \ f'(\pi)=0$ より $a_0 = - \sqrt{2 \pi}$ がわかる。
+  </p>
+
+  <p>
+  $\lambda = 1$ のとき、 $a_0 = 0$ であり、
+  \begin{align}
+  f(x) &= \frac{a_1}{\sqrt{\pi}} \cos x + \frac{a_2}{\sqrt{\pi}} \sin x,
+  \\
+  f'(x) &= - \frac{a_1}{\sqrt{\pi}} \sin x + \frac{a_2}{\sqrt{\pi}} \cos x
+  \end{align}
+  であるが、 $f(\pi)=-1, \ f'(\pi)=0$ より
+  $a_1 = \sqrt{\pi}, \ a_2 = 0$ がわかる。
+  </p>
+
+  <p>
+  まとめると、求める値は、
+  $(\lambda, a_0, a_1, a_2) = (0, - \sqrt{2 \pi}, 0, 0), (1, 0, \sqrt{\pi}, 0)$
+  である。
+  </p>
+
 
 
 
