@@ -190,6 +190,43 @@
   である。
   </p>
 
+  <hr>
+  <h2>2.</h2>
+
+  <h3>2-1</h3>
+
+  <p>
+  与えられた微分方程式は次のように変形できる：
+  \begin{align}
+  \frac{d}{dx} \left( f^2 - 2 \frac{df}{dx} \right) = 0
+  \end{align}
+  よって、積分定数 $A$ を使って次のように書ける：
+  \begin{align}
+  f^2 - 2 \frac{df}{dx} = A
+  \end{align}
+  $x \to \infty$ あるいは $x \to - \infty$ での条件より $A=1$ がわかるので、
+  \begin{align}
+  f^2 - 2 \frac{df}{dx} = 1
+  \end{align}
+  これを次のように変形できる：
+  \begin{align}
+  \left( \frac{1}{f-1} - \frac{1}{f+1} \right) df = dx
+  \end{align}
+  よって、積分定数 $B$ を使って次のように書ける：
+  \begin{align}
+  \frac{f-1}{f+1} &= B e^x
+  \\
+  \therefore \ \ 
+  f(x) &= \frac{1+Be^x}{1-Be^x}
+  \end{align}
+  $f(0)=0$ より $B=-1$ がわかり、
+  \begin{align}
+  f(x) &= \frac{1-e^x}{1+e^x}
+  \end{align}
+  を得る。
+  これは $x \to \pm \infty$ における条件も満たす。
+  </p>
+
 
 
 
