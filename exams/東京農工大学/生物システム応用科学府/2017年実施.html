@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京農工大学 大学院
+      生物システム応用科学府
+      2017年実施
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京農工大学 大学院
+    <br>
+    生物システム応用科学府
+    <br>
+    2017年実施
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.tuat.ac.jp/base/examination/schedule_master.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>4. （確率及び統計）</h2>
+
+  <h3>(1)</h3>
+
+  <h4>(i)</h4>
+
+  <p>
+  \begin{align}
+  \int_0^\infty e^{-x/2} dx
+  &= \left[ -2 e^{-x/2} \right]_0^\infty
+  \\
+  &= 2
+  \end{align}
+  なので、 $a=1/2$ である。
+  </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%22infty%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%22exp%28-x%2F2%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%220%22&lang=ja
+-->
+
+  <h4>(ii)</h4>
+
+  <p>
+  $X$ の平均は
+  \begin{align}
+  E(X)
+  &= \frac{1}{2} \int_0^\infty x e^{-x/2} dx
+  \\
+  &= - \left[ x e^{-x/2} \right]_0^\infty + \int_0^\infty e^{-x/2} dx
+  \\
+  &= 2
+  \end{align}
+  である。
+  また、 $X^2$ の平均は
+  \begin{align}
+  E \left( X^2 \right)
+  &= \frac{1}{2} \int_0^\infty x^2 e^{-x/2} dx
+  \\
+  &= 8
+  \end{align}
+  なので、 $X$ の分散は
+  \begin{align}
+  V(X)
+  &= E \left( X^2 \right) - E(X)^2
+  \\
+  &= 4
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $X, Y, XY$ の平均はそれぞれ
+  \begin{align}
+  E(X)
+  &= \int_0^2 dx \int_0^3 dy \ x f(x, y)
+  \\
+  &= \frac{1}{47} \int_0^2 dx \int_0^3 dy \ x (x+y)(x+2)
+  \\
+  &= \frac{3}{94} \int_0^2 dx \ x \left( 2x^2+7x+6 \right)
+  \\
+  &= \frac{58}{47}
+  \\
+  E(Y)
+  &= \int_0^2 dx \int_0^3 dy \ y f(x, y)
+  \\
+  &= \frac{1}{47} \int_0^2 dx \int_0^3 dy \ y (x+y)(x+2)
+  \\
+  &= \frac{9}{94} \int_0^2 dx (x+2)^2
+  \\
+  &= \frac{84}{47}
+  \\
+  E(XY)
+  &= \int_0^2 dx \int_0^3 dy \ xy f(x, y)
+  \\
+  &= \frac{1}{47} \int_0^2 dx \int_0^3 dy \ xy (x+y)(x+2)
+  \\
+  &= \frac{9}{94} \int_0^2 dx \ x (x+2)^2
+  \\
+  &= \frac{102}{47}
+  \end{align}
+  なので、
+  $X$ と $Y$ の共分散は、
+  \begin{align}
+  C(X,Y)
+  &= E(XY) - E(X)E(Y)
+  \\
+  &= - \frac{78}{2209}
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
