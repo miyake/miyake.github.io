@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京農工大学 大学院
+      生物システム応用科学府
+      2016年実施
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    東京農工大学 大学院
+    <br>
+    生物システム応用科学府
+    <br>
+    2016年実施
+  </h1>
+
+  <p>
+  <ul>
+    <li>
+    <a href="https://www.tuat.ac.jp/base/examination/schedule_master.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>4. （確率及び統計）</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  1
+  &= \sum_{x=0}^1 \sum_{y=0}^3 \left\{ k(x+y) + \frac{1}{16} \right\}
+  \\
+  &= k \left\{ (0+1) \cdot 4 + 2 \cdot (0+1+2+3) \right\} + 8 \cdot \frac{1}{16}
+  \\
+  &= 16k + \frac{1}{2}
+  \\
+  \therefore \ \ 
+  k &= \frac{1}{32}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  P(X=x)
+  &= \sum_{y=0}^3 \left\{ \frac{1}{32} (x+y) + \frac{1}{16} \right\}
+  \\
+  &= \frac{1}{8} x + \frac{7}{16}
+  \\
+  P(Y=y)
+  &= \sum_{x=0}^1 \left\{ \frac{1}{32} (x+y) + \frac{1}{16} \right\}
+  \\
+  &= \frac{1}{16} y + \frac{5}{32}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  例えば、 $P(X=0, Y=0) \ne P(X=0) P(Y=0)$ なので、
+  $X$ と $Y$ は独立でない。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  P(X=1 | Y=2)
+  &= \frac{P(X=1,Y=2)}{P(Y=2)}
+  \\
+  &= \frac{5}{9}
+  \\
+  P(X=1, Y \geq 2)
+  &= P(X=1, Y=2) + P(X=1, Y=2)
+  \\
+  &= \frac{9}{32}
+  \end{align}
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
