@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院 理学府
+      物理学専攻
+      2020年度 物理学 [I]
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院 理学府
+    <br>
+    物理学専攻
+    <br>
+    2020年度 物理学 [I]
+  </h1>
+
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.phys.kyushu-u.ac.jp/graduate/problem.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>[A-I]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \delta q (t_1) = \delta q (t_2) = 0
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  L \left( q + \delta q, \dot{q} + \delta \dot{q} \right)
+  \simeq
+  L \left( q, \dot{q} \right)
+  + \frac{\partial L \left( q, \dot{q} \right)}{\partial q} \delta q
+  + \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}} \delta \dot{q}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  \delta S[q]
+  &\simeq \int_{t_1}^{t_2} dt \left(
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial q} \delta q
+  + \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}} \delta \dot{q}
+  \right)
+  \\
+  &= \int_{t_1}^{t_2} dt \left(
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial q} \delta q
+  + \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}}
+  \frac{d}{dt} \delta q \right)
+  \\
+  &=
+  \left[
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}} \delta q
+  \right]_{t_1}^{t_2}
+  + \int_{t_1}^{t_2} dt \left(
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial q}
+  - \frac{d}{dt} \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}}
+  \right) \delta q
+  \\
+  &=
+  \int_{t_1}^{t_2} dt \left(
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial q}
+  - \frac{d}{dt} \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}}
+  \right) \delta q
+  \end{align}
+  任意の微小な仮想変位 $\delta q$ に対してこれが $0$ であるとして、
+  オイラー-ラグランジュ方程式
+  \begin{align}
+  \frac{\partial L \left( q, \dot{q} \right)}{\partial q}
+  - \frac{d}{dt} \frac{\partial L \left( q, \dot{q} \right)}{\partial \dot{q}}
+  = 0
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+  <h2>[A-II]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  L \left( q, \dot{q} \right)
+  &= \frac{1}{2} m \dot{q}^2 - \frac{1}{2} k q^2
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \frac{\partial L}{\partial q} &= -kq
+  \\
+  \frac{d}{dt} \frac{\partial L}{\partial q}
+  &= \frac{d}{dt} m \dot{q}
+  = m \ddot{q}
+  \end{align}
+  なので、オイラー-ラグランジュ方程式は、
+  \begin{align}
+  m \ddot{q} = -kq
+  \end{align}
+  となる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  E(t)
+  &= m \dot{q}^2 - \left( \frac{1}{2} m \dot{q}^2 - \frac{1}{2} k q^2 \right)
+  \\
+  &= \frac{1}{2} m \dot{q}^2 + \frac{1}{2} k q^2
+  \\
+  \frac{d}{dt} E(t)
+  &= m \dot{q} \ddot{q} + k q \dot{q}
+  \\
+  &= m \dot{q} \cdot \left(- \frac{k}{m} q \right) + k q \dot{q}
+  \\
+  &= 0
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  $\omega = \sqrt{k/m}$ として、
+  \begin{align}
+  q(t) = A \sin \omega t + B \cos \omega t
+  \end{align}
+  ただし、 $A, B$ は積分定数である。
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
