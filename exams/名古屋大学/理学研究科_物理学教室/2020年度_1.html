@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋大学 大学院 理学研究科
+      物理学教室 (素粒子宇宙物理学専攻, 物質理学専攻)
+      2020年度 物理学 [I]
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+
+  <h1>
+    名古屋大学 大学院 理学研究科
+    <br>
+    物理学教室 (素粒子宇宙物理学専攻, 物質理学専攻)
+    <br>
+    2020年度 物理学 [I]
+  </h1>
+
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.phys.nagoya-u.ac.jp/entrance/past.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2>問 1</h2>
+
+  <p>
+  \begin{align}
+  \overrightarrow{\mathrm{CP}}
+  &= R \theta (- \cos \theta, \sin \theta)
+  \\
+  \therefore \ \ 
+  \overrightarrow{\mathrm{OP}}
+  &= \overrightarrow{\mathrm{OC}} + \overrightarrow{\mathrm{CP}}
+  \\
+  &= R (\sin \theta - \theta \cos \theta, \cos \theta + \theta \sin \theta)
+  \end{align}
+  </p>
+
+  <h2>問 2</h2>
+
+  <p>
+  \begin{align}
+  (v_x, v_y)
+  = R \theta \dot{\theta} (\sin \theta, \cos \theta)
+  \end{align}
+  </p>
+
+  <h2>問 3</h2>
+
+  <p>
+  \begin{align}
+  \mathcal{L}
+  &= \frac{m}{2} \left( v_x^2 + v_y^2 \right)
+  = \frac{m}{2} R^2 \theta^2 \dot{\theta}^2
+  \end{align}
+  </p>
+
+  <h2>問 4</h2>
+
+  <p>
+  \begin{align}
+  \frac{\mathrm{d}}{\mathrm{d}t}
+  \frac{\partial \mathcal{L}}{\partial \dot{\theta}}
+  &= \frac{\mathrm{d}}{\mathrm{d}t} m R^2 \theta^2 \dot{\theta}
+  = m R^2 \left( 2 \theta \dot{\theta}^2 + \theta^2 \ddot{\theta} \right)
+  \\
+  \frac{\partial \mathcal{L}}{\partial \theta}
+  &= m R^2 \theta \dot{\theta}^2
+  \end{align}
+  なので、オイラー-ラグランジュ方程式より、
+  \begin{align}
+  \theta \dot{\theta}^2 + \theta^2 \ddot{\theta} = 0
+  \end{align}
+  </p>
+
+  <h2>問 5</h2>
+
+  <p>
+  与えられた $\theta(t) = \sqrt{2 v_0 t / R}$ が
+  運動方程式と初期条件を満たすことは次のようにして確かめられる。
+  まず、
+  \begin{align}
+  \dot{\theta} (t) = \sqrt{\frac{v_0}{2Rt}}
+  , \ \ 
+  \ddot{\theta} (t) = - \sqrt{\frac{v_0}{8Rt^3}}
+  \end{align}
+  より、運動方程式 $\theta \dot{\theta}^2 + \theta^2 \ddot{\theta} = 0$
+  を満たすことがわかる。
+  次に、
+  \begin{align}
+  (v_x, v_y)
+  = v_0 \left(\sin \sqrt{\frac{2v_0t}{R}}, \cos \sqrt{\frac{2v_0t}{R}} \right)
+  \end{align}
+  より、初期条件（ $t=0$ で $\theta = 0, \ v_x = 0, \ v_y = v_0$
+  ）も満たすことがわかる。
+  </p>
+
+  <h2>問 6</h2>
+
+  <p>
+  点 P の位置を $(x,y)$ とすると、求める角運動量の大きさは、
+  \begin{align}
+  L
+  &= m \left| x v_y - y v_x \right|
+  \\
+  &= m R^2 \theta^2 \left| \dot{\theta} \right|
+  \end{align}
+  であるが、問5で与えられた解を使うと、
+  \begin{align}
+  L
+  &= 2m \sqrt{R v_0^3 t}
+  \end{align}
+  を得る。
+  これは $t$ に依存するので保存量ではない。
+  （糸の一端がy軸上に固定されていることから、この系は中心軸に関する回転対称性を持たない。）
+  </p>
+
+  <h2>問 7</h2>
+
+  <p>
+  問 5 より、 $v_x^2 + v_y^2 = v_0^2$ なので、運動エネルギーは保存する。
+  （摩擦や非弾性衝突などがなく、ポテンシャルエネルギーも考えていないので、運動エネルギーが保存しない理由がない。）
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
