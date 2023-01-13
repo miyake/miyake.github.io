@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院 理学研究科
+      物理学専攻
+      2020年度 物理学 1
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    大阪大学 大学院 理学研究科
+    <br>
+    物理学専攻
+    <br>
+    2020年度 物理学 1
+  </h1>
+
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.phys.sci.osaka-u.ac.jp/ja/grad/undergraduate_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>I.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $\ddot{\theta} = d \dot{\theta} / dt$ と書くと、運動方程式は次のようになる：
+  \begin{align}
+  ml \ddot{\theta} &= - mg \sin \theta
+  \\
+  \therefore \ \ 
+  \ddot{\theta} &= - \frac{g}{l} \sin \theta
+  \\
+  &\simeq - \frac{g}{l} \theta
+  \end{align}
+  よって、 $\omega = \sqrt{g/l}$ とおいて、
+  \begin{align}
+  \theta (t)
+  &= \alpha \cos \omega t
+  \\
+  &= \alpha \cos \left( \sqrt{\frac{g}{l}} t \right)
+  \end{align}
+  が与えられた初期条件を満たす解である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $\dot{\theta}(t) = - \alpha \omega \sin \omega t$
+  の最大値は $\alpha \omega$ であるから、
+  \begin{align}
+  E
+  &= \frac{1}{2} m l^2 \alpha^2 \omega^2
+  \\
+  &= \frac{1}{2} mgl \alpha^2
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  張力は、重力の糸の方向の成分と常につり合っているから、
+  \begin{align}
+  T
+  &= mg \cos \theta
+  \\
+  &\simeq mg \left( 1 - \frac{1}{2} \theta^2 \right)
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  (1), (3) より、
+  \begin{align}
+  T
+  &= mg \left( 1 - \frac{1}{2} \alpha^2 \cos^2 \omega t \right)
+  \\
+  &= mg \left( 1 - \frac{1}{4} \alpha^2
+  - \frac{1}{4} \alpha^2 \cos 2 \omega t \right)
+  \\
+  \therefore \ \ 
+  \langle T \rangle
+  &= \frac{4 - \alpha^2}{4} mg
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>II.</h2>
+
+  <h3>(5)</h3>
+
+  <p>
+  \begin{align}
+  \delta \omega
+  &= \sqrt{\frac{g}{l + \delta l}} - \omega
+  \\
+  &= \omega \left( 1 + \frac{\delta l}{l} \right)^{-1/2} - \omega
+  \\
+  &\simeq \omega \left( 1 - \frac{\delta l}{2l} \right) - \omega
+  \\
+  &= - \frac{\delta l}{2l} \omega
+  \end{align}
+  </p>
+
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
