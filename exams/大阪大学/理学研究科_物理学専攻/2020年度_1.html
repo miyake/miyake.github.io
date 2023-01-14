@@ -101,16 +101,18 @@
   \end{align}
   </p>
 
-  <!--
   <h3>(3)</h3>
 
   <p>
-  張力は、重力の糸の方向の成分と常につり合っているから、
+  糸の方向の運動方程式より、
   \begin{align}
-  T
-  &= mg \cos \theta
+  ml \dot{\theta}^2 &= T - mg \cos \theta
   \\
-  &\simeq mg \left( 1 - \frac{1}{2} \theta^2 \right)
+  \therefore \ \ 
+  T
+  &= ml \dot{\theta}^2 + mg \cos \theta
+  \\
+  &\simeq ml \dot{\theta}^2 + mg - \frac{1}{2} mg \theta^2
   \end{align}
   </p>
 
@@ -120,14 +122,17 @@
   (1), (3) より、
   \begin{align}
   T
-  &= mg \left( 1 - \frac{1}{2} \alpha^2 \cos^2 \omega t \right)
+  &= ml \alpha^2 \omega^2 \sin^2 \omega t
+  + mg - \frac{1}{2} mg \alpha^2 \cos^2 \omega t
   \\
-  &= mg \left( 1 - \frac{1}{4} \alpha^2
-  - \frac{1}{4} \alpha^2 \cos 2 \omega t \right)
+  &= mg \alpha^2 \sin^2 \omega t
+  + mg - \frac{1}{2} mg \alpha^2 \cos^2 \omega t
+  \\
+  &=mg \left( \frac{\alpha^2 + 4}{4} - \frac{3}{4} \cos 2 \omega t \right)
   \\
   \therefore \ \ 
   \langle T \rangle
-  &= \frac{4 - \alpha^2}{4} mg
+  &= \frac{\alpha^2 + 4}{4} mg
   \end{align}
   </p>
 
@@ -148,7 +153,94 @@
   &= - \frac{\delta l}{2l} \omega
   \end{align}
   </p>
-  -->
+
+  <h3>(6)</h3>
+
+  <p>
+  \begin{align}
+  \delta W
+  &= - \langle T \rangle \delta l
+  \\
+  &= - \frac{\alpha^2 + 4}{4} mg \delta l
+  \end{align}
+  また、 $\delta W = \delta E - mg \delta l$ より、
+  \begin{align}
+  \delta E
+  &= \delta W + mg \delta l
+  \\
+  &= - \frac{\alpha^2}{4} mg \delta l
+  \end{align}
+  </p>
+
+  <h3>(7)</h3>
+
+  <p>
+  (2), (5), (6) の結果を使って、
+  $\delta l$ の1次までで次のように計算できる：
+  \begin{align}
+  \frac{E + \delta E}{\omega + \delta \omega}
+  &= \frac{E}{\omega} \left(1 + \frac{\delta E}{E} \right)
+  \left(1 + \frac{\delta \omega}{\omega} \right)^{-1}
+  \\
+  &\simeq \frac{E}{\omega}
+  \left(1 + \frac{\delta E}{E} - \frac{\delta \omega}{\omega} \right)
+  \\
+  &= \frac{E}{\omega}
+  \left(1 - \frac{\delta l}{2l} + \frac{\delta l}{2l} \right)
+  \\
+  &= \frac{E}{\omega}
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>III.</h2>
+
+  <h3>(8)</h3>
+
+  <p>
+  \begin{align}
+  L
+  &= \frac{1}{2} ml^2 \dot{\theta}^2 - mgl (1 - \cos \theta)
+  \\
+  \therefore \ \ 
+  p
+  &= \frac{\partial L}{\partial \dot{\theta}}
+  \\
+  &= ml^2 \dot{\theta}
+  \end{align}
+  </p>
+
+  <h3>(9)</h3>
+
+  <p>
+  \begin{align}
+  E
+  &= \frac{1}{2} ml^2 \dot{\theta}^2 + mgl (1 - \cos \theta)
+  \\
+  &\simeq \frac{1}{2} ml^2 \dot{\theta}^2 + \frac{1}{2} mgl \theta^2
+  \\
+  &= \frac{p^2}{2ml^2} + \frac{1}{2} mgl \theta^2
+  \\
+  \therefore \ \ 
+  &\frac{p^2}{2ml^2E} + \frac{\theta^2}{\frac{2E}{mgl}} = 1
+  \end{align}
+  これは楕円の方程式である。
+  </p>
+
+  <h3>(10)</h3>
+
+  <p>
+  (9) より、
+  \begin{align}
+  \oint p d \theta
+  &= \pi \sqrt{2ml^2E} \sqrt{\frac{2E}{mgl}}
+  \\
+  &= 2 \pi E \sqrt{\frac{l}{g}}
+  \\
+  &= 2 \pi \frac{E}{\omega}
+  \end{align}
+  となるが、 (7) より、これは糸の長さが $\delta l$ 変化する前後で変わらない。
+  </p>
 
 
 
