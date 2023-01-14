@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 理学研究科
+      物理学・宇宙物理学専攻
+      2022年度 I-3
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 理学研究科
+    <br>
+    物理学・宇宙物理学専攻
+    <br>
+    2022年度 I-3
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.scphys.kyoto-u.ac.jp/education/inshi/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>I-3A （力学）</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d^2 \vec{r}}{dt^2}
+  &= \frac{d}{dt} \frac{d \vec{r}}{dt}
+  \\
+  &= \frac{d'}{dt} \frac{d \vec{r}}{dt} + \vec{\omega} \times \frac{d \vec{r}}{dt}
+  \\
+  &= \frac{d'}{dt} \left( \frac{d' \vec{r}}{dt} + \vec{\omega} \times \vec{r} \right)
+  + \vec{\omega} \times \left( \frac{d' \vec{r}}{dt} + \vec{\omega} \times \vec{r} \right)
+  \\
+  &= \frac{d'^2 \vec{r}}{dt^2}
+  + 2 \vec{\omega} \times \frac{d' \vec{r}}{dt}
+  + \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right)
+  \end{align}
+  最後の表式の第2項がコリオリの力に相当し、第3項が遠心力に相当する。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $B = |\vec{B}|$ とする。
+  慣性系 $S$ での運動方程式は
+  \begin{align}
+  m \frac{d^2 \vec{r}}{dt^2}
+  = \vec{F} \left( \vec{r} \right) + q \frac{d \vec{r}}{dt} \times \vec{B}
+  \end{align}
+  なので、 (1) より、回転系 $S'$ での運動方程式は、次のようになる：
+  \begin{align}
+  m \left( \frac{d'^2 \vec{r}}{dt^2}
+  + 2 \omega \vec{k} \times \frac{d' \vec{r}}{dt}
+  + \omega^2 \vec{k} \times \left( \vec{k} \times \vec{r} \right)
+  \right)
+  = \vec{F} \left( \vec{r} \right) + qB \left(
+  \frac{d' \vec{r}}{dt} + \omega \vec{k} \times \vec{r} \right) \times \vec{k}
+  \\
+  \therefore \ \ 
+  m \frac{d^2 \vec{r}}{dt^2}
+  = \vec{F} \left( \vec{r} \right)
+  + (qB+2m \omega) \frac{d' \vec{r}}{dt} \times \vec{k}
+  - (qB \omega + m \omega^2 ) \vec{k} \times \left( \vec{k} \times \vec{r} \right)
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  求める条件は、
+  \begin{align}
+  \omega &= - \frac{qB}{2m}
+  \\
+  \therefore \ \ 
+  \vec{\omega} &= - \frac{q}{2m} \vec{B}
+  \end{align}
+  </p>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
