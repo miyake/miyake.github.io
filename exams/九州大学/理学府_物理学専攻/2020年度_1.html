@@ -41,7 +41,6 @@
 
   <h1>
     九州大学 大学院 理学府
-    <br>
     物理学専攻
     <br>
     2020年度 物理学 [I]
@@ -181,6 +180,123 @@
   q(t) = A \sin \omega t + B \cos \omega t
   \end{align}
   ただし、 $A, B$ は積分定数である。
+  </p>
+
+  <hr>
+  <h2>[B]</h2>
+
+  <p>
+  x, y, z 軸の正の方向の単位ベクトルをそれぞれ
+  $\boldsymbol{i}, \boldsymbol{j}, \boldsymbol{k}$ とする。
+  </p>
+
+  <h3>(1)</h3>
+
+  <p>
+  $I \omega_1 \boldsymbol{k}$
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $\boldsymbol{k} \times \boldsymbol{i} = \boldsymbol{j}$
+  なので、y 軸の正の方向である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $I \omega_1 \boldsymbol{k} + lF \Delta t \boldsymbol{j}$
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  \cos \theta
+  &= \frac{ \boldsymbol{k} \cdot
+  \left( I \omega_1 \boldsymbol{k} + lF \Delta t \boldsymbol{j} \right)}
+  {
+  \left| I \omega_1 \boldsymbol{k} + lF \Delta t \boldsymbol{j} \right|}
+  \\
+  &= \frac{I \omega_1}{\sqrt{I^2 \omega_1^2 + l^2 F^2 \Delta t^2}}
+  \end{align}
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  \begin{align}
+  \left( X \boldsymbol{i} + Y \boldsymbol{j} + Z \boldsymbol{k} \right)
+  \times \left( - mg \boldsymbol{k} \right)
+  = mg \left( - Y \boldsymbol{i} + X \boldsymbol{j} \right)
+  \end{align}
+  </p>
+
+  <h3>(6)</h3>
+
+  <p>
+  O から重心に向かう単位ベクトルは、
+  \begin{align}
+  \frac{X \boldsymbol{i} + Y \boldsymbol{j} + Z \boldsymbol{k}}{R}
+  \end{align}
+  と書けるから、求める運動方程式は、時間微分を $\dot{}$ で表して、
+  \begin{align}
+  \frac{I \omega_2}{R}
+  \left( \dot{X} \boldsymbol{i} + \dot{Y} \boldsymbol{j} + \dot{Z} \boldsymbol{k} \right)
+  = mg \left( - Y \boldsymbol{i} + X \boldsymbol{j} \right)
+  \end{align}
+  あるいは成分で書けば
+  \begin{align}
+  \dot{X} &= - \frac{mgR}{I \omega_2} Y
+  \\
+  \dot{Y} &= \frac{mgR}{I \omega_2} X
+  \\
+  \dot{Z} &= 0
+  \end{align}
+  である。
+  </p>
+
+  <h3>(7)</h3>
+
+  <p>
+  まず、 $X = R \cos \alpha$ はすぐにわかる。
+
+  次に、コマの軸をxy平面に射影したときのx軸からの角度を $\varphi$ とすると、
+  \begin{align}
+  X &= R \sin \alpha \cos \varphi
+  \\
+  Y &= R \sin \alpha \sin \varphi
+  \end{align}
+  であるから、これを (6) の運動方程式に代入して、次を得る：
+  \begin{align}
+  \dot{\varphi} = \frac{mg}{I \omega_2}
+  \end{align}
+  $t=0$ のとき $\varphi = 0$ であるから、次がわかる：
+  \begin{align}
+  \varphi = \frac{mgt}{I \omega_2}
+  \end{align}
+  まとめると、求める解は、
+  \begin{align}
+  X &= R \sin \alpha \cos \frac{mgt}{I \omega_2}
+  \\
+  Y &= R \sin \alpha \sin \frac{mgt}{I \omega_2}
+  \\
+  Z &= R \cos \alpha
+  \end{align}
+  である。
+  </p>
+
+  <h3>(8)</h3>
+
+  <p>
+  (7) より
+  \begin{align}
+  \Omega
+  &= \dot{\varphi}
+  \\
+  &= \frac{mg}{I \omega_2}
+  \end{align}
   </p>
 
 
