@@ -15,7 +15,7 @@
     <title>
       東北大学 大学院 工学研究科
       応用物理学専攻
-      令和元年度 基礎科目
+      2019年実施 基礎科目
       | miyake.github.io
     </title>
     <script type="text/javascript" async
@@ -40,17 +40,17 @@
   <hr>
 
   <h1>
-    東北大学 大学院
+    東北大学 大学院 工学研究科
     <br>
-    工学研究科 応用物理学専攻
+    応用物理学専攻
     <br>
-    令和元年度 基礎科目
+    2019年実施 基礎科目
   </h1>
 
   <hr>
   <ul>
     <li>
-    <a href="https://www.eng.tohoku.ac.jp/admission/grad/past_exam.html">
+    <a href="https://www.apph.tohoku.ac.jp/exam">
       問題はこちらから入手してください。
     </a>
     </li>
@@ -258,6 +258,94 @@
   \langle x \rangle = \frac{F}{k}
   \end{align}
   を得る。
+  </p>
+
+  <hr>
+  <h2>[問題2] 力学</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  &= a \begin{pmatrix} \cos \theta \\ \sin \theta \end{pmatrix}
+  + s \begin{pmatrix} \sin \theta \\ - \cos \theta \end{pmatrix}
+  \\
+  &= \begin{pmatrix} a \cos \theta + s \sin \theta \\
+  a \sin \theta - s \cos \theta \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  P の速度を $\vec{v}$ とすると、
+  \begin{align}
+  \vec{v}
+  &= \begin{pmatrix}
+  -a \dot{\theta} \sin \theta + s \dot{\theta} \cos \theta + \dot{s} \sin \theta \\
+  a \dot{\theta} \cos \theta + s \dot{\theta} \sin \theta - \dot{s} \cos \theta
+  \end{pmatrix}
+  \\
+  \therefore \ \ 
+  \left| \vec{v} \right|^2
+  &= a^2 \dot{\theta}^2 + s^2 \dot{\theta}^2 + \dot{s}^2
+  - 2a \dot{s} \dot{\theta}
+  \end{align}
+  なので、ラグランジアン $L$ は、
+  \begin{align}
+  L
+  &= \frac{1}{2} I \dot{\theta}^2 + \frac{1}{2} m \left| \vec{v} \right|^2
+  - \frac{1}{2} k (a-s)^2
+  \\
+  &= \frac{1}{2} \left[ I + m (a^2+s^2) \right] \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  - \frac{1}{2} k (a-s)^2
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $\theta$ に関するオイラー-ラグランジュの方程式より、
+  \begin{align}
+  \frac{dM}{dt}
+  = \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}}
+  = \frac{\partial L}{\partial \theta}
+  = 0
+  \end{align}
+  なので、 $M$ は保存する。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  2つの保存量
+  \begin{align}
+  M
+  &= \frac{\partial L}{\partial \dot{\theta}}
+  \\
+  &= \left[ I + m(a^2 + s^2) \right] \dot{\theta} - ma \dot{s}
+  \\
+  E
+  &= \frac{1}{2} \left[ I + m (a^2+s^2) \right] \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  + \frac{1}{2} k (a-s)^2
+  \end{align}
+  がある。
+  それぞれについて、
+  $t=0$ （このとき $s=0, \ \dot{s}=0, \ \dot{\theta}=0$ ）のときと
+  $s=a$ のときを比較して、
+  \begin{align}
+  0
+  &= \left( I + 2ma^2 \right) \dot{\theta} - ma \dot{s}
+  \\
+  \frac{1}{2} ka^2
+  &= \frac{1}{2} \left( I + 2ma^2 \right) \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  \end{align}
+  を得る。
+  $\dot{s}$ を消去して $\dot{\theta}$ を求めると、題意の式を得る。
   </p>
 
 
