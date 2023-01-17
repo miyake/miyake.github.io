@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院
+      システム情報科学府
+      2022年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院
+    システム情報科学府
+    <br>
+    2022年度 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://portal.isee.kyushu-u.ac.jp/admissions_master.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>1. 【線形代数 (Linear algebra) 分野】</h2>
+
+  <h3>(1)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  \begin{align}
+  \boldsymbol{p}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{p}_2 = \frac{1}{2} \begin{pmatrix} 1 \\ \sqrt{3} \end{pmatrix}
+  , \ \ 
+  \boldsymbol{p}_3 = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  \begin{align}
+  \boldsymbol{p}_1 = \begin{pmatrix} 2 \\ 0 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{p}_2 = \begin{pmatrix} 3 \\ 0 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{p}_3 = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  \begin{align}
+  X
+  &= \begin{pmatrix} \boldsymbol{x}_1 & \boldsymbol{x}_2 \end{pmatrix}
+  = \begin{pmatrix} 1 & \frac{1}{2} \\ 0 & \frac{\sqrt{3}}{2} \end{pmatrix}
+  \\
+  \therefore \ \ 
+  X^T X
+  &= \begin{pmatrix} 1 & 0 \\ \frac{1}{2} & \frac{\sqrt{3}}{2} \end{pmatrix}
+  \begin{pmatrix} 1 & \frac{1}{2} \\ 0 & \frac{\sqrt{3}}{2} \end{pmatrix}
+  = \begin{pmatrix} 1 & \frac{1}{2} \\ \frac{1}{2} & 1 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  \begin{align}
+  X
+  &= \begin{pmatrix} \boldsymbol{x}_1 & \boldsymbol{x}_2 \end{pmatrix}
+  = \begin{pmatrix} 2 & 3 \\ 0 & 0 \end{pmatrix}
+  \\
+  \therefore \ \ 
+  X^T X
+  &= \begin{pmatrix} 2 & 0 \\ 3 & 0 \end{pmatrix}
+  \begin{pmatrix} 2 & 3 \\ 0 & 0 \end{pmatrix}
+  = \begin{pmatrix} 4 & 6 \\ 6 & 9 \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  ベクトル $\boldsymbol{a}$ のノルムを $|\boldsymbol{a}|$ で表す。
+  </p>
+
+  <p>
+  与えられた定義より、
+  \begin{align}
+  g_{i,j}
+  &= d_{i,n+1}^2 + d_{j,n+1}^2 - d_{i,j}
+  \\
+  &= \left| \boldsymbol{p}_i - \boldsymbol{p}_{n+1} \right|^2
+  + \left| \boldsymbol{p}_j - \boldsymbol{p}_{n+1} \right|^2
+  - \left| \boldsymbol{p}_i - \boldsymbol{p}_j \right|^2
+  \\
+  &= 2
+  \left( \boldsymbol{p}_i^T \boldsymbol{p}_j
+  - \boldsymbol{p}_i^T \boldsymbol{p}_{n+1}
+  - \boldsymbol{p}_j^T \boldsymbol{p}_{n+1}
+  + \left| \boldsymbol{p}_{n+1} \right|^2
+  \right)
+  \\
+
+  X^T X
+  &= \begin{pmatrix}
+  \boldsymbol{x}_1^T \\ \boldsymbol{x}_2^T \\ \vdots \\ \boldsymbol{x}_n^T
+  \end{pmatrix}
+  \begin{pmatrix}
+  \boldsymbol{x}_1 & \boldsymbol{x}_2 & \cdots & \boldsymbol{x}_n
+  \end{pmatrix}
+  \\
+
+  &= \begin{pmatrix}
+  \boldsymbol{x}_1^T \boldsymbol{x}_1 & 
+  \boldsymbol{x}_1^T \boldsymbol{x}_2 & 
+  \cdots &
+  \boldsymbol{x}_1^T \boldsymbol{x}_n & 
+  \\
+  \boldsymbol{x}_2^T \boldsymbol{x}_1 & 
+  \boldsymbol{x}_2^T \boldsymbol{x}_2 & 
+  \cdots &
+  \boldsymbol{x}_2^T \boldsymbol{x}_n & 
+  \\
+  \vdots
+  \\
+  \boldsymbol{x}_n^T \boldsymbol{x}_1 & 
+  \boldsymbol{x}_n^T \boldsymbol{x}_2 & 
+  \cdots &
+  \boldsymbol{x}_n^T \boldsymbol{x}_n & 
+  \end{pmatrix}
+  \\
+  \boldsymbol{x}_i^T \boldsymbol{x}_j
+  &= \left( \boldsymbol{p}_i - \boldsymbol{p}_{n+1} \right)^T
+  \left( \boldsymbol{p}_j - \boldsymbol{p}_{n+1} \right)
+  \\
+  &= \boldsymbol{p}_i^T \boldsymbol{p}_j
+  - \boldsymbol{p}_i^T \boldsymbol{p}_{n+1}
+  - \boldsymbol{p}_j^T \boldsymbol{p}_{n+1}
+  + \left| \boldsymbol{p}_{n+1} \right|^2
+  \end{align}
+  なので、
+  \begin{align}
+  G = 2 X^T X
+  \end{align}
+  がわかる。
+  よって、任意の $\boldsymbol{v}$ について
+  \begin{align}
+  \boldsymbol{v}^T G \boldsymbol{v}
+  &= 2 \boldsymbol{v}^T X^T X \boldsymbol{v}
+  \\
+  &= 2 \left( X \boldsymbol{v} \right)^T X \boldsymbol{v}
+  \\
+  &= 2 \left| X \boldsymbol{v} \right|^2
+  \\
+  &\geq 0
+  \end{align}
+  なので、 $G$ は半正定値である。
+  </p>
+
+  <!--
+  <hr>
+  <h2>3. 【ベクトル解析分野】</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \end{align}
+  </p>
+  -->
+
+  <!--
+  <hr>
+  <h2>5. 【確率・統計分野】</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \end{align}
+  </p>
+  -->
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
