@@ -190,7 +190,7 @@
   G = 2 X^T X
   \end{align}
   がわかる。
-  よって、任意の $\boldsymbol{v}$ について
+  よって、任意の $\boldsymbol{v} \in \mathbb{R}^n$ について
   \begin{align}
   \boldsymbol{v}^T G \boldsymbol{v}
   &= 2 \boldsymbol{v}^T X^T X \boldsymbol{v}
@@ -201,7 +201,67 @@
   \\
   &\geq 0
   \end{align}
-  なので、 $G$ は半正定値である。
+  が成り立つので、 $G$ は半正定値である。
+  </p>
+
+  <hr>
+  <h2>2. 【解析学・微積分 (Analysis and calculus) 分野】</h2>
+
+  <h3>(1)</h3>
+
+  <h4>(a)</h4>
+
+  <p>
+  \begin{align}
+  \frac{df}{dt}
+  = \sum_{i=1}^m \frac{\partial f}{\partial x_i} \frac{dv_i}{dt}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <p>
+  \begin{align}
+  \frac{df}{dt}
+  = (2x_1+x_2) \cos t + (x_1+4x_2)e^t
+  \end{align}
+  あるいは、 $x_1, x_2$ は使わず $t$ のみで表すと、
+  \begin{align}
+  \frac{df}{dt}
+  = \sin 2t + e^t \cos t + e^t \sin t + 4 e^{2t}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  まず、与えられた微分方程式の右辺を $0$ とした方程式
+  \begin{align}
+  \frac{dy}{dx} - 2xy = 0
+  \end{align}
+  を考えると、これは
+  \begin{align}
+  \frac{dy}{y} = 2x dx
+  \end{align}
+  と変形できるので、一般解は、$A$ を任意定数として、次のように求まる：
+  \begin{align}
+  y = A e^{x^2}
+  \end{align}
+
+  そこで、 $A$ を $x$ の関数と考えて、
+  $y = A(x)e^{x^2}$ を与えられた微分方程式に代入すると、
+  \begin{align}
+  \frac{dA(x)}{dx} &= 1
+  \\
+  \therefore \ \ 
+  A(x) &= x + C
+  \end{align}
+  を得るので、求める一般解は
+  \begin{align}
+  y = (x+C) e^{x^2}
+  \end{align}
+  である。
+  ただし、 $C$ は任意定数である。
   </p>
 
   <!--
