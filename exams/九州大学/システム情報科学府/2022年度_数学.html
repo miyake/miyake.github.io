@@ -264,16 +264,97 @@
   ただし、 $C$ は任意定数である。
   </p>
 
-  <!--
+  <h3>(3)</h3>
+
+  <p>
+  $w=z-\pi/2$ として、次のように $w=0$ においてローラン展開できる：
+  \begin{align}
+  \frac{\cos z}{(2 \pi - z)^2}
+  &= - \frac{1}{8} \frac{\sin w}{w^3}
+  \\
+  &= - \frac{1}{8w^3} \left( w - \frac{1}{6} w^3 + \cdots \right)
+  \\
+  &= - \frac{1}{8} \left( \frac{1}{w^2} - \frac{1}{6} + \cdots \right)
+  \end{align}
+  よって、
+  \begin{align}
+  \oint_C \frac{\cos z}{(2 \pi - z)^2} = 0
+  \end{align}
+  </p>
+
   <hr>
   <h2>3. 【ベクトル解析分野】</h2>
 
   <h3>(1)</h3>
 
   <p>
+  $S_1$ 上の点は
   \begin{align}
+  \boldsymbol{i} \cos \varphi + y \boldsymbol{j} + \boldsymbol{k} \sin \varphi
+  \ \ \ \ 
+  (0 \leq \varphi \lt 2 \pi, \ \ 0 \leq y \leq 4)
+  \end{align}
+  と表せる。
+  $S_1$ の外向きの単位法線ベクトルを $\boldsymbol{n}$ とすると、
+  \begin{align}
+  \boldsymbol{n}
+  &= \boldsymbol{i} \cos \varphi + \boldsymbol{k} \sin \varphi
+  \\
+  \boldsymbol{F}
+  &= \boldsymbol{i} \cos \varphi + 2y \boldsymbol{j}
+  + 10 \boldsymbol{k} \sin \varphi
+  \\
+  \boldsymbol{F} \cdot \boldsymbol{n}
+  &= \cos^2 \varphi + 10 \sin^2 \varphi
+  \\
+  &= \frac{11}{2} - \frac{9}{2} \cos 2 \varphi
+  \end{align}
+  なので、求める積分は
+  \begin{align}
+  \int_{S_1} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
+  &= \int_0^{2 \pi} d \varphi \int_0^4 dy
+  \left( \frac{11}{2} - \frac{9}{2} \cos 2 \varphi \right)
+  \\
+  &= 44 \pi
   \end{align}
   </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $S_2$ を次のように2つに分けて考える：
+  \begin{align}
+  S_2' \ &: \ \ x^2 + z^2 = 1 \ \ (0 \leq y \leq 4, \ 0 \leq z)
+  \\
+  S_2'' \ &: \ \ z=0 \ \ (-1 \leq x \leq 1, \ 0 \leq y \leq 4)
+  \end{align}
+
+  $S_2'$ 上では (1) と同様に計算できる：
+  \begin{align}
+  \int_{S_2'} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
+  &= \int_0^{\pi} d \varphi \int_0^4 dy
+  \left( \frac{11}{2} - \frac{9}{2} \cos 2 \varphi \right)
+  \\
+  &= 22 \pi
+  \end{align}
+
+  $S_2''$ 上では、外向き単位法線ベクトルは
+  $\boldsymbol{n} = - \boldsymbol{k}$ で、
+  $\boldsymbol{F} = x \boldsymbol{i} + 2y \boldsymbol{j}$ なので、
+  $\boldsymbol{F} \cdot \boldsymbol{n} = 0$ であり、
+  面積分は $0$ である。
+
+  よって、求める積分は
+  \begin{align}
+  \int_{S_2} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
+  &= \int_{S_2'} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
+  \\
+  &= 22 \pi
+  \end{align}
+  </p>
+
+  <!--
+  <h3>(3)</h3>
   -->
 
   <!--
