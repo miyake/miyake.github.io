@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      2020年度 数学 第6問
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院 工学系研究科
+    <br>
+    2020年度 数学 第6問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.t.u-tokyo.ac.jp/soe/admission/general-past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>第6問</h2>
+
+  <h3>I</h3>
+
+  <p>
+  4回中2回+1を獲得し2回-1を獲得するので、求める確率は、
+  \begin{align}
+  {}_4 \mathrm{C}_2 \left( \frac{1}{2} \right)^2 \left( \frac{1}{2} \right)^2
+  = \frac{3}{8}
+  \end{align}
+  </p>
+
+  <h3>II</h3>
+
+  <p>
+  +1を獲得する回数を $m$ とすると、
+  $t = m - (n-m) = 2m-n$ なので、
+  \begin{align}
+  P_n(t)
+  &= {}_n \mathrm{C}_m \left( \frac{1}{2} \right)^m \left( \frac{1}{2} \right)^{n-m}
+  \\
+  &= {}_n \mathrm{C}_{\frac{t+n}{2}} \left( \frac{1}{2} \right)^n
+  \end{align}
+  </p>
+
+  <h3>III</h3>
+
+  <p>
+  2回目以降に+1を獲得する回数を $m$ とすると、
+  $t = 1 + m - ((n-1)-m) = 2m+2-n$ なので、
+  \begin{align}
+  P^+_n(t)
+  &= \frac{1}{2} \cdot {}_{n-1} \mathrm{C}_m \left( \frac{1}{2} \right)^m \left( \frac{1}{2} \right)^{n-1-m}
+  \\
+  &= {}_{n-1} \mathrm{C}_{\frac{t+n-2}{2}} \left( \frac{1}{2} \right)^n
+  \end{align}
+  </p>
+
+  <h3>IV</h3>
+
+  <p>
+  2回目以降に+1を獲得する回数を $m$ とすると、
+  $t = -1 + m - ((n-1)-m) = 2m-n$ なので、
+  \begin{align}
+  P^-_n(t)
+  &= \frac{1}{2} \cdot {}_{n-1} \mathrm{C}_m \left( \frac{1}{2} \right)^m \left( \frac{1}{2} \right)^{n-1-m}
+  \\
+  &= {}_{n-1} \mathrm{C}_{\frac{t+n}{2}} \left( \frac{1}{2} \right)^n
+  \end{align}
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+

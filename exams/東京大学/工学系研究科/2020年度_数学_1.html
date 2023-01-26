@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      2020年度 数学 第1問
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院 工学系研究科
+    <br>
+    2020年度 数学 第1問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.t.u-tokyo.ac.jp/soe/admission/general-past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>II.</h2>
+
+  <p>
+  $y=x^2-1$ として、
+  \begin{align}
+  I
+  &= \int_1^\infty x^5 e^{-x^4+2x^2-1} dx
+  \\
+  &= \int_1^\infty x^5 e^{-(x^2-1)^2} dx
+  \\
+  &= \int_0^\infty (y+1)^2 e^{-y^2} \frac{dy}{2}
+  \\
+  &= \frac{1}{2} \int_0^\infty (y^2+2y+1) e^{-y^2} dy
+  \end{align}
+  ここで、
+  \begin{align}
+  \int_0^\infty e^{-y^2} dy &= \frac{1}{2} \sqrt{\pi}
+  \\
+  \int_0^\infty y e^{-y^2} dy
+  &= - \frac{1}{2} \left[ e^{-y^2} \right]_0^\infty
+  = \frac{1}{2}
+  \\
+  \int_0^\infty y^2 e^{-y^2} dy
+  &= - \frac{1}{2} \int_0^\infty y \left( e^{-y^2} \right)' dy
+  = - \frac{1}{2} \left[ y e^{-y^2} \right]_0^\infty
+  + \frac{1}{2} \int_0^\infty e^{-y^2} dy
+  = \frac{1}{4} \sqrt{\pi}
+  \end{align}
+  なので、
+  \begin{align}
+  I = \frac{4+3\pi}{8}
+  \end{align}
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+

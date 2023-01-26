@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      2021年度 数学 3
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院 工学系研究科
+    <br>
+    2021年度 数学 3
+    (主に複素関数論)
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.t.u-tokyo.ac.jp/soe/admission/general-past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>I.</h2>
+
+  <h3>1.</h3>
+
+  <p>
+  $M(z)=z$ を整理すると、
+  \begin{align}
+  (m-1)z(z-1)=0
+  \end{align}
+  であり、 $m \ne 0$ なので、 $z=0,1$ を得る。
+  実際、 $M(0)=0, M(1)=1$ である。
+  </p>
+
+  <h3>2.</h3>
+
+  <p>
+  \begin{align}
+  \frac{dM(z)}{dz}
+  &= \frac{m(mz-z+1) - mz(m-1)}{(mz-z+1)^2}
+  \\
+  &= \frac{m}{(mz-z+1)^2}
+  \\
+  \therefore \ \ 
+  \frac{dM(0)}{dz} &= m
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>II.</h2>
+
+  <p>
+  $0$ でない複素数 $z$ を極形式で $z=re^{i \theta} \ \ (r \gt 0, 0 \leq \theta \lt 2 \pi)$
+  と表すと、
+  \begin{align}
+  J(z)
+  &= e^{-i \alpha} z + e^{i \alpha} z^{-1}
+  \\
+  &= r e^{i (\theta - \alpha)} + \frac{1}{r} e^{-i (\theta - \alpha)}
+  \\
+  &= \left( r + \frac{1}{r} \right) \cos (\theta - \alpha) + i \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
+  \end{align}
+  なので、これの虚部
+  \begin{align}
+  \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
+  \end{align}
+  が正となるのは、「 $r \gt 1$ かつ $ \alpha \lt \theta \lt \alpha + \pi$ 」
+  または「 $r \lt 1$ かつ $ 0 \lt \theta \lt \alpha, \alpha + \pi \lt \theta \lt 2 \pi$ 」
+  のときである。
+  （図示は省略。）
+  </p>
+
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+

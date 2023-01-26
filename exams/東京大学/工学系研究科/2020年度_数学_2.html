@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      2020年度 数学 第2問
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院 工学系研究科
+    <br>
+    2020年度 数学 第2問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.t.u-tokyo.ac.jp/soe/admission/general-past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>I.</h2>
+
+  <p>
+  固有値の和はトレースに等しいので、
+  $ \alpha = 5 $
+  </p>
+
+  <h2>II.</h2>
+
+  <p>
+  固有値の積は行列式に等しいので、
+  \begin{align}
+  -16
+  &= (\alpha + 2 + 2) - (1 + 1 + 4 \alpha)
+  \\
+  &= - 3 \alpha + 2
+  \\
+  \therefore \ \ 
+  \alpha &= 6
+  \end{align}
+  </p>
+
+  <h2>III.</h2>
+
+  <p>
+  $||A||=4$ ということは、 $A$ の最大固有値が $4$ ということである。
+  </p>
+
+  <p>
+  $A$ が固有値 $4$ を持つという条件は、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  1-4 & -2 & -1 \\ -2 & 1-4 & 1 \\ -1 & 1 & \alpha-4
+  \end{pmatrix}
+  \\
+  &= 5 \alpha - 10
+  \\
+  \therefore \ \ 
+  \alpha &= 2
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $\alpha=2$ のとき、 $A$ の固有値は $-1, 1, 4$ であるから、
+  これが求める条件であることがわかる。
+  </p>
+
+  <h2>IV.</h2>
+
+  <h3>1.</h3>
+
+  <p>
+  固有値は $-1, 2, 5$ であり、
+  それぞれに対応する規格化された固有ベクトルは、
+  \begin{align}
+  \boldsymbol{v}_1
+  = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{v}_2
+  = \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}
+  , \ \ 
+  \boldsymbol{v}_3
+  = \frac{1}{\sqrt{6}} \begin{pmatrix} -1 \\ 1 \\ 2 \end{pmatrix}
+  \end{align}
+  である。（ $-1$ 倍の不定性がある。）
+  </p>
+
+  <h3>2.</h3>
+
+  <p>
+  与えられたベクトル $\boldsymbol{y}$ は
+  $\boldsymbol{v}_1, \boldsymbol{v}_2$ が張る平面上にあるので、
+  $\boldsymbol{y}^T A \boldsymbol{y}$ の値域は
+  $-1$ 以上 $2$ 以下の実数である。
+  </p>
+
+  <!--
+  <h3>3.</h3>
+  -->
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
