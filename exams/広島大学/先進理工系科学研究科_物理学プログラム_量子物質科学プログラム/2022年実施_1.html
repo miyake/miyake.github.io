@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      広島大学 大学院 先進理工系科学研究科
+      物理学プログラム, 量子物質科学プログラム
+      2022年実施 専門科目 [1] 力学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    広島大学 大学院 先進理工系科学研究科
+    <br>
+    物理学プログラム, 量子物質科学プログラム
+    <br>
+    2022年実施 専門科目 [1] 力学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.hiroshima-u.ac.jp/adse/exam_physics">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+
+  <p>
+  時刻を $t$ で表し、時間微分を $d/dt$ や $\dot{}$ で表す。
+  </p>
+
+  <h2>1.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  m \ddot{x} = - kx - c \dot{x}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  (1) の運動方程式に $x = e^{\lambda t}$ （ $\lambda$ は $t$ によらない定数）
+  を代入すると、
+  \begin{align}
+  m \lambda^2 + c \lambda + k = 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \lambda
+  &= \frac{-c \pm \sqrt{c^2 - 4mk}}{2m}
+  \\
+  &= \frac{-c \pm i \sqrt{4mk - c^2}}{2m}
+  \end{align}
+  を得る。
+  よって、 $c^2 \lt 4mk$ のときの一般解は、任意定数を $A,B$ として、
+  \begin{align}
+  x(t)
+  &= \left(
+  A \sin \left( \frac{\sqrt{4mk - c^2}}{2m} t \right)
+  + B \sin \left( \frac{\sqrt{4mk - c^2}}{2m} t \right)
+  \right) \exp \left( - \frac{c}{2m} t \right)
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $c^2 \gt 4mk$ のときの一般解は、任意定数を $A,B$ として、
+  \begin{align}
+  x(t)
+  &= A \exp \left( \frac{-c + \sqrt{c^2 - 4mk}}{2m} t \right)
+  +  B \exp \left( \frac{-c - \sqrt{c^2 - 4mk}}{2m} t \right)
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+  <h2>2.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  求めるラグランジアン $L$ は、
+  \begin{align}
+  L
+  &= \frac{1}{2} m \left( \dot{x}_1^2 + \dot{x}_2^2 + \dot{x}_3^2 \right)
+  - \frac{1}{2} k
+  \left( x_1^2 + x_2^2 + \left( x_3 - \frac{x_1+x_2}{2} \right)^2 \right)
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{x}_1}
+  &= \frac{d}{dt} m \dot{x}_1 = m \ddot{x}_1
+  \\
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{x}_2}
+  &= \frac{d}{dt} m \dot{x}_2 = m \ddot{x}_2
+  \\
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{x}_3}
+  &= \frac{d}{dt} m \dot{x}_3 = m \ddot{x}_3
+  \\
+  \frac{\partial L}{\partial x_1}
+  &= - k x_1 + \frac{1}{2} k \left( x_3 - \frac{x_1+x_2}{2} \right)
+  \\
+  &= - \frac{1}{4} k \left( 5 x_1 + x_2 - 2 x_3 \right)
+  \\
+  \frac{\partial L}{\partial x_2}
+  &= - k x_2 + \frac{1}{2} k \left( x_3 - \frac{x_1+x_2}{2} \right)
+  \\
+  &= - \frac{1}{4} k \left( x_1 + 5 x_2 - 2 x_3 \right)
+  \\
+  \frac{\partial L}{\partial x_3}
+  &=  - k \left( x_3 - \frac{x_1+x_2}{2} \right)
+  \\
+  &= - \frac{1}{2} k \left( - x_1 - x_2 + 2 x_3 \right)
+  \end{align}
+  より、
+  \begin{align}
+  m \ddot{x}_1 &= - \frac{1}{4} k \left( 5 x_1 + x_2 - 2 x_3 \right)
+  \\
+  m \ddot{x}_2 &= - \frac{1}{4} k \left( x_1 + 5 x_2 - 2 x_3 \right)
+  \\
+  m \ddot{x}_3 &= - \frac{1}{2} k \left( - x_1 - x_2 + 2 x_3 \right)
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <!--
+https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%22C%22%2C+%22%E5%9B%BA%E6%9C%89%E5%80%A4%22%7D+-%3E+%7B%22Calculator%22%7D&assumption=%7B%22F%22%2C+%22Eigenvalue%22%2C+%22eigvalmatrix%22%7D+-%3E%22%7B%7B5%2C+1%2C+-2%7D%2C+%7B1%2C+5%2C+-2%7D%2C+%7B-2%2C+-2%2C+4%7D%7D%22&lang=ja
+-->
+
+  <!--
+  固有値 2, 4, 8
+  固有ベクトル (1,1,2), (1,-1,0), (1,1,-1)
+  -->
+
+  <p>
+  (2) で求めた運動方程式は、次のように書ける：
+  \begin{align}
+  \frac{d^2}{dt^2} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+  =
+  - \frac{\omega_1^2}{4}
+  \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+  \end{align}
+  $x_1 = \xi, x_2 = - \xi, x_3 = 0$ の場合を考えると、
+  \begin{align}
+  \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
+  \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
+  = 4 \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
+  \end{align}
+  となるので、これは角振動数 $\omega_1$ の固有振動モードであることがわかる。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  (3) で現れた行列
+  \begin{align}
+  \Lambda
+  = \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
+  \end{align}
+  の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  5 - \lambda & 1 & -2 \\ 1 & 5 - \lambda & -2 \\ -2 & -2 & 4 - \lambda
+  \end{pmatrix}
+  \\
+  &= - (\lambda-2)(\lambda-4)(\lambda-8)
+  \\
+  \therefore \ \ 
+  \lambda = 2, 4, 8
+  \end{align}
+  なので、 $\omega_1$ 以外の固有角振動数は
+  $\omega_1 / \sqrt{2}, 2 \omega_1$
+  である。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  (4) の行列 $\Lambda$ の固有値 $2, 4, 8$ に属する固有ベクトルはそれぞれ
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \\ 2 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}
+  \end{align}
+  であるので、固有角振動数 $\omega_1 / \sqrt{2}, \omega_1, 2 \omega_1$
+  の固有振動モードはそれぞれ
+  \begin{align}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+  &=
+  A \sin \left( \frac{\omega_1}{\sqrt{2}} t + \alpha \right)
+  \begin{pmatrix} 1 \\ 1 \\ 2 \end{pmatrix}
+  ,
+  B \sin \left( \omega_1 t + \beta \right)
+  \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  ,
+  C \sin \left( 2 \omega_1 t + \gamma \right)
+  \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}
+  \end{align}
+  と書ける。
+  （ $A,B,C,\alpha,\beta,\gamma$ は初期条件から決まる定数である。）
+  </p>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
