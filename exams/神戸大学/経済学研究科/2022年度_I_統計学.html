@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      神戸大学 大学院 経済学研究科
+      2022年度 第I期 統計学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    神戸大学 大学院 経済学研究科
+    <br>
+    2022年度 第I期 統計学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.econ.kobe-u.ac.jp/admissions/graduate/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>第1問</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $k \ (=1, 2, \cdots)$ 回目に初めて 6 の目が出る確率は
+  \begin{align}
+  \left( \frac{5}{6} \right)^{k-1} \cdot \frac{1}{6}
+  \end{align}
+  であるから、求める平均は
+  \begin{align}
+  \frac{1}{6} \sum_{k=1}^\infty k \left( \frac{5}{6} \right)^{k-1}
+  &= \frac{1}{6} \frac{1}{(1 - 5/6)^2}
+  \\
+  &= 6
+  \end{align}
+  である。
+  </p>
+
+  <!--
+  &= \frac{1}{6} \lim_{x \to 5/6} \frac{d}{dx} \sum_{k=1}^\infty x^k
+  \\
+  &= \frac{1}{6} \lim_{x \to 5/6} \frac{d}{dx} \frac{1}{1-x}
+  \\
+  &= \frac{1}{6} \lim_{x \to 5/6} \frac{1}{(1-x)^2}
+  -->
+
+  <h3>(2)</h3>
+
+  <p>
+  A, B は排反になりえない。
+  なぜなら、排反のとき $P(A \cup B) = P(A) + P(B)$ が成り立つが、
+  今の場合 $P(A)+P(B)=1/2+3/4=5/4 \gt 1$ となるからである。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $Y_i =0,1$ となる確率はそれぞれ
+  \begin{align}
+  P \left( Y_i = 0 \right) &= F_X(c)
+  \\
+  P \left( Y_i = 1 \right) &= 1 - F_X(c)
+  \end{align}
+  であるから、 $k = 0, 1, 2, \cdots, n$ として、求める確率関数は
+  \begin{align}
+  P \left( \sum_{i=1}^n Y_i = k \right)
+  &= {}_n C_k \ F_X(c)^{n-k} \left( 1 - F_X(c) \right)^k
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+  <h2>第2問</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  確率密度関数の規格化の条件
+  \begin{align}
+  1
+  &= \int_{- \infty}^\infty f(x;1) dx
+  = a \int_0^1 x \ dx
+  = \frac{a}{2}
+  \end{align}
+  から $ a = 2 $ がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $\theta=0$ のとき、 $X$ の期待値 $E(X)$ 、 $X^2$ の期待値 $E(X^2)$ 、
+  $X$ の分散 $V(X)$ は、それぞれ次のように計算できる：
+  \begin{align}
+  E \left( X \right) &= \int_0^1 x \ dx = \frac{1}{2}
+  \\
+  E \left( X^2 \right) &= \int_0^1 x^2 \ dx = \frac{1}{3}
+  \\
+  V \left( X \right)
+  &= E \left( X^2 \right) - E \left( X \right)^2
+  = \frac{1}{12}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  求める積率母関数は、次のように計算できる：
+  \begin{align}
+  M(t)
+  &= \int_0^1 e^{tx} \ dx
+  \\
+  &= \frac{1}{t} \left[ e^{tx} \right]_0^1
+  \\
+  &= \frac{e^t - 1}{t}
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  尤度
+  \begin{align}
+  l(\theta) = f(x_1;\theta) f(x_2;\theta) \cdots f(x_n;\theta)
+  \end{align}
+  は、今の場合、
+  \begin{align}
+  l(0) &= 1
+  \\
+  l(1) &= 2^n x_1 x_2 \cdots x_n
+  \end{align}
+  となるので、 $\theta$ の最尤推定量は次のように求まる：
+  \begin{align}
+  \hat{\theta}
+  = \begin{cases}
+  0 &, x_1 x_2 \cdots x_n \lt 1/2^n \\
+  1 &, x_1 x_2 \cdots x_n \gt 1/2^n
+  \end{cases}
+  \end{align}
+  </p>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
