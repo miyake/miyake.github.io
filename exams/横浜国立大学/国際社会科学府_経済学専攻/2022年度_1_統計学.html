@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      横浜国立大学 大学院 国際社会科学府 経済学専攻
+      2022年度 統計学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    横浜国立大学 大学院
+    <br>
+    国際社会科学府 経済学専攻
+    <br>
+    2022年度 統計学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.economics.ynu.ac.jp/admissions/graduate_program/ma/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>問 1.</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  \begin{align}
+  E \left( X_n \right)
+  &= \sum_{k=1}^{2^n} \frac{k}{2^n} \frac{1}{2^n}
+  \\
+  &= \frac{1}{2^{2n}} \sum_{k=1}^{2^n} k
+  \\
+  &= \frac{1}{2^{2n}} \cdot \frac{1}{2} 2^n (2^n+1)
+  \\
+  &= \frac{1}{2} + \frac{1}{2^{n+1}}
+  \\
+  &\to \frac{1}{2} \ \ (n \to \infty)
+  \\
+  E(X) &= \int_0^1 x \ dx = \frac{1}{2}
+  \end{align}
+  </p>
+
+  <h3>(b)</h3>
+
+  <p>
+  \begin{align}
+  E \left( X_n^2 \right)
+  &= \sum_{k=1}^{2^n} \left( \frac{k}{2^n} \right)^2 \frac{1}{2^n}
+  \\
+  &= \frac{1}{2^{3n}} \sum_{k=1}^{2^n} k^2
+  \\
+  &= \frac{1}{2^{3n}} \cdot \frac{1}{6} 2^n (2^n+1) (2^{n+1} + 1)
+  \\
+  &= \frac{(2^n+1) (2^{n+1} + 1)}{6 \cdot 2^{2n}}
+
+  \\
+  E \left( X^2 \right) &= \int_0^1 x^2 \ dx = \frac{1}{3}
+
+  \\
+  V \left( X_n \right)
+  &= E \left( X_n^2 \right) - E \left( X_n \right)^2
+  \\
+  &= \frac{2^{2n} - 1}{12 \cdot 2^{2n}}
+  \\
+  &\to \frac{1}{12} \ \ (n \to \infty)
+
+  \\
+  V \left( X \right)
+  &= E \left( X^2 \right) - E \left( X \right)^2
+  \\
+  &= \frac{1}{12}
+  \end{align}
+  </p>
+
+  <h3>(c)</h3>
+
+  <p>
+  \begin{align}
+  m_{X_n} (t)
+  &= \frac{1}{2^n} \sum_{k=1}^{2^n} e^{\frac{k}{2^n} t}
+  \\
+  &= \frac{e^{\frac{t}{2^n}}}{2^n} \frac{1-e^{t}}{1-e^{\frac{t}{2^n}}}
+  \\
+  &\to \frac{e^t - 1}{t} \ \ (n \to \infty) \tag{1}
+
+  \\
+  M_X (t)
+  &= \int_0^1 e^{tx} \ dx
+  \\
+  &= \frac{e^t - 1}{t}
+  \end{align}
+  </p>
+
+  <p>
+  ただし、式 (1) は、 $\varepsilon = 1/2^n$ として、次のようにわかる：
+  \begin{align}
+  (1-e^t) \frac{\varepsilon e^{\varepsilon t}}{1 - e^{\varepsilon t}}
+  &= (1-e^t)
+  \frac{\varepsilon + \varepsilon^2 t + \cdots}
+  {- \varepsilon t - \frac{1}{2} \varepsilon^2 t^2 - \cdots}
+  \\
+  &= (1-e^t)
+  \frac{1 + \varepsilon t + \cdots}
+  {- t - \frac{1}{2} \varepsilon t^2 - \cdots}
+  \\
+  &\to \frac{e^t - 1}{t} \ \ (\varepsilon \to 0)
+  \end{align}
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
