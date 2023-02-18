@@ -118,6 +118,81 @@
   \end{align}
   </p>
 
+  <hr>
+  <h2>[A-II]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $\boldsymbol{\nabla} \Phi_u = - \boldsymbol{E}_0 = - E_0 \boldsymbol{e}_z$
+  から、適当な定数 $c$ を使って、
+  \begin{align}
+  \Phi_u
+  &= - E_0 z + c
+  \end{align}
+  と書けることがわかるが、原点で $\Phi_u = 0$ であることから $c=0$ がわかり、
+  \begin{align}
+  \Phi_u
+  &= - E_0 z
+  \\
+  &= - E_0 r \cos \theta
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  [A-II] (2) と [A-I] (3) から
+  \begin{align}
+  \Phi
+  &= \Phi_u + \Phi_d
+  \\
+  &= - E_0 r \cos \theta + \frac{p \cos \theta}{4 \pi \varepsilon_0 r^2}
+  \\
+  &= \frac{- 4 \pi \varepsilon_0 E_0 r^3 + p}{4 \pi \varepsilon_0 r^2}
+  \cos \theta
+  \end{align}
+  がわかるが、$r=a$ でこれが $\theta$ によらない定数になることから、
+  \begin{align}
+  p = 4 \pi \varepsilon_0 E_0 a^3
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $r \geq a$ において、(2) より
+  \begin{align}
+  \Phi
+  &= \left( -r + \frac{a^3}{r^2} \right) E_0 \cos \theta
+  \end{align}
+  なので、 $r$ 方向の電場 $E_r = E_r(r, \theta)$ について
+  \begin{align}
+  E_r (r, \theta)
+  &= - \frac{\partial \Phi}{\partial r}
+  \\
+  &= \left( 1 + \frac{2a^3}{r^3} \right) E_0 \cos \theta
+  \\
+  \therefore \ \ 
+  E_r (a, \theta) &= 3 E_0 \cos \theta
+  \end{align}
+  がわかる。
+  そこで、電場に関するガウスの定理を導体表面に適用して、
+  \begin{align}
+  \sigma
+  &= \varepsilon_0 E_r(a, \theta)
+  \\
+  &= e \varepsilon_0 E_0 \cos \theta
+  \end{align}
+  を得る。
+  </p>
+
+  <!--
+  長岡洋介「電磁気学 演習」例題4.3
+  -->
+
 
 
   <hr>
