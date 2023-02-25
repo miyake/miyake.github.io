@@ -195,6 +195,33 @@
   長岡洋介「電磁気学 演習」例題4.3
   -->
 
+  <hr>
+  <h2>[B-I]</h2>
+
+  <p>
+  例えば、 $a \gt 0, b \gt 0$ として、
+  4点 $(0,0,b), (a,0,b), (a,0,-b), (0,0,-b)$ を頂点とする長方形を考える。
+  この長方形を貫く電流は $(0, a j_y, 0)$ であるから、
+  この長方形に関してアンペールの法則を適用すると、
+  \begin{align}
+  H_x^{II}(z=b) a + \int_b^0 dz \ H_z^{II}
+  + \int_0^{-b} dz \ H_z^I - H_x^I(z=-b) a
+  + \int_{-b}^0 dz \ H_z^I + \int_0^b dz \ H_z^{II}
+  &= a j_y
+  \\
+  \therefore \ \ 
+  H_x^{II}(z=b) - H_x^I(z=-b)
+  + \frac{1}{a} \int_b^0 dz \ H_z^{II} + \frac{1}{a} \int_0^{-b} dz \ H_z^I
+  + \frac{1}{a} \int_{-b}^0 dz \ H_z^I + \frac{1}{a} \int_0^b dz \ H_z^{II}
+  &= j_y
+  \end{align}
+  となるが、ここで $b \to +0$ とすると、題意の式を得る。
+  </p>
+
+  <!--
+  後藤
+  -->
+
 
 
   <hr>
