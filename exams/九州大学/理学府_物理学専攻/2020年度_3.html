@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院 理学府
+      物理学専攻
+      2020年度 物理学 [III]
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院 理学府
+    物理学専攻
+    <br>
+    2020年度 物理学 [III]
+  </h1>
+
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.phys.kyushu-u.ac.jp/graduate/problem.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+  <h2>[A]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $\hat{x}, \hat{p}$ の交換関係を使って、次のように計算できる：
+  \begin{align}
+  \left[ \hat{a}, \hat{a}^\dagger \right]
+  &= \frac{m \omega}{2 \hbar} \cdot \frac{-2i}{m \omega}
+  \left[ \hat{x}, \hat{p} \right]
+  \\
+  &= 1
+
+  \\
+  \left[ \hat{N}, \hat{a} \right]
+  &= \left[ \hat{a}^\dagger \hat{a}, \hat{a} \right]
+  \\
+  &= \hat{a}^\dagger \left[ \hat{a}, \hat{a} \right]
+  + \left[ \hat{a}^\dagger, \hat{a} \right] \hat{a}
+  \\
+  &= - \hat{a}
+
+  \\
+  \left[ \hat{N}, \hat{a}^\dagger \right]
+  &= \left[ \hat{a}^\dagger \hat{a}, \hat{a}^\dagger \right]
+  \\
+  &= \hat{a}^\dagger \left[ \hat{a}, \hat{a}^\dagger \right]
+  + \left[ \hat{a}^\dagger, \hat{a}^\dagger \right] \hat{a}
+  \\
+  &= \hat{a}^\dagger
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  (1) で得た交換関係を使って、次のように計算できる：
+  \begin{align}
+  \hat{N} \hat{a}^\dagger | n \rangle
+  &= \left( \hat{a}^\dagger \hat{N} + \hat{a}^\dagger \right) | n \rangle
+  \\
+  &= \left( n + 1 \right) \hat{a}^\dagger | n \rangle
+  \\
+  \hat{N} \hat{a} | n \rangle
+  &= \left( \hat{a} \hat{N} - \hat{a} \right) | n \rangle
+  \\
+  &= \left( n - 1 \right) \hat{a} | n \rangle
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  まず、
+  \begin{align}
+  n
+  &= \langle n | \hat{N} | n \rangle
+  \\
+  &= \langle n | \hat{a}^\dagger \hat{a} | n \rangle
+  \end{align}
+  であるが、
+  最後の式はベクトル $\hat{a} | n \rangle$ のノルムの2乗であるから非負であり、
+  したがって、 $n$ も非負である。
+  </p>
+
+  <p>
+  次に、整数でない非負の値 $\nu$ について
+  $-1 \lt \nu - k \lt 0$ を満たす自然数 $k$ が存在するので、
+  この $\nu$ が $\hat{N}$ の固有値であるとすると、
+  (2) の2番目の式より、
+  $\hat{a}^k | \nu \rangle$ は $\hat{N}$ の負の固有値 $\nu - k$
+  であることがわかるが、
+  これは $\hat{N}$ の固有値が非負であることと矛盾する。
+  したがって、 $\hat{N}$ の固有値は非負の整数でなければならない。
+  </p>
+
+  <p>
+  最後に、非負の整数 $n_1$ が $\hat{N}$ の固有値だとすると、
+  (2) の1番目の式より、 $n_1+1$ も $\hat{N}$ の固有値であることがわかり、
+  $0$ でない非負の整数 $n_2$ が $\hat{N}$ の固有値だとすると、
+  (2) の2番目の式より、 $n_2-1$ も $\hat{N}$ の固有値であることがわかるので、
+  結局、非負の整数はすべて $\hat{N}$ の固有値であることがわかる。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  \hat{x}
+  &= \sqrt{\frac{\hbar}{2 m \omega}} \left( \hat{a}^\dagger + \hat{a} \right)
+  \\
+  \hat{p}
+  &= i \sqrt{\frac{m \hbar \omega}{2}} \left( \hat{a}^\dagger - \hat{a} \right)
+  \\
+  \hat{x}^2
+  &= \frac{\hbar}{2 m \omega} \left( \hat{a}^\dagger \hat{a}^\dagger
+  + \hat{a}^\dagger \hat{a} + \hat{a} \hat{a}^\dagger + \hat{a} \hat{a}
+  \right)
+  \\
+  &= \frac{\hbar}{2 m \omega} \left( 2 \hat{N} + 1
+  + \hat{a}^\dagger \hat{a}^\dagger + \hat{a} \hat{a} \right)
+  \\
+  \hat{p}^2
+  &= - \frac{m \hbar \omega}{2} \left( \hat{a}^\dagger \hat{a}^\dagger
+  - \hat{a}^\dagger \hat{a} - \hat{a} \hat{a}^\dagger + \hat{a} \hat{a}
+  \right)
+  \\
+  &= \frac{m \hbar \omega}{2} \left( 2 \hat{N} + 1
+  - \hat{a}^\dagger \hat{a}^\dagger - \hat{a} \hat{a} \right)
+  \\
+  \langle n | \hat{x}^2 | n \rangle
+  &= \frac{\hbar}{2 m \omega} (2n+1)
+  \\
+  \langle n | \hat{p}^2 | n \rangle
+  &= \frac{m \hbar \omega}{2} (2n+1)
+  \\
+  \langle n | \hat{x}^2 | n \rangle
+  \langle n | \hat{p}^2 | n \rangle
+  &= \frac{\hbar^2}{4} (2n+1)^2
+  \end{align}
+  </p>
+
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
