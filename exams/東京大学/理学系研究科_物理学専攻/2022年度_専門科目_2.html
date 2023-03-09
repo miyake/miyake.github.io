@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 理学系研究科 物理学専攻
+      2022年度 専門科目 第2問
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院 理学系研究科
+    <br>
+    物理学専攻
+    <br>
+    2022年度 専門科目 第2問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.phys.s.u-tokyo.ac.jp/lp/graduate/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>1.</h2>
+
+  <p>
+  時間に依存しないシュレディンガー方程式
+  \begin{align}
+  - \frac{\hbar^2}{2m} \left(
+  \frac{\partial^2}{\partial x^2}
+  + \frac{\partial^2}{\partial y^2}
+  + \frac{\partial^2}{\partial z^2}
+  \right) \Psi (x,y,z)
+  = E \Psi (x,y,z)
+  \end{align}
+  の固有波動関数 $\Psi(x,y,z)$ は変数分離の方法により、
+  \begin{align}
+  \Psi (x,y,z) = C \exp \left[i (k_x x + k_y y + k_z z) \right]
+  \end{align}
+  であり、対応する一粒子固有エネルギーは
+  \begin{align}
+  E = \frac{\hbar^2}{2m} \left( k_x^2 + k_y^2 + k_z^2 \right)
+  \end{align}
+  であることがわかる。
+  ただし、与えられた周期的境界条件により、
+  \begin{align}
+  k_x &= \frac{2 \pi n_x}{L} \ \ \ \ (n_x = 0, \pm 1, \pm 2, \cdots)
+  \\
+  k_y &= \frac{2 \pi n_y}{L} \ \ \ \ (n_y = 0, \pm 1, \pm 2, \cdots)
+  \\
+  k_z &= \frac{2 \pi n_z}{L} \ \ \ \ (n_z = 0, \pm 1, \pm 2, \cdots)
+  \end{align}
+  である。
+  また、 $C=(1/L)^{3/2}$ とすれば、
+  \begin{align}
+  \int_0^L dx \int_0^L dy \int_0^L dz \ | \Psi(x,y,z) |^2 = 1
+  \end{align}
+  が成り立つ。
+  </p>
+
+  <h2>2.</h2>
+
+  <p>
+  $E_i - \mu \gt 0$ のとき、
+  $0 \lt \exp (- (E_i - \mu)/(k_B T)) \lt 1$ であるから、
+  次のように計算できる：
+  \begin{align}
+  \Xi_i
+  &= \sum_{n_i=0}^\infty \exp \left[ - \frac{(E_i-\mu)n_i}{k_BT} \right]
+  \\
+  &= \frac{1}{1 - \exp \left( - \frac{E_i-\mu}{k_BT} \right) }
+  \\
+  f(E_i, \mu)
+  &= \frac{1}{\Xi_i}
+  \sum_{n_i=0}^\infty n_i \exp \left[ - \frac{(E_i-\mu)n_i}{k_BT} \right]
+  \\
+  &= \frac{1}{\Xi_i} \cdot k_BT \frac{\partial}{\partial \mu}
+  \sum_{n_i=0}^\infty \exp \left[ - \frac{(E_i-\mu)n_i}{k_BT} \right]
+  \\
+  &= \frac{1}{\Xi_i} \cdot k_BT \frac{\partial \Xi_i}{\partial \mu}
+  \\
+  &= k_BT \frac{\partial}{\partial \mu} \log \Xi_i
+  \\
+  &= -k_BT \frac{\partial}{\partial \mu}
+  \log \left[ 1 - \exp \left( - \frac{E_i-\mu}{k_BT} \right) \right]
+  \\
+  &= -k_BT \frac{
+  - \exp \left( - \frac{E_i-\mu}{k_BT} \right) \frac{1}{k_BT}
+  }{ 1 - \exp \left( - \frac{E_i-\mu}{k_BT} \right) }
+  \\
+  &= \frac{ \exp \left( - \frac{E_i-\mu}{k_BT} \right) }
+  { 1 - \exp \left( - \frac{E_i-\mu}{k_BT} \right) }
+  \\
+  &= \frac{1}{ \exp \left( \frac{E_i-\mu}{k_BT} \right) - 1 }
+  \end{align}
+  </p>
+
+
+  <!--
+  <h2>[参考]</h2>
+
+  <p>
+  <ul>
+    <li><a href="https://www.amazon.co.jp/dp/4781910629/ref=nosim?tag=msscee0a-22">「詳解 理論・応用 量子力学演習」</a></li>
+    <li><a href="https://www.amazon.co.jp/dp/4065239230/ref=nosim?tag=msscee0a-22">堀田昌寛「入門 現代の量子力学」</a></li>
+    <li><a href="https://www.amazon.co.jp/dp/4815810494/ref=nosim?tag=msscee0a-22">谷村省吾「量子力学10講」</a></li>
+  </ul>
+  -->
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
