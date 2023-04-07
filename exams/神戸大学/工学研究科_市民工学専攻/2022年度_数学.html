@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      神戸大学 大学院 工学研究科
+      市民工学専攻
+      2022年度 専門科目 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    神戸大学 大学院
+    <br>
+    工学研究科 市民工学専攻
+    <br>
+    2022年度 専門科目 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.math.kyushu-u.ac.jp/entryexams/view/6">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>1.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  確率密度関数の規格化の条件より、
+  \begin{align}
+  1
+  &= \int_{- \infty}^\infty f(x) dx
+  \\
+  &= k \int_0^5 x(5-x) dx
+  \\
+  &= k \left[ \frac{5}{2} x^2 - \frac{x^3}{3} \right]_0^5
+  \\
+  &= k \frac{125}{6}
+  \\
+  \therefore \ \ 
+  k &= \frac{6}{125}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  求める確率は、
+  \begin{align}
+  P \left( X \geq 3 \right)
+  &= \int_3^\infty f(x) dx
+  \\
+  &= 1 - \int_{-\infty}^3 f(x) dx
+  \\
+  &= 1 - \frac{6}{125} \int_0^3 x(5-x) dx
+  \\
+  &= \frac{44}{125}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  E \left( X \right)
+  &= \int_{- \infty}^\infty x f(x) dx
+  \\
+  &= \frac{6}{125} \int_0^5 x^2 (5-x) dx
+  \\
+  &= \frac{5}{2}
+  \\
+  E \left( X^2 \right)
+  &= \int_{- \infty}^\infty x^2 f(x) dx
+  \\
+  &= \frac{6}{125} \int_0^5 x^3 (5-x) dx
+  \\
+  &= \frac{15}{2}
+  \\
+  V \left( X \right)
+  &= E \left( X^2 \right) - E \left( X \right)^2
+  \\
+  &= \frac{5}{4}
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>2.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $ \mathrm{tr} A = \mathrm{tr} (P^{-1}AP) $
+  が成り立つので、 $a=-1$ がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $3$ 次の単位行列を $E$ とする。
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \left( A - \lambda E \right)
+  \\
+  &= -(\lambda-1)^2(\lambda+2)
+  \\
+  \therefore \ \ 
+  \lambda &= 1, -2
+  \end{align}
+  がわかる。
+  固有値 $\lambda=1$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x=2y,z=0$ がわかるので、規格化された固有ベクトルとして、
+  \begin{align}
+  \boldsymbol{u} = \frac{1}{\sqrt{5}} \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
+  \end{align}
+  を得る。
+  固有値 $\lambda=1$ に属する一般化固有ベクトルを求めるため、
+  \begin{align}
+  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  = \boldsymbol{u}
+  \end{align}
+  とおくと、 $-x+2y=2/\sqrt{5}, z=3/\sqrt{5}$ がわかるので、
+  \begin{align}
+  \boldsymbol{v} = \frac{1}{\sqrt{5}} \begin{pmatrix} -2 \\ 0 \\ 3 \end{pmatrix}
+  \end{align}
+  とすればよい。
+  固有値 $\lambda=-2$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \left( A + 2E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x+y=0,z=0$ がわかるので、規格化された固有ベクトルとして、
+  \begin{align}
+  \boldsymbol{w} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  \end{align}
+  を得る。
+  以上より、求める $P$ は
+  \begin{align}
+  P
+  &= \begin{pmatrix} \boldsymbol{u} & \boldsymbol{v} & \boldsymbol{w} \end{pmatrix}
+  \\
+  &= \begin{pmatrix}
+  \frac{2}{\sqrt{5}} & -\frac{2}{\sqrt{5}} &  \frac{1}{\sqrt{2}} \\
+  \frac{1}{\sqrt{5}} &                   0 & -\frac{1}{\sqrt{2}} \\
+                   0 &  \frac{3}{\sqrt{5}} &                   0
+  \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>3.</h2>
+
+  <p>
+  \begin{align}
+  \int_C f(x,y) ds
+  &= \int_0^1 f(x,x) dx
+  \\
+  &= \int_0^1 \frac{6x}{3x^2+1} dx
+  \\
+  &= \left[ \log \left( 3x^2+1 \right) \right]_0^1
+  \\
+  &= 2 \log 2
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
