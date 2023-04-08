@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      神戸大学 大学院 工学研究科
+      電気電子工学専攻
+      2022年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    神戸大学 大学院
+    <br>
+    工学研究科 電気電子工学専攻
+    <br>
+    2022年度 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.math.kyushu-u.ac.jp/entryexams/view/6">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>1.</h2>
+
+  <h3>(1)</h3>
+
+  <h4>(1-a)</h4>
+
+  <p>
+  \begin{align}
+  f_x(x,y) &= 3x^2 - 3y^2
+  \\
+  f_y(x,y) &= -6xy + 6y^2
+  \end{align}
+  </p>
+
+  <h4>(1-b)</h4>
+
+  <p>
+  $f(x,y)=0$ の両辺を $x$ で微分して整理すると、
+  \begin{align}
+  (x-y) \left\{ (x+y) - 2y \frac{dy}{dx} \right\} = 0
+  \end{align}
+  となるが、 $f(x,x) = 4 \neq 0$ なので $x \neq y$ と考えてよく、
+  \begin{align}
+  (x+y) - 2y \frac{dy}{dx} = 0
+  \end{align}
+  を得るので、 $dy/dx=0$ が成り立つためには $x+y=0$ が必要であることがわかる。
+  さらに、
+  \begin{align}
+  f(x, -x)
+  &= -4x^3 + 4
+  \\
+  &= -4(x-1)(x^2+x+1)
+  \end{align}
+  であるので、まとめると、 $f(x,y)=0, dy/dx=0$ が成り立つのは
+  $(x,y)=(1,-1)$ のときであることがわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <h4>(2-a)</h4>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  1 - \lambda & 2 & a \\ 2 & 1 - \lambda & a^2 \\ 0 & 0 & 3 - \lambda
+  \end{pmatrix}
+  \\
+  &= - (\lambda+1)(\lambda-3)^2
+  \\
+  \lambda &= -1, 3
+  \end{align}
+  がわかる。
+  </p>
+
+  <h4>(2-b)</h4>
+
+  <p>
+  $A$ が対角化可能であるのは、
+  固有値 $3$ に属する1次独立な固有ベクトルが2つ存在する場合である。
+  固有値 $3$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \begin{pmatrix} -2 & 2 & a \\ 2 & -2 & a^2 \\ 0 & 0 & 0 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、2つの条件式
+  \begin{align}
+  -2x+2y+az &= 0,
+  \\
+  2x-2y+a^2z &= 0
+  \end{align}
+  を得るが、両辺足して整理すると、
+  \begin{align}
+  a(a+1)z = 0
+  \end{align}
+  となる。
+  そこで (i) $a=0$ (ii) $a=-1$ (iii) $a \neq 0, -1$
+  の3通りに場合分けして考える。
+  </p>
+
+  <p>
+  (i) $a=0$ のとき、
+  3つの未知数 $x,y,z$ に対して条件式は1つ $x=y$ しかないので、
+  固有値 $3$ に属する2つの1次独立な固有ベクトルが存在する。
+  例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}
+  ,
+  \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  (ii) $a=-1$ のとき、
+  3つの未知数 $x,y,z$ に対して条件式は1つ $2x-2y+z=0$ しかないので、
+  固有値 $3$ に属する2つの1次独立な固有ベクトルが存在する。
+  例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}
+  ,
+  \begin{pmatrix} 1 \\ 0 \\ -2 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  (iii) $a \neq 0, -1$ のとき、
+  3つの未知数 $x,y,z$ に対して条件式は2つ $x=y,z=0$ あるので、
+  固有値 $3$ に属する2つの1次独立な固有ベクトルは存在しない。
+  固有ベクトルは、例えば、
+  \begin{align}
+  \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  以上より、 $A$ が対角化可能となる $a$ の値は $a=0,-1$ である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
