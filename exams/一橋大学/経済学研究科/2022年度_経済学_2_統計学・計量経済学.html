@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      一橋大学 大学院
+      経済学研究科
+      2022年度 経済学
+      2. 統計学・計量経済学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    一橋大学 大学院 経済学研究科
+    <br>
+    2022年度 経済学
+    <br>
+    2. 統計学・計量経済学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.econ.hit-u.ac.jp/jpn/page/examinee/graduate_admissions/past_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>第2題</h2>
+
+  <h3>1.</h3>
+
+  <h4>(a)</h4>
+
+  <h5>(i)</h5>
+
+  <p>
+  $X_{(1)}$ の分布関数 $F_{(1)}(x)$ と確率密度関数 $f_{(1)}(x)$ は、
+  $x \gt 0$ について、以下のように求められる：
+  \begin{align}
+  F_{(1)}(x)
+  &= P \left( X_{(1)} \leq x \right)
+  \\
+  &= 1 - P \left( X_{(1)} \gt x \right)
+  \\
+  &= 1 - P \left( X_1 \gt x \text{ and } X_2 \gt x \text{ and } X_3 \gt x \right)
+  \\
+  &= 1 - \left( \int_x^\infty e^{-t} dt \right)^3
+  \\
+  &= 1 - e^{-3x}
+  \\
+  f_{(1)}(x)
+  &= \frac{d}{dx} F_{(1)}(x)
+  \\
+  &= 3 e^{-3x}
+  \end{align}
+  また、 $x \leq 0$ では $F_{(1)}(x)=0, f_{(1)}(x)=0$ である。
+  </p>
+
+  <h5>(ii)</h5>
+
+  <p>
+  $X_{(2)}$ の分布関数 $F_{(2)}(x)$ と確率密度関数 $f_{(2)}(x)$ は、
+  $x \gt 0$ について、以下のように求められる：
+  \begin{align}
+  F_{(2)}(x)
+  &= P \left( X_{(2)} \leq x \right)
+  \\
+  &= P \left( X_1 \leq x \text{ and } X_2 \leq x \text{ and } X_3 \leq x \right)
+  + P \left( X_1 \leq x \text{ and } X_2 \leq x \text{ and } X_3 \gt x \right)
+  \\
+  &\ \ \ \ \ + P \left( X_1 \leq x \text{ and } X_2 \gt x \text{ and } X_3 \leq x \right)
+  + P \left( X_1 \gt x \text{ and } X_2 \leq x \text{ and } X_3 \leq x \right)
+  \\
+  &= \left( \int_0^x e^{-t} dt \right)^3
+  + 3 \left( \int_0^x e^{-t} dt \right)^2
+  \left( \int_x^\infty e^{-t} dt \right)
+  \\
+  &= \left( 1-e^{-x} \right)^3 + 3 \left( 1-e^{-x} \right)^2 e^{-x}
+  \\
+  &= \left( 1-e^{-x} \right)^2 \left( 1 + 2e^{-x} \right)
+  \\
+  f_{(2)}(x)
+  &= \frac{d}{dx} F_{(2)}(x)
+  \\
+  &= 2 e^{-2x} \left( 1 - e^{-x} \right)
+  \end{align}
+  また、 $x \leq 0$ では $F_{(2)}(x)=0, f_{(2)}(x)=0$ である。
+  </p>
+
+  <h5>(iii)</h5>
+
+  <p>
+  \begin{align}
+  P \left( X_{(2)} \leq \log 2 \right)
+  &= F_{(2)}( \log 2)
+  \\
+  &= \left( 1-e^{- \log 2} \right)^2 \left( 1 + 2e^{- \log 2} \right)
+  \\
+  &= \left( 1 - \frac{1}{2} \right)^2 \left( 1 + 2 \cdot \frac{1}{2} \right)
+  \\
+  &= \frac{1}{2}
+  \end{align}
+  </p>
+
+  <h4>(b)</h4>
+
+  <h5>(i)</h5>
+
+  <p>
+  \begin{align}
+  m(t)
+  &= \sum_{y=0}^\infty e^{ty} P(Y=y)
+  \\
+  &= p^r \sum_{y=0}^\infty e^{ty} \ {}_{y+r-1} C_{r-1} (1-p)^y
+  \\
+  &= p^r \sum_{y=0}^\infty {}_{y+r-1} C_{r-1} \left( (1-p) e^t \right)^y
+  \\
+  &= \frac{p^r}{\left( 1 - (1-p) e^t \right)^r}
+  \ \ \ \ \ \ \ \ 
+  \text{ ( ただし $(1-p)e^t \lt 1$ すなわち $t \lt \log [1/(1-p)]$ のとき ) }
+  \end{align}
+  </p>
+
+  <h5>(ii)</h5>
+
+  <p>
+  $t$ による微分を $'$ で表すと、
+  \begin{align}
+  m'(t)
+  &= r p^r (1-p) e^t \left( 1 - (1-p) e^t \right)^{-r-1}
+  \\
+  m'(0)
+  &= \frac{1-p}{p} r
+  \\
+  m''(t)
+  &= r p^r (1-p) e^t \left( 1 - (1-p) e^t \right)^{-r-1}
+  \left( 1 + (r+1) \frac{(1-p) e^t}{1-(1-p)e^t} \right)
+  \\
+  m''(0)
+  &= \frac{(1-p)(1+r-rp)}{p^2} r
+  \end{align}
+  なので、求める期待値 $E(Y)$ と分散 $V(Y)$ は、
+  \begin{align}
+  E(Y)
+  &= m'(0)
+  \\
+  &= \frac{1-p}{p} r
+  \\
+  V(Y)
+  &= m''(0) - m'(0)^2
+  \\
+  &= \frac{1-p}{p^2} r
+  \end{align}
+  であることがわかる。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
