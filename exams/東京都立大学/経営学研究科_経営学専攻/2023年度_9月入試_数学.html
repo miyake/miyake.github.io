@@ -141,6 +141,130 @@
   である。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>3</h2>
+
+  <p>
+  まず、
+  \begin{align}
+  f(x)
+  &= \mathrm{min} \left\{ 2x, x+1 \right\}
+  \\
+  &= \begin{cases} 2x &(x \leq 1) \\ x+1 &(x \gt 1) \end{cases}
+  \end{align}
+  である。
+  $ 0 \leq t \leq 1 $ とする。
+  $x_1 \leq x_2 \leq 1$ のとき
+  \begin{align}
+  f((1-t)x_1+tx_2) &= 2((1-t)x_1+tx_2)
+  \\
+  (1-t)f(x_1)+tf(x_2) &= 2(1-t)x_1 + 2tx_2
+  \end{align}
+  であり、 $x_1 \lt 1 \lt x_2 $ のとき
+  \begin{align}
+  f((1-t)x_1+tx_2) &= \begin{cases}
+  2((1-t)x_1+tx_2) &((1-t)x_1+tx_2 \leq 1) \\ (1-t)x_1+tx_2+1 &(1 \lt (1-t)x_1+tx_2)
+  \end{cases}
+  \\
+  (1-t)f(x_1)+tf(x_2) &= 2(1-t)x_1 + t(x_2+1)
+  \end{align}
+  であり、
+  $1 \leq x_1 \leq x_2$ のとき
+  \begin{align}
+  f((1-t)x_1+tx_2) &= (1-t)x_1+tx_2 + 1
+  \\
+  (1-t)f(x_1)+tf(x_2) &= (1-t)(x_1+1) + t(x_2+1)
+  \end{align}
+  であるから、任意の $x_1,x_2$ について
+  \begin{align}
+  f((1-t)x_1+tx_2) \geq (1-t)f(x_1)+tf(x_2)
+  \end{align}
+  が成り立つ。
+  よって、 $f(x)$ は凹関数である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>4</h2>
+
+  <p>
+  累積分布関数 $F(x)$ に対応する確率密度関数は、
+  \begin{align}
+  f(x)
+  &= \frac{dF(x)}{dx}
+  \\
+  &= \begin{cases} 0 &(x \lt 0) \\ 7x^6 &(0 \leq x \lt 1) \\ 0 &(1 \leq x) \end{cases}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  E(X_1)
+  &= 7 \int_0^1 x^7 dx
+  \\
+  &= \frac{7}{8}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  E(X_2^3)
+  &= 7 \int_0^1 x^9 dx
+  \\
+  &= \frac{7}{10}
+  \\
+  E(Y)
+  &= E(X_1) + 5 E(X_2^3)
+  \\
+  &= \frac{35}{8}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  E(X_1^2)
+  &= 7 \int_0^1 x^8 dx
+  \\
+  &= \frac{7}{9}
+  \\
+  E(Z)
+  &= 2 \left( E(X_1^2) + 5 E(X_1) E(X_2^3) \right)
+  \ \ \ \ \ \ \ \ ( X_1, X_2 \text{ が独立であることを使った} )
+  \\
+  &= \frac{553}{72}
+  \end{align}
+  </p>
+
 
 
 
