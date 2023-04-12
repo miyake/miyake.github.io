@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      岡山大学 大学院 自然科学研究科
+      機械システム工学専攻 機械系
+      2023年度 数学
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    岡山大学 大学院 自然科学研究科
+    <br>
+    機械システム工学専攻 機械系
+    <br>
+    2023年度 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.gnst.okayama-u.ac.jp/ja/admission/gnst_dtest_kakomondai-index/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>【1】</h2>
+
+  <p>
+  $y=\sqrt{x}$ として、次のように計算できる：
+  \begin{align}
+  \int_0^1 \frac{\log x}{\sqrt{x}} dx
+  &= \int_0^1 \frac{2 \log y}{y} \cdot 2y dy
+  \\
+  &= 4 \int_0^1 \log y \ dy
+  \\
+  &= 4 \left[ y \log y \right]_0^1 - 4 \int_0^1 dy
+  \\
+  &= -4
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>【2】</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  与えられた微分方程式に $y=e^{\lambda x}$ を代入すると
+  \begin{align}
+  (\lambda - 3)^2 &= 0
+  \\
+  \therefore \ \ \ \ 
+  \lambda &= 3
+  \end{align}
+  を得るので、独立な特殊解として、 $e^{3x}, xe^{3x}$ を得る。
+  よって、一般解は
+  \begin{align}
+  y = Ae^{3x} + Bxe^{3x}
+  \ \ \ \ ( A, B \text{ は積分定数} )
+  \end{align}
+  である。
+  （これが与えられた微分方程式を満たすことは簡単に確かめられる。）
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  与えられた微分方程式に $y=Cx^2e^{3x}$ を代入すると
+  $C=1/2$ を得るので、 $(1/2)x^2e^{3x}$ は特殊解である。
+  よって、(1) を考慮して、一般解は
+  \begin{align}
+  y = Ae^{3x} + Bxe^{3x} + \frac{1}{2} x^2 e^{3x}
+  \ \ \ \ ( A, B \text{ は積分定数} )
+  \end{align}
+  であることがわかる。
+  （これが与えられた微分方程式を満たすことは簡単に確かめられる。）
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!--
+  <hr>
+  <h2>【3】</h2>
+
+  <p>
+  $k=0, \pm1, \pm2, \cdots$ として、フーリエ係数は
+  \begin{align}
+  c_k
+  &= \frac{1}{2 \pi} \int_{- \pi}^\pi f(t) e^{-ikt} dt
+  \\
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ e^{-ikt} dt
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  c_0
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ dt
+  \\
+  &= - \frac{1}{2 \pi} \left[ \cos t \right]_0^\pi
+  \\
+  &= \frac{1}{\pi}
+  \end{align}
+  であり、 $k = \pm1, \pm2, \cdots$ について
+  \begin{align}
+  c_k
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ e^{-ikt} dt
+  \\
+  &= - \frac{1}{2 \pi} \left[ \cos t \right]_0^\pi
+  \\
+  &= \frac{1}{\pi}
+  \end{align}
+  </p>
+  -->
+
+  <hr>
+  <h2>【4】</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  与えられた行列の列ベクトル
+  \begin{align}
+  \boldsymbol{u} = \begin{bmatrix}  0 \\  a \\ c \end{bmatrix}
+  , \ \ 
+  \boldsymbol{v} = \begin{bmatrix} -a \\  0 \\ b \end{bmatrix}
+  , \ \ 
+  \boldsymbol{w} = \begin{bmatrix} -c \\ -b \\ 0 \end{bmatrix}
+  \end{align}
+  について、 $abc \neq 0$ なので
+  \begin{align}
+  \boldsymbol{w} = \frac{b}{a} \boldsymbol{u} - \frac{c}{a} \boldsymbol{v}
+  \end{align}
+  と書けるが、
+  $\boldsymbol{u}, \boldsymbol{v}$ は互いの実数倍では表せないので一次独立である。
+  よって、求める階数は $2$ である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  与えられた連立一次方程式の拡大係数行列
+  \begin{align}
+  \begin{bmatrix} 0 & -a & -c & a-c \\ a & 0 & -b & a-b \\ c & b & 0 & c-b \end{bmatrix}
+  \end{align}
+  は、行基本変形によって、次のようにできる：
+  \begin{align}
+  \begin{bmatrix}
+  1 & 0 & -\frac{b}{a} & \frac{a-b}{a} \\
+  0 & 1 &  \frac{c}{a} & \frac{-a+c}{a} \\
+  0 & 0 & 0 & \frac{(a-b)c}{a} \end{bmatrix}
+  \end{align}
+  よって、解をもつのは $a=b$ のときであり、このときの解の自由度は $1$ である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
