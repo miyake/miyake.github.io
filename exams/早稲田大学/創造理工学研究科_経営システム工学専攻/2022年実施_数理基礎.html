@@ -96,6 +96,41 @@
   \end{align}
   </p>
 
+  <h3>[小問 A2]</h3>
+
+  <p>
+  \begin{align}
+  \int_2^3 \frac{\log x}{(x-1)^2} dx
+  &= \left[ - \frac{\log x}{x-1} \right]_2^3 + \int_2^3 \frac{1}{x(x-1)} dx
+  \\
+  &= - \frac{\log 3}{2} + \log 2
+  + \int_2^3 \left( \frac{1}{x-1} - \frac{1}{x} \right) dx
+  \\
+  &= - \frac{\log 3}{2} + \log 2 + \left[ \log (x-1) - \log x \right]_2^3
+  \\
+  &= - \frac{3}{2} \log 3 + 3 \log 2
+  \end{align}
+  </p>
+
+  <h3>[小問 A3]</h3>
+
+  <p>
+  極座標 $(r, \theta)$ を導入して、
+  \begin{align}
+  x = r \cos \theta, \ y = r \sin \theta
+  \ \ \ \ (r \geq 0, 0 \leq \theta \lt 2 \pi)
+  \end{align}
+  と書く。
+  $x^2 + xy + y^2 = 3$ は、
+  \begin{align}
+  r^2 + \frac{1}{2} r^2 \sin 2 \theta &= 3
+  \\
+  \therefore \ \ 
+  r^2 &= \frac{6}{\sin 2 \theta + 2}
+  \end{align}
+  と書けるので、求める最短距離は $2$ 、最長距離は $6$ である。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->
