@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      埼玉大学 大学院 理工学研究科
+      数理電子情報専攻 情報工学プログラム
+      2021年9月実施 専門基礎科目
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    埼玉大学 大学院 理工学研究科
+    <br>
+    数理電子情報専攻 情報工学プログラム
+    <br>
+    2021年9月実施 専門基礎科目
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.ics.saitama-u.ac.jp/exam/in/admissions-prepare/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>3.</h2>
+
+  <h3>(a)</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  \mathbb{E}[X]
+  &= \lambda \int_0^\infty x e^{- \lambda x} dx
+  \\
+  &= - \left[ x e^{- \lambda x} \right]_0^\infty + \int_0^\infty e^{- \lambda x} dx
+  \\
+  &= - \frac{1}{\lambda} \left[ e^{- \lambda x} \right]_0^\infty
+  \\
+  &= \frac{1}{\lambda}
+  \end{align}
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \mathbb{E} \left[ X^2 \right]
+  &= \lambda \int_0^\infty x^2 e^{- \lambda x} dx
+  \\
+  &= - \left[ x^2 e^{- \lambda x} \right]_0^\infty + 2 \int_0^\infty x e^{- \lambda x} dx
+  \\
+  &= \frac{2}{\lambda^2}
+  \\
+  \mathrm{Var} \left[ X \right]
+  &= \mathbb{E} \left[ X^2 \right] - \mathbb{E}[X]^2
+  \\
+  &= \frac{1}{\lambda^2}
+  \end{align}
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  \begin{align}
+  \mathrm{Pr} \left( X \geq a \right)
+  &= \lambda \int_a^\infty e^{- \lambda x} dx
+  \\
+  &= - \left[ e^{- \lambda x} \right]_a^\infty
+  \\
+  &= e^{- \lambda a}
+  \end{align}
+  </p>
+
+  <h4>(4)</h4>
+
+  <p>
+  \begin{align}
+  \mathrm{Pr} \left( X \geq a+b \mid X \geq a \right)
+  &= \frac{\mathrm{Pr} \left( X \geq a+b \text{  and  } X \geq a \right)}{\mathrm{Pr} \left( X \geq a \right)}
+  \\
+  &= \frac{\mathrm{Pr} \left( X \geq a+b \right)}{\mathrm{Pr} \left( X \geq a \right)}
+  \\
+  &= \frac{e^{-\lambda(a+b)}}{e^{-\lambda a}}
+  \\
+  &= e^{-\lambda b}
+  \end{align}
+  </p>
+
+  <h4>(5)</h4>
+
+  <p>
+  求める確率密度関数 $g(z)$ は、 $z \gt 0$ のとき、
+  \begin{align}
+  g(z)
+  &= \int_{- \infty}^\infty f_{\lambda_A} (z-b) \ f_{\lambda_B} (b) \ db
+  \\
+  &= \lambda_A \lambda_B \int_0^z e^{- \lambda_A (z-b)} e^{- \lambda_B b} \ db
+  \\
+  &= \lambda_A \lambda_B e^{- \lambda_A z} \int_0^z e^{(\lambda_A - \lambda_B)b} \ db
+  \\
+  &= \frac{\lambda_A \lambda_B}{\lambda_A - \lambda_B} e^{- \lambda_A z}
+  \left[ e^{(\lambda_A - \lambda_B)b} \right]_0^z
+  \\
+  &= \frac{\lambda_A \lambda_B}{\lambda_A - \lambda_B}
+  \left( e^{- \lambda_B z} - e^{- \lambda_A z} \right)
+  \end{align}
+  であり、 $z \leq 0$ のとき $g(z)=0$ である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
