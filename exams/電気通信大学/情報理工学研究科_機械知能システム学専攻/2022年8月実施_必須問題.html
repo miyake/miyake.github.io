@@ -107,7 +107,56 @@
   \frac{dy}{dx} &= \frac{\frac{dy}{d \theta}}{\frac{dy}{d \theta}} = - \frac{2}{\pi}
   \end{align}
   である。
-  よって、求める接線の傾きは $-2/pi$ である。
+  よって、求める接線の傾きは $-2/\pi$ である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \iint_D x e^{y^3} dx dy
+  &= \int_0^1 dy e^{y^3} \int_0^y dx x
+  \\
+  &= \frac{1}{2} \int_0^1 dy e^{y^3} y^2
+  \\
+  &= \frac{1}{6} \int_0^1 dz e^z
+  \ \ \ \ \ \ \ \ (z = y^3)
+  \\
+  &= \frac{1}{6} \left[ e^z \right]_0^1
+  \\
+  &= \frac{e-1}{6}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  まず、
+  \begin{align}
+  \frac{d^2 y}{dx^2} - 4 \frac{dy}{dx} + 4y = 0
+  \tag{a}
+  \end{align}
+  に $y=e^{\lambda x}$ （ $\lambda$ は $x$ によらない定数）を代入すると、
+  \begin{align}
+  (\lambda-2)^2 &= 0
+  \\
+  \therefore \ \ 
+  \lambda &= 2
+  \end{align}
+  となるので、微分方程式 (a) の一般解は
+  \begin{align}
+  y = Ae^{2x} + Bxe^{2x}
+  \ \ \ \ \ \ \ \ \text{( $A,B$ は任意定数）}
+  \end{align}
+  である。
+  また、与えられた微分方程式に $y=C x^2 e^{2x}$ （ $C$ は $x$ によらない定数）を代入すると、
+  $C=1/2$ を得るので、 $y=(1/2)x^2e^{2x}$ は特殊解である。
+  以上より、与えられた微分方程式の一般解は
+  \begin{align}
+  y = Ae^{2x} + Bxe^{2x} + \frac{1}{2} x^2 e^{2x}
+  \ \ \ \ \ \ \ \ \text{( $A,B$ は任意定数）}
+  \end{align}
+  である。
   </p>
 
 
