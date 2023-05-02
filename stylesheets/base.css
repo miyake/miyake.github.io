@@ -20,12 +20,17 @@ a {
 
 // a:visited { color: #551A8B; } // default
 // a:visited { color: blue; }
-a:visited { color: darkred; }
+// a:visited { color: darkgreen; }
+// a:visited { color: sienna; }
+// a:visited { color: darkred; }
+// a:visited { color: purple; }
 
 a:hover {
   text-decoration: underline;
-  // color: sienna;
-  color: darkred;
+  color: sienna;
+  // color: darkred;
+  // color: darkgreen;
+  // color: purple;
 }
 
 p { margin-left: 2em; }
