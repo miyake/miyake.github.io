@@ -24,7 +24,8 @@ a:visited { color: darkred; }
 
 a:hover {
   text-decoration: underline;
-  color: sienna;
+  // color: sienna;
+  color: darkred;
 }
 
 p { margin-left: 2em; }
