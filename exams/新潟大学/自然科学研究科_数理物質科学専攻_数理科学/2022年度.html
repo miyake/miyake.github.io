@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      新潟大学 大学院 自然科学研究科
+      数理物質科学専攻 数理科学
+      2022年度
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    新潟大学 大学院 自然科学研究科
+    <br>
+    数理物質科学専攻 数理科学
+    <br>
+    2022年度
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.gs.niigata-u.ac.jp/~gsweb/admission/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 5</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d \boldsymbol{p}(t)}{dt}
+  &= \left( 2t, 1+t^2, 1-t^2 \right)
+  \\
+  \left| \frac{d \boldsymbol{p}(t)}{dt} \right|^2
+  &= 2 \left( t^2 + 1 \right)^2
+  \end{align}
+  なので、求める単位接ベクトルは
+  \begin{align}
+  \boldsymbol{e}_1
+  &= \frac{1}{\left| \frac{d \boldsymbol{p}(t)}{dt} \right|} \frac{d \boldsymbol{p}(t)}{dt}
+  \\
+  &= \frac{\left( 2t, 1+t^2, 1-t^2 \right)}{\sqrt{2} \left( t^2 + 1 \right)} 
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \int_0^1 dt \left| \frac{d \boldsymbol{p}(t)}{dt} \right|
+  &= \sqrt{2} \int_0^1 dt \left( t^2 + 1 \right)
+  \\
+  &= \sqrt{2} \left[ \frac{t^3}{3} + t \right]_0^1
+  \\
+  &= \frac{4 \sqrt{2}}{3}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  曲線の弧長パラメータを $s$ とする：
+  \begin{align}
+  s
+  &= \int_0^t d \tau \left| \frac{d \boldsymbol{p}(\tau)}{d\tau} \right|
+  \\
+  &= \sqrt{2} \left( \frac{t^3}{3} + t \right)
+  \\
+  \frac{ds}{dt}
+  &= \sqrt{2} \left( t^2 + 1 \right)
+  \end{align}
+  このとき、
+  \begin{align}
+  \frac{d \boldsymbol{e}_1}{ds}
+  &= \frac{dt}{ds} \frac{d \boldsymbol{e}_1}{dt}
+  \\
+  &= \frac{1}{\sqrt{2} \left( t^2 + 1 \right)}
+  \frac{ \left( \sqrt{2} \left( -t^2+1 \right), 0, -2 \sqrt{2} t \right)}
+  { \left( t^2 + 1 \right)^2 }
+  \\
+  &= \frac{ \left( \left( -t^2+1 \right), 0, -2 t \right)}{ \left( t^2 + 1 \right)^3 }
+  \end{align}
+  なので、求める曲率は
+  \begin{align}
+  \left| \frac{d \boldsymbol{e}_1}{ds} \right|
+  &= \frac{1}{t^2 + 1}
+  \end{align}
+  である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
