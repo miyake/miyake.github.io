@@ -132,7 +132,8 @@
   <p>
   \begin{align}
   \lim_{t \to 0} \frac{\partial f(x,t)}{\partial t}
-  &= \frac{e^{xt} \left( e^t - 1 + xte^t - xt - te^t \right)}{\left( e^t - 1 \right)^2}
+  &= \lim_{t \to 0}
+  \frac{e^{xt} \left( e^t - 1 + xte^t - xt - te^t \right)}{\left( e^t - 1 \right)^2}
   \\
   &= \lim_{t \to 0} \frac{\left( x - \frac{1}{2} \right) t^2 + \cdots }{t^2 + \cdots}
   \\
