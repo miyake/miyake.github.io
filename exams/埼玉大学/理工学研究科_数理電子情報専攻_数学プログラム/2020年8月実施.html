@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      埼玉大学 大学院 理工学研究科
+      数理電子情報専攻 数学プログラム
+      2020年8月実施
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    埼玉大学 大学院 理工学研究科
+    <br>
+    数理電子情報専攻 数学プログラム
+    <br>
+    2020年8月実施
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.rimath.saitama-u.ac.jp/prob/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>[C]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d}{dx} W[y_1,y_2](x)
+  &= \frac{d}{dx} \left( y_1(x)y'_2(x) - y'_1(x)y_2(x) \right)
+  \\
+  &= y'_1(x)y'_2(x) + y_1(x)y''_2(x) - y''_1(x)y_2(x) - y'_1(x)y_2'(x)
+  \\
+  &= y_1(x) \left( -P(x)y'_2(x) - Q(x)y_2(x) \right)
+  - \left( -P(x)y'_1(x) - Q(x)y_1(x) \right) y_2(x)
+  \\
+  &= -P(x) \left( y_1(x)y'_2(x) - y'_1(x)y_2(x) \right)
+  \\
+  &= -P(x) W[y_1,y_2](x)
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  (1) と同様に
+  \begin{align}
+  \frac{d}{dx} W[y_3,y_4](x)
+  &= -P(x) W[y_3,y_4](x)
+  \end{align}
+  が成り立つ。
+  よって、 $W[y_3,y_4](x) \ne 0$ であるような $x$ について
+  \begin{align}
+  \frac{d}{dx} \frac{W[y_1,y_2](x)}{W[y_3,y_4](x)}
+  &= \frac{\left( \frac{d}{dx} W[y_1,y_2](x) \right) W[y_3,y_4](x)
+  - W[y_1,y_2](x) \left( \frac{d}{dx} W[y_3,y_4](x) \right)}
+  {\left( W[y_3,y_4](x) \right)^2}
+  \\
+  &= \frac{ -P(x) W[y_1,y_2](x) W[y_3,y_4](x) + P(x) W[y_1,y_2](x) W[y_3,y_4](x)}
+  {\left( W[y_3,y_4](x) \right)^2}
+  \\
+  &= 0
+  \end{align}
+  が成り立つので、 $W[y_1,y_2](x)$ と $W[y_3,y_4](x)$ の比は $x$ に依らない。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
