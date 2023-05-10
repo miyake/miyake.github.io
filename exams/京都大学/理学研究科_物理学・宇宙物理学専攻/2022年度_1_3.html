@@ -108,7 +108,7 @@
   m \frac{d^2 \vec{r}}{dt^2}
   = \vec{F} \left( \vec{r} \right) + q \frac{d \vec{r}}{dt} \times \vec{B}
   \end{align}
-  なので、 (1) より、回転系 $S'$ での運動方程式は、次のようになる：
+  なので、 (1) より、回転系 $S'$ での運動方程式は次のようになる：
   \begin{align}
   m \left( \frac{d'^2 \vec{r}}{dt^2}
   + 2 \omega \vec{k} \times \frac{d' \vec{r}}{dt}
@@ -135,6 +135,75 @@
   \therefore \ \ 
   \vec{\omega} &= - \frac{q}{2m} \vec{B}
   \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>I-3B （熱力学）</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  dU &= TdS - pdV
+  \\
+  dF &= d(U-TS)
+  \\
+  &= -SdT - pdV
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \left( \frac{\partial U}{\partial V} \right)_T
+  &= T \left( \frac{\partial S}{\partial V} \right)_T - p
+  \\
+  &= -T \frac{\partial^2 F}{\partial V \partial T} - p
+  \\
+  &= -T \frac{\partial^2 F}{\partial T \partial V} - p
+  \\
+  &= T \left( \frac{\partial p}{\partial T} \right)_V - p
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  (2) で得た式に
+  \begin{align}
+  U(T,V) = V \tilde{u}(T)
+  , \ \ 
+  p(T,V) = \frac{1}{3} \tilde{u}(T)
+  \end{align}
+  を代入すると、
+  \begin{align}
+  \tilde{u}(T) &= T \cdot \frac{1}{3} \frac{d \tilde{u}(T)}{dT} - \frac{1}{3} \tilde{u}(T)
+  \\
+  \therefore \ \ 
+  \frac{d \tilde{u}}{\tilde{u}} &= \frac{4}{T} dT
+  \\
+  \therefore \ \ 
+  \log \tilde{u}
+  &= 4 \log T + C
+  \ \ \ \ \ \ \ \ \text{ ( $C$ は積分定数 )}
+  \\
+  &= \log T^4 + C
+  \end{align}
+  となるので、 $\tilde{u}$ は $T$ の4乗に比例することがわかる。
   </p>
 
 
