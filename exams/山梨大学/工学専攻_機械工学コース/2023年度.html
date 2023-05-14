@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      山梨大学 大学院 医工農学総合教育部
+      工学専攻 機械工学コース
+      2023年度
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    山梨大学 大学院 医工農学総合教育部
+    <br>
+    工学専攻 機械工学コース
+    <br>
+    2023年度
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.yamanashi.ac.jp/admission/297">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>線形代数</h2>
+
+  <h3>問 1</h3>
+
+  <p>
+  \begin{align}
+  AX
+  &= \begin{bmatrix}
+  a\lambda+g & b\lambda+h & c\lambda+i \\
+  d\lambda & e\lambda & f\lambda \\
+  a+d+g\lambda & b+e+h\lambda & c+f+i\lambda
+  \end{bmatrix}
+  \\
+  XA
+  &= \begin{bmatrix}
+  a\lambda+c & b\lambda+c & a+c\lambda \\
+  d\lambda+f & e\lambda+f & d+f\lambda \\
+  g\lambda+i & h\lambda+i & i\lambda+g
+  \end{bmatrix}
+  \end{align}
+  なので、 $AX=XA$ を満たすとき
+  \begin{align}
+  d=0, \ e=a-b, \ f=0, \ g=c, \ h=c, \ i=a
+  \end{align}
+  であり、 $0$ になるのは $d,f$ であることがわかる。
+  </p>
+
+  <h3>問 2</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  f \left( \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \right)
+  &= \begin{bmatrix} 2x_1-x_2 \\ 3x_2+2x_3 \end{bmatrix}
+  = \begin{bmatrix} 2 & -1 & 0 \\ 0 & 3 & 2 \end{bmatrix}
+  \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+  \\
+  g \left( \begin{bmatrix} y_1 \\ y_2 \end{bmatrix} \right)
+  &= \begin{bmatrix} y_1+3y_2 \\ -2y_1+y_2 \end{bmatrix}
+  = \begin{bmatrix} 1 & 3 \\ -2 & 1 \end{bmatrix}
+  \begin{bmatrix} y_1 \\ y_2 \end{bmatrix}
+  \end{align}
+  なので、
+  \begin{align}
+  A &= \begin{bmatrix} 2 & -1 & 0 \\ 0 & 3 & 2 \end{bmatrix}
+  \\
+  B &= \begin{bmatrix} 1 & 3 \\ -2 & 1 \end{bmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  \left( g \circ f \right)
+  \left( \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \right)
+  &=  g \left( f
+  \left( \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \right) \right)
+  \\
+  &= B \left( A \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \right)
+  \\
+  &= \left( BA \right) \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+  \end{align}
+  から $C=BA$ がわかり、
+  \begin{align}
+  C
+  &= BA
+  \\
+  &= \begin{bmatrix} 1 & 3 \\ -2 & 1 \end{bmatrix}
+  \begin{bmatrix} 2 & -1 & 0 \\ 0 & 3 & 2 \end{bmatrix}
+  \\
+  &= \begin{bmatrix} 2 & 8 & 6 \\ -4 & 5 & 2 \end{bmatrix}
+  \end{align}
+  を得る。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
+  </nav>
+
+</body>
+</html>
+
