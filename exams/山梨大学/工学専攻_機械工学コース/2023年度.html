@@ -189,12 +189,33 @@
   <h4>(b)</h4>
 
   <p>
+  \begin{align}
+  \int_{-1}^1 e^{-2x} dx
+  &= \left[ - \frac{1}{2} e^{-2x} \right]_{-1}^1
+  \\
+  &= - \frac{1}{2} \left( e^{-2} - e^2 \right)
+  \\
+  &= \frac{e^2 - e^{-2}}{2}
+  \end{align}
+  </p>
+
+  <h3>問 4</h3>
+
+  <p>
   $f(x)$ の導関数は
   \begin{align}
   f'(x)
   &= \cos x + \cos 3x
+  \\
+  &= \cos x + \cos (x+2x)
+  \\
+  &= \cos x + \cos x \cos 2x - \sin x \sin 2x
+  \\
+  &= \cos x + \cos x \left( 2 \cos^2 x - 1 \right) - 2 \sin^2 x \cos x
+  \\
+  &= 4 \cos x \left( \cos x + \frac{1}{\sqrt{2}} \right) \left( \cos x - \frac{1}{\sqrt{2}} \right)
   \end{align}
-  なので、次の増減表を得る：
+  なので、 $f'(x)=0$ となるのは $\cos x = 0, \pm 1/\sqrt{2}$ のときであり、次の増減表を得る：
   \begin{array}
   {|c|ccccccc|}
   \hline
