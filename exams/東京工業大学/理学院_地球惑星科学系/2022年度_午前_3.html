@@ -190,11 +190,17 @@
   \\
   g''(n_*) &= - \frac{1}{Np(1-p)}
   \end{align}
-  であるから、 $g(n)$ の $n=n_*$ のまわりでの2次までのテイラー展開は
+  であるから、 $g(n)$ の $n=n_* (=Np)$ のまわりでの2次までのテイラー展開は
   \begin{align}
-  g(n) &= - \frac{1}{2Np(1-p)} (n-n_*)^2 + \cdots
+  g(n) &= - \frac{1}{2Np(1-p)} (n-Np)^2 + \cdots
   \end{align}
   である。
+  よって、 $n-Np$ が $\sqrt{Np(1-p)}$ 程度の範囲内において
+  \begin{align}
+  f(n) &= C e^{- \frac{(n-Np)^2}{2Np(1-p)}}
+  \ \ \ \ \ \ \ \ (C \text{ は適当な定数 } )
+  \end{align}
+  と書け、これは期待値 $Np$ 標準偏差 $\sqrt{Np(1-p)}$ の正規分布である。
   </p>
 
 
