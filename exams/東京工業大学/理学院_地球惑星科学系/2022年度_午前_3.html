@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院 理学院
+      地球惑星科学系
+      2022年度 午前 [3]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京工業大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京工業大学 大学院
+    <br>
+    理学院 地球惑星科学系
+    <br>
+    2022年度 午前 [3]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html#h2-science">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>3-3.</h2>
+
+  <h3>3-3-1.</h3>
+
+  <p>
+  \begin{align}
+  E(X_i)
+  &= 1 \cdot p + 0 \cdot (1-p)
+  \\
+  &= p
+  \\
+  E(X_iX_j)
+  &= E(X_i)E(X_j)
+  \\
+  &= p^2
+  \end{align}
+  </p>
+
+  <h3>3-3-2.</h3>
+
+  <p>
+  \begin{align}
+  n
+  &= \sum_{i=1}^N X_i
+  \\
+  E(n)
+  &= \sum_{i=1}^N E(X_i)
+  \\
+  &= Np
+  \\
+  E \left( n^2 \right)
+  &= \sum_{i=1}^N E \left( X_i^2 \right)
+  + \sum_{i,j \ (i \neq j)} E \left( X_i X_j \right)
+  \\
+  &= Np + N(N-1)p^2
+  \\
+  V(n)
+  &= E \left( n^2 \right) - E(n)^2
+  \\
+  &= Np + N(N-1)p^2 - N^2p^2
+  \\
+  &= Np(1-p)
+  \end{align}
+  </p>
+
+  <h3>3-3-3.</h3>
+
+  <h4>3-3-3-1.</h4>
+
+  <p>
+  \begin{align}
+  f(n)
+  &= {}_NC_n p^n(1-p)^{N-n}
+  \\
+  &= \frac{N!}{n!(N-n)!} p^n(1-p)^{N-n}
+  \end{align}
+  </p>
+
+  <h4>3-3-3-2.</h4>
+
+  <p>
+  $ g(n) = \log f(n) $ とおくと、
+  \begin{align}
+  g(n)
+  &= \log f(n)
+  \\
+  &= \log N! - \log n! - \log (N-n)! + n \log p + (N-n) \log (1-p)
+  \\
+  &\sim N \log N - n \log n - (N-n) \log (N-n) + n \log p + (N-n) \log (1-p)
+  \ \ \ \ \ \ \ \ (N \gg 1, \ n \gg 1, \ N-n \gg 1)
+  \end{align}
+  である。
+  $n$ が実数であるとして導関数を求めると、
+  \begin{align}
+  g'(n)
+  &= - \log n - 1 + \log (N-n) + 1 + \log p - \log (1-p)
+  \\
+  &= \log \frac{(N-n)p}{n(1-p)}
+  \end{align}
+  となるので、以下の増減表を得る：
+  \begin{array}
+  {|c|ccccccc|}
+  \hline
+  n  & 0 & \cdots   & Np & \cdots   & N \\
+  \hline
+  g' &   & +        & 0  & -        & \\
+  \hline
+  g  &   & \nearrow &    & \searrow & \\
+  \hline
+  f  &   & \nearrow &    & \searrow & \\
+  \hline
+  \end{array}
+  よって、 $n_*=Np$ である。
+  </p>
+
+  <h4>3-3-3-3.</h4>
+
+  <p>
+  3-3-3-2. の $g(n)$ の2階導関数は
+  \begin{align}
+  g''(n)
+  &= - \frac{N}{n(N-n)}
+  \end{align}
+  であり、
+  \begin{align}
+  g(n_*) &= 0
+  \\
+  g'(n_*) &= 0
+  \\
+  g''(n_*) &= - \frac{1}{Np(1-p)}
+  \end{align}
+  であるから、 $g(n)$ の $n=n_*$ のまわりでの2次までのテイラー展開は
+  \begin{align}
+  g(n) &= - \frac{1}{2Np(1-p)} (n-n_*)^2 + \cdots
+  \end{align}
+  である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京工業大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
