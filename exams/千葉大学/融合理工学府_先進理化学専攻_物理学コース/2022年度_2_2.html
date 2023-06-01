@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      千葉大学 大学院 融合理工学府
+      先進理化学専攻 物理学コース
+      2022年度 専門科目 (2) II
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/千葉大学/index.html">千葉大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    千葉大学 大学院 融合理工学府
+    <br>
+    先進理化学専攻 物理学コース
+    <br>
+    2022年度 専門科目 (2) II
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://physics.s.chiba-u.ac.jp/temp/HPwork2/setsumeikai/R5setumeikai.htm">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>1.</h2>
+
+  <p>
+  \begin{align}
+  Z(T,V,N)
+  &= \frac{1}{N!} \left[ \frac{V}{h^3} \left( \int_{-\infty}^\infty \exp \left( - \frac{p^2}{2mkT} \right) dp \right)^3 \right]^N
+  \\
+  &= \frac{1}{N!} \left[ \frac{V}{h^3} \left( 2 \pi mkT \right)^\frac{3}{2} \right]^N
+  \\
+  &= \frac{1}{N!} \left[ V \left( \frac{2 \pi mkT}{h^2} \right)^\frac{3}{2} \right]^N
+  \end{align}
+  </p>
+
+  <h2>2.</h2>
+
+  <p>
+  \begin{align}
+  F(T,V,N)
+  &= - kT \log Z(T,V,N)
+  \\
+  &= kT \log N! - NkT \log \left[ V \left( \frac{2 \pi mkT}{h^2} \right)^\frac{3}{2} \right]
+  \\
+  &\approx NkT \log N - NkT - NkT \log \left[ V \left( \frac{2 \pi mkT}{h^2} \right)^\frac{3}{2} \right]
+  \\
+  &= - NkT \log \left[ \frac{V}{N} \left( \frac{2 \pi mkT}{h^2} \right)^\frac{3}{2} e \right]
+  \end{align}
+  最後の式の中で示量的な量は $V,N$ であるから、 $F(T,V,N)$ が示量的な量であることがわかる。
+  </p>
+
+  <h2>3.</h2>
+
+  <p>
+  (i)
+  \begin{align}
+  P
+  &= - \frac{\partial F(T,V,N)}{\partial V}
+  \\
+  &= \frac{NkT}{V}
+  \end{align}
+  </p>
+
+  <p>
+  (ii)
+  エントロピーを $S(T,V,N)$ とし、内部エネルギーを $U(T,V,N)$ とすると、
+  \begin{align}
+  S(T,V,N)
+  &= - \frac{\partial F(T,V,N)}{\partial T}
+  \\
+  U(T,V,N)
+  &= F(T,V,N) + T S(T,V,N)
+  \\
+  &= F(T,V,N) - T \frac{\partial F(T,V,N)}{\partial T}
+  \\
+  &= - T^2 \frac{\partial}{\partial T} \frac{F(T,V,N)}{T}
+  \\
+  &= \frac{3}{2} NkT
+  \end{align}
+  なので、
+  \begin{align}
+  C_V
+  &= \frac{\partial U(T,V,N)}{\partial T}
+  \\
+  &= \frac{3}{2} Nk
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>4.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  U_\mathrm{int} (T,N)
+  &= N \frac{0 \cdot \exp \left( - \frac{0}{kT} \right) + 3 \varepsilon \exp \left( - \frac{\varepsilon}{kT} \right)}
+  {\exp \left( - \frac{0}{kT} \right) + 3 \exp \left( - \frac{\varepsilon}{kT} \right)}
+  \\
+  &= \frac{ 3N \varepsilon \exp \left( - \frac{\varepsilon}{kT} \right)}
+  { 1 + 3 \exp \left( - \frac{\varepsilon}{kT} \right)}
+  \\
+  &= \frac{ 3N \varepsilon }{ \exp \frac{\varepsilon}{kT} + 3}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \frac{\partial U_\mathrm{int} (T,N)}{\partial T}
+  &= \frac{ 3N \varepsilon^2 \exp \frac{\varepsilon}{kT} }{ kT^2 \left( \exp \frac{\varepsilon}{kT} + 3 \right)^2 }
+  \end{align}
+  なので、求める定積熱容量は、
+  \begin{align}
+  \frac{3}{2}Nk
+  + \frac{ 3N \varepsilon^2 \exp \frac{\varepsilon}{kT} }{ kT^2 \left( \exp \frac{\varepsilon}{kT} + 3 \right)^2 }
+  \end{align}
+  である。
+  </p>
+
+  <h2>5.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  Z_\mathrm{int} (T)
+  &= \sum_{j=0}^\infty (2j+1) \exp \left( - \frac{E_j}{kT} \right)
+  \\
+  &= \sum_{j=0}^\infty (2j+1) \exp \left( - \frac{Bj(j+1)}{kT} \right)
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  Z_\mathrm{int} (T)
+  &= \int_0^\infty d \xi \ (2 \xi + 1) \exp \left( - \frac{B \xi (\xi + 1)}{kT} \right)
+  \\
+  &= \int_0^\infty d \xi \ (2 \xi + 1) \exp \left( - \frac{B}{kT} (\xi^2+\xi) \right)
+  \\
+  &= - \frac{kT}{B} \left[ \exp \left( - \frac{B}{kT} (\xi^2+\xi) \right) \right]_0^\infty
+  \\
+  &= \frac{kT}{B}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $Z_\mathrm{int} (T)$ に対応するヘルムホルツの自由エネルギーは
+  \begin{align}
+  F_\mathrm{int} (T, N)
+  &= - NkT \log Z_\mathrm{int} (T)
+  \\
+  &= - NkT \log \frac{kT}{B}
+  \end{align}
+  であり、内部エネルギーは
+  \begin{align}
+  U_\mathrm{int} (T, N)
+  &= -T^2 \frac{\partial}{\partial T} \frac{F_\mathrm{int}(T,N)}{T}
+  \\
+  &= NkT
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{\partial}{\partial T} U_\mathrm{int} (T, N)
+  &= Nk
+  \end{align}
+  であるから、求める定積熱容量は、問 3 を考慮して、
+  \begin{align}
+  \frac{3}{2} Nk + Nk = \frac{5}{2} Nk
+  \end{align}
+  であることがわかる。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/千葉大学/index.html">千葉大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
