@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      静岡大学 大学院 総合科学技術研究科
+      情報学専攻 情報科学
+      2022年実施 数学・数理系
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/静岡大学/index.html">静岡大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    静岡大学 大学院 総合科学技術研究科
+    <br>
+    情報学専攻 情報科学
+    <br>
+    2022年実施 数学・数理系
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.inf.shizuoka.ac.jp/information/graduate_kakomon.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(問1)</h2>
+
+  <p>
+  期待値を $E$ 、分散を $V$ で表す。
+  </p>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  E(n)
+  &= \sum_{n=0}^N n \frac{N!}{(N-n)!n!} p^n q^{N-n}
+  \\
+  &= \sum_{n=1}^N \frac{N!}{(N-n)!(n-1)!} p^n q^{N-n}
+  \\
+  &= Np \sum_{k=0}^{N-1} \frac{(N-1)!}{(N-1-k)! k!} p^k q^{N-1-k}
+  \ \ \ \ \ \ \ \ (k=n-1)
+  \\
+  &= Np (p+q)^{N-1}
+  \\
+  &= Np
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  E(n(n-1))
+  &= \sum_{n=0}^N n(n-1) \frac{N!}{(N-n)!n!} p^n q^{N-n}
+  \\
+  &= \sum_{n=2}^N \frac{N!}{(N-n)!(n-2)!} p^n q^{N-n}
+  \\
+  &= N(N-1)p^2 \sum_{k=0}^{N-2} \frac{(N-2)!}{(N-2-k)! k!} p^k q^{N-2-k}
+  \ \ \ \ \ \ \ \ (k=n-2)
+  \\
+  &= N(N-1)p^2 (p+q)^{N-2}
+  \\
+  &= N(N-1)p^2
+  \\
+  \therefore \ \ 
+  V(n)
+  &= E(n^2) - E(n)^2
+  \\
+  &= E(n(n-1)) + E(n) - E(n)^2
+  \\
+  &= N(N-1)p^2 + Np - N^2p^2
+  \\
+  &= Np(1-p)
+  \end{align}
+  </p>
+  <!--
+  N=1 の場合は計算上考慮していないが、その場合も結果は正しい。
+  -->
+
+  <h3>(3)</h3>
+
+  <p>
+  $p \ll q$ のとき $p \ll 1$ であるから、
+  $ V(n) \approx Np $ であり、 $ V(n) \approx E(n) $ である。
+  <!--
+  問題文には「平方根」とあるが、不要ではないか。
+  -->
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/静岡大学/index.html">静岡大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
