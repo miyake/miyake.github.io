@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      長崎大学 大学院 工学研究科
+      総合工学専攻 機械工学コース
+      2022年度 数学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/長崎大学/index.html">長崎大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    長崎大学 大学院 工学研究科
+    <br>
+    総合工学専攻 機械工学コース
+    <br>
+    2022年度 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.eng.nagasaki-u.ac.jp/contents/01_02_g_examination.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>[3]</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  与えられた微分方程式 (3-1) の左辺に $y(x)=x$ を代入すると、
+  \begin{align}
+  x \cdot 1 + 2x^2 - x - 2x^2 = 0
+  \end{align}
+  となるので、 $y(x)=\eta(x)=x$ が (3-1) の解であることがわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  与えられた微分方程式 (3-1) に $y(x)=Y(x)+\eta(x)=Y(x)+x$ を代入すると、
+  \begin{align}
+  x \left( \frac{dY(x)}{dx} + 1 \right)
+  + 2 \left( Y(x) + x \right)^2 - \left( Y(x) + x \right) - 2x^2 &= 0
+  \\
+  x \frac{dY(x)}{dx} + 2 Y(x)^2 + 4x Y(x) - Y(x) &= 0
+  \\
+  \frac{1}{Y(x)^2} \frac{dY(x)}{dx}
+  + \left( 4 - \frac{1}{x} \right) \frac{1}{Y(x)} &= - \frac{2}{x}
+  \tag{a}
+  \end{align}
+  となるので、
+  \begin{align}
+  f(x) = 4 - \frac{1}{x}
+  , \ \ 
+  g(x) = - \frac{2}{x}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $z(x)=1/Y(x)$ とおくと
+  \begin{align}
+  \frac{dz(x)}{dx} = - \frac{1}{Y(x)^2} \frac{dY(x)}{dx}
+  \end{align}
+  となるので、 (2) で得た微分方程式 (a) より、 $z(x)$ に関する微分方程式
+  \begin{align}
+  \frac{dz(x)}{dx} + \left( \frac{1}{x} - 4 \right) z(x) &= \frac{2}{x}
+  \tag{b}
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  微分方程式 (b) を解くために、まず、
+  \begin{align}
+  \frac{dz(x)}{dx} + \left( \frac{1}{x} - 4 \right) z(x) &= 0
+  \tag{c}
+  \end{align}
+  を考えると、
+  \begin{align}
+  \frac{dz}{z} &= \left( 4 - \frac{1}{x} \right) dx
+  \\
+  \therefore \ \ 
+  \log |z| &= 4x - \log |x| + A_0
+  \ \ \ \ \ \ \ \ ( A_0 \text{ は積分定数 } )
+  \\
+  \therefore \ \ 
+  z(x) &= \frac{A_1 e^{4x}}{x}
+  \ \ \ \ \ \ \ \ ( A_1 \text{ は積分定数 } )
+  \end{align}
+  を得る。
+  そこで、 (b) に $z(x) = A(x) e^{4x} / x$ （ $A(x)$ は $x$ の関数）
+  を代入して整理すると、
+  \begin{align}
+  \frac{dA(x)}{dx} &= 2e^{-4x}
+  \\
+  \therefore \ \ 
+  A(x) &= - \frac{1}{2} e^{-4x} + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  を得る。
+  よって、 (b) の一般解は、
+  \begin{align}
+  z(x)
+  &= \frac{- \frac{1}{2} e^{-4x} + C}{x} e^{4x}
+  \\
+  &= \frac{2Ce^{4x}-1}{2x}
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  であることがわかる。
+  </p>
+
+  <p>
+  よって、 (3-1) の一般解は、
+  \begin{align}
+  y(x)
+  &= \frac{2x}{2Ce^{4x}-1} + x
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \\
+  &= \frac{2Ce^{4x}+1}{2Ce^{4x}-1} x
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  であることがわかる。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/長崎大学/index.html">長崎大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
