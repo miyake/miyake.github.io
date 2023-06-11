@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      宇都宮大学 大学院 地域創生科学研究科
+      社会デザイン科学専攻 土木工学
+      2022年8月実施 土木工学基礎
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/宇都宮大学/index.html">宇都宮大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    宇都宮大学 大学院 地域創生科学研究科
+    <br>
+    社会デザイン科学専攻 土木工学
+    <br>
+    2022年8月実施 土木工学基礎
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.utsunomiya-u.ac.jp/admission/past-other-questions.php">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 1</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  y &= x \sqrt{x} = x^\frac{3}{2}
+  \\
+  \therefore \ \ 
+  \frac{dy}{dx} &= \frac{3}{2} x^\frac{1}{2} = \frac{3}{2} \sqrt{x}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $0 \lt x \lt 2$ であり、
+  $x-1 = \sin \theta \ (-\pi/2 \lt \theta \lt \pi/2)$ とおくと、
+  $dx = \cos \theta d \theta$ であるから、次のように計算できる：
+  \begin{align}
+  \int \frac{1}{\sqrt{2x-x^2}} dx
+  &= \int \frac{1}{\sqrt{1-(x-1)^2}} dx
+  \\
+  &= \int \frac{1}{|\cos \theta|} \cos \theta d \theta
+  \\
+  &= \int d \theta
+  \\
+  &= \theta + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \\
+  &= \arcsin (x-1) + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 2</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $A$ の行列式は
+  \begin{align}
+  \det A
+  &= 6-6-6-2
+  \\
+  &= -8
+  \end{align}
+  であり、余因子行列は
+  \begin{align}
+  \tilde{A}
+  &= \frac{1}{4}
+  \begin{pmatrix} 4 & -8 & 0 \\ 2 & -6 & 2 \\ -6 & 6 & -2 \end{pmatrix}
+  \end{align}
+  であるから、逆行列は
+  \begin{align}
+  A^{-1}
+  &= \frac{1}{\det A} \tilde{A}
+  \\
+  &= \frac{1}{4}
+  \begin{pmatrix} -2 & 4 & 0 \\ -1 & 3 & -1 \\ 3 & -3 & 1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、次のように計算できる：
+  \begin{align}
+  0
+  &= \det
+  \begin{pmatrix} -\lambda & 2 & 2 \\ 1 & 1-\lambda & 1 \\ 3 & -3 & 1-\lambda \end{pmatrix}
+  \\
+  &= - \lambda^3 + 2 \lambda^2 + 4 \lambda - 8
+  \\
+  &= -(\lambda+2)(\lambda-2)^2
+  \\
+  \therefore \ \ 
+  \lambda &= -2, 2
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 3</h2>
+
+  <p>
+  \begin{align}
+  F = \mu mg
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 4</h2>
+
+  <p>
+  時間を $t$ で表す。
+  物体がつり合いの位置にあるときのバネの伸びを $d$ とすると
+  \begin{align}
+  mg = kd
+  \end{align}
+  である。
+  物体のつり合いの位置を原点とし鉛直下向きに x 軸をとると、
+  物体の運動方程式は
+  \begin{align}
+  m \frac{d^2x}{dt^2}
+  &= mg - k(x+d)
+  \\
+  &= -kx
+  \end{align}
+  である。
+  これの一般解は
+  \begin{align}
+  x = A \sin \left( \sqrt{\frac{k}{m}} t \right)
+  + B \cos \left( \sqrt{\frac{k}{m}} t \right)
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  であるから、
+  \begin{align}
+  \omega &= \sqrt{\frac{k}{m}}
+  \\
+  T
+  &= \frac{2 \pi}{\omega}
+  = 2 \pi \sqrt{\frac{m}{k}}
+  \end{align}
+  がわかる。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 5</h2>
+
+  <p>
+  運動方程式は
+  \begin{align}
+  m \frac{dv}{dt} &= mg
+  \\
+  \therefore \ \ 
+  \frac{dv}{dt} &= g
+  \end{align}
+  であり、 $t=0$ で $v=v_0$ であることを考慮すると
+  \begin{align}
+  v = gt + v_0
+  \end{align}
+  がわかり、 $t=0$ で $x=0$ であることを考慮すると
+  \begin{align}
+  x = \frac{1}{2}gt^2 + v_0 t
+  \end{align}
+  がわかる。
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/宇都宮大学/index.html">宇都宮大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
