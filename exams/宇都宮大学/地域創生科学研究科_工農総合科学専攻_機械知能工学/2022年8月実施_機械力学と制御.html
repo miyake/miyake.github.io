@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      宇都宮大学 大学院 地域創生科学研究科
+      工農総合科学専攻 機械知能工学
+      2022年8月実施 機械力学と制御
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/宇都宮大学/index.html">宇都宮大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    宇都宮大学 大学院 地域創生科学研究科
+    <br>
+    工農総合科学専攻 機械知能工学
+    <br>
+    2022年8月実施 機械力学と制御
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.utsunomiya-u.ac.jp/admission/past-other-questions.php">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  時間微分 $d/dt$ を $\dot{}$ で表す。
+  </p>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  \boldsymbol{p}_1
+  &= \left( l_1 \sin \theta_1, l_1 \cos \theta_1 \right)
+  \\
+  \boldsymbol{p}_2
+  &= \left( l_1 \sin \theta_1 + l_2 \sin \theta_2,
+  l_1 \cos \theta_1 + l_2 \cos \theta_2 \right)
+  \end{align}
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  \begin{align}
+  \dot{\boldsymbol{p}}_1
+  &= \left( l_1 \dot{\theta}_1 \cos \theta_1,
+  -l_1 \dot{\theta}_1 \sin \theta_1 \right)
+  \\
+  \dot{\boldsymbol{p}}_2
+  &= \left( l_1 \dot{\theta}_1 \cos \theta_1 + l_2 \dot{\theta}_2 \cos \theta_2,
+  -l_1 \dot{\theta}_1 \sin \theta_1 - l_2 \dot{\theta}_2 \sin \theta_2 \right)
+  \\
+  T_1
+  &= \frac{1}{2} m_1 \left| \dot{\boldsymbol{p}}_1 \right|^2
+  \\
+  &= \frac{1}{2} m_1 l_1^2 \dot{\theta}_1^2
+  \\
+  T_2
+  &= \frac{1}{2} m_2 \left| \dot{\boldsymbol{p}}_2 \right|^2
+  \\
+  &= \frac{1}{2} m_2 \left(
+  l_1^2 \dot{\theta}_1^2 + l_2^2 \dot{\theta}_2^2
+  + 2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \cos ( \theta_1 + \theta_2 )
+  \right)
+  \end{align}
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  \begin{align}
+  U_1
+  &= -m_1 g y_1
+  \\
+  &= -m_1 g l_1 \cos \theta_1
+  \\
+  U_2
+  &= -m_2 g y_2
+  \\
+  &= -m_2 g ( l_1 \cos \theta_1 + l_2 \cos \theta_2 )
+  \end{align}
+  </p>
+
+  <h2>(4)</h2>
+
+  <p>
+  \begin{align}
+  L = T_1 + T_2 - U_1 - U_2
+  \end{align}
+  </p>
+
+  <h2>(5)</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial L}{\partial \dot{\theta}_1}
+  &= \frac{\partial T_1}{\partial \dot{\theta}_1}
+  + \frac{\partial T_2}{\partial \dot{\theta}_1}
+  \\
+  &= m_1 l_1^2 \dot{\theta}_1 + m_2 l_1^2 \dot{\theta}_1
+  + m_2 l_1 l_2 \dot{\theta}_2 \cos (\theta_1 + \theta_2)
+  ,\\
+
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}_1}
+  &= m_1 l_1^2 \ddot{\theta}_1 + m_2 l_1^2 \ddot{\theta}_1
+  + m_2 l_1 l_2 \ddot{\theta}_2 \cos (\theta_1 + \theta_2)
+  - m_2 l_1 l_2 \dot{\theta}_2 (\dot{\theta}_1 + \dot{\theta}_2)
+  \sin (\theta_1 + \theta_2)
+  ,\\
+
+  \frac{\partial L}{\partial \theta_1}
+  &= \frac{\partial T_2}{\partial \theta_1}
+  - \frac{\partial U_1}{\partial \theta_1}
+  - \frac{\partial U_2}{\partial \theta_1}
+  \\
+  &= - m_2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \sin (\theta_1 + \theta_2)
+  - m_1 g l_1 \sin \theta_1 - m_2 g l_1 \sin \theta_1
+  \\
+  &= - m_2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \sin (\theta_1 + \theta_2)
+  - (m_1+m_2) g l_1 \sin \theta_1
+  \end{align}
+  なので、オイラー-ラグランジュ方程式は次のようになる：
+  \begin{align}
+  m_1 l_1^2 \ddot{\theta}_1 + m_2 l_1^2 \ddot{\theta}_1
+  + m_2 l_1 l_2 \ddot{\theta}_2 \cos (\theta_1 + \theta_2)
+  - m_2 l_1 l_2 \dot{\theta}_2^2 \sin (\theta_1 + \theta_2)
+  + (m_1+m_2) g l_1 \sin \theta_1
+  &= 0
+  \end{align}
+  </p>
+
+  <h2>(6)</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial L}{\partial \dot{\theta}_2}
+  &= \frac{\partial T_2}{\partial \dot{\theta}_2}
+  \\
+  &= m_2 l_2^2 \dot{\theta}_2
+  + m_2 l_1 l_2 \dot{\theta}_1 \cos (\theta_1 + \theta_2)
+  ,\\
+
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}_2}
+  &= m_2 l_2^2 \ddot{\theta}_2
+  + m_2 l_1 l_2 \ddot{\theta}_1 \cos (\theta_1 + \theta_2)
+  - m_2 l_1 l_2 \dot{\theta}_1 (\dot{\theta}_1 + \dot{\theta}_2)
+  \sin (\theta_1 + \theta_2)
+  ,\\
+
+  \frac{\partial L}{\partial \theta_2}
+  &= \frac{\partial T_2}{\partial \theta_2}
+  - \frac{\partial U_2}{\partial \theta_2}
+  \\
+  &= - m_2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \sin (\theta_1 + \theta_2)
+  - m_2 g l_2 \sin \theta_2
+  \end{align}
+
+  なので、オイラー-ラグランジュ方程式は次のようになる：
+  \begin{align}
+  m_2 l_2^2 \ddot{\theta}_2
+  + m_2 l_1 l_2 \ddot{\theta}_1 \cos (\theta_1 + \theta_2)
+  - m_2 l_1 l_2 \dot{\theta}_1^2 \sin (\theta_1 + \theta_2)
+  + m_2 g l_2 \sin \theta_2
+  = 0
+  \end{align}
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/宇都宮大学/index.html">宇都宮大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
