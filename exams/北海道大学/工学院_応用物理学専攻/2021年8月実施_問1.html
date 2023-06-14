@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      北海道大学 大学院 工学院 応用物理学専攻
+      2021年8月実施 問1 応用数学I
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    北海道大学 大学院
+    <br>
+    工学院 応用物理学専攻
+    <br>
+    2021年8月実施 [問1] 応用数学I
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.eng.hokudai.ac.jp/graduate/examinfo/test/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  $T_\infty = 0$ として考える。
+  </p>
+
+  <h2>[1]</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial \hat{T}(k,t)}{\partial t}
+  &= \frac{1}{2\pi} \int_{-\infty}^\infty
+  \frac{\partial T(x,t)}{\partial t} e^{-ikt} dx
+  \\
+  &= \frac{\mu}{2\pi} \int_{-\infty}^\infty
+  \frac{\partial^2 T(x,t)}{\partial^2 x} e^{-ikt} dx
+  \\
+  &= \frac{\mu}{2\pi}
+  \left[ \frac{\partial T(x,t)}{\partial x} e^{-ikt} \right]_{-\infty}^\infty
+  + \frac{i \mu k}{2\pi}
+  \int_{-\infty}^\infty \frac{\partial T(x,t)}{\partial x} e^{-ikt} dx
+  \\
+  &= \frac{i \mu k}{2\pi} \left[ T(x,t) e^{-ikt} \right]_{-\infty}^\infty
+  - \frac{\mu k^2}{2\pi} \int_{-\infty}^\infty T(x,t) e^{-ikt} dx
+  \\
+  &= - \mu k^2 \hat{T}(k,t)
+  \end{align}
+  </p>
+
+  <h2>[2]</h2>
+
+  <p>
+  \begin{align}
+  \hat{T}(k,t) = A(k) e^{-\mu k^2 t}
+  \end{align}
+  ここで $A(k)$ は $t$ によらない積分定数であるが、
+  $k$ ごとに決めるので $k$ の関数として書いた。
+  </p>
+
+  <h2>[3]</h2>
+
+  <p>
+  [2] で得た表式を使って、次のように書ける：
+  \begin{align}
+  T(x,t)
+  &= \int_{-\infty}^\infty \hat{T}(k,t) e^{ikx} dk
+  \\
+  &= \int_{-\infty}^\infty A(k) e^{ikx - \mu k^2 t} dk
+  \end{align}
+  そこで $t=0$ とすると、次を得る：
+  \begin{align}
+  T_0(x) &= \int_{-\infty}^\infty A(k) e^{ikx} dk
+  \\
+  \therefore \ \ 
+  A(k) &= \frac{1}{2\pi} \int_{-\infty}^\infty T_0(x) e^{-ikx} dx
+  \end{align}
+  よって、次を得る：
+  \begin{align}
+  T(x,t)
+  &= \frac{1}{2\pi} \int_{-\infty}^\infty dk \int_{-\infty}^\infty dy
+  \ T_0(y) e^{ik(x-y) - \mu k^2 t}
+  \end{align}
+  </p>
+
+  <h2>[4]</h2>
+
+  <p>
+  $X = k \sqrt{\mu t}$ とおくと、
+  \begin{align}
+  ik(y-x) - \mu k^2 t
+  &= - X^2 + i(x-y) \frac{X}{\sqrt{\mu t}}
+  \\
+  &= - (X + i \beta)^2 - \frac{(x-y)^2}{4 \mu t}
+  \ \ \ \ \ \ \ \ 
+  \left( \beta = - \frac{x-y}{2 \sqrt{\mu t}} \text{ とおいた } \right)
+  \end{align}
+  となるので、次を得る：
+  \begin{align}
+  T(x,t)
+  &= \frac{1}{2\pi} \int_{-\infty}^\infty dk \int_{-\infty}^\infty dy
+  \ T_0(y) e^{ik(y-x) - \mu k^2 t}
+  \\
+  &= \frac{1}{2\pi} \int_{-\infty}^\infty dy
+  \ T_0(y) e^{- \frac{(x-y)^2}{4 \mu t}}
+  \int_{-\infty}^\infty \frac{dX}{\sqrt{\mu t}}
+  e^{-(X + i \beta)^2}
+  \\
+  &= \frac{1}{2} \sqrt{\frac{\pi}{\mu t}} \int_{-\infty}^\infty dy
+  \ T_0(y) e^{- \frac{(x-y)^2}{4 \mu t}}
+  \end{align}
+  </p>
+
+  <h2>[4]</h2>
+
+  <p>
+  \begin{align}
+  T(x,t)
+  &= \frac{1}{2} \sqrt{\frac{\pi}{\mu t}} \int_{-\infty}^\infty dy
+  \ \delta(y) e^{- \frac{(x-y)^2}{4 \mu t}}
+  \\
+  &= \frac{1}{2} \sqrt{\frac{\pi}{\mu t}} e^{- \frac{x^2}{4 \mu t}}
+  \end{align}
+  </p>
+
+  <h2>[5]</h2>
+
+  <p>
+  [3] で得た表式より、
+  \begin{align}
+  \int_{-\infty}^\infty dx \ T(x,t)
+  &= \frac{1}{2} \sqrt{\frac{\pi}{\mu t}}
+  \int_{-\infty}^\infty dy \ T_0(y)
+  \int_{-\infty}^\infty dx e^{- \frac{(x-y)^2}{4 \mu t}}
+  \\
+  &= \frac{1}{2} \sqrt{\frac{\pi}{\mu t}}
+  \int_{-\infty}^\infty dy \ T_0(y)
+  \int_{-\infty}^\infty 2 \sqrt{\mu t} dX e^{-X^2}
+  \ \ \ \ \ \ \ \ 
+  \left( X = \frac{x-y}{2 \sqrt{\mu t}} \right)
+  \\
+  &= \int_{-\infty}^\infty dy \ T_0(y)
+  \end{align}
+  がわかるが、これは $t$ を含まないので、時間的に一定である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
