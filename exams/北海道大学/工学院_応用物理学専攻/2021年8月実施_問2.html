@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      北海道大学 大学院 工学院 応用物理学専攻
+      2021年8月実施 問2 力学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    北海道大学 大学院
+    <br>
+    工学院 応用物理学専攻
+    <br>
+    2021年8月実施 [問2] 力学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.eng.hokudai.ac.jp/graduate/examinfo/test/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  時間微分を $d/dt$ や $\dot{}$ で表す。
+  </p>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  x &= r \sin \theta \cos \omega t
+  \\
+  y &= r \sin \theta \sin \omega t
+  \\
+  z &= r \cos \theta
+  \end{align}
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  \begin{align}
+  \dot{x}
+  &= \dot{r} \sin \theta \cos \omega t - \omega r \sin \theta \sin \omega t
+  \\
+  \dot{y}
+  &= \dot{r} \sin \theta \sin \omega t + \omega r \sin \theta \cos \omega t
+  \\
+  \dot{z}
+  &= \dot{r} \cos \theta
+  \end{align}
+  から、
+  \begin{align}
+  K
+  &= \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 + \dot{z}^2 \right)
+  \\
+  &= \frac{1}{2} m \left( \dot{r}^2 + \omega^2 r^2 \sin^2 \theta \right)
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  位置エネルギーの原点を $x=0$ とすると、
+  \begin{align}
+  V
+  &= mgz
+  \\
+  &= mgr \cos \theta
+  \end{align}
+  であり、
+  \begin{align}
+  L
+  &= K-V
+  \\
+  &= \frac{1}{2} m \left( \dot{r}^2 + \omega^2 r^2 \sin^2 \theta \right)
+  - mgr \cos \theta
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>(4)</h2>
+
+  <p>
+  \begin{align}
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{r}}
+  &= \frac{d}{dt} m \dot{r}
+  \\
+  &= m \ddot{r}
+  \\
+  \frac{\partial L}{\partial r}
+  &= m \omega^2 r \sin^2 \theta - mg \cos \theta
+  \end{align}
+  なので、オイラー-ラグランジュ方程式は
+  \begin{align}
+  \ddot{r}
+  &= \omega^2 r \sin^2 \theta - g \cos \theta
+  \end{align}
+  となる。
+  </p>
+
+  <h2>(5)</h2>
+
+  <p>
+  $r=r_0$ のとき $\ddot{r}=0$ であるから、(4) で得た式より、
+  \begin{align}
+  \omega^2 r_0 \sin^2 \theta - g \cos \theta = 0
+  \end{align}
+  がわかる。
+  そこで、 (4) で得た式に $r=s+r_0$ を代入すると、
+  \begin{align}
+  \ddot{s}
+  &= \omega^2 (s+r_0) \sin^2 \theta - g \cos \theta
+  \\
+  &= \omega^2 s \sin^2 \theta
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>(6)</h2>
+
+  <p>
+  (5) で得た微分方程式の一般解は
+  \begin{align}
+  s &= A e^{\omega t \sin \theta} + B e^{- \omega t \sin \theta}
+  \ \ \ \ \ \ \ \ 
+  (A,B \text{ は積分定数 } )
+  \\
+  \dot{s}
+  &= \omega \sin \theta
+  \left( A e^{\omega t \sin \theta} - B e^{- \omega t \sin \theta} \right)
+  \end{align}
+  であり、 $t=0$ のとき $s=\delta s, \dot{s}=0$ であるから、
+  \begin{align}
+  s
+  &= \frac{\delta s}{2}
+  \left( e^{\omega t \sin \theta} + e^{- \omega t \sin \theta} \right)
+  \\
+  \dot{s}
+  &= \frac{\delta s}{2} \omega \sin \theta
+  \left( e^{\omega t \sin \theta} - e^{- \omega t \sin \theta} \right)
+  \end{align}
+  がわかる。
+  </p>
+
+  <p>
+  $\delta s \gt 0$ のとき、 $t \gt 0$ において $\dot{s} \gt 0$ であるから、
+  $r$ は単調に増加する。
+  また、 $\delta s \lt 0$ のとき、 $t \gt 0$ において $\dot{s} \lt 0$ であるから、
+  $r$ は単調に減少する。
+  よって、このつり合いは不安定である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
