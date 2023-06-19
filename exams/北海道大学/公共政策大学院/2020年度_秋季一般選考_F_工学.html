@@ -106,6 +106,59 @@
   \end{align}
   </p>
 
+  <h3>問題 5. 二項分布</h3>
+
+  <p>
+  期日内に完了する設計業務の件数が $n$ である確率は
+  \begin{align}
+  p(n) =
+  \frac{6!}{n!(6-n)!}
+  \left( \frac{3}{5} \right)^n \left( \frac{2}{5} \right)^{6-n}
+  \end{align}
+  である。
+  </p>
+
+  <h4>①</h4>
+
+  <p>
+  求める平均値は
+  \begin{align}
+  \sum_{n=0}^6 n p(n)
+  &= 
+  \sum_{n=0}^6 n \frac{6!}{n!(6-n)!}
+  \left( \frac{3}{5} \right)^n \left( \frac{2}{5} \right)^{6-n}
+  \\
+  &= 
+  \sum_{n=1}^6 \frac{6!}{(n-1)!(6-n)!}
+  \left( \frac{3}{5} \right)^n \left( \frac{2}{5} \right)^{6-n}
+  \\
+  &= \frac{3}{5} \cdot 6
+  \sum_{k=0}^5 \frac{5!}{k!(5-k)!}
+  \left( \frac{3}{5} \right)^k \left( \frac{2}{5} \right)^{5-k}
+  \ \ \ \ \ \ \ \ (k=n-1)
+  \\
+  &= \frac{18}{5}
+  \\
+  &= 3.6
+  \end{align}
+  である。
+  </p>
+
+  <h4>②</h4>
+
+  <p>
+  求める確率は
+  \begin{align}
+  p(6)
+  &= \left( \frac{3}{5} \right)^6
+  \\
+  &= \frac{729}{15625}
+  \\
+  &= 0.046656
+  \end{align}
+  である。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->
