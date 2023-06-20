@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪公立大学 大学院
+      経済学研究科
+      2023年度 計量経済学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    大阪公立大学 大学院
+    <br>
+    経済学研究科
+    <br>
+    2023年度 計量経済学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.omu.ac.jp/econ/admissions/graduate/past-exam/index.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>[1]</h2>
+
+  <h3>(1-1)</h3>
+
+  <p>
+  \begin{align}
+  Q
+  &= \sum_{i=1}^n \left( y_i - \alpha - \beta x_i \right)^2
+  \end{align}
+  とおくと、
+  \begin{align}
+  \frac{\partial Q}{\partial \alpha}
+  &= -2 \sum_{i=1}^n \left( y_i - \alpha - \beta x_i \right)
+  \\
+  \frac{\partial Q}{\partial \beta}
+  &= -2 \sum_{i=1}^n x_i \left( y_i - \alpha - \beta x_i \right)
+  \end{align}
+  であるから、最小二乗推定量 $\hat{\alpha}, \hat{\beta}$ は、次を満たす：
+  \begin{align}
+  \sum_{i=1}^n \left( y_i - \hat{\alpha} - \hat{\beta} x_i \right) &= 0
+  \tag{a}
+  \\
+  \sum_{i=1}^n x_i \left( y_i - \hat{\alpha} - \hat{\beta} x_i \right) &= 0
+  \tag{b}
+  \end{align}
+  これらは、最小二乗残差
+  $ \hat{u}_i = y_i - \hat{\alpha} - \hat{\beta} x_i $
+  を使うと、次のように書ける：
+  \begin{align}
+  \sum_{i=1}^n \hat{u}_i &= 0
+  \tag{a'}
+  \\
+  \sum_{i=1}^n x_i \hat{u}_i &= 0
+  \tag{b'}
+  \end{align}
+  よって、次がわかる：
+  \begin{align}
+  \sum_{i=1}^n \left( x_i - \bar{x} \right) \hat{u}_i
+  &= \sum_{i=1}^n x_i \hat{u}_i - \bar{x} \sum_{i=1}^n \hat{u}_i
+  \\
+  &= 0
+  \end{align}
+  </p>
+
+  <h3>(1-2)</h3>
+
+  <p>
+  $ \bar{u} = \frac{1}{n} \sum_{i=1}^n \hat{u}_i $ と書くと、
+  式 (a') より $ \bar{u} = 0 $ であるから、次が成り立つ：
+  \begin{align}
+  \bar{y}
+  &= \hat{\alpha} + \hat{\beta} \bar{x} + \bar{u}
+  \\
+  &= \hat{\alpha} + \hat{\beta} \bar{x}
+  \end{align}
+  よって、次が成り立つ：
+  \begin{align}
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
+  &= \sum_{i=1}^n \left( \hat{\alpha} + \hat{\beta} x_i + \hat{u}_i
+  - \left( \hat{\alpha} + \hat{\beta} \bar{x} \right) \right)^2
+  \\
+  &= \sum_{i=1}^n \left(
+  \hat{\beta} \left( x_i - \bar{x} \right) + \hat{u}_i \right)^2
+  \\
+  &= \hat{\beta}^2 \sum_{i=1}^n \left( x_i - \bar{x} \right)^2
+  + \sum_{i=1}^n \hat{u}_i^2
+  + 2 \hat{\beta} \sum_{i=1}^n \left( x_i - \bar{x} \right) \hat{u}_i
+  \\
+  &= \hat{\beta}^2 \sum_{i=1}^n \left( x_i - \bar{x} \right)^2
+  + \sum_{i=1}^n \hat{u}_i^2
+  \ \ \ \ \ \ \ \ ( \because \text{ (1-1) } )
+  \end{align}
+  </p>
+
+  <h3>(1-3)</h3>
+
+  <p>
+  (1-2) で得た
+  \begin{align}
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
+  &= \hat{\beta}^2 \sum_{i=1}^n \left( x_i - \bar{x} \right)^2
+  + \sum_{i=1}^n \hat{u}_i^2
+  \end{align}
+  の各項は $0$ 以上であるから、
+  \begin{align}
+  0 \leq \sum_{i=1}^n \hat{u}_i^2 \leq
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
+  \end{align}
+  よって、
+  \begin{align}
+  0
+  \leq
+  1 - \frac{\sum_{i=1}^n \hat{u}_i^2}{
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2}
+  \leq 1
+  \end{align}
+  が成り立つ。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
