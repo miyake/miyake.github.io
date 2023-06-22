@@ -167,7 +167,7 @@
   0 \leq \sum_{i=1}^n \hat{u}_i^2 \leq
   \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
   \end{align}
-  よって、
+  であり、 $\sum_{i=1}^n \left( y_i - \bar{y} \right)^2 \ne 0$ を仮定すると、
   \begin{align}
   0
   \leq
@@ -175,7 +175,211 @@
   \sum_{i=1}^n \left( y_i - \bar{y} \right)^2}
   \leq 1
   \end{align}
+  を得る。
+  </p>
+
+  <h3>(1-4)</h3>
+
+  <p>
+  \begin{align}
+  Q'
+  &= \sum_{i=1}^n \left( y_i  - \beta' x_i \right)^2
+  \end{align}
+  とおくと、
+  \begin{align}
+  \frac{\partial Q'}{\partial \beta'}
+  &= -2 \sum_{i=1}^n x_i \left( y_i - \beta' x_i \right)
+  \end{align}
+  であるから、最小二乗推定量 $\hat{\beta}'$ は、次を満たす：
+  \begin{align}
+  \sum_{i=1}^n x_i \left( y_i - \hat{\beta}' x_i \right) &= 0
+  \end{align}
+  これらは、最小二乗残差
+  $ \hat{u}_i' = y_i - \hat{\beta} x_i $
+  を使うと、次のように書ける：
+  \begin{align}
+  \sum_{i=1}^n x_i \hat{u}'_i &= 0
+  \end{align}
+  よって、
+  \begin{align}
+  \sum_{i=1}^n \left( x_i - \bar{x} \right) \hat{u}'_i
+  &= \sum_{i=1}^n x_i \hat{u}'_i - \bar{x} \sum_{i=1}^n \hat{u}'_i
+  \\
+  &= - \bar{x} \sum_{i=1}^n \hat{u}'_i
+  \end{align}
+  となるが、最後の表式は必ずしも $0$ ではないので、
+  題意の式は必ずしも成立しない。
+  </p>
+
+  <h3>(1-5)</h3>
+
+  <p>
+  $ \bar{u}' = \frac{1}{n} \sum_{i=1}^n \hat{u}'_i $ と書くと、
+  \begin{align}
+  \bar{y}
+  &= \hat{\beta}' \bar{x} + \bar{u}'
+  \end{align}
+  であり、
+  \begin{align}
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
+  &= \sum_{i=1}^n \left( \hat{\beta}' x_i + \hat{u}'_i
+  - \left( \hat{\beta}' \bar{x} + \bar{u}' \right) \right)^2
+  \\
+  &= \sum_{i=1}^n \left(
+  \hat{\beta}' \left( x_i - \bar{x} \right) + \hat{u}'_i - \bar{u}' \right)^2
+  \\
+  &= \hat{\beta}'^2 \sum_{i=1}^n \left( x_i - \bar{x} \right)^2
+  + \sum_{i=1}^n \hat{u}_i'^2 + n \bar{u}'^2
+  + 2 \hat{\beta}' \sum_{i=1}^n \left( x_i - \bar{x} \right) \hat{u}'_i
+  - 2 \hat{\beta}' \bar{u}' \sum_{i=1}^n \left( x_i - \bar{x} \right)
+  - 2 \bar{u}' \sum_{i=1}^n \hat{u}'_i
+  \\
+  &= \hat{\beta}'^2 \sum_{i=1}^n \left( x_i - \bar{x} \right)^2
+  + \sum_{i=1}^n \hat{u}_i'^2 - n \bar{u}'^2
+  - 2 n \hat{\beta}' \bar{x} \bar{u}'
+  \end{align}
   が成り立つ。
+  $\bar{u}'$ は必ずしも $0$ ではないので、題意の式は必ずしも成立しない。
+  </p>
+
+  <h3>(1-6)</h3>
+
+  <p>
+  \begin{align}
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2 \geq 0
+  , \ \ 
+  \sum_{i=1}^n \hat{u}_i'^2 \geq 0
+  \end{align}
+  が成り立つので、
+  $\sum_{i=1}^n \left( y_i - \bar{y} \right)^2 \ne 0$ を仮定すると、
+  \begin{align}
+  \frac{\sum_{i=1}^n \hat{u}_i'^2}
+  {\sum_{i=1}^n \left( y_i - \bar{y} \right)^2}
+  &\geq 0
+  \\
+  \therefore \ \ 
+  1 - \frac{\sum_{i=1}^n \hat{u}_i'^2}
+  {\sum_{i=1}^n \left( y_i - \bar{y} \right)^2}
+  &\leq 1
+  \end{align}
+  を得る。
+  また、
+  \begin{align}
+  \sum_{i=1}^n \hat{u}_i'^2 \leq
+  \sum_{i=1}^n \left( y_i - \bar{y} \right)^2
+  \end{align}
+  は必ずしも成り立たないので、
+  \begin{align}
+  0 \leq 1 - \frac{\sum_{i=1}^n \hat{u}_i'^2}
+  {\sum_{i=1}^n \left( y_i - \bar{y} \right)^2}
+  \end{align}
+  は必ずしも成り立たない。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>[2]</h2>
+
+  <p>
+  $\cdot$ の期待値を $E[\cdot]$ 分散を $V[\cdot]$ で表す。
+  </p>
+
+  <h3>(2-1)</h3>
+
+  <p>
+  \begin{align}
+  E \left[ \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right]
+  &= \sigma^2 E \left[ \sum_{i=1}^n
+  \left( \frac{X_i - \bar{X}}{\sigma} \right)^2 \right]
+  \\
+  &= \sigma^2 (n-1)
+  \end{align}
+  </p>
+
+  <h3>(2-2)</h3>
+
+  <p>
+  \begin{align}
+  V \left[ \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right]
+  &= \sigma^4 V \left[ \sum_{i=1}^n
+  \left( \frac{X_i - \bar{X}}{\sigma} \right)^2 \right]
+  \\
+  &= 2 \sigma^4 (n-1)
+  \end{align}
+  </p>
+
+  <h3>(2-3)</h3>
+
+  <p>
+  $ W_i-a
+  = \left( W_i - E \left[ W_i \right] \right)
+  + \left( E \left[ W_i \right] - a \right) $
+  の両辺を2乗すると、
+  \begin{align}
+  \left( W_i - a \right)^2
+  = \left( W_i - E \left[ W_i \right] \right)^2
+  + \left( E \left[ W_i \right] - a \right)^2
+  + 2 \left( W_i - E \left[ W_i \right] \right)
+  \left( E \left[ W_i \right] - a \right)
+  \end{align}
+  であり、
+  \begin{align}
+  E \left[ \left( W_i - a \right)^2 \right]
+  &= E \left[ \left( W_i - E \left[ W_i \right] \right)^2 \right]
+  + \left( E \left[ W_i \right] - a \right)^2
+  + 2 \left( E \left[ W_i \right] - E \left[ W_i \right] \right)
+  \left( E \left[ W_i \right] - a \right)
+  \\
+  &= E \left[ \left( W_i - E \left[ W_i \right] \right)^2 \right]
+  + \left( E \left[ W_i \right] - a \right)^2
+  \\
+  &= V \left[ W_i \right]
+  + \left( E \left[ W_i \right] - a \right)^2
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>(2-4)</h3>
+
+  <p>
+  \begin{align}
+  E \left[ \left\{
+  c \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 - \sigma^2
+  \right\}^2 \right]
+  &= V \left[ c \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right]
+  + \left( E \left[ c \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right]
+  - \sigma^2 \right)^2
+  \\
+  &= 2 c^2 \sigma^4 (n-1) + \left( c \sigma^2 (n-1) - \sigma^2 \right)^2
+  \\
+  &= \sigma^4 \left[ (n+1)(n-1)c^2 - 2(n-1)c + 1 \right]
+  \end{align}
+  </p>
+
+  <h3>(2-5)</h3>
+
+  <p>
+  \begin{align}
+  E \left[ \left\{
+  c \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 - \sigma^2
+  \right\}^2 \right]
+  &= \sigma^4 (n+1)(n-1) \left( c^2 - \frac{2}{n+1} c \right) + \sigma^4
+  \\
+  &= \sigma^4 (n+1)(n-1) \left( c - \frac{1}{n+1} \right)^2
+  - \sigma^4 \frac{n-1}{n+1} + \sigma^4
+  \end{align}
+  なので、求める $c$ の値は $c=1/(n+1)$ である。
   </p>
 
 
