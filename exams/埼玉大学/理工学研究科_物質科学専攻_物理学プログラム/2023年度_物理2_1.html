@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      埼玉大学 大学院 理工学研究科
+      物質科学専攻 物理学プログラム
+      2023年度 物理II [1]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/埼玉大学/index.html">埼玉大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    埼玉大学 大学院 理工学研究科
+    <br>
+    物質科学専攻 物理学プログラム
+    <br>
+    2023年度 物理II [1]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://phy.saitama-u.ac.jp/admission/#daigakuin">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>問 1</h2>
+
+  <p>
+  \begin{align}
+  0
+  &= \langle - | \left( \hat{Q} - \hat{Q} \right) | + \rangle
+  \\
+  &= \left( \langle - | \hat{Q} \right) | + \rangle
+  - \langle - | \left( \hat{Q} | + \rangle \right)
+  \\
+  &= - \langle - | + \rangle - \langle - | | + \rangle
+  \\
+  &= - 2 \langle - | + \rangle
+  \end{align}
+  から、
+  \begin{align}
+  \langle - | + \rangle = 0
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>問 2</h2>
+
+  <p>
+  \begin{align}
+  \hat{H} \hat{Q} | + \rangle
+  &= \left( \hat{H}_0 + \hat{H}_1 \right) | + \rangle
+  \\
+  &= E_0 | + \rangle + \Delta | - \rangle,
+  \\
+  \hat{Q} \hat{H} | + \rangle
+  &= \hat{Q} \left( \hat{H}_0 + \hat{H}_1 \right) | + \rangle
+  \\
+  &= \hat{Q} \left( E_0 | + \rangle + \Delta | - \rangle \right)
+  \\
+  &= E_0 | + \rangle - \Delta | - \rangle
+  \end{align}
+  なので、 $\hat{H}\hat{Q}|+\rangle \ne \hat{Q}\hat{H}|+\rangle$
+  であり、 $\hat{H}\hat{Q} \ne \hat{Q}\hat{H}$ がわかる。
+  </p>
+
+  <h2>問 3</h2>
+
+  <p>
+  基底 $|+\rangle, |-\rangle$ を使って $\hat{H}$ を行列表示すると、
+  \begin{align}
+  \begin{pmatrix} E_0 & \Delta \\ \Delta & E_0 \end{pmatrix}
+  \end{align}
+  となるので、 $\hat{H}$ の固有値を $E$ とすると
+  \begin{align}
+  0
+  &= \det \begin{pmatrix} E_0-E & \Delta \\ \Delta & E_0-E \end{pmatrix}
+  \\
+  &= E^2 - 2E_0E + E_0^2 - \Delta^2
+  \\
+  &= \left( E - E_0 - \Delta \right) \left( E - E_0 + \Delta \right)
+  \\
+  \therefore \ \ 
+  E &= E_0 \pm \Delta
+  \end{align}
+  であり、
+  \begin{align}
+  E_1 = E_0 - \Delta
+  , \ 
+  E_2 = E_0 + \Delta
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  固有値 $E_1=E_0-\Delta$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \begin{pmatrix} \Delta & \Delta \\ \Delta & \Delta \end{pmatrix}
+  \begin{pmatrix} u \\ v \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと $u+v=0$ となり、
+  固有値 $E_2=E_0+\Delta$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \begin{pmatrix} -\Delta & \Delta \\ \Delta & -\Delta \end{pmatrix}
+  \begin{pmatrix} u \\ v \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと $u-v=0$ となるので、例えば、
+  \begin{align}
+  |1\rangle &= \frac{1}{\sqrt{2}} |+\rangle - \frac{1}{\sqrt{2}} |-\rangle
+  ,\\
+  |2\rangle &= \frac{1}{\sqrt{2}} |+\rangle + \frac{1}{\sqrt{2}} |-\rangle
+  \end{align}
+  とすればよい。
+  </p>
+
+
+  <h2>問 4</h2>
+
+  <p>
+  $\langle +|+\rangle=1, \langle -|-\rangle=1, \langle -|+\rangle=0$
+  から
+  \begin{align}
+  \langle 1|1\rangle=1, \langle 2|2\rangle=1, \langle 1|2\rangle=0
+  \tag{a}
+  \end{align}
+  がわかる。
+  </p>
+
+  <p>
+  式 (5) に式 (6) を代入すると
+  \begin{align}
+  i \hbar \frac{dc_1(t)}{dt} |1\rangle + i \hbar \frac{dc_2(t)}{dt} |2\rangle
+  = E_1 c_1(t) |1\rangle + E_2 c_2(t) |2\rangle
+  \tag{b}
+  \end{align}
+  となる。
+  </p>
+
+  <p>
+  式 (b) に左から $\langle 1|$ をかけると、式 (a) より、
+  \begin{align}
+  i \hbar \frac{dc_1(t)}{dt} = E_1 c_1(t)
+  \end{align}
+  となり、 $c_1(0)=a$ を考慮すると、
+  \begin{align}
+  c_1(t) = a \exp \left( -i \frac{E_1 t}{\hbar} \right)
+  = a \exp \left( -i \frac{(E_0 - \Delta) t}{\hbar} \right)
+  \end{align}
+  を得る。
+  同様に、式 (b) に左から $\langle 2|$ をかけると、式 (a) より、
+  \begin{align}
+  i \hbar \frac{dc_2(t)}{dt} = E_2 c_2(t)
+  \end{align}
+  となり、 $c_2(0)=b$ を考慮すると、
+  \begin{align}
+  c_2(t) = b \exp \left( -i \frac{E_2 t}{\hbar} \right)
+  = b \exp \left( -i \frac{(E_0 + \Delta) t}{\hbar} \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>問 5</h2>
+
+  <p>
+  \begin{align}
+  | \Psi(0) \rangle
+  &= | + \rangle
+  \\
+  &= \frac{1}{\sqrt{2}} | 1 \rangle + \frac{1}{\sqrt{2}} | 2 \rangle
+  \end{align}
+  であるから、問 4 の $a,b$ が $a=b=1/\sqrt{2}$ の場合に相当し、
+  \begin{align}
+  | \Psi(t) \rangle
+  &= \frac{1}{\sqrt{2}} \exp \left( -i \frac{E_1 t}{\hbar} \right)
+  | 1 \rangle
+  + \frac{1}{\sqrt{2}} \exp \left( -i \frac{E_2 t}{\hbar} \right)
+  | 2 \rangle
+  \\
+  &= \frac{1}{2} \exp \left( -i \frac{E_1 t}{\hbar} \right)
+  \left( | + \rangle - | - \rangle \right)
+  + \frac{1}{2} \exp \left( -i \frac{E_2 t}{\hbar} \right)
+  \left( | + \rangle + | - \rangle \right)
+  \\
+  &= \frac{1}{2} \left( \exp \left( -i \frac{E_1 t}{\hbar} \right)
+  + \exp \left( -i \frac{E_2 t}{\hbar} \right) \right) | + \rangle
+  + \frac{1}{2} \left( - \exp \left( -i \frac{E_1 t}{\hbar} \right)
+  + \exp \left( -i \frac{E_2 t}{\hbar} \right) \right) | - \rangle
+  \\
+  &= \exp \left( -i \frac{E_0 t}{\hbar} \right) \left(
+  \cos \left( \frac{\Delta t}{\hbar} \right) | + \rangle
+  + i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>問 6</h2>
+
+  <p>
+  問 5 で求めた $| \Psi(t) \rangle$ を使うと、
+  \begin{align}
+  \langle + | \Psi(t) \rangle
+  &= \exp \left( -i \frac{E_0 t}{\hbar} \right)
+  \cos \left( \frac{\Delta t}{\hbar} \right)
+  \end{align}
+  となるから、
+  \begin{align}
+  P_+(t)
+  &= \left| \langle + | \Psi(t) \rangle \right|^2
+  \\
+  &= \cos^2 \left( \frac{\Delta t}{\hbar} \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>問 7</h2>
+
+  <p>
+  問 5 で求めた $| \Psi(t) \rangle$ を使うと、
+  \begin{align}
+  \hat{Q} | \Psi(t) \rangle
+  &= \exp \left( -i \frac{E_0 t}{\hbar} \right) \left(
+  \cos \left( \frac{\Delta t}{\hbar} \right) | + \rangle
+  - i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
+  \end{align}
+  となるから、
+  \begin{align}
+  \langle \Psi(t) | \hat{Q} | \Psi(t) \rangle
+  &= \cos^2 \left( \frac{\Delta t}{\hbar} \right)
+  + \sin^2 \left( \frac{\Delta t}{\hbar} \right)
+  \\
+  &= 1
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/埼玉大学/index.html">埼玉大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
