@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      広島大学 大学院 先進理工系科学研究科
+      輸送・環境システムプログラム
+      2022年8月実施 専門科目I 数学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/広島大学/index.html">広島大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    広島大学 大学院 先進理工系科学研究科
+    <br>
+    輸送・環境システムプログラム
+    <br>
+    2022年8月実施 専門科目I 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.hiroshima-u.ac.jp/adse/admission/m_admission/m_examinations">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 1</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \int x^3 \log 3x dx
+  &= \frac{1}{4} x^4 \log 3x - \frac{1}{4} \int x^3 dx
+  \\
+  &= \frac{1}{4} x^4 \log 3x - \frac{1}{16} x^4 + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  </p>
+  <!-- OK -->
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \int_0^\infty x^2 e^{-2x} dx
+  &= - \frac{1}{2} \left[ x^2 e^{-2x} \right]_0^\infty
+  + \int_0^\infty x e^{-2x} dx
+  \\
+  &= - \frac{1}{2} \left[ x e^{-2x} \right]_0^\infty
+  + \frac{1}{2} \int_0^\infty e^{-2x} dx
+  \\
+  &= - \frac{1}{4} \left[ e^{-2x} \right]_0^\infty
+  \\
+  &= \frac{1}{4}
+  \end{align}
+  </p>
+  <!-- OK -->
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  f(x,y) &= \log \sqrt{x^2+y^2}
+  \\
+  &= \frac{1}{2} \log \left( x^2 + y^2 \right)
+  \\
+  \frac{\partial f(x,y)}{\partial x}
+  &= \frac{1}{2} \frac{2x}{x^2 + y^2}
+  \\
+  &= \frac{x}{x^2 + y^2}
+  \\
+  \frac{\partial^2 f(x,y)}{\partial^2 x}
+  &= \frac{\left( x^2 + y^2 \right) - x \cdot 2x}{\left( x^2 + y^2 \right)^2}
+  \\
+  &= \frac{-x^2 + y^2}{\left( x^2 + y^2 \right)^2}
+  \\
+  \frac{\partial^2 f(x,y)}{\partial^2 y}
+  &= \frac{x^2 - y^2}{\left( x^2 + y^2 \right)^2}
+  \\
+  \therefore \ \ 
+  \frac{\partial^2 f(x,y)}{\partial^2 x}
+  + \frac{\partial^2 f(x,y)}{\partial^2 y}
+  &= 0
+  \end{align}
+  </p>
+  <!-- OK -->
+
+  <h3>(4)</h3>
+
+  <p>
+  まず、与えられた微分方程式に $y=Ax+B$
+  （ $A,B$ は $x$ によらない定数）を代入すると、
+  \begin{align}
+  A &= 3 + x + Ax + B
+  \therefore \ \ 
+  A = -1, B = -4
+  \end{align}
+  となるので、
+  \begin{align}
+  y = -x-4
+  \end{align}
+  は特殊解である。
+  また、
+  \begin{align}
+  \frac{dy}{dx} = y
+  \end{align}
+  を考えると、これの一般解は
+  \begin{align}
+  y = Ce^x
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  である。
+  よって、与えられた微分方程式の一般解は
+  \begin{align}
+  y = Ce^x - x - 4
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  である。
+  </p>
+  <!-- OK -->
+
+  <!--
+  <h3>(4)</h3>
+  固有値を求める問題
+  -->
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/広島大学/index.html">広島大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
