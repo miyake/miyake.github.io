@@ -90,7 +90,7 @@
   &= \left( \langle - | \hat{Q} \right) | + \rangle
   - \langle - | \left( \hat{Q} | + \rangle \right)
   \\
-  &= - \langle - | + \rangle - \langle - | | + \rangle
+  &= - \langle - | + \rangle - \langle - | + \rangle
   \\
   &= - 2 \langle - | + \rangle
   \end{align}
@@ -247,9 +247,22 @@
   + \frac{1}{2} \left( - \exp \left( -i \frac{E_1 t}{\hbar} \right)
   + \exp \left( -i \frac{E_2 t}{\hbar} \right) \right) | - \rangle
   \\
+  &= \frac{1}{2} \left( \exp \left( -i \frac{(E_0-\Delta) t}{\hbar} \right)
+  + \exp \left( -i \frac{(E_0+\Delta) t}{\hbar} \right) \right) | + \rangle
+  + \frac{1}{2} \left( - \exp \left( -i \frac{(E_0-\Delta) t}{\hbar} \right)
+  + \exp \left( -i \frac{(E_0+\Delta) t}{\hbar} \right) \right) | - \rangle
+  \\
+  &= \frac{1}{2} \exp \left( -i \frac{E_0 t}{\hbar} \right)
+  \left(
+  \left( \exp \left( i \frac{\Delta t}{\hbar} \right)
+  + \exp \left( -i \frac{\Delta t}{\hbar} \right) \right) | + \rangle
+  \left( - \exp \left( i \frac{\Delta t}{\hbar} \right)
+  + \exp \left( -i \frac{\Delta t}{\hbar} \right) \right) | - \rangle
+  \right)
+  \\
   &= \exp \left( -i \frac{E_0 t}{\hbar} \right) \left(
   \cos \left( \frac{\Delta t}{\hbar} \right) | + \rangle
-  + i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
+  - i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
   \end{align}
   を得る。
   </p>
@@ -281,15 +294,22 @@
   \hat{Q} | \Psi(t) \rangle
   &= \exp \left( -i \frac{E_0 t}{\hbar} \right) \left(
   \cos \left( \frac{\Delta t}{\hbar} \right) | + \rangle
-  - i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
+  + i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
   \end{align}
   となるから、
   \begin{align}
   \langle \Psi(t) | \hat{Q} | \Psi(t) \rangle
-  &= \cos^2 \left( \frac{\Delta t}{\hbar} \right)
-  + \sin^2 \left( \frac{\Delta t}{\hbar} \right)
+  &= \exp \left( \frac{E_0 t}{\hbar} \right) \left(
+  \cos \left( \frac{\Delta t}{\hbar} \right) \langle + |
+  + i \sin \left( \frac{\Delta t}{\hbar} \right) \langle - | \right)
+  \exp \left( -i \frac{E_0 t}{\hbar} \right) \left(
+  \cos \left( \frac{\Delta t}{\hbar} \right) | + \rangle
+  + i \sin \left( \frac{\Delta t}{\hbar} \right) | - \rangle \right)
   \\
-  &= 1
+  &= \cos^2 \left( \frac{\Delta t}{\hbar} \right)
+  - \sin^2 \left( \frac{\Delta t}{\hbar} \right)
+  \\
+  &= \cos \left( \frac{2 \Delta t}{\hbar} \right)
   \end{align}
   を得る。
   </p>
