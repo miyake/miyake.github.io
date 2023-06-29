@@ -180,6 +180,167 @@
   固有値を求める問題
   -->
 
+<!--
+  <hr>
+  <h2>問題 2</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  u(x,y,z) &= 2y - z
+  ,\\
+  v(x,y,z) &= x^2 + y^2 - z
+  \end{align}
+  とおくと、これらの勾配ベクトル場は
+  \begin{align}
+  \boldsymbol{\nabla} u(x,y,z) &= 2 \boldsymbol{j} - \boldsymbol{k}
+  ,\\
+  \boldsymbol{\nabla} v(x,y,z)
+  &= 2x \boldsymbol{i} + 2y \boldsymbol{j} - \boldsymbol{k}
+  \end{align}
+  であり、
+  \begin{align}
+  \left| \boldsymbol{\nabla} u(x,y,z) \right| &= \sqrt{5}
+  ,\\
+  \left| \boldsymbol{\nabla} v(x,y,z) \right| &= \sqrt{4x^2+4y^2+1}
+  \end{align}
+  である。
+  よって、求める単位法線ベクトル $\boldsymbol{n}$ は、
+  外向きであることに注意して、平面 $z=2y$ 上で
+  \begin{align}
+  \boldsymbol{n}
+  &= - \frac{\boldsymbol{\nabla} u(x,y,z)}
+  {\left| \boldsymbol{\nabla} u(x,y,z) \right|}
+  = \frac{-2 \boldsymbol{j} + \boldsymbol{k}}{\sqrt{5}}
+  \end{align}
+  であり、曲面 $z=x^2+y^2$ 上で
+  \begin{align}
+  \boldsymbol{n}
+  &= \frac{\boldsymbol{\nabla} v(x,y,z)}
+  {\left| \boldsymbol{\nabla} v(x,y,z) \right|}
+  = \frac{2x \boldsymbol{i} + 2y \boldsymbol{j} - \boldsymbol{k}}
+  {\sqrt{4x^2+4y^2+1}}
+  \end{align}
+  であることがわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  求める関係式は、 $z=2y, z=x^2 + y^2$ から $z$ をして、
+  \begin{align}
+  x^2 + y^2 &= 2y
+  \\
+  x^2 + (y-1)^2 &= 1
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  平面 $z=2y$ 上で、
+  \begin{align}
+  \boldsymbol{F} \cdot \boldsymbol{n}
+  &= \frac{z}{\sqrt{5}}
+  \\
+  &= \frac{2y}{\sqrt{5}}
+  \end{align}
+  である。
+  平面 $z=2y, z=x^2 + y^2$ から $z$ をして、
+  </p>
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 3</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  同次微分方程式
+  \begin{align}
+  y''(t) + \omega_0^2 y(t) = 0
+  \end{align}
+  の一般解は
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  であるから、 (3-1) の特解を $\eta(t)$ とすると、 (3-1) の一般解は
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t + \eta(t)
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  y''(t) + \omega_0^2 y(t) = a \sin \omega t
+  \tag{a}
+  \end{align}
+  に $y(t) = C \sin \omega t + D \cos \omega t$
+  （ $C,D$ は $t$ によらない定数）を代入すると、
+  \begin{align}
+  - C \omega^2 \sin \omega t - D \omega^2 \cos \omega t
+  + \omega_0^2 \left( C \sin \omega t + D \cos \omega t \right)
+  = a \sin \omega t
+  \end{align}
+  となり、 $\omega \ne \omega_0$ を仮定して、
+  \begin{align}
+  C = \frac{a}{\omega_0^2 - \omega^2} , \ D = 0
+  \end{align}
+  を得るから、
+  \begin{align}
+  y(t) = \frac{a \sin \omega t}{\omega_0^2 - \omega^2}
+  \end{align}
+  は (a) の特解であり、したがって、
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t
+  + \frac{a \sin \omega t}{\omega_0^2 - \omega^2}
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  は (a) の一般解である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  \lim_{\omega \to \omega_0} \frac{\sin \omega t}{\omega_0^2 - \omega^2}
+  &= \lim_{\omega \to \omega_0} \frac{t \cos \omega t}{- 2 \omega}
+  \ \ \ \ \ \ \ \ ( \because \text{ ロピタルの定理 } )
+  \\
+  &= - \frac{t \cos \omega_0 t}{2 \omega_0}
+  \end{align}
+  であるから、求める解は
+  \begin{align}
+  y(t)
+  &= A \sin \omega_0 t + B \cos \omega_0 t
+  - \frac{a t \cos \omega_0 t}{2 \omega_0}
+  \\
+  &= A \sin \omega_0 t
+  + \left( B - \frac{a t}{2 \omega_0} \right) \cos \omega_0 t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  である。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->
