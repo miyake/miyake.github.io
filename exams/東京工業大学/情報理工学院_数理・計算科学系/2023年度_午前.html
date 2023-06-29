@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京工業大学 大学院
+      情報理工学院 数理・計算科学系
+      2023年度 午前
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京工業大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京工業大学 大学院
+    <br>
+    情報理工学院 数理・計算科学系
+    <br>
+    2023年度 午前
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.titech.ac.jp/graduate_school/admissions/past_exam_papers.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 A</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  B^2 &= 2 \begin{pmatrix} 1 & 0 & 1 \\ 1 & 0 & 1 \\ -1 & 0 & -1 \end{pmatrix}
+  \\
+  B^3 &= O
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  複素数 $x,y,z$ について
+  \begin{align}
+  xI + yA + zA^2 &= O
+  \tag{a}
+  \end{align}
+  が成り立つとする。
+  式 (a) に $A^2$ をかけると
+  \begin{align}
+  xA^2 + yA^3 + zA^4 &= O
+  \end{align}
+  となるが、 $A^2 \ne O, A^3 = O$ から $x=0$ がわかり、式 (a) は
+  \begin{align}
+  yA + zA^2 &= O
+  \tag{b}
+  \end{align}
+  となる。
+  式 (b) に $A$ をかけると
+  \begin{align}
+  yA^2 + zA^3 &= O
+  \end{align}
+  となるが、 $A^2 \ne O, A^3 = O$ から $y=0$ がわかり、式 (b) は
+  \begin{align}
+  zA^2 &= O
+  \end{align}
+  となる。
+  $A^2 \ne O$ から $z=0$ がわかる。
+  式 (a) を仮定して $x=y=z=0$ を得たので、 $I,A,A^2$ は線形独立である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $X$ の固有値を $\lambda$ とし、これに属する固有ベクトルを
+  $\boldsymbol{v}$ （零ベクトルでない）とする：
+  \begin{align}
+  X \boldsymbol{v} &= \lambda \boldsymbol{v}
+  \\
+  \boldsymbol{v} + A \boldsymbol{v} + 2A^2 \boldsymbol{v}
+  &= \lambda \boldsymbol{v}
+  \end{align}
+  これに $A^2$ をかけると、
+  \begin{align}
+  A^2 \boldsymbol{v} + A^3 \boldsymbol{v} + 2A^4 \boldsymbol{v}
+  &= \lambda A^2 \boldsymbol{v}
+  \\
+  \therefore \ \ 
+  A^2 \boldsymbol{v} &= \lambda A^2 \boldsymbol{v}
+  \end{align}
+  となるが、 $A^2 \ne O$ なので $A^2 \boldsymbol{v}$ は零ベクトルではなく、
+  $\lambda = 1$ を得る。
+  つまり、 $X$ の固有値はすべて $1$ である。
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  $Y=aI+bA+cA^2$ とすると、
+  \begin{align}
+  XY = aI + (a+b)A + (2a+b+c) A^2
+  \end{align}
+  なので、 $a=1, b=-1, c=-1$ のとき $XY=I$ となる。
+  したがって、
+  \begin{align}
+  I - A - A^2
+  \end{align}
+  は $X$ の逆行列である。
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京工業大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
