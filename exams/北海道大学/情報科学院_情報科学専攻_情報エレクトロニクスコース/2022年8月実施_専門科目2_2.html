@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      北海道大学 大学院 情報科学院
+      情報科学専攻 情報エレクトロニクスコース
+      2022年8月実施 専門科目2 [2] 量子力学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    北海道大学 大学院 情報科学院
+    <br>
+    情報科学専攻 情報エレクトロニクスコース
+    <br>
+    2022年8月実施 専門科目2 [2] 量子力学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.ist.hokudai.ac.jp/examinfo/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>1.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  シュレディンガー方程式
+  \begin{align}
+  i \hbar \frac{d}{dt} | \varphi(t) \rangle
+  = \hat{H} | \varphi(t) \rangle
+  \end{align}
+  に
+  \begin{align}
+  | \varphi(t) \rangle
+  = c_1(t) \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  + c_2(t) \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \end{align}
+  を代入すると、
+  \begin{align}
+  i \hbar \left(
+  \frac{dc_1(t)}{dt} \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  + \frac{dc_2(t)}{dt} \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \right)
+  = \varepsilon_1 c_1(t) \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  + \varepsilon_2 c_2(t) \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \end{align}
+  となるから、
+  \begin{align}
+  i \hbar \frac{dc_1(t)}{dt} = \varepsilon_1 c_1(t)
+  , \ \ 
+  i \hbar \frac{dc_2(t)}{dt} = \varepsilon_2 c_2(t)
+  \end{align}
+  であり、
+  \begin{align}
+  c_1(t) = c_1(0) \exp \left( -i \frac{\varepsilon_1 t}{\hbar} \right)
+  , \ \ 
+  c_2(t) = c_2(0) \exp \left( -i \frac{\varepsilon_2 t}{\hbar} \right)
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  まず、
+  \begin{align}
+  \hat{\sigma} | \lambda_1 \rangle
+  &= \begin{pmatrix} \cos 2 \theta \cos \theta + \sin 2 \theta \sin \theta \\
+  \sin 2 \theta \cos \theta - \cos 2 \theta \sin \theta \end{pmatrix}
+  \\
+  &= \begin{pmatrix} \cos \theta \\ \sin \theta \end{pmatrix}
+  \\
+  &= | \lambda_1 \rangle
+  \end{align}
+  なので、 $| \lambda_1 \rangle$ は
+  $\hat{\sigma}$ の固有値 $1$ に属する固有ベクトルである。
+
+  また、
+  \begin{align}
+  \hat{\sigma} | \lambda_2 \rangle
+  &= \begin{pmatrix} - \cos 2 \theta \sin \theta + \sin 2 \theta \cos \theta \\
+  - \sin 2 \theta \sin \theta - \cos 2 \theta \cos \theta \end{pmatrix}
+  \\
+  &= \begin{pmatrix} \sin \theta \\ - \cos \theta \end{pmatrix}
+  \\
+  &= - | \lambda_2 \rangle
+  \end{align}
+  なので、 $| \lambda_2 \rangle$ は
+  $\hat{\sigma}$ の固有値 $-1$ に属する固有ベクトルである。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  | \varphi(0) \rangle
+  &= | \lambda_1 \rangle
+  \\
+  &= \cos \theta \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  + \sin \theta \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \end{align}
+  なので、 (1) から、
+  \begin{align}
+  | \varphi(t) \rangle
+  &= \cos \theta \exp \left( -i \frac{\varepsilon_1 t}{\hbar} \right)
+  \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+  + \sin \theta \exp \left( -i \frac{\varepsilon_2 t}{\hbar} \right)
+  \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+  \end{align}
+  がわかる。
+  よって、
+  \begin{align}
+  \langle \lambda_1 | \hat{\sigma} | \varphi(t) \rangle
+  &= \langle \lambda_1 | \varphi(t) \rangle
+  \\
+  &= \cos^2 \theta \exp \left( -i \frac{\varepsilon_1 t}{\hbar} \right)
+  + \sin^2 \theta \exp \left( -i \frac{\varepsilon_2 t}{\hbar} \right)
+  \end{align}
+  となり、求める確率は、
+  \begin{align}
+  \left| \langle \lambda_1 | \hat{\sigma} | \varphi(t) \rangle \right|^2
+  &= \cos^4 \theta + \sin^4 \theta
+  + \cos^2 \theta \sin^2 \theta \left(
+  \exp \left( i \frac{(\varepsilon_1-\varepsilon_2) t}{\hbar} \right)
+  + \exp \left( -i \frac{(\varepsilon_1-\varepsilon_2) t}{\hbar} \right)
+  \right)
+  \\
+  &= 1 + \frac{1}{2} \sin^2 2 \theta \left(
+  \cos \left( \frac{(\varepsilon_1-\varepsilon_2)t}{\hbar} - 1 \right) \right)
+  \end{align}
+  である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
