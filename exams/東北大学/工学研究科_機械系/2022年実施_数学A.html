@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      機械系
+      2022年実施 数学A
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 工学研究科
+    <br>
+    機械系
+    <br>
+    2022年実施 数学A
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.mech.tohoku.ac.jp/examination/past-collection/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>2.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $B$ の固有値を $b$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix} -b & 1 & 0 \\ 1 & -b & 1 \\ 0 & 1 & -b \end{pmatrix}
+  \\
+  &= -b^3 + 2b
+  \\
+  &= -b (b^2 - 2)
+  \\
+  \therefore \ \ 
+  b &= 0, \pm \sqrt{2}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $C$ の固有値を $c$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix} -c & 1 & 1 \\ 1 & -c & 1 \\ 1 & 1 & -c \end{pmatrix}
+  \\
+  &= -c^3 + 2 + 3c
+  \\
+  &= - (c+1)^2(c-2)
+  \\
+  \therefore \ \ 
+  c &= -1, 2
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $C$ は実対称行列なので、適当な直交行列 $P$ とその逆行列 $P^{-1}$ を使って、
+  \begin{align}
+  C = P \tilde{C} P^{-1}
+  , \ \ \ \ 
+  \tilde{C}
+  = \begin{pmatrix} -1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 2 \end{pmatrix}
+  \end{align}
+  と書ける。
+  行列の対角成分の和を $\mathrm{tr}$ と書くと、
+  \begin{align}
+  \mathrm{tr} \left( C^3 \right)
+  &= \mathrm{tr} \left( P \tilde{C}^3 P^{-1} \right)
+  \\
+  &= \mathrm{tr} \left( \tilde{C}^3 \right)
+  \\
+  &= \mathrm{tr} \begin{pmatrix} -1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 8 \end{pmatrix}
+  \\
+  &= 6
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  D
+  &= \begin{pmatrix}
+  0 & 1 & 1 & 1 & 1 & 1 \\
+  1 & 0 & 1 & 1 & 1 & 1 \\
+  1 & 1 & 0 & 1 & 1 & 1 \\
+  1 & 1 & 1 & 0 & 1 & 1 \\
+  1 & 1 & 1 & 1 & 0 & 1 \\
+  1 & 1 & 1 & 1 & 1 & 0 \\
+  \end{pmatrix}
+  \end{align}
+  であり、 $D$ の固有値を $d$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  -d & 1 & 1 & 1 & 1 & 1 \\
+  1 & -d & 1 & 1 & 1 & 1 \\
+  1 & 1 & -d & 1 & 1 & 1 \\
+  1 & 1 & 1 & -d & 1 & 1 \\
+  1 & 1 & 1 & 1 & -d & 1 \\
+  1 & 1 & 1 & 1 & 1 & -d
+  \end{pmatrix}
+  \\
+  &= \det \begin{pmatrix}
+  0 & 1-d^2 & 1+d & 1+d & 1+d & 1+d \\
+  1 & -d & 1 & 1 & 1 & 1 \\
+  0 & 1+d & -d-1 & 0 & 0 & 0 \\
+  0 & 1+d & 0 & -d-1 & 0 & 0 \\
+  0 & 1+d & 0 & 0 & -d-1 & 0 \\
+  0 & 1+d & 0 & 0 & 0 & -d-1
+  \end{pmatrix}
+  \\
+  &= - \det \begin{pmatrix}
+  1-d^2 & 1+d & 1+d & 1+d & 1+d \\
+  1+d & -d-1 & 0 & 0 & 0 \\
+  1+d & 0 & -d-1 & 0 & 0 \\
+  1+d & 0 & 0 & -d-1 & 0 \\
+  1+d & 0 & 0 & 0 & -d-1
+  \end{pmatrix}
+  \\
+  &= - (d+1)^5 \det \begin{pmatrix}
+  1-d & 1 & 1 & 1 & 1 \\
+  1 & -1 & 0 & 0 & 0 \\
+  1 & 0 & -1 & 0 & 0 \\
+  1 & 0 & 0 & -1 & 0 \\
+  1 & 0 & 0 & 0 & -1
+  \end{pmatrix}
+  \\
+  &= - (d+1)^5 \left( \det \begin{pmatrix}
+  1 & -1 & 0 & 0 \\
+  1 & 0 & -1 & 0 \\
+  1 & 0 & 0 & -1 \\
+  1 & 0 & 0 & 0
+  \end{pmatrix} - \det \begin{pmatrix}
+  1-d & 1 & 1 & 1 \\
+  1 & -1 & 0 & 0 \\
+  1 & 0 & -1 & 0 \\
+  1 & 0 & 0 & -1
+  \end{pmatrix} \right)
+  \\
+  &= - (d+1)^5 \left( - \det \begin{pmatrix}
+  -1 & 0 & 0 \\
+  0 & -1 & 0 \\
+  0 & 0 & -1
+  \end{pmatrix} + \det \begin{pmatrix}
+  1 & -1 & 0 \\
+  1 & 0 & -1 \\
+  1 & 0 & 0
+  \end{pmatrix} + \det \begin{pmatrix}
+  1-d & 1 & 1 \\
+  1 & -1 & 0 \\
+  1 & 0 & -1
+  \end{pmatrix} \right)
+  \\
+  &= -(d+1)^5 \left( 1 + 1 + (1-d) + 2 \right)
+  \\
+  &= (d+1)^5 (d-5)
+  \\
+  \therefore \ \ 
+  d &= -1, 5
+  \end{align}
+  である。
+
+  そこで、
+  \begin{align}
+  \tilde{D}
+  = \begin{pmatrix}
+  -1 & 0 & 0 & 0 & 0 & 0 \\
+  0 & -1 & 0 & 0 & 0 & 0 \\
+  0 & 0 & -1 & 0 & 0 & 0 \\
+  0 & 0 & 0 & -1 & 0 & 0 \\
+  0 & 0 & 0 & 0 & -1 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 5
+  \end{pmatrix}
+  \end{align}
+  とおいて、 (2) と同様に考えると、
+  \begin{align}
+  \mathrm{tr} \left( D^3 \right)
+  &= \mathrm{tr} \left( \tilde{D}^3 \right)
+  \\
+  &= \mathrm{tr} \begin{pmatrix}
+  -1 & 0 & 0 & 0 & 0 & 0 \\
+  0 & -1 & 0 & 0 & 0 & 0 \\
+  0 & 0 & -1 & 0 & 0 & 0 \\
+  0 & 0 & 0 & -1 & 0 & 0 \\
+  0 & 0 & 0 & 0 & -1 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 125
+  \end{pmatrix}
+  \\
+  &= 120
+  \end{align}
+  がわかる。
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
