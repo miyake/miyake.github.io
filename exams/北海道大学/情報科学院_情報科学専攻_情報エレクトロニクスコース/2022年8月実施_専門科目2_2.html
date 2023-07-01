@@ -191,6 +191,61 @@
   である。
   </p>
 
+  <h2>2.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  波動関数の規格化条件より、
+  \begin{align}
+  1
+  &= \int_{-\infty}^\infty \left| \psi(x) \right|^2 dx
+  \\
+  &= |C|^2 \int_0^\infty x^2 e^{-ax} dx
+  \\
+  &= |C|^2 \frac{2}{a^3}
+  \end{align}
+  なので、
+  \begin{align}
+  C &= \sqrt{\frac{a^3}{2}}
+  \end{align}
+  とすればよい。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  ポテンシャルエネルギーの期待値は
+  \begin{align}
+  \int_{-\infty}^\infty \psi(x)^* V(x) \psi(x) dx
+  &= |C|^2 v_0 \int_0^\infty x^3 e^{-ax} dx
+  \\
+  &= \frac{a^3}{2} v_0 \frac{3!}{a^4}
+  \\
+  &= \frac{3v_0}{a}
+  \end{align}
+  であり、運動エネルギーの期待値は
+  \begin{align}
+  \int_{-\infty}^\infty \psi(x)^*
+  \left( - \frac{\hbar^2}{2m} \frac{d^2}{dx^2} \right) \psi(x) dx
+  &= - \frac{\hbar^2}{2m} |C|^2 \int_0^\infty xe^{-\frac{ax}{2}}
+  \left( -a + \frac{a^2}{4} x \right) e^{-\frac{ax}{2}} dx
+  \\
+  &= - \frac{\hbar^2 a}{2m} \frac{a^3}{2} \int_0^\infty
+  \left( -x + \frac{a}{4} x^2 \right) e^{-ax} dx
+  \\
+  &= - \frac{\hbar^2 a^4}{4m}
+  \left( - \frac{1!}{a^2} + \frac{a}{4} \frac{2!}{a^3} \right)
+  \\
+  &= \frac{\hbar^2 a^2}{8m}
+  \end{align}
+  であるから、エネルギーの期待値は
+  \begin{align}
+  \frac{3v_0}{a} + \frac{\hbar^2 a^2}{8m}
+  \end{align}
+  である。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->
