@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 理学研究科 地球物理学専攻
+      2023年度 [7]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院
+    <br>
+    理学研究科 地球物理学専攻
+    <br>
+    2023年度 [7]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.gp.tohoku.ac.jp/entrance-exams/entrance-exams-top.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  楕円に内接する長方形の頂点の座標を $(x,y)$ ただし $x,y \gt 0$ とすると、
+  \begin{align}
+  \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+  \tag{A}
+  \end{align}
+  が成り立ち、長方形の面積は
+  \begin{align}
+  S = 4xy
+  \end{align}
+  である。
+  そこで、ラグランジュの未定乗数 $\lambda$ を導入して、
+  \begin{align}
+  T
+  &= S - \lambda \left( \frac{x^2}{a^2} + \frac{y^2}{b^2} - 1 \right)
+  \\
+  &= 4xy - \lambda \left( \frac{x^2}{a^2} + \frac{y^2}{b^2} - 1 \right)
+  \end{align}
+  とおき、
+  \begin{align}
+  0 &= \frac{\partial T}{\partial x} = 4y -  \frac{2 \lambda}{a^2} x
+  \tag{B}
+  , \\
+  0 &= \frac{\partial T}{\partial y} = 4x -  \frac{2 \lambda}{a^2} y
+  \tag{C}
+  \end{align}
+  とおく。
+  式 (A), (B), (C) から
+  \begin{align}
+  \lambda = 2ab, \ \ 
+  x = \frac{a}{\sqrt{2}}, \ \ 
+  y = \frac{b}{\sqrt{2}}
+  \end{align}
+  が得られるので、求める最大値は
+  \begin{align}
+  4 \cdot \frac{a}{\sqrt{2}} \cdot \frac{b}{\sqrt{2}}
+  = 2ab
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+  <h2>(3)</h2>
+
+  <p>
+  \begin{align}
+  I^2
+  &= \int_{-\infty}^\infty e^{-ax^2} dx \int_{-\infty}^\infty e^{-ay^2} dy
+  \\
+  &= \int_{-\infty}^\infty dx \int_{-\infty}^\infty dy \ e^{-a(x^2+y^2)}
+  \\
+  &= \int_0^{2 \pi} d \theta \int_0^\infty dr \ r e^{-ar^2}
+  \ \ \ \ \ \ \ \ ( x = r \cos \theta , \ y = r \sin \theta )
+  \\
+  &= 2 \pi \left[ - \frac{1}{2a} e^{-ar^2} \right]_0^\infty
+  \\
+  &= \frac{\pi}{a}
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>(4)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  時刻 $T$ までに故障する確率は
+  \begin{align}
+  F(T)
+  &= \int_0^T p(t) dt
+  \\
+  &= \lambda \int_0^T \exp (- \lambda t) dt
+  \\
+  &= - \left[ \exp (- \lambda t) \right]_0^T
+  \\
+  &= 1 - \exp (- \lambda T)
+  \end{align}
+  であるから、求める確率は
+  \begin{align}
+  1 - F(T)
+  &= \exp (- \lambda T)
+  \end{align}
+  である。
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  (i) の $F$ を使って、求める条件付き確率は次のように計算できる：
+  \begin{align}
+  \frac{F(T + \Delta T) - F(T)}{1 - F(T)}
+  &= 1 - \exp ( - \lambda \Delta T )
+  \end{align}
+  </p>
+
+  <h3>(iii)</h3>
+
+  <p>
+  \begin{align}
+  \int_0^\infty t p(t) dt
+  &= \lambda \int_0^\infty t \exp (- \lambda t) dt
+  \\
+  &= - \left[ t \exp (- \lambda t) \right]_0^\infty
+  + \int_0^\infty \exp (- \lambda t) dt
+  \\
+  &= \left[ - \frac{1}{\lambda} \exp (- \lambda t) \right]_0^\infty
+  \\
+  &= \frac{1}{\lambda}
+  \end{align}
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
