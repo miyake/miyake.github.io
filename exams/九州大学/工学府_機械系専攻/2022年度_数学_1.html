@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院
+      工学府 機械系専攻
+      2022年度 数学 問1
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院
+    <br>
+    工学府 機械系専攻
+    <br>
+    2022年度 数学 問1
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.mech.kyushu-u.ac.jp/exam/exam02/exam02_past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  x - \lambda & 1 & 0 \\ 1 & x - \lambda & 1 \\ 0 & 1 & x - \lambda
+  \end{pmatrix}
+  \\
+  &= (x - \lambda)^3 - 2(x - \lambda)
+  \\
+  &= - (\lambda - x) (\lambda - (x - \sqrt{2})) (\lambda - (x + \sqrt{2}))
+  \\
+  \therefore \ \ 
+  \lambda &= x , x \pm \sqrt{2}
+  \end{align}
+  である。
+
+  固有値 $x$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}
+  \begin{pmatrix} u \\ v \\ w \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $u+w=0, v=0$ を得る。
+
+  固有値 $x-\sqrt{2}$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix}
+  \sqrt{2} & 1 & 0 \\ 1 & \sqrt{2} & 1 \\ 0 & 1 & \sqrt{2}
+  \end{pmatrix}
+  \begin{pmatrix} u \\ v \\ w \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $u=w, v=-\sqrt{2}u$ を得る。
+
+  固有値 $x+\sqrt{2}$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix}
+  -\sqrt{2} & 1 & 0 \\ 1 & -\sqrt{2} & 1 \\ 0 & 1 & -\sqrt{2}
+  \end{pmatrix}
+  \begin{pmatrix} u \\ v \\ w \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $u=w, v=\sqrt{2}u$ を得る。
+
+  よって、
+  \begin{align}
+  T = \frac{1}{2}
+  \begin{pmatrix}
+  \sqrt{2} & 1 & 1 \\ 0 & -\sqrt{2} & \sqrt{2} \\ -\sqrt{2} & 1 & 1
+  \end{pmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  T^\mathrm{T} A T =
+  \begin{pmatrix}
+  x & 0 & 0 \\ 0 & x-\sqrt{2} & 0 \\ 0 & 0 & x+\sqrt{2}
+  \end{pmatrix}
+  \end{align}
+  が成り立つ。
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  任意の $y \in \mathbb{R}^3$ について $y^\mathrm{T} A y \geq 0$
+  が成り立つための必要十分条件は、
+  $A$ の固有値がすべて $0$ 以上であることである。
+  よって、求める範囲は $x - \sqrt{2} \geq 0$ すなわち
+  $x \geq \sqrt{2}$ である。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  \begin{align}
+  A_m &= \begin{pmatrix}
+  \sqrt{2} & 1 & 0 \\ 1 & \sqrt{2} & 1 \\ 0 & 1 & \sqrt{2}
+  \end{pmatrix}
+  \end{align}
+  であり、
+  \begin{align}
+  \left\{ A_m \right\}^6
+  &= T \begin{pmatrix}
+  \sqrt{2} & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 2 \sqrt{2}
+  \end{pmatrix}^6 T^\mathrm{T}
+  \\
+  &= T \begin{pmatrix}
+  8 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 512
+  \end{pmatrix} T^\mathrm{T}
+  \\
+  &= \begin{pmatrix}
+  132 & 128 \sqrt{2} & 124 \\
+  128 \sqrt{2} & 256 & 128 \sqrt{2} \\
+  124 & 128 \sqrt{2} & 132
+  \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
