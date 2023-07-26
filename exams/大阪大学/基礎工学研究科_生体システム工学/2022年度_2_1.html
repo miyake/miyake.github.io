@@ -221,52 +221,47 @@
   \end{align}
   </p>
 
-  <!--
-  ?
   <h3>(ウ)</h3>
 
   <p>
-  (イ) で求めた式の右辺第1項を $T_1$ とし、第2項を $T_2$ とする。
+  問題文の意図通りでないかもしれないが、次のようにして導くことができる。
+  </p>
+
+  <p>
+  屈折する点を $(x_0,y_0) \ (y_2 \lt y_0 \lt y_1)$ とする。
+  媒質 1 を通る時間 $T_1$ と媒質 2 を通る時間 $T_2$ とすると、
   \begin{align}
   T_1
-  &= \frac{n_1}{c} \int_{x_1}^{x_0} \sqrt{1 + y'^2} dx
-  \\
-  &= \frac{n_1}{c} (x_0-x_1) \sqrt{1 + \frac{y_1^2}{(x_0-x_1)^2}}
-  \\
-  &= \frac{n_1}{c} \sqrt{ (x_0-x_1)^2 + y_1^2 }
+  &= \frac{n_1}{c} \sqrt{ (x_0-x_1)^2 + (y_0-y_1)^2 }
   , \\
   T_2
-  &= \frac{n_2}{c} \int_{x_0}^{x_2} \sqrt{1 + y'^2} dx
-  \\
-  &= \frac{n_2}{c} (x_2-x_0) \sqrt{1 + \frac{y_2^2}{(x_2-x_0)^2}}
-  \\
-  &= \frac{n_2}{c} \sqrt{ (x_2-x_0)^2 + y_2^2 }
+  &= \frac{n_2}{c} \sqrt{ (x_2-x_0)^2 + (y_2-y_0)^2 }
   \end{align}
   であるから、
   \begin{align}
   T
   &= T_1 + T_2
   \\
-  &= \frac{n_1}{c} \sqrt{ (x_0-x_1)^2 + y_1^2 }
-  + \frac{n_2}{c} \sqrt{ (x_2-x_0)^2 + y_2^2 }
+  &= \frac{n_1}{c} \sqrt{ (x_0-x_1)^2 + (y_0-y_1)^2 }
+  + \frac{n_2}{c} \sqrt{ (x_2-x_0)^2 + (y_2-y_0)^2 }
   \end{align}
   である。
-  問題文の意図通りであるかわからないが、以下のようにして、
-  スネルの法則を導くことができる：
+  停留性の条件
   \begin{align}
   0
-  &= \frac{dT}{dx_0}
+  &= \frac{dT}{dy_0}
   \\
-  &= \frac{n_1}{c} \frac{x_0-x_1}{\sqrt{ (x_0-x_1)^2 + y_1^2 }}
-  - \frac{n_2}{c} \frac{x_2-x_0}{\sqrt{ (x_2-x_0)^2 + y_2^2 }}
+  &= \frac{n_1}{c} \frac{y_0-y_1}{\sqrt{ (x_0-x_1)^2 + (y_0-y_1)^2 }}
+  + \frac{n_2}{c} \frac{y_0-y_2}{\sqrt{ (x_2-x_0)^2 + (y_2-y_0)^2 }}
   \\
-  &= \frac{1}{c} \left( n_1 \sin \theta_1 - n_2 \sin \theta_2 \right)
-  \\
-  \therefore \ \ 
+  &= \frac{1}{c} \left( - n_1 \sin \theta_1 + n_2 \sin \theta_2 \right)
+  \end{align}
+  から、スネルの法則
+  \begin{align}
   n_1 \sin \theta_1 &= n_2 \sin \theta_2
   \end{align}
+  が導かれる。
   </p>
-  -->
 
 
   <hr>
