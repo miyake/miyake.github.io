@@ -210,6 +210,159 @@
 </script>
 
   <hr>
+  <h2>問題 4</h2>
+
+  <h3>問 1</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  F (2 \omega)
+  &= \int_{- \infty}^\infty f(s) \exp (-2i \omega s) ds
+  \\
+  &= \int_{- \infty}^\infty f \left( \frac{t}{2} \right)
+  \exp (-i \omega t) \frac{dt}{2}
+  \ \ \ \ \ \ \ \ (t=2s)
+  \end{align}
+  なので、 $F(2\omega)$ の逆フーリエ変換は
+  \begin{align}
+  \frac{1}{2} f \left( \frac{t}{2} \right)
+  \end{align}
+  である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  \begin{align}
+  F (\omega-1)
+  &= \int_{- \infty}^\infty f(t) \exp (-i (\omega-1) t) dt
+  \\
+  &= \int_{- \infty}^\infty f(t) \exp (it) \exp (-i \omega t) dt
+  \end{align}
+  なので、 $F(\omega-1)$ の逆フーリエ変換は
+  \begin{align}
+  f(t) \exp (it)
+  \end{align}
+  である。
+  </p>
+
+  <h3>問 2</h3>
+
+  <p>
+  \begin{align}
+  F(\omega)
+  &= \int_{-T}^T \sin (\omega_0 t) \exp(-i \omega t) dt
+  \\
+  &= - \frac{1}{i \omega}
+  \left[ \sin (\omega_0 t) \exp(-i \omega t) \right]_{-T}^T
+  + \frac{\omega_0}{i \omega} \int_{-T}^T \cos (\omega_0 t) \exp(-i \omega t) dt
+  \\
+  &= - \frac{1}{i \omega}
+  \sin (\omega_0 T) \left( \exp(-i \omega T) + \exp(i \omega T) \right)
+  + \frac{\omega_0}{i \omega} \int_{-T}^T \cos (\omega_0 t) \exp(-i \omega t) dt
+  \\
+  &= \frac{2i}{\omega} \sin (\omega_0 T) \cos (\omega T)
+  + \frac{\omega_0}{\omega^2}
+  \left[ \cos (\omega_0 t) \exp(-i \omega t) \right]_{-T}^T
+  + \frac{\omega_0^2}{\omega^2}
+  \int_{-T}^T \sin (\omega_0 t) \exp(-i \omega t) dt
+  \\
+  &= \frac{2i}{\omega} \sin (\omega_0 T) \cos (\omega T)
+  + \frac{\omega_0}{\omega^2} \cos (\omega_0 T)
+  \left( \exp(-i \omega T) - \exp(i \omega T) \right)
+  + \frac{\omega_0^2}{\omega^2} F(\omega)
+  \\
+  &= \frac{2i}{\omega} \sin (\omega_0 T) \cos (\omega T)
+  - \frac{2i \omega_0}{\omega^2} \cos (\omega_0 T) \sin (\omega T)
+  + \frac{\omega_0^2}{\omega^2} F(\omega)
+  \\
+
+  \therefore \ \ 
+  \left( \omega^2 - \omega_0^2 \right) F(\omega)
+  &= 2i \left( \omega \sin (\omega_0 T) \cos (\omega T)
+  - \omega_0 \cos (\omega_0 T) \sin (\omega T) \right)
+  \end{align}
+  なので、 $\omega \ne \omega_0$ のとき
+  \begin{align}
+  F(\omega)
+  &= \frac{2i}{\omega^2 - \omega_0^2}
+  \left( \omega \sin (\omega_0 T) \cos (\omega T)
+  - \omega_0 \cos (\omega_0 T) \sin (\omega T) \right)
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 5</h2>
+
+  <h3>問 1</h3>
+
+  <p>
+  \begin{align}
+  \int_0^\infty \phi(\tau) d \tau
+  &= \frac{1}{\mu} \int_0^\infty \exp \left( - \frac{\tau}{\mu} \right) d \tau
+  \\
+  &= - \left[ \exp \left( - \frac{\tau}{\mu} \right) \right]_0^\infty
+  \\
+  &= 1
+  \end{align}
+  </p>
+
+  <h3>問 2</h3>
+
+  <p>
+  \begin{align}
+  \int_0^\infty \tau \phi(\tau) d \tau
+  &= \frac{1}{\mu} \int_0^\infty
+  \tau \exp \left( - \frac{\tau}{\mu} \right) d \tau
+  \\
+  &= - \left[ \tau \exp \left( - \frac{\tau}{\mu} \right) \right]_0^\infty
+  + \int_0^\infty \exp \left( - \frac{\tau}{\mu} \right) d \tau
+  \\
+  &= - \mu \left[ \exp \left( - \frac{\tau}{\mu} \right) \right]_0^\infty
+  \\
+  &= \mu
+  \end{align}
+  </p>
+
+  <h3>問 3</h3>
+
+  <p>
+  \begin{align}
+  \frac{1}{2} \int_0^1 \exp \left( - \frac{\tau}{2} \right) d \tau
+  &= - \left[ \exp \left( - \frac{\tau}{2} \right) \right]_0^1
+  \\
+  &= - \frac{1}{\sqrt{e}} + 1
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <nav id="footer_breadcrumbs">
   <a href="../../../index.html">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
