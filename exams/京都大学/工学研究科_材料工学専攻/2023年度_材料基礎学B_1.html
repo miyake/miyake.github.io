@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 工学研究科
+      材料工学専攻
+      2023年度 材料基礎学B 問題1
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 工学研究科
+    <br>
+    材料工学専攻
+    <br>
+    2023年度 材料基礎学B 問題1
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.mtl.kyoto-u.ac.jp/exam/exam.htm">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 1</h2>
+
+  <p>
+  \begin{align}
+  \left\{ \frac{\hat{p}^2}{2m} + V(x) \right\} \Psi(x) &= E \Psi(x)
+  \end{align}
+  <!--
+  \left\{ - \frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x) \right\} \Psi(x)
+  &= E \Psi(x)
+  -->
+  </p>
+
+  <h2>問 2</h2>
+
+  <p>
+  式 (1) は $- \alpha \leq x \leq \alpha$ において
+  \begin{align}
+  - \frac{\hbar^2}{2m} \frac{d^2}{dx^2} \Psi(x) &= E \Psi(x)
+  \\
+  \therefore \ \ 
+  \frac{d^2}{dx^2} \Psi(x) &= - \frac{2mE}{\hbar^2} \Psi(x)
+  \end{align}
+  となるので、
+  \begin{align}
+  \Psi(x)
+  &= A \exp \left( i \frac{\sqrt{2mE}}{\hbar} x \right)
+  + B \exp \left( - i \frac{\sqrt{2mE}}{\hbar} x \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>問 3</h2>
+
+  <h3>[え]</h3>
+
+  <p>
+  \begin{align}
+  \Psi(\alpha) = \Psi(- \alpha) = 0
+  \end{align}
+  </p>
+
+  <h3>[お]</h3>
+
+  <p>
+  式 (4), (3) より
+  \begin{align}
+  0 &= \Psi(\alpha)
+  = A \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  + B \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  ,\\
+  0 &= \Psi(-\alpha)
+  = A \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  + B \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \end{align}
+  が成り立ち、これは
+  \begin{align}
+  \begin{pmatrix}
+  \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  &
+  \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \\
+  \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  &
+  \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \end{pmatrix}
+  \begin{pmatrix} A \\ B \end{pmatrix}
+  &=
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  と書ける。
+  これを満たす $A=B=0$ 以外の $A,B$ が存在するための条件は
+  \begin{align}
+  0
+  &= \det
+  \begin{pmatrix}
+  \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  &
+  \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \\
+  \exp \left( -i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  &
+  \exp \left( i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \end{pmatrix}
+  \\
+  &=
+  \exp \left( 2i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  - \exp \left( -2i \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \\
+  &= 2i \sin \left( 2 \frac{\sqrt{2mE}}{\hbar} \alpha \right)
+  \end{align}
+  なので、 $N$ を正の整数として
+  \begin{align}
+  2 \frac{\sqrt{2mE}}{\hbar} \alpha = \pi N
+  \\
+  \therefore \ \ 
+  E = \frac{\pi^2 \hbar^2 N^2}{8m \alpha^2}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>[か]</h3>
+
+  <p>
+  $N=1$ のとき 式 (5) は
+  \begin{align}
+  E = \frac{\pi^2 \hbar^2}{8m \alpha^2}
+  \end{align}
+  となるから、式 (3) は
+  \begin{align}
+  \Psi(x)
+  &= A \exp \left( i \frac{\pi}{2 \alpha} x \right)
+  + B \exp \left( - i \frac{\pi}{2 \alpha} x \right)
+  \end{align}
+  となる。
+  さらに、境界条件 (4) から $A=B$ がわかるので、
+  \begin{align}
+  \Psi(x)
+  &= A \exp \left( i \frac{\pi}{2 \alpha} x \right)
+  + A \exp \left( - i \frac{\pi}{2 \alpha} x \right)
+  \\
+  &= 2A \cos \left( \frac{\pi x}{2 \alpha} \right)
+  \end{align}
+  となる。
+  最後に、規格化条件
+  \begin{align}
+  1
+  &= \int_{- \infty}^\infty \left| \Psi(x) \right|^2 dx
+  \\
+  &= 4 |A|^2 \int_{- \alpha}^\alpha
+  \cos^2 \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= 4 |A|^2 \cdot \frac{2 \alpha}{\pi} \int_{- \pi/2}^{\pi/2}
+  \cos^2 \left( y \right) dy
+  \ \ \ \ \ \ \ \ \left( y = \frac{\pi x}{2 \alpha} \right)
+  \\
+  &= 4 |A|^2 \cdot \frac{2 \alpha}{\pi} \cdot \frac{\pi}{2}
+  \\
+  &= 4 |A|^2 \alpha
+  \end{align}
+  から
+  \begin{align}
+  A = \frac{1}{2 \sqrt{\alpha}}
+  \end{align}
+  とすればよいことがわかり、
+  \begin{align}
+  \Psi(x)
+  &= \frac{1}{\sqrt{\alpha}} \cos \left( \frac{\pi x}{2 \alpha} \right)
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>問 4</h2>
+
+  <h3>[き]</h3>
+
+  <p>
+  \begin{align}
+  \langle x \rangle
+  &= \frac{1}{\alpha} \int_{- \alpha}^\alpha
+  x \cos^2 \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= 0
+  \end{align}
+  </p>
+
+  <h3>[く]</h3>
+
+  <p>
+  \begin{align}
+  \langle x^2 \rangle
+  &= \frac{1}{\alpha} \int_{- \alpha}^\alpha
+  x^2 \cos^2 \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= \frac{1}{\alpha} \left( \frac{2 \alpha}{\pi} \right)^3
+  \int_{- \pi/2}^{\pi/2} x^2 \cos^2 y \ dy
+  \ \ \ \ \ \ \ \ \left( y = \frac{\pi x}{2 \alpha} \right)
+  \\
+  &= \frac{1}{\alpha} \left( \frac{2 \alpha}{\pi} \right)^3
+  \frac{\pi}{24} \left( \pi^2 - 6 \right)
+  \\
+  &= \frac{\pi^2 - 6}{3 \pi^2} \alpha^2
+  \end{align}
+  </p>
+
+  <h3>[け]</h3>
+
+  <p>
+  \begin{align}
+  \langle p \rangle
+  &= - \frac{i \hbar}{\alpha} \int_{- \alpha}^\alpha
+  \cos \left( \frac{\pi x}{2 \alpha} \right)
+  \frac{d}{dx} \cos \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= \frac{i \pi \hbar}{2 \alpha^2} \int_{- \alpha}^\alpha
+  \cos \left( \frac{\pi x}{2 \alpha} \right)
+  \sin \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= \frac{i \pi \hbar}{4 \alpha^2} \int_{- \alpha}^\alpha
+  \sin \left( \frac{\pi x}{\alpha} \right) dx
+  \\
+  &= 0
+  \end{align}
+  </p>
+
+  <h3>[こ]</h3>
+
+  <p>
+  \begin{align}
+  \langle p^2 \rangle
+  &= - \frac{\hbar^2}{\alpha} \int_{- \alpha}^\alpha
+  \cos \left( \frac{\pi x}{2 \alpha} \right)
+  \frac{d^2}{dx^2} \cos \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= \frac{\pi^2 \hbar^2}{4 \alpha^3} \int_{- \alpha}^\alpha
+  \cos^2 \left( \frac{\pi x}{2 \alpha} \right) dx
+  \\
+  &= \frac{\pi^2 \hbar^2}{4 \alpha^3} \cdot \frac{2 \alpha}{\pi}
+  \int_{- \pi/2}^{\pi/2}
+  \cos^2 \left( y \right) dy
+  \ \ \ \ \ \ \ \ \left( y = \frac{\pi x}{2 \alpha} \right)
+  \\
+  &= \frac{\pi^2 \hbar^2}{4 \alpha^3} \cdot \frac{2 \alpha}{\pi}
+  \cdot \frac{\pi}{2}
+  \\
+  &= \frac{\pi^2 \hbar^2}{4 \alpha^2}
+  \end{align}
+  </p>
+
+  <h3>[さ]</h3>
+
+  <p>
+  \begin{align}
+  \Delta x \cdot \Delta p
+  &= \sqrt{\frac{\pi^2 - 6}{3}} \frac{\alpha}{\pi} \cdot
+  \frac{\pi \hbar}{2 \alpha}
+  \\
+  &= \sqrt{\frac{\pi^2 - 6}{3}} \frac{\hbar}{2}
+  \end{align}
+  </p>
+
+  <h2>問 5</h2>
+
+  <!--
+  これで良いか？
+  -->
+
+  <p>
+  \begin{align}
+  \Delta E
+  &\simeq \frac{\left( \Delta p \right)^2}{2m}
+  \\
+  &= \frac{1}{2m} \frac{\pi^2 \hbar^2}{4 \alpha^2}
+  \\
+  &= \frac{\pi^2 \hbar^2}{8m \alpha^2}
+  \\
+  &= E_1
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
