@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 工学研究科
+      創成化学専攻群
+      2023年度 物理化学 問題 I
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 工学研究科
+    <br>
+    創成化学専攻群
+    <br>
+    2023年度 物理化学 問題 I
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.mc.t.kyoto-u.ac.jp/ja/admission/exam">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 1</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \left( \frac{\partial U}{\partial T} \right)_V
+  &= C_V
+  \tag{a}
+  \\
+  \left( \frac{\partial U}{\partial V} \right)_T
+  &= T \left( \frac{\partial p}{\partial T} \right)_V - p
+  \ \ \ \ \ \ \ \ ( \because \text { (iii) } )
+  \\
+  &= T \cdot \frac{R}{V-b} - \left( \frac{RT}{V-b} - \frac{a}{V^2} \right)
+  \ \ \ \ \ \ \ \ ( \because \text { (i) } )
+  \\
+  &= \frac{a}{V^2}
+  \tag{b}
+  \end{align}
+  から (ii) がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  式 (a) から、 $T$ によならい $V$ の関数 $f(V)$ を使って
+  \begin{align}
+  U &= C_V T + f(V)
+  \end{align}
+  と書けることがわかり、さらに式 (b) を使って、
+  \begin{align}
+  \frac{a}{V^2}
+  &= \left( \frac{\partial U}{\partial V} \right)_T
+  \\
+  &= \frac{df(V)}{dV}
+  \\
+  \therefore \ \ 
+  f(V) &= - \frac{a}{V} + c_1
+  \ \ \ \ \ \ \ \ ( c_1 \text{ は } T, V \text{ によらない定数 } )
+  \end{align}
+  がわかるので、 (iv) がわかる。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  dS
+  &= \frac{1}{T} dU + \frac{p}{T} dV
+  \\
+  &= \frac{1}{T} \left( C_V dT + \frac{a}{V^2} dV \right)
+  + \frac{1}{T} \left( \frac{RT}{V-b} - \frac{a}{V^2} \right) dV
+  \ \ \ \ \ \ \ \ ( \because \text{ (ii), (i) } )
+  \\
+  &= \frac{C_V}{T} dT + \frac{R}{V-b} dV
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  まず、 (v) から
+  \begin{align}
+  \left( \frac{\partial S}{\partial T} \right)_V
+  &= \frac{C_V}{T}
+  \end{align}
+  なので、 $T$ によならい $V$ の関数 $g(V)$ を使って
+  \begin{align}
+  S &= C_V \ln T + g(V)
+  \end{align}
+  と書けることがわかる。
+  これを、 (v) からわかる
+  \begin{align}
+  \left( \frac{\partial S}{\partial V} \right)_T
+  &= \frac{R}{V-b}
+  \end{align}
+  に代入すると、
+  \begin{align}
+  \frac{dg(V)}{dV}
+  &= \frac{R}{V-b}
+  \\
+  \therefore \ \ 
+  g(V) &= R \ln (V-b) + c_2
+  \ \ \ \ \ \ \ \ ( c_2 \text{ は } T, V \text{ によらない定数 } )
+  \end{align}
+  となるので、 (vi) がわかる。
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  準静的断熱過程なので、 (v) において $dS=0$ とおいて、
+  \begin{align}
+  \frac{C_V}{T} dT + \frac{R}{V-b} dV &= 0
+  \\
+  C_V \ln T + R \ln (V-b) &= \mathrm{const.}
+  \\
+  C_V \ln \left( T (V-b)^\frac{R}{C_V} \right) &= \mathrm{const.}
+  \\
+  T (V-b)^\frac{R}{C_V} &= \mathrm{const.}
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 2</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  W_{12}
+  &= \int_{V_1}^{V_2} \frac{RT_H}{V-b} dV
+  \\
+  &= RT_H \ln \frac{V_2-b}{V_1-b}
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  W_{23}
+  &= C_V(T_H-T_L)
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  W_{34}
+  &= \int_{V_3}^{V_4} \frac{RT_L}{V-b} dV
+  \\
+  &= RT_L \ln \frac{V_4-b}{V_3-b}
+  \end{align}
+  </p>
+
+  <h3>(4)</h3>
+
+  <p>
+  \begin{align}
+  W_{41}
+  &= C_V(T_L-T_H)
+  \end{align}
+  </p>
+
+  <h3>(5)</h3>
+
+  <p>
+  \begin{align}
+  Q
+  &= W_{12}
+  \\
+  &= RT_H \ln \frac{V_2-b}{V_1-b}
+  \end{align}
+  </p>
+
+  <h3>(6)</h3>
+
+  <p>
+  \begin{align}
+  \varepsilon
+  &= \frac{W_{12}+W_{23}+W_{34}+W_{41}}{Q}
+  \\
+  &= \frac{ RT_H \ln \frac{V_2-b}{V_1-b} + RT_L \ln \frac{V_4-b}{V_3-b} }
+  {RT_H \ln \frac{V_2-b}{V_1-b}}
+  \\
+  &= 1 + \frac{T_L \ln \frac{V_4-b}{V_3-b}}{T_H \ln \frac{V_2-b}{V_1-b}}
+  \\
+  &= 1 - \frac{T_L}{T_H} \frac{\ln \frac{V_3-b}{V_4-b}}{\ln \frac{V_2-b}{V_1-b}}
+  \\
+
+  \varepsilon_0
+  &= 1 - \frac{T_L}{T_H} \frac{\ln \frac{V_3}{V_4}}{\ln \frac{V_2}{V_1}}
+  \end{align}
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
