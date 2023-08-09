@@ -253,6 +253,7 @@
   <h3>(6)</h3>
 
   <p>
+  上で求めたことから、
   \begin{align}
   \varepsilon
   &= \frac{W_{12}+W_{23}+W_{34}+W_{41}}{Q}
@@ -263,11 +264,28 @@
   &= 1 + \frac{T_L \ln \frac{V_4-b}{V_3-b}}{T_H \ln \frac{V_2-b}{V_1-b}}
   \\
   &= 1 - \frac{T_L}{T_H} \frac{\ln \frac{V_3-b}{V_4-b}}{\ln \frac{V_2-b}{V_1-b}}
-  \\
-
-  \varepsilon_0
-  &= 1 - \frac{T_L}{T_H} \frac{\ln \frac{V_3}{V_4}}{\ln \frac{V_2}{V_1}}
   \end{align}
+  がわかる。
+  また、問1 の (vii) を過程 イ, エ に適用すると
+  \begin{align}
+  T_H (V_2-b)^\frac{R}{C_V} &= T_L (V_3-b)^\frac{R}{C_V}
+  ,\\
+  T_L (V_4-b)^\frac{R}{C_V} &= T_H (V_1-b)^\frac{R}{C_V}
+  \end{align}
+  となるので、
+  \begin{align}
+  \frac{V_2-b}{V_1-b} = \frac{V_4-b}{V_3-b}
+  \end{align}
+  がわかり、
+  \begin{align}
+  \varepsilon &= 1 - \frac{T_L}{T_H}
+  \end{align}
+  がわかる。
+  これは $b$ によらないので、
+  \begin{align}
+  \varepsilon_0 &= 1 - \frac{T_L}{T_H}
+  \end{align}
+  であり、 $\varepsilon = \varepsilon_0$ である。
   </p>
 
 
