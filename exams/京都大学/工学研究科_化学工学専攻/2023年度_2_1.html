@@ -83,9 +83,15 @@
   <h2>問 1</h2>
 
   <p>
+  断熱壁で覆われているので
   \begin{align}
-  Q=0, \ \ \Delta U=0
+  Q=0
   \end{align}
+  であり、また、気体は仕事をしないので、熱力学第1法則より
+  \begin{align}
+  \Delta U=0
+  \end{align}
+  がわかる。
   </p>
 
   <h2>問 2</h2>
@@ -108,15 +114,20 @@
   \ \ \ \ \ \ \ \ ( \because \text{ (1) } )
   \\
   &= C_{\mathrm{v,m}} dT + \frac{aN_1^2}{V^2} dV
+  \tag{a}
   \end{align}
   から、
   \begin{align}
   \Delta T
-  &= - \frac{aN_1^2}{C_V} \int_{V_1}^{V_2} \frac{dV}{V^2}
+  &= - \frac{aN_1^2}{C_\mathrm{v,m}} \int_{V_1}^{V_2} \frac{dV}{V^2}
   \\
-  &= \frac{aN_1^2}{C_V} \left[ \frac{1}{V} \right]_{V_1}^{V_2}
+  &= \frac{aN_1^2}{C_\mathrm{v,m}} \left[ \frac{1}{V} \right]_{V_1}^{V_2}
   \\
-  &= \frac{aN_1^2}{C_V} \left( \frac{1}{V_2} - \frac{1}{V_1} \right)
+  &= \frac{aN_1^2}{C_\mathrm{v,m}} \left( \frac{1}{V_2} - \frac{1}{V_1} \right)
+  \\
+  &= - \frac{aN_1^2}{C_\mathrm{v,m}}
+  \left( \frac{1}{V_1} - \frac{1}{V_2} \right)
+  \tag{b}
   \end{align}
   がわかる。
   </p>
@@ -128,10 +139,11 @@
   \left( \frac{\partial S}{\partial V} \right)_U
   = \frac{P}{T} \gt 0
   \end{align}
-  なので、不可逆過程である。
+  であり、体積は増加し、内部エネルギーは変化しないので、
+  エントロピーは増加することがわかる。
+  よって、不可逆過程である。
   </p>
 
-  <!--
   <h2>問 4</h2>
 
   <p>
@@ -142,13 +154,34 @@
   &= \int_{V_1}^{V_2} \left( \frac{N_1R}{V-bN_1}
   - \frac{aN_1^2}{TV^2} \right) dV
   \\
-  &= \left[ N_1R \ln (V-bN_1) + \frac{aN_1^2}{TV} \right]_{V_1}^{V_2}
+  &= N_1R \int_{V_1}^{V_2} \frac{dV}{V-bN_1}
+  + C_{\mathrm{v,m}} \int_{T_1}^{T_1 + \Delta T} \frac{dT}{T}
+  \ \ \ \ \ \ \ \ ( \because \text{ 式 (a) } )
   \\
   &= N_1R \ln \frac{V_2-bN_1}{V_1-bN_1}
-  + \frac{aN_1^2}{TV_2} - \frac{aN_1^2}{TV_1}
+  + C_{\mathrm{v,m}} \ln \frac{T_1 + \Delta T}{T_1}
+  \\
+  &= N_1R \ln \frac{V_2-bN_1}{V_1-bN_1}
+  + C_{\mathrm{v,m}} \ln \left( 1 - \frac{aN_1^2}{C_\mathrm{v,m} T_1}
+  \left( \frac{1}{V_1} - \frac{1}{V_2} \right) \right)
+  \ \ \ \ \ \ \ \ ( \because \text{ 式 (b) } )
   \end{align}
   </p>
-  -->
+
+  <h2>問 5</h2>
+
+  <p>
+  理想気体の場合は、式 (b) で $a=0$ として、
+  \begin{align}
+  \Delta T' = 0
+  \end{align}
+  である。
+  理想気体では、分子間の相互作用がないので、体積が変化しても、
+  1分子あたりの運動エネルギーは変わらず、温度変化はない。
+  van der Waals 気体では、分子間に引力が働くとしているので、
+  体積が増加して分子間の平均距離が長くなると、
+  1分子あたりの運動エネルギーは減少し、温度は下がる。
+  </p>
 
 
   <hr>
