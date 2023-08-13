@@ -79,6 +79,88 @@
 </script>
 
   <hr>
+  <h2>問題 1. 微分積分</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \frac{\partial f}{\partial x}
+  &= \frac{ - e^{-(x+y)} \left( (x-y)^2 + a^2 \right)
+  - e^{-(x+y)} \cdot 2(x-y) }{ \left( (x-y)^2 + a^2 \right)^2 }
+  \\
+  &= \frac{ - e^{-(x+y)} \left( (x-y)^2 + a^2 + 2(x-y) \right)}
+  { \left( (x-y)^2 + a^2 \right)^2 }
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <h4>(b)</h4>
+
+  <p>
+  \begin{align}
+  x = \frac{1}{2} (u+v), \ \ y = \frac{1}{2} (-u+v)
+  \end{align}
+  なので、
+  \begin{align}
+  \frac{\partial (x,y)}{\partial (u,v)}
+  &= \frac{1}{2} \cdot \frac{1}{2}
+  - \frac{1}{2} \cdot \left( - \frac{1}{2} \right)
+  \\
+  &= \frac{1}{2}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(c)</h4>
+
+  <p>
+  \begin{align}
+  I
+  &= \iint_D f(x,y) dx dy
+  \\
+  &= \iint_E \frac{e^{-v}}{u^2 + a^2}
+  \left| \frac{\partial (x,y)}{\partial (u,v)} \right| du dv
+  \\
+  &= \frac{1}{2} \iint_E \frac{e^{-v}}{u^2 + a^2} du dv
+  \\
+  &= \frac{1}{2} \int_0^a e^{-v} dv \int_0^a \frac{du}{u^2 + a^2}
+  \\
+  &= \frac{1}{2} \left[ -e^{-v} \right]_0^a
+  \cdot \frac{1}{a} \int_0^\frac{\pi}{4} d \theta
+  \ \ \ \ \ \ \ \ (u = a \tan \theta)
+  \\
+  &= \frac{\pi}{8a} \left( 1 - e^{-a} \right)
+  \end{align}
+  </p>
+
+  <h4>(d)</h4>
+
+  <p>
+  \begin{align}
+  \lim_{a \to +0} I
+  &= \frac{\pi}{8} \lim_{a \to +0} \frac{ 1 - e^{-a} }{a}
+  \\
+  &= \frac{\pi}{8} \lim_{a \to +0} \frac{ e^{-a} }{1}
+  \\
+  &= \frac{\pi}{8}
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <h2>問題 2. 線形代数</h2>
 
   <h3>(1)</h3>
