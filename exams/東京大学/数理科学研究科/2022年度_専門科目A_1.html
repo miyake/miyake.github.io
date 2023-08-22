@@ -88,14 +88,14 @@
   \begin{pmatrix} S(1) & S(x) & S(x^2) \end{pmatrix}
   &= \begin{pmatrix} a & 2ax+2 & 3ax^2+4x \end{pmatrix}
   \\
-  &= \begin{pmatrix} a & 0 & 0 \\ 2 & 2a & 0 \\ 0 & 4 & 3a
+  &= \begin{pmatrix} 1 & x & x^2 \end{pmatrix}
+  \begin{pmatrix} a & 2 & 0 \\ 0 & 2a & 4 \\ 0 & 0 & 3a
   \end{pmatrix}
-  \begin{pmatrix} 1 & x & x^2 \end{pmatrix}
   \end{align}
   なので、 $V$ の基底 $1,x,x^2$ に関する $S$ の表現行列は
   \begin{align}
   \tilde{S}
-  &= \begin{pmatrix} a & 0 & 0 \\ 2 & 2a & 0 \\ 0 & 4 & 3a
+  &= \begin{pmatrix} a & 2 & 0 \\ 0 & 2a & 4 \\ 0 & 0 & 3a
   \end{pmatrix}
   \end{align}
   である。
@@ -103,7 +103,7 @@
   \begin{align}
   0
   &= \det \begin{pmatrix}
-  a-s & 0 & 0 \\ 2 & 2a-s & 0 \\ 0 & 4 & 3a-s \end{pmatrix}
+  a-s & 2 & 0 \\ 0 & 2a-s & 4 \\ 0 & 0 & 3a-s \end{pmatrix}
   \\
   &= (a-s)(2a-s)(3a-s)
   \end{align}
@@ -143,7 +143,7 @@
   $V$ の基底 $1,x,x^2$ に関する $T$ の表現行列は
   \begin{align}
   \tilde{T}
-  &= \begin{pmatrix} 0 & 0 & 0 \\ 3 & b & 0 \\ 0 & 6 & 2b
+  &= \begin{pmatrix} 0 & 3 & 0 \\ 0 & b & 6 \\ 0 & 0 & 2b
   \end{pmatrix}
   \end{align}
   であることがわかり、
@@ -151,7 +151,7 @@
   \begin{align}
   0
   &= \det \begin{pmatrix}
-  -t & 0 & 0 \\ 3 & b-t & 0 \\ 0 & 6 & 2b-t \end{pmatrix}
+  -t & 3 & 0 \\ 0 & b-t & 6 \\ 0 & 0 & 2b-t \end{pmatrix}
   \\
   &= -t(b-t)(2b-t)
   \end{align}
@@ -171,12 +171,12 @@
   \begin{align}
   \tilde{S} \tilde{T}
   &= \begin{pmatrix}
-  0 & 0 & 0 \\ 6a & 2ab & 0 \\ 12 & 18a+4b & 6ab
+  0 & 6a & 12 \\ 0 & 2ab & 18a+4b \\ 0 & 0 & 6ab
   \end{pmatrix}
   , \\
   \tilde{T} \tilde{S}
   &= \begin{pmatrix}
-  0 & 0 & 0 \\ 3a+2b & 2ab & 0 \\ 12 & 12a+8b & 6ab
+  0 & 3a+2b & 12 \\ 0 & 2ab & 12a+8b \\ 0 & 0 & 6ab
   \end{pmatrix}
   \end{align}
   なので、
