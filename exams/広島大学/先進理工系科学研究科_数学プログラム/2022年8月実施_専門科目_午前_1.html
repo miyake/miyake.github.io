@@ -118,6 +118,163 @@
   と表せる。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(B)</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  B^2
+  &= \frac{1}{9} \left( I + 2A + 3A^2 + 2A^3 + A^4 \right)
+  \\
+  &= \frac{1}{9} \left( 3I + 3A + 3A^2 \right)
+  \ \ \ \ \ \ \ \ ( \because A^3=I )
+  \\
+  &= B
+  \end{align}
+  なので、
+  \begin{align}
+  BC
+  &= B(I-B)
+  \\
+  &= B - B^2
+  \\
+  &= O
+  , \\
+  CB
+  &= (I-B)B
+  \\
+  &= B - B^2
+  \\
+  &= O
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $V$ の零ベクトルを $0_V$ とする。
+  </p>
+
+  <p>
+  まず、 $x \in X, x \ne 0_V$ を考えると
+  \begin{align}
+  Cx
+  &= x - Bx
+  \\
+  &= x
+  \\
+  &\ne 0_V
+  \end{align}
+  なので $x \notin Y$ であり、
+  $y \in Y, y \ne 0_V$ を考えると
+  \begin{align}
+  By
+  &= y - Cy
+  \\
+  &= y
+  \\
+  &\ne 0_V
+  \end{align}
+  なので $y \notin X$ である。
+  よって、
+  \begin{align}
+  X \cap Y = \left\{ 0_V \right\}
+  \tag{i}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  さらに、任意の $v \in V$ は
+  \begin{align}
+  v &= Cv + Bv
+  \end{align}
+  と表せるが、 $BC=CB=O$ から $Cv \in X, Bv \in Y$ である。
+  このことと (i) から
+  \begin{align}
+  V = X \oplus Y
+  \end{align}
+  が言える。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  (i)
+  任意の $w \in W$ は適当な $u,v \in X$ を使って
+  \begin{align}
+  w = u + Av
+  \end{align}
+  と表せ、
+  \begin{align}
+  Bw
+  &= Bu + BAv
+  \\
+  &= Bu + ABv
+  \\
+  &= O
+  \ \ \ \ \ \ \ \ ( \because u, v \in X )
+  \end{align}
+  なので、 $w \in X$ であり、 $W \subset X$ がわかる。
+  また、任意の実数 $a,b$ と任意の
+  \begin{align}
+  w_1 &= u_1 + Av_1 \in W
+  \ \ \ \ ( u_1, v_1 \in X )
+  \\
+  w_2 &= u_2 + Av_2 \in W
+  \ \ \ \ ( u_2, v_2 \in X )
+  \end{align}
+  について、
+  \begin{align}
+  aw_1 + bw_2
+  &= a(u_1 + Av_1) + b(u_2 + Av_2)
+  \\
+  &= (au_1+bu_2) + A (av_1+bv_2)
+  \end{align}
+  であるが、 $au_1+bu_2, av_1+bv_2 \in X$ なので、
+  \begin{align}
+  aw_1 + bw_2 \in W
+  \end{align}
+  が言え、 $W$ が実線形空間であることがわかる。
+  以上より、 $W$ は $X$ の（線形）部分空間であることがわかる。
+  </p>
+
+  <p>
+  (ii)
+  任意の $w \in W$ は適当な $u,v \in X$ を使って
+  \begin{align}
+  w = u + Av
+  \end{align}
+  と表せ、
+  \begin{align}
+  Aw
+  &= Au + A^2v
+  \\
+  &= A^2v + Au
+  \\
+  &\in W
+  \ \ \ \ \ \ \ \
+  ( \because BA^2v = A^2Bv = O \text{ より } A^2v \in X )
+  \end{align}
+  なので、 $A(W) \subset W$ である。
+  </p>
+
+
 
   <hr>
 <!-- 横長タイプ -->
