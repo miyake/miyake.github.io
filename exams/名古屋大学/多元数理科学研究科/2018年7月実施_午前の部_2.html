@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      名古屋大学 大学院
+      多元数理科学研究科
+      2018年7月実施 午前の部 [2]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    名古屋大学 大学院
+    <br>
+    多元数理科学研究科
+    <br>
+    2018年7月実施 午前の部 [2]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.math.nagoya-u.ac.jp/ja/admission/gs/exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  $T$ の固有値を $t$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  -t & 1 & 0 \\ 0 & -t & 1 \\ 1 & 0 & -t \end{pmatrix}
+  \\
+  &= - t^3 + 1
+  \\
+  &= -(t-1)(t^2+t+1)
+  \\
+  \therefore \ \ 
+  t &= 1, \frac{-1 \pm \sqrt{3} i}{2}
+  \\
+  &= 1, \omega, \omega^2
+  \ \ \ \ \ \ \ \ \left( \omega = \frac{-1 + \sqrt{3} i}{2} \right)
+  \end{align}
+  である。
+  固有値 $t=1$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix}
+  -1 & 1 & 0 \\ 0 & -1 & 1 \\ 1 & 0 & -1 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x=y=z$ を得る。
+  固有値 $t=\omega$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix}
+  -\omega & 1 & 0 \\ 0 & -\omega & 1 \\ 1 & 0 & -\omega
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $y = \omega x, z = \omega^2 x$ を得る。
+  固有値 $t=\omega^2$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{pmatrix}
+  -\omega^2 & 1 & 0 \\ 0 & -\omega^2 & 1 \\ 1 & 0 & -\omega^2
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $y = \omega^2 x, z = \omega x$ を得る。
+  そこで、
+  \begin{align}
+  U
+  &= \frac{1}{\sqrt{3}} \begin{pmatrix}
+  1 & 1 & 1 \\ 1 & \omega & \omega^2 \\ 1 & \omega^2 & \omega
+  \end{pmatrix}
+  \\
+  &= \frac{1}{\sqrt{3}} \begin{pmatrix}
+  1 & 1 & 1 \\
+  1 & \frac{-1+\sqrt{3}i}{2} & \frac{-1-\sqrt{3}i}{2} \\
+  1 & \frac{-1-\sqrt{3}i}{2} & \frac{-1+\sqrt{3}i}{2}
+  \end{pmatrix}
+  \end{align}
+  とおくと、これはユニタリ行列であり、
+  \begin{align}
+  U^{-1} T U
+  &= \begin{pmatrix}
+  1 & 0 & 0 \\ 0 & \omega & 0 \\ 0 & 0 & \omega^2
+  \end{pmatrix}
+  \\
+  &= \begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & \frac{-1+\sqrt{3}i}{2} & 0 \\
+  0 & 0 & \frac{-1-\sqrt{3}i}{2}
+  \end{pmatrix}
+  \end{align}
+  となる。
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  3次の複素行列
+  \begin{align}
+  A
+  &= \begin{pmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \end{align}
+  を考えると、
+  \begin{align}
+  TA
+  &= \begin{pmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \\
+  AT
+  &= \begin{pmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33}
+  \end{pmatrix}
+  \end{align}
+  となるので、 $AT=TA$ のとき
+  \begin{align}
+  a_{11} = a_{22} = a_{33},
+  a_{12} = a_{23} = a_{31},
+  a_{13} = a_{21} = a_{32}
+  \end{align}
+  である。
+  逆に、任意の複素数 $a,b,c$ について
+  \begin{align}
+  \begin{pmatrix} a & b & c \\ c & a & b \\ b & c & a \end{pmatrix}
+  \end{align}
+  は $T$ と交換可能である。
+  よって、 $T$ と交換可能な3次の複素行列の全体は
+  \begin{align}
+  \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+  ,
+  \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}
+  ,
+  \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}
+  \end{align}
+  を基底とする3次元複素ベクトル空間をなすことがわかる。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  3次の複素行列
+  \begin{align}
+  A =
+  \begin{pmatrix} a & b & c \\ c & a & b \\ b & c & a \end{pmatrix}
+  \end{align}
+  を考えると、
+  \begin{align}
+  SA &= \begin{pmatrix}
+  a & b & c \\ 2c & 2a & 2b \\ 3b & 3c & 3a \end{pmatrix}
+  \\
+  AS &= \begin{pmatrix}
+  a & 2b & 3c \\ c & 2a & 3b \\ b & 2c & 3a \end{pmatrix}
+  \end{align}
+  となるので、 $AS=SA$ のとき
+  \begin{align}
+  b=c=0
+  \end{align}
+  である。
+  逆に、任意の複素数 $a$ について
+  \begin{align}
+  a \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+  \end{align}
+  は $S$ と交換可能である。
+  よって、 $T$ および $S$ と交換可能な3次の複素行列の全体は
+  \begin{align}
+  a \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+  \ \ \ \ \ \ \ \ ( a \text{ は任意の複素数 } )
+  \end{align}
+  である。
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
