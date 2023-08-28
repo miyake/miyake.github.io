@@ -162,15 +162,36 @@
   <hr>
   <h2>問題 2</h2>
 
+  <h3>[2]</h3>
+
   <p>
   \begin{align}
   \int_C f(z) dz
-  &= \int_C \frac{dz}{(z-(-i+\sqrt{3}))(z-(-i-\sqrt{3}))}
+  &= \int_C \frac{dz}{(z-(\sqrt{3}-i))(z-(-\sqrt{3}-i))}
   \\
-  &= 2 \pi i \lim_{z \to -i+\sqrt{3}} \frac{1}{z-(-i-\sqrt{3})}
+  &= 2 \pi i \lim_{z \to \sqrt{3}-i} \frac{1}{z-(-\sqrt{3}-i)}
   \\
   &= \frac{\pi i}{\sqrt{3}}
   \end{align}
+  ここで、
+  \begin{align}
+  \left| \sqrt{3} - i - 1 \right|^2
+  &= \left( \sqrt{3} - 1 - i \right) \left( \sqrt{3} - 1 + i \right)
+  \\
+  &= 5 - 2 \sqrt{3}
+  \\
+  &\lt 4
+  \\
+  \left| - \sqrt{3} - i - 1 \right|^2
+  &= \left( - \sqrt{3} - 1 - i \right)
+  \left( - \sqrt{3} - 1 + i \right)
+  \\
+  &= 5 + 2 \sqrt{3}
+  \\
+  &\gt 4
+  \end{align}
+  であるから、 $f(z)$ の極 $z=\sqrt{3}-i$ は $C$ の内部にあり、
+  $f(z)$ の極 $z=-\sqrt{3}-i$ は $C$ の外部にあることを使った。
   </p>
 
   <hr>
