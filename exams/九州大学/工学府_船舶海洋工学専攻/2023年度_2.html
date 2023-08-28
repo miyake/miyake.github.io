@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院
+      工学府 船舶海洋工学専攻
+      2023年度 ② 関数論
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院
+    <br>
+    工学府 船舶海洋工学専攻
+    <br>
+    2023年度 ② 関数論
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.nams.kyushu-u.ac.jp/admissions">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 1</h2>
+
+  <h3>[1]</h3>
+
+  <h4>(1)</h4>
+
+  <p>
+  \begin{align}
+  \frac{\partial^2 u}{\partial x^2}
+  + \frac{\partial^2 v}{\partial y^2}
+  &= e^x \cos y - e^x \cos y
+  \\
+  &= 0
+  \end{align}
+  なので、 $u(x,y)$ は調和関数である。
+  </p>
+
+  <h4>(2)</h4>
+
+  <p>
+  (Eq.1) の複素関数における Cauchy-Riemann の関係式は
+  \begin{align}
+  \frac{\partial u}{\partial x}
+  &= \frac{\partial v}{\partial y}
+  \tag{a}
+  \\
+  \frac{\partial u}{\partial y}
+  &= - \frac{\partial v}{\partial x}
+  \tag{b}
+  \end{align}
+  である。
+  </p>
+
+  <h4>(3)</h4>
+
+  <p>
+  まず、(a) より
+  \begin{align}
+  \frac{\partial v}{\partial y}
+  &= \frac{\partial u}{\partial x}
+  \\
+  &= e^x \cos y
+  \\
+  \therefore \ \ 
+  v(x,y) &= e^x \sin y + g(x)
+  \ \ \ \ \ \ \ \ ( g(x) \text{ は } x \text{ の実数値関数 } )
+  \end{align}
+  であり、さらに (b) より、
+  \begin{align}
+  - e^x \sin y &= - e^x \sin y - \frac{dg(x)}{dx}
+  \\
+  \therefore \ \ 
+  \frac{dg(x)}{dx} &= 0
+  \\
+  \therefore \ \ 
+  g(x) &= C
+  \ \ \ \ \ \ \ \ ( C \text{ は実数定数} )
+  \end{align}
+  を得る。
+  よって、求める正則関数は
+  \begin{align}
+  f(z)
+  &= e^x \cos y + i \left( e^x \sin y + C \right)
+  \ \ \ \ \ \ \ \ ( C \text{ は実数定数} )
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問題 2</h2>
+
+  <p>
+  \begin{align}
+  \int_C f(z) dz
+  &= \int_C \frac{dz}{(z-(-i+\sqrt{3}))(z-(-i-\sqrt{3}))}
+  \\
+  &= 2 \pi i \lim_{z \to -i+\sqrt{3}} \frac{1}{z-(-i-\sqrt{3})}
+  \\
+  &= \frac{\pi i}{\sqrt{3}}
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
