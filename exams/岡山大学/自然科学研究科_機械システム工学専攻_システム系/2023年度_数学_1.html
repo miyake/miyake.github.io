@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      岡山大学 大学院 自然科学研究科
+      機械システム工学専攻 システム系
+      2023年度 数学 [1]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/岡山大学/index.html">岡山大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    岡山大学 大学院 自然科学研究科
+    <br>
+    機械システム工学専攻 システム系
+    <br>
+    2023年度 数学 [1]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.gnst.okayama-u.ac.jp/ja/admission/gnst_dtest_kakomondai-index/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(1)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  \begin{align}
+  \lim_{x \to 0} \frac{x - \sin x}{x^3}
+  &= \lim_{x \to 0} \frac{1 - \cos x}{3x^2}
+  \\
+  &= \lim_{x \to 0} \frac{\sin x}{6x}
+  \\
+  &= \lim_{x \to 0} \frac{\cos x}{6}
+  \\
+  &= \frac{1}{6}
+  \end{align}
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  \begin{align}
+  \lim_{x \to \infty} x \left( a^\frac{1}{x} - 1 \right)
+  &= \lim_{y \to +0} \frac{a^y - 1}{y}
+  \ \ \ \ \ \ \ \ \left( y = \frac{1}{x} \right)
+  \\
+  &= \lim_{y \to +0} \frac{a^y \log a}{1}
+  \\
+  &= \log a
+  \end{align}
+  </p>
+
+  <h3>(iii)</h3>
+
+  <p>
+  \begin{align}
+  \lim_{x \to +0} \log \left( \frac{1}{x} \right)^x
+  &= \lim_{x \to +0} x \log \left( \frac{1}{x} \right)
+  \\
+  &= \lim_{y \to \infty} \frac{\log y}{y}
+  \ \ \ \ \ \ \ \ \left( y = \frac{1}{x} \right)
+  \\
+  &= \lim_{y \to \infty} \frac{\frac{1}{y}}{1}
+  \\
+  &= 0
+  \\
+  \therefore \ \ 
+  \lim_{x \to +0} \left( \frac{1}{x} \right)^x
+  &= 1
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  \begin{align}
+  \frac{dx}{dt}
+  &= 1 - 3t^2
+  = -3  \left( t - \frac{1}{\sqrt{3}} \right)
+  \left( t + \frac{1}{\sqrt{3}} \right)
+  , \\
+  \frac{dy}{dt}
+  &= -4t^3
+  \end{align}
+  なので、 $t$ に対する $x,y$ の増減表は次のようになる：
+  \begin{array}
+  {|c|ccccccc|}
+  \hline
+  t & -\infty & \cdots & -1 & \cdots & - \frac{1}{\sqrt{3}} & \cdots & 0 & \cdots & \frac{1}{\sqrt{3}} & \cdots & 1 & \cdots & \infty \\
+  \hline
+  dx/dt & & - & & - & 0 & + & & + & 0 & - & & - & \\
+  \hline
+  dy/dt & & + & & + & & + & 0 & - & & - & & - & \\
+  \hline
+  x & \infty & \searrow & 0 & \searrow & - \frac{2}{3 \sqrt{3}} & \nearrow & 0 & \nearrow & \frac{2}{3 \sqrt{3}} & \searrow & 0 & \searrow & - \infty \\
+  \hline
+  y & - \infty & \nearrow & 0 & \nearrow & & \nearrow & 1 & \searrow & & \searrow & 0 & \searrow & - \infty \\
+  \hline
+  \end{array}
+  よって、
+  \begin{align}
+  S_1
+  &= \int_{- \frac{1}{\sqrt{3}}}^\frac{1}{\sqrt{3}} y \frac{dx}{dt} dt
+  = \frac{416}{315 \sqrt{3}}
+  , \\
+  S_2
+  &= - \int_{-1}^{- \frac{1}{\sqrt{3}}} y \frac{dx}{dt} dt
+  = - \frac{8}{35} + \frac{208}{315 \sqrt{3}}
+  , \\
+  S_3
+  &= - \int_\frac{1}{\sqrt{3}}^1 y \frac{dx}{dt} dt
+  = - \frac{8}{35} + \frac{208}{315 \sqrt{3}}
+  \end{align}
+  とおくと、求める面積は
+  \begin{align}
+  S
+  &= S_1 - S_2 - S_3
+  \\
+  &= \frac{16}{35}
+  \end{align}
+  である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/岡山大学/index.html">岡山大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
