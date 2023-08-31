@@ -170,7 +170,23 @@
   y & - \infty & \nearrow & 0 & \nearrow & & \nearrow & 1 & \searrow & & \searrow & 0 & \searrow & - \infty \\
   \hline
   \end{array}
-  よって、
+  よって、曲線がy軸に関して対称であることを考慮して、
+  求める面積は、
+  \begin{align}
+  S
+  &= -2 \int_0^1 x \frac{dy}{dt} dt
+  \\
+  &= 8 \int_0^1 t^3 \left( t - t^3 \right) dt
+  \\
+  &= 8 \int_0^1 \left( t^4 - t^6 \right) dt
+  \\
+  &= 8 \left[ \frac{t^5}{5} - \frac{t^7}{7} \right]_0^1
+  \\
+  &= \frac{16}{35}
+  \end{align}
+  である。
+
+  <!--
   \begin{align}
   S_1
   &= \int_{- \frac{1}{\sqrt{3}}}^\frac{1}{\sqrt{3}} y \frac{dx}{dt} dt
@@ -192,6 +208,7 @@
   &= \frac{16}{35}
   \end{align}
   である。
+  -->
   </p>
 
 
