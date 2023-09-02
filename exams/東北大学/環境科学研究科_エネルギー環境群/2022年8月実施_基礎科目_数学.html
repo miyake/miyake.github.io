@@ -17,7 +17,7 @@
     <title>
       東北大学 大学院
       環境科学研究科 エネルギー環境群
-      2022年8月実施 基礎科目 数学
+      2022年8月実施 基礎科目 数学1
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     環境科学研究科 エネルギー環境群
     <br>
-    2022年8月実施 基礎科目 数学
+    2022年8月実施 基礎科目 数学1
   </h1>
 
   <hr>
@@ -79,9 +79,35 @@
 </script>
 
   <hr>
-  <h2>1.</h2>
+  <h2>(1)</h2>
 
-  <h3>(2)</h3>
+  <p>
+  \begin{align}
+  \lim_{x \to +0} \log \left( \frac{1}{x} \right)^{\sin x}
+  &= - \lim_{x \to +0} \sin x \log x
+  \\
+  &= 0
+  \\
+  \therefore \ \ 
+  \lim_{x \to +0} \left( \frac{1}{x} \right)^{\sin x}
+  &= 1
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(2)</h2>
 
   <h4>(2-1)</h4>
 
@@ -159,6 +185,62 @@
   \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
   \end{align}
   である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(3)</h2>
+
+  <p>
+  xz平面に関して対称であることを考慮して、
+  求める体積 $V$ は次のように計算できる：
+  \begin{align}
+  V
+  &= 2 \int_0^1 dy \int_{1 - \sqrt{1-y^2}}^{1 + \sqrt{1-y^2}} dx
+  \int_0^{4-(x^2+y^2)} dz
+  \\
+  &= 2 \int_0^1 dy \int_{1 - \sqrt{1-y^2}}^{1 + \sqrt{1-y^2}} dx
+  \left( 4-x^2-y^2 \right)
+  \\
+  &= 2 \int_0^1 dy \left[ (4-y^2) x - \frac{x^3}{3}
+  \right]_{x=1-\sqrt{1-y^2}}^{x=1+\sqrt{1-y^2}}
+  \\
+  &= 4 \int_0^1 dy \left( (4-y^2) \sqrt{1-y^2} - \frac{1}{3}
+  \left( 3 \sqrt{1-y^2} + (1-y^2) \sqrt{1-y^2} \right) \right)
+  \\
+  &= \frac{8}{3} \int_0^1 dy \left( 4-y^2 \right) \sqrt{1-y^2}
+  \\
+  &= \frac{8}{3} \int_0^\frac{\pi}{2} d \theta
+  \cos^2 \theta \left( 4 - \sin^2 \theta \right)
+  \ \ \ \ \ \ \ \ ( y = \sin \theta )
+  \\
+  &= \frac{8}{3} \int_0^\frac{\pi}{2} d \theta
+  \left( 4 \cos^2 \theta - \frac{1}{4} \sin^2 2 \theta \right)
+  \\
+  &= \frac{8}{3} \int_0^\frac{\pi}{2} d \theta
+  \left( 4 \cdot \frac{1 + \cos 2 \theta}{2}
+  - \frac{1}{4} \cdot \frac{1 - \cos 4 \theta}{2} \right)
+  \\
+  &= \frac{8}{3} \int_0^\frac{\pi}{2} d \theta
+  \left( \frac{15}{8} + 2 \cos 2 \theta + \frac{1}{8} \cos 4 \theta
+  \right)
+  \\
+  &= \frac{8}{3} \left[ \frac{15}{8} \theta
+  + \sin 2 \theta + \frac{1}{32} \sin 4 \theta \right]^\frac{\pi}{2}
+  \\
+  &= \frac{5}{2} \pi
+  \end{align}
   </p>
 
 
