@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      公立はこだて未来大学 大学院
+      基礎数学
+      2024年度 A日程
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/公立はこだて未来大学/index.html">公立はこだて未来大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    公立はこだて未来大学 大学院
+    <br>
+    基礎数学
+    <br>
+    2024年度 A日程
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.fun.ac.jp/past-graduate-school-exam">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>I</h2>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \begin{pmatrix}
+  1 - \lambda & \frac{1}{n} \\ \frac{1}{n} & 1 - \lambda
+  \end{pmatrix}
+  \\
+  &= \lambda^2 - 2 \lambda
+  + \left( 1 + \frac{1}{n} \right) \left( 1 - \frac{1}{n} \right)
+  \\
+  &= \left( \lambda - \left( 1 + \frac{1}{n} \right) \right)
+  \left( \lambda - \left( 1 - \frac{1}{n} \right) \right)
+  \\
+  \therefore \ \ 
+  \lambda
+  &= 1 - \frac{1}{n} , 1 + \frac{1}{n}
+  \end{align}
+  である。
+  また、
+  \begin{align}
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  , \ \ 
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+  \end{align}
+  は、それぞれの固有値に属する固有ベクトルである。
+  そこで、
+  \begin{align}
+  P = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  P^{-1} &= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}
+  , \\
+  A
+  &= P
+  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}
+  P^{-1}
+  \end{align}
+  なので、
+  \begin{align}
+  A^n
+  &= P
+  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}^n
+  P^{-1}
+  \\
+  &= P
+  \begin{pmatrix} \left( 1-\frac{1}{n} \right)^n & 0 \\
+  0 & \left( 1+\frac{1}{n} \right)^n \end{pmatrix}
+  P^{-1}
+  \\
+  \therefore \ \ 
+  \lim_{n \to \infty} A^n
+  &= P \begin{pmatrix} \frac{1}{e} & 0 \\ 0 & e \end{pmatrix} P^{-1}
+  \\
+  &= \frac{1}{2} \begin{pmatrix}
+  e + \frac{1}{e} & e + \frac{1}{e} \\ e - \frac{1}{e} & e + \frac{1}{e}
+  \end{pmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>II</h2>
+
+  <h3>問 1</h3>
+
+  <p>
+  $x \gt 0$ のとき $f(x) \gt 0$ であり、
+  \begin{align}
+  \log f(x) &= \sin x \log x
+  \\
+  \therefore \ \ 
+  \frac{f'(x)}{f(x)} &= \cos x \log x + \frac{1}{x} \sin x
+  \\
+  \therefore \ \ 
+  f'(x)
+  &= f(x) \left( \cos x \log x + \frac{1}{x} \sin x \right)
+  \\
+  &= x^{\sin x} \left( \cos x \log x + \frac{1}{x} \sin x \right)
+  \end{align}
+  である。
+  </p>
+
+  <h3>問 2</h3>
+
+  <p>
+  \begin{align}
+  \frac{dt}{dx}
+  &= \frac{1}{2} \frac{1}{\cos^2 \frac{x}{2}}
+  = \frac{t^2 + 1}{2}
+  \\
+  \sin x
+  &= 2 \sin \frac{x}{2} \cos \frac{x}{2}
+  = \frac{2t}{t^2 + 1}
+  \end{align}
+  なので、
+  \begin{align}
+  \int_0^\frac{\pi}{2} \frac{1}{1 + \sin x} dx
+  &= \int_0^1 \frac{1}{1 + \frac{2t}{t^2 + 1}} \frac{2}{t^2 + 1} dt
+  \\
+  &= 2 \int_0^1 \frac{1}{(t+1)^2} dt
+  \\
+  &= 2 \left[ - \frac{1}{t+1} \right]_0^1
+  \\
+  &= 1
+  \end{align}
+  を得る。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/公立はこだて未来大学/index.html">公立はこだて未来大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
