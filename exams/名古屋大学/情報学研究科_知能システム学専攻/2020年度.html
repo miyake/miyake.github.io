@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 情報学研究科
       知能システム学専攻, 情報システム学専攻
-      2020年度
+      2020年度 確率・統計
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     知能システム学専攻, 情報システム学専攻
     <br>
-    2020年度
+    2020年度 確率・統計
   </h1>
 
   <hr>
@@ -79,133 +79,9 @@
 </script>
 
   <hr>
-  <h2>解析・線形代数</h2>
+  <h2>[1]</h2>
 
-  <h3>[1]</h3>
-
-  <h4>(a)</h4>
-
-  <p>
-  \begin{align}
-  z
-  =
-  \left( 1 + i \right)^8
-  =
-  \left( \sqrt{2} e^{ \frac{\pi}{4} i } \right)^8
-  =
-  2^4 e^{ 2 \pi i }
-  =
-  16
-  \end{align}
-  であるから、
-  \begin{align}
-  u=16, v=0
-  \end{align}
-  </p>
-
-  <h4>(b)</h4>
-
-  <p>
-  $ |z| = 2^{n/2} = 8 $ より、 $n=6$ なので、
-  \begin{align}
-  z
-  =
-  \left( 1 + i \right)^6
-  =
-  \left( \sqrt{2} e^{ \frac{\pi}{4} i } \right)^6
-  =
-  2^3 e^{ \frac{3}{2} \pi i }
-  =
-  -8i
-  \end{align}
-  であるから、
-  \begin{align}
-  u=0, v=-8
-  \end{align}
-  </p>
-
-  <h3>[3]</h3>
-
-  <h4>(a)</h4>
-
-  <p>
-  時刻 $t$ における P の速度の大きさを $v(t)$ とすると、
-  \begin{align}
-  v(t)
-  &=
-  \sqrt{ \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 }
-  \\
-  &=
-  \sqrt{ 9 \sin^4 t \cos^2 t + 9 \sin^2 t \cos^4 t }
-  \\
-  &=
-  \sqrt{ 9 \sin^2 t \cos^2 t }
-  \\
-  &=
-  \frac{3}{2} \left| \sin 2t \right|
-  \end{align}
-  であるから、求める長さ $l$ は、
-  \begin{align}
-  l
-  &=
-  \int_0^{2 \pi} v(t) dt
-  \\
-  &=
-  \frac{3}{2} \int_0^{2 \pi} \left| \sin 2t \right| dt
-  \\
-  &=
-  3 \int_0^{\pi} \left| \sin 2t \right| dt
-  \\
-  &=
-  3 \left( \int_0^{\pi/2} \sin 2t dt - \int_{\pi/2}^{\pi} \sin 2t dt \right)
-  \\
-  &=
-  \frac{3}{2} \left(
-  - \left[ \cos 2t \right]_0^{\pi/2}
-  + \left[ \cos 2t \right]_{\pi/2}^{\pi} \right)
-  \\
-  &=
-  6
-  \end{align}
-  </p>
-
-  <h4>(b)</h4>
-
-  <p>
-  $ 0 \lt t \lt \pi / 2 $ において、
-  \begin{align}
-  v(t) &= \frac{3}{2} \sin 2t
-  \end{align}
-  であるから、 $v(t)$ が最大になるのは、 $ t = \pi / 4 $ のときであり、
-  このとき、
-  \begin{align}
-  x &= \sin^3 \frac{\pi}{4}
-  = \left( \frac{1}{\sqrt{2}} \right)^3 = \frac{1}{2 \sqrt{2}}
-  \\
-  y &= \cos^3 \frac{\pi}{4}
-  = \left( \frac{1}{\sqrt{2}} \right)^3 = \frac{1}{2 \sqrt{2}}
-  \end{align}
-  である。
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>確率・統計</h2>
-
-  <h3>[1]</h3>
-
-  <h4>(1)</h4>
+  <h3>(1)</h3>
 
   <p>
   \begin{align}
@@ -213,7 +89,7 @@
   \end{align}
   </p>
 
-  <h4>(2)</h4>
+  <h3>(2)</h3>
 
   <p>
   \begin{align}
@@ -221,7 +97,7 @@
   \end{align}
   </p>
 
-  <h4>(3)</h4>
+  <h3>(3)</h3>
 
   <p>
   \begin{align}
@@ -230,7 +106,7 @@
   \end{align}
   </p>
 
-  <h4>(4)</h4>
+  <h3>(4)</h3>
 
   <p>
   求める期待値 $E(\text{表})$ は、
@@ -274,7 +150,7 @@
   を得る。
   </p>
 
-  <h4>(5)</h4>
+  <h3>(5)</h3>
 
   <p>
   与えられた式を整理して、
@@ -286,9 +162,10 @@
   &=
   6
   \end{align}
+  を得る。
   </p>
 
-  <h4>(6)</h4>
+  <h3>(6)</h3>
 
   <p>
   (5) と同じように考えて、
@@ -300,11 +177,25 @@
   &=
   14
   \end{align}
+  を得る。
   </p>
 
-  <h3>[2]</h3>
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-  <h4>(1)</h4>
+  <hr>
+  <h2>[2]</h2>
+
+  <h3>(1)</h3>
 
   <p>
   \begin{align}
@@ -319,7 +210,7 @@
   であるから、 $f_{X,Y}(x,y)$ が最大となるのは $x=2,y=0$ のときである。
   </p>
 
-  <h4>(2)</h4>
+  <h3>(2)</h3>
 
   <p>
   \begin{align}
@@ -332,7 +223,7 @@
   \end{align}
   </p>
 
-  <h4>(3)</h4>
+  <h3>(3)</h3>
 
   <p>
   \begin{align}
@@ -350,9 +241,10 @@
   \begin{align}
   a = \frac{1}{8}
   \end{align}
+  である。
   </p>
 
-  <h4>(4)</h4>
+  <h3>(4)</h3>
 
   <p>
   \begin{align}
@@ -367,7 +259,6 @@
   4
   \end{align}
   </p>
-
 
 
   <hr>
