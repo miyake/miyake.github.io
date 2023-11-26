@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       システム情報科学府
-      2019年度 数学 3. ベクトル解析
+      2019年度 数学 4. 複素関数論
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -46,7 +46,7 @@
   <h1>
     九州大学 大学院 システム情報科学府
     <br>
-    2019年度 数学 3. ベクトル解析
+    2019年度 数学 4. 複素関数論
   </h1>
 
   <hr>
@@ -78,77 +78,47 @@
 
   <hr>
 
-  <h2>(1)</h2>
-
   <p>
+  $x = r \cos \theta, y = r \sin \theta$ より、
   \begin{align}
-  \mathrm{grad} \phi
-  = \left(z e^{xz} \sin y + e^x \cos y \right) \boldsymbol{i}
-  + \left(e^{xz} \cos y - e^x \sin y \right) \boldsymbol{j}
-  + x e^{xz} \sin y \boldsymbol{k}
-  \end{align}
-  なので、点 $(1,0,1)$ において、
-  \begin{align}
-  \mathrm{grad} \phi
-  &= e \boldsymbol{i} + e \boldsymbol{j}
+  \frac{\partial x}{\partial r} &= \cos \theta
   \\
-  \boldsymbol{A}
-  &= \boldsymbol{i} - 2 \boldsymbol{j} + 2 \boldsymbol{k}
+  \frac{\partial x}{\partial \theta} &= -r \sin \theta
   \\
-  \left| \boldsymbol{A} \right|
-  &= 3
+  \frac{\partial y}{\partial r} &= \sin \theta
+  \\
+  \frac{\partial y}{\partial \theta} &= r \cos \theta
   \end{align}
   であり、
   \begin{align}
-  \mathrm{grad} \phi \cdot \frac{\boldsymbol{A}}{| \boldsymbol{A} |}
-  &= - \frac{e}{3}
+  \frac{\partial u}{\partial r}
+  &= \cos \theta \frac{\partial u}{\partial x} + \sin \theta \frac{\partial u}{\partial y}
+  \\
+  \frac{\partial u}{\partial \theta}
+  &= -r \sin \theta \frac{\partial u}{\partial x} + r \cos \theta \frac{\partial u}{\partial y}
+  \\
+  \frac{\partial v}{\partial r}
+  &= \cos \theta \frac{\partial v}{\partial x} + \sin \theta \frac{\partial v}{\partial y}
+  \\
+  \frac{\partial v}{\partial \theta}
+  &= -r \sin \theta \frac{\partial v}{\partial x} + r \cos \theta \frac{\partial v}{\partial y}
+  \end{align}
+  である。
+
+  ここで、コーシー・リーマンの方程式
+  \begin{align}
+  \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}
+  , \ \ 
+  \frac{\partial u}{\partial y} = - \frac{\partial v}{\partial x}
+  \end{align}
+  を使うと、
+  \begin{align}
+  \frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
+  , \ \ 
+  \frac{\partial v}{\partial r} = - \frac{1}{r} \frac{\partial u}{\partial \theta}
   \end{align}
   を得る。
   </p>
-
-  <h2>(2)</h2>
-
-  <p>
-  $S$ 上の点の位置ベクトルは
-  $\boldsymbol{r} = x \boldsymbol{i} + y \boldsymbol{j} + (-6x-3y+3) \boldsymbol{k}$
-  と書け、このとき、
-  \begin{align}
-  \frac{\partial \boldsymbol{r}}{\partial x}
-  &= \boldsymbol{i} -6 \boldsymbol{k}
-  \\
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= \boldsymbol{j} -3 \boldsymbol{k}
-  \\
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= 6 \boldsymbol{i} + 3 \boldsymbol{j} + \boldsymbol{k}
-  \end{align}
-  である。
-  また、 $S$ 上で
-  $\boldsymbol{A} = (-6x-3y+3) \boldsymbol{i} - 3 \boldsymbol{j} + 4xy \boldsymbol{k}$
-  なので、
-  \begin{align}
-  \boldsymbol{A} \cdot
-  \left(
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  \right)
-  &= 4xy-36x-18y+9
-  \end{align}
-  である。
-  点 $(x, y, -6x-3y+3)$ が $S$ にあるのは、
-  $0 \leq x \leq 1$ かつ $0 \leq y \leq -2x+1$ のときであるから、
-  求める面積分は、
-  \begin{align}
-  &\int_0^1 dx \int_0^{-2x+1} dy \left( 4xy-36x-18y+9 \right)
-  \\
-  &= 4 \int_0^1 dx \left( 2x^3+7x^2-4x \right)
-  \\
-  &= - \frac{17}{24}
-  \end{align}
-  である。
-  </p>
-
 
   <hr>
 <!-- 横長タイプ -->

@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       システム情報科学府
-      2019年度 数学 3. ベクトル解析
+      2019年度 数学 5. 確率・統計
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -46,7 +46,7 @@
   <h1>
     九州大学 大学院 システム情報科学府
     <br>
-    2019年度 数学 3. ベクトル解析
+    2019年度 数学 5. 確率・統計
   </h1>
 
   <hr>
@@ -82,73 +82,77 @@
 
   <p>
   \begin{align}
-  \mathrm{grad} \phi
-  = \left(z e^{xz} \sin y + e^x \cos y \right) \boldsymbol{i}
-  + \left(e^{xz} \cos y - e^x \sin y \right) \boldsymbol{j}
-  + x e^{xz} \sin y \boldsymbol{k}
-  \end{align}
-  なので、点 $(1,0,1)$ において、
-  \begin{align}
-  \mathrm{grad} \phi
-  &= e \boldsymbol{i} + e \boldsymbol{j}
+  1
+  &=
+  \iint_\Omega f(x,y) dx dy
   \\
-  \boldsymbol{A}
-  &= \boldsymbol{i} - 2 \boldsymbol{j} + 2 \boldsymbol{k}
+  &=
+  \frac{1}{C} \left\{
+  \int_0^1 e^{-x} dx \int_0^1 dy
+  + \int_0^1 dx \int_0^1 e^{-y} dy
+  \right\}
   \\
-  \left| \boldsymbol{A} \right|
-  &= 3
+  &=
+  \frac{1}{C} \frac{2(e-1)}{e}
+  \\
+  \therefore \ \ 
+  C &= \frac{2(e-1)}{e}
   \end{align}
-  であり、
-  \begin{align}
-  \mathrm{grad} \phi \cdot \frac{\boldsymbol{A}}{| \boldsymbol{A} |}
-  &= - \frac{e}{3}
-  \end{align}
-  を得る。
   </p>
 
   <h2>(2)</h2>
 
   <p>
-  $S$ 上の点の位置ベクトルは
-  $\boldsymbol{r} = x \boldsymbol{i} + y \boldsymbol{j} + (-6x-3y+3) \boldsymbol{k}$
-  と書け、このとき、
+  $X,Y$ の周辺確率密度関数をそれぞれ $f_X(x), f_Y(y)$ とすると、
   \begin{align}
-  \frac{\partial \boldsymbol{r}}{\partial x}
-  &= \boldsymbol{i} -6 \boldsymbol{k}
+  f_X(x)
+  &=
+  \int_0^1 f(x,y) dy
   \\
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= \boldsymbol{j} -3 \boldsymbol{k}
+  &=
+  \frac{1}{C} \int_0^1 (e^{-x} + e^{-y}) dy
   \\
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= 6 \boldsymbol{i} + 3 \boldsymbol{j} + \boldsymbol{k}
+  &=
+  \frac{e}{2(e-1)} e^{-x} + \frac{1}{2}
+  \\
+  f_Y(y)
+  &=
+  \frac{e}{2(e-1)} e^{-y} + \frac{1}{2}
   \end{align}
-  である。
-  また、 $S$ 上で
-  $\boldsymbol{A} = (-6x-3y+3) \boldsymbol{i} - 3 \boldsymbol{j} + 4xy \boldsymbol{k}$
-  なので、
+  であり、
   \begin{align}
-  \boldsymbol{A} \cdot
-  \left(
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  \right)
-  &= 4xy-36x-18y+9
+  f(x,y) \ne f_X(x) f_Y(y)
   \end{align}
-  である。
-  点 $(x, y, -6x-3y+3)$ が $S$ にあるのは、
-  $0 \leq x \leq 1$ かつ $0 \leq y \leq -2x+1$ のときであるから、
-  求める面積分は、
+  であるから、 $X$ と $Y$ は独立ではない。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  $Y=0$ の条件の下での $X$ の確率密度関数を $f_{X \mid Y=0} (x)$
+  とすると、
   \begin{align}
-  &\int_0^1 dx \int_0^{-2x+1} dy \left( 4xy-36x-18y+9 \right)
+  f_{X \mid Y=0} (x)
+  &=
+  \frac{f(x,0)}{f_Y(0)}
   \\
-  &= 4 \int_0^1 dx \left( 2x^3+7x^2-4x \right)
+  &=
+  \frac{e(e^{-x} + 1)}{2e-1}
+  \end{align}
+  であるから、求める期待値は、
+  \begin{align}
+  E(X \mid Y=0)
+  &=
+  \int_0^1 x f_{X \mid Y=0} (x) dx
   \\
-  &= - \frac{17}{24}
+  &=
+  \frac{e}{2e-1} \int_0^1 x (e^{-x} + 1) dx
+  \\
+  &=
+  \frac{3e-4}{2(2e-1)}
   \end{align}
   である。
   </p>
-
 
   <hr>
 <!-- 横長タイプ -->
@@ -161,7 +165,6 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 
   <hr>
   <nav id="footer_breadcrumbs">

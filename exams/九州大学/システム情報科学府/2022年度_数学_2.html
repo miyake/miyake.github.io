@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       システム情報科学府
-      2019年度 数学 3. ベクトル解析
+      2022年度 数学 2. 解析学・微積分
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -46,7 +46,7 @@
   <h1>
     九州大学 大学院 システム情報科学府
     <br>
-    2019年度 数学 3. ベクトル解析
+    2022年度 数学 2. 解析学・微積分
   </h1>
 
   <hr>
@@ -78,77 +78,80 @@
 
   <hr>
 
-  <h2>(1)</h2>
+  <h3>(1)</h3>
+
+  <h4>(a)</h4>
 
   <p>
   \begin{align}
-  \mathrm{grad} \phi
-  = \left(z e^{xz} \sin y + e^x \cos y \right) \boldsymbol{i}
-  + \left(e^{xz} \cos y - e^x \sin y \right) \boldsymbol{j}
-  + x e^{xz} \sin y \boldsymbol{k}
+  \frac{df}{dt}
+  = \sum_{i=1}^m \frac{\partial f}{\partial x_i} \frac{dv_i}{dt}
   \end{align}
-  なので、点 $(1,0,1)$ において、
-  \begin{align}
-  \mathrm{grad} \phi
-  &= e \boldsymbol{i} + e \boldsymbol{j}
-  \\
-  \boldsymbol{A}
-  &= \boldsymbol{i} - 2 \boldsymbol{j} + 2 \boldsymbol{k}
-  \\
-  \left| \boldsymbol{A} \right|
-  &= 3
-  \end{align}
-  であり、
-  \begin{align}
-  \mathrm{grad} \phi \cdot \frac{\boldsymbol{A}}{| \boldsymbol{A} |}
-  &= - \frac{e}{3}
-  \end{align}
-  を得る。
   </p>
 
-  <h2>(2)</h2>
+  <h4>(b)</h4>
 
   <p>
-  $S$ 上の点の位置ベクトルは
-  $\boldsymbol{r} = x \boldsymbol{i} + y \boldsymbol{j} + (-6x-3y+3) \boldsymbol{k}$
-  と書け、このとき、
   \begin{align}
-  \frac{\partial \boldsymbol{r}}{\partial x}
-  &= \boldsymbol{i} -6 \boldsymbol{k}
-  \\
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= \boldsymbol{j} -3 \boldsymbol{k}
-  \\
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= 6 \boldsymbol{i} + 3 \boldsymbol{j} + \boldsymbol{k}
+  \frac{df}{dt}
+  = (2x_1+x_2) \cos t + (x_1+4x_2)e^t
   \end{align}
-  である。
-  また、 $S$ 上で
-  $\boldsymbol{A} = (-6x-3y+3) \boldsymbol{i} - 3 \boldsymbol{j} + 4xy \boldsymbol{k}$
-  なので、
+  あるいは、 $x_1, x_2$ は使わず $t$ のみで表すと、
   \begin{align}
-  \boldsymbol{A} \cdot
-  \left(
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  \right)
-  &= 4xy-36x-18y+9
+  \frac{df}{dt}
+  = \sin 2t + e^t \cos t + e^t \sin t + 4 e^{2t}
   \end{align}
-  である。
-  点 $(x, y, -6x-3y+3)$ が $S$ にあるのは、
-  $0 \leq x \leq 1$ かつ $0 \leq y \leq -2x+1$ のときであるから、
-  求める面積分は、
-  \begin{align}
-  &\int_0^1 dx \int_0^{-2x+1} dy \left( 4xy-36x-18y+9 \right)
-  \\
-  &= 4 \int_0^1 dx \left( 2x^3+7x^2-4x \right)
-  \\
-  &= - \frac{17}{24}
-  \end{align}
-  である。
   </p>
 
+  <h3>(2)</h3>
+
+  <p>
+  まず、与えられた微分方程式の右辺を $0$ とした方程式
+  \begin{align}
+  \frac{dy}{dx} - 2xy = 0
+  \end{align}
+  を考えると、これは
+  \begin{align}
+  \frac{dy}{y} = 2x dx
+  \end{align}
+  と変形できるので、一般解は、$A$ を任意定数として、次のように求まる：
+  \begin{align}
+  y = A e^{x^2}
+  \end{align}
+
+  そこで、 $A$ を $x$ の関数と考えて、
+  $y = A(x)e^{x^2}$ を与えられた微分方程式に代入すると、
+  \begin{align}
+  \frac{dA(x)}{dx} &= 1
+  \\
+  \therefore \ \ 
+  A(x) &= x + C
+  \end{align}
+  を得るので、求める一般解は
+  \begin{align}
+  y = (x+C) e^{x^2}
+  \end{align}
+  である。
+  ただし、 $C$ は任意定数である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  $w=z-\pi/2$ として、次のように $w=0$ においてローラン展開できる：
+  \begin{align}
+  \frac{\cos z}{(2z - \pi)^3}
+  &= - \frac{1}{8} \frac{\sin w}{w^3}
+  \\
+  &= - \frac{1}{8w^3} \left( w - \frac{1}{6} w^3 + \cdots \right)
+  \\
+  &= - \frac{1}{8} \left( \frac{1}{w^2} - \frac{1}{6} + \cdots \right)
+  \end{align}
+  よって、
+  \begin{align}
+  \oint_C \frac{\cos z}{(2 \pi - z)^2} = 0
+  \end{align}
+  </p>
 
   <hr>
 <!-- 横長タイプ -->

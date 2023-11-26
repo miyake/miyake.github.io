@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       システム情報科学府
-      2022年度 数学
+      2022年度 数学 1. 線形代数
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -44,10 +44,9 @@
   <hr>
 
   <h1>
-    九州大学 大学院
-    システム情報科学府
+    九州大学 大学院 システム情報科学府
     <br>
-    2022年度 数学
+    2022年度 数学 1. 線形代数
   </h1>
 
   <hr>
@@ -78,11 +77,10 @@
 </script>
 
   <hr>
-  <h2>1. 【線形代数 (Linear algebra) 分野】</h2>
 
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
-  <h4>(a)</h4>
+  <h3>(a)</h3>
 
   <p>
   \begin{align}
@@ -94,7 +92,7 @@
   \end{align}
   </p>
 
-  <h4>(b)</h4>
+  <h3>(b)</h3>
 
   <p>
   \begin{align}
@@ -106,9 +104,9 @@
   \end{align}
   </p>
 
-  <h3>(2)</h3>
+  <h2>(2)</h2>
 
-  <h4>(a)</h4>
+  <h3>(a)</h3>
 
   <p>
   \begin{align}
@@ -124,7 +122,7 @@
   \end{align}
   </p>
 
-  <h4>(b)</h4>
+  <h3>(b)</h3>
 
   <p>
   \begin{align}
@@ -140,7 +138,7 @@
   \end{align}
   </p>
 
-  <h3>(3)</h3>
+  <h2>(3)</h2>
 
   <p>
   ベクトル $\boldsymbol{a}$ のノルムを $|\boldsymbol{a}|$ で表す。
@@ -219,195 +217,6 @@
   \end{align}
   が成り立つので、 $G$ は半正定値である。
   </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>2. 【解析学・微積分 (Analysis and calculus) 分野】</h2>
-
-  <h3>(1)</h3>
-
-  <h4>(a)</h4>
-
-  <p>
-  \begin{align}
-  \frac{df}{dt}
-  = \sum_{i=1}^m \frac{\partial f}{\partial x_i} \frac{dv_i}{dt}
-  \end{align}
-  </p>
-
-  <h4>(b)</h4>
-
-  <p>
-  \begin{align}
-  \frac{df}{dt}
-  = (2x_1+x_2) \cos t + (x_1+4x_2)e^t
-  \end{align}
-  あるいは、 $x_1, x_2$ は使わず $t$ のみで表すと、
-  \begin{align}
-  \frac{df}{dt}
-  = \sin 2t + e^t \cos t + e^t \sin t + 4 e^{2t}
-  \end{align}
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  まず、与えられた微分方程式の右辺を $0$ とした方程式
-  \begin{align}
-  \frac{dy}{dx} - 2xy = 0
-  \end{align}
-  を考えると、これは
-  \begin{align}
-  \frac{dy}{y} = 2x dx
-  \end{align}
-  と変形できるので、一般解は、$A$ を任意定数として、次のように求まる：
-  \begin{align}
-  y = A e^{x^2}
-  \end{align}
-
-  そこで、 $A$ を $x$ の関数と考えて、
-  $y = A(x)e^{x^2}$ を与えられた微分方程式に代入すると、
-  \begin{align}
-  \frac{dA(x)}{dx} &= 1
-  \\
-  \therefore \ \ 
-  A(x) &= x + C
-  \end{align}
-  を得るので、求める一般解は
-  \begin{align}
-  y = (x+C) e^{x^2}
-  \end{align}
-  である。
-  ただし、 $C$ は任意定数である。
-  </p>
-
-  <h3>(3)</h3>
-
-  <p>
-  $w=z-\pi/2$ として、次のように $w=0$ においてローラン展開できる：
-  \begin{align}
-  \frac{\cos z}{(2z - \pi)^3}
-  &= - \frac{1}{8} \frac{\sin w}{w^3}
-  \\
-  &= - \frac{1}{8w^3} \left( w - \frac{1}{6} w^3 + \cdots \right)
-  \\
-  &= - \frac{1}{8} \left( \frac{1}{w^2} - \frac{1}{6} + \cdots \right)
-  \end{align}
-  よって、
-  \begin{align}
-  \oint_C \frac{\cos z}{(2 \pi - z)^2} = 0
-  \end{align}
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>3. 【ベクトル解析分野】</h2>
-
-  <h3>(1)</h3>
-
-  <p>
-  $S_1$ 上の点は
-  \begin{align}
-  \boldsymbol{i} \cos \varphi + y \boldsymbol{j} + \boldsymbol{k} \sin \varphi
-  \ \ \ \ 
-  (0 \leq \varphi \lt 2 \pi, \ \ 0 \leq y \leq 4)
-  \end{align}
-  と表せる。
-  $S_1$ の外向きの単位法線ベクトルを $\boldsymbol{n}$ とすると、
-  \begin{align}
-  \boldsymbol{n}
-  &= \boldsymbol{i} \cos \varphi + \boldsymbol{k} \sin \varphi
-  \\
-  \boldsymbol{F}
-  &= \boldsymbol{i} \cos \varphi + 2y \boldsymbol{j}
-  + 10 \boldsymbol{k} \sin \varphi
-  \\
-  \boldsymbol{F} \cdot \boldsymbol{n}
-  &= \cos^2 \varphi + 10 \sin^2 \varphi
-  \\
-  &= \frac{11}{2} - \frac{9}{2} \cos 2 \varphi
-  \end{align}
-  なので、求める積分は
-  \begin{align}
-  \int_{S_1} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
-  &= \int_0^{2 \pi} d \varphi \int_0^4 dy
-  \left( \frac{11}{2} - \frac{9}{2} \cos 2 \varphi \right)
-  \\
-  &= 44 \pi
-  \end{align}
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  $S_2$ を次のように2つに分けて考える：
-  \begin{align}
-  S_2' \ &: \ \ x^2 + z^2 = 1 \ \ (0 \leq y \leq 4, \ 0 \leq z)
-  \\
-  S_2'' \ &: \ \ z=0 \ \ (-1 \leq x \leq 1, \ 0 \leq y \leq 4)
-  \end{align}
-
-  $S_2'$ 上では (1) と同様に計算できる：
-  \begin{align}
-  \int_{S_2'} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
-  &= \int_0^{\pi} d \varphi \int_0^4 dy
-  \left( \frac{11}{2} - \frac{9}{2} \cos 2 \varphi \right)
-  \\
-  &= 22 \pi
-  \end{align}
-
-  $S_2''$ 上では、外向き単位法線ベクトルは
-  $\boldsymbol{n} = - \boldsymbol{k}$ で、
-  $\boldsymbol{F} = x \boldsymbol{i} + 2y \boldsymbol{j}$ なので、
-  $\boldsymbol{F} \cdot \boldsymbol{n} = 0$ であり、
-  面積分は $0$ である。
-
-  よって、求める積分は
-  \begin{align}
-  \int_{S_2} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
-  &= \int_{S_2'} dS \ \boldsymbol{F} \cdot \boldsymbol{n}
-  \\
-  &= 22 \pi
-  \end{align}
-  </p>
-
-  <!--
-  <h3>(3)</h3>
-  -->
-
-  <!--
-  <hr>
-  <h2>5. 【確率・統計分野】</h2>
-
-  <h3>(1)</h3>
-
-  <p>
-  \begin{align}
-  \end{align}
-  </p>
-  -->
 
   <hr>
 <!-- 横長タイプ -->
