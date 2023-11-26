@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院
+      情報科学研究科 情報基礎数学専攻
+      2021年度 数学4
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    大阪大学 大学院
+    <br>
+    情報科学研究科 情報基礎数学専攻
+    <br>
+    2021年度 数学4
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.ist.osaka-u.ac.jp/japanese/admission/past-exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  $A$ の列ベクトル
+  \begin{align}
+  \boldsymbol{a}_1 = \begin{pmatrix} -5 \\ -2 \end{pmatrix}
+  ,
+  \boldsymbol{a}_2 = \begin{pmatrix} 3a-3b+14 \\ a-b+4 \end{pmatrix}
+  ,
+  \boldsymbol{a}_3 = \begin{pmatrix} 15 \\ 6 \end{pmatrix}
+  \end{align}
+  を見ると、 $\boldsymbol{a}_3 = -3 \boldsymbol{a}_1$ であるが、
+  $a,b$ が何であっても
+  $\boldsymbol{a}_2$ は $\boldsymbol{a}_1$ の実数倍で表せない。
+  したがって、 $A$ の像は2次元であり、核 $V$ は1次元である。
+  </p>
+
+  <p>
+  核 $V$ を求めるために、次のようにおく：
+  \begin{align}
+  \begin{pmatrix} -5 & 3a-3b+14 & 15 \\ -2 & a-b+4 & 6 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+  \end{align}
+  これが成り立つのは $-x+3z=0,y=0$ のときであり、
+  したがって、 $V$ の基底はたとえば、
+  \begin{align}
+  \boldsymbol{v} = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  である。
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  $B$ の列ベクトルを次のように書く：
+  \begin{align}
+  \boldsymbol{b}_1 = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}
+  ,
+  \boldsymbol{b}_2
+  = \begin{pmatrix} -3a-b \\ 3a+b \\ 3a+b \end{pmatrix}
+  = (3a+b) \begin{pmatrix} -1 \\ 1 \\ 1 \end{pmatrix}
+  = (3a+b) \boldsymbol{b}'_2
+  \end{align}
+  ここで、 $\boldsymbol{b}_1, \boldsymbol{b}'_2$ は1次独立である。
+  </p>
+
+  <p>
+  $3a+b=0$ のときは、 $W$ は1次元であり、
+  $\boldsymbol{b}_1$ が基底になる。
+  </p>
+
+  <p>
+  $3a+b \neq 0$ のときは、 $W$ は2次元であり、
+  $\boldsymbol{b}_1, \boldsymbol{b}'_2$ が基底になる。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  $\boldsymbol{v}, \boldsymbol{b}_1$ は1次独立なので、
+  $3a+b=0$ のときは、 $V+W$ は $V$ と $W$ の直和になる。
+  </p>
+
+  <p>
+  $\boldsymbol{v} = \boldsymbol{b}_1 - 2 \boldsymbol{b}'_2$
+  なので、
+  $3a+b \neq 0$ のときは、 $V+W$ は $V$ と $W$ の直和にならない。
+  </p>
+
+  <p>
+  したがって、求める条件は $3a+b=0$ である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+

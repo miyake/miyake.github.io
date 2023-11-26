@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院
+      情報科学研究科 情報数理学専攻
+      2020年度 情報数理学 数理基礎
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    大阪大学 大学院
+    <br>
+    情報科学研究科 情報数理学専攻
+    <br>
+    2020年度 情報数理学 数理基礎
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.ist.osaka-u.ac.jp/japanese/admission/past-exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>2.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \iint_{x \gt 0, y \gt 0} e^{-2(x+2y)} dx dy
+  &=
+  \int_0^\infty e^{-2x} dx
+  \int_0^\infty e^{-4y} dy
+  \\
+  &=
+  \left[ - \frac{1}{2} e^{-2x} \right]_0^\infty
+  \left[ - \frac{1}{4} e^{-4y} \right]_0^\infty
+  \\
+  &=
+  \frac{1}{8}
+  \end{align}
+  なので、
+  \begin{align}
+  c = 8
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  $X,Y$ のそれぞれの周辺確率密度関数を $f_X(x), f_Y(y)$ とすると、
+  \begin{align}
+  f_X(x)
+  &= \int_0^\infty e^{-2(x+2y)} dy
+  = 2 e^{-2x}
+  \ \ \ \ (x \gt 0)
+  \\
+  f_Y(y)
+  &= \int_0^\infty e^{-2(x+2y)} dx
+  = 4 e^{-4y}
+  \ \ \ \ (y \gt 0)
+  \end{align}
+  なので、任意の $x,y$ について
+  \begin{align}
+  f(x,y) = f_X(x) f_Y(y)
+  \end{align}
+  が成り立つから、 $X$ と $Y$ は独立である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  確率を $P$ で表すと、
+  求める確率は次のように計算できる：
+  \begin{align}
+  P \left( X \geq \frac{1}{2} \text{ or } Y \geq \frac{1}{2} \right)
+  &=
+  1 -
+  P \left( X \lt \frac{1}{2} \text{ and } Y \lt \frac{1}{2} \right)
+  \\
+  &=
+  1 -
+  \int_0^{1/2} f_X(x) dx
+  \int_0^{1/2} f_Y(y) dy
+  \\
+  &=
+  1 - (1-e^{-1})(1-e^{-2})
+  \\
+  &=
+  e^{-1} + e^{-2} - e^{-3}
+  \\
+  &\approx
+  0.4534244
+  \end{align}
+  よって、 45.3% である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>3.</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  $y_1, y_2, \cdots, y_N$ は独立で、
+  $y_k$ は期待値 $ax_k^2+bx_k+c$ 分散 $\sigma^2$ の正規分布
+  であるから、求める尤度 $L$ は、
+  \begin{align}
+  L
+  &=
+  \prod_{k=1}^N \frac{1}{\sqrt{2 \pi \sigma^2}}
+  \exp \left[ - \frac{(y_k - (ax_k^2+bx_k+c))^2}{2 \sigma^2} \right]
+  \\
+  &=
+  \left( 2 \pi \sigma^2 \right)^{-N/2}
+  \exp \left[ - \frac{1}{2 \sigma^2} \sum_{k=1}^N
+  \left( y_k - (ax_k^2+bx_k+c) \right)^2 \right]
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  L
+  &=
+  \left( 2 \pi \sigma^2 \right)^{-N/2}
+  \exp \left[ - \frac{J}{2 \sigma^2} \right]
+  \end{align}
+  であるから、
+  $J$ を最小とする $a,b,c$ は、
+  $L$ を最大にするので、最尤推定量である。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+

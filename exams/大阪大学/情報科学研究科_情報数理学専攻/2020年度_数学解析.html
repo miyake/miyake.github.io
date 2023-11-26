@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪大学 大学院
+      情報科学研究科 情報数理学専攻
+      2020年度 情報数理学 数学解析
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    大阪大学 大学院
+    <br>
+    情報科学研究科 情報数理学専攻
+    <br>
+    2020年度 情報数理学 数学解析
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.ist.osaka-u.ac.jp/japanese/admission/past-exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>1.</h2>
+
+  <p>
+  まず、 $ x_0(t) = e^{-t} $ は、すぐにわかる。
+
+  $ x_1(t) $ については、
+  \begin{align}
+  \frac{dx_1(t)}{dt}
+  &= - x_1(t) + x_0(t) \\
+  &= - x_1(t) + e^{-t}
+  \end{align}
+  なので、適当な関数 $A(t)$ を使って $x_1(t) = A(t) e^{-t}$ と書いて、
+  上の微分方程式に代入すると、
+  \begin{align}
+  \frac{dA(t)}{dt} = 1
+  \end{align}
+  となるので、積分定数を $C$ として、
+  \begin{align}
+  A(t) &= t + C
+  \\
+  \therefore \ \  x_1(t) &= (t + C) e^{-t}
+  \end{align}
+  であるが、初期条件 $x_1(0)=0$ を満たすようにするには、 $C=0$ とすればよく、
+  \begin{align}
+  x_1(t) = t e^{-t}
+  \end{align}
+  を得る。
+
+  同様にして、
+  \begin{align}
+  x_2(t) = \frac{1}{2} t^2 e^{-t}
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  以上より、 $k=0,1,2,\cdots$ について、
+  \begin{align}
+  x_k(t) = \frac{1}{k!} t^k e^{-t}
+  \end{align}
+  と予想できるが、これは確かに初期条件を満たし、
+  $k=1,2,\cdots$ について、
+  \begin{align}
+  \frac{dx_k(t)}{dt}
+  &= \frac{1}{(k-1)!} t^{k-1} e^{-t} - \frac{1}{k!} t^k e^{-t}
+  \\
+  &= x_{k-1}(t) - x_k(t)
+  \end{align}
+  であるから微分方程式も満たす。
+  </p>
+
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪大学/index.html">大阪大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
