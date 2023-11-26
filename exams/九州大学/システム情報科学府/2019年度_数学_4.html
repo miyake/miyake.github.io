@@ -81,41 +81,76 @@
   <p>
   $x = r \cos \theta, y = r \sin \theta$ より、
   \begin{align}
-  \frac{\partial x}{\partial r} &= \cos \theta
-  \\
-  \frac{\partial x}{\partial \theta} &= -r \sin \theta
-  \\
-  \frac{\partial y}{\partial r} &= \sin \theta
-  \\
-  \frac{\partial y}{\partial \theta} &= r \cos \theta
+  \frac{\partial x}{\partial r} = \cos \theta
+  , \ \ 
+  \frac{\partial x}{\partial \theta} = -r \sin \theta
+  , \ \ 
+  \frac{\partial y}{\partial r} = \sin \theta
+  , \ \ 
+  \frac{\partial y}{\partial \theta} = r \cos \theta
   \end{align}
-  であり、
+  なので、
   \begin{align}
   \frac{\partial u}{\partial r}
-  &= \cos \theta \frac{\partial u}{\partial x} + \sin \theta \frac{\partial u}{\partial y}
+  &= \frac{\partial x}{\partial r} \frac{\partial u}{\partial x}
+  + \frac{\partial y}{\partial r} \frac{\partial u}{\partial y}
   \\
+  &= \cos \theta \frac{\partial u}{\partial x}
+  + \sin \theta \frac{\partial u}{\partial y}
+  , \\
+
   \frac{\partial u}{\partial \theta}
-  &= -r \sin \theta \frac{\partial u}{\partial x} + r \cos \theta \frac{\partial u}{\partial y}
+  &= \frac{\partial x}{\partial \theta} \frac{\partial u}{\partial x}
+  + \frac{\partial y}{\partial \theta} \frac{\partial u}{\partial y}
   \\
+  &= -r \sin \theta \frac{\partial u}{\partial x}
+  + r \cos \theta \frac{\partial u}{\partial y}
+  , \\
+
   \frac{\partial v}{\partial r}
-  &= \cos \theta \frac{\partial v}{\partial x} + \sin \theta \frac{\partial v}{\partial y}
+  &= \frac{\partial x}{\partial r} \frac{\partial u}{\partial x}
+  + \frac{\partial y}{\partial r} \frac{\partial u}{\partial y}
   \\
+  &= \cos \theta \frac{\partial v}{\partial x}
+  + \sin \theta \frac{\partial v}{\partial y}
+  , \\
+
   \frac{\partial v}{\partial \theta}
-  &= -r \sin \theta \frac{\partial v}{\partial x} + r \cos \theta \frac{\partial v}{\partial y}
+  &= \frac{\partial x}{\partial \theta} \frac{\partial u}{\partial x}
+  + \frac{\partial y}{\partial \theta} \frac{\partial u}{\partial y}
+  \\
+  &= -r \sin \theta \frac{\partial v}{\partial x}
+  + r \cos \theta \frac{\partial v}{\partial y}
   \end{align}
   である。
 
-  ここで、コーシー・リーマンの方程式
+  さらに、コーシー・リーマンの方程式
   \begin{align}
   \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}
   , \ \ 
   \frac{\partial u}{\partial y} = - \frac{\partial v}{\partial x}
   \end{align}
   を使うと、
+
   \begin{align}
-  \frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
-  , \ \ 
-  \frac{\partial v}{\partial r} = - \frac{1}{r} \frac{\partial u}{\partial \theta}
+  \frac{\partial u}{\partial r}
+  &= \cos \theta \frac{\partial u}{\partial x}
+  + \sin \theta \frac{\partial u}{\partial y}
+  \\
+  &= \cos \theta \frac{\partial v}{\partial y}
+  - \sin \theta \frac{\partial v}{\partial x}
+  \\
+  &= \frac{1}{r} \frac{\partial v}{\partial \theta}
+  , \\
+
+  \frac{\partial v}{\partial r}
+  &= \cos \theta \frac{\partial v}{\partial x}
+  + \sin \theta \frac{\partial v}{\partial y}
+  \\
+  &= - \cos \theta \frac{\partial u}{\partial y}
+  + \sin \theta \frac{\partial u}{\partial x}
+  \\
+  &= - \frac{1}{r} \frac{\partial u}{\partial \theta}
   \end{align}
   を得る。
   </p>
