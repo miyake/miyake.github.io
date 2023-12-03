@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 理学研究科
+      数学・数理解析専攻
+      2024年度 専門科目 [13]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 理学研究科
+    <br>
+    数学・数理解析専攻
+    <br>
+    2024年度 専門科目 [13]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.math.kyoto-u.ac.jp/ja/past-exams">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  $\pm, \mp$ はすべて複合同順とする。
+  </p>
+
+  <h2>(i)</h2>
+
+  <p>
+  ハミルトン正準方程式は
+  \begin{align}
+  \dot{q}
+  &= \frac{\partial \mathcal{H}}{\partial p}
+  = p
+  ,\\
+  \dot{p}
+  &= - \frac{\partial \mathcal{H}}{\partial q}
+  = - \omega^2 q
+  \end{align}
+  である。
+  これと与えられた補助微分方程式とを使って、
+  \begin{align}
+  \dot{\mathcal{I}}(t)
+  &= \left( \xi(t) p(t) - \dot{\xi}(t) q(t) \right)
+  \left( \dot{\xi}(t) p(t) + \xi(t) \dot{p}(t)
+  - \ddot{\xi}(t) q(t) - \dot{\xi}(t) \dot{q}(t) \right)
+  \\
+  & \ \ \ \ + \frac{q(t)}{\xi(t)}
+  \frac{\dot{q}(t) \xi(t) - q(t) \dot{\xi}(t)}{\xi(t)^2}
+
+  \\
+  &= \left( \xi(t) p(t) - \dot{\xi}(t) q(t) \right)
+  \left( \dot{\xi}(t) p(t) - \omega(t)^2 \xi(t) q(t)
+  - \left( \frac{1}{\xi(t)^3} - \omega(t)^2 \xi(t) \right) q(t)
+  - \dot{\xi}(t) p(t) \right)
+  \\
+  & \ \ \ \ + \frac{q(t)}{\xi(t)^3}
+  \left( p(t) \xi(t) - q(t) \dot{\xi}(t) \right)
+  \\
+  &= \left( \xi(t) p(t) - \dot{\xi}(t) q(t) \right) \frac{-q(t)}{\xi(t)^3}
+  + \frac{q(t)}{\xi(t)^3}
+  \left( p(t) \xi(t) - q(t) \dot{\xi}(t) \right)
+  \\
+  &= 0
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>(ii)</h2>
+
+  <p>
+  $[Q,P]=i, \ U^\dagger(t)U(t) = U(t)U^\dagger(t) = 1$ より、
+  \begin{align}
+  \left[ Q(t), P(t) \right]
+  &= U^\dagger(t) Q U(t) U^\dagger(t) P U(t)
+  - U^\dagger(t) P U(t) U^\dagger(t) Q U(t)
+  \\
+  &= U^\dagger(t) Q P U(t)
+  - U^\dagger(t) P Q U(t)
+  \\
+  &= U^\dagger(t) [Q,P] P U(t)
+  \\
+  &= i
+  \end{align}
+  であり、
+  \begin{align}
+  A_\pm(t) A_\mp(t)
+  &= \frac{1}{2} \left\{
+  \frac{Q(t)}{\xi(t)} \mp i \left( \xi(t)P(t) - \dot{\xi}(t)Q(t) \right)
+  \right\} \left\{
+  \frac{Q(t)}{\xi(t)} \pm i \left( \xi(t)P(t) - \dot{\xi}(t)Q(t) \right)
+  \right\}
+  \\
+  &= \frac{1}{2} \left\{
+  \frac{Q(t)^2}{\xi(t)^2} + \left( \xi(t)P(t) - \dot{\xi}(t)Q(t) \right)^2
+  \pm i \left( \xi(t)Q(t)P(t) - \dot{\xi}(t)Q(t)^2 \right)
+  \mp i \left( \xi(t)P(t)Q(t) - \dot{\xi}(t)Q(t)^2 \right)
+  \right\}
+  \\
+  &= I(t) \mp \frac{1}{2}
+  \end{align}
+  であるから、
+  \begin{align}
+  \left[ A_-(t), A_+(t) \right]
+  &= \left( I(t) + \frac{1}{2} \right)
+  - \left( I(t) - \frac{1}{2} \right)
+  \\
+  &= 1
+  ,\\
+  I(t)
+  &= A_+(t) A_-(t) + \frac{1}{2}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>(iii)</h2>
+
+  <p>
+  \begin{align}
+  \dot{U}^\dagger(t)
+  &= i U^\dagger(t) H^\dagger(t)
+  \\
+  &= i U^\dagger(t) H(t)
+  ,\\
+
+  \left[ H(t), Q \right]
+  &= \frac{1}{2} \left[ P^2, Q \right]
+  \\
+  &= \frac{1}{2} \left( P \left[ P, Q \right] + \left[ P, Q \right] P \right)
+  \\
+  &= -iP
+  ,\\
+
+  \left[ H(t), P \right]
+  &= \frac{\omega(t)^2}{2} \left[ Q^2, P \right]
+  \\
+  &= \frac{\omega(t)^2}{2}
+  \left( Q \left[ Q, P \right] + \left[ Q, P \right] Q \right)
+  \\
+  &= i \omega(t)^2 Q
+  ,\\
+
+  \dot{Q}(t)
+  &= \dot{U}^\dagger(t) Q U(t) + U^\dagger(t) Q \dot{U}(t)
+  \\
+  &= i U^\dagger(t) H(t) Q U(t) - i U^\dagger(t) Q H(t) U(t)
+  \\
+  &= P(t)
+  ,\\
+
+  \dot{P}(t)
+  &= \dot{U}^\dagger(t) P U(t) + U^\dagger(t) P \dot{U}(t)
+  \\
+  &= i U^\dagger(t) H(t) P U(t) - i U^\dagger(t) P H(t) U(t)
+  \\
+  &= - \omega(t)^2 Q(t)
+  ,\\
+
+  A_\pm(t)
+  &= \frac{1}{\sqrt{2}} \left\{
+  \frac{\dot{Q}(t) \xi(t) - Q(t) \dot{\xi}(t)}{\xi(t)^2}
+  \mp i \left( \dot{\xi}(t) P(t) + \xi(t) \dot{P}(t)
+  - \ddot{\xi}(t) Q(t) - \dot{\xi}(t) \dot{Q}(t) \right)
+  \right\}
+  \\
+  &= \frac{1}{\sqrt{2}} \left\{
+  \frac{P(t) \xi(t) - Q(t) \dot{\xi}(t)}{\xi(t)^2}
+  \mp i \left( \dot{\xi}(t) P(t) - \omega(t)^2 \xi(t) Q(t)
+  + \left( \omega(t)^2 \xi(t) - \frac{1}{\xi(t)^3} \right) Q(t)
+  - \dot{\xi}(t) P(t) \right)
+  \right\}
+  \\
+  &= \frac{\pm i}{\sqrt{2} \xi(t)^2}
+  \left( \frac{Q(t)}{\xi(t)}
+  \mp i \left( P(t) \xi(t) - Q(t) \dot{\xi}(t) \right) \right)
+  \\
+  &= \frac{\pm i}{\xi(t)^2} A_\pm(t)
+  ,\\
+
+  \dot{I}(t)
+  &= \dot{A}_+(t) A_-(t) + A_+(t) \dot{A}_-(t)
+  \\
+  &= \frac{i}{\xi(t)^2} A_+(t) A_-(t) - \frac{i}{\xi(t)^2} A_+(t) A_-(t)
+  \\
+  &= 0
+  \end{align}
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
