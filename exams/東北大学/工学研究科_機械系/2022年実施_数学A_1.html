@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      機械系
+      2022年実施 数学A 1.
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 工学研究科
+    <br>
+    機械系
+    <br>
+    2022年実施 数学A 1.
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.mech.tohoku.ac.jp/examination/past-collection/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  \int \frac{1}{\cosh x + 1} dx
+  &= \int \frac{2}{e^x + e^{-x} + 2} dx
+  \\
+  &= \int \frac{2}{t + \frac{1}{t} + 2} \frac{dt}{t}
+  \ \ \ \ \ \ \ \ \left( t = e^x \right)
+  \\
+  &= 2 \int \frac{dt}{(t+1)^2}
+  \\
+  &= - \frac{2}{t+1} + C
+  \ \ \ \ \ \ \ \ \left( C \text{ は積分定数 } \right)
+  \\
+  &= - \frac{2}{e^x+1} + C
+  \end{align}
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  \begin{align}
+  \lim_{x \to 0} \frac{x \cos x - \log_e (1+x)}{x \sin x}
+  &= \lim_{x \to 0} \frac{\cos x - x \sin x - \frac{1}{1+x}}{\sin x + x \cos x}
+  \\
+  &= \lim_{x \to 0} \frac{- \sin x - \sin x - x \cos x + \frac{1}{(1+x)^2}}
+  {\cos x + \cos x - x \sin x}
+  \\
+  &= \lim_{x \to 0} \frac{- 2 \sin x - x \cos x + \frac{1}{(1+x)^2}}
+  {2 \cos x - x \sin x}
+  \end{align}
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  $x = r \cos \theta, y = r \sin \theta$ によって極座標 $r,\theta$
+  を導入して、次のように計算できる：
+  \begin{align}
+  \iint_D \sqrt{\frac{1-x^2-y^2}{1+x^2+y^2}} dx dy
+  &= \int_0^{2 \pi} d \theta \int_0^1 dr r \sqrt{\frac{1-r^2}{1+r^2}}
+  \\
+  &= 2 \pi \int_1^0 \frac{-2t dt}{(1+t^2)^2} \cdot t
+  \ \ \ \ \ \ \ \ \left( t = \sqrt{\frac{1-r^2}{1+r^2}} \right)
+  \\
+  &= 4 \pi \int_0^1 \frac{t^2}{(1+t^2)^2} dt
+  \\
+  &= 4 \pi \int_0^\frac{\pi}{4} \frac{\tan^2 \theta}{(1+\tan^2 \theta)^2}
+  \frac{d \theta}{\cos^2 \theta}
+  \ \ \ \ \ \ \ \ \left( t = \tan \theta \right)
+  \\
+  &= 4 \pi \int_0^\frac{\pi}{4} \sin^2 \theta d \theta
+  \\
+  &= 2 \pi \int_0^\frac{\pi}{4} \left( 1 - \cos 2 \theta \right) d \theta
+  \\
+  &= 2 \pi \left[ \theta - \frac{1}{2} \sin 2 \theta \right]_0^\frac{\pi}{4}
+  \\
+  &= 2 \pi \left( \frac{\pi}{4} - \frac{1}{2} \right)
+  \\
+  &= \frac{\pi (\pi - 2)}{2}
+  \end{align}
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
