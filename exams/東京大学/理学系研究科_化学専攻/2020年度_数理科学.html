@@ -87,7 +87,11 @@
   \begin{align}
   mg \tan \theta \approx mg \cdot \frac{r}{l}
   \end{align}
-  なので $r$ に比例し、比例係数は $k=mg/l$ である。
+  なので $r$ に比例し、比例係数は
+  \begin{align}
+  k = \frac{mg}{l}
+  \end{align}
+  である。
   </p>
 
   <h2>(2)</h2>
@@ -134,20 +138,17 @@
   &= kr - \frac{L^2}{mr^3}
   \\
   &= \frac{mkr^4 - L^2}{mr^3}
-  \\
-  &= \frac{\left( \sqrt{mk} r^2 + L \right)
-  \left( (mk)^\frac{1}{4} r + \sqrt{L} \right)
-  \left( (mk)^\frac{1}{4} r - \sqrt{L} \right)}{mr^3}
-  \\
-  \therefore \ \ 
+  \end{align}
+  であり、 $r_0 \gt 0$ なので
+  \begin{align}
   r_0 &= \left( \frac{L^2}{mk} \right)^\frac{1}{4}
-  \\
-  \therefore \ \ 
+  ,\\
   V_\mathrm{eff}(r_0)
   &= \frac{k}{2} \frac{L}{\sqrt{mk}} + \frac{L^2}{2m} \frac{\sqrt{mk}}{L}
   \\
   &= L \sqrt{\frac{k}{m}}
   \end{align}
+  である。
   </p>
 
   <h3>(g)</h3>
@@ -159,7 +160,7 @@
   \\
   \therefore \ \ 
   \frac{d^2V_{\mathrm{eff}}(r_0)}{dr^2}
-  &= k + \frac{3L^2}{mr^4}
+  &= k + \frac{3L^2}{mr_0^4}
   \\
   &= k + \frac{3L^2}{m} \frac{mk}{L^2}
   \\
@@ -193,9 +194,14 @@
   2倍
   </p>
 
-  <!--
   <h3>(j)</h3>
-  -->
+
+  <p>
+  角運動量保存則より、楕円軌道である。
+  楕円は（長軸と短軸が等しくない場合）、
+  中心点 O に関する回転対称性を考えると最小角度は180°であるので
+  $\nu_r / \nu_x = 2$ がわかる。
+  </p>
 
   <hr>
 <!-- 横長タイプ -->
