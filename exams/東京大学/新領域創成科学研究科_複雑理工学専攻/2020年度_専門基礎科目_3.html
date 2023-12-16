@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 新領域創成科学研究科 複雑理工学専攻
+      2020年度 専門基礎科目 第3問 （数学）
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院
+    <br>
+    新領域創成科学研究科 複雑理工学専攻
+    <br>
+    2020年度 専門基礎科目 第3問 （数学）
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.k.u-tokyo.ac.jp/complex/html/examinee/past-exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>（問1）</h2>
+
+  <p>
+  \begin{align}
+  \left| \int_0^Y e^{-a(X+iy)^2} dy \right|
+  &\le
+  \int_0^Y \left| e^{-a(X^2+2iXy-y^2)} \right| dy
+  \\
+  &= 
+  e^{-aX^2} \int_0^Y e^{ay^2} dy
+  \\
+  &\xrightarrow{X \to \infty} 0
+  \end{align}
+  </p>
+
+  <h2>（問2）</h2>
+
+  <p>
+  (問1) と同様に、
+  \begin{align}
+  \left| \int_0^Y e^{-a(-X+iy)^2} dy \right|
+  &\le
+  \int_0^Y \left| e^{-a(X^2-2iXy-y^2)} \right| dy
+  \\
+  &= 
+  e^{-aX^2} \int_0^Y e^{ay^2} dy
+  \\
+  &\xrightarrow{X \to \infty} 0
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  複素数 $z$ の関数 $e^{-az^2}$
+  は与えられた積分経路の内側で特異点を持たないので、
+  積分は $0$ となる：
+  \begin{align}
+  0
+  &=
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  + \int_X^{-X} e^{-a(x+iY)^2} dx
+  + \int_Y^0 e^{-a(-X+iy)^2} dy
+  \\
+  &=
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  - \int_{-X}^X e^{-a(x+iY)^2} dx
+  - \int_0^Y e^{-a(-X+iy)^2} dy
+  \end{align}
+  よって、
+  \begin{align}
+  \int_{-X}^X e^{-a(x+iY)^2} dx
+  =
+  \int_{-X}^X e^{-ax^2} dy
+  + \int_0^Y e^{-a(X+iy)^2} dy
+  - \int_0^Y e^{-a(-X+iy)^2} dy
+  \end{align}
+  ここで、 $X \to \infty$ とすると、
+  \begin{align}
+  \int_{-\infty}^\infty e^{-a(x+iY)^2} dx
+  =
+  \sqrt{\frac{\pi}{a}}
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>（問3）</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial U(k,t)}{\partial t}
+  &= \int_{-\infty}^\infty \frac{\partial u(x,t)}{\partial t} e^{-ikx} dx
+  \\
+  &= \int_{-\infty}^\infty \frac{\partial^2 u(x,t)}{\partial x^2} e^{-ikx} dx
+  \\
+  &= \left[ \frac{\partial u(x,t)}{\partial x} e^{-ikx} \right]_{-\infty}^\infty
+  +ik \int_{-\infty}^\infty \frac{\partial u(x,t)}{\partial x} e^{-ikx} dx
+  \\
+  &= ik \left[ u(x,t) e^{-ikx} \right]_{-\infty}^\infty
+  -k^2 \int_{-\infty}^\infty u(x,t) e^{-ikx} dx
+  \\
+  &= -k^2 U(k,t)
+  \end{align}
+  </p>
+
+  <h2>（問4）</h2>
+
+  <p>
+  (問3) で得た微分方程式より、
+  \begin{align}
+  U(k,t) = U(k,0) e^{-k^2 t}
+  \end{align}
+  がわかる。
+
+  さらに、条件 $u(x,0)=\delta(x-1)$ より、
+  \begin{align}
+  U(k,0)
+  &= \int_{-\infty}^\infty u(x,0) e^{-ikx} dx
+  \\
+  &= \int_{-\infty}^\infty \delta(x-1) e^{-ikx} dx
+  \\
+  &= e^{-ik}
+  \end{align}
+  <!--
+  デルタ関数の与えられた定義を使わなくてよい？
+  -->
+  であるから、
+  \begin{align}
+  U(k,t) = e^{-k^2 t - ik}
+  \end{align}
+  を得る。
+  </p>
+
+  <h2>（問5）</h2>
+
+  <p>
+  \begin{align}
+  u(x,t)
+  &= \frac{1}{2 \pi} \int_{-\infty}^\infty U(k,t) e^{ikx} dk
+  \\
+  &= \frac{1}{2 \pi} \int_{-\infty}^\infty e^{-k^2t+ik(x-1)} dk
+  \\
+  &= \frac{1}{2 \pi} e^{-\frac{(x-1)^2}{4t}}
+  \int_{-\infty}^\infty e^{-t \left( k - i \frac{x-1}{2t} \right)^2} dk
+  \\
+  &= \frac{1}{2 \pi} e^{-\frac{(x-1)^2}{4t}} \sqrt{\frac{\pi}{t}}
+  \\
+  &= \frac{1}{\sqrt{4 \pi t}} e^{-\frac{(x-1)^2}{4t}}
+  \end{align}
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
