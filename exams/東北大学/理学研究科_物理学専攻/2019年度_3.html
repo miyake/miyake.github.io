@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 理学研究科 物理学専攻
+      2019年度 問題3 （電磁気学）
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 理学研究科
+    <br>
+    物理学専攻
+    <br>
+    2019年度 問題3 （電磁気学）
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.phys.tohoku.ac.jp/admission/graduate-school_entrance/nyushimondai-archives/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>[1]</h2>
+
+  <h3>1)</h3>
+
+  <p>
+  微小区間にある電荷は $\rho dl$ で、APの長さは $\sqrt{a^2+z^2}$ であるから、
+  求める電場の大きさは
+  \begin{align}
+  \frac{1}{4 \pi \varepsilon_0} \frac{\rho dl}{a^2+z^2}
+  \end{align}
+  である。
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  z軸に垂直な成分は打ち消し合うことを考慮して、
+  求める電場の大きさは
+  \begin{align}
+  \frac{1}{4 \pi \varepsilon_0} \frac{\rho dl}{a^2+z^2}
+  \frac{|z|}{\sqrt{a^2+z^2}} \cdot 2
+  =
+  \frac{1}{2 \pi \varepsilon_0} \frac{|z| \rho dl}{(a^2+z^2)^{3/2}}
+  \end{align}
+  である。
+  また、電場の向きは、 $z \gt 0$ のときは +z方向、
+  $z \lt 0$ のときは -z方向である。
+  </p>
+
+  <h3>3)</h3>
+
+  <p>
+  z方向の単位ベクトルを $\hat{z}$ として、
+  \begin{align}
+  \vec{E}
+  &=
+  \int_0^{\pi a}
+  \frac{1}{2 \pi \varepsilon_0} \frac{z \rho dl}{(a^2+z^2)^{3/2}} \hat{z}
+  \\
+  &=
+  \frac{1}{2 \pi \varepsilon_0}
+  \frac{z \rho \cdot \pi a}{(a^2+z^2)^{3/2}} \hat{z}
+  \\
+  &=
+  \frac{1}{2 \varepsilon_0} \frac{az \rho}{(a^2+z^2)^{3/2}} \hat{z}
+  \end{align}
+  である。
+  </p>
+
+  <h3>4)</h3>
+
+  <h3>5)</h3>
+
+  <p>
+  z方向の単位ベクトルを $\hat{z}$ として、
+  \begin{align}
+  \vec{B}
+  &=
+  \int_0^{2 \pi a}
+  \frac{\mu_0}{4 \pi} \frac{a \omega \rho dl}{a^2+z^2}
+  \frac{a}{\sqrt{a^2+z^2}} \hat{z}
+  \\
+  &=
+  \int_0^{2 \pi a}
+  \frac{\mu_0}{4 \pi} \frac{a^2 \omega \rho dl}{(a^2+z^2)^{3/2}}
+  \hat{z}
+  \\
+  &=
+  \frac{\mu_0}{4 \pi} \frac{a^2 \omega \rho \cdot 2 \pi a}{(a^2+z^2)^{3/2}}
+  \hat{z}
+  \\
+  &=
+  \frac{\mu_0 a^3 \omega \rho}{2 (a^2+z^2)^{3/2}} \hat{z}
+  \end{align}
+  である。
+  </p>
+
+  <h2>[2]</h2>
+
+  <h3>1)</h3>
+
+  <p>
+  式(1)より
+  \begin{align}
+  0
+  = \vec{\nabla} \cdot \vec{E}
+  = \frac{\partial E_x}{\partial x}
+  + \frac{\partial E_y}{\partial y}
+  + \frac{\partial E_z}{\partial z}
+  = \frac{\partial E_z}{\partial z}
+  = X(x) Y(y) \frac{dZ(z)}{dz} \sin \omega t
+  \end{align}
+  であるから、
+  \begin{align}
+  \frac{dZ(z)}{dz} = 0
+  \end{align}
+  であり、 $Z(z)$ は $z$ に依存しない定数である。
+  </p>
+
+  <h3>2)</h3>
+
+  <p>
+  式(5)のz成分の両辺に $E_z(x,y,t) = X(x) Y(y) Z \sin \omega t$ を代入すると、
+  \begin{align}
+  \frac{d^2 X(x)}{dx^2} Y(y) Z \sin \omega t
+  + X(x) \frac{d^2 Y(y)}{dy^2} Z \sin \omega t
+  = - \varepsilon_0 \mu_0 \omega^2 X(x) Y(y) Z \sin \omega t
+  \end{align}
+  であるから、
+  \begin{align}
+  \frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2}
+  = - \varepsilon_0 \mu_0 \omega^2
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>3)</h3>
+
+  <p>
+  \begin{align}
+  \frac{1}{X} \frac{d^2 X}{dx^2} = -k_x^2
+  , \ \ \ \ 
+  \frac{1}{Y} \frac{d^2 Y}{dy^2} = -k_y^2
+  \end{align}
+  より、
+  \begin{align}
+  \frac{d^2 X}{dx^2} = -k_x^2 X
+  , \ \ \ \ 
+  \frac{d^2 Y}{dy^2} = -k_y^2 Y
+  \end{align}
+  であるから、 $X, Y$ の一般解は、次のようになる：
+  \begin{align}
+  \begin{cases}
+  X(x) = A \sin k_x x + B \cos k_x x
+  \\
+  Y(y) = C \sin k_y y + D \cos k_y y
+  \end{cases}
+  .
+  \end{align}
+  ここで、 $A, B, C, D$ は積分定数である。
+  </p>
+
+  <h3>4)</h3>
+
+  <p>
+  (i)
+  $X(0)=0$ より、 $B=0$ であり、
+  \begin{align}
+  X(x) = A \sin k_x x
+  \end{align}
+  を得る。
+  $Y(0)=0$ より、 $D=0$ であり、
+  \begin{align}
+  Y(y) = C \sin k_y y
+  \end{align}
+  を得る。
+  よって、
+  \begin{align}
+  E_z
+  &= A \sin k_x x \cdot C \sin k_y y \cdot Z \sin \omega t
+  \\
+  &= E_{z0} \sin k_x x \sin k_y y \sin \omega t
+  \end{align}
+  を得る。
+  ここで、 $E_{z0} = A C Z$ とした。
+  </p>
+
+  <p>
+  (ii)
+  $X(a)=0$ より、
+  \begin{align}
+  k_x = \frac{\pi}{a} n_x
+  \ \ \ \ (n_x = 1, 2, \cdots)
+  \end{align}
+  を得る。
+  $Y(a)=0$ より、
+  \begin{align}
+  k_y = \frac{\pi}{a} n_y
+  \ \ \ \ (n_y = 1, 2, \cdots)
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>5)</h3>
+
+  <p>
+  問2),3)より、
+  \begin{align}
+  -k_x^2 - k_y^2 = - \varepsilon_0 \mu_0 \omega^2
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \omega^2 = \frac{k_x^2 + k_y^2}{\varepsilon_0 \mu_0}
+  \end{align}
+  である。
+  これに、問4)で得た $k_x = \pi n_x / a, k_y = \pi n_y / a$ を代入すると、
+  \begin{align}
+  \omega^2 = \frac{\pi^2 (n_x^2 + n_y^2)}{\varepsilon_0 \mu_0 a^2}
+  \end{align}
+  となる。
+  $\omega = \omega_0$ となるのは $n_x=n_y=1$ のときなので、
+  \begin{align}
+  \omega_0^2 &= \frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}
+  \\
+  \therefore \ \ 
+  \omega_0 &= \sqrt{\frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>6)</h3>
+
+  <p>
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
