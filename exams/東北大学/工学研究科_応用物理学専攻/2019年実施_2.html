@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 工学研究科
+      応用物理学専攻
+      2019年実施 [問題2] 力学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 工学研究科
+    <br>
+    応用物理学専攻
+    <br>
+    2019年実施 [問題2] 力学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.apph.tohoku.ac.jp/exam">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  &= a \begin{pmatrix} \cos \theta \\ \sin \theta \end{pmatrix}
+  + s \begin{pmatrix} \sin \theta \\ - \cos \theta \end{pmatrix}
+  \\
+  &= \begin{pmatrix} a \cos \theta + s \sin \theta \\
+  a \sin \theta - s \cos \theta \end{pmatrix}
+  \end{align}
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  P の速度を $\vec{v}$ とすると、
+  \begin{align}
+  \vec{v}
+  &= \begin{pmatrix}
+  -a \dot{\theta} \sin \theta + s \dot{\theta} \cos \theta + \dot{s} \sin \theta \\
+  a \dot{\theta} \cos \theta + s \dot{\theta} \sin \theta - \dot{s} \cos \theta
+  \end{pmatrix}
+  \\
+  \therefore \ \ 
+  \left| \vec{v} \right|^2
+  &= a^2 \dot{\theta}^2 + s^2 \dot{\theta}^2 + \dot{s}^2
+  - 2a \dot{s} \dot{\theta}
+  \end{align}
+  なので、ラグランジアン $L$ は、
+  \begin{align}
+  L
+  &= \frac{1}{2} I \dot{\theta}^2 + \frac{1}{2} m \left| \vec{v} \right|^2
+  - \frac{1}{2} k (a-s)^2
+  \\
+  &= \frac{1}{2} \left[ I + m (a^2+s^2) \right] \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  - \frac{1}{2} k (a-s)^2
+  \end{align}
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  $\theta$ に関するオイラー-ラグランジュの方程式より、
+  \begin{align}
+  \frac{dM}{dt}
+  = \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}}
+  = \frac{\partial L}{\partial \theta}
+  = 0
+  \end{align}
+  なので、 $M$ は保存する。
+  </p>
+
+  <h2>(4)</h2>
+
+  <p>
+  2つの保存量
+  \begin{align}
+  M
+  &= \frac{\partial L}{\partial \dot{\theta}}
+  \\
+  &= \left[ I + m(a^2 + s^2) \right] \dot{\theta} - ma \dot{s}
+  \\
+  E
+  &= \frac{1}{2} \left[ I + m (a^2+s^2) \right] \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  + \frac{1}{2} k (a-s)^2
+  \end{align}
+  がある。
+  それぞれについて、
+  $t=0$ （このとき $s=0, \ \dot{s}=0, \ \dot{\theta}=0$ ）のときと
+  $s=a$ のときを比較して、
+  \begin{align}
+  0
+  &= \left( I + 2ma^2 \right) \dot{\theta} - ma \dot{s}
+  \\
+  \frac{1}{2} ka^2
+  &= \frac{1}{2} \left( I + 2ma^2 \right) \dot{\theta}^2
+  + \frac{1}{2} m \dot{s}^2 - ma \dot{s} \dot{\theta}
+  \end{align}
+  を得る。
+  $\dot{s}$ を消去して $\dot{\theta}$ を求めると、題意の式を得る。
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
