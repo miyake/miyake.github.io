@@ -17,7 +17,7 @@
     <title>
       大阪大学 大学院
       工学研究科 電気電子情報工学専攻
-      2020年度 基礎科目
+      2020年度 基礎科目 【数学3】
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 電気電子情報工学専攻
     <br>
-    2020年度 基礎科目
+    2020年度 基礎科目 【数学3】
   </h1>
 
   <hr>
@@ -79,96 +79,8 @@
 </script>
 
   <hr>
-  <h2>【数学1】</h2>
 
-  <h3>(a)</h3>
-
-  <p>
-  $A$ の固有値を $\lambda$ とすると、
-  \begin{align}
-  0
-  = \det \begin{pmatrix} - \lambda & 1 \\ 1 & - \lambda \end{pmatrix}
-  = \lambda^2 - 1
-  = (\lambda + 1)(\lambda - 1)
-  \end{align}
-  \begin{align}
-  \therefore
-  \lambda = \pm 1
-  \end{align}
-  </p>
-
-  <p>
-  固有値 $\lambda = 1$ に属する固有ベクトルは、例えば、
-  \begin{align}
-  \frac{1}{\sqrt{2}}
-  \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-  \end{align}
-  </p>
-
-  <p>
-  固有値 $\lambda = -1$ に属する固有ベクトルは、例えば、
-  \begin{align}
-  \frac{1}{\sqrt{2}}
-  \begin{pmatrix} 1 \\ -1 \end{pmatrix}
-  \end{align}
-  </p>
-
-  <h3>(b)</h3>
-
-  <p>
-  (a)で求めた固有ベクトルを使って、次のように定義する：
-  \begin{align}
-  P = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-  \end{align}
-
-  このとき、次が成り立つ：
-  \begin{align}
-  PP &= E
-  \\
-  PAP &= \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-  \end{align}
-
-  よって、
-  \begin{align}
-  P \left( E + \frac{t}{n} A \right) P
-  &= E + \frac{t}{n} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-  \\
-  &= \begin{pmatrix} 1 + \frac{t}{n} & 0 \\ 0 & 1 - \frac{t}{n} \end{pmatrix}
-  \end{align}
-
-  なので、
-  \begin{align}
-  \exp (tA)
-  &= \lim_{n \to \infty} \left( E + \frac{t}{n} A \right)^n
-  \\
-  &= \lim_{n \to \infty} P \begin{pmatrix} 1 + \frac{t}{n} & 0 \\ 0 & 1 - \frac{t}{n} \end{pmatrix}^n P
-  \\
-  &= \lim_{n \to \infty} P \begin{pmatrix} \left( 1 + \frac{t}{n} \right)^n & 0 \\ 0 & \left( 1 - \frac{t}{n} \right)^n \end{pmatrix} P
-  \\
-  &= P \begin{pmatrix} e^t & 0 \\ 0 & e^{-t} \end{pmatrix} P
-  \\
-  &= \frac{1}{2} \begin{pmatrix} e^t + e^{-t} & e^t - e^{-t} \\ e^t - e^{-t} & e^t + e^{-t} \end{pmatrix}
-  \\
-  &= \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}
-  \end{align}
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>【数学3】</h2>
-
-  <h3>(a)</h3>
+  <h2>(a)</h2>
 
   <p>
   \begin{align}
@@ -185,7 +97,7 @@
   である。
   </p>
 
-  <h3>(b)</h3>
+  <h2>(b)</h2>
 
   <p>
   留数定理より、
@@ -197,7 +109,7 @@
   である。
   </p>
 
-  <h3>(c)</h3>
+  <h2>(c)</h2>
 
   <!-- 要修正 -->
 
@@ -223,10 +135,10 @@
   である。
   </p>
 
-  <h3>(d)</h3>
+  <h2>(d)</h2>
 
   <p>
-  (b),(c)より、
+  (b), (c) より、
   \begin{align}
   \lim_{R \to \infty} \int_{C_1} f(z) dz = i \pi e^{-rm}
   \end{align}
@@ -244,50 +156,6 @@
   \end{align}
   を得る。
   </p>
-
-  <!--
-  <hr>
-  <h2>【電磁理論1】</h2>
-
-  <h3>[1]</h3>
-
-  <p>
-  ①
-  \begin{align}
-  \varepsilon_0 \ \mathrm{div} \boldsymbol{E} = \rho
-  \end{align}
-  </p>
-
-  <p>
-  ②
-  \begin{align}
-  \mathrm{div} \boldsymbol{H} = 0
-  \end{align}
-  </p>
-
-  <p>
-  ③
-  \begin{align}
-  \mathrm{rot} \boldsymbol{E} = - \mu_0 \frac{\partial \boldsymbol{H}}{\partial t}
-  \end{align}
-  </p>
-
-  <p>
-  ④
-  \begin{align}
-  \mathrm{rot} \boldsymbol{H} = \boldsymbol{j} + \varepsilon_0 \frac{\partial \boldsymbol{E}}{\partial t}
-  \end{align}
-  </p>
-
-  <h3>[2]</h3>
-
-  <p>
-  ⑤
-  \begin{align}
-  \boldsymbol{E}_1 \cdot \boldsymbol{n} - \boldsymbol{E}_2 \cdot \boldsymbol{n} = \xi
-  \end{align}
-  </p>
-  -->
 
 
   <hr>
