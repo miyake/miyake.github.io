@@ -17,7 +17,7 @@
     <title>
       大阪大学 大学院 基礎工学研究科
       システム創成専攻（数理科学）
-      2019年度 数理科学 I
+      2019年度 数理科学 I [4]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,13 +48,16 @@
     <br>
     システム創成専攻（数理科学）
     <br>
-    2019年度 数理科学 I
+    2019年度 数理科学 I [4]
   </h1>
 
   <hr>
   <ul>
     <li>
+    <!--
     <a href="http://www.sigmath.es.osaka-u.ac.jp/entrance_exam/">
+    -->
+    <a href="http://www.sigmath.es.osaka-u.ac.jp/for_graduate/entrance_exam.html">
       問題はこちらから入手してください。
     </a>
     </li>
@@ -79,99 +82,8 @@
 </script>
 
   <hr>
-  <h2>[2]</h2>
 
-  <h3>(1)</h3>
-
-  <p>
-  $V$ の定義における
-  $x_1, x_2, x_3, x_4$ に関する与えられた3つの式を整理すると、
-  \begin{align}
-  x_1 &= - x_3 + 2 x_4
-  \\
-  x_2 &= - x_3 - 2 x_4
-  \end{align}
-  となるので、
-  \begin{align}
-  \begin{pmatrix}
-  x_1 \\ x_2 \\ x_3 \\ x_4
-  \end{pmatrix}
-  =
-  \begin{pmatrix}
-  - x_3 + 2 x_4 \\ - x_3 - 2 x_4 \\ x_3 \\ x_4
-  \end{pmatrix}
-  =
-  x_3
-  \begin{pmatrix}
-  -1 \\ -1 \\ 1 \\ 0
-  \end{pmatrix}
-  + x_4
-  \begin{pmatrix}
-  2 \\ - 2 \\ 0 \\ 1
-  \end{pmatrix}
-  \end{align}
-  となる。
-
-  したがって、 $V$ は2次元で、
-  \begin{align}
-  v_1 =
-  \begin{pmatrix}
-  -1 \\ -1 \\ 1 \\ 0
-  \end{pmatrix}
-  , \ \ 
-  v_2 =
-  \begin{pmatrix}
-  2 \\ - 2 \\ 0 \\ 1
-  \end{pmatrix}
-  \end{align}
-  はその基底である。
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  (1) と同様に考えると、 $W$ も2次元で、
-  \begin{align}
-  w_1 =
-  \begin{pmatrix}
-  1 \\ 0 \\ -5 \\ -2
-  \end{pmatrix}
-  , \ \ 
-  w_2 =
-  \begin{pmatrix}
-  0 \\ 1 \\ -2 \\ -1
-  \end{pmatrix}
-  \end{align}
-  はその基底である。
-  </p>
-
-  <p>
-  そこで、 $v_1, v_2, w_1, w_2$ について考えると、
-  \begin{align}
-  w_1 = v_1 + v_2 + 3 w_2
-  \end{align}
-  が成り立ち、また、
-  $w_2$ は $v_1, v_2$ の線形結合で表すことができない。
-  したがって、 $U$ は3次元であり、
-  $v_1, v_2, w_2$ はその基底である。
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>[4]</h2>
-
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
   <p>
   \begin{align}
@@ -188,7 +100,7 @@
   \end{align}
   </p>
 
-  <h3>(2)</h3>
+  <h2>(2)</h2>
 
   <p>
   (D) の2番目の式を $t$ で2回微分して、1番目の式を使うと、
@@ -201,7 +113,7 @@
   を得る。
   </p>
 
-  <h3>(3)</h3>
+  <h2>(3)</h2>
 
   <p>
   $y(t) = e^{kt}$ を (2) で得た微分方程式に代入すると、
@@ -217,7 +129,7 @@
   である。
   </p>
 
-  <h3>(4)</h3>
+  <h2>(4)</h2>
 
   <p>
   (2) で得た微分方程式の独立な特殊解は、 (3) より、
@@ -288,109 +200,6 @@
   \end{align}
   である。
   </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>[5]</h2>
-
-  <h3>(1)</h3>
-
-  <p>
-  \begin{align}
-  E [ T(\alpha) ]
-  &= \sum_{i=1}^n \alpha_i E[X_i]
-  \\
-  &= \mu \sum_{i=1}^n \alpha_i
-  \\
-
-  \text{Cov} [ T(\alpha), T(\beta) ]
-  &= \sum_{i=1}^n \sum_{j=1}^n \alpha_i \beta_j \text{Cov} [X_i, X_j]
-  \\
-  &= \sum_{i=1}^n \alpha_i \beta_i V [X_i]
-  + \sum_{i \neq j} \alpha_i \beta_j \text{Cov} [X_i, X_j]
-  \\
-  &= \sigma^2 \sum_{i=1}^n \alpha_i \beta_i
-  + \theta \sum_{i \neq j} \alpha_i \beta_j
-  \\
-  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i \beta_i
-  + \theta \sum_{i=1}^n \sum_{j=1}^n \alpha_i \beta_j
-  \\
-  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i \beta_i
-  + \theta \sum_{i=1}^n \alpha_i \sum_{j=1}^n \beta_j
-  \end{align}
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  \begin{align}
-  V[T(\alpha)]
-  &= \text{Cov} [ T(\alpha), T(\alpha) ]
-  \\
-  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
-  + \theta \sum_{i=1}^n \alpha_i \sum_{j=1}^n \alpha_j
-  \\
-  &= \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
-  + \theta \left\{ \sum_{i=1}^n \alpha_i \right\}^2
-  \end{align}
-  </p>
-
-  <h3>(3)</h3>
-
-  <p>
-  $T(\alpha)$ が $\mu$ の不偏推定量であるための条件は、(1) より、
-  \begin{align}
-  \sum_{i=1}^n \alpha_i = 1
-  \end{align}
-  であり、このとき、
-  \begin{align}
-  V[T(\alpha)]
-  = \left( \sigma^2 - \theta \right) \sum_{i=1}^n \alpha_i^2
-  + \theta
-  \end{align}
-  となる。
-
-  これを最小化するために、
-  ラグランジュの未定乗数 $\lambda$ を導入して、
-  \begin{align}
-  f(\alpha)
-  = \sum_{i=1}^n \alpha_i^2 - \lambda \sum_{i=1}^n \alpha_i
-  \end{align}
-  を考えると、
-  \begin{align}
-  \frac{\partial f}{\partial \alpha_i}
-  = 2 \alpha_i - \lambda
-  \end{align}
-  であるから、
-  \begin{align}
-  \alpha_1 = \alpha_2 = \cdots = \alpha_n = \frac{1}{n}
-  , \ \ 
-  \lambda = \frac{2}{n}
-  \end{align}
-  のとき、 $f(\alpha)$ したがって $V[T(\alpha)]$ が最小になる。
-
-  このとき、
-  \begin{align}
-  V[T(\alpha)]
-  &= \left( \sigma^2 - \theta \right) \cdot \frac{1}{n} + \theta
-  \\
-  &= \frac{\sigma^2 + (n-1) \theta}{n}
-  \end{align}
-  である。
-  </p>
-
-
 
   <hr>
 <!-- 横長タイプ -->

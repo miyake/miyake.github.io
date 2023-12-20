@@ -17,7 +17,7 @@
     <title>
       大阪大学 大学院 基礎工学研究科
       システム創成専攻 電子光科学
-      2021年度 電子光科学 I
+      2022年度 電子光科学 [I-1]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -44,11 +44,11 @@
   <hr>
 
   <h1>
-      大阪大学 大学院 基礎工学研究科
-      <br>
-      システム創成専攻 電子光科学
-      <br>
-      2021年度 電子光科学 I
+    大阪大学 大学院 基礎工学研究科
+    <br>
+    システム創成専攻 電子光科学
+    <br>
+    2022年度 電子光科学 [I-1]
   </h1>
 
   <hr>
@@ -79,64 +79,69 @@
 </script>
 
   <hr>
-  <h2>[I-2]</h2>
 
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
   <p>
+  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  u(x) = x^2
-  , \ \ 
-  v(x) = x
-  , \ \ 
-  w(x) = 1
+  0
+  &= \det \begin{pmatrix}
+  a - \lambda & 0 & b \\ 0 & a - \lambda & 0 \\ b & 0 & a - \lambda
+  \end{pmatrix}
+  \\
+  &= (a - \lambda)^3 - b^2(a - \lambda)
+  \\
+  &= - (\lambda - a)(\lambda - a - b)(\lambda - a + b)
+  \\
+  \therefore \ \ 
+  \lambda &= a-b, a, a+b
   \end{align}
+  $b \ne 0$ なので、この3つは異なり、3つの固有値 $a-b,a,a+b$ を持つことがわかる。
   </p>
 
-  <h3>(2)</h3>
-
   <p>
+  固有値 $a-b$ に属する固有ベクトルを求めるために、
   \begin{align}
-  T(u(x))
-  &= T(x^2) = (x+1)^2 = x^2 + 2x + 1
-  \\
-  &= u(x) + 2v(x) + w(x)
-  \\
-  T(v(x))
-  &= T(x) = x+1
-  \\
-  &= v(x) + w(x)
-  \\
-  T(w(x))
-  &= T(1) = 1
-  \\
-  &= w(x)
-  \end{align}
-  であるから、
-  \begin{align}
-  \begin{pmatrix} T(u(x)) & T(v(x)) & T(w(x)) \end{pmatrix}
+  \begin{pmatrix}
+  a - (a-b) & 0 & b \\ 0 & a - (a-b) & 0 \\ b & 0 & a - (a-b)
+  \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
   =
-  \begin{pmatrix} u(x) & v(x) & w(x) \end{pmatrix}
-  \begin{pmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 1 & 1 & 1 \end{pmatrix}
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
   \end{align}
-  であり、求める表現行列は、
+  とおくと、 $b \ne 0$ を考慮して、 $x+z=0, y=0$ を得るので、固有ベクトル
   \begin{align}
-  A = \begin{pmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 1 & 1 & 1 \end{pmatrix}
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}
   \end{align}
-  である。
+  を得る。
+
+  同様にして、固有値 $a, a+b$ のそれぞれに属する固有ベクトル
+  \begin{align}
+  \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}
+  , \ \ 
+  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}
+  \end{align}
+  を得る。
   </p>
 
-  <h3>(3)</h3>
+  <h2>(2)</h2>
 
   <p>
-  $A$ の固有値は $1$ であり、対応する固有ベクトルは、
+  (1)で求めた固有ベクトルを使って、
   \begin{align}
-  \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+  P = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 0 & 1 \\ 0 & \sqrt{2} & 0 \\ -1 & 0 & 1 \end{pmatrix}
   \end{align}
-  である。
+  とすれば、これは直交行列で、
+  \begin{align}
+  P^{-1} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 0 & -1 \\ 0 & \sqrt{2} & 0 \\ 1 & 0 & 1 \end{pmatrix}
+  \end{align}
+  であり、
+  \begin{align}
+  P^{-1} A P = \begin{pmatrix} a-b & 0 & 0 \\ 0 & a & 0 \\ 0 & 0 & a+b \end{pmatrix}
+  \end{align}
+  となる。
   </p>
-
-
 
   <hr>
 <!-- 横長タイプ -->
