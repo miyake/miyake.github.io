@@ -17,7 +17,7 @@
     <title>
       東京工業大学 大学院 理学院
       物理学系
-      平成30年度 午前
+      2018年実施 午前 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     理学院 物理学系
     <br>
-    平成30年度 午前
+    2018年実施 午前 [3]
   </h1>
 
   <hr>
@@ -79,392 +79,8 @@
 </script>
 
   <hr>
-  <h2>[1]</h2>
 
-  <h3>(1)</h3>
-
-  <p>
-  \begin{align}
-  I_l
-  &= \int_0^l \xi^2 \frac{m}{l} d \xi
-  = \frac{m}{l} \left[ \frac{\xi^3}{3} \right]_0^l
-  = \frac{1}{3} m l^2
-  \\
-  I_a
-  &= \int_0^a r^2 M \frac{2 \pi r}{\pi a^2} dr
-  = \frac{2M}{a^2} \int_0^a r^3 dr
-  = \frac{2M}{a^2} \left[ \frac{r^4}{4} \right]_0^a
-  = \frac{1}{2} M a^2
-  \end{align}
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  \begin{align}
-  V
-  &= mg \frac{l}{2} ( 1 - \cos \theta )
-  + Mg \left\{ l ( 1 - \cos \theta ) + a ( 1 - \cos \phi ) \right\}
-  \\
-  &= \frac{m+2M}{2} gl ( 1 - \cos \theta ) + Mga ( 1 - \cos \phi )
-  \\
-  \end{align}
-  </p>
-
-  <h3>(3)</h3>
-
-  <p>
-  $O$ の座標を $(X,Y)$ とすると、
-  \begin{align}
-  X &= l \cos \theta + a \cos \phi
-  , \ \ \ \ 
-  Y = l \sin \theta + a \sin \phi
-  \\
-  \therefore \ \ \ \ 
-  \dot{X} &= - l \dot{\theta} \sin \theta - a \dot{\phi} \sin \phi
-  , \ \ \ \ 
-  \dot{Y} = l \dot{\theta} \cos \theta + a \dot{\phi} \cos \phi
-  \end{align}
-  であるから、
-  \begin{align}
-  T
-  &=
-  \frac{1}{2} I_l \dot{\theta}^2
-  + \frac{1}{2} M \left( \dot{X}^2 + \dot{Y}^2 \right)
-  + \frac{1}{2} I_a \dot{\phi}^2
-  \\
-  &=
-  \frac{1}{6} m l^2 \dot{\theta}^2
-  + \frac{1}{2} M \left( l^2 \dot{\theta}^2 + a^2 \dot{\phi}^2
-  + 2la \dot{\theta} \dot{\phi} \cos (\theta - \phi) \right)
-  + \frac{1}{4} M a^2 \dot{\phi}^2
-  \\
-  &=
-  \frac{m+3M}{6} l^2 \dot{\theta}^2
-  + \frac{3}{4} M a^2 \dot{\phi}^2
-  + Mla \dot{\theta} \dot{\phi} \cos (\theta - \phi)
-  \end{align}
-  を得る。
-  </p>
-
-  <h3>(4)</h3>
-
-  <p>
-  $\theta, \phi, \dot{\theta}, \dot{\phi}$ の2次までで、
-  \begin{align}
-  V
-  &= \frac{m+2M}{4} gl \theta^2 + \frac{1}{2} Mga \phi^2
-  \\
-  T
-  &=
-  \frac{m+3M}{6} l^2 \dot{\theta}^2
-  + \frac{3}{4} M a^2 \dot{\phi}^2
-  + Mla \dot{\theta} \dot{\phi}
-  \end{align}
-  であるから、ラグランジアン $L$ は
-  \begin{align}
-  L
-  &= T - V
-  \\
-  &=
-  \frac{m+3M}{6} l^2 \dot{\theta}^2
-  + \frac{3}{4} M a^2 \dot{\phi}^2
-  + Mla \dot{\theta} \dot{\phi}
-  - \frac{m+2M}{4} gl \theta^2 - \frac{1}{2} Mga \phi^2
-  \end{align}
-  となる。
-  よって、
-  \begin{align}
-  \frac{\partial L}{\partial \dot{\theta}}
-  &=
-  \frac{m+3M}{3} l^2 \dot{\theta}
-  + Mla \dot{\phi}
-  \\
-  \frac{\partial L}{\partial \theta}
-  &=
-  - \frac{m+2M}{2} gl \theta
-  \\
-  \frac{\partial L}{\partial \dot{\phi}}
-  &=
-  \frac{3}{2} M a^2 \dot{\phi}
-  + Mla \dot{\theta}
-  \\
-  \frac{\partial L}{\partial \phi}
-  &=
-  - Mga \phi
-  \end{align}
-  であるから、 $\theta, \phi$
-  に関するオイラー-ラグランジュの方程式は、次のようになる：
-  \begin{align}
-  &
-  \begin{cases}
-  \frac{m+3M}{3} l^2 \ddot{\theta} + Mla \ddot{\phi}
-  =
-  - \frac{m+2M}{2} gl \theta
-  \\
-  \frac{3}{2} M a^2 \ddot{\phi} + Mla \ddot{\theta}
-  =
-  - Mga \phi
-  \end{cases}
-  \\
-  \therefore \ \ \ \ 
-  &
-  \begin{cases}
-  \frac{m+3M}{3} l \ddot{\theta} + Ma \ddot{\phi}
-  =
-  - \frac{m+2M}{2} g \theta
-  \\
-  \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
-  =
-  - g \phi
-  \end{cases}
-  \end{align}
-  </p>
-
-  <h3>(5)</h3>
-
-  <p>
-  (4) で得た運動方程式は、 $m/M \to 0$ で次のようになる：
-  \begin{align}
-  \begin{cases}
-  l \ddot{\theta} + a \ddot{\phi}
-  =
-  - g \theta
-  \\
-  \frac{3}{2} a \ddot{\phi} + l \ddot{\theta}
-  =
-  - g \phi
-  \end{cases}
-  \end{align}
-  基準振動を求めるために、
-  $ \theta = A \sin \omega t, \phi = B \sin \omega t $
-  とすると、次のようになる：
-  \begin{align}
-  &
-  \begin{cases}
-  - l \omega^2 A - a \omega^2 B
-  =
-  - g A
-  \\
-  - \frac{3}{2} a \omega^2 B - l \omega^2 A
-  =
-  - g B
-  \end{cases}
-  \\
-  \therefore \ \ \ \ 
-  &
-  \begin{cases}
-  \left( l \omega^2 - g \right) A + a \omega^2 B
-  =
-  0
-  \\
-  l \omega^2 A
-  + \left( \frac{3}{2} a \omega^2 - g \right) B
-  =
-  0
-  \end{cases}
-  \end{align}
-
-  $A=B=0$ 以外の解をもつための条件は、
-  \begin{align}
-  0
-  &=
-  \begin{vmatrix}
-  l \omega^2 - g & a \omega^2 \\
-  l \omega^2 & \frac{3}{2} a \omega^2 - g
-  \end{vmatrix}
-  \\
-  &=
-  \frac{1}{2} \left\{ la \omega^4 - (2l+3a) g \omega^2 + g^2 \right\}
-  \end{align}
-  であるから、
-  \begin{align}
-  \omega_{\pm}^2
-  &=
-  \frac{(2l+3a)g \pm \sqrt{(2l+3a)^2 g^2 - 4lag^2}}{2la}
-  \\
-  &=
-  \frac{g}{2la}
-  \left\{ 2l+3a \pm \sqrt{4l^2 + 8la + 9a^2} \right\}
-  \end{align}
-  を得る（複合同順）。
-  </p>
-
-  <h3>(6)</h3>
-
-  <p>
-  (5) より、
-  角振動数 $\omega_+$ の基準振動の場合、
-  $ l \gg a $ では、
-  \begin{align}
-  B \simeq - \frac{l}{a} A
-  \end{align}
-  であるから、適切な模式図は図Aである。
-  また、
-  角振動数 $\omega_-$ の基準振動の場合、
-  $ l \gg a $ では、
-  \begin{align}
-  B \simeq \frac{l}{a} A
-  \end{align}
-  であるから、適切な模式図は図Cである。
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>[2]</h2>
-
-  <h3>(1)</h3>
-
-  <p>
-  \begin{align}
-  IB_0
-  \end{align}
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  \begin{align}
-  \int_0^a r IB_0 dr
-  = \frac{1}{2} a^2 IB_0
-  \end{align}
-  </p>
-
-  <h3>(3)</h3>
-
-  <p>
-  \begin{align}
-  \frac{1}{2} a^2 \omega B_0
-  \end{align}
-  </p>
-
-  <h3>(4)</h3>
-
-  <p>
-  求める電流を $I$ とすると、オームの法則より、
-  \begin{align}
-  RI = V - \frac{1}{2} a^2 \omega B_0
-  \end{align}
-  であるから、
-  \begin{align}
-  I = \frac{V - \frac{1}{2} a^2 \omega B_0}{R}
-  \end{align}
-  を得る。
-  </p>
-
-  <h3>(5)</h3>
-
-  <p>
-  角速度が一定ということは、棒にはたらく力のモーメントが $0$ 、
-  すなわち、電流が $0$ ということである。
-  よって、求める角速度の大きさを $\omega_1$ とすると、 (4) より、
-  \begin{align}
-  \frac{1}{2} a^2 \omega_1 B_0 = V
-  \end{align}
-  であるから、
-  \begin{align}
-  \omega_1 = \frac{2V}{a^2 B_0}
-  \end{align}
-  を得る。
-  </p>
-
-  <h3>(6)</h3>
-
-  <h4>（ア）</h4>
-
-  <p>
-  点 $O$ を通り $xy$ 平面に垂直な軸に関する棒の慣性モーメントは
-  $ \frac{1}{3} \lambda a^3 $ であるから、
-  棒の回転の運動方程式は次のようになる：
-  \begin{align}
-  \frac{1}{3} \lambda a^3 \frac{d \omega (t)}{dt}
-  =
-  \frac{1}{2} a^2 B_0 \frac{d Q (t)}{dt}
-  \end{align}
-  \begin{align}
-  \therefore
-  \ \ \ \ 
-  \frac{d \omega (t)}{dt}
-  -
-  \frac{3B_0}{2 \lambda a} \frac{d Q (t)}{dt}
-  = 0
-  \end{align}
-  よって、
-  \begin{align}
-  \omega (t) - \frac{3B_0}{2 \lambda a} Q (t)
-  \end{align}
-  が保存量である。
-  </p>
-
-  <h4>（イ）</h4>
-
-  <p>
-  充分長い時間が経過した後では、
-  コンデンサの電圧と棒に生じる誘導起電力がつり合うので、
-  \begin{align}
-  \frac{Q_\infty}{C}
-  = \frac{1}{2} a^2 \omega_\infty B_0
-  \end{align}
-  \begin{align}
-  \therefore
-  \ \ \ \ 
-  Q_\infty
-  = \frac{1}{2} a^2 \omega_\infty B_0 C
-  \end{align}
-  が成り立つ。
-  </p>
-
-  <h4>（ウ）</h4>
-
-  <p>
-  （ア）より、
-  \begin{align}
-  \omega_\infty - \frac{3B_0}{2 \lambda} Q_\infty
-  = - \frac{3B_0}{2 \lambda} Q_0
-  \end{align}
-  が成り立つ。
-  これと、（イ）で得た式から、 $Q_\infty$ を消去して、
-  \begin{align}
-  \omega_\infty
-  = \frac{6 B_0 Q_0}{3a^2 B_0^2 C - 4 \lambda}
-  \end{align}
-  を得る。
-  </p>
-
-  <h3>(7)</h3>
-
-  <p>
-  \begin{align}
-  \end{align}
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>[3]</h2>
-
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
   <p>
   \begin{align}
@@ -496,7 +112,7 @@
   \end{align}
   </p>
 
-  <h3>(2)</h3>
+  <h2>(2)</h2>
 
   <p>
   $ x = r \cos \theta, y = r \sin \theta,
@@ -616,7 +232,7 @@
   を得る。
   </p>
 
-  <h3>(3)</h3>
+  <h2>(3)</h2>
 
   <p>
   $ | \vec{r} | \neq 0 $ のとき、
@@ -633,7 +249,7 @@
   を得る。
   </p>
 
-  <h3>(4)</h3>
+  <h2>(4)</h2>
 
   <p>
   領域 $ | \vec{r} | \leq a $ を $S$ ,
@@ -672,7 +288,7 @@
   \end{align}
   </p>
 
-  <h3>(5)</h3>
+  <h2>(5)</h2>
 
   <p>
   (3), (4) より、
@@ -686,7 +302,7 @@
   2次元のディラックのデルタ関数である。
   </p>
 
-  <h3>(6)</h3>
+  <h2>(6)</h2>
 
 
   <hr>
