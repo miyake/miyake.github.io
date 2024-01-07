@@ -139,6 +139,56 @@
   </p>
 
   <p>
+  以上より、
+  $\boldsymbol{v}_1, \boldsymbol{v}_2, \boldsymbol{v}_3$
+  は $\mathbb{R}^3$ の基底であり、
+  \begin{align}
+  A \boldsymbol{v}_1 = -3 \boldsymbol{v}_1
+  , \ \ 
+  A \boldsymbol{v}_2 = \boldsymbol{v}_2
+  , \ \ 
+  A \boldsymbol{v}_3 = \boldsymbol{v}_2 + \boldsymbol{v}_3
+  \end{align}
+  を満たす。
+  したがって、任意の $\boldsymbol{v} \in \mathbb{R}^3$ に対して
+  \begin{align}
+  \boldsymbol{v}
+  = a \boldsymbol{v}_1 + b \boldsymbol{v}_2 + c \boldsymbol{v}_3
+  \end{align}
+  であるような $a,b,c \in \mathbb{R}$ が一意的に存在し、
+  \begin{align}
+  A \boldsymbol{v}
+  &= -3a \boldsymbol{v}_1 + (b+c) \boldsymbol{v}_2 + c \boldsymbol{v}_3
+  ,\\
+  A^2 \boldsymbol{v}
+  &= 9a \boldsymbol{v}_1 + (b+2c) \boldsymbol{v}_2 + c \boldsymbol{v}_3
+  \end{align}
+  が成り立つ。
+  $a \ne 0$ かつ $b \ne 0$ かつ $c \ne 0$ のときは、
+  $\boldsymbol{v}, A \boldsymbol{v}, A^2 \boldsymbol{v}$
+  は1次独立なので、
+  このような $\boldsymbol{v}$ は求める2次元部分空間に含まれない。
+  さらに、
+  \begin{align}
+  A (a \boldsymbol{v}_1 + b \boldsymbol{v}_2 )
+  &= -3a \boldsymbol{v}_1 + b \boldsymbol{v}_2
+  ,\\
+  A (a \boldsymbol{v}_2 + c \boldsymbol{v}_3 )
+  &= -3a \boldsymbol{v}_1 + c \boldsymbol{v}_2 + c \boldsymbol{v}_3
+  ,\\
+  A (b \boldsymbol{v}_2 + c \boldsymbol{v}_3 )
+  &= (b+c) \boldsymbol{v}_2 + c \boldsymbol{v}_3
+  \end{align}
+  であるから、求める2次元部分空間は、
+  「 $\boldsymbol{v}_1$ と $\boldsymbol{v}_2$ によって張られる部分空間」
+  と
+  「 $\boldsymbol{v}_2$ と $\boldsymbol{v}_3$ によって張られる部分空間」
+  の2つであることがわかる。
+  </p>
+
+  <!--
+  <hr>
+  <p>
   $\boldsymbol{v}_1, \boldsymbol{v}_2$ の張るベクトル空間を $V_1$ とし、
   $\boldsymbol{v}_2, \boldsymbol{v}_3$ の張るベクトル空間を $V_2$ とすると、
   この2つが求める2次元部分空間である。
@@ -166,7 +216,7 @@
   \end{align}
   と書けるが、
   \begin{align}
-  A \boldsymbol{v} = (a+b) \boldsymbol{v}_2 + c \boldsymbol{v}_3 \in V_2
+  A \boldsymbol{v} = (b+c) \boldsymbol{v}_2 + c \boldsymbol{v}_3 \in V_2
   \end{align}
   である。
   </p>
@@ -187,8 +237,8 @@
   $\boldsymbol{v}, A \boldsymbol{v}, A^2 \boldsymbol{v}$
   は1次独立である。
   </p>
+  -->
   <!-- わかりにくいかも。 -->
-
 
 
   <hr>
