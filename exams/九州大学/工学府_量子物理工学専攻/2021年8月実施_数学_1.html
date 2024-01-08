@@ -204,11 +204,15 @@
   <h3>(2)</h3>
 
   <p>
-  3点 $(t,0,0),(0,t,0),(0,0,t)$ を頂点とする正三角形の面積は
+  $ 0 \leq t \leq a $ として、
+  3点 $(t,0,0),(0,t,0),(0,0,t)$ を頂点とする正三角形を考えると、
+  この三角形上の点 $(x,y,z)$ について $x+y+z=t$ であり、
+  この三角形の面積は
   \begin{align}
   S(t) = \frac{\sqrt{3}}{2} t^2
   \end{align}
-  であるから、
+  である。
+  よって、
   \begin{align}
   \iiint_R \left( x+y+z \right) dx dy dz
   &= \int_0^a t S(t) dt
