@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      総合研究大学院大学 複合科学研究科 統計科学専攻
+      2018年8月実施 数理 第3問
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/総合研究大学院大学/index.html">総合研究大学院大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    総合研究大学院大学 複合科学研究科
+    <br>
+    統計科学専攻
+    <br>
+    2018年8月実施 数理 第3問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.ism.ac.jp/senkou/admission/kakomon.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>[問1]</h2>
+
+  <p>
+  点Pの位置を表す確率変数を $Z$ とすると、その確率密度関数は、
+  \begin{align}
+  \frac{1}{\sqrt{2 \pi}} e^{- \frac{z^2}{2}}
+  \end{align}
+  である。
+  $x \gt 0$ に対して、 $ Z^2 \lt x $ すなわち $ - \sqrt{x} \lt Z \lt \sqrt{x} $ となる確率は、
+  \begin{align}
+  \frac{1}{\sqrt{2 \pi}} \int_{-\sqrt{x}}^{\sqrt{x}} e^{- \frac{z^2}{2}} dz
+  =
+  \sqrt\frac{2}{\pi} \int_0^{\sqrt{x}} e^{- \frac{z^2}{2}} dz
+  \end{align}
+  これを $x$ で微分して、求める確率密度関数を得る：
+  \begin{align}
+  \frac{d}{dx} \sqrt\frac{2}{\pi} \int_0^{\sqrt{x}} e^{- \frac{z^2}{2}} dz
+  = \sqrt\frac{2}{\pi} e^{- \frac{x}{2}} \frac{1}{2 \sqrt{x}}
+  = \frac{1}{\sqrt{ 2 \pi x}} e^{- \frac{x}{2}}
+  \end{align}
+  </p>
+
+  <h2>[問2]</h2>
+
+  <p>
+  $(X_1, X_2, \cdots, X_n)$ の同時確率密度関数は、
+  \begin{align}
+  \left( 2 \pi \right)^{- \frac{n}{2}} e^{- \frac{1}{2} \left( x_1^2 + x_2^2 + \cdots + x_n^2 \right) }
+  \end{align}
+  である。
+  $X = X_1^2 + X_2^2 + \cdots + X_n^2$ とすると、
+  $x \gt 0$ に対して、$X \lt x$ となる確率は、
+  \begin{align}
+  P(X \lt x)
+  &=
+  \left( 2 \pi \right)^{- \frac{n}{2}}
+  \int
+  \int
+  \cdots
+  \int_{x_1^2 + x_2^2 + \cdots + x_n^2 \lt x}
+  e^{- \frac{1}{2} \left( x_1^2 + x_2^2 + \cdots + x_n^2 \right) }
+  dx_1 dx_2 \cdots dx_n
+  \\
+  &=
+  \left( 2 \pi \right)^{- \frac{n}{2}} S
+  \int_0^{\sqrt{x}}
+  e^{- \frac{1}{2} r^2 }
+  r^{n-1} dr
+  \end{align}
+  ここで $S$ は n次元単位球の表面積であり、
+  $r = \sqrt{x_1^2 + x_2^2 + \cdots + x_n^2}$ である。
+  </p>
+
+  <p>
+  求める確率密度関数 $f(x)$ は、
+  \begin{align}
+  f(x) = \frac{d}{dx} P(X \lt x)
+  &=
+  \left( 2 \pi \right)^{- \frac{n}{2}} S
+  e^{- \frac{1}{2} x }
+  x^{\frac{n-1}{2}}
+  \frac{1}{2 \sqrt{x}}
+  \\
+  &=
+  C 
+  x^{\frac{n}{2} - 1}
+  e^{- \frac{1}{2} x }
+  \end{align}
+
+  ここで $C$ は $x$ によらない定数であるが、$f(x)$ の規格化の条件から求めることができる：
+  \begin{align}
+  1 = \int_0^\infty f(x) dx
+  &=
+  C 
+  \int_0^\infty
+  x^{\frac{n}{2} - 1}
+  e^{- \frac{1}{2} x }
+  dx
+  \\
+  &=
+  C \cdot 2^{\frac{n}{2}}
+  \int_0^\infty y^{\frac{n}{2} - 1} e^{- y } dy
+  \ \ \ \ \ \ \ \ (y=x/2)
+  \\
+  &=
+  C \cdot 2^{\frac{n}{2}} \ \Gamma \left( \frac{n}{2} \right)
+  \end{align}
+
+  \begin{align}
+  \therefore
+  C = \frac{1}{\Gamma \left( \frac{n}{2} \right) 2^\frac{n}{2}}
+  \end{align}
+
+  よって、
+  \begin{align}
+  f(x)
+  = \frac{1}{\Gamma \left( \frac{n}{2} \right) 2^\frac{n}{2}}
+  x^{\frac{n}{2} - 1}
+  e^{- \frac{1}{2} x }
+  \end{align}
+  </p>
+
+  <h2>[問3]</h2>
+
+  <p>
+  $z=x+y, w=\frac{x}{x+y}$ とすると、
+  $x=zw, y=z(1-w)$ であり、
+  $dx dy = |z| dz dw $ である。
+  また、 $ x \gt 0, y \gt 0 $ のとき、 $ z \gt 0, 0 \lt w \lt 1 $ である。
+  </p>
+
+  <p>
+  $X, Y$ の同時確率密度関数は、
+  \begin{align}
+  \frac{1}{\Gamma \left( \frac{n}{2} \right) \Gamma \left( \frac{m}{2} \right) 2^\frac{n+m}{2}}
+  x^{\frac{n}{2} - 1} y^{\frac{m}{2} - 1}
+  e^{- \frac{1}{2} (x+y) }
+  \end{align}
+  であるから、
+  $Z=X+Y, W=\frac{X}{X+Y}$ の同時確率密度関数 $f(z,w)$ は、
+  \begin{align}
+  f(z,w)
+  &=
+  \frac{1}{\Gamma \left( \frac{n}{2} \right) \Gamma \left( \frac{m}{2} \right) 2^\frac{n+m}{2}}
+  z^{\frac{n}{2} - 1}
+  w^{\frac{n}{2} - 1}
+  z^{\frac{m}{2} - 1}
+  (1-w)^{\frac{m}{2} - 1}
+  e^{- \frac{1}{2} z }
+  z
+  \\
+  &=
+  \frac{1}{\Gamma \left( \frac{n+m}{2} \right) 2^\frac{n+m}{2}}
+  z^{\frac{n+m}{2} - 1}
+  e^{- \frac{1}{2} z }
+  \cdot
+  \frac{\Gamma \left( \frac{n+m}{2} \right)}
+  {\Gamma \left( \frac{n}{2} \right) \Gamma \left( \frac{m}{2} \right)}
+  w^{\frac{n}{2} - 1}
+  (1-w)^{\frac{m}{2} - 1}
+  \end{align}
+
+  これより、 $Z$ と $W$ は独立で、
+  $Z$ は自由度 $n+m$ のカイ二乗分布、
+  $W$ は母数 $(n/2, m/2)$ のベータ分布であることがわかる。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/総合研究大学院大学/index.html">総合研究大学院大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
