@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      早稲田大学 大学院 基幹理工学研究科 機械科学・航空宇宙専攻
+      2023年実施 [1]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/早稲田大学/index.html">早稲田大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    早稲田大学 大学院 基幹理工学研究科
+    <br>
+    機械科学・航空宇宙専攻
+    <br>
+    2023年実施 [1] 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.waseda.jp/inst/admission/graduate/past_test/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(1)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  \begin{align}
+  e^{PAP^{-1}}
+  &= \sum_{k=0}^\infty \frac{\left( PAP^{-1} \right)^k}{k!}
+  \\
+  &= P \sum_{k=0}^\infty \frac{A^k}{k!} P^{-1}
+  \\
+  &= P e^A P^{-1}
+  \end{align}
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d}{dt} e^{tA}
+  &= \frac{d}{dt} \sum_{k=0}^\infty \frac{t^k A^k}{k!}
+  \\
+  &= \sum_{k=1}^\infty \frac{t^{k-1} A^k}{(k-1)!}
+  \\
+  &= A \sum_{k=0}^\infty \frac{t^k A^k}{k!}
+  \\
+  &= A e^{tA}
+  \end{align}
+  であり、 $t=0$ のとき $e^{tA}$ は単位行列であるから、
+  求める解は
+  \begin{align}
+  \boldsymbol{x}(t) = e^{tA} \boldsymbol{x}_0
+  \end{align}
+  であることがわかる。
+  </p>
+
+  <h3>(iii)</h3>
+
+  <p>
+  \begin{align}
+  A
+  &= P
+  \begin{bmatrix} \lambda_1 & & \\ & \ddots & \\ & & \lambda_n \end{bmatrix}
+  P^{-1}
+  \end{align}
+  なので、
+  \begin{align}
+  e^{tA}
+  &= \exp \left( tP
+  \begin{bmatrix} \lambda_1 & & \\ & \ddots & \\ & & \lambda_n \end{bmatrix}
+  P^{-1} \right)
+  \\
+  &= P \exp \left( t
+  \begin{bmatrix} \lambda_1 & & \\ & \ddots & \\ & & \lambda_n \end{bmatrix}
+  \right) P^{-1}
+  \ \ \ \ \ \ \ \ ( \because \text{ (i) } )
+  \\
+  &= P \begin{bmatrix}
+  e^{\lambda_1 t} & & \\ & \ddots & \\ & & e^{\lambda_n t}
+  \end{bmatrix} P^{-1}
+  \end{align}
+  となるため、 (ii) で求めた解は
+  \begin{align}
+  \boldsymbol{x} (t)
+  &= e^{tA} \boldsymbol{x}_0
+  \\
+  &= P \begin{bmatrix}
+  e^{\lambda_1 t} & & \\ & \ddots & \\ & & e^{\lambda_n t}
+  \end{bmatrix} P^{-1} \boldsymbol{x}_0
+  \end{align}
+  と書ける。
+  </p>
+
+  <h3>(iv)</h3>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{bmatrix} 1 - \lambda & 1 \\ -2 & 4 - \lambda \end{bmatrix}
+  \\
+  &= (\lambda - 2)(\lambda - 3)
+  \\
+  \therefore \ \ \lambda &= 2, 3
+  \end{align}
+  がわかる。
+  固有値 $2$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{bmatrix} -1 & 1 \\ -2 & 2 \end{bmatrix}
+  \begin{bmatrix} u \\ v \end{bmatrix}
+  = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+  \end{align}
+  とおくと $u=v$ を得る。
+  固有値 $3$ に属する固有ベクトルを求めるため
+  \begin{align}
+  \begin{bmatrix} -2 & 1 \\ -2 & 1 \end{bmatrix}
+  \begin{bmatrix} u \\ v \end{bmatrix}
+  = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+  \end{align}
+  とおくと $2u=v$ を得る。
+  そこで、
+  \begin{align}
+  P = \begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  P^{-1} &= \begin{bmatrix} 2 & -1 \\ -1 & 1 \end{bmatrix}
+  , \\ 
+  A &= P \begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix} P^{-1}
+  \end{align}
+  であり、
+  \begin{align}
+  \boldsymbol{x}(t)
+  &= P \begin{bmatrix} e^{2t} & 0 \\ 0 & e^{3t} \end{bmatrix} P^{-1}
+  \begin{bmatrix} x_{10} \\ x_{20} \end{bmatrix}
+  \\
+  &=
+  \begin{bmatrix} 1 & 1 \\ 1 & 2 \end{bmatrix}
+  \begin{bmatrix} e^{2t} & 0 \\ 0 & e^{3t} \end{bmatrix}
+  \begin{bmatrix} 2 & -1 \\ -1 & 2 \end{bmatrix}
+  \begin{bmatrix} x_{10} \\ x_{20} \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+  2e^{2t} - e^{3t} & -e^{2t} + e^{3t} \\
+  2e^{2t} - 2e^{3t} & -e^{2t} + 2e^{3t}
+  \end{bmatrix}
+  \begin{bmatrix} x_{10} \\ x_{20} \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+  \left( 2 x_{10} - x_{20} \right) e^{2t}
+  + \left( - x_{10} + x_{20} \right) e^{3t}
+  \\
+  \left( 2 x_{10} - x_{20} \right) e^{2t}
+  + \left( - 2x_{10} + 2x_{20} \right) e^{3t}
+  \end{bmatrix}
+  \end{align}
+  を得る。
+  </p>
+
+  <!--
+  <hr>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  <a href="https://www.amazon.co.jp/dp/490334200X/ref=nosim?tag=msscee0a-22">
+    チャーチル-ブラウン「複素関数入門」
+    &sect; 2-5, 6
+  </a>
+  求める必要十分条件は、任意の $z=x+iy \in \mathbb{D}$ について
+  コーシー-リーマンの関係式
+  \begin{align}
+  \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}
+  , \ \ 
+  \frac{\partial u}{\partial y} = - \frac{\partial v}{\partial x}
+  \end{align}
+  が成り立つことである。
+  </p>
+  -->
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/早稲田大学/index.html">早稲田大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
