@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      早稲田大学 大学院 基幹理工学研究科 材料科学専攻
+      2023年実施 [2] 物理
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/早稲田大学/index.html">早稲田大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    早稲田大学 大学院 基幹理工学研究科
+    <br>
+    材料科学専攻
+    <br>
+    2023年実施 [2] 物理
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.waseda.jp/inst/admission/graduate/past_test/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  時刻を $t$ で表し、微分 $d/dt$ をドット $\dot{}$ で表す。
+  </p>
+
+  <hr>
+  <h2>問 1</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  x = x
+  , \ \ 
+  y = \alpha \sin \theta
+  , \ \ 
+  z = - \alpha \cos \theta
+  \end{align}
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  \dot{y} = \alpha \dot{\theta} \cos \theta
+  , \ \ 
+  \dot{z} = \alpha \dot{\theta} \sin \theta
+  \end{align}
+  なので、求めるラグランジアンは
+  \begin{align}
+  L \left( x, \theta, \dot{x}, \dot{\theta} \right)
+  &= \frac{1}{2} m \left( \dot{x}^2\ + \dot{y}^2 + \dot{z}^2 \right) - mgz
+  \\
+  &= \frac{1}{2} m \left( \dot{x}^2\ + \alpha^2 \dot{\theta}^2 \right)
+  + mg \alpha \cos \theta
+  \end{align}
+  である。
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{x}}
+  &= \frac{d}{dt} m \dot{x}
+  = m \ddot{x}
+  ,\\
+  \frac{\partial L}{\partial x}
+  &= 0
+  ,\\
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}}
+  &= \frac{d}{dt} m \alpha^2 \dot{\theta}
+  = m \alpha^2 \ddot{\theta}
+  ,\\
+  \frac{\partial L}{\partial \theta}
+  &= - mg \alpha \sin \theta
+  \end{align}
+  なので、ラグランジュ方程式は
+  \begin{align}
+  \ddot{x} = 0
+  , \ \ 
+  \alpha \ddot{\theta} = - g \sin \theta
+  \end{align}
+  となる。
+  </p>
+
+  <!--
+  <hr>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>問 2</h2>
+
+  <h3>(1)</h3>
+
+  <p>
+  \begin{align}
+  \dot{y} = - \frac{a \dot{x}}{2 \sqrt{x}}
+  \end{align}
+  なので、求めるラグランジアンは
+  \begin{align}
+  L \left( x, \dot{x} \right)
+  &= \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy
+  \\
+  &= \frac{1}{2} m \dot{x}^2 \left( 1 + \frac{a^2}{4x} \right)
+  + mg a \sqrt{x}
+  \end{align}
+  である。
+  </p>
+
+  <h3>(2)</h3>
+
+  <p>
+  \begin{align}
+  p
+  &= \frac{\partial L}{\partial \dot{x}}
+  \\
+  &= m \dot{x} \left( 1 + \frac{a^2}{4x} \right)
+  ,\\
+  H(x,p)
+  &= \dot{x} p - L
+  \\
+  &= \frac{1}{2} m \dot{x}^2 \left( 1 + \frac{a^2}{4x} \right)
+  - mg a \sqrt{x}
+  \\
+  &= \frac{p^2}{2 m \left( 1 + \frac{a^2}{4x} \right)}
+  - mg a \sqrt{x}
+  \end{align}
+  </p>
+
+  <h3>(3)</h3>
+
+  <p>
+  \begin{align}
+  \dot{x}
+  &= \frac{\partial H}{\partial p}
+  \\
+  &= \frac{p}{m \left( 1 + \frac{a^2}{4x} \right)}
+  \\
+  \dot{p}
+  &= - \frac{\partial H}{\partial x}
+  \\
+  &= \frac{p}{m \left( 1 + \frac{a^2}{4x} \right)}
+  \end{align}
+  </p>
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/早稲田大学/index.html">早稲田大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
