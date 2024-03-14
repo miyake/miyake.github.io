@@ -152,7 +152,6 @@
   \end{align}
   </p>
 
-  <!--
   <hr>
 <ins class="adsbygoogle"
      style="display:block"
@@ -170,16 +169,18 @@
   <h3>(1)</h3>
 
   <p>
+  時刻 $t$ において、棒と床が接触している点の x 座標を $X(t)$ とし、
+  棒と壁が接触している点の y 座標を $Y(t)$ とすると、
   \begin{align}
-  \dot{y} = - \frac{a \dot{x}}{2 \sqrt{x}}
+  X(t) = a \sin \varphi (t)
+  , \ \ 
+  Y(t) = a \cos \varphi (t)
   \end{align}
-  なので、求めるラグランジアンは
+  なので、
   \begin{align}
-  L \left( x, \dot{x} \right)
-  &= \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy
-  \\
-  &= \frac{1}{2} m \dot{x}^2 \left( 1 + \frac{a^2}{4x} \right)
-  + mg a \sqrt{x}
+  x(t) &= \frac{2}{3} X(t) = \frac{2}{3} a \sin \varphi (t)
+  ,\\
+  y(t) &= \frac{1}{3} Y(t) = \frac{1}{3} a \cos \varphi (t)
   \end{align}
   である。
   </p>
@@ -188,38 +189,59 @@
 
   <p>
   \begin{align}
-  p
-  &= \frac{\partial L}{\partial \dot{x}}
-  \\
-  &= m \dot{x} \left( 1 + \frac{a^2}{4x} \right)
+  \dot{x} (t) &= \frac{2}{3} a \dot{\varphi}(t) \cos \varphi (t)
   ,\\
-  H(x,p)
-  &= \dot{x} p - L
-  \\
-  &= \frac{1}{2} m \dot{x}^2 \left( 1 + \frac{a^2}{4x} \right)
-  - mg a \sqrt{x}
-  \\
-  &= \frac{p^2}{2 m \left( 1 + \frac{a^2}{4x} \right)}
-  - mg a \sqrt{x}
+  \dot{y} (t) &= - \frac{1}{3} a \dot{\varphi}(t) \sin \varphi (t)
   \end{align}
+  なので、求めるラグランジアンは
+  \begin{align}
+  L \left( \varphi, \dot{\varphi} \right)
+  &= \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy
+  \\
+  &= \frac{1}{18} m a^2 \dot{\varphi}^2
+  \left( 4 \cos^2 \varphi + \sin^2 \varphi \right)
+  - \frac{1}{3} mga \cos \varphi
+  \\
+  &= \frac{1}{18} m a^2 \dot{\varphi}^2 \left( 3 \cos^2 \varphi + 1 \right)
+  - \frac{1}{3} mga \cos \varphi
+  \end{align}
+  である。
   </p>
 
   <h3>(3)</h3>
 
   <p>
   \begin{align}
-  \dot{x}
-  &= \frac{\partial H}{\partial p}
+  \frac{d}{dt} \frac{\partial L}{\partial \dot{\varphi}}
+  &= \frac{d}{dt} \frac{1}{9} m a^2 \dot{\varphi}
+  \left( 3 \cos^2 \varphi + 1 \right)
   \\
-  &= \frac{p}{m \left( 1 + \frac{a^2}{4x} \right)}
-  \\
-  \dot{p}
-  &= - \frac{\partial H}{\partial x}
-  \\
-  &= \frac{p}{m \left( 1 + \frac{a^2}{4x} \right)}
+  &= \frac{1}{9} m a^2 \left(
+  \ddot{\varphi} \left( 3 \cos^2 \varphi + 1 \right)
+  - 6 \dot{\varphi}^2 \cos \varphi \sin \varphi
+  \right)
+  ,\\
+  \frac{\partial L}{\partial \varphi}
+  &= - \frac{1}{3} ma^2 \dot{\varphi}^2 \cos \varphi \sin \varphi
+  + \frac{1}{3} mga \sin \varphi
   \end{align}
+  なので、求める運動方程式は
+  \begin{align}
+  \ddot{\varphi} \left( 3 \cos^2 \varphi + 1 \right)
+  - 6 \dot{\varphi}^2 \cos \varphi \sin \varphi
+  &=
+  - 3 \dot{\varphi}^2 \cos \varphi \sin \varphi
+  + 3 \frac{g}{a} \sin \varphi
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \ddot{\varphi} \left( 3 \cos^2 \varphi + 1 \right)
+  - 3 \dot{\varphi}^2 \cos \varphi \sin \varphi
+  - 3 \frac{g}{a} \sin \varphi
+  &= 0
+  \end{align}
+  である。
   </p>
-  -->
 
   <hr>
 <!-- 横長タイプ -->
