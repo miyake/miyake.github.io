@@ -121,7 +121,7 @@
   <h3>2.</h3>
 
   <!--
-  Gibbs-Hermholtz の式
+  Gibbs-Helmholtz の式
   -->
 
   <p>
@@ -137,6 +137,60 @@
   &= - \frac{H}{T^2}
   & \text{ ( $\because$ (1) ) }
   \end{align}
+  </p>
+
+  <h3>3.</h3>
+
+  <!--
+  van't Hoff の式
+  -->
+
+  <p>
+  式 (4) は今の場合
+  \begin{align}
+  \frac{d}{dT} \Delta G^\circ
+  &= - \frac{\Delta H^\circ}{T^2}
+  \end{align}
+  であり、式 (5) を使うと、
+  \begin{align}
+  \frac{d}{dT} \left( - R \ln K \right)
+  &= - \frac{\Delta H^\circ}{T^2}
+  \\
+  \therefore \ \ 
+  \frac{d}{dT} \ln K
+  &= \frac{\Delta H^\circ}{RT^2}
+  \end{align}
+  を得る。
+  </p>
+
+  <h3>4.</h3>
+
+  <p>
+  今の場合、標準生成エンタルピーは
+  \begin{align}
+  \Delta H^\circ
+  &= 2 \times 20 \ \mathrm{kJ \ mol^{-1}} - 10 \ \mathrm{kJ \ mol^{-1}}
+  \\
+  &= 30 \ \mathrm{kJ \ mol^{-1}}
+  \\
+  &= 3.0 \times 10^4 \ \mathrm{J \ mol^{-1}}
+  \end{align}
+  である。
+  式 (6) を $T = 200 \ \mathrm{K}$ から
+  $T = 500 \ \mathrm{K}$ まで積分して、
+  \begin{align}
+  \ln K_{500}
+  &= \ln K_{200} + \frac{\Delta H^\circ}{R}
+  \int_{200}^{500} \frac{dT}{T^2}
+  \\
+  &= \ln K_{200} + \frac{\Delta H^\circ}{R}
+  \left[ - \frac{1}{T} \right]_{200}^{500}
+  \\
+  &= \ln K_{200} + \frac{\Delta H^\circ}{R} \cdot \frac{3}{10}
+  \\
+  &= 1.1 \times 10^3
+  \end{align}
+  を得る。
   </p>
 
 
