@@ -17,7 +17,7 @@
     <title>
       山形大学 大学院 理工学研究科
       情報・エレクトロニクス専攻
-      2023年度 基礎科目 問題 1. 微分積分
+      2023年度 基礎科目 問題 2. 線形代数
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     情報・エレクトロニクス専攻
     <br>
-    2023年度 基礎科目 問題 1. 微分積分
+    2023年度 基礎科目 問題 2. 線形代数
   </h1>
 
   <hr>
@@ -84,68 +84,87 @@
 
   <p>
   \begin{align}
-  \frac{\partial f}{\partial x}
-  &= \frac{ - e^{-(x+y)} \left( (x-y)^2 + a^2 \right)
-  - e^{-(x+y)} \cdot 2(x-y) }{ \left( (x-y)^2 + a^2 \right)^2 }
+  P^{-1} &= \begin{pmatrix} 1 & 0 \\ -2 & 1 \end{pmatrix}
   \\
-  &= \frac{ - e^{-(x+y)} \left( (x-y)^2 + a^2 + 2(x-y) \right)}
-  { \left( (x-y)^2 + a^2 \right)^2 }
+  PJP^{-1}
+  &= \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}
+  \begin{pmatrix} \lambda & 1 \\ 0 & \lambda \end{pmatrix}
+  \begin{pmatrix} 1 & 0 \\ -2 & 1 \end{pmatrix}
+  \\
+  &= \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}
+  \begin{pmatrix} \lambda - 2 & 1 \\ -2 \lambda & \lambda \end{pmatrix}
+  \\
+  &= \begin{pmatrix} \lambda - 2 & 1 \\ -4 & \lambda + 2 \end{pmatrix}
+  \\
+  &= A
   \end{align}
   </p>
 
   <h2>(2)</h2>
 
-  <h3>(b)</h3>
+  <p>
+  $n=1$ のとき題意が成り立つ。
+  $n=k \ (k = 1, 2, \cdots)$ のとき
+  \begin{align}
+  J^k
+  &= \begin{pmatrix} \lambda^k & k \lambda^{k-1} \\ 0 & \lambda^k \end{pmatrix}
+  \end{align}
+  が成り立つとすると、
+  \begin{align}
+  J^{k+1}
+  &= J J^k
+  \\
+  &= \begin{pmatrix} \lambda & 1 \\ 0 & \lambda \end{pmatrix}
+  \begin{pmatrix} \lambda^k & k \lambda^{k-1} \\ 0 & \lambda^k \end{pmatrix}
+  \\
+  &= \begin{pmatrix}
+  \lambda^{k+1} & (k+1) \lambda^k \\ 0 & \lambda^{k+1} \end{pmatrix}
+  \end{align}
+  となるので $n=k+1$ のときも題意が成り立つ。
+  したがって、数学的帰納法により、任意の自然数 $n$ について題意が成り立つ。
+  </p>
+
+  <h2>(3)</h2>
 
   <p>
   \begin{align}
-  x = \frac{1}{2} (u+v), \ \ y = \frac{1}{2} (-u+v)
-  \end{align}
-  なので、
-  \begin{align}
-  \frac{\partial (x,y)}{\partial (u,v)}
-  &= \frac{1}{2} \cdot \frac{1}{2}
-  - \frac{1}{2} \cdot \left( - \frac{1}{2} \right)
+  A^n
+  &= PJP^{-1} \cdot PJP^{-1} \cdot \cdots \cdot PJP^{-1}
   \\
-  &= \frac{1}{2}
+  &= P J^n P^{-1}
+  \end{align}
+  であり、
+  \begin{align}
+  A^n
+  &= \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}
+  \begin{pmatrix} \lambda^n & n \lambda^{n-1} \\ 0 & \lambda^n \end{pmatrix}
+  \begin{pmatrix} 1 & 0 \\ -2 & 1 \end{pmatrix}
+  \\
+  &= \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}
+  \begin{pmatrix}
+  \lambda^n - 2n \lambda^{n-1} & n \lambda^{n-1} \\
+  -2 \lambda^n & \lambda^n \end{pmatrix}
+  \\
+  &= \begin{pmatrix}
+  \lambda^n - 2n \lambda^{n-1} & n \lambda^{n-1} \\
+  -4n \lambda^n & \lambda^n + 2n \lambda^{n-1} \end{pmatrix}
   \end{align}
   である。
   </p>
 
-  <h3>(c)</h3>
+  <h2>(4)</h2>
 
   <p>
   \begin{align}
-  I
-  &= \iint_D f(x,y) dx dy
+  \lim_{n \to \infty} \frac{1}{n \lambda^{n-1}} A^n
+  &= \lim_{n \to \infty} \begin{pmatrix}
+  \frac{\lambda}{n} - 2 & 1 \\ -4 & \frac{\lambda}{n} + 2
+  \end{pmatrix}
   \\
-  &= \iint_E \frac{e^{-v}}{u^2 + a^2}
-  \left| \frac{\partial (x,y)}{\partial (u,v)} \right| du dv
-  \\
-  &= \frac{1}{2} \iint_E \frac{e^{-v}}{u^2 + a^2} du dv
-  \\
-  &= \frac{1}{2} \int_0^a e^{-v} dv \int_0^a \frac{du}{u^2 + a^2}
-  \\
-  &= \frac{1}{2} \left[ -e^{-v} \right]_0^a
-  \cdot \frac{1}{a} \int_0^\frac{\pi}{4} d \theta
-  \ \ \ \ \ \ \ \ (u = a \tan \theta)
-  \\
-  &= \frac{\pi}{8a} \left( 1 - e^{-a} \right)
+  &= \begin{pmatrix} - 2 & 1 \\ -4 & 2 \end{pmatrix}
   \end{align}
   </p>
 
-  <h3>(d)</h3>
-
-  <p>
-  \begin{align}
-  \lim_{a \to +0} I
-  &= \frac{\pi}{8} \lim_{a \to +0} \frac{ 1 - e^{-a} }{a}
-  \\
-  &= \frac{\pi}{8} \lim_{a \to +0} \frac{ e^{-a} }{1}
-  \\
-  &= \frac{\pi}{8}
-  \end{align}
-  </p>
 
   <hr>
 <!-- 横長タイプ -->
