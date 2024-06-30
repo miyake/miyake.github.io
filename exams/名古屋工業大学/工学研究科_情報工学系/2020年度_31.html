@@ -17,7 +17,7 @@
     <title>
       名古屋工業大学 大学院
       工学研究科 情報工学系
-      2020年度 問題28 情報数学
+      2020年度 問題31 数理科学2
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 情報工学系
     <br>
-    2020年度 問題28 情報数学
+    2020年度 問題31 数理科学2
   </h1>
 
   <hr>
@@ -86,16 +86,12 @@
 
   <p>
   \begin{align}
-  P_X (i)
+  P(X=k)
   &=
-  \sum_{j=1}^N P_{XY}(i,j)
-  \\
-  P_{X \mid Y} (i \mid j)
-  &=
-  \frac{ P_{XY} (i, j) }{ P_Y(j) }
+  \left( \frac{5}{6} \right)^{k-1} \cdot \frac{1}{6}
   \\
   &=
-  \frac{ P_{XY} (i, j) }{ \sum_{k=1}^N P_{XY}(k,j) }
+  \frac{1}{5} \left( \frac{5}{6} \right)^k
   \end{align}
   </p>
 
@@ -103,22 +99,21 @@
 
   <p>
   \begin{align}
-  H (X)
+  M(t)
   &=
-  \sum_{i=1}^N P_X(i) \log_2 \frac{1}{P_X(i)}
+  \sum_{k=1}^\infty e^{tk} P(X=k)
   \\
   &=
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{1}{\sum_{k=1}^N P_{XY}(i,k)}
-  \\
-  H (X \mid Y)
-  &=
-  \sum_{j=1}^N P_Y(j) \sum_{i=1}^N P_{X \mid Y}(i \mid j)
-  \log_2 \frac{1}{P_{X \mid Y}(i \mid j)}
+  \frac{1}{5} \sum_{k=1}^\infty e^{tk} \left( \frac{5}{6} \right)^k
   \\
   &=
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{\sum_{k=1}^N P_{XY}(k,j)}{ P_{XY}(i,j) }
+  \frac{1}{5} \sum_{k=1}^\infty \left( \frac{5}{6} e^t \right)^k
+  \\
+  &=
+  \frac{1}{5} \frac{5}{6} e^t \frac{1}{1 - \frac{5}{6} e^t }
+  \\
+  &=
+  \frac{e^t}{6 - 5 e^t }
   \end{align}
   </p>
 
@@ -126,27 +121,9 @@
 
   <p>
   \begin{align}
-  I (X;Y)
+  M'(t)
   &=
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{P_{XY}(i,j)}{P_X(i) P_Y(j)}
-  \\
-  &=
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{1}{P_X(i)}
-  +
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{P_{XY}(i,j)}{P_Y(j)}
-  \\
-  &=
-  \sum_{i=1}^N P_X(i)
-  \log_2 \frac{1}{P_X(i)}
-  -
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{1}{P_{X \mid Y}(i \mid j)}
-  \\
-  &=
-  H(X) - H(X \mid Y)
+  \frac{6 e^t}{\left( 6 - 5 e^t \right)^2 }
   \end{align}
   </p>
 
@@ -154,92 +131,29 @@
 
   <p>
   \begin{align}
-  I (X;Y)
-  &=
-  \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{P_{XY}(i,j)}{P_X(i) P_Y(j)}
-  \\
-  &=
-  - \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \log_2 \frac{P_X(i) P_Y(j)}{P_{XY}(i,j)}
-  \\
-  &\geq
-  - \log_2 \left( \sum_{i=1}^N \sum_{j=1}^N P_{XY}(i,j)
-  \frac{P_X(i) P_Y(j)}{P_{XY}(i,j)} \right)
-  \\
-  &=
-  - \log_2 \left( \sum_{i=1}^N \sum_{j=1}^N
-  P_X(i) P_Y(j) \right)
-  \\
-  &=
-  - \log_2 1
-  \\
-  &=
-  0
+  E[X] = M'(0) = 6
   \end{align}
   </p>
 
   <h3>(5)</h3>
 
   <p>
-  $I(X;Y)$ が最小値 $0$ となるのは、
-  $X$ と $Y$ が独立のときなので、
-  例えば、
   \begin{align}
-  P
-  =
-  \begin{pmatrix}
-  1/4 & 1/4 \\ 1/4 & 1/4
-  \end{pmatrix}
-  \end{align}
-  のときである。
-  </p>
-
-  <h3>(6)</h3>
-
-  <p>
-  (3) で示したように、
-  \begin{align}
-  I (X;Y)
+  M''(t)
   &=
-  H(X) - H(X \mid Y)
+  \frac{6 e^t \left( 6 + 5 e^t \right) }{\left( 6 - 5 e^t \right)^3 }
   \end{align}
-  である。
-  ここで、 $H(X)$ が最大となるのは、 $X$ が一様分布のとき、
-  すなわち、
+  であるから、
   \begin{align}
-  P_X(1) = P_X(2) = \frac{1}{2}
+  E[X^2] = M''(0) = 66
   \end{align}
-  ときである。
-  また、 $H(X \mid Y)$ が最小となるのは、
-  $Y$ によって $X$ が完全に決まるとき、
-  すなわち、
+  より、
   \begin{align}
-  P_{X \mid Y} (1 \mid 1) = P_{X \mid Y} (2 \mid 2) = 1
-  , \ \ 
-  P_{X \mid Y} (1 \mid 2) = P_{X \mid Y} (2 \mid 1) = 0
+  V[X] = E[X^2] - E[X]^2 = 30
   \end{align}
-  または、
-  \begin{align}
-  P_{X \mid Y} (1 \mid 1) = P_{X \mid Y} (2 \mid 2) = 0
-  , \ \ 
-  P_{X \mid Y} (1 \mid 2) = P_{X \mid Y} (2 \mid 1) = 1
-  \end{align}
-  のときである。
-  よって、 $I(X;Y)$ が最大となるのは、
-  \begin{align}
-  P
-  =
-  \begin{pmatrix}
-  1/2 & 0 \\ 0 & 1/2
-  \end{pmatrix}
-  ,
-  \begin{pmatrix}
-  0 & 1/2 \\ 1/2 & 0
-  \end{pmatrix}
-  \end{align}
-  のときである。
   </p>
+
+
 
   <hr>
 <!-- 横長タイプ -->
