@@ -17,7 +17,7 @@
     <title>
       東京大学 大学院 新領域創成科学研究科
       海洋技術環境学専攻
-      2020年度 第1問
+      2020年度 第2問
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     海洋技術環境学専攻
     <br>
-    2020年度 第1問
+    2020年度 第2問
   </h1>
 
   <hr>
@@ -80,23 +80,49 @@
 
   <hr>
 
-  <p>
-  \begin{align}
-  I
-  &= \int_0^\sqrt{3} \frac{dx}{\sqrt{x^2 + 1}}
-  \\
-  &= \left[ \log \left| x + \sqrt{x^2 + 1} \right| \right]_0^\sqrt{3}
-  \\
-  &= \log \left( 2 + \sqrt{3} \right)
-  \end{align}
-  </p>
+  <h2>1)</h2>
 
   <p>
-  [参考]
-  <a href="https://www.amazon.co.jp/dp/4785310715/ref=nosim?tag=msscee0a-22">
-    矢野・石原「微分積分」
-  </a>
+  \begin{align}
+  \frac{dx(\theta)}{d \theta}
+  &= \sum_{m=1}^\infty \frac{\theta^{2m-1}}{(2m-1)!}
+  \\
+  &= y(\theta)
+  \\
+  \frac{dy(\theta)}{d \theta}
+  &= \sum_{m=0}^\infty \frac{\theta^{2m}}{(2m)!}
+  \\
+  &= x(\theta)
+  \end{align}
+  なので、
+  \begin{align}
+  \frac{dx}{dy}
+  &= \frac{\frac{dx}{d \theta}}{\frac{dy}{d \theta}}
+  \\
+  &= \frac{y}{x}
+  \end{align}
+  を得る。
   </p>
+
+  <h2>2)</h2>
+
+  <p>
+  1) より、
+  \begin{align}
+  x dx = y dy
+  \end{align}
+  であり、これを積分すると、積分定数を $C$ として、
+  \begin{align}
+  x^2 = y^2 + C
+  \end{align}
+  である。
+  $\theta = 0$ のとき $x=1, y=0$ なので、 $C=1$ がわかり、
+  \begin{align}
+  x^2 - y^2 = 1
+  \end{align}
+  を得る。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->

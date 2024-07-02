@@ -17,7 +17,7 @@
     <title>
       東京大学 大学院 新領域創成科学研究科
       海洋技術環境学専攻
-      2020年度 第1問
+      2020年度 第4問
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     海洋技術環境学専攻
     <br>
-    2020年度 第1問
+    2020年度 第4問
   </h1>
 
   <hr>
@@ -81,22 +81,32 @@
   <hr>
 
   <p>
+  $\vec{x}=(x,y)$ から $\vec{x'}=(x',y')$ への変換は次のように表される：
   \begin{align}
-  I
-  &= \int_0^\sqrt{3} \frac{dx}{\sqrt{x^2 + 1}}
-  \\
-  &= \left[ \log \left| x + \sqrt{x^2 + 1} \right| \right]_0^\sqrt{3}
-  \\
-  &= \log \left( 2 + \sqrt{3} \right)
+  \begin{pmatrix} x \\ y \end{pmatrix}
+  =
+  \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+  \begin{pmatrix} x' \\ y' \end{pmatrix}
+  +
+  \begin{pmatrix} e \\ f \end{pmatrix}
   \end{align}
+  点 A, B, C がそれぞれ 点 A', B', C' に変換されることから、
+  \begin{align}
+  a = 1, b = 0, e = 0,
+  c = \frac{1}{\sqrt{3}},
+  d = \frac{2}{\sqrt{3}},
+  f = \frac{1}{\sqrt{3}} - 1
+  \end{align}
+  がわかる。
+  つまり、
+  \begin{align}
+  x' &= x
+  \\
+  y' &= \frac{x+2y+1-\sqrt{3}}{\sqrt{3}}
+  \end{align}
+  である。
   </p>
 
-  <p>
-  [参考]
-  <a href="https://www.amazon.co.jp/dp/4785310715/ref=nosim?tag=msscee0a-22">
-    矢野・石原「微分積分」
-  </a>
-  </p>
 
   <hr>
 <!-- 横長タイプ -->

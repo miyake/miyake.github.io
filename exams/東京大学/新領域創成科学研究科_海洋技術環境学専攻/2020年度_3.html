@@ -17,7 +17,7 @@
     <title>
       東京大学 大学院 新領域創成科学研究科
       海洋技術環境学専攻
-      2020年度 第1問
+      2020年度 第3問
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     海洋技術環境学専攻
     <br>
-    2020年度 第1問
+    2020年度 第3問
   </h1>
 
   <hr>
@@ -80,21 +80,75 @@
 
   <hr>
 
+  <h2>1)</h2>
+
   <p>
+  掃き出し法により、次のように求められる：
   \begin{align}
-  I
-  &= \int_0^\sqrt{3} \frac{dx}{\sqrt{x^2 + 1}}
+  &
+  \begin{pmatrix}
+  1 & 2 & 1 & 1 & 0 & 0 \\
+  2 & 5 & 6 & 0 & 1 & 0 \\
+  1 & 3 & 4 & 0 & 0 & 1
+  \end{pmatrix}
   \\
-  &= \left[ \log \left| x + \sqrt{x^2 + 1} \right| \right]_0^\sqrt{3}
+  &
+  \begin{pmatrix}
+  1 & 2 & 1 &  1 & 0 & 0 \\
+  0 & 1 & 4 & -2 & 1 & 0 \\
+  0 & 1 & 3 & -1 & 0 & 1
+  \end{pmatrix}
   \\
-  &= \log \left( 2 + \sqrt{3} \right)
+  &
+  \begin{pmatrix}
+  1 & 0 & -7 &  5 & -2 & 0 \\
+  0 & 1 &  4 & -2 &  1 & 0 \\
+  0 & 0 & -1 &  1 & -1 & 1
+  \end{pmatrix}
+  \\
+  &
+  \begin{pmatrix}
+  1 & 0 & 0 & -2 &  5 & -7 \\
+  0 & 1 & 0 &  2 & -3 &  4 \\
+  0 & 0 & 1 & -1 &  1 & -1
+  \end{pmatrix}
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  A^{-1}
+  =
+  \begin{pmatrix}
+  -2 &  5 & -7 \\
+   2 & -3 &  4 \\
+  -1 &  1 & -1
+  \end{pmatrix}
   \end{align}
   </p>
 
+  <h2>2)</h2>
+
   <p>
-  [参考]
-  <a href="https://www.amazon.co.jp/dp/4785310715/ref=nosim?tag=msscee0a-22">
-    矢野・石原「微分積分」
+  サラスの方法より、
+  \begin{align}
+  |A|
+  &= (20+12+6)-(5+18+16)
+  \\
+  &= -1
+  \\
+  |A^{-1}|
+  &= (-6-20-14)-(-21-8-10)
+  \\
+  &= -1
+  \end{align}
+  なので、
+  $|A^{-1}| = 1 / |A|$ が成り立っていることがわかる。
+  </p>
+
+  <h2>[参考]</h2>
+
+  <p>
+  <a href="https://www.amazon.co.jp/dp/4785310626/ref=nosim?tag=msscee0a-22">
+    矢野・石原「線形代数」
   </a>
   </p>
 
