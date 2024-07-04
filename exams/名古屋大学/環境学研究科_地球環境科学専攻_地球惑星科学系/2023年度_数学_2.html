@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 環境学研究科
       地球環境科学専攻 地球惑星科学系
-      2023年度 数学 問題1
+      2023年度 数学 問題2
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     地球環境科学専攻 地球惑星科学系
     <br>
-    2023年度 数学 問題1
+    2023年度 数学 問題2
   </h1>
 
 
@@ -81,19 +81,38 @@
 
   <hr>
 
+  <h2>問 1</h2>
+
   <p>
   \begin{align}
-  \det \begin{pmatrix}
-  1+a & a & -1 \\ a-1 & 0 & a+1 \\ 2a & a & 2a+1
-  \end{pmatrix}
-  &= -a^3 + a
+  \int_0^1 x \log_e x dx
+  &= \left[ \frac{x^2}{2} \log_e x \right]_0^1
+  - \frac{1}{2} \int_0^1 x^2 \cdot \frac{1}{x} dx
   \\
-  &= - a(a+1)(a-1)
+  &= - \frac{1}{2} \int_0^1 x dx
+  \\
+  &= - \frac{1}{2} \left[ \frac{x^2}{2} \right]_0^1
+  \\
+  &= - \frac{1}{4}
   \end{align}
-  なので、与えられた連立方程式が自明でない解をもつのは
-  $a=-1,0,1$ のときである。
   </p>
 
+  <h2>問 2</h2>
+
+  <p>
+  \begin{align}
+  \int_0^1 \frac{x^2}{\sqrt{1 - x^2}} dx
+  &= \int_0^\frac{\pi}{2}
+  \frac{\sin^2 \theta}{\cos \theta} \cdot \cos \theta d \theta
+  \ \ \ \ \ \ \ \ ( x = \sin \theta )
+  \\
+  &= \int_0^\frac{\pi}{2} \sin^2 \theta d \theta
+  \\
+  &= \int_0^\frac{\pi}{2} \frac{1 - \cos 2 \theta}{2} d \theta
+  \\
+  &= \frac{\pi}{4}
+  \end{align}
+  </p>
 
   <hr>
 <!-- 横長タイプ -->

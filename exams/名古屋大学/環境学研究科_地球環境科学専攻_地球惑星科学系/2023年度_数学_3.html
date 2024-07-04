@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 環境学研究科
       地球環境科学専攻 地球惑星科学系
-      2023年度 数学 問題1
+      2023年度 数学 問題3
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     地球環境科学専攻 地球惑星科学系
     <br>
-    2023年度 数学 問題1
+    2023年度 数学 問題3
   </h1>
 
 
@@ -81,19 +81,44 @@
 
   <hr>
 
+  <h2>問 1</h2>
+
   <p>
   \begin{align}
-  \det \begin{pmatrix}
-  1+a & a & -1 \\ a-1 & 0 & a+1 \\ 2a & a & 2a+1
-  \end{pmatrix}
-  &= -a^3 + a
+  \frac{du}{u^2} &= \frac{dt}{t}
   \\
-  &= - a(a+1)(a-1)
+  - \frac{1}{u} &= \log |t| + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \\
+  \therefore \ \ 
+  u &= - \frac{1}{ \log |t| + C }
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
   \end{align}
-  なので、与えられた連立方程式が自明でない解をもつのは
-  $a=-1,0,1$ のときである。
   </p>
 
+  <h2>問 2</h2>
+
+  <p>
+  $v=u-t$ とすると、
+  \begin{align}
+  \frac{d^2v}{dt^2}
+  &= \frac{d^2u}{dt^2}
+  \\
+  &= -u+t
+  \\
+  &= -v
+  \end{align}
+  なので、
+  \begin{align}
+  v &= A \sin t + B \cos t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \\
+  \therefore \ \ 
+  u &= A \sin t + B \cos t + t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  がわかる。
+  </p>
 
   <hr>
 <!-- 横長タイプ -->
