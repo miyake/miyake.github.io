@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       工学府 土木工学専攻
-      2022年度 数学 【問題2】
+      2022年度 数学 【問題6】
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学府 土木工学専攻
     <br>
-    2022年度 数学 【問題2】
+    2022年度 数学 【問題6】
   </h1>
 
   <hr>
@@ -80,56 +80,12 @@
 
   <hr>
 
-  <h2>(1)</h2>
-
   <p>
-  曲面 $x=f(x,y)$ 上の点
-  $P(x,y,f(x,y)), Q(x+\Delta x, y, f(x+\Delta x, y, f(x+\Delta x, y)),
-  R(x, y+\Delta y, f(x, y+\Delta y)) $
-  を考えると、 $\Delta x, \Delta y$ の1次までで
   \begin{align}
-  \overrightarrow{PQ}
-  &\simeq \left( \Delta x, 0, \frac{\partial f}{\partial x} \Delta x \right)
-  = \left( 1, 0, \frac{\partial f}{\partial x} \right) \Delta x
-  \\
-  \overrightarrow{PR}
-  &\simeq \left( 0, \Delta y, \frac{\partial f}{\partial y} \Delta y \right)
-  = \left( 0, 1, \frac{\partial f}{\partial y} \right) \Delta y
+  1.96 \cdot \frac{75}{\sqrt{9}} = 49
   \end{align}
-  であり、これらのベクトル積とその大きさは
-  \begin{align}
-  \overrightarrow{PQ} \times \overrightarrow{PR}
-  &= \left( - \frac{\partial f}{\partial x}, - \frac{\partial f}{\partial y}, 1 \right)
-  \Delta x \Delta y
-  \\
-  \left| \overrightarrow{PQ} \times \overrightarrow{PR} \right|
-  &= \left| \Delta x \Delta y \right|
-  \sqrt{ \left( \frac{\partial f}{\partial x} \right)^2
-  + \left( \frac{\partial f}{\partial y} \right)^2 + 1 }
-  \\
-  &= \left| \Delta x \Delta y \right| \sqrt{ x^2 + y^2 + 1 }
-  \end{align}
-  である。
-  よって、
-  \begin{align}
-  S = 4 \iint_D dx dy \sqrt{x^2+y^2+1}
-  \end{align}
-  がわかる。
-  </p>
-
-  <h2>(2)</h2>
-
-  <p>
-  $x = r \cos \theta, \ y = r \sin \theta$ によって2次元極座標 $(r, \theta)$ を導入すると、
-  $dxdy = r dr d \theta$ であり、次のように計算できる：
-  \begin{align}
-  S
-  &= 4 \int_0^2 dr r \sqrt{r^2 + 1} \int_0^{\pi/2} d \theta
-  \\
-  &= \frac{2 \pi}{3} \left[ \left( r^2 + 1 \right)^{3/2} \right]_0^2
-  \\
-  &= \frac{2 \left( 5 \sqrt{5} - 1 \right) \pi}{3}
-  \end{align}
+  なので、求める95%信頼区間の下端は $500-49=451 \ \mathrm{N/mm^2}$ であり、
+  上端は $500+49=549 \ \mathrm{N/mm^2}$ である。
   </p>
 
   <hr>

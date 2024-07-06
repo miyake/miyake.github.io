@@ -17,7 +17,7 @@
     <title>
       九州大学 大学院
       工学府 土木工学専攻
-      2022年度 数学 【問題2】
+      2022年度 数学 【問題4】
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学府 土木工学専攻
     <br>
-    2022年度 数学 【問題2】
+    2022年度 数学 【問題4】
   </h1>
 
   <hr>
@@ -83,52 +83,72 @@
   <h2>(1)</h2>
 
   <p>
-  曲面 $x=f(x,y)$ 上の点
-  $P(x,y,f(x,y)), Q(x+\Delta x, y, f(x+\Delta x, y, f(x+\Delta x, y)),
-  R(x, y+\Delta y, f(x, y+\Delta y)) $
-  を考えると、 $\Delta x, \Delta y$ の1次までで
   \begin{align}
-  \overrightarrow{PQ}
-  &\simeq \left( \Delta x, 0, \frac{\partial f}{\partial x} \Delta x \right)
-  = \left( 1, 0, \frac{\partial f}{\partial x} \right) \Delta x
+  A^2 &= \begin{pmatrix}
+  0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
   \\
-  \overrightarrow{PR}
-  &\simeq \left( 0, \Delta y, \frac{\partial f}{\partial y} \Delta y \right)
-  = \left( 0, 1, \frac{\partial f}{\partial y} \right) \Delta y
-  \end{align}
-  であり、これらのベクトル積とその大きさは
-  \begin{align}
-  \overrightarrow{PQ} \times \overrightarrow{PR}
-  &= \left( - \frac{\partial f}{\partial x}, - \frac{\partial f}{\partial y}, 1 \right)
-  \Delta x \Delta y
+  A^3 &= \begin{pmatrix}
+  0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
   \\
-  \left| \overrightarrow{PQ} \times \overrightarrow{PR} \right|
-  &= \left| \Delta x \Delta y \right|
-  \sqrt{ \left( \frac{\partial f}{\partial x} \right)^2
-  + \left( \frac{\partial f}{\partial y} \right)^2 + 1 }
-  \\
-  &= \left| \Delta x \Delta y \right| \sqrt{ x^2 + y^2 + 1 }
+  A^n &= \begin{pmatrix}
+  0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}
+  \ \ \ \ \ \ \ \ (n = 4, 5, 6, \cdots)
   \end{align}
-  である。
-  よって、
-  \begin{align}
-  S = 4 \iint_D dx dy \sqrt{x^2+y^2+1}
-  \end{align}
-  がわかる。
   </p>
 
   <h2>(2)</h2>
 
   <p>
-  $x = r \cos \theta, \ y = r \sin \theta$ によって2次元極座標 $(r, \theta)$ を導入すると、
-  $dxdy = r dr d \theta$ であり、次のように計算できる：
+  4次の単位行列を $E$ とすると、
   \begin{align}
-  S
-  &= 4 \int_0^2 dr r \sqrt{r^2 + 1} \int_0^{\pi/2} d \theta
+  B = bE+A
+  \end{align}
+  であり、まず、
+  \begin{align}
+  B^2
+  &= b^2 E + 2bA + A^2
   \\
-  &= \frac{2 \pi}{3} \left[ \left( r^2 + 1 \right)^{3/2} \right]_0^2
+  &= \begin{pmatrix}
+  b^2 & 2b & 1 & 0 \\ 0 & b^2 & 2b & 1 \\ 0 & 0 & b^2 & 2b \\ 0 & 0 & 0 & b^2 \end{pmatrix}
+  \end{align}
+  がわかる。
+  また、
+  \begin{align}
+  B^3
+  &= b^3 E + 3b^2A + 3bA^2 + A^3
   \\
-  &= \frac{2 \left( 5 \sqrt{5} - 1 \right) \pi}{3}
+  &= \begin{pmatrix}
+  b^3 & 3b^2 & 3b & 1 \\ 0 & b^3 & 3b^2 & 3b \\ 0 & 0 & b^3 & 3b^2 \\ 0 & 0 & 0 & b^3 \end{pmatrix}
+  \\
+  B^4
+  &= b^4 E + 4b^3A + 6b^2A^2 + 3bA^3 + A^4
+  \\
+  &= b^4 E + 4b^3A + 6b^2A^2 + 3bA^3
+  \\
+  &= \begin{pmatrix}
+  b^4 & 4b^3 & 6b^2 & 4b \\ 0 & b^4 & 4b^3 & 6b^2 \\ 0 & 0 & b^4 & 4b^3 \\ 0 & 0 & 0 & b^4
+  \end{pmatrix}
+  \end{align}
+  から、 $n = 3, 4, 5, \cdots$ について
+  \begin{align}
+  B^n
+  &= b^n E + nb^{n-1}A + \frac{n(n-1)}{2} b^{n-2}A^2 + nbA^3
+  \\
+  &= \begin{pmatrix}
+  b^n & nb^{n-1} & \frac{n(n-1)}{2}b^{n-2} & nb^{n-3} \\
+  0 & b^n & nb^{n-1} & \frac{n(n-1)}{2}b^{n-2} \\
+  0 & 0 & b^n & nb^{n-1} \\ 0 & 0 & 0 & b^n
+  \end{pmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  $C$ の固有値は $-2, 3$ であるから、次のように対角化できる：
+  \begin{align}
+  \begin{pmatrix} -2 & 0 \\ 0 & 3 \end{pmatrix}
   \end{align}
   </p>
 
