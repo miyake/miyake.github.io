@@ -17,7 +17,7 @@
     <title>
       熊本大学 大学院 自然科学教育部
       材料・応用化学専攻 物質材料工学教育プログラム
-      2023年度 数学 (1)
+      2023年度 数学 (2)
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     材料・応用化学専攻 物質材料工学教育プログラム
     <br>
-    2023年度 数学 (1)
+    2023年度 数学 (2)
   </h1>
 
   <hr>
@@ -83,34 +83,52 @@
   <h2>(ア)</h2>
 
   <p>
-  $k=1,2, \cdots$ について
   \begin{align}
-  \frac{d^k}{dx^k} e^x &= e^x
+  \boldsymbol{a} \cdot ( \boldsymbol{b} \times \boldsymbol{c} )
+  &= \begin{pmatrix} 2 \\ k \\ 3 \end{pmatrix} \cdot
+  \begin{pmatrix} -4k \\ -k \\ 6 \end{pmatrix}
+  \\
+  &= - k^2 - 8k + 18
   \end{align}
-  なので、
-  \begin{align}
-  e^x
-  &= 1 + x + \frac{1}{2} x^2 + \frac{1}{6} x^3 + \frac{1}{24} x^4
-  + \cdots
-  \end{align}
-  である。
   </p>
 
   <h2>(イ)</h2>
 
   <p>
+  $|\boldsymbol{a} \cdot ( \boldsymbol{b} \times \boldsymbol{c} ) | = 2$
+  ということは、
+  $\boldsymbol{a} \cdot ( \boldsymbol{b} \times \boldsymbol{c} ) = 2$
+  または
+  $\boldsymbol{a} \cdot ( \boldsymbol{b} \times \boldsymbol{c} ) = -2$
+  ということである。
+  前者の場合
   \begin{align}
-  \lim_{x \to 0} A(x)
-  &= \lim_{x \to 0} \frac{
-  \frac{1}{2} x^2 + \frac{1}{6} x^3 + \frac{1}{24} x^4 + \cdots
-  }{x^2}
+  - k^2 - 8k + 18 = 2
   \\
-  &= \lim_{x \to 0} \left(
-  \frac{1}{2} + \frac{1}{6} x + \frac{1}{24} x^2 + \cdots \right)
+  k^2 + 8k - 16 = 0
   \\
-  &= \frac{1}{2}
+  \therefore \ \ 
+  k = - 4 \pm 4 \sqrt{2}
   \end{align}
+  であり、後者の場合
+  \begin{align}
+  - k^2 - 8k + 18 = -2
+  \\
+  k^2 + 8k - 20 = 0
+  \\
+  (k-2)(k+10) = 0
+  \\
+  \therefore \ \ 
+  k = 2, -10
+  \end{align}
+  である。
+  よって、求める $k$ の値は
+  \begin{align}
+  k = 2, -10, -4 \pm 4 \sqrt{2}
+  \end{align}
+  である。
   </p>
+
 
   <hr>
 <!-- 横長タイプ -->
