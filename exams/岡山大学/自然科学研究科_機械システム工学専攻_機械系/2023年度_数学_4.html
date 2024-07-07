@@ -17,7 +17,7 @@
     <title>
       岡山大学 大学院 自然科学研究科
       機械システム工学専攻 機械系
-      2023年度 数学【1】
+      2023年度 数学【4】
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     機械システム工学専攻 機械系
     <br>
-    2023年度 数学【1】
+    2023年度 数学【4】
   </h1>
 
   <hr>
@@ -80,18 +80,41 @@
 
   <hr>
 
+  <h2>(1)</h2>
+
   <p>
-  $y=\sqrt{x}$ として、次のように計算できる：
+  与えられた行列の列ベクトル
   \begin{align}
-  \int_0^1 \frac{\log x}{\sqrt{x}} dx
-  &= \int_0^1 \frac{2 \log y}{y} \cdot 2y dy
-  \\
-  &= 4 \int_0^1 \log y \ dy
-  \\
-  &= 4 \left[ y \log y \right]_0^1 - 4 \int_0^1 dy
-  \\
-  &= -4
+  \boldsymbol{u} = \begin{bmatrix}  0 \\  a \\ c \end{bmatrix}
+  , \ \ 
+  \boldsymbol{v} = \begin{bmatrix} -a \\  0 \\ b \end{bmatrix}
+  , \ \ 
+  \boldsymbol{w} = \begin{bmatrix} -c \\ -b \\ 0 \end{bmatrix}
   \end{align}
+  について、 $abc \neq 0$ なので
+  \begin{align}
+  \boldsymbol{w} = \frac{b}{a} \boldsymbol{u} - \frac{c}{a} \boldsymbol{v}
+  \end{align}
+  と書けるが、
+  $\boldsymbol{u}, \boldsymbol{v}$ は互いの実数倍では表せないので一次独立である。
+  よって、求める階数は $2$ である。
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  与えられた連立一次方程式の拡大係数行列
+  \begin{align}
+  \begin{bmatrix} 0 & -a & -c & a-c \\ a & 0 & -b & a-b \\ c & b & 0 & c-b \end{bmatrix}
+  \end{align}
+  は、行基本変形によって、次のようにできる：
+  \begin{align}
+  \begin{bmatrix}
+  1 & 0 & -\frac{b}{a} & \frac{a-b}{a} \\
+  0 & 1 &  \frac{c}{a} & \frac{-a+c}{a} \\
+  0 & 0 & 0 & \frac{(a-b)c}{a} \end{bmatrix}
+  \end{align}
+  よって、解をもつのは $a=b$ のときであり、このときの解の自由度は $1$ である。
   </p>
 
   <hr>

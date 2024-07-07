@@ -17,7 +17,7 @@
     <title>
       岡山大学 大学院 自然科学研究科
       機械システム工学専攻 機械系
-      2023年度 数学【1】
+      2023年度 数学【3】
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     機械システム工学専攻 機械系
     <br>
-    2023年度 数学【1】
+    2023年度 数学【3】
   </h1>
 
   <hr>
@@ -80,18 +80,85 @@
 
   <hr>
 
+  <h2>(1)</h2>
+
   <p>
-  $y=\sqrt{x}$ として、次のように計算できる：
+  $k=0, \pm1, \pm2, \cdots$ として、フーリエ係数は
   \begin{align}
-  \int_0^1 \frac{\log x}{\sqrt{x}} dx
-  &= \int_0^1 \frac{2 \log y}{y} \cdot 2y dy
+  c_k
+  &= \frac{1}{2 \pi} \int_{- \pi}^\pi f(t) e^{-ikt} dt
   \\
-  &= 4 \int_0^1 \log y \ dy
-  \\
-  &= 4 \left[ y \log y \right]_0^1 - 4 \int_0^1 dy
-  \\
-  &= -4
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ e^{-ikt} dt
   \end{align}
+  なので、
+  \begin{align}
+  c_0
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ dt
+  \\
+  &= - \frac{1}{2 \pi} \left[ \cos t \right]_0^\pi
+  \\
+  &= \frac{1}{\pi}
+  \\
+  c_{\pm 1}
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ e^{\mp it} dt
+  \\
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \left( \cos t \mp i \sin t \right) dt
+  \\
+  &= \frac{1}{2 \pi} \int_0^\pi \left( \frac{1}{2} \sin t \cos t \mp i \frac{1 - \cos 2t}{2} \right) dt
+  \\
+  &= \frac{1}{2 \pi} \int_0^\pi \left( \frac{1}{2} \sin 2t \mp i \frac{1 - \cos 2t}{2} \right) dt
+  \\
+  &= \frac{1}{4 \pi} \left[ - \frac{1}{2} \cos 2t \mp i \left( t - \frac{1}{2} \sin 2t \right) \right]_0^\pi
+  \\
+  &= \mp \frac{i}{4}
+  \ \ \ \ \ \ \ \ (複合同順)
+  \end{align}
+  であり、 $k = \pm 2, \pm 3, \cdots$ について
+  \begin{align}
+  c_k
+  &= \frac{1}{2 \pi} \int_0^\pi \sin t \ e^{-ikt} dt
+  \\
+  &= - \frac{1}{2 \pi} \left[ \cos t \ e^{-ikt} \right]_0^\pi
+  - \frac{ik}{2 \pi} \int_0^\pi \cos t \ e^{-ikt} dt
+  \\
+  &= \frac{1}{2 \pi} \left( e^{-i \pi k} + 1 \right)
+  - \frac{ik}{2 \pi} \left[ \sin t \ e^{-ikt} \right]_0^\pi
+  + \frac{k^2}{2 \pi} \int_0^\pi \sin t \ e^{-ikt} dt
+  \\
+  &= \frac{1}{2 \pi} \left( e^{-i \pi k} + 1 \right) + k^2 c_k
+  \\
+  \therefore \ \ 
+  c_k
+  &= \frac{e^{-i \pi k} + 1}{2 \pi (1-k^2)}
+  \\
+  &= \begin{cases} 0 &( k \text{ は奇数} ) \\ \frac{1}{\pi(1-k^2)} &( k \text{ は偶数} ) \end{cases}
+  \end{align}
+  である。
+  よって、 $f(t)$ のフーリエ級数展開式は、
+  \begin{align}
+  f(t)
+  &= \frac{1}{\pi} - \frac{i}{4} e^{it} + \frac{i}{4} e^{-it}
+  + \frac{1}{\pi} \sum_{n=0}^\infty \frac{1}{1-4n^2} \left( e^{2int} + e^{-2int} \right)
+  \\
+  &= \frac{1}{\pi} + \frac{1}{2} \sin t - \frac{2}{\pi} \sum_{n=1}^\infty \frac{\cos 2nt}{4n^2-1}
+  \end{align}
+  である。
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  (1) で得たフーリエ級数展開式において、 $t=\pi/2$ とすると、
+  \begin{align}
+  1
+  &= \frac{1}{\pi} + \frac{1}{2} - \frac{2}{\pi} \sum_{n=1}^\infty \frac{(-1)^n}{4n^2-1}
+  \end{align}
+  となるので、
+  \begin{align}
+  \sum_{n=1}^\infty \frac{(-1)^n}{4n^2-1}
+  &= \frac{2 - \pi}{4}
+  \end{align}
+  を得る。
   </p>
 
   <hr>
