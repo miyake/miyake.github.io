@@ -17,7 +17,7 @@
     <title>
       広島大学 大学院 先進理工系科学研究科
       輸送・環境システムプログラム
-      2022年8月実施 専門科目I 数学 問題1
+      2022年8月実施 専門科目I 数学 問題3
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     輸送・環境システムプログラム
     <br>
-    2022年8月実施 専門科目I 数学 問題1
+    2022年8月実施 専門科目I 数学 問題3
   </h1>
 
   <hr>
@@ -83,101 +83,76 @@
   <h2>(1)</h2>
 
   <p>
+  同次微分方程式
   \begin{align}
-  \int x^3 \log 3x dx
-  &= \frac{1}{4} x^4 \log 3x - \frac{1}{4} \int x^3 dx
-  \\
-  &= \frac{1}{4} x^4 \log 3x - \frac{1}{16} x^4 + C
-  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  y''(t) + \omega_0^2 y(t) = 0
   \end{align}
+  の一般解は
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  であるから、 (3-1) の特解を $\eta(t)$ とすると、 (3-1) の一般解は
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t + \eta(t)
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  である。
   </p>
-  <!-- OK -->
 
   <h2>(2)</h2>
 
   <p>
   \begin{align}
-  \int_0^\infty x^2 e^{-2x} dx
-  &= - \frac{1}{2} \left[ x^2 e^{-2x} \right]_0^\infty
-  + \int_0^\infty x e^{-2x} dx
-  \\
-  &= - \frac{1}{2} \left[ x e^{-2x} \right]_0^\infty
-  + \frac{1}{2} \int_0^\infty e^{-2x} dx
-  \\
-  &= - \frac{1}{4} \left[ e^{-2x} \right]_0^\infty
-  \\
-  &= \frac{1}{4}
+  y''(t) + \omega_0^2 y(t) = a \sin \omega t
+  \tag{a}
   \end{align}
+  に $y(t) = C \sin \omega t + D \cos \omega t$
+  （ $C,D$ は $t$ によらない定数）を代入すると、
+  \begin{align}
+  - C \omega^2 \sin \omega t - D \omega^2 \cos \omega t
+  + \omega_0^2 \left( C \sin \omega t + D \cos \omega t \right)
+  = a \sin \omega t
+  \end{align}
+  となり、 $\omega \ne \omega_0$ を仮定して、
+  \begin{align}
+  C = \frac{a}{\omega_0^2 - \omega^2} , \ D = 0
+  \end{align}
+  を得るから、
+  \begin{align}
+  y(t) = \frac{a \sin \omega t}{\omega_0^2 - \omega^2}
+  \end{align}
+  は (a) の特解であり、したがって、
+  \begin{align}
+  y(t) = A \sin \omega_0 t + B \cos \omega_0 t
+  + \frac{a \sin \omega t}{\omega_0^2 - \omega^2}
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  は (a) の一般解である。
   </p>
-  <!-- OK -->
 
   <h2>(3)</h2>
 
   <p>
   \begin{align}
-  f(x,y) &= \log \sqrt{x^2+y^2}
+  \lim_{\omega \to \omega_0} \frac{\sin \omega t}{\omega_0^2 - \omega^2}
+  &= \lim_{\omega \to \omega_0} \frac{t \cos \omega t}{- 2 \omega}
+  \ \ \ \ \ \ \ \ ( \because \text{ ロピタルの定理 } )
   \\
-  &= \frac{1}{2} \log \left( x^2 + y^2 \right)
-  \\
-  \frac{\partial f(x,y)}{\partial x}
-  &= \frac{1}{2} \frac{2x}{x^2 + y^2}
-  \\
-  &= \frac{x}{x^2 + y^2}
-  \\
-  \frac{\partial^2 f(x,y)}{\partial^2 x}
-  &= \frac{\left( x^2 + y^2 \right) - x \cdot 2x}{\left( x^2 + y^2 \right)^2}
-  \\
-  &= \frac{-x^2 + y^2}{\left( x^2 + y^2 \right)^2}
-  \\
-  \frac{\partial^2 f(x,y)}{\partial^2 y}
-  &= \frac{x^2 - y^2}{\left( x^2 + y^2 \right)^2}
-  \\
-  \therefore \ \ 
-  \frac{\partial^2 f(x,y)}{\partial^2 x}
-  + \frac{\partial^2 f(x,y)}{\partial^2 y}
-  &= 0
+  &= - \frac{t \cos \omega_0 t}{2 \omega_0}
   \end{align}
-  </p>
-  <!-- OK -->
-
-  <h2>(4)</h2>
-
-  <p>
-  まず、与えられた微分方程式に $y=Ax+B$
-  （ $A,B$ は $x$ によらない定数）を代入すると、
+  であるから、求める解は
   \begin{align}
-  A &= 3 + x + Ax + B
-  \therefore \ \ 
-  A = -1, B = -4
-  \end{align}
-  となるので、
-  \begin{align}
-  y = -x-4
-  \end{align}
-  は特殊解である。
-  また、
-  \begin{align}
-  \frac{dy}{dx} = y
-  \end{align}
-  を考えると、これの一般解は
-  \begin{align}
-  y = Ce^x
-  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
-  \end{align}
-  である。
-  よって、与えられた微分方程式の一般解は
-  \begin{align}
-  y = Ce^x - x - 4
-  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  y(t)
+  &= A \sin \omega_0 t + B \cos \omega_0 t
+  - \frac{a t \cos \omega_0 t}{2 \omega_0}
+  \\
+  &= A \sin \omega_0 t
+  + \left( B - \frac{a t}{2 \omega_0} \right) \cos \omega_0 t
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
   \end{align}
   である。
   </p>
-  <!-- OK -->
-
-  <!--
-  <h2>(4)</h2>
-  固有値を求める問題
-  -->
 
 
   <hr>
