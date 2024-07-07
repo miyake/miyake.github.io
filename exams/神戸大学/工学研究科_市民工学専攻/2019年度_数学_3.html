@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2019年度 数学 2
+      2019年度 数学 3
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2019年度 数学 2
+    2019年度 数学 3
   </h1>
 
   <hr>
@@ -80,39 +80,126 @@
 
   <hr>
 
+  <p>
+  ABの順で開札されることを $S_{AB}$ ,
+  BAの順で開札されることを $S_{BA}$ で表す。
+  また、どちらも受注しないことを $J_0$ ,
+  Aのみ受注することを $J_A$ , Bのみ受注することを $J_B$ ,
+  両方受注することを $J_{AB}$ で表す。
+  このとき、 $S_{AB}, S_{BA}$ を与えたときの
+  $J_0, J_A, J_B, J_{AB}$ の条件付き確率は、
+  \begin{align}
+  P(J_0 \mid S_{AB})
+  &= (1-P(A)) (1-P(B))
+  &= 0.48
+  \\
+  P(J_A \mid S_{AB})
+  &= P(A) \left( 1-\frac{P(B)}{2} \right)
+  &= 0.36
+  \\
+  P(J_B \mid S_{AB})
+  &= (1-P(A)) P(B)
+  &= 0.12
+  \\
+  P(J_{AB} \mid S_{AB})
+  &= P(A) \frac{P(B)}{2}
+  &= 0.04
+  \\
+
+  P(J_0 \mid S_{BA})
+  &= (1-P(B)) (1-P(A))
+  &= 0.48
+  \\
+  P(J_A \mid S_{BA})
+  &= (1-P(B)) P(A)
+  &= 0.32
+  \\
+  P(J_B \mid S_{BA})
+  &= P(B) \left( 1-\frac{P(A)}{2} \right)
+  &= 0.16
+  \\
+  P(J_{AB} \mid S_{BA})
+  &= P(B) \frac{P(A)}{2}
+  &= 0.04
+  \end{align}
+  である。
+  </p>
 
   <h2>(1)</h2>
 
   <p>
-  $y = \cos^{-1} x$ とおくと、 $x = \cos y, \ dx = - \sin y \ dy$ であり、次のように計算できる：
+  求める確率は、
   \begin{align}
-  \int_0^{1/\sqrt{2}} x \cos x dx
-  &= \int_{\pi/2}^{\pi/4} \cos y \cdot y \cdot (- \sin y) dy
+  P(J_A) + P(J_B) + P(J_{AB})
+  &=
+  1 - P(J_0)
   \\
-  &= \frac{1}{2} \int_{\pi/4}^{\pi/2} y \sin 2y \ dy
+  &=
+  1 - \frac{1}{2} P(J_0 \mid S_{AB})
+  - \frac{1}{2} P(J_0 \mid S_{BA})
   \\
-  &= -\frac{1}{4} \left[ y \cos 2y \right]_{\pi/4}^{\pi/2} + \frac{1}{4} \int_{\pi/4}^{\pi/2} \cos 2y \ dy
-  \\
-  &= \frac{\pi}{8} + \frac{1}{8} \left[ \sin 2y \right]_{\pi/4}^{\pi/2}
-  \\
-  &= \frac{\pi - 1}{8}
+  &=
+  0.52
   \end{align}
+  である。
   </p>
 
   <h2>(2)</h2>
 
   <p>
-  2次元極座標 $(r, \theta)$ を使って、次のように計算できる：
   \begin{align}
-  \iint_D xy \ dx dy
-  &= \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin \theta \cos \theta \ d \theta
+  P(J_B)
+  &=
+  \frac{1}{2} P(J_B \mid S_{AB})
+  + \frac{1}{2} P(J_B \mid S_{BA})
   \\
-  &= \frac{1}{2} \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin 2\theta \ d \theta
-  \\
-  &= \frac{1}{2} \left[ \frac{r^4}{4} \right]_0^1 \left[ - \frac{1}{2} \cos 2 \theta \right]_0^{\pi/2}
-  \\
-  &= \frac{1}{8}
+  &=
+  0.14
   \end{align}
+  であるから、求める確率は、
+  \begin{align}
+  \frac{P(J_A) + P(J_{AB})}{P(J_A) + P(J_B) + P(J_{AB})}
+  &=
+  \frac{(P(J_A) + P(J_B)+ P(J_{AB})) - P(J_B)}
+  {P(J_A) + P(J_B) + P(J_{AB})}
+  \\
+  &=
+  \frac{0.52-0.14}{0.52}
+  \\
+  &=
+  \frac{19}{26}
+  \\
+  &\approx
+  0.73
+  \end{align}
+  である。
+  </p>
+
+  <h2>(3)</h2>
+
+  <p>
+  \begin{align}
+  P(J_A)
+  &=
+  \frac{1}{2} P(J_A \mid S_{AB})
+  + \frac{1}{2} P(J_A \mid S_{BA})
+  \\
+  &=
+  0.34
+  \end{align}
+  であるから、求める確率は、
+  \begin{align}
+  \frac{P(J_A)}{P(J_A) + P(J_B)}
+  &=
+  \frac{0.34}{0.34+0.14}
+  \\
+  &=
+  \frac{17}{24}
+  \\
+  &\approx
+  0.71
+  \end{align}
+  である。
   </p>
 
   <hr>

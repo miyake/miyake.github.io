@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2019年度 土木計画学
+      2019年度 土木計画学 4
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2019年度 土木計画学
+    2019年度 土木計画学 4
   </h1>
 
   <hr>
@@ -80,108 +80,7 @@
 
   <hr>
 
-  <h2>3.</h2>
-
-  <p>
-  \begin{align}
-  Q
-  =
-  \sum_{i=1}^n
-  \left( a + bx_i + cx_i^2 - y_i \right)^2
-  \end{align}
-  とおくと、
-  $a,b,c$ が最小2乗推定値であるための条件は、
-  \begin{align}
-  \frac{\partial Q}{\partial a}
-  &= 2 \sum_{i=1}^n
-  \left( a + bx_i + cx_i^2 - y_i \right)
-  = 0
-  \\
-  \frac{\partial Q}{\partial b}
-  &= 2 \sum_{i=1}^n
-  \left( a + bx_i + cx_i^2 - y_i \right) x_i
-  = 0
-  \\
-  \frac{\partial Q}{\partial c}
-  &= 2 \sum_{i=1}^n
-  \left( a + bx_i + cx_i^2 - y_i \right) x_i^2
-  = 0
-  \end{align}
-  である。
-  これを整理すると、
-  \begin{align}
-  &
-  a + b \overline{x} + c \overline{x^2} - \overline{y} = 0
-  \\
-  &
-  a \overline{x} + b \overline{x^2} + c \overline{x^3}
-  - \overline{xy} = 0
-  \\
-  &
-  a \overline{x^2} + b \overline{x^3} + c \overline{x^4}
-  - \overline{x^2y} = 0
-  \tag{A}
-  \end{align}
-  となる。
-  ここで、
-  \begin{align}
-  &
-  \overline{x} = \frac{1}{n} \sum_{i=1}^n x_i
-  , \ \ \ \ 
-  \overline{x^2} = \frac{1}{n} \sum_{i=1}^n x_i^2
-  , \ \ \ \ 
-  \overline{x^3} = \frac{1}{n} \sum_{i=1}^n x_i^3
-  , \ \ \ \ 
-  \overline{x^4} = \frac{1}{n} \sum_{i=1}^n x_i^4
-  \\
-  &
-  \overline{y} = \frac{1}{n} \sum_{i=1}^n y_i
-  , \ \ \ \ 
-  \overline{xy} = \frac{1}{n} \sum_{i=1}^n x_i y_i
-  , \ \ \ \ 
-  \overline{x^2y} = \frac{1}{n} \sum_{i=1}^n x_i^2 y_i
-  \end{align}
-  とおいた。
-  よって、
-  \begin{align}
-  \sum_{i=1}^n e_i x_i^2
-  &=
-  \sum_{i=1}^n (y_i - \overline{y}_{x_i}) x_i^2
-  \\
-  &=
-  \sum_{i=1}^n
-  \left( y_i - \left( a + bx_i + cx_i^2 \right) \right)
-  x_i^2
-  \\
-  &=
-  n
-  \left( \overline{x^2y} - a \overline{x^2} - b \overline{x^3}
-  - c \overline{x^4} \right)
-  \\
-  &=
-  0
-  \ \ \ \ \ \ \ \ 
-  (\because \text{ (A) })
-  \end{align}
-  を得る。
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>4.</h2>
-
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
   <p>
   求める信頼区間は、
@@ -195,7 +94,7 @@
   である。
   </p>
 
-  <h3>(2)</h3>
+  <h2>(2)</h2>
 
   <p>
   与えられた条件は、
@@ -205,9 +104,8 @@
   \end{align}
   \begin{align}
   \therefore \ \ 
-  &
   n
-  \geq
+  &\geq
   (6 \times 1.96)^2
   \\
   &\approx
@@ -216,7 +114,6 @@
   である。
   よって、対象者を139人以上にする必要がある。
   </p>
-
 
 
   <hr>

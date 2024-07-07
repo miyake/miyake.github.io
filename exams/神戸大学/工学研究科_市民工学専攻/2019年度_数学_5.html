@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2019年度 数学 2
+      2019年度 数学 5
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2019年度 数学 2
+    2019年度 数学 5
   </h1>
 
   <hr>
@@ -80,39 +80,36 @@
 
   <hr>
 
-
-  <h2>(1)</h2>
-
   <p>
-  $y = \cos^{-1} x$ とおくと、 $x = \cos y, \ dx = - \sin y \ dy$ であり、次のように計算できる：
   \begin{align}
-  \int_0^{1/\sqrt{2}} x \cos x dx
-  &= \int_{\pi/2}^{\pi/4} \cos y \cdot y \cdot (- \sin y) dy
-  \\
-  &= \frac{1}{2} \int_{\pi/4}^{\pi/2} y \sin 2y \ dy
-  \\
-  &= -\frac{1}{4} \left[ y \cos 2y \right]_{\pi/4}^{\pi/2} + \frac{1}{4} \int_{\pi/4}^{\pi/2} \cos 2y \ dy
-  \\
-  &= \frac{\pi}{8} + \frac{1}{8} \left[ \sin 2y \right]_{\pi/4}^{\pi/2}
-  \\
-  &= \frac{\pi - 1}{8}
+  \frac{\partial u}{\partial x} = x^2-3y
+  , \ \ 
+  \frac{\partial u}{\partial y} = -3x+y^2
   \end{align}
-  </p>
-
-  <h2>(2)</h2>
-
-  <p>
-  2次元極座標 $(r, \theta)$ を使って、次のように計算できる：
+  を満たす $u(x,y)$ を見つければよい。
+  まず、 $v(y)$ を $y$ の適当な関数として、
   \begin{align}
-  \iint_D xy \ dx dy
-  &= \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin \theta \cos \theta \ d \theta
+  u(x,y)
+  &= \int \left( x^2-3y \right) dx
   \\
-  &= \frac{1}{2} \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin 2\theta \ d \theta
-  \\
-  &= \frac{1}{2} \left[ \frac{r^4}{4} \right]_0^1 \left[ - \frac{1}{2} \cos 2 \theta \right]_0^{\pi/2}
-  \\
-  &= \frac{1}{8}
+  &= \frac{1}{3} x^3 - 3xy + v(y)
   \end{align}
+  であり、さらに $\partial u / \partial y$ を考えると、
+  \begin{align}
+  - 3x + v'(y) &= -3x+y^2
+  \\
+  v'(y) &=y^2
+  \\
+  \therefore \ \ 
+  v(y) &= \frac{1}{3} y^3 - C
+  \end{align}
+  がわかる。
+  ここで $C$ は任意定数である。
+  以上より、与えられた微分方程式の一般解は、
+  \begin{align}
+  \frac{1}{3} x^3 - 3xy + \frac{1}{3} y^3 = C
+  \end{align}
+  である。
   </p>
 
   <hr>

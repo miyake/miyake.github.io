@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2019年度 数学 2
+      2022年度 専門科目 数学 2
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2019年度 数学 2
+    2022年度 専門科目 数学 2
   </h1>
 
   <hr>
@@ -80,39 +80,70 @@
 
   <hr>
 
-
   <h2>(1)</h2>
 
   <p>
-  $y = \cos^{-1} x$ とおくと、 $x = \cos y, \ dx = - \sin y \ dy$ であり、次のように計算できる：
-  \begin{align}
-  \int_0^{1/\sqrt{2}} x \cos x dx
-  &= \int_{\pi/2}^{\pi/4} \cos y \cdot y \cdot (- \sin y) dy
-  \\
-  &= \frac{1}{2} \int_{\pi/4}^{\pi/2} y \sin 2y \ dy
-  \\
-  &= -\frac{1}{4} \left[ y \cos 2y \right]_{\pi/4}^{\pi/2} + \frac{1}{4} \int_{\pi/4}^{\pi/2} \cos 2y \ dy
-  \\
-  &= \frac{\pi}{8} + \frac{1}{8} \left[ \sin 2y \right]_{\pi/4}^{\pi/2}
-  \\
-  &= \frac{\pi - 1}{8}
-  \end{align}
+  $ \mathrm{tr} A = \mathrm{tr} (P^{-1}AP) $
+  が成り立つので、 $a=-1$ がわかる。
   </p>
 
   <h2>(2)</h2>
 
   <p>
-  2次元極座標 $(r, \theta)$ を使って、次のように計算できる：
+  $3$ 次の単位行列を $E$ とする。
+  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  \iint_D xy \ dx dy
-  &= \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin \theta \cos \theta \ d \theta
+  0
+  &= \det \left( A - \lambda E \right)
   \\
-  &= \frac{1}{2} \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin 2\theta \ d \theta
+  &= -(\lambda-1)^2(\lambda+2)
   \\
-  &= \frac{1}{2} \left[ \frac{r^4}{4} \right]_0^1 \left[ - \frac{1}{2} \cos 2 \theta \right]_0^{\pi/2}
-  \\
-  &= \frac{1}{8}
+  \therefore \ \ 
+  \lambda &= 1, -2
   \end{align}
+  がわかる。
+  固有値 $\lambda=1$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x=2y,z=0$ がわかるので、規格化された固有ベクトルとして、
+  \begin{align}
+  \boldsymbol{u} = \frac{1}{\sqrt{5}} \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
+  \end{align}
+  を得る。
+  固有値 $\lambda=1$ に属する一般化固有ベクトルを求めるため、
+  \begin{align}
+  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  = \boldsymbol{u}
+  \end{align}
+  とおくと、 $-x+2y=2/\sqrt{5}, z=3/\sqrt{5}$ がわかるので、
+  \begin{align}
+  \boldsymbol{v} = \frac{1}{\sqrt{5}} \begin{pmatrix} -2 \\ 0 \\ 3 \end{pmatrix}
+  \end{align}
+  とすればよい。
+  固有値 $\lambda=-2$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \left( A + 2E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $x+y=0,z=0$ がわかるので、規格化された固有ベクトルとして、
+  \begin{align}
+  \boldsymbol{w} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  \end{align}
+  を得る。
+  以上より、求める $P$ は
+  \begin{align}
+  P
+  &= \begin{pmatrix} \boldsymbol{u} & \boldsymbol{v} & \boldsymbol{w} \end{pmatrix}
+  \\
+  &= \begin{pmatrix}
+  \frac{2}{\sqrt{5}} & -\frac{2}{\sqrt{5}} &  \frac{1}{\sqrt{2}} \\
+  \frac{1}{\sqrt{5}} &                   0 & -\frac{1}{\sqrt{2}} \\
+                   0 &  \frac{3}{\sqrt{5}} &                   0
+  \end{pmatrix}
+  \end{align}
+  である。
   </p>
 
   <hr>

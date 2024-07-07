@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2022年度 専門科目 数学
+      2022年度 専門科目 数学 1
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2022年度 専門科目 数学
+    2022年度 専門科目 数学 1
   </h1>
 
   <hr>
@@ -79,9 +79,8 @@
 </script>
 
   <hr>
-  <h2>1.</h2>
 
-  <h3>(1)</h3>
+  <h2>(1)</h2>
 
   <p>
   確率密度関数の規格化の条件より、
@@ -101,7 +100,7 @@
   がわかる。
   </p>
 
-  <h3>(2)</h3>
+  <h2>(2)</h2>
 
   <p>
   求める確率は、
@@ -118,7 +117,7 @@
   である。
   </p>
 
-  <h3>(3)</h3>
+  <h2>(3)</h2>
 
   <p>
   \begin{align}
@@ -141,156 +140,6 @@
   \\
   &= \frac{5}{4}
   \end{align}
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>2.</h2>
-
-  <h3>(1)</h3>
-
-  <p>
-  $ \mathrm{tr} A = \mathrm{tr} (P^{-1}AP) $
-  が成り立つので、 $a=-1$ がわかる。
-  </p>
-
-  <h3>(2)</h3>
-
-  <p>
-  $3$ 次の単位行列を $E$ とする。
-  $A$ の固有値を $\lambda$ とすると、
-  \begin{align}
-  0
-  &= \det \left( A - \lambda E \right)
-  \\
-  &= -(\lambda-1)^2(\lambda+2)
-  \\
-  \therefore \ \ 
-  \lambda &= 1, -2
-  \end{align}
-  がわかる。
-  固有値 $\lambda=1$ に属する固有ベクトルを求めるため、
-  \begin{align}
-  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
-  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
-  \end{align}
-  とおくと、 $x=2y,z=0$ がわかるので、規格化された固有ベクトルとして、
-  \begin{align}
-  \boldsymbol{u} = \frac{1}{\sqrt{5}} \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
-  \end{align}
-  を得る。
-  固有値 $\lambda=1$ に属する一般化固有ベクトルを求めるため、
-  \begin{align}
-  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  = \boldsymbol{u}
-  \end{align}
-  とおくと、 $-x+2y=2/\sqrt{5}, z=3/\sqrt{5}$ がわかるので、
-  \begin{align}
-  \boldsymbol{v} = \frac{1}{\sqrt{5}} \begin{pmatrix} -2 \\ 0 \\ 3 \end{pmatrix}
-  \end{align}
-  とすればよい。
-  固有値 $\lambda=-2$ に属する固有ベクトルを求めるため、
-  \begin{align}
-  \left( A + 2E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
-  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
-  \end{align}
-  とおくと、 $x+y=0,z=0$ がわかるので、規格化された固有ベクトルとして、
-  \begin{align}
-  \boldsymbol{w} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
-  \end{align}
-  を得る。
-  以上より、求める $P$ は
-  \begin{align}
-  P
-  &= \begin{pmatrix} \boldsymbol{u} & \boldsymbol{v} & \boldsymbol{w} \end{pmatrix}
-  \\
-  &= \begin{pmatrix}
-  \frac{2}{\sqrt{5}} & -\frac{2}{\sqrt{5}} &  \frac{1}{\sqrt{2}} \\
-  \frac{1}{\sqrt{5}} &                   0 & -\frac{1}{\sqrt{2}} \\
-                   0 &  \frac{3}{\sqrt{5}} &                   0
-  \end{pmatrix}
-  \end{align}
-  である。
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>3.</h2>
-
-  <p>
-  \begin{align}
-  \int_C f(x,y) ds
-  &= \int_0^1 f(x,x) dx
-  \\
-  &= \int_0^1 \frac{6x}{3x^2+1} dx
-  \\
-  &= \left[ \log \left( 3x^2+1 \right) \right]_0^1
-  \\
-  &= 2 \log 2
-  \end{align}
-  </p>
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
-  <h2>4.</h2>
-
-  <p>
-  まず、 $3xdy/dx=5y$ を考えると、
-  \begin{align}
-  \frac{dy}{y} = \frac{5}{3x}
-  \end{align}
-  なので、積分定数を $A$ として、一般解は $y = A x^{5/3}$ である。
-  そこで、 $B(x)$ を適当な関数として、
-  $y = B(x) x^{5/3}$ を与えられた微分方程式に代入すると、
-  \begin{align}
-  \frac{dB(x)}{dx} &= \frac{1}{3} x^{-5/3}
-  \\
-  \therefore \ \ 
-  B(x) &= - \frac{1}{2} x^{-2/3} + C
-  \ \ \ \ \text{( $C$ は積分定数 )}
-  \end{align}
-  を得るので、求める一般解は、
-  \begin{align}
-  y(x)
-  &= \left( - \frac{1}{2} x^{-2/3} + C \right) x^{5/3}
-  \\
-  &= - \frac{x}{2} + C x^{5/3}
-  \ \ \ \ \text{( $C$ は積分定数 )}
-  \end{align}
-  であることがわかる。
   </p>
 
   <hr>

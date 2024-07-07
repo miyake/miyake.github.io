@@ -17,7 +17,7 @@
     <title>
       神戸大学 大学院 工学研究科
       市民工学専攻
-      2019年度 数学 2
+      2022年度 専門科目 数学 3
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学研究科 市民工学専攻
     <br>
-    2019年度 数学 2
+    2022年度 専門科目 数学 3
   </h1>
 
   <hr>
@@ -80,38 +80,16 @@
 
   <hr>
 
-
-  <h2>(1)</h2>
-
   <p>
-  $y = \cos^{-1} x$ とおくと、 $x = \cos y, \ dx = - \sin y \ dy$ であり、次のように計算できる：
   \begin{align}
-  \int_0^{1/\sqrt{2}} x \cos x dx
-  &= \int_{\pi/2}^{\pi/4} \cos y \cdot y \cdot (- \sin y) dy
+  \int_C f(x,y) ds
+  &= \int_0^1 f(x,x) dx
   \\
-  &= \frac{1}{2} \int_{\pi/4}^{\pi/2} y \sin 2y \ dy
+  &= \int_0^1 \frac{6x}{3x^2+1} dx
   \\
-  &= -\frac{1}{4} \left[ y \cos 2y \right]_{\pi/4}^{\pi/2} + \frac{1}{4} \int_{\pi/4}^{\pi/2} \cos 2y \ dy
+  &= \left[ \log \left( 3x^2+1 \right) \right]_0^1
   \\
-  &= \frac{\pi}{8} + \frac{1}{8} \left[ \sin 2y \right]_{\pi/4}^{\pi/2}
-  \\
-  &= \frac{\pi - 1}{8}
-  \end{align}
-  </p>
-
-  <h2>(2)</h2>
-
-  <p>
-  2次元極座標 $(r, \theta)$ を使って、次のように計算できる：
-  \begin{align}
-  \iint_D xy \ dx dy
-  &= \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin \theta \cos \theta \ d \theta
-  \\
-  &= \frac{1}{2} \int_0^1 r^3 \ dr \int_0^{\pi/2} \sin 2\theta \ d \theta
-  \\
-  &= \frac{1}{2} \left[ \frac{r^4}{4} \right]_0^1 \left[ - \frac{1}{2} \cos 2 \theta \right]_0^{\pi/2}
-  \\
-  &= \frac{1}{8}
+  &= 2 \log 2
   \end{align}
   </p>
 
