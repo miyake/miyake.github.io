@@ -17,7 +17,7 @@
     <title>
       東京農工大学 大学院
       工学府
-      2023年度 数学 [1]
+      2023年度 数学 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学府
     <br>
-    2023年度 数学 [1]
+    2023年度 数学 [3]
   </h1>
 
   <hr>
@@ -80,43 +80,34 @@
 
   <hr>
 
+  <h2>[1]</h2>
+
   <p>
-  $4x^2 + y^2 = 4, \ x \gt 0$ より、
+  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  x = \cos \theta, \ \ 
-  y = 2 \sin \theta, \ \ 
-  - \frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}
-  \end{align}
-  とおける。
-  このとき、
-  \begin{align}
-  g(\theta)
-  &= f(x,y)
+  0
+  &= \det \begin{pmatrix}
+  4-\lambda & -1 & 1 \\ -1 & 4-\lambda & -1 \\ 1 & -1 & 4-\lambda
+  \end{pmatrix}
   \\
-  &= 2 \tan \theta + \frac{1}{\cos^3 \theta}
-  \end{align}
-  であり、
-  \begin{align}
-  \frac{dg(\theta)}{d \theta}
-  &= \frac{2}{\cos^2 \theta} + \frac{3 \sin \theta}{\cos^4 \theta}
+  &= - (\lambda-3)^2 (\lambda-6)
   \\
-  &= - \frac{(\sin \theta - 2)(2 \sin \theta + 1)}{\cos^4 \theta}
-  \\
-  &\begin{cases}
-  \lt 0 & , - \frac{\pi}{2} \lt \theta \lt - \frac{\pi}{6} \\
-  =   0 & , \theta = - \frac{\pi}{6} \\
-  \gt 0 & , - \frac{\pi}{6} \lt \theta \lt \frac{\pi}{2}
-  \end{cases}
+  \therefore \ \ 
+  \lambda &= 3, 6
   \end{align}
-  であるから、
-  $\theta = -\pi/6$ すなわち $x=\sqrt{3}/2, \ y=-1$ のとき、
-  $f(x,y)$ は極小値
-  \begin{align}
-  f \left( \frac{\sqrt{3}}{2}, -1 \right)
-  = \frac{2}{3 \sqrt{3}}
-  \end{align}
-  をとる。
   </p>
+
+  <h2>[2]</h2>
+
+  <p>
+  \begin{align}
+  A \boldsymbol{v}
+  &= \begin{pmatrix} 7s+1 \\ 2s-1 \\ s+4 \end{pmatrix}
+  \end{align}
+  なので、 $7s+1 = 2(2s-1)$ から $s=-1$ がわかる。
+  さらに、 $A \boldsymbol{v} = t \boldsymbol{v}$ から $t=s+4=3$ がわかる。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->

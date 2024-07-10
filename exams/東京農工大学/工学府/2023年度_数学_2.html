@@ -17,7 +17,7 @@
     <title>
       東京農工大学 大学院
       工学府
-      2023年度 数学 [1]
+      2023年度 数学 [2]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     工学府
     <br>
-    2023年度 数学 [1]
+    2023年度 数学 [2]
   </h1>
 
   <hr>
@@ -81,41 +81,20 @@
   <hr>
 
   <p>
-  $4x^2 + y^2 = 4, \ x \gt 0$ より、
   \begin{align}
-  x = \cos \theta, \ \ 
-  y = 2 \sin \theta, \ \ 
-  - \frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}
-  \end{align}
-  とおける。
-  このとき、
-  \begin{align}
-  g(\theta)
-  &= f(x,y)
+  \int_{-1}^1 dx \int_0^{1-x^2} dy \int_{x^2y+y^2}^y dz
+  &= \int_{-1}^1 dx \int_0^{1-x^2} dy
+  \left( -y^2 + \left( 1-x^2 \right) y \right)
   \\
-  &= 2 \tan \theta + \frac{1}{\cos^3 \theta}
-  \end{align}
-  であり、
-  \begin{align}
-  \frac{dg(\theta)}{d \theta}
-  &= \frac{2}{\cos^2 \theta} + \frac{3 \sin \theta}{\cos^4 \theta}
+  &= \int_{-1}^1 dx
+  \left[ - \frac{y^3}{3} + \left( 1-x^2 \right) \frac{y^2}{2} \right]_0^{1-x^2}
   \\
-  &= - \frac{(\sin \theta - 2)(2 \sin \theta + 1)}{\cos^4 \theta}
+  &= \frac{1}{6} \int_{-1}^1 dx \left( 1 - x^2 \right)^3
   \\
-  &\begin{cases}
-  \lt 0 & , - \frac{\pi}{2} \lt \theta \lt - \frac{\pi}{6} \\
-  =   0 & , \theta = - \frac{\pi}{6} \\
-  \gt 0 & , - \frac{\pi}{6} \lt \theta \lt \frac{\pi}{2}
-  \end{cases}
+  &= \frac{1}{3} \int_0^1 dx \left( 1 - 3x^2 + 3x^4 - x^6 \right)
+  \\
+  &= \frac{16}{105}
   \end{align}
-  であるから、
-  $\theta = -\pi/6$ すなわち $x=\sqrt{3}/2, \ y=-1$ のとき、
-  $f(x,y)$ は極小値
-  \begin{align}
-  f \left( \frac{\sqrt{3}}{2}, -1 \right)
-  = \frac{2}{3 \sqrt{3}}
-  \end{align}
-  をとる。
   </p>
 
   <hr>
