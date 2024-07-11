@@ -17,7 +17,7 @@
     <title>
       公立はこだて未来大学 大学院
       基礎数学
-      2024年度 A日程 I
+      2023年度 A日程 II
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     基礎数学
     <br>
-    2024年度 A日程 I
+    2023年度 A日程 II
   </h1>
 
   <hr>
@@ -80,67 +80,44 @@
 
   <hr>
 
+  <h2>問 1</h2>
+
   <p>
-  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  0
-  &= \begin{pmatrix}
-  1 - \lambda & \frac{1}{n} \\ \frac{1}{n} & 1 - \lambda
-  \end{pmatrix}
+  \lim_{n \to \infty} \frac{n^{\frac{3}{2}} a_n}{4^n}
+  &= \frac{e}{\sqrt{\pi}} \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^{-n-\frac{3}{2}}
+  \cdot \frac{(2n)! e^{2n}}{(2n)^{2n} \sqrt{4 \pi n}}
+  \cdot \frac{(n+1)^{n+1} \sqrt{2 \pi (n+1)}}{(n+1)! e^{n+1}}
+  \cdot \frac{n^n \sqrt{2 \pi n}}{n! e^n}
   \\
-  &= \lambda^2 - 2 \lambda
-  + \left( 1 + \frac{1}{n} \right) \left( 1 - \frac{1}{n} \right)
+  &= \frac{e}{\sqrt{\pi}} \cdot e^{-1} \cdot 1 \cdot 1 \cdot 1
   \\
-  &= \left( \lambda - \left( 1 + \frac{1}{n} \right) \right)
-  \left( \lambda - \left( 1 - \frac{1}{n} \right) \right)
-  \\
-  \therefore \ \ 
-  \lambda
-  &= 1 - \frac{1}{n} , 1 + \frac{1}{n}
+  &= \frac{1}{\sqrt{\pi}}
   \end{align}
-  である。
-  また、
-  \begin{align}
-  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix}
-  , \ \ 
-  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-  \end{align}
-  は、それぞれの固有値に属する固有ベクトルである。
-  そこで、
-  \begin{align}
-  P = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}
-  \end{align}
-  とおくと、
-  \begin{align}
-  P^{-1} &= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}
-  , \\
-  A
-  &= P
-  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}
-  P^{-1}
-  \end{align}
-  なので、
-  \begin{align}
-  A^n
-  &= P
-  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}^n
-  P^{-1}
-  \\
-  &= P
-  \begin{pmatrix} \left( 1-\frac{1}{n} \right)^n & 0 \\
-  0 & \left( 1+\frac{1}{n} \right)^n \end{pmatrix}
-  P^{-1}
-  \\
-  \therefore \ \ 
-  \lim_{n \to \infty} A^n
-  &= P \begin{pmatrix} \frac{1}{e} & 0 \\ 0 & e \end{pmatrix} P^{-1}
-  \\
-  &= \frac{1}{2} \begin{pmatrix}
-  e + \frac{1}{e} & e + \frac{1}{e} \\ e - \frac{1}{e} & e + \frac{1}{e}
-  \end{pmatrix}
-  \end{align}
-  がわかる。
   </p>
+
+  <h2>問 2</h2>
+
+  <p>
+  $t=\sqrt{1-x}$ とおくと、 $x=1-t^2, \ dx=-2tdt$ であり、次のように計算できる：
+  \begin{align}
+  \int_{\frac{1}{2}}^1 \frac{dx}{x \sqrt{1-x}}
+  &= \int_{\frac{1}{\sqrt{2}}}^0 \frac{-2tdt}{(1-t^2)t}
+  \\
+  &= \int_0^{\frac{1}{\sqrt{2}}} \frac{-2dt}{(t+1)(t-1)}
+  \\
+  &= \int_0^{\frac{1}{\sqrt{2}}} \left( \frac{1}{t+1} - \frac{1}{t-1} \right) dt
+  \\
+  &= \left[ \log \left| t+1 \right| - \log \left| t-1 \right| \right]_0^{\frac{1}{\sqrt{2}}}
+  \\
+  &= \log \frac{\sqrt{2}+1}{\sqrt{2}} - \log \frac{\sqrt{2}-1}{\sqrt{2}}
+  \\
+  &= \log \frac{\sqrt{2}+1}{\sqrt{2}-1}
+  \\
+  &= \log \left( 3 + 2 \sqrt{2} \right)
+  \end{align}
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->

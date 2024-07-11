@@ -17,7 +17,7 @@
     <title>
       公立はこだて未来大学 大学院
       基礎数学
-      2024年度 A日程 I
+      2022年度 A日程 II
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -48,7 +48,7 @@
     <br>
     基礎数学
     <br>
-    2024年度 A日程 I
+    2022年度 A日程 II
   </h1>
 
   <hr>
@@ -80,67 +80,109 @@
 
   <hr>
 
+  <h2>問 1</h2>
+
   <p>
-  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  0
-  &= \begin{pmatrix}
-  1 - \lambda & \frac{1}{n} \\ \frac{1}{n} & 1 - \lambda
-  \end{pmatrix}
-  \\
-  &= \lambda^2 - 2 \lambda
-  + \left( 1 + \frac{1}{n} \right) \left( 1 - \frac{1}{n} \right)
-  \\
-  &= \left( \lambda - \left( 1 + \frac{1}{n} \right) \right)
-  \left( \lambda - \left( 1 - \frac{1}{n} \right) \right)
-  \\
-  \therefore \ \ 
-  \lambda
-  &= 1 - \frac{1}{n} , 1 + \frac{1}{n}
-  \end{align}
-  である。
-  また、
-  \begin{align}
-  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+  f'(x) &= \cos x
   , \ \ 
-  \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-  \end{align}
-  は、それぞれの固有値に属する固有ベクトルである。
-  そこで、
-  \begin{align}
-  P = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}
-  \end{align}
-  とおくと、
-  \begin{align}
-  P^{-1} &= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}
-  , \\
-  A
-  &= P
-  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}
-  P^{-1}
+  f''(x) = - \sin x
+  , \ \ 
+  f'''(x) = - \cos x
+  \\
+  g'(x) &= -2e^{-2x}
+  , \ \ 
+  g''(x) = 4e^{-2x}
+  , \ \ 
+  g'''(x) = -8e^{-2x}
   \end{align}
   なので、
   \begin{align}
-  A^n
-  &= P
-  \begin{pmatrix} 1-\frac{1}{n} & 0 \\ 0 & 1+\frac{1}{n} \end{pmatrix}^n
-  P^{-1}
+  a_0 &= f(0) = 0
   \\
-  &= P
-  \begin{pmatrix} \left( 1-\frac{1}{n} \right)^n & 0 \\
-  0 & \left( 1+\frac{1}{n} \right)^n \end{pmatrix}
-  P^{-1}
+  a_1 &= f'(0) = 1
+  \\
+  a_2 &= \frac{1}{2} f''(0) = 0
+  \\
+  a_3 &= \frac{1}{6} f'''(0) = - \frac{1}{6}
+  \\
+  b_0 &= g(0) = 1
+  \\
+  b_1 &= g'(0) = -2
+  \\
+  b_2 &= \frac{1}{2} g''(0) = 2
+  \\
+  b_3 &= \frac{1}{6} g'''(0) = \frac{4}{3}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  また、
+  \begin{align}
+  \lim_{x \to 0} \left( \frac{1}{2 \sin x} + \frac{1}{e^{-2x} - 1} \right)
+  &=
+  \lim_{x \to 0} \left(
+  \frac{1}{2} \frac{1}{x - \frac{1}{6} x^3 + o(x^3) }
+  + \frac{1}{-2x + 2x^2 - \frac{4}{3}x^3 + o(x^3)}
+  \right)
+  \\
+  &=
+  \lim_{x \to 0} \frac{1}{2x} \left(
+  \left( 1 + o(x^2) \right) - \left( 1 + x + o(x^2) \right)
+  \right)
+  \\
+  &= \lim_{x \to 0} \frac{1}{2} \left( -1 + o(x) \right)
+  \\
+  &= - \frac{1}{2}
+  \end{align}
+  である。
+  </p>
+
+  <h2>問 2</h2>
+
+  <p>
+  $a \ne -1$ のとき、
+  \begin{align}
+  \int x^a \log x dx
+  &= \frac{1}{a+1} x^{a+1} \log x - \frac{1}{a+1} \int x^a dx
+  \\
+  &= \frac{1}{a+1} x^{a+1} \log x - \frac{1}{(a+1)^2} x^{a+1}
+  + \text{ 積分定数 }
+  \end{align}
+  なので、 $a+1 \gt 0$ すなわち $a \gt -1$ のとき与えられた広義積分は収束し
+  \begin{align}
+  \int_0^1 x^a \log x dx
+  &= \left[ \frac{1}{a+1} x^{a+1} \log x - \frac{1}{(a+1)^2} x^{a+1} \right]_0^1
+  \\
+  &= - \frac{1}{(a+1)^2}
+  \end{align}
+  であり、 $a+1 \lt 0$ すなわち $a \lt -1$ のとき与えられた広義積分は収束しない。
+  </p>
+
+  <p>
+  $a = -1$ のとき、
+  \begin{align}
+  \int x^{-1} \log x dx
+  &= \left( \log x \right)^2 - \int x^{-1} \log x dx
   \\
   \therefore \ \ 
-  \lim_{n \to \infty} A^n
-  &= P \begin{pmatrix} \frac{1}{e} & 0 \\ 0 & e \end{pmatrix} P^{-1}
-  \\
-  &= \frac{1}{2} \begin{pmatrix}
-  e + \frac{1}{e} & e + \frac{1}{e} \\ e - \frac{1}{e} & e + \frac{1}{e}
-  \end{pmatrix}
+  \int x^{-1} \log x dx
+  &= \frac{1}{2} \left( \log x \right)^2 + \text{ 積分定数 }
   \end{align}
-  がわかる。
+  なので、与えられた広義積分は収束しない。
   </p>
+
+  <p>
+  以上より、与えられた広義積分が収束するのは
+  $a \gt -1$ のときであり、このとき、
+  \begin{align}
+  \int_0^1 x^a \log x dx
+  &= - \frac{1}{(a+1)^2}
+  \end{align}
+  である。
+  </p>
+
 
   <hr>
 <!-- 横長タイプ -->
