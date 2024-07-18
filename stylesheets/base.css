@@ -19,11 +19,11 @@ a {
 }
 
 // a:visited { color: #551A8B; } // default
-// a:visited { color: blue; }
 // a:visited { color: darkgreen; }
 // a:visited { color: sienna; }
 // a:visited { color: darkred; }
 // a:visited { color: purple; }
+a:visited { color: blue; }
 
 a:hover {
   text-decoration: underline;
