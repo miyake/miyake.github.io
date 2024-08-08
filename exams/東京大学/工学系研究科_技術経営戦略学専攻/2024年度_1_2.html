@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      技術経営戦略学専攻
+      2024年度 問題1 II
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院
+    <br>
+    工学系研究科 技術経営戦略学専攻
+    <br>
+    2024年度 問題1 II
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://tmi.t.u-tokyo.ac.jp/examinfo/examinfo-top">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>3.</h2>
+
+  <p>
+  $A$ の固有値を $\lambda$ とすると、
+  \begin{align}
+  0
+  &= \det \begin{pmatrix}
+  a - \lambda & b & 0 \\ 0 & -a - \lambda & a \\ a & 0 & b - \lambda
+  \end{pmatrix}
+  \\
+  &= - \lambda^3 + b \lambda^2 + a^2 \lambda
+  \\
+  &= - \lambda \left( \lambda^2 - b \lambda - a^2 \right)
+  \\
+  \therefore \ \ 
+  \lambda &= 0, \frac{b \pm \sqrt{4a^2 + b^2}}{2}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $a \ne 0$ のときは、 $A$ は相異なる3つの固有値を持つから、対角化可能である。
+  </p>
+
+  <p>
+  $a=b=0$ のときは、 $A$ はゼロ行列であり、対角行列であるので、対角化可能である。
+  </p>
+
+  <p>
+  $a=0, b \ne 0$ のとき、固有値 $0$ の重複度は $2$ である。
+  固有値 $0$ に属する固有ベクトルを求めるため、
+  \begin{align}
+  \begin{pmatrix} 0 & b & 0 \\ 0 & 0 & 0 \\ 0 & 0 & b \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  =
+  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \end{align}
+  とおくと、 $y=z=0$ を得るので、固有空間の次元は $1$ であることがわかる。
+  よって、この場合は $A$ は対角化可能でない。
+  </p>
+
+  <p>
+  以上より、 $A$ が対角化可能であるための必要十分条件は、
+  「 $a \ne 0$ または $a=b=0$ 」である。
+
+  <!--
+https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%22C%22%2C+%22%E5%9B%BA%E6%9C%89%E5%80%A4%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Eigenvalue%22%2C+%22eigvalmatrix%22%7D+-%3E%22%7B%7Ba%2Cb%2C0%7D%2C+%7B0%2C-a%2Ca%7D%2C+%7Ba%2C0%2Cb%7D%7D%22&lang=ja
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
