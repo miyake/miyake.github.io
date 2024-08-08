@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 工学系研究科
+      技術経営戦略学専攻
+      2024年度 問題1 I
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院
+    <br>
+    工学系研究科 技術経営戦略学専攻
+    <br>
+    2024年度 問題1 I
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://tmi.t.u-tokyo.ac.jp/examinfo/examinfo-top">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>1.</h2>
+
+  <p>
+  (1) に $y=e^{\lambda x}$ （ $\lambda$ は $x$ によらない定数）を代入すると、
+  \begin{align}
+  \lambda^2 - 4 \lambda + 3 = 0
+  \\
+  \therefore \ \ 
+  \left( \lambda - 1 \right) \left( \lambda - 3 \right) = 0
+  \\
+  \therefore \ \ 
+  \lambda = 1, 3
+  \end{align}
+  なので、(1) の一般解は
+  \begin{align}
+  y &= A e^x + B e^{3x}
+  & \left( A, B \text{ は積分定数 } \right)
+  \end{align}
+  である。
+  </p>
+
+  <h2>2.</h2>
+
+  <p>
+  (2) に $y = C \sin 2x + D \cos 2x$
+  （ $C, D$ は $x$ によらない定数）を代入して整理すると、
+  \begin{align}
+  \left( - C + 8D \right) \sin 2x + \left( - 8C - D - 1 \right) \cos 2x = 0
+  \\
+  \therefore \ \ 
+  C = - \frac{8}{65}, \ \ D = - \frac{1}{65}
+  \end{align}
+  を得るので、
+  \begin{align}
+  y = - \frac{8}{65} \sin 2x - \frac{1}{65} \cos 2x
+  \end{align}
+  は (2) の特殊解であり、 1. を考慮して、
+  \begin{align}
+  y &= A e^x + B e^{3x} - \frac{8}{65} \sin 2x - \frac{1}{65} \cos 2x
+  & \left( A, B \text{ は積分定数 } \right)
+  \end{align}
+  は (2) の一般解であることがわかる。
+  </p>
+
+  <h2>3.</h2>
+
+  <p>
+  \begin{align}
+  \frac{d^2 y}{dx^2} -4 \frac{d y}{dx} + 3y = x e^{-3x}
+  \end{align}
+  に $y = E e^{-3x} + Fx e^{-3x}$
+  （ $E, F$ は $x$ によらない定数）を代入して整理すると、
+  \begin{align}
+  \left( 24E - 10F \right) + \left( 24F - 1 \right) x = 0
+  \\
+  \therefore \ \ 
+  E = \frac{5}{288}, \ \ F = \frac{1}{24}
+  \end{align}
+  を得るので、 2. も考慮して、
+  \begin{align}
+  y = - \frac{8}{65} \sin 2x - \frac{1}{65} \cos 2x
+  + \frac{5}{288} e^{-3x} + \frac{1}{24} x e^{-3x}
+  \end{align}
+  は (3) の特殊解であり、さらに 1. を考慮して、
+  \begin{align}
+  y &= A e^x + B e^{3x} - \frac{8}{65} \sin 2x - \frac{1}{65} \cos 2x
+  + \frac{5}{288} e^{-3x} + \frac{1}{24} x e^{-3x}
+  & \left( A, B \text{ は積分定数 } \right)
+  \end{align}
+  は (3) の一般解であることがわかる。
+  </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=y%27%27-4y%27%2B3y%3Dcos%282x%29+%2B+x+exp%28-3x%29&lang=ja
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  </nav>
+
+</body>
+</html>
+
