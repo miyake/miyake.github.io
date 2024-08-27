@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+                  crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JPYT21F66Y');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/base.css">
+    <title>
+      負の2項分布
+      | miyake.github.io
+    </title>
+
+    <script>
+      MathJax = {
+              tex: {
+                      inlineMath: [['$', '$'], ['\\(', '\\)']]
+                    }
+            };
+    </script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js">
+    </script>
+
+  </head>
+
+  <body>
+
+    <nav id="breadcrumbs">
+      <a href="../../index.html">miyake.github.io</a> &gt;
+      <a href="../index.html">初歩からの統計とデータサイエンス</a> &gt;
+    </nav>
+    <hr>
+
+    <h1>負の2項分布</h1>
+
+    <p>
+    $n=1,2,\cdots$ とする。
+    </p>
+
+    <h2>負の2項係数</h2>
+
+    <p>
+    $k=1,2,\cdots$ について
+    \begin{align}
+    \frac{d^k}{dx^k} \left( x + 1 \right)^{-n}
+    &= (-n)(-n-1) \cdots (-n-k+1) \left( x + 1 \right)^{-n-k}
+    \\
+    &= (-1)^k n(n+1) \cdots (n+k-1) \left( x + 1 \right)^{-n-k}
+    \\
+    &= (-1)^k \frac{(n+k-1)!}{(n-1)!} \left( x + 1 \right)^{-n-k}
+    \\
+    \therefore \ \ 
+    \left. \frac{d^k}{dx^k} \left( x + 1 \right)^{-n} \right|_{x=0}
+    &= (-1)^k \frac{(n+k-1)!}{(n-1)!}
+    \end{align}
+    なので、以下のようにテイラー展開される：
+    \begin{align}
+    \left( x + 1 \right)^{-n}
+    &= \sum_{k=0}^\infty (-1)^k \frac{(n+k-1)!}{k!(n-1)!} x^k
+    \\
+    &= \sum_{k=0}^\infty (-1)^k \binom{n+k-1}{k} x^k
+    & \left(
+    \binom{n+k-1}{k} = {}_{n+k-1} \mathrm{C}_k
+    \text{ は2項係数 } \right)
+    \\
+    &= \sum_{k=0}^\infty \binom{-n}{k} x^k
+    .
+    \tag{a}
+    \end{align}
+    ここで、負の2項係数 $\binom{-n}{k}$ を
+    \begin{align}
+    \binom{-n}{k}
+    := (-1)^k \binom{n+k-1}{k}
+    = (-1)^k \frac{(n+k-1)!}{k!(n-1)!}
+    \tag{b}
+    \end{align}
+    で定義した。
+    これが負の2項係数と呼ばれる理由は、式 (a) が、通常の2項定理
+    \begin{align}
+    \left( x + 1 \right)^n
+    = \sum_{k=0}^n \binom{n}{k} x^k
+    \end{align}
+    に似ているからである。
+    </p>
+
+    <p>
+    なお、
+    \begin{align}
+    \left| \frac{\binom{-n}{k+1}}{\binom{-n}{k}} \right|
+    &= \frac{\frac{(n+k)!}{(k+1)!(n-1)!}}
+    {\frac{(n+k-1)!}{k!(n-1)!}}
+    = \frac{n+k}{k+1}
+    = \frac{\frac{n}{k}+1}{1+\frac{1}{k}}
+    \xrightarrow{k \to \infty} 1
+    \end{align}
+    なので、 (a) が収束するのは $|x| \lt 1$ のときである。
+    </p>
+
+    <p>
+    また、 $a \ne 0$ として、
+    \begin{align}
+    \left( x + a \right)^{-n}
+    &= a^{-n} \left( \frac{x}{a} + 1 \right)^{-n}
+    \\
+    &= a^{-n} \sum_{k=0}^\infty \binom{-n}{k} \left( \frac{x}{a} \right)^k
+    & ( \because \text{(a)} )
+    \\
+    &= \sum_{k=0}^\infty \binom{-n}{k} x^k a^{-n-k}
+    \end{align}
+    であり、これが収束するのは $|x/a| \lt 1$ のときである。
+    </p>
+
+    <h2>負の2項分布</h2>
+
+    <p>
+    表が出る確率 $p$ のコインを投げるベルヌイ試行を考える。
+    表が $n$ 回出るまでに裏が出る回数を $X$ とすると、
+    これは確率変数である。
+    $X=k \ (=0, 1, 2, \cdots)$ というのは、
+    初めの $n+k-1$ 回のうち、
+    表が $n-1$ 回で、裏が $k$ 回であり、
+    $n+k$ 回目に表が出ることを意味する。
+    よって、これが起こる確率は
+    \begin{align}
+    p(k)
+    &= \binom{n+k-1}{k} p^{n-1} (1-p)^k \cdot p
+    \\
+    &= \binom{n+k-1}{k} p^n (1-p)^k
+    &( k = 0, 1, 2, \cdots )
+    \tag{c}
+    \end{align}
+    である。
+    確率関数が (c) で与えられる確率分布を負の2項分布と呼ぶ。
+    </p>
+
+    <p>
+    (c) が規格化条件を満たすことは、次のようにして確認できる：
+    \begin{align}
+    \sum_{k=0}^\infty p(k)
+    &= p^n \sum_{k=0}^\infty \binom{n+k-1}{k} (1-p)^k
+    \\
+    &= p^n \sum_{k=0}^\infty \binom{-n}{k} (p-1)^k
+    & ( \because \text{(b)} )
+    \\
+    &= p^n \left( (p-1) + 1 \right)^{-n}
+    & ( \because \text{(a)} )
+    \\
+    &= p^n p^{-n}
+    \\
+    &= 1
+    .
+    \end{align}
+
+    期待値は、次のように計算できる：
+    \begin{align}
+    E(X)
+    &= \sum_{k=0}^\infty k p(k)
+    \\
+    &= p^n \sum_{k=1}^\infty \binom{n+k-1}{k} k (1-p)^k
+    \\
+    &= p^n \sum_{k=1}^\infty \frac{(n+k-1)!}{k!(n-1)!} k (1-p)^k
+    \\
+    &= p^n \sum_{k=1}^\infty \frac{(n+k-1)!}{(k-1)!(n-1)!} (1-p)^k
+    \\
+    &= p^n \sum_{m=0}^\infty \frac{(n+m)!}{m!(n-1)!} (1-p)^{m+1}
+    \\
+    &= n p^n (1-p) \sum_{m=0}^\infty \frac{((n+1)+m-1)!}{m!((n+1)-1)!} (1-p)^m
+    \\
+    &= n p^n (1-p) \sum_{m=0}^\infty \binom{-(n+1)}{m} (p-1)^m
+    & ( \because \text{(b)} )
+    \\
+    &= n p^n (1-p) \left( (p-1) + 1 \right)^{-(n+1)}
+    & ( \because \text{(a)} )
+    \\
+    &= n p^n (1-p) p^{-(n+1)}
+    \\
+    &= \frac{n(1-p)}{p}
+    .
+    \end{align}
+
+    また、
+    \begin{align}
+    E \left( X (X-1) \right)
+    &= \sum_{k=0}^\infty k(k-1) p(k)
+    \\
+    &= p^n \sum_{k=2}^\infty \binom{n+k-1}{k} k(k-1) (1-p)^k
+    \\
+    &= p^n \sum_{k=2}^\infty \frac{(n+k-1)!}{k!(n-1)!} k(k-1) (1-p)^k
+    \\
+    &= p^n \sum_{k=2}^\infty \frac{(n+k-1)!}{(k-2)!(n-1)!} (1-p)^k
+    \\
+    &= p^n \sum_{m=0}^\infty \frac{(n+m+1)!}{m!(n-1)!} (1-p)^{m+2}
+    \\
+    &= n(n+1) p^n (1-p)^2 \sum_{m=0}^\infty \frac{((n+2)+m-1)!}{m!((n+2)-1)!} (1-p)^m
+    \\
+    &= n(n+1) p^n (1-p)^2 \sum_{m=0}^\infty \binom{-(n+2)}{m} (p-1)^m
+    & ( \because \text{(b)} )
+    \\
+    &= n(n+1) p^n (1-p)^2 \left( (p-1) + 1 \right)^{-(n+2)}
+    & ( \because \text{(a)} )
+    \\
+    &= n(n+1) p^n (1-p)^2 p^{-(n+2)}
+    \\
+    &= \frac{n(n+1)(1-p)^2}{p^2}
+    \end{align}
+
+    なので、分散は
+    \begin{align}
+    V(X)
+    &= E \left( \left( X - E(X) \right)^2 \right)
+    \\
+    &= E \left( X^2 \right) - E(X)^2
+    \\
+    &= E \left( X(X-1) \right) + E(X) - E(X)^2
+    \\
+    &= \frac{n(n+1)(1-p)^2}{p^2}
+    + \frac{n(1-p)}{p} - \left( \frac{n(1-p)}{p} \right)^2
+    \\
+    &= \frac{n(1-p)}{p^2}
+    \end{align}
+    である。
+    </p>
+
+    <hr>
+    <!-- 横長タイプ -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6792495598564208"
+         data-ad-slot="4005025709"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <hr>
+    <nav id="footer_breadcrumbs">
+      <a href="../../index.html">miyake.github.io</a> &gt;
+      <a href="../index.html">初歩からの統計とデータサイエンス</a>
+    </nav>
+
+  </body>
+</html>
+
