@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <!-- <link rel="shortcut icon" href="favicon.png"> -->
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>2023年11月実施 問1 | 統計検定 1級 | miyake.github.io</title>
+    <script>
+      MathJax = {
+              tex: {
+                      inlineMath: [['$', '$'], ['\\(', '\\)']]
+                    }
+            };
+    </script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js">
+    </script>
+  </head>
+
+  <body>
+
+    <nav id="breadcrumbs">
+      <a href="../../../index.html">miyake.github.io</a> &gt;
+      <a href="../../index.html">初歩からの統計とデータサイエンス</a> &gt;
+      <a href="./index.html">統計検定 1級</a> &gt;
+    </nav>
+
+    <hr>
+
+    <h1>
+      <span class="prefix">
+        統計検定 1級 過去問 解説
+      </span>
+      <br>
+      2023年11月実施 問1
+    </h1>
+
+    <hr>
+
+    <p>
+    個人的に作っているもので、公式なものではありません。
+    </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <hr>
+
+    <h2>
+      [1]
+    </h2>
+
+    <p>
+    \begin{align}
+    E[X]
+    &= \sum_{x=0}^\infty x f(x)
+    \\
+    &= e^{- \lambda} \sum_{x=1}^\infty \frac{\lambda^x}{(x-1)!}
+    \\
+    &= \lambda e^{- \lambda} \sum_{y=0}^\infty \frac{\lambda^y}{y!}
+    & (y = x-1)
+    \\
+    &= \lambda e^{- \lambda} \cdot e^\lambda
+    \\
+    &= \lambda
+    ,\\
+
+    E[X(X-1)]
+    &= \sum_{x=0}^\infty x(x-1) f(x)
+    \\
+    &= e^{- \lambda} \sum_{x=2}^\infty \frac{\lambda^x}{(x-2)!}
+    \\
+    &= \lambda^2 e^{- \lambda} \sum_{y=0}^\infty \frac{\lambda^y}{y!}
+    & (y = x-2)
+    \\
+    &= \lambda^2 e^{- \lambda} \cdot e^\lambda
+    \\
+    &= \lambda^2
+    ,\\
+
+    V[X]
+    &= E \left[ \left( X - E[X] \right)^2 \right]
+    \\
+    &= E \left[ X^2 \right] - E[X]^2
+    \\
+    &= E[X(X-1)] + E[X] - E[X]^2
+    \\
+    &= \lambda^2 + \lambda - \lambda^2
+    \\
+    &= \lambda
+    ,\\
+
+    E[S_n]
+    &= \sum_{i=1}^n E[X_i]
+    \\
+    &= n \lambda
+    ,\\
+
+    V[S_n]
+    &= \sum_{i=1}^n V[X_i]
+    & ( \because X_1, X_2, \cdots, X_n \text{ は独立 } )
+    \\
+    &= n \lambda
+    \end{align}
+    </p>
+
+    <!--
+    <p>
+    あるいは、
+    ポアソン分布 $Po(\lambda)$ の
+    <a href="https://en.wikipedia.org/wiki/Probability-generating_function">
+      確率母関数
+    </a>
+    $G(t)$ は、
+    </p>
+    -->
+
+    <hr>
+    <h2>
+      [2]
+    </h2>
+
+    <p>
+    \begin{align}
+    W_n
+    &= \sum_{k=1}^n S_k
+    \\
+    &= \sum_{k=1}^n \left( X_1 + X_2 + \cdots + X_k \right)
+    \\
+    &= X_1 + \left( X_1 + X_2 \right) + \cdots +
+    \left( X_1 + X_2 + \cdots + X_n \right)
+    \\
+    &= n X_1 + (n-1) X_2 + \cdots + X_n
+    \\
+    &= \sum_{i=1}^n (n-i+1) X_i
+    \\
+
+    \therefore \ \ 
+    a_i &= n-i+1
+    \end{align}
+    </p>
+
+    <hr>
+    <h2>
+      [3]
+    </h2>
+
+    <p>
+    \begin{align}
+    E[W_n]
+    &= E \left[ \sum_{i=1}^n (n-i+1) X_i \right]
+    \\
+    &= \sum_{i=1}^n (n-i+1) E[X_i]
+    \\
+    &= \lambda \sum_{k=1}^n k & (k=n-i+1)
+    \\
+    &= \frac{1}{2}n(n+1) \lambda
+    \tag{a}
+    ,\\
+
+    V[W_n]
+    &= V \left[ \sum_{i=1}^n (n-i+1) X_i \right]
+    \\
+    &= \sum_{i=1}^n (n-i+1)^2 V[X_i]
+    & ( \because X_1, X_2, \cdots, X_n \text{ は独立 } )
+    \\
+    &= \lambda \sum_{k=1}^n k^2 & (k=n-i+1)
+    \\
+    &= \frac{1}{6}n(n+1)(2n+1) \lambda
+    \tag{b}
+    \end{align}
+    </p>
+
+    <hr>
+    <h2>
+      [4]
+    </h2>
+
+    <p>
+    \begin{align}
+    \tilde{\lambda} = \frac{2 W_n}{n(n+1)}
+    \end{align}
+    とおくと、式 (a) より
+    \begin{align}
+    E \left[ \tilde{\lambda} \right] = \lambda
+    \end{align}
+    であり、これは $\lambda$ の不偏推定量である。
+    </p>
+
+    <p>
+    また、分散は
+    \begin{align}
+    V \left[ \tilde{\lambda} \right]
+    &= \frac{4}{n^2(n+1)^2} \cdot \frac{1}{6}n(n+1)(2n+1) \lambda
+    & ( \because \text{式 (b)} )
+    \\
+    &= \frac{2(2n+1)}{3n(n+1)} \lambda
+    \end{align}
+    である。
+    </p>
+
+    <hr>
+    <h2>
+      [5]
+    </h2>
+
+    <p>
+    <a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%93%E3%82%B7%E3%82%A7%E3%83%95%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F">
+      チェビシェフの不等式
+    </a>
+    より、任意の実数 $c \gt 0$ について
+    \begin{align}
+    \left( \left| \tilde{\lambda} - \lambda \right| \geq c \text{ である確率 } \right)
+    &\leq \frac{V \left[ \tilde{\lambda} \right]}{c^2}
+    & ( \because \text{ チェビシェフの不等式 } )
+    \\
+    &= \frac{2 \lambda}{3c^2}
+    \frac{\frac{2}{n} + \frac{1}{n^2}}{1 + \frac{1}{n}}
+    \\
+    &\to 0 \ \ \ \ (n \to \infty)
+    \end{align}
+    なので、 $\tilde{\lambda}$ は $\lambda$ の一致推定量である。
+    </p>
+
+    <hr>
+    <h2>
+      [6]
+    </h2>
+
+    <p>
+    \begin{align}
+    V \left[ \hat{\lambda} \right]
+    &= \frac{1}{n^2} \cdot n \lambda
+    \\
+    &= \frac{\lambda}{n}
+    ,\\
+
+    \therefore \ \ 
+    \frac{ V \left[ \tilde{\lambda} \right] }
+    { V \left[ \hat{\lambda} \right] }
+    &=
+    \frac{ \frac{\lambda}{n} }
+    { \frac{2(2n+1)}{3n(n+1)} \lambda }
+    \\
+    &=
+    \frac{3(n+1)}{2(2n+1)}
+    \\
+    &=
+    \frac{3 \left(1 + \frac{1}{n} \right)}
+    {2 \left( 2 + \frac{1}{n} \right)}
+    \\
+    &\to \frac{3}{4} \ \ \ \ ( n \to \infty )
+    \end{align}
+    なので、
+    $\tilde{\lambda}$ の $\hat{\lambda}$ に対する漸近相対効率は
+    $3/4$ である。
+    </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../index.html">miyake.github.io</a> &gt;
+  <a href="../../index.html">初歩からの統計とデータサイエンス</a> &gt;
+  <a href="./index.html">統計検定 1級</a> &gt;
+  </nav>
+
+</body>
+</html>
+
