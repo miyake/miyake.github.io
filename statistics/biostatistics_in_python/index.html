@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+                  crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JPYT21F66Y');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/base.css">
+    <title>Python による生物統計 | miyake.github.io</title>
+
+    <style>
+ul {list-style-type: none;}
+ul ul {list-style-type: none;}
+ul ul ul {list-style-type: none;}
+/* ul.none {list-style-type: none;} */
+    </style>
+  </head>
+
+  <body>
+
+    <nav id="breadcrumbs">
+      <a href="../../index.html">miyake.github.io</a> &gt;
+      <a href="../index.html">初歩からの統計とデータサイエンス</a> &gt;
+    </nav>
+
+    <hr>
+
+    <h1>
+      Python による生物統計
+    </h1>
+
+    <hr>
+
+    <p>
+    <a href="https://www.amazon.co.jp/dp/4860790847/ref=nosim?tag=msscee0a-22">
+      「新版 実用SAS生物統計ハンドブック」 (2017)
+    </a>
+    にある SAS, R プログラムに近い Python プログラムを紹介していく予定です。
+    <!--
+    <br>
+    統計手法の解説などは本を参照してください。
+    <br>
+    データは
+    から入手できます。
+    -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <hr>
+
+    <ul>
+
+      <li>1. SAS/Rを用いた個々の解析事例
+        <ul>
+
+          <li>
+            1. データの要約
+            <!--
+            <ul>
+              <li>
+                <a href="1-01-01.html">
+                  1. 1変量のデータの要約方法は？
+                </a>
+              </li>
+              <li>
+                <a href="1-01-02.html">
+                  2. 2群間の位置母数の差を推定する。（Hodges-Lehmann 推定）
+                </a>
+              </li>
+              <li>
+                <a href="1-01-03.html">
+                  [参考] データは正規分布？（適合度検定）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            2. 2群の平均値の比較
+            <!--
+            <ul>
+              <li>
+                <a href="1-02-01.html">
+                  1. 対応のない2群の平均の差の検定として t 検定を行う。
+                  （Student の検定、Aspin-Welch の検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-02-02.html">
+                  2. 対応のない2群の平均の差の検定として Wilcoxon の順位和検定を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-02-03.html">
+                  3. 対応のある2群の平均の比較を行う。
+                  （対応のある t 検定、符号検定および Wilcoxon の符号付き順位和検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-02-04.html">
+                  4. 経時測定データにおける群間の違いを一般化推定方程式
+                  (Generalized Estimating Equations, GEE) で推定する。
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            3. 多群の平均値の比較
+            <!--
+            <ul>
+              <li>
+                <a href="1-03-01.html">
+                  1. 1因子について多群間での違いを検討する。
+                  （一元配置分散分析）
+                </a>
+              </li>
+              <li>
+                <a href="1-03-02.html">
+                  2. 多群間での平均値の違いを検討する。
+                  （Kruskal-Wallis 検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-03-03.html">
+                  3. 交絡因子を調整して1因子について多群間での違いを検討する。
+                  （共分散分析）
+                </a>
+              </li>
+              <li>
+                <a href="1-03-04.html">
+                  4. 経時測定データについて多群間での違いを検討する。
+                </a>
+              </li>
+              <li>
+                <a href="1-03-05.html">
+                  5. 経時測定されたカウントデータの多群間での違いを検討する。
+                  （一般化線形混合モデル）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            4. 相関と回帰
+            <!--
+            <ul>
+              <li>
+                <a href="1-04-01.html">
+                  1. 2変数間の相関を調べる。
+                  （Pearson の積率相関係数、Spearman の順位相関係数）
+                </a>
+              </li>
+              <li>
+                <a href="1-04-02.html">
+                  2. 回帰分析を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-04-03.html">
+                  3. 母相関係数の区間推定を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-04-04.html">
+                  4. 薬物動態パラメータを非線形回帰モデルにより推定する。
+                </a>
+              </li>
+              <li>
+                <a href="1-04-05.html">
+                  5. LD<sub>50</sub> を推定する。
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            5. 2値データの比較
+            <!--
+            <ul>
+              <li>
+                <a href="1-05-01.html">
+                  1. 2×2分割表での出現比率の比較を行う。
+                  （&chi;<sup>2</sup> 検定、Fisher の正確な検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-05-02.html">
+                  2. 1標本の正確な出現率の信頼限界を求める。
+                </a>
+              </li>
+              <li>
+                <a href="1-05-03.html">
+                  3. 2群の出現率の差の信頼限界を求める。
+                </a>
+              </li>
+              <li>
+                <a href="1-05-04.html">
+                  4. 対応のある2つの出現率の比較を行う。
+                  （McNemar 検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-05-05.html">
+                  5. 信頼区間算出方法の拡張 : 1標本の割合の信頼区間。
+                </a>
+              </li>
+              <li>
+                <a href="1-05-06.html">
+                  6. 信頼区間算出方法の拡張 : 2群の割合の差の信頼区間。
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            6. カテゴリカルデータの比較
+            <!--
+            <ul>
+              <li>
+                <a href="1-06-01.html">
+                  1. 2×c 分割表が得られた場合の群間比較を行う。
+                  （Wilcoxon の順位和検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-06-02.html">
+                  2. r×c 分割表の一般連関性を求める。
+                  （&chi;<sup>2</sup> 検定、Fisher の正確な検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-06-03.html">
+                  3. r×c 分割表の線形連関性を検討する。
+                </a>
+              </li>
+              <li>
+                <a href="1-06-04.html">
+                  4. ブロックのある多群の母平均をノンパラメトリックな手法で比較する。
+                  （Friedman 検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-06-05.html">
+                  5. 2値で得られる反応変数に対して、共変量（およびその交互作用）を考慮した（model-based な解析方法で）薬剤の効果を検討する。
+                </a>
+              </li>
+              <li>
+                <a href="1-06-06.html">
+                  6. 順序カテゴリカルデータとして得られる反応変数に対して、共変量を考慮した（model-based な解析方法で）薬剤の効果を検討する。
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            7. 多重比較
+            <!--
+            <ul>
+              <li>
+                <a href="1-07-01.html">
+                  1. 多群データについて、Dunnett の多重比較を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-07-02.html">
+                  2. 多群データについて、Tukey の多重比較を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-07-03.html">
+                  3. 多群データについて、Williams の多重比較を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-07-04.html">
+                  4. ノンパラメトリック版の Dunnett の多重比較を行う。
+                  （Steel の検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-07-05.html">
+                  5. ノンパラメトリック版の Tukey の多重比較を行う。
+                  （Steel-Dwass の検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-07-06.html">
+                  6. ノンパラメトリック版の Williams の多重比較を行う。
+                  （Shirley-Williams 検定）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            8. 傾向性の検定
+            <!--
+            <ul>
+              <li>
+                <a href="1-08-01.html">
+                  1. 用量-反応関係 (dose-response relationship) の検出を行う。
+                  （回帰分析）
+                </a>
+              </li>
+              <li>
+                <a href="1-08-02.html">
+                  2. ノンパラメトリックに用量-反応関係の検出を行う。
+                  （Jonckheere-Terpstra の検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-08-03.html">
+                  3. 用量-反応関係の検出を行う。
+                  （Chochran-Armitage 検定）
+                </a>
+              </li>
+              <li>
+                <a href="1-08-04.html">
+                  4. 用量-反応関係の検出を行う。
+                  （対比を用いた検討）
+                </a>
+              </li>
+              <li>
+                <a href="1-08-05.html">
+                  5. 背景因子で層別された k 個の層があるとき、層を併合して用量反応関係があることを検討する。
+                  （Mantel-extension 法）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            9. 生存時間解析
+            <!--
+            <ul>
+              <li>
+                <a href="1-09-01.html">
+                  1. 生存時間（生存率）を Kaplan-Meier 法でノンパラメトリックに推定する。
+                </a>
+              </li>
+              <li>
+                <a href="1-09-02.html">
+                  2. 生存時間データでの2群の比較を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-09-03.html">
+                  3. 生存時間データで多群の比較を行う。
+                </a>
+              </li>
+              <li>
+                <a href="1-09-04.html">
+                  4. 性別、年齢、治療等が生存時間へ影響を与えているかどうかを Cox 回帰により検討する。
+                  （因子により生存率に差があるかの検討）
+                </a>
+              </li>
+              <li>
+                <a href="1-09-05.html">
+                  5. 共変量と多重性を同時調整する。
+                </a>
+              </li>
+              <li>
+                <a href="1-09-06.html">
+                  6. 生存関数の異なる層を含むデータを生存時間解析する。
+                  （層別生存時間解析）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            10. 欠測のあるデータの解析
+            <!--
+            <ul>
+              <li>
+                <a href="1-10-01.html">
+                  1. 連続量に対する多重補完法
+                </a>
+              </li>
+              <li>
+                <a href="1-10-02.html">
+                  2. 欠測メカニズムに対する感度分析
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            11. 同等性の検定
+            <!--
+            <ul>
+              <li>
+                <a href="1-11-01.html">
+                  1. クロスオーバーデザインの解析を行う。
+                  （生物学的同等性試験）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+        </ul>
+      </li>
+
+      <li>2. 個々の例数設計事例
+        <ul>
+
+          <li>
+            1. 1群の試験
+            <!--
+            <ul>
+              <li>
+                <a href="2-01-01.html">
+                  1. 母比率の検定においての例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-01-02.html">
+                  2. 母比率を推定するための例数を求めるには？
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            2. 2群の比較試験
+            <!--
+            <ul>
+              <li>
+                <a href="2-02-01.html">
+                  1. 計量値の優越性試験の例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-02-02.html">
+                  2. 計量値の非劣勢試験の例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-02-03.html">
+                  3. 比率の優越性試験の例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-02-04.html">
+                  4. 順序尺度データの比率の優越性試験の例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-02-05.html">
+                  5. 比率の非劣勢および同等性試験の例数を求めるには？
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            3. 用量反応試験
+            <!--
+            <ul>
+              <li>
+                <a href="2-03-01.html">
+                  1. 計量値の用量反応試験の例数を求めるには？
+                  （対比による検定）
+                </a>
+              </li>
+              <li>
+                <a href="2-03-02.html">
+                  2. 2値データ（比率）の用量反応試験の例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-03-03.html">
+                  3. 2値データ（比率）の用量反応試験の例数を求めるには？
+                  （シミュレーション、検出力曲線）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            4. 生物学的同等性試験
+            <!--
+            <ul>
+              <li>
+                <a href="2-04-01.html">
+                  1. 生物学的同等性試験において例数を求めるには？
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            5. 生存時間解析
+            <!--
+            <ul>
+              <li>
+                <a href="2-05-01.html">
+                  1. 生存時間解析において例数を求めるには？
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+          <li>
+            6. 医薬品の製造販売後調査の症例数設計
+            <!--
+            <ul>
+              <li>
+                <a href="2-06-01.html">
+                  1. 医薬品の製造販売後調査において例数を求めるには？
+                </a>
+              </li>
+              <li>
+                <a href="2-06-02.html">
+                  2. 医薬品の製造販売後調査において例数を求めるには？
+                  （2例以上検出）
+                </a>
+              </li>
+            </ul>
+            -->
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+    <a href="../../index.html">miyake.github.io</a> &gt;
+    <a href="../index.html">初歩からの統計とデータサイエンス</a>
+  </nav>
+
+</body>
+</html>
+
