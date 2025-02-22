@@ -1,0 +1,18 @@
+
+/*
+table.scope
+{
+  border: 2px solid #333;
+}
+*/
+
+table.scope th
+{
+  border: 1px solid #333;
+}
+
+table.scope td
+{
+  border: 1px solid #333;
+}
+
