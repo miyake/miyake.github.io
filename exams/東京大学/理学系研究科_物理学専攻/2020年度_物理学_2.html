@@ -108,8 +108,9 @@
   &\approx - k_B T \left( N \ln V - N - N \ln N
   + N \ln \frac{(2 \pi m k_B T)^{3/2}}{h^3} \right)
   \\
-  &= - k_B T N \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
+  &= - N k_B T \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
   + \ln \frac{(2 \pi m k_B)^{3/2} e}{h^3} \right)
+  .
   \end{align}
   </p>
 
@@ -120,15 +121,20 @@
   P(T,V,N)
   &= - \frac{\partial F(T,V,N)}{\partial V}
   \\
-  &= \frac{k_B T N}{V}
+  &= \frac{N k_B T}{V}
+  .
   \end{align}
+  </p>
+
+  <p>
+  （参考：<a href="https://www.amazon.co.jp/dp/4785380322/ref=nosim?tag=msscee0a-22">久保亮五「大学演習 熱学・統計力学」第5章 例題8</a>）
   </p>
 
   <h2>2.</h2>
 
   <p>
   因子 $N!$ がないと、ヘルムホルツの自由エネルギーが示量性を満たさなくなる。
-  すなわち、
+  つまり、正の実数 $\lambda$ について
   \begin{align}
   F(T, \lambda V, \lambda N) = \lambda F(T,V,N)
   \end{align}
@@ -142,17 +148,23 @@
   S(T,V,N)
   &= - \frac{\partial F(T,V,N)}{\partial T}
   \\
-  &= k_B N \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
+  &= N k_B \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
   + \ln \frac{(2 \pi m k_B)^{3/2} e}{h^3} \right)
-  + k_B T N \cdot \frac{3}{2} \frac{1}{T}
+  + N k_B T \cdot \frac{3}{2} \frac{1}{T}
   \\
-  &= k_B N \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
+  &= N k_B \left( \frac{3}{2} \ln T +  \ln \frac{V}{N}
   + \ln \frac{(2 \pi m k_B)^{3/2} e^{5/2}}{h^3} \right)
+  .
+  \tag{a}
   \end{align}
   </p>
 
   <p>
-  $ T \to 0$ のとき $S \to - \infty$ となる。
+  $ T \to 0$ のとき $S \to - \infty$ である。
+  </p>
+
+  <p>
+  （参考：<a href="https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%83%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%86%E3%83%88%E3%83%AD%E3%83%BC%E3%83%87%E6%96%B9%E7%A8%8B%E5%BC%8F">Sackur–Tetrode 方程式</a>）
   </p>
 
   <h2>4.</h2>
@@ -162,9 +174,9 @@
   C_V(T,V,N)
   &= T \frac{\partial S(T,V,N)}{\partial T}
   \\
-  &= T \cdot k_B N \cdot \frac{3}{2} \frac{1}{T}
+  &= T \cdot N k_B \cdot \frac{3}{2} \frac{1}{T}
   \\
-  &= \frac{3}{2} k_B N
+  &= \frac{3}{2} N k_B
   \end{align}
   </p>
 
@@ -172,25 +184,31 @@
 
   <p>
   周期的境界条件から、 $e^{ i k_x L} = 1$ なので、
-  整数 $n_x$ を使って、
+  $k_x$ の取り得る値は、整数 $n_x$ を使って
   \begin{align}
   k_x L = 2 \pi n_x
   \ \ \ \ 
   \therefore \ \ 
   k_x = \frac{2 \pi n_x}{L}
   \end{align}
-  同様に、整数 $n_y, n_z$ を使って、
+  である。
+  同様に、$k_y, k_z$ の取り得る値は、整数 $n_y, n_z$ を使って
   \begin{align}
   k_y = \frac{2 \pi n_y}{L}
   , \ \ \ \ 
   k_z = \frac{2 \pi n_z}{L}
   \end{align}
+  である。
+  </p>
+
+  <p>
+  （参考：<a href="https://www.amazon.co.jp/dp/4563022721/ref=nosim?tag=msscee0a-22">斯波弘行「基礎の固体物理学」 4-1. 自由粒子の量子力学</a>）
   </p>
 
   <h2>6.</h2>
 
   <p>
-  グランドポテンシャル $\Omega (T, V, \mu)$ は、次のようになる：
+  グランドポテンシャル $\Omega (T, V, \mu)$ は
   \begin{align}
   \Omega(T,V, \mu)
   &= - k_B T \ln \Xi (T, V, \mu)
@@ -198,7 +216,7 @@
   &= - k_B T \sum_k \ln
   \left( 1 + e^{ - \beta (\varepsilon_k - \mu)} \right)
   \end{align}
-  よって、
+  であるから、
   \begin{align}
   \bar{N}
   &= - \frac{\partial \Omega (T, V, \mu)}{\partial \mu}
@@ -212,6 +230,7 @@
   \\
   &= \sum_k f(\varepsilon_k)
   \end{align}
+  となる。
   </p>
 
   <h2>7.</h2>
@@ -233,27 +252,56 @@
   \\
   &= V e^{\beta \mu}
   \left( \frac{m}{2 \pi \hbar^2 \beta} \right)^{3/2}
+  .
   \end{align}
 
   これを $\mu$ について解く：
   \begin{align}
   e^{\beta \mu}
-  &= \frac{N}{V}
+  &\approx \frac{N}{V}
   \left( \frac{2 \pi \hbar^2 \beta}{m} \right)^{3/2}
   \\
   \therefore \ \ 
   \mu
-  &= \frac{1}{\beta} \ln \left[ \frac{N}{V}
+  &\approx \frac{1}{\beta} \ln \left[ \frac{N}{V}
   \left( \frac{2 \pi \hbar^2 \beta}{m} \right)^{3/2} \right]
   \\
   &= k_B T \ln \left[ \frac{N}{V}
   \left( \frac{2 \pi \hbar^2}{m k_B T} \right)^{3/2} \right]
+  .
+  \tag{b}
+  \end{align}
+  </p>
+
+  <p>
+  （参考：<a href="https://www.amazon.co.jp/dp/4563022721/ref=nosim?tag=msscee0a-22">田崎晴明「統計力学 II」 8-2-1. 理想気体</a>）
+  </p>
+
+  <h2>8.</h2>
+
+  <!--
+    計算合っているか？
+  -->
+
+  <p>
+  \begin{align}
+  S(T,V,N)
+  &= N k_B \ln \left[ \frac{V}{N}
+  \left( \frac{2 \pi m k_B T}{\hbar^2} \right)^{3/2} e^{5/2} \right]
+  & ( \because \text{ 式 (a) } )
+  \\
+  &= N k_B \ln \left[ \frac{V}{N}
+  \left( \frac{m k_B T}{2 \pi \hbar^2} \right)^{3/2} (2 \pi)^3 e^{5/2} \right]
+  \\
+  &\approx \frac{N}{T} \left[ - \mu + k_B T \ln \left( (2 \pi)^3 e^{5/2} \right) \right]
+  & ( \because \text{ 式 (b) } )
+  \\
+  &\approx - \frac{\mu}{T} N
+  & ( \because |\mu| \gg k_BT )
   \end{align}
   </p>
 
   <!--
-  <h2>8.</h2>
-
   <h2>9.</h2>
   -->
 
