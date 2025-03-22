@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       北海道大学 大学院 理学院 物性物理学専攻, 宇宙理学専攻
-      2021年度 問題V 問1
+      2021年度 問題V 問3
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,7 +40,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
   <a href="./index.html">理学院 物性物理学専攻, 宇宙理学専攻</a> &gt;
-  2021年度 問題V 問1
+  2021年度 問題V 問3
   </nav>
 
   <hr>
@@ -50,7 +50,7 @@
     <br>
     物性物理学専攻, 宇宙理学専攻
     <br>
-    2021年度 問題V 問1
+    2021年度 問題V 問3
   </h1>
 
   <hr>
@@ -82,102 +82,110 @@
 
   <hr>
 
-  <h2>1-1.</h2>
+  <h2>3-1.</h2>
 
   <p>
-  掃き出し法により、次のように求められる：
+  まず、 $m = 1, 2, \cdots$ について、
   \begin{align}
-  &
-  \begin{pmatrix}
-  1 & 3 & 2 & 1 & 0 & 0 \\
-  2 & 5 & 4 & 0 & 1 & 0 \\
-  3 & 6 & 5 & 0 & 0 & 1
-  \end{pmatrix}
-  \\
-  &
-  \begin{pmatrix}
-  1 &  3 &  2 &  1 & 0 & 0 \\
-  0 & -1 &  0 & -2 & 1 & 0 \\
-  0 & -3 & -1 & -3 & 0 & 1
-  \end{pmatrix}
-  \\
-  &
-  \begin{pmatrix}
-  1 & 0 &  2 & -5 &  3 & 0 \\
-  0 & 1 &  0 &  2 & -1 & 0 \\
-  0 & 0 & -1 &  3 & -3 & 1
-  \end{pmatrix}
-  \\
-  &
-  \begin{pmatrix}
-  1 & 0 & 0 &  1 & -3 &  2 \\
-  0 & 1 & 0 &  2 & -1 &  4 \\
-  0 & 0 & 1 & -3 &  3 & -1
-  \end{pmatrix}
+  \int_{- \pi}^\pi \cos mx \ dx = 0
+  , \ \ 
+  \int_{- \pi}^\pi \sin mx \ dx = 0
   \end{align}
+  が成り立つから、与えられたフーリエ級数展開の式の両辺を
+  $x$ について $- \pi$ から $\pi$ まで積分することで
   \begin{align}
-  \therefore \ \ 
-  \begin{pmatrix}
-  1 & 3 & 2 \\
-  2 & 5 & 4 \\
-  3 & 6 & 5
-  \end{pmatrix}^{-1}
-  =
-  \begin{pmatrix}
-   1 & -3 &  2 \\
-   2 & -1 &  4 \\
-  -3 &  3 & -1
-  \end{pmatrix}
+  a_0 = \frac{1}{\pi} \int_{- \pi}^\pi f(x) dx
   \end{align}
+  がわかる。
   </p>
 
-  <h2>1-2.</h2>
+  <p>
+  次に、 $m,n = 1, 2, \cdots$ について、
+  \begin{align}
+  \int_{- \pi}^\pi \cos mx \cos nx \ dx
+  &= \frac{1}{2} \int_{- \pi}^\pi \left[ \cos (m+n)x + \cos (m-n)x \right] dx
+  = \pi \delta_{m,n}
+  \\
+  \int_{- \pi}^\pi \sin mx \sin nx \ dx
+  &= \frac{1}{2} \int_{- \pi}^\pi \left[ - \cos (m+n)x + \cos (m-n)x \right] dx
+  = \pi \delta_{m,n}
+  \\
+  \int_{- \pi}^\pi \sin mx \cos nx \ dx
+  &= \frac{1}{2} \int_{- \pi}^\pi \left[ \sin (m+n)x + \sin (m-n)x \right] dx
+  = 0
+  \end{align}
+  が成り立つ（ $\delta_{m,n}$ はクロネッカーのデルタ）から、
+  $n = 1, 2, \cdots$ について、与えられたフーリエ級数展開の式の両辺に、
+  $\cos nx$ をかけて $x$ について $- \pi$ から $\pi$ まで積分することで
+  \begin{align}
+  a_n = \frac{1}{\pi} \int_{- \pi}^\pi f(x) \cos nx \ dx
+  \end{align}
+  がわかり、
+  $\sin nx$ をかけて $x$ について $- \pi$ から $\pi$ まで積分することで
+  \begin{align}
+  b_n = \frac{1}{\pi} \int_{- \pi}^\pi f(x) \sin nx \ dx
+  \end{align}
+  がわかる。
+  </p>
 
   <p>
-  与えられた微分方程式の右辺を $0$ とおいた式に
-  $y=e^{\lambda x}$ （ $\lambda$ は $x$ によらない定数）
-  を代入すると $\lambda = \pm \sqrt{3}$ を得るので、
-  この微分方程式の一般解は、積分定数を $A,B$ として、
+  以上より、題意が示された。
+  </p>
+
+  <h2>3-2.</h2>
+
+  <p>
+  まず、
   \begin{align}
-  y = A e^{\sqrt{3} x} + B e^{- \sqrt{3} x}
+  a_0 &= \frac{1}{\pi} \int_0^\pi x \ dx = \frac{\pi}{2}
+  \end{align}
+  であり、次に、 $m = 1, 2, \cdots$ について
+  \begin{align}
+  a_m
+  &= \frac{1}{\pi} \int_0^\pi x \cos mx \ dx
+  \\
+  &= \frac{1}{m \pi} \left[ x \sin mx \right]_0^\pi
+  - \frac{1}{m \pi} \int_0^\pi \sin mx \ dx
+  \\
+  &= \frac{1}{m^2 \pi} \left[ \cos mx \right]_0^\pi
+  \\
+  &= \begin{cases}
+  - \frac{2}{m^2 \pi} & (m = 1, 3, \cdots) \\
+  0                   & (m = 2, 4, \cdots) \\
+  \end{cases}
+  \\
+  b_m
+  &= \frac{1}{\pi} \int_0^\pi x \sin mx \ dx
+  \\
+  &= - \frac{1}{m \pi} \left[ x \cos mx \right]_0^\pi
+  + \frac{1}{m \pi} \int_0^\pi \cos mx \ dx
+  \\
+  &= \frac{(-1)^{m+1}}{m} + \frac{1}{m^2 \pi} \left[ \sin mx \right]_0^\pi
+  \\
+  &= \frac{(-1)^{m+1}}{m}
   \end{align}
   である。
-  また、与えられた微分方程式に $y = C \sin x + D \cos x$
-  （ $C,D$ は $x$ によらない定数）を代入すると
-  $C=1,D=0$ を得るので $y = \sin x$ が特殊解であることがわかる。
-  以上より、与えられた微分方程式の一般解は、積分定数を $A,B$ として、
+
+  よって、与えられた関数のフーリエ級数展開は、次の通りである：
   \begin{align}
-  y = A e^{\sqrt{3} x} + B e^{- \sqrt{3} x} + \sin x
+  f(x)
+  &= \frac{\pi}{4}
+  - \frac{2}{\pi} \sum_{k=0}^\infty \frac{1}{(2k+1)^2} \cos ((2k+1) x)
+  + \sum_{m=1}^\infty \frac{(-1)^{m+1}}{m} \sin mx
   \end{align}
-  であることがわかる。
   </p>
+
+  <h2>3-3.</h2>
 
   <p>
-  [参考]
-  <a href="https://www.amazon.co.jp/dp/490381419X/ref=nosim?tag=msscee0a-22">
-    千葉逸人「工学部で学ぶ数学」
-  </a>
+  3-2. で得たフーリエ級数展開の式において $x=0$ とすると
+  \begin{align}
+  0
+  = \frac{\pi}{4}
+  - \frac{2}{\pi} \left( 1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots \right)
+  \end{align}
+  となるので、これを整理して題意の式を得る。
   </p>
-
-  <h2>1-3.</h2>
-
-  <ul>
-    <li>
-    <a href="https://www.amazon.co.jp/dp/490381419X/ref=nosim?tag=msscee0a-22">
-      千葉逸人「工学部で学ぶ数学」 例 4.18
-    </a>
-    </li>
-    <li>
-    <a href="https://www.amazon.co.jp/dp/4785310898/ref=nosim?tag=msscee0a-22">
-      矢野・石原「複素解析」 4.3.IV
-    </a>
-    </li>
-    <li>
-    <a href="https://www.amazon.co.jp/dp/4320031423/ref=nosim?tag=msscee0a-22">
-      後藤・山本・神吉「詳解 物理応用数学 演習」 4 [42]
-    </a>
-    </li>
-  </ul>
 
   <hr>
 <!-- 横長タイプ -->
@@ -197,7 +205,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/北海道大学/index.html">北海道大学</a> &gt;
   <a href="./index.html">理学院 物性物理学専攻, 宇宙理学専攻</a> &gt;
-  2021年度 問題V 問1
+  2021年度 問題V 問3
   </nav>
 
 </body>
