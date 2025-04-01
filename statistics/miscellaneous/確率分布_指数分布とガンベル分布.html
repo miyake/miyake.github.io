@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+                  crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JPYT21F66Y');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/base.css">
+    <title>
+      指数分布とガンベル分布
+      | miyake.github.io
+    </title>
+
+    <script>
+      MathJax = {
+              tex: {
+                      inlineMath: [['$', '$'], ['\\(', '\\)']]
+                    }
+            };
+    </script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js">
+    </script>
+
+  </head>
+
+  <body>
+
+    <nav id="breadcrumbs">
+      <a href="../../index.html">miyake.github.io</a> &gt;
+      <a href="../index.html">初歩からの統計とデータサイエンス</a> &gt;
+    </nav>
+    <hr>
+
+    <h1>指数分布とガンベル分布</h1>
+
+    <p>
+    平均 $1$ の
+    <a href="https://ja.wikipedia.org/wiki/%E6%8C%87%E6%95%B0%E5%88%86%E5%B8%83">
+      指数分布
+    </a>
+    の確率密度関数は
+    \begin{align}
+    f(x) = e^{-x} && (x \gt 0)
+    \end{align}
+    であり、累積分布関数は
+    \begin{align}
+    F(x) &= \int_0^x f(t) dt
+    \\
+    &= 1 - e^{-x} && (x \gt 0)
+    \end{align}
+    である。
+    </p>
+
+    <p>
+    平均 $1$ の指数分布からのサイズ $n$ の無作為標本 $X_1, X_2, \cdots, X_n$
+    を考え、その最大を $M_n$ とすると、 $M_n$ の累積分布関数は
+    \begin{align}
+    P(M_n \leq m)
+    &= P(X_1 \leq m \text{ and } X_2 \leq m \text{ and }
+    \cdots \text{ and } X_n \leq m)
+    \\
+    &= P(X_1 \leq m ) P(X_2 \leq m ) \cdots P(X_n \leq m )
+    \\
+    &= \left( 1 - e^{-m} \right)^n
+    && ( m \gt 0 )
+    \end{align}
+    である。
+    $m = y + \log n$ とすると、
+    \begin{align}
+    \left( 1 - e^{-y - \log n} \right)^n
+    &= \left( 1 - \frac{e^{-y}}{n} \right)^n
+    \\
+    &\xrightarrow{n \to \infty} \exp \left( -e^{-y} \right)
+    \end{align}
+    となる。
+    これは
+    <a href="https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%B3%E3%83%99%E3%83%AB%E5%88%86%E5%B8%83">
+      ガンベル分布
+    </a>
+    の累積分布関数である。
+    </p>
+
+
+    <hr>
+    <!-- 横長タイプ -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6792495598564208"
+         data-ad-slot="4005025709"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <hr>
+    <nav id="footer_breadcrumbs">
+      <a href="../../index.html">miyake.github.io</a> &gt;
+      <a href="../index.html">初歩からの統計とデータサイエンス</a>
+    </nav>
+
+  </body>
+</html>
+
