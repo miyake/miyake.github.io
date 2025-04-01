@@ -140,14 +140,14 @@
 
   <p>
   $x = \sin \phi \ \ (0 \leq \phi \leq \theta \lt \pi/2)$ とすると、
-  $dx = \cos \phi d \phi$ なので、
+  $dx = \cos \phi \ d \phi$ なので、
   \begin{align}
   I
   &= \int_0^{\sin \theta} \frac{\arctan(\arcsin x)}{\sqrt{1-x^2}} dx
   \\
-  &= \int_0^\theta \frac{\arctan \phi}{\cos \phi} \cdot \cos \phi d \phi
+  &= \int_0^\theta \frac{\arctan \phi}{\cos \phi} \cdot \cos \phi \ d \phi
   \\
-  &= \int_0^\theta \arctan \phi d \phi
+  &= \int_0^\theta \arctan \phi \ d \phi
   \\
   &= \left[ \phi \arctan \phi \right]_0^\theta - \int_0^\theta \frac{\phi}{1+\phi^2} d \phi
   \\
