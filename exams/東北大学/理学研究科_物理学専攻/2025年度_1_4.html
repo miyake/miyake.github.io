@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 理学研究科 物理学専攻
+      2025年度 問題1 (基礎数学) [4]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 問題1 (基礎数学) [4]
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 理学研究科
+    <br>
+    物理学専攻
+    <br>
+    2025年度 問題1 (基礎数学) [4]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.phys.tohoku.ac.jp/admission/graduate-school_entrance/nyushimondai-archives/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  最初に与えられた式は
+  \begin{align}
+  f(x) = \frac{a_0}{2} + \sum_{m=1}^\infty a_m \cos (mx)
+  \tag{A}
+  \end{align}
+  である。
+  </p>
+
+  <h2>1)</h2>
+
+  <p>
+  $m=n$ のときは
+  \begin{align}
+  \int_{- \pi}^\pi \cos^2 (mx) dx
+  &= \int_0^\pi \left\{ 1 + \cos (2mx) \right\} dx
+  \\
+  &= \left[ x + \frac{1}{2m} \sin (2mx) \right]_0^\pi
+  \\
+  &= \pi
+  \tag{B}
+  \end{align}
+  であり、 $m \ne n$ のときは
+  \begin{align}
+  \int_{- \pi}^\pi \cos (mx) \cos (nx) dx
+  &= \int_0^\pi \left\{ \cos ((m+n)x) + \cos ((m-n)x) \right\} dx
+  \\
+  &= \left[ \frac{1}{m+n} \sin ((m+n)x) + \frac{1}{m-n} \sin ((m-n)x) \right]_0^\pi
+  \\
+  &= 0
+  \tag{C}
+  \end{align}
+  である。
+  </p>
+
+  <h2>2)</h2>
+
+  <p>
+  まず、 $m=1, 2, 3, \cdots$ について
+  \begin{align}
+  \int_{- \pi}^\pi \cos (mx) dx &= 0
+  \tag{D}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  式 (A) より
+  \begin{align}
+  \left\{ f(x) \right\}^2
+  &= \frac{a_0^2}{4} + a_0 \sum_{m=1}^\infty a_m \cos (mx)
+  + \sum_{m=1}^\infty a_m^2 \cos^2 (mx)
+  + \sum_{(m,n) \in M} a_m a_n \cos (mx) \cos (nx)
+  \\
+  &\left(
+  M = \left\{ (m, n) \mid m \in \mathbb{Z}, n \in \mathbb{Z}, m \ne n \right\}
+  , \ \ 
+  \mathbb{Z} = \left\{ 1, 2, 3, \cdots \right\}
+  \right)
+  \end{align}
+  であるが、これの両辺を $x$ について $- \pi$ から $\pi$ まで積分すると、
+  式 (B), (C), (D) より、
+  \begin{align}
+  \int_{- \pi}^\pi \left\{ f(x) \right\}^2
+  &= \frac{\pi a_0^2}{2} + \pi \sum_{m=1}^\infty a_m^2
+  \end{align}
+  となるから、
+  \begin{align}
+  I &= \frac{a_0^2}{2} + \sum_{m=1}^\infty a_m^2
+  \tag{E}
+  \end{align}
+  がわかる。
+  （※ これは
+  <a href="https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B4%E3%82%A1%E3%83%AB%E3%81%AE%E7%AD%89%E5%BC%8F">
+    パーセヴァルの等式
+  </a>
+  の一種である。）
+  </p>
+
+  <h2>3)</h2>
+
+  <p>
+  まず、式 (A) の両辺を $x$ について $- \pi$ から $\pi$ まで積分すると
+  \begin{align}
+  \int_{- \pi}^\pi f(x) dx
+  &= \pi a_0
+  & (\because \text{ 式 (D) } )
+  \\
+  \therefore \ \ 
+  a_0 &= \frac{1}{\pi} \int_{- \pi}^\pi f(x) dx
+  \tag{F}
+  \end{align}
+  となり、 $n=1, 2, 3, \cdots$ について、
+  式 (A) の両辺に $\cos (nx)$ をかけて
+  $x$ について $- \pi$ から $\pi$ まで積分すると
+  \begin{align}
+  \int_{- \pi}^\pi f(x) \cos (nx) dx
+  &= \pi a_n
+  & (\because \text{ 式 (B), (C), (D) } )
+  \\
+  \therefore \ \ 
+  a_n &= \frac{1}{\pi} \int_{- \pi}^\pi f(x) \cos (nx) dx
+  \tag{G}
+  \end{align}
+  となる。
+  </p>
+
+  <p>
+  $f(x)=x^2$ のとき、
+  式 (F) は
+  \begin{align}
+  a_0
+  &= \frac{1}{\pi} \int_{- \pi}^\pi x^2 dx
+  \\
+  &= \frac{2}{\pi} \int_0^\pi x^2 dx
+  \\
+  &= \frac{2}{\pi} \left[ \frac{x^3}{3} \right]_0^\pi
+  \\
+  &= \frac{2 \pi^2}{3}
+  \tag{F'}
+  \end{align}
+  となり、式 (G) は
+  \begin{align}
+  a_n
+  &= \frac{1}{\pi} \int_{- \pi}^\pi x^2 \cos (nx) dx
+  \\
+  &= \frac{2}{\pi} \int_0^\pi x^2 \cos (nx) dx
+  \\
+  &= \frac{2}{n \pi} \left[ x^2 \sin (nx) \right]_0^\pi
+  - \frac{4}{n \pi} \int_0^\pi x \sin (nx) dx
+  \\
+  &= - \frac{4}{n \pi} \int_0^\pi x \sin (nx) dx
+  \\
+  &= \frac{4}{n^2 \pi} \left[ x \cos (nx) \right]_0^\pi
+  - \frac{4}{n^2 \pi} \int_0^\pi \cos (nx) dx
+  \\
+  &= (-1)^n \frac{4}{n^2}
+  \tag{G'}
+  \end{align}
+  <!--
+https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%22pi%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%22x%5E2+cos%283x%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%22-pi%22&lang=ja
+  -->
+  となるから、式 (E) は
+  \begin{align}
+  \frac{1}{\pi} \int_{- \pi}^\pi x^4 dx
+  &= \frac{1}{2} \cdot \left( \frac{2 \pi^2}{3} \right)^2
+  + \sum_{m=1}^\infty \frac{16}{m^4}
+  \\
+  \therefore \ \ 
+  \frac{2}{5} \pi^4
+  &= \frac{2}{9} \pi^4 + 16 \sum_{m=1}^\infty \frac{1}{m^4}
+  \tag{E'}
+  \end{align}
+  となり、
+  \begin{align}
+  \sum_{m=1}^\infty \frac{1}{m^4}
+  &= \frac{\pi^4}{90}
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+  <h2>参考</h2>
+
+  <p>
+  <a href="https://www.amazon.co.jp/dp/4320031423/ref=nosim?tag=msscee0a-22">
+    後藤・山本・神吉「詳解 物理応用数学演習」
+    <!--
+    第5章 直交関数系展開，Fourier 級数，直交多項式
+    -->
+    第5章 §2. Fourier 級数
+  </a>
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 問題1 (基礎数学) [4]
+  </nav>
+
+</body>
+</html>
+
