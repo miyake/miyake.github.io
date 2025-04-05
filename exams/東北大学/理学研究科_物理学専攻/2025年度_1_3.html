@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東北大学 大学院 理学研究科 物理学専攻
+      2025年度 問題1 (基礎数学) [3]
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 問題1 (基礎数学) [3]
+  </nav>
+  <hr>
+
+  <h1>
+    東北大学 大学院 理学研究科
+    <br>
+    物理学専攻
+    <br>
+    2025年度 問題1 (基礎数学) [3]
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.phys.tohoku.ac.jp/admission/graduate-school_entrance/nyushimondai-archives/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  $x,y,z$ 方向の単位ベクトルをそれぞれ $\boldsymbol{i}, \boldsymbol{j}, \boldsymbol{k}$ とし、
+  \begin{align}
+  r = \sqrt{x^2 + y^2 + z^2}
+  \end{align}
+  とする。
+  </p>
+
+  <h2>1)</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial r}{\partial x}
+  &= \frac{1}{2} \frac{2x}{r}
+  \\
+  &= \frac{x}{r}
+  ,\\
+  \frac{\partial V}{\partial x}
+  &= - \frac{\partial}{\partial x} \frac{1}{r}
+  \\
+  &= \frac{1}{r^2} \frac{\partial r}{\partial x}
+  \\
+  &= \frac{x}{r^3}
+  \end{align}
+  であり、同様にして
+  \begin{align}
+  \frac{\partial V}{\partial y}
+  = \frac{y}{r^3}
+  , \ \ 
+  \frac{\partial V}{\partial z}
+  = \frac{z}{r^3}
+  \end{align}
+  であるから、
+  \begin{align}
+  \boldsymbol{\nabla} V
+  = \frac{x \boldsymbol{i} + y \boldsymbol{j} + z \boldsymbol{k}}{r^3}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h2>2)</h2>
+
+  <p>
+  円筒上の点の座標は $(a \cos \varphi, a \sin \varphi, z)$
+  （ただし $0 \leq \varphi \lt 2 \pi$ ）と書け、この点において
+  \begin{align}
+  r &= \sqrt{a^2 + z^2}
+  ,\\
+  \boldsymbol{\nabla} V
+  &= \frac{a \boldsymbol{i} \cos \varphi + a \boldsymbol{j} \sin \varphi
+  + z \boldsymbol{k}}{\left( a^2 + z^2 \right)^{3/2}}
+  ,\\
+  \boldsymbol{n}
+  &= \boldsymbol{i} \cos \varphi + \boldsymbol{j} \sin \varphi
+  ,\\
+  \boldsymbol{\nabla} V \cdot \boldsymbol{n}
+  &= \frac{a}{\left( a^2 + z^2 \right)^{3/2}}
+  \end{align}
+  であるから、
+  \begin{align}
+  I
+  &= \int_S \boldsymbol{\nabla} V \cdot \boldsymbol{n} \ dS
+  \\
+  &= \int_{-\infty}^\infty dz \int_0^{2 \pi} d \varphi
+  \ \frac{a^2}{\left( a^2 + z^2 \right)^{3/2}}
+  \\
+  &= 4 \pi a^2 \int_0^\infty dz
+  \ \frac{1}{\left( a^2 + z^2 \right)^{3/2}}
+  \\
+  &= 4 \pi \int_0^{\frac{\pi}{2}} \frac{d \theta}{\cos^2 \theta}
+  \ \frac{1}{\left( 1 + \tan^2 \theta \right)^{3/2}}
+  & (z = a \tan \theta)
+  \\
+  &= 4 \pi \int_0^{\frac{\pi}{2}} d \theta \ \cos \theta
+  \\
+  &= 4 \pi \left[ \sin \theta \right]_0^{\frac{\pi}{2}}
+  \\
+  &= 4 \pi
+  \end{align}
+  を得る。
+  <!--
+https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%22infty%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%221%2F%28a%5E2%2Bx%5E2%29%5E%283%2F2%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%22-infty%22&lang=ja
+  -->
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 問題1 (基礎数学) [3]
+  </nav>
+
+</body>
+</html>
+
