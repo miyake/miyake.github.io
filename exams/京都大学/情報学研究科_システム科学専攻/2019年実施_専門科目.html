@@ -17,7 +17,7 @@
     <title>
       京都大学 大学院 情報学研究科
       システム科学専攻
-      2019年実施 専門科目 【確率統計】
+      2019年実施 専門科目 【確率統計】 問題1
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,6 +40,8 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">情報学研究科 システム科学専攻</a> &gt;
+  2019年実施 専門科目 【確率統計】 問題1
   </nav>
   <hr>
 
@@ -48,7 +50,7 @@
     <br>
     システム科学専攻
     <br>
-    2019年実施 専門科目 【確率統計】
+    2019年実施 専門科目 【確率統計】 問題1
   </h1>
 
   <hr>
@@ -79,8 +81,6 @@
 </script>
 
   <hr>
-
-  <h2>問題 1</h2>
 
   <p>
   $y = \log x$ とおくと、
@@ -167,260 +167,14 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<hr>
-
-  <h2>問題 2</h2>
-
-  <h3>(1)</h3>
-
-  <h4>(1-1)</h4>
-
-  <p>
-  \begin{align}
-  \frac{d}{d \mu} \log f(x;\mu)
-  &=
-  \frac{d}{d \mu} \log
-  \left[ \frac{1}{\mu} \exp \left( - \frac{x}{\mu} \right) \right]
-  \\
-  &=
-  \frac{d}{d \mu} \left( - \log \mu - \frac{x}{\mu} \right)
-  \\
-  &=
-  - \frac{1}{\mu} + \frac{x}{\mu^2}
-  \\
-  &=
-  \frac{\mu - x}{\mu^2}
-  \end{align}
-  であるから、
-  \begin{align}
-  \hat{\mu} = X
-  \end{align}
-  </p>
-
-  <h4>(1-2)</h4>
-
-  <p>
-  期待値を $E$ を表すと、
-  \begin{align}
-  E(X)
-  &=
-  \int_0^\infty x f(x; \mu) dx
-  \\
-  &=
-  \frac{1}{\mu}
-  \int_0^\infty x \exp \left( - \frac{x}{\mu} \right) dx
-  \\
-  &=
-  - \left[ x \exp \left( - \frac{x}{\mu} \right) \right]_0^\infty
-  + \int_0^\infty x \exp \left( - \frac{x}{\mu} \right) dx
-  \\
-  &=
-  - \mu \left[ \exp \left( - \frac{x}{\mu} \right) \right]_0^\infty
-  \\
-  &= \mu
-  \end{align}
-  であるから、
-  $E(\hat{\mu}) = \mu$ であり、
-  $\hat{\mu}$ は $\mu$ の不偏推定量である。
-  </p>
-
-  <h4>(1-3)</h4>
-
-  <p>
-  $\alpha$ と $c$ は次のように関係付けられる：
-  \begin{align}
-  \alpha
-  &=
-  \int_c^\infty f(x; \mu_0) dx
-  \\
-  &=
-  \frac{1}{\mu_0}
-  \int_c^\infty \exp \left( - \frac{x}{\mu_0} \right) dx
-  \\
-  &=
-  - \left[ \exp \left( - \frac{x}{\mu_0} \right) \right]_c^\infty
-  \\
-  &=
-  \exp \left( - \frac{c}{\mu_0} \right)
-  \\
-
-  \therefore \ \ 
-  c &= - \mu_0 \log \alpha
-  \end{align}
-  </p>
-
-  <h4>(1-4)</h4>
-
-  <h3>(2)</h3>
-
-  <h4>(2-1)</h4>
-
-  <p>
-  まず、確率を $P$ で表すと、
-  \begin{align}
-  P (a \leq X_i \leq b)
-  &=
-  \int_a^b f(x; 1) dx
-  \\
-  &=
-  \int_a^b \exp (-x) dx
-  \\
-  &=
-  - \left[ \exp (-x) \right]_a^b
-  \\
-  &=
-  \exp (-a) - \exp (-b)
-  \end{align}
-  である。
-  </p>
-
-  <p>
-  $U$ の確率密度関数 $f_U(u)$ を求めるために、次のように計算する：
-  \begin{align}
-  P (U \leq u)
-  &=
-  P(X_1 \leq u \text{ and } X_2 \leq u)
-  + P(X_1 \leq u \lt X_2) + P(X_2 \leq u \lt X_1)
-  \\
-  &=
-  P(X_1 \leq u) P(X_2 \leq u)
-  + P(X_1 \leq u) P(u \lt X_2) + P(X_2 \leq u) P(u \lt X_1)
-  \\
-  &=
-  \left( 1 - \exp (-u) \right) \left( 1 - \exp (-u) \right)
-  + \left( 1 - \exp (-u) \right) \exp (-u)
-  + \left( 1 - \exp (-u) \right) \exp (-u)
-  \\
-  &=
-  1 - \exp (-2u)
-  \\
-
-  \therefore \ \ 
-  f_U(u)
-  &=
-  \frac{d}{du} P (U \leq u)
-  \\
-  &=
-  \frac{d}{du} \left( 1 - \exp (-2u) \right)
-  \\
-  &=
-  2 \exp (-2u)
-  \end{align}
-  </p>
-
-  <h4>(2-2)</h4>
-
-  <p>
-  $V$ の確率密度関数 $f_V(v)$ を求めるために、次のように計算する：
-  \begin{align}
-  P (V \leq v)
-  &=
-  P(X_1 \leq v \text{ and } X_2 \leq v)
-  \\
-  &=
-  P(X_1 \leq v) P(X_2 \leq v)
-  \\
-  &=
-  \left( 1 - \exp (-v) \right)^2
-  \\
-
-  \therefore \ \ 
-  f_V(v)
-  &=
-  \frac{d}{dv} P (V \leq v)
-  \\
-  &=
-  \frac{d}{dv} \left( 1 - \exp (-v) \right)^2
-  \\
-  &=
-  2 \exp (-v) \left( 1 - \exp (-v) \right)
-  \end{align}
-  </p>
-
-  <h4>(2-3)</h4>
-
-  <p>
-  $U,V$ の同時確率密度関数 $f(u,v)$ を求めるために、次の2通りを考える。
-  </p>
-
-  <p>
-  (i)
-  $ v \lt u$ のとき、
-  \begin{align}
-  P (U \leq u \text{ and } V \leq v)
-  &=
-  P (V \leq v)
-  \\
-  &=
-  \left( 1 - \exp (-v) \right)^2
-  \\
-
-  \therefore \ \ 
-  f(u,v)
-  &=
-  \frac{\partial}{\partial u}
-  \frac{\partial}{\partial v}
-  P (U \leq u \text{ and } V \leq v)
-  \\
-  &= 0
-  .
-  \end{align}
-  </p>
-
-  <p>
-  (ii)
-  $ u \leq v$ のとき、
-  \begin{align}
-  P (U \leq u \text{ and } V \leq v)
-  &=
-  P(X_1 \leq u \text{ and } X_2 \leq u)
-  + P(X_1 \leq u \lt X_2 \leq v) + P(X_2 \leq u \lt X_1 \leq v)
-  \\
-  &=
-  P(X_1 \leq u) P(X_2 \leq u)
-  + P(X_1 \leq u) P(u \lt X_2 \leq v) + P(X_2 \leq u) P(u \lt X_1 \leq v)
-  \\
-  &=
-  \left( 1 - \exp (-u) \right) \left( 1 - \exp (-u) \right)
-  + \left( 1 - \exp (-u) \right) \left( \exp (-u) - \exp (-v) \right)
-  + \left( 1 - \exp (-u) \right) \left( \exp (-u) - \exp (-v) \right)
-  \\
-  &=
-  \left( 1 - \exp (-u) \right)
-  \left( 1 + \exp (-u) - 2 \exp (-v) \right)
-  \\
-
-  \therefore \ \ 
-  f(u,v)
-  &=
-  \frac{\partial}{\partial u}
-  \frac{\partial}{\partial v}
-  P (U \leq u \text{ and } V \leq v)
-  \\
-  &=
-  2 \exp(-(u+v))
-  .
-  \end{align}
-  </p>
-
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
   <hr>
   <nav id="footer_breadcrumbs">
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">情報学研究科 システム科学専攻</a> &gt;
+  2019年実施 専門科目 【確率統計】 問題1
   </nav>
 
 </body>
