@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      九州大学 大学院
+      工学府 機械系専攻
+      2024年度 数学 問4
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  <a href="./index.html">工学府 機械系専攻</a> &gt;
+  2024年度 数学 問4
+  </nav>
+  <hr>
+
+  <h1>
+    九州大学 大学院
+    <br>
+    工学府 機械系専攻
+    <br>
+    2024年度 数学 問4
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.mech.kyushu-u.ac.jp/exam/exam02/exam02_past">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  b_0 &= \sum_{k=1}^m y_k
+  , \ \ 
+  b_1 = \sum_{k=1}^m y_k x_k
+  , \ \ 
+  b_2 = \sum_{k=1}^m y_k x_k^2
+  ,\\
+  X_1 &= \sum_{k=1}^m x_k
+  , \ \ 
+  X_2 = \sum_{k=1}^m x_k^2
+  , \ \ 
+  X_3 = \sum_{k=1}^m x_k^3
+  , \ \ 
+  X_4 = \sum_{k=1}^m x_k^4
+  \end{align}
+  とおく。
+  </p>
+
+  <p>
+  \begin{align}
+  F
+  &= \sum_{k=1}^m \left( y_k - f(x_k) \right)^2
+  \\
+  &= \sum_{k=1}^m \left( y_k - a_0 - a_1 x_k - a_2 x_k^2 \right)^2
+  \end{align}
+  なので、
+  \begin{align}
+  \frac{\partial F}{\partial a_0}
+  &= -2 \sum_{k=1}^m \left( y_k - a_0 - a_1 x_k - a_2 x_k^2 \right)
+  \\
+  &= -2 \left( b_0 - ma_0 - X_1 a_1 - X_2 a_2 \right)
+  ,\\
+  \frac{\partial F}{\partial a_1}
+  &= -2 \sum_{k=1}^m \left( y_k - a_0 - a_1 x_k - a_2 x_k^2 \right) x_k
+  \\
+  &= -2 \left( b_1 - X_1 a_0 - X_2 a_1 - X_3 a_2 \right)
+  ,\\
+  \frac{\partial F}{\partial a_2}
+  &= -2 \sum_{k=1}^m \left( y_k - a_0 - a_1 x_k - a_2 x_k^2 \right) x_k^2
+  \\
+  &= -2 \left( b_2 - X_2 a_0 - X_3 a_1 - X_4 a_2 \right)
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  \frac{\partial F}{\partial a_0}
+  = \frac{\partial F}{\partial a_1}
+  = \frac{\partial F}{\partial a_2}
+  = 0
+  \end{align}
+  から、
+  \begin{align}
+  \begin{pmatrix} b_0 \\ b_1 \\ b_2 \end{pmatrix}
+  &= 
+  \begin{pmatrix}
+  m a_0 + X_1 a_1 + X_2 a_2 \\
+  X_1 a_0 + X_2 a_1 + X_3 a_2 \\
+  X_2 a_0 + X_3 a_1 + X_4 a_2
+  \end{pmatrix}
+  \\
+  &= 
+  \begin{pmatrix}
+  m & X_1 & X_2 \\
+  X_1 & X_2 & X_3 \\
+  X_2 & X_3 & X_4
+  \end{pmatrix}
+  \begin{pmatrix} a_0 \\ a_1 \\ a_2 \end{pmatrix}
+  \end{align}
+  が得られ、
+  \begin{align}
+  M
+  &= 
+  \begin{pmatrix}
+  m & X_1 & X_2 \\
+  X_1 & X_2 & X_3 \\
+  X_2 & X_3 & X_4
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  m & \sum_{k=1}^m x_k & \sum_{k=1}^m x_k^2 \\
+  \sum_{k=1}^m x_k & \sum_{k=1}^m x_k^2 & \sum_{k=1}^m x_k^3 \\
+  \sum_{k=1}^m x_k^2 & \sum_{k=1}^m x_k^3 & \sum_{k=1}^m x_k^4
+  \end{pmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  記号は (1) と同じとする。
+  </p>
+
+  <p>
+  ※
+  求められていないが、与えられた4点について、
+  \begin{align}
+  m = 4
+  , \ \ 
+  X_1 = 2
+  , \ \ 
+  X_2 = 6
+  , \ \ 
+  X_3 = 8
+  , \ \ 
+  X_4 = 18
+  \end{align}
+  であるから、
+  \begin{align}
+  M = \begin{pmatrix} 4 & 2 & 6 \\ 2 & 6 & 8 \\ 6 & 8 & 18 \end{pmatrix}
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(2-1)</h3>
+
+  <p>
+  \begin{align}
+  L = \begin{pmatrix} c & 0 & 0 \\ d & e & 0 \\ f & g & h \end{pmatrix}
+  \end{align}
+  とおくと、
+  \begin{align}
+  \begin{pmatrix} 4 & 2 & 6 \\ 2 & 6 & 8 \\ 6 & 8 & 18 \end{pmatrix}
+  &= 
+  \begin{pmatrix} c & 0 & 0 \\ d & e & 0 \\ f & g & h \end{pmatrix}
+  \begin{pmatrix} c & d & f \\ 0 & e & g \\ 0 & 0 & h \end{pmatrix}
+  \\
+  &= 
+  \begin{pmatrix}
+  c^2 & cd & cf \\ cd & d^2+e^2 & df+eg \\ cf & df+eg & f^2+g^2+h^2
+  \end{pmatrix}
+  \end{align}
+  から、例えば、
+  \begin{align}
+  c=2, \ \ d=1, \ \ e=\sqrt{5}, \ \ f=3, \ \ g=\sqrt{5}, \ \ h=2
+  \end{align}
+  が得られ、したがって、
+  \begin{align}
+  L
+  =
+  \begin{pmatrix} 2 & 0 & 0 \\ 1 & \sqrt{5} & 0 \\ 3 & \sqrt{5} & 2 \end{pmatrix}
+  \end{align}
+  が得られる。（他にもある。）
+  </p>
+
+  <h3>(2-2)</h3>
+
+  <p>
+  $L$ の行列式 $\det L$ , 余因子行列 $\tilde{L}$ , 逆行列 $L^{-1}$ は
+  \begin{align}
+  \det L &= 4 \sqrt{5}
+  ,\\
+  \tilde{L}
+  &=
+  \begin{pmatrix}
+  2 \sqrt{5} & 0 & 0 \\
+  -2 & 4 & 0 \\
+  -2 \sqrt{5} & -2 \sqrt{5} & 2 \sqrt{5}
+  \end{pmatrix}
+  ,\\
+  L^{-1}
+  &=
+  \frac{1}{\det L} \tilde{L}
+  \\
+  &=
+  \frac{1}{2 \sqrt{5}}
+  \begin{pmatrix}
+  \sqrt{5} & 0 & 0 \\
+  -1 & 2 & 0 \\
+  - \sqrt{5} & - \sqrt{5} & \sqrt{5}
+  \end{pmatrix}
+  \end{align}
+  であり、
+  \begin{align}
+  b_0 = 10
+  , \ \ 
+  b_1 = 5
+  , \ \ 
+  b_2 = 7
+  \end{align}
+  である。
+  よって、 $M \boldsymbol{a} = \boldsymbol{b}$ から、
+  \begin{align}
+  \begin{pmatrix} a_0 \\ a_1 \\ a_2 \end{pmatrix}
+  &=
+  M^{-1}
+  \begin{pmatrix} b_0 \\ b_1 \\ b_2 \end{pmatrix}
+  \\
+  &=
+  \left( L^{-1} \right)^T L^{-1}
+  \begin{pmatrix} b_0 \\ b_1 \\ b_2 \end{pmatrix}
+  \\
+  &=
+  \frac{1}{20}
+  \begin{pmatrix}
+  \sqrt{5} & -1 & - \sqrt{5} \\
+  0 & 2 & - \sqrt{5} \\
+  0 & 0 & \sqrt{5}
+  \end{pmatrix}
+  \begin{pmatrix}
+  \sqrt{5} & 0 & 0 \\
+  -1 & 2 & 0 \\
+  - \sqrt{5} & - \sqrt{5} & \sqrt{5}
+  \end{pmatrix}
+  \begin{pmatrix} 10 \\ 5 \\ 7 \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix} 9/2 \\ 2 \\ -2 \end{pmatrix}
+  \end{align}
+  が得られる。
+  よって、求める近似2次多項式は
+  \begin{align}
+  f(x)
+  &= \frac{9}{2} + 2x - 2x^2
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/九州大学/index.html">九州大学</a> &gt;
+  <a href="./index.html">工学府 機械系専攻</a> &gt;
+  2024年度 数学 問4
+  </nav>
+
+</body>
+</html>
+
