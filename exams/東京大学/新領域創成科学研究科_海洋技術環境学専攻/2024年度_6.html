@@ -85,34 +85,38 @@
   <h2>(1)</h2>
 
   <p>
-  $dV/dZ$ は $Z$ に反比例するので、適当な定数 $c \ (\ne 0)$ を使って
+  $dV/dZ$ は $Z$ に反比例するので、適当な定数 $a \ (\ne 0)$ を使って
   \begin{align}
-  \frac{dV}{dZ} = \frac{c}{Z}
+  \frac{dV}{dZ} = \frac{a}{Z}
   \end{align}
   と書け、積分すると
   \begin{align}
-  V = c \log_2 \frac{Z}{Z_0}
+  V
+  &= a \ln \frac{Z}{Z_0}
+  &\left( Z_0 \text{ は積分定数 }, \ \ \ln \text{ は自然対数 } \right)
+  \\
+  &= b \log_2 \frac{Z}{Z_0}
+  &\left( b = \frac{a}{\log_2 e}, \ \ e \text{ は自然対数の底 } \right)
   \end{align}
   となる。
-  ここで、 $Z_0$ は積分定数であり、 $\log$ の底は何でも良いが $2$ とした。
   $Z=0.125$ のとき $V=0$ であることから
   \begin{align}
-  0 &= c \log_2 \frac{0.125}{Z_0}
+  0 &= b \log_2 \frac{0.125}{Z_0}
   \\
   \therefore \ \ Z_0 &= 0.125 = \frac{1}{8}
   \end{align}
   がわかる。よって、
   \begin{align}
-  V &= c \log_2 (8Z)
+  V &= b \log_2 (8Z)
   \\
-  &= c \left( \log_2 Z + 3 \right)
+  &= b \left( \log_2 Z + 3 \right)
   \end{align}
   である。
   さらに、 $Z=8$ のとき $V=6$ であることから
   \begin{align}
-  6 &= c \left( \log_2 8 + 3 \right)
+  6 &= b \left( \log_2 8 + 3 \right)
   \\
-  \therefore \ \ c &= 1
+  \therefore \ \ b &= 1
   \end{align}
   がわかる。よって、
   \begin{align}
