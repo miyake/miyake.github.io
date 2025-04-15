@@ -17,7 +17,7 @@
     <title>
       東北大学 大学院 工学研究科
       機械系
-      2022年実施 数学A 3
+      2024年実施 数学A 1
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
   <a href="./index.html">工学研究科 機械系</a> &gt;
-  2022年実施 数学A 3
+  2024年実施 数学A 1
   </nav>
   <hr>
 
@@ -50,7 +50,7 @@
     <br>
     機械系
     <br>
-    2022年実施 数学A 3
+    2024年実施 数学A 1
   </h1>
 
   <hr>
@@ -86,80 +86,63 @@
 
   <p>
   \begin{align}
-  \boldsymbol{\nabla} \times \boldsymbol{A}
-  &= 2x \boldsymbol{k}
-  ,\\
-  \boldsymbol{\nabla} \cdot \boldsymbol{A}
-  &= 2y+2
+  \lim_{x \to 0} \frac{e^x - \cos x}{2 \tan x}
+  &=
+  \frac{1}{2} \lim_{x \to 0} \frac{e^x + \sin x}{\frac{1}{\cos^2 x}}
+  \\
+  &=
+  \frac{1}{2}
   \end{align}
   </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=%E6%A5%B5%E9%99%90&assumption=%7B%22F%22%2C+%22Limit%22%2C+%22limitfunction%22%7D+-%3E%22%28e%5Ex+-+cos%28x%29%29%2Ftan%28x%29%22&assumption=%7B%22C%22%2C+%22%E6%A5%B5%E9%99%90%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Limit%22%2C+%22limit%22%7D+-%3E%220%22&lang=ja
+  -->
 
   <hr>
   <h2>(2)</h2>
 
   <p>
-  ガウスの発散定理より、
   \begin{align}
-  \int_S \boldsymbol{A} \cdot \boldsymbol{n} dS
-  &= \int_V \boldsymbol{\nabla} \cdot \boldsymbol{A} dV
+  \int_0^\infty x e^{-2x} \ dx
+  &= 
+  - \frac{1}{2} \left[ x e^{-2x} \right]_0^\infty
+  + \frac{1}{2} \int_0^\infty e^{-2x} \ dx
   \\
-  &= \int_{-1}^1 dx \int_0^{1-x^2} dz \int_0^1 dy \ (2y+2)
+  &= 
+  - \frac{1}{4} \left[ e^{-2x} \right]_0^\infty
   \\
-  &= \int_{-1}^1 dx \left( 1-x^2 \right) \left[ y^2 + 2y \right]_{y=0}^{y=1}
-  \\
-  &= 6 \int_0^1 dx \left( 1-x^2 \right)
-  \\
-  &= 6 \left[ x - \frac{x^3}{3} \right]_{x=0}^{x=1}
-  \\
-  &= 4
+  &= 
+  \frac{1}{4}
   \end{align}
-  である。
   </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%22infty%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%22x+exp%28-2x%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%220%22&lang=ja
+  -->
 
   <hr>
   <h2>(3)</h2>
 
   <p>
-  $S'$ 上の位置ベクトル $\boldsymbol{r}$ は
+  $x^2+2y^2-1=0$ より
   \begin{align}
-  \boldsymbol{r}
-  = x \boldsymbol{i} + y \boldsymbol{j} + \left( 1 - x^2 \right) \boldsymbol{k}
-  \ \ \ \ \left( -1 \leq x \leq 1, \ 0 \leq y \leq 1 \right)
+  x = \cos \theta, \ \ y = \frac{1}{\sqrt{2}} \sin \theta
+  \ \ \ \ ( 0 \leq \theta \lt 2 \pi )
   \end{align}
-  と表せるので、 $S'$ 上で
+  と書けるので、
+  $f=x-2y$ は
   \begin{align}
-  \frac{\partial \boldsymbol{r}}{\partial x}
-  &= \boldsymbol{i} - 2x \boldsymbol{k}
-  ,\\
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= \boldsymbol{j}
-  ,\\
-  \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y}
-  &= 2x \boldsymbol{i} + \boldsymbol{k}
-  ,\\
-  \boldsymbol{A} \cdot
-  \left( \frac{\partial \boldsymbol{r}}{\partial x} \times
-  \frac{\partial \boldsymbol{r}}{\partial y} \right)
-  &= 2x^2 + 2xyz + z + xy
+  y
+  &= x - 2y
   \\
-  &= -2x^3y + x^2 + 3xy + 1
+  &= \cos \theta - \sqrt{2} \sin \theta
+  \\
+  &= \sqrt{3} \sin (\theta + \alpha)
+  &( 0 \leq \alpha \lt 2 \pi )
   \end{align}
-  である。
-  よって、ストークスの定理より、
-  \begin{align}
-  \int_{\partial S'} \boldsymbol{A} \cdot d \boldsymbol{r}
-  &= \int_{-1}^1 dx \int_0^1 dy \left( -2x^3y + x^2 + 3xy + 1 \right)
-  \\
-  &= 2 \int_0^1 dx \int_0^1 dy \left( x^2 + 1 \right)
-  \\
-  &= 2 \int_0^1 dx \left( x^2 + 1 \right)
-  \\
-  &= 2 \left[ \frac{x^3}{3} + x \right]_0^1
-  \\
-  &= \frac{8}{3}
-  \end{align}
-  である。
+  と書ける。
+  よって、 $f=x-2y$ の極小値は $- \sqrt{3}$ で極大値は $\sqrt{3}$ である。
   </p>
 
   <hr>
@@ -180,7 +163,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
   <a href="./index.html">工学研究科 機械系</a> &gt;
-  2022年実施 数学A 3
+  2024年実施 数学A 1
   </nav>
 
 </body>
