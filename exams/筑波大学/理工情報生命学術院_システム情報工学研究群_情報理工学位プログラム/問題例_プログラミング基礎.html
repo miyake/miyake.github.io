@@ -18,7 +18,7 @@
       筑波大学 大学院
       理工情報生命学術院 システム情報工学研究群
       情報理工学位プログラム
-      問題例 線形代数
+      問題例 プログラミング基礎
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -42,7 +42,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/筑波大学/index.html">筑波大学</a> &gt;
   <a href="./index.html">理工情報生命学術院 システム情報工学研究群 情報理工学位プログラム</a> &gt;
-  問題例 線形代数
+  問題例 プログラミング基礎
   </nav>
   <hr>
 
@@ -51,7 +51,7 @@
     <br>
     システム情報工学研究群 情報理工学位プログラム
     <br>
-    問題例 線形代数
+    問題例 プログラミング基礎
   </h1>
 
   <hr>
@@ -83,51 +83,21 @@
 
   <hr>
 
-  <h2>問 1</h2>
-
   <p>
-  $A$ の固有値を $\lambda$ とすると、
-  \begin{align}
-  0
-  &= \det \begin{pmatrix} 1 - \lambda & 2 \\ 2 & 1 - \lambda \end{pmatrix}
-  \\
-  &= (\lambda-3)(\lambda+1)
-  \end{align}
-  なので、
-  \begin{align}
-  \lambda_1 = 3
-  , \ \ 
-  \lambda_2 = -1
-  \end{align}
-  である。
+  与えられた関数 <code>selection_sort</code> を
+  <code>selection_sort(5, [3,5,2,1,4])</code>
+  のように呼び出すと、結果は
   </p>
-
-  <hr>
-  <h2>問 2</h2>
-
+  <pre style="margin-left: 2em;">
+  <code>
+  3  5  2  1  4 
+  1  5  2  3  4 
+  1  2  5  3  4 
+  1  2  3  5  4 
+  </code>
+  </pre>
   <p>
-  固有値 $\lambda_1=3$ に属する固有ベクトルを求めるため
-  \begin{align}
-  \begin{pmatrix} -2 & 2 \\ 2 & -2 \end{pmatrix}
-  \begin{pmatrix} x \\ y \end{pmatrix}
-  =
-  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-  \end{align}
-  とおくと $x=y$ を得る。
-  固有値 $\lambda_2=-1$ に属する固有ベクトルを求めるため
-  \begin{align}
-  \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}
-  \begin{pmatrix} x \\ y \end{pmatrix}
-  =
-  \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-  \end{align}
-  とおくと $x+y=0$ を得る。
-  よって、
-  \begin{align}
-  X = \frac{1}{\sqrt{2}}
-  \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-  \end{align}
-  である。
+  となる。
   </p>
 
 
@@ -149,7 +119,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/筑波大学/index.html">筑波大学</a> &gt;
   <a href="./index.html">理工情報生命学術院 システム情報工学研究群 情報理工学位プログラム</a> &gt;
-  問題例 線形代数
+  問題例 プログラミング基礎
   </nav>
 
 </body>
