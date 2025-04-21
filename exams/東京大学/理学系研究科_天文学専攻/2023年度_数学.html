@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 理学系研究科 天文学専攻
+      2023年度 数学
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  <a href="./index.html">理学系研究科 天文学専攻</a> &gt;
+  2023年度 数学
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院
+    <br>
+    理学系研究科 天文学専攻
+    <br>
+    2023年度 数学
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.astron.s.u-tokyo.ac.jp/admission/graduate/exam/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>問 1.</h2>
+
+  <p>
+  $A$ の固有値 $\lambda_1, \lambda_2$ のそれぞれに対する固有ベクトルを
+  $\boldsymbol{u}_1, \boldsymbol{u}_2$ とする：
+  \begin{align}
+  A \boldsymbol{u}_1 &= \lambda_1 \boldsymbol{u}_1
+  \tag{5}
+  ,\\
+  A \boldsymbol{u}_2 &= \lambda_2 \boldsymbol{u}_2
+  \tag{6}
+  .
+  \end{align}
+  式 (5) から
+  \begin{align}
+  \boldsymbol{u}_2 \cdot A \boldsymbol{u}_1
+  &= \lambda_1 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  \end{align}
+  であり、式 (6) から
+  \begin{align}
+  A \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  &= \lambda_2 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  \\
+  \boldsymbol{u}_2 \cdot A^T \boldsymbol{u}_1
+  &= \lambda_2 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  \ \ \ \ \ \ \ \ ( \because \text{ (1) } )
+  \\
+  \boldsymbol{u}_2 \cdot A \boldsymbol{u}_1
+  &= \lambda_2 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  \ \ \ \ \ \ \ \ ( \because A=A^T )
+  \end{align}
+  であるから、
+  \begin{align}
+  \left( \lambda_1 - \lambda_2 \right) \boldsymbol{u}_2 \cdot \boldsymbol{u}_1
+  = 0
+  \end{align}
+  であり、 $\lambda_1 \ne \lambda_2$ のとき
+  $\boldsymbol{u}_2 \cdot \boldsymbol{u}_1 = 0$
+  である。
+  よって、異なる固有値に対する固有ベクトルは直交する。
+  </p>
+
+  <hr>
+  <h2>問 2.</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  $i=1,2,\cdots,n$ と $j=1,2,\cdots,n$ について、
+  $U^T U$ の $(i,j)$ 成分は
+  \begin{align}
+  \boldsymbol{u}_i \cdot \boldsymbol{u}_j
+  = \begin{cases} 1 & (i=j) \\ 0 & (i \ne j) \end{cases}
+  \end{align}
+  であるから、 $U^T U$ は単位行列であり、
+  $U^T$ は $U$ の逆行列 $U^{-1}$ である。
+  </p>
+
+  <h3>(b)</h3>
+
+  <p>
+  \begin{align}
+  U^T A U
+  &=
+  \begin{pmatrix}
+  \boldsymbol{u}_1^T \\ \boldsymbol{u}_2^T \\ \vdots \\ \boldsymbol{u}_n^T
+  \end{pmatrix}
+  A
+  \begin{pmatrix}
+  \boldsymbol{u}_1 & \boldsymbol{u}_2 & \cdots & \boldsymbol{u}_n
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  \boldsymbol{u}_1^T \\ \boldsymbol{u}_2^T \\ \vdots \\ \boldsymbol{u}_n^T
+  \end{pmatrix}
+  \begin{pmatrix}
+  A \boldsymbol{u}_1 & A \boldsymbol{u}_2 & \cdots & A \boldsymbol{u}_n
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  \boldsymbol{u}_1^T \\ \boldsymbol{u}_2^T \\ \vdots \\ \boldsymbol{u}_n^T
+  \end{pmatrix}
+  \begin{pmatrix} \lambda_1 \boldsymbol{u}_1 &
+  \lambda_2 \boldsymbol{u}_2 & \cdots & \lambda_n \boldsymbol{u}_n
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  \lambda_1 \boldsymbol{u}_1 \cdot \boldsymbol{u}_1 &
+  \lambda_2 \boldsymbol{u}_1 \cdot \boldsymbol{u}_2 &
+  \cdots &
+  \lambda_n \boldsymbol{u}_1 \cdot \boldsymbol{u}_n \\
+  \lambda_1 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1 &
+  \lambda_2 \boldsymbol{u}_2 \cdot \boldsymbol{u}_2 &
+  \cdots &
+  \lambda_n \boldsymbol{u}_2 \cdot \boldsymbol{u}_n \\
+  \vdots &
+  &
+  \ddots &
+  \vdots \\
+  \lambda_1 \boldsymbol{u}_2 \cdot \boldsymbol{u}_1 &
+  \cdots &
+  \cdots &
+  \lambda_n \boldsymbol{u}_2 \cdot \boldsymbol{u}_n \\
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  \lambda_1 & 0 & \cdots & 0 \\
+  0 & \lambda_2 & \cdots & 0 \\
+  \vdots & & \ddots & \vdots \\
+  0 & \cdots & \cdots & \lambda_n \\
+  \end{pmatrix}
+  \end{align}
+  であり、 $U^T=U^{-1}$ なので、式 (2) が成り立つ。
+  </p>
+
+  <h3>(c)</h3>
+
+  <p>
+  \begin{align}
+  \text{ 任意の } \boldsymbol{0} \text{ でないベクトル } \boldsymbol{x}
+  \text{ に対して } \boldsymbol{x} \cdot A \boldsymbol{x} \gt 0
+  \tag{7}
+  \end{align}
+  が成り立つとする。
+  ある $i \ (= 1, 2, \cdots, n)$ について、 $\lambda_i \leq 0$ とすると、
+  対応する（長さが $1$ の）固有ベクトル $\boldsymbol{u}_i$
+  について
+  \begin{align}
+  \boldsymbol{u}_i \cdot A \boldsymbol{u}_i
+  = \lambda_i \boldsymbol{u}_i \cdot \boldsymbol{u}_i
+  = \lambda_i
+  \leq 0
+  \end{align}
+  となり、式 (7) と矛盾する。
+  よって、式 (7) が成り立つとすると、
+  $\lambda_1, \lambda_2, \cdots, \lambda_n$ はすべて正値でなければならない。
+  </p>
+
+  <hr>
+  <h2>問 3.</h2>
+
+  <h3>(a)</h3>
+
+  <p>
+  (i)
+  $\mu \ (\ne 0)$ を $M$ の固有値とし、対応する固有ベクトルを
+  $\boldsymbol{u}$ とすると、
+  \begin{align}
+  M \boldsymbol{u} &= \mu \boldsymbol{u}
+  \\
+  P P^T \boldsymbol{u} &= \mu \boldsymbol{u}
+  \tag{8}
+  \\
+  P^T P P^T \boldsymbol{u} &= \mu P^T \boldsymbol{u}
+  \\
+  \therefore \ \ N P^T \boldsymbol{u} &= \mu P^T \boldsymbol{u}
+  \tag{9}
+  \end{align}
+  となる。
+  式 (8) から $P^T \boldsymbol{u} \ne \boldsymbol{0}$ がわかり、
+  さらに、式 (9) から $\mu$ は $N$ の固有値でもあることがわかる。
+  </p>
+
+  <p>
+  (ii)
+  $\nu \ (\ne 0)$ を $N$ の固有値とし、対応する固有ベクトルを
+  $\boldsymbol{v}$ とすると、
+  \begin{align}
+  N \boldsymbol{v} &= \nu \boldsymbol{v}
+  \\
+  P^T P \boldsymbol{v} &= \nu \boldsymbol{v}
+  \tag{10}
+  \\
+  P P^T P P \boldsymbol{v} &= \nu P \boldsymbol{v}
+  \\
+  \therefore \ \ M P \boldsymbol{v} &= \nu P \boldsymbol{v}
+  \tag{11}
+  \end{align}
+  となる。
+  式 (10) から $P \boldsymbol{v} \ne \boldsymbol{0}$ がわかり、
+  さらに、式 (11) から $\nu$ は $M$ の固有値でもあることがわかる。
+  </p>
+
+  <p>
+  (iii)
+  $M$ が固有値 $0$ をもつとき、対応する固有ベクトルを $\boldsymbol{u}$ とすると、
+  \begin{align}
+  M \boldsymbol{u} &= \boldsymbol{0}
+  \\
+  P P^T \boldsymbol{u} &= \boldsymbol{0}
+  \\
+  \boldsymbol{u} \cdot P P^T \boldsymbol{u} &= 0
+  \\
+  \left( P^T \boldsymbol{u} \right) \cdot \left( P^T \boldsymbol{u} \right) &= 0
+  \\
+  \therefore \ \ P^T \boldsymbol{u} &= \boldsymbol{0}
+  \end{align}
+  となるので、 $P^T$ はフルランクでない。
+  よって、 $P$ もフルランクではなく
+  $P \boldsymbol{v} = \boldsymbol{0}$ となるような
+  $\boldsymbol{v} \ (\ne \boldsymbol{0})$ が存在する。
+  この $\boldsymbol{v}$ について、
+  \begin{align}
+  P \boldsymbol{v} &= \boldsymbol{0}
+  \\
+  P^T P \boldsymbol{v} &= \boldsymbol{0}
+  \\
+  N \boldsymbol{v} &= \boldsymbol{0}
+  \end{align}
+  となるので、 $N$ も固有値 $0$ をもつことがわかる。
+  </p>
+
+  <p>
+  (iv)
+  $N$ が固有値 $0$ をもつとき、対応する固有ベクトルを $\boldsymbol{v}$ とすると、
+  \begin{align}
+  N \boldsymbol{v} &= \boldsymbol{0}
+  \\
+  P^T P \boldsymbol{v} &= \boldsymbol{0}
+  \\
+  \boldsymbol{v} \cdot P^T P \boldsymbol{v} &= 0
+  \\
+  \left( P \boldsymbol{v} \right) \cdot \left( P \boldsymbol{v} \right) &= 0
+  \\
+  \therefore \ \ P \boldsymbol{v} &= \boldsymbol{0}
+  \end{align}
+  となるので、 $P$ はフルランクでない。
+  よって、 $P^T$ もフルランクではなく
+  $P^T \boldsymbol{u} = \boldsymbol{0}$ となるような
+  $\boldsymbol{u} \ (\ne \boldsymbol{0})$ が存在する。
+  この $\boldsymbol{u}$ について、
+  \begin{align}
+  P^T \boldsymbol{u} &= \boldsymbol{0}
+  \\
+  P P^T \boldsymbol{u} &= \boldsymbol{0}
+  \\
+  M \boldsymbol{u} &= \boldsymbol{0}
+  \end{align}
+  となるので、 $M$ も固有値 $0$ をもつことがわかる。
+  </p>
+
+  <p>
+  (i), (ii), (iii), (iv) より、 $M$ の固有値は $N$ の固有値でもあり、
+  $N$ の固有値は $M$ の固有値でもあり、 $M$ と $N$ の固有値は一致することがわかる。
+  </p>
+
+  <h3>(b)</h3>
+
+  <p>
+  ベクトル $\boldsymbol{x}$ について
+  \begin{align}
+  \boldsymbol{x} \cdot M \boldsymbol{x}
+  = \boldsymbol{x} \cdot P P^T \boldsymbol{x}
+  = \left( P^T \boldsymbol{x} \right) \cdot \left( P^T \boldsymbol{x} \right)
+  \tag{12}
+  \end{align}
+  となるが、 $P$ （したがって $P^T$ ）が正則（フルランク）であれば、
+  任意の $\boldsymbol{x} \ (\ne \boldsymbol{0})$ について
+  $P^T \boldsymbol{x} \ne \boldsymbol{0}$ であり、
+  式 (12) は正となる。
+  したがって、問 2 (c) から、 $M$ の固有値はすべて正であることがわかる。
+  このとき、問 3 (c) から、 $N$ の固有値もすべて正である。
+  </p>
+
+  <p>
+  ※
+  問題文には「 $P$ が零行列でない限り」とあるが、
+  正しくは「 $P$ が正則行列である限り」であると思われる。
+  <br>
+  （参考：
+  <a href="https://www.amazon.co.jp/dp/4785313161/ref=nosim?tag=msscee0a-22">
+    佐竹一郎「線型代数学」 IV &sect;4. 二次形式 例
+  </a>
+  ）
+  </p>
+
+  <h3>(c)</h3>
+
+  <p>
+  $N$ の固有値 $\lambda$ に対する単位固有ベクトルが
+  $\boldsymbol{v}$ であることから
+  \begin{align}
+  N \boldsymbol{v} &= \lambda \boldsymbol{v}
+  \\
+  \boldsymbol{v} \cdot P^T P \boldsymbol{v}
+  &= \lambda \boldsymbol{v} \cdot \boldsymbol{v}
+  \\
+  \left( P \boldsymbol{v} \right) \cdot \left( P \boldsymbol{v} \right)
+  &= \lambda
+  \tag{13}
+  \end{align}
+  であり、また、問 3 (a) と同様にして、
+  $P \boldsymbol{v}$ は $M$ の固有値 $\lambda$ に対する固有ベクトルである。
+  よって、 $M$ の固有値 $\lambda$ に対する固有空間が $1$ 次元であると仮定すると、
+  式 (13) を考慮して、
+  \begin{align}
+  P \boldsymbol{v}
+  &= \pm \sqrt{\lambda} \boldsymbol{u}
+  \\
+  \therefore \ \ 
+  \boldsymbol{u}
+  &= \pm \frac{1}{\sqrt{\lambda}} P^T \boldsymbol{v}
+  \end{align}
+  がわかる。
+  </p>
+
+  <p>
+  $M$ の固有値 $\lambda$ に対する単位固有ベクトルが
+  $\boldsymbol{u}$ であることから
+  \begin{align}
+  M \boldsymbol{u} &= \lambda \boldsymbol{u}
+  \\
+  \boldsymbol{u} \cdot P P^T \boldsymbol{u}
+  &= \lambda \boldsymbol{u} \cdot \boldsymbol{u}
+  \\
+  \left( P^T \boldsymbol{u} \right) \cdot \left( P^T \boldsymbol{u} \right)
+  &= \lambda
+  \tag{14}
+  \end{align}
+  であり、また、問 3 (a) と同様にして、
+  $P^T \boldsymbol{u}$ は $N$ の固有値 $\lambda$ に対する固有ベクトルである。
+  よって、 $N$ の固有値 $\lambda$ に対する固有空間が $1$ 次元であると仮定すると、
+  式 (14) を考慮して、
+  \begin{align}
+  P^T \boldsymbol{u}
+  &= \pm \sqrt{\lambda} \boldsymbol{v}
+  \\
+  \therefore \ \ 
+  \boldsymbol{v}
+  &= \pm \frac{1}{\sqrt{\lambda}} P^T \boldsymbol{u}
+  \end{align}
+  がわかる。
+  </p>
+
+  <!--
+  <hr>
+  <h2>問 4.</h2>
+  -->
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  <a href="./index.html">理学系研究科 天文学専攻</a> &gt;
+  2023年度 数学
+  </nav>
+
+</body>
+</html>
+
