@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 情報学研究科
+      知能情報学専攻
+      2023年8月実施 専門科目 S-2 統計学 設問 2
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">情報学研究科 知能情報学専攻</a> &gt;
+  2023年8月実施 専門科目 S-2 統計学 設問 2
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 情報学研究科
+    <br>
+    知能情報学専攻
+    <br>
+    2023年8月実施 専門科目 S-2 統計学 設問 2
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.i.kyoto-u.ac.jp/admission/guide.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  \begin{align}
+  L \left( \mu, \sigma^2 \right)
+  &= \log \left(
+  \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}}
+  \exp \left( - \frac{\left( X_i - \mu \right)^2}{2 \sigma^2} \right)
+  \right)
+  \\
+  &= \log \left(
+  \left( 2 \pi \sigma^2 \right)^{- \frac{n}{2}}
+  \exp \left( - \sum_{i=1}^n \frac{\left( X_i - \mu \right)^2}{2 \sigma^2} \right)
+  \right)
+  \\
+  &=
+  - \sum_{i=1}^n \frac{\left( X_i - \mu \right)^2}{2 \sigma^2}
+  - \frac{n}{2} \log \left( 2 \pi \sigma^2 \right)
+  \end{align}
+  </p>
+
+  <h2>(2)</h2>
+
+  <p>
+  分散を $\theta = \sigma^2$ とすると、
+  \begin{align}
+  L
+  &=
+  - \frac{1}{2 \theta} \sum_{i=1}^n \left( X_i - \mu \right)^2
+  - \frac{n}{2} \log \left( 2 \pi \theta \right)
+  \end{align}
+  であり、
+  \begin{align}
+  \frac{\partial L}{\partial \mu}
+  &=
+  \frac{1}{\theta} \sum_{i=1}^n \left( X_i - \mu \right)
+  \\
+  &=
+  \frac{n}{\theta} \left( \frac{1}{n} \sum_{i=1}^n  X_i - \mu \right)
+  ,\\
+  \frac{\partial L}{\partial \theta}
+  &=
+  \frac{1}{2 \theta^2} \sum_{i=1}^n \left( X_i - \mu \right)^2
+  - \frac{n}{2 \theta}
+  \\
+  &=
+  \frac{n}{2 \theta^2}
+  \left( \frac{1}{n} \sum_{i=1}^n \left( X_i - \mu \right)^2
+  - \theta \right)
+  \end{align}
+  なので、 $\mu, \theta=\sigma^2$ の最尤推定量として、
+  \begin{align}
+  \hat{\mu} &= \frac{1}{n} \sum_{i=1}^n  X_i
+  ,\\
+  \hat{\theta}
+  &=
+  \frac{1}{n} \sum_{i=1}^n \left( X_i - \hat{\mu} \right)^2
+  \\
+  &=
+  \frac{1}{n} \sum_{i=1}^n \left( X_i -  \frac{1}{n} \sum_{i=j}^n  X_j \right)^2
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  （参考 :
+  <a href="https://www.amazon.co.jp/dp/4320013816/ref=nosim?tag=msscee0a-22">
+    小寺平治「明解演習 数理統計」 第6章 7.4
+  </a>
+  ）
+  </p>
+
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">情報学研究科 知能情報学専攻</a> &gt;
+  2023年8月実施 専門科目 S-2 統計学 設問 2
+  </nav>
+
+</body>
+</html>
+
