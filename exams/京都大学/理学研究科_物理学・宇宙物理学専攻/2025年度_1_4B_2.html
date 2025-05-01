@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      京都大学 大学院 理学研究科
+      物理学・宇宙物理学専攻
+      2025年度 I-4B (物理数学) (2)
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学・宇宙物理学専攻</a> &gt;
+  2025年度 I-4B (物理数学) (2)
+  </nav>
+  <hr>
+
+  <h1>
+    京都大学 大学院 理学研究科
+    <br>
+    物理学・宇宙物理学専攻
+    <br>
+    2025年度 I-4B (物理数学) (2)
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="http://www.scphys.kyoto-u.ac.jp/education/inshi/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <p>
+  与えられた $f(x)$ は偶関数であるから、次のように余弦級数展開できる：
+  \begin{align}
+  f(x)
+  &= \frac{a_0}{2} + \sum_{n=1}^\infty a_n \cos \left( \frac{n \pi x}{2a} \right)
+  .
+  \end{align}
+  ここで、
+  \begin{align}
+  a_0
+  &= \frac{1}{2a} \int_{-2a}^{2a} f(x) \ dx
+  \\
+  &= \frac{1}{2a} \int_{-a}^a dx
+  \\
+  &= 1
+  \end{align}
+  であり、 $n=1, 2, \cdots$ について
+  \begin{align}
+  a_n
+  &= \frac{1}{2a} \int_{-2a}^{2a} f(x) \cos \left( \frac{n \pi x}{2a} \right) \ dx
+  \\
+  &= \frac{1}{a} \int_0^a \cos \left( \frac{n \pi x}{2a} \right) \ dx
+  \\
+  &= \frac{1}{a} \cdot \frac{2a}{n \pi}
+  \left[ \sin \left( \frac{n \pi x}{2a} \right) \right]_0^a
+  \\
+  &= \frac{2}{n \pi} \sin \left( \frac{n \pi}{2} \right)
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  f(x)
+  &= \frac{1}{2}
+  + \frac{2}{\pi} \sum_{m=0}^\infty \frac{1}{4m+1}
+  \cos \left( \frac{(4m+1) \pi x}{2a} \right)
+  - \frac{2}{\pi} \sum_{m=0}^\infty \frac{1}{4m+3}
+  \cos \left( \frac{(4m+3) \pi x}{2a} \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=1%2F2+%2B+%282%2Fpi%29+cos%28%28pi+x%29%2F2%29+-+%282%2F%283+pi%29%29+cos%28%283+pi+x%29%2F2%29&lang=ja
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/京都大学/index.html">京都大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学・宇宙物理学専攻</a> &gt;
+  2025年度 I-4B (物理数学) (2)
+  </nav>
+
+</body>
+</html>
+
