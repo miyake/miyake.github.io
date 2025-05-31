@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東北大学 大学院 理学研究科 物理学専攻
-      2019年度 問題5 (熱・統計力学) [1]
+      2019年度 問題3 (電磁気学) [2]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,7 +40,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
   <a href="./index.html">理学研究科 物理学専攻</a> &gt;
-  2019年度 問題5 (熱・統計力学) [1]
+  2019年度 問題3 (電磁気学) [2]
   </nav>
   <hr>
 
@@ -49,7 +49,7 @@
     <br>
     物理学専攻
     <br>
-    2019年度 問題5 (熱・統計力学) [1]
+    2019年度 問題3 (電磁気学) [2]
   </h1>
 
   <hr>
@@ -82,141 +82,143 @@
   <hr>
   <h2>1)</h2>
 
-  <h3>a)</h3>
-
   <p>
-  単原子分子の理想気体なので、内部エネルギーを $U$ として、
+  式(1)より
   \begin{align}
-  U = \frac{3}{2} n R T
-  , \ \ \ \ 
-  PV=nRT
+  0
+  = \vec{\nabla} \cdot \vec{E}
+  = \frac{\partial E_x}{\partial x}
+  + \frac{\partial E_y}{\partial y}
+  + \frac{\partial E_z}{\partial z}
+  = \frac{\partial E_z}{\partial z}
+  = X(x) Y(y) \frac{dZ(z)}{dz} \sin \omega t
   \end{align}
-  が成り立つ。
-
-  また、熱力学第1,2法則より、
+  であるから、
   \begin{align}
-  dU = T dS - P dV
+  \frac{dZ(z)}{dz} = 0
   \end{align}
-  が成り立つ。
-
-  よって、
-  \begin{align}
-  dS
-  &= \frac{1}{T} dU + \frac{P}{T} dV
-  \\
-  &= \frac{3}{2} nR \frac{dT}{T} + nR \frac{dV}{V}
-  \end{align}
-  が成り立つ。
-  </p>
-
-  <h3>b)</h3>
-
-  <p>
-  \begin{align}
-  S(T,V)
-  &= S(T_0, V_0) + \frac{3}{2} nR \int_{T_0}^T \frac{dT}{T}
-  + nR \int_{V_0}^V \frac{dV}{V}
-  \\
-  &= S(T_0, V_0) + \frac{3}{2} nR \ln \frac{T}{T_0}
-  + nR \ln \frac{V}{V_0}
-  \\
-  &= S(T_0, V_0) + nR \ln \left[
-  \left( \frac{T}{T_0} \right)^\frac{3}{2} \left( \frac{V}{V_0} \right)
-  \right]
-  \end{align}
-  </p>
-
-  <h3>c)</h3>
-
-  <p>
-  混合前の状態方程式は、
-  \begin{align}
-  P V_1 = n_1 R T
-  , \ \ 
-  P V_2 = n_2 R T
-  \end{align}
-  であり、混合後の状態方程式は、
-  \begin{align}
-  P (V_1 + V_2) = (n_1 + n_2) R T
-  \end{align}
-  である。
-  </p>
-
-  <p>
-  $n_1$ モルの理想気体のエントロピー変化は、
-  \begin{align}
-  n_1 R \ln \left[
-  \left( \frac{T}{T} \right)^\frac{3}{2} \left( \frac{V_1+V_2}{V_1} \right)
-  \right]
-  =
-  n_1 R \ln \frac{(n_1+n_2)RT/P}{n_1RT/P}
-  =
-  n_1 R \ln \frac{n_1+n_2}{n_1}
-  \end{align}
-  であり、同様に、 $n_2$ モルの理想気体のエントロピー変化は、
-  \begin{align}
-  n_2 R \ln \frac{n_1+n_2}{n_2}
-  \end{align}
-  である。
-
-  よって、
-  \begin{align}
-  \Delta S
-  =
-  n_1 R \ln \frac{n_1+n_2}{n_1}
-  +
-  n_2 R \ln \frac{n_1+n_2}{n_2}
-  \end{align}
-  を得る。
+  であり、 $Z(z)$ は $z$ に依存しない定数である。
   </p>
 
   <hr>
   <h2>2)</h2>
 
-  <h3>a)</h3>
-
   <p>
+  式(5)のz成分の両辺に $E_z(x,y,t) = X(x) Y(y) Z \sin \omega t$ を代入すると、
   \begin{align}
-  \mu_A + \mu_B = \mu_C
+  \frac{d^2 X(x)}{dx^2} Y(y) Z \sin \omega t
+  + X(x) \frac{d^2 Y(y)}{dy^2} Z \sin \omega t
+  = - \varepsilon_0 \mu_0 \omega^2 X(x) Y(y) Z \sin \omega t
   \end{align}
-  </p>
-
-  <h3>b)</h3>
-
-  <p>
+  であるから、
   \begin{align}
-  \mu_{A0} + k_B T \ln \frac{P_A}{P_0}
-  + \mu_{B0} + k_B T \ln \frac{P_B}{P_0}
-  = \mu_{C0} + k_B T \ln \frac{P_C}{P_0}
-  \end{align}
-  を整理して、
-  \begin{align}
-  k_B T \ln \frac{P_C P_0}{P_A P_B}
-  &= \mu_{A0} + \mu_{B0} - \mu_{C0}
-  \\
-  k_B T \ln K_P &= - \Delta \mu_0
-  \\
-  \therefore \ \ 
-  K_P &= \exp \left( - \frac{\Delta \mu_0}{k_B T} \right)
-  \end{align}
-  </p>
-
-  <h3>c)</h3>
-
-  <p>
-  定数 $a (\gt 0), b$ を使って
-  \begin{align}
-  \ln K_P = a \frac{1}{T} + b
-  \end{align}
-  と書けるとき、
-  \begin{align}
-  \frac{\partial}{\partial T} \ln K_P = - \frac{a}{T^2}
-  \end{align}
-  となるので、与えられた式(7)より、
-  \begin{align}
-  \Delta H_0 = - Ra \lt 0
+  \frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2}
+  = - \varepsilon_0 \mu_0 \omega^2
   \end{align}
   を得る。
+  </p>
+
+  <hr>
+  <h2>3)</h2>
+
+  <p>
+  \begin{align}
+  \frac{1}{X} \frac{d^2 X}{dx^2} = -k_x^2
+  , \ \ \ \ 
+  \frac{1}{Y} \frac{d^2 Y}{dy^2} = -k_y^2
+  \end{align}
+  より、
+  \begin{align}
+  \frac{d^2 X}{dx^2} = -k_x^2 X
+  , \ \ \ \ 
+  \frac{d^2 Y}{dy^2} = -k_y^2 Y
+  \end{align}
+  であるから、 $X, Y$ の一般解は、次のようになる：
+  \begin{align}
+  \begin{cases}
+  X(x) = A \sin k_x x + B \cos k_x x
+  \\
+  Y(y) = C \sin k_y y + D \cos k_y y
+  \end{cases}
+  .
+  \end{align}
+  ここで、 $A, B, C, D$ は積分定数である。
+  </p>
+
+  <hr>
+  <h2>4)</h2>
+
+  <p>
+  (i)
+  $X(0)=0$ より、 $B=0$ であり、
+  \begin{align}
+  X(x) = A \sin k_x x
+  \end{align}
+  を得る。
+  $Y(0)=0$ より、 $D=0$ であり、
+  \begin{align}
+  Y(y) = C \sin k_y y
+  \end{align}
+  を得る。
+  よって、
+  \begin{align}
+  E_z
+  &= A \sin k_x x \cdot C \sin k_y y \cdot Z \sin \omega t
+  \\
+  &= E_{z0} \sin k_x x \sin k_y y \sin \omega t
+  \end{align}
+  を得る。
+  ここで、 $E_{z0} = A C Z$ とした。
+  </p>
+
+  <p>
+  (ii)
+  $X(a)=0$ より、
+  \begin{align}
+  k_x = \frac{\pi}{a} n_x
+  \ \ \ \ (n_x = 1, 2, \cdots)
+  \end{align}
+  を得る。
+  $Y(a)=0$ より、
+  \begin{align}
+  k_y = \frac{\pi}{a} n_y
+  \ \ \ \ (n_y = 1, 2, \cdots)
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+  <h2>5)</h2>
+
+  <p>
+  問2),3)より、
+  \begin{align}
+  -k_x^2 - k_y^2 = - \varepsilon_0 \mu_0 \omega^2
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \omega^2 = \frac{k_x^2 + k_y^2}{\varepsilon_0 \mu_0}
+  \end{align}
+  である。
+  これに、問4)で得た $k_x = \pi n_x / a, k_y = \pi n_y / a$ を代入すると、
+  \begin{align}
+  \omega^2 = \frac{\pi^2 (n_x^2 + n_y^2)}{\varepsilon_0 \mu_0 a^2}
+  \end{align}
+  となる。
+  $\omega = \omega_0$ となるのは $n_x=n_y=1$ のときなので、
+  \begin{align}
+  \omega_0^2 &= \frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}
+  \\
+  \therefore \ \ 
+  \omega_0 &= \sqrt{\frac{2 \pi^2}{\varepsilon_0 \mu_0 a^2}}
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+  <h2>6)</h2>
+
+  <p>
   </p>
 
   <hr>
@@ -237,7 +239,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東北大学/index.html">東北大学</a> &gt;
   <a href="./index.html">理学研究科 物理学専攻</a> &gt;
-  2019年度 問題5 (熱・統計力学) [1]
+  2019年度 問題3 (電磁気学) [2]
   </nav>
 
 </body>
