@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 情報学研究科
       知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      2019年度 確率・統計 [2]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -43,7 +43,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2019年度 確率・統計 [2]
   </nav>
   <hr>
 
@@ -52,7 +52,7 @@
     <br>
     知能システム学専攻, 情報システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2019年度 確率・統計 [2]
   </h1>
 
   <hr>
@@ -87,7 +87,15 @@
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  1
+  &=
+  12 \int_0^1 x^2(a-x) dx
+  \\
+  &=
+  4a-3
+  \\
+  \therefore \ \ \ \ 
+  a &= 1
   \end{align}
   </p>
 
@@ -96,7 +104,8 @@
 
   <p>
   \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  12 \int_0^{1/3} x^2(1-x) dx
+  = \frac{1}{9}
   \end{align}
   </p>
 
@@ -105,8 +114,18 @@
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
+  \mu
+  &=
+  12 \int_0^1 x^3 (1-x) dx
+  \\
+  &= \frac{3}{5}
+  \\
+  \sigma^2
+  &=
+  12 \int_0^1 x^4 (1-x) dx
+  - \left( \frac{3}{5} \right)^2
+  \\
+  &= \frac{1}{25}
   \end{align}
   </p>
 
@@ -114,78 +133,22 @@
   <h2>(4)</h2>
 
   <p>
-  求める期待値 $E(\text{表})$ は、
+  表が出る確率 $\theta$ のコインを $n$ 回投げて
+  すべて表が出る確率は $\theta^n$ であるから、
+  これの期待値は、
   \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
-  \end{align}
-  となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
+  \int_0^1 \theta^n f(\theta) d \theta
   &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
+  12 \int_0^1 \theta^{n+2} (1- \theta) d \theta
   \\
   &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
-  \\
-  &=
-  1
+  \frac{12}{(n+3)(n+4)}
   \end{align}
-  となるから、
-  \begin{align}
-  E \left( \text{表} \right) = 2
-  \end{align}
-  を得る。
+  である。
   </p>
 
-  <hr>
-  <h2>(5)</h2>
 
-  <p>
-  与えられた式を整理して、
-  \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
-  \\
-  &=
-  6
-  \end{align}
-  を得る。
-  </p>
 
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
-  \\
-  &=
-  14
-  \end{align}
-  を得る。
-  </p>
 
   <hr>
 <!-- 横長タイプ -->
@@ -207,7 +170,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2019年度 確率・統計 [2]
   </nav>
 
 </body>

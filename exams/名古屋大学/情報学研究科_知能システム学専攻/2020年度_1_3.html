@@ -16,8 +16,8 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       名古屋大学 大学院 情報学研究科
-      知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      知能システム学専攻
+      2020年度 解析・線形代数 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,19 +40,17 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2020年度 解析・線形代数 [3]
   </nav>
   <hr>
 
   <h1>
     名古屋大学 大学院 情報学研究科
     <br>
-    知能システム学専攻, 情報システム学専攻
+    知能システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2020年度 解析・線形代数 [3]
   </h1>
 
   <hr>
@@ -83,109 +81,60 @@
 </script>
 
   <hr>
-  <h2>(1)</h2>
+  <h2>(a)</h2>
 
   <p>
+  時刻 $t$ における P の速度の大きさを $v(t)$ とすると、
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(2)</h2>
-
-  <p>
-  \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(3)</h2>
-
-  <p>
-  \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(4)</h2>
-
-  <p>
-  求める期待値 $E(\text{表})$ は、
-  \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
-  \end{align}
-  となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
+  v(t)
+  &= \sqrt{ \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 }
   \\
-  &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
+  &= \sqrt{ 9 \sin^4 t \cos^2 t + 9 \sin^2 t \cos^4 t }
   \\
-  &=
-  1
+  &= \sqrt{ 9 \sin^2 t \cos^2 t }
+  \\
+  &= \frac{3}{2} \left| \sin 2t \right|
   \end{align}
-  となるから、
+  であるから、求める長さ $l$ は
   \begin{align}
-  E \left( \text{表} \right) = 2
+  l
+  &= \int_0^{2 \pi} v(t) dt
+  \\
+  &= \frac{3}{2} \int_0^{2 \pi} \left| \sin 2t \right| dt
+  \\
+  &= 3 \int_0^{\pi} \left| \sin 2t \right| dt
+  \\
+  &= 3 \left( \int_0^{\pi/2} \sin 2t dt - \int_{\pi/2}^{\pi} \sin 2t dt \right)
+  \\
+  &= \frac{3}{2} \left(
+  - \left[ \cos 2t \right]_0^{\pi/2}
+  + \left[ \cos 2t \right]_{\pi/2}^{\pi} \right)
+  \\
+  &= 6
   \end{align}
-  を得る。
+  である。
   </p>
 
   <hr>
-  <h2>(5)</h2>
+  <h2>(b)</h2>
 
   <p>
-  与えられた式を整理して、
+  $ 0 \lt t \lt \pi / 2 $ において、
   \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
-  \\
-  &=
-  6
+  v(t) &= \frac{3}{2} \sin 2t
   \end{align}
-  を得る。
+  であるから、 $v(t)$ が最大になるのは、 $ t = \pi / 4 $ のときであり、
+  このとき、
+  \begin{align}
+  x &= \sin^3 \frac{\pi}{4}
+  = \left( \frac{1}{\sqrt{2}} \right)^3 = \frac{1}{2 \sqrt{2}}
+  \\
+  y &= \cos^3 \frac{\pi}{4}
+  = \left( \frac{1}{\sqrt{2}} \right)^3 = \frac{1}{2 \sqrt{2}}
+  \end{align}
+  である。
   </p>
 
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
-  \\
-  &=
-  14
-  \end{align}
-  を得る。
-  </p>
 
   <hr>
 <!-- 横長タイプ -->
@@ -204,10 +153,8 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2020年度 解析・線形代数 [3]
   </nav>
 
 </body>

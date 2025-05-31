@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 情報学研究科
       知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      2018年度 確率・統計 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -43,7 +43,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2018年度 確率・統計 [3]
   </nav>
   <hr>
 
@@ -52,7 +52,7 @@
     <br>
     知能システム学専攻, 情報システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2018年度 確率・統計 [3]
   </h1>
 
   <hr>
@@ -86,106 +86,64 @@
   <h2>(1)</h2>
 
   <p>
+  求めるモーメント母関数 $M_X(t)$ は、
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  M_X(t)
+  &=
+  E \left[ e^{tX} \right]
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty e^{tx} e^{- \frac{(x - \mu)^2}{2 \sigma^2}} dx
+  \\
+  &=
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty
+  e^{ - \frac{x^2 - 2 ( \mu + \sigma^2 t ) x + \mu^2}{2 \sigma^2}}
+  dx
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}} \cdot
+  \frac{1}{\sqrt{2 \pi} \sigma}
+  \int_{- \infty}^\infty
+  e^{- \frac{(x - (\mu + \sigma^2 t))^2}{2 \sigma^2}} dx
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
   \end{align}
+  となる。
   </p>
 
   <hr>
   <h2>(2)</h2>
 
   <p>
+  求めるモーメント母関数 $M_Z(t)$ は、
   \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(3)</h2>
-
-  <p>
-  \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(4)</h2>
-
-  <p>
-  求める期待値 $E(\text{表})$ は、
-  \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
+  M_Z(t)
+  &=
+  E \left[ e^{tZ} \right]
+  \\
+  &=
+  E \left[ e^{t(X+Y)} \right]
+  \\
+  &=
+  E \left[ e^{tX} \right] E \left[ e^{tY} \right]
+  \\
+  &=
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
+  \cdot
+  e^{\mu t + \frac{\sigma^2 t^2}{2}}
+  \\
+  &=
+  e^{2 \mu t + \sigma^2 t^2}
   \end{align}
   となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
-  \\
-  &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
-  \\
-  &=
-  1
-  \end{align}
-  となるから、
-  \begin{align}
-  E \left( \text{表} \right) = 2
-  \end{align}
-  を得る。
+  したがって、
+  $Z$ は正規分布 $N(2 \mu, 2 \sigma^2)$ に従うことがわかる。
   </p>
 
-  <hr>
-  <h2>(5)</h2>
 
-  <p>
-  与えられた式を整理して、
-  \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
-  \\
-  &=
-  6
-  \end{align}
-  を得る。
-  </p>
-
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
-  \\
-  &=
-  14
-  \end{align}
-  を得る。
-  </p>
 
   <hr>
 <!-- 横長タイプ -->
@@ -207,7 +165,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2018年度 確率・統計 [3]
   </nav>
 
 </body>

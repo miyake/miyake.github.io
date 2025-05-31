@@ -16,8 +16,8 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       名古屋大学 大学院 情報学研究科
-      知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      知能システム学専攻
+      2022年度 解析・線形代数 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,19 +40,17 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2022年度 解析・線形代数 [3]
   </nav>
   <hr>
 
   <h1>
     名古屋大学 大学院 情報学研究科
     <br>
-    知能システム学専攻, 情報システム学専攻
+    知能システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2022年度 解析・線形代数 [3]
   </h1>
 
   <hr>
@@ -83,108 +81,44 @@
 </script>
 
   <hr>
-  <h2>(1)</h2>
+  <h2>(a)</h2>
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  A = \begin{pmatrix} a & a+1 \\ a+1 & a \end{pmatrix}
   \end{align}
   </p>
 
   <hr>
-  <h2>(2)</h2>
+  <h2>(b)</h2>
 
   <p>
+  $A$ の固有値を $\lambda$ とすると、
   \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(3)</h2>
-
-  <p>
-  \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(4)</h2>
-
-  <p>
-  求める期待値 $E(\text{表})$ は、
-  \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
-  \end{align}
-  となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
+  0 &= \det \begin{pmatrix} a - \lambda & a+1 \\ a+1 & a - \lambda \end{pmatrix}
   \\
-  &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
+  &= (\lambda + 1)(\lambda - 2a - 1)
   \\
-  &=
-  1
+  \therefore \ \ 
+  \lambda &= -1, 2a+1
   \end{align}
-  となるから、
-  \begin{align}
-  E \left( \text{表} \right) = 2
-  \end{align}
-  を得る。
+  である。
   </p>
 
   <hr>
-  <h2>(5)</h2>
+  <h2>(c)</h2>
 
   <p>
-  与えられた式を整理して、
+  2次形式 $Q$ が定符号であるということは、
+  対称行列 $A$ の2つの固有値が同符号であるということなので、
+  求める範囲は
   \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
+  2a+1 &\lt 0
   \\
-  &=
-  6
+  \therefore \ \ 
+  a &\lt - \frac{1}{2}
   \end{align}
-  を得る。
-  </p>
-
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
-  \\
-  &=
-  14
-  \end{align}
-  を得る。
+  である。
   </p>
 
   <hr>
@@ -204,10 +138,8 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2022年度 解析・線形代数 [3]
   </nav>
 
 </body>

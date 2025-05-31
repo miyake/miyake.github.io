@@ -17,7 +17,7 @@
     <title>
       名古屋大学 大学院 情報学研究科
       知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      2020年度 確率・統計 [2]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -43,7 +43,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2020年度 確率・統計 [2]
   </nav>
   <hr>
 
@@ -52,7 +52,7 @@
     <br>
     知能システム学専攻, 情報システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2020年度 確率・統計 [2]
   </h1>
 
   <hr>
@@ -87,8 +87,15 @@
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  \frac{\partial}{\partial x} f_{X,Y}(x,y)
+  &=
+  a ( -x^2 + 2x + y^2 ) e^{-x}
+  \\
+  \frac{\partial}{\partial y} f_{X,Y}(x,y)
+  &=
+  -2ay e^{-x}
   \end{align}
+  であるから、 $f_{X,Y}(x,y)$ が最大となるのは $x=2,y=0$ のときである。
   </p>
 
   <hr>
@@ -96,7 +103,12 @@
 
   <p>
   \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  f_X(x)
+  &=
+  a e^{-x} \int_{-x}^x ( x^2 - y^2 ) dy
+  \\
+  &=
+  \frac{4}{3} a x^3 e^{-x}
   \end{align}
   </p>
 
@@ -105,87 +117,40 @@
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
+  1
+  &=
+  \int_0^\infty f_X(x) dx
+  \\
+  &=
+  \frac{4}{3} a \int_0^\infty x^3 e^{-x} dx
+  \\
+  &=
+  8a
   \end{align}
+  であるから、
+  \begin{align}
+  a = \frac{1}{8}
+  \end{align}
+  である。
   </p>
 
   <hr>
   <h2>(4)</h2>
 
   <p>
-  求める期待値 $E(\text{表})$ は、
   \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
-  \end{align}
-  となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
+  \mu_x
   &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
+  \int_0^\infty x f_X(x) dx
   \\
   &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
+  \frac{1}{6} \int_0^\infty x^4 e^{-x} dx
   \\
   &=
-  1
+  4
   \end{align}
-  となるから、
-  \begin{align}
-  E \left( \text{表} \right) = 2
-  \end{align}
-  を得る。
   </p>
 
-  <hr>
-  <h2>(5)</h2>
-
-  <p>
-  与えられた式を整理して、
-  \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
-  \\
-  &=
-  6
-  \end{align}
-  を得る。
-  </p>
-
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
-  \\
-  &=
-  14
-  \end{align}
-  を得る。
-  </p>
 
   <hr>
 <!-- 横長タイプ -->
@@ -207,7 +172,7 @@
   <a href="./index.html">情報学研究科 知能システム学専攻</a>
   ,
   <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  2020年度 確率・統計 [2]
   </nav>
 
 </body>

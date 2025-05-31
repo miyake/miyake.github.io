@@ -16,8 +16,8 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       名古屋大学 大学院 情報学研究科
-      知能システム学専攻, 情報システム学専攻
-      2020年度 確率・統計 [1]
+      知能システム学専攻
+      2022年度 確率・統計 [3]
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -40,19 +40,17 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2022年度 確率・統計 [3]
   </nav>
   <hr>
 
   <h1>
     名古屋大学 大学院 情報学研究科
     <br>
-    知能システム学専攻, 情報システム学専攻
+    知能システム学専攻
     <br>
-    2020年度 確率・統計 [1]
+    2022年度 確率・統計 [3]
   </h1>
 
   <hr>
@@ -83,108 +81,74 @@
 </script>
 
   <hr>
+
   <h2>(1)</h2>
 
   <p>
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  P(X) = {}_n \mathrm{C}_X \left( \frac{1}{6} \right)^X \left( \frac{5}{6} \right)^{n-X}
   \end{align}
   </p>
 
-  <hr>
   <h2>(2)</h2>
 
   <p>
+  サイコロを振る回数を $n$ とすると、求める条件は、
   \begin{align}
-  1 \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}
+  \left( \frac{5}{6} \right)^n
+  &\geq 0.4
+  \\
+  &= \frac{2}{5}
+  \\
+  n \log_e \frac{5}{6} & \geq \log_e \frac{2}{5}
+  \\
+  n &\leq \frac{\log_e \frac{2}{5}}{\log_e \frac{5}{6}}
+  \\
+  &= \frac{\log_e 5 - \log_e 2}{\log_e 6 - \log_e 5}
+  \\
+  &\approx \frac{1.6094 - 0.6931}{1.7918 - 1.6094}
+  \\
+  &\approx 5.02
   \end{align}
+  であるから、5回まで振ることができる。
   </p>
 
-  <hr>
   <h2>(3)</h2>
 
   <p>
+  サイコロを10回振ったとき1の目が出る回数が1回以下となる確率を $p$ とすると、
   \begin{align}
-  \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2}
-  = \frac{1}{16}
-  \end{align}
-  </p>
-
-  <hr>
-  <h2>(4)</h2>
-
-  <p>
-  求める期待値 $E(\text{表})$ は、
-  \begin{align}
-  E \left( \text{表} \right)
-  =
-  1 \cdot \frac{1}{2}
-  + 2 \cdot \left( \frac{1}{2} \right)^2
-  + 3 \cdot \left( \frac{1}{2} \right)^3
-  + \cdots
-  \end{align}
-  であるが、両辺 1/2 倍すると、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  =
-  1 \cdot \left( \frac{1}{2} \right)^2
-  + 2 \cdot \left( \frac{1}{2} \right)^3
-  + 3 \cdot \left( \frac{1}{2} \right)^4
-  + \cdots
-  \end{align}
-  となる。
-  1番目の式から2番目の式を引くと、
-  \begin{align}
-  \frac{1}{2} E \left( \text{表} \right)
-  &=
-  \frac{1}{2}
-  + \left( \frac{1}{2} \right)^2
-  + \left( \frac{1}{2} \right)^3
-  + \cdots
+  p
+  &= \left( \frac{5}{6} \right)^{10}
+  + 10 \cdot \frac{1}{6} \cdot \left( \frac{5}{6} \right)^9
   \\
-  &=
-  \frac{1}{2} \frac{1}{1 - \frac{1}{2}}
-  \\
-  &=
-  1
+  &= \left( \frac{5}{6} \right)^9 \cdot \frac{5}{2}
   \end{align}
-  となるから、
+  なので、
   \begin{align}
-  E \left( \text{表} \right) = 2
-  \end{align}
-  を得る。
-  </p>
-
-  <hr>
-  <h2>(5)</h2>
-
-  <p>
-  与えられた式を整理して、
-  \begin{align}
-  E \left( \text{表表} \right)
-  &=
-  2 E \left( \text{表} \right) + 2
+  \log_e p
+  &= 9 (\log_e 5 - \log_e 6) + \log_e 5 - \log_e 2
   \\
-  &=
-  6
-  \end{align}
-  を得る。
-  </p>
-
-  <hr>
-  <h2>(6)</h2>
-
-  <p>
-  (5) と同じように考えて、
-  \begin{align}
-  E \left( \text{表表表} \right)
-  &=
-  2 E \left( \text{表表} \right) + 2
+  &= 10 \log_e 5 - 9 \log_e 6 - \log_e 2
   \\
-  &=
-  14
+  &\approx -0.7253
   \end{align}
-  を得る。
+  である。
+  一方、
+  \begin{align}
+  \log_e 0.5
+  &= \log_e \frac{1}{2}
+  \\
+  &= - \log_e 2
+  \\
+  &\approx - 0.6931
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  \log_e p \lt \log_e 0.5
+  \end{align}
+  であり、 $\log_e x$ は単調増加関数なので、 $p$ は $0.5$ 以上ではない。
   </p>
 
   <hr>
@@ -204,10 +168,8 @@
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/名古屋大学/index.html">名古屋大学</a> &gt;
-  <a href="./index.html">情報学研究科 知能システム学専攻</a>
-  ,
-  <a href="../情報システム学専攻/index.html">情報システム学専攻</a>
-  2020年度 確率・統計 [1]
+  <a href="./index.html">情報学研究科 知能システム学専攻</a> &gt;
+  2022年度 確率・統計 [3]
   </nav>
 
 </body>
