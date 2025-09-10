@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪公立大学 大学院
+      理学研究科 数学専攻
+      2025年度 II-11
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  <a href="./index.html">理学研究科 数学専攻</a> &gt;
+  2025年度 II-11
+  </nav>
+  <hr>
+
+  <h1>
+    大阪公立大学 大学院
+    <br>
+    理学研究科 数学専攻
+    <br>
+    2025年度 II-11
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.omu.ac.jp/sci/math/admission/past-questions/">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <p>
+  $\gamma_R$ 上で $z = R e^{\mathrm{i} \theta} \ ( 0 \leq \theta \leq \pi )$
+  であるから、
+  \begin{align}
+  e^{\mathrm{i} z}
+  &= e^{\mathrm{i} R \cos \theta} e^{- R \sin \theta}
+  \\
+  \therefore \ \ 
+  \left| e^{\mathrm{i} z} \right|
+  &= e^{- R \sin \theta}
+  \leq 1
+  \end{align}
+  であり、また、
+  \begin{align}
+  \left| z^2 + 4 \right|
+  \geq R^2 - 4
+  \ \left( \gt 0 \right)
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  \left| \int_{\gamma_R} \frac{e^{\mathrm{i} z}}{z^2 + 4} dz \right|
+  &\leq
+  \int_{\gamma_R}
+  \left| \frac{e^{\mathrm{i} z}}{z^2 + 4} \right| \left| dz \right|
+  \\
+  &\leq
+  \frac{\pi R}{R^2 - 4}
+  \\
+  &\to 0 \ \ (R \to \infty)
+  \\
+  \therefore \ \ 
+  \lim_{R \to \infty}
+  \int_{\gamma_R} \frac{e^{\mathrm{i} z}}{z^2 + 4} dz
+  &= 0
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  複素関数
+  \begin{align}
+  f(z)
+  &= \frac{e^{\mathrm{i} z}}{z^2 + 4}
+  = \frac{e^{\mathrm{i} z}}{(z+2i)(z-2i)}
+  \end{align}
+  は $z= \pm 2i$ に1位の極をもち、 
+  $z=2i$ における留数は
+  \begin{align}
+  \lim_{z \to 2i} (z-2i) f(z)
+  &= \lim_{z \to 2i} \frac{e^{\mathrm{i} z}}{z+2i}
+  = \frac{e^{-2}}{4i}
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  点 $z=-R$ から点 $z=R$ を線分で結ぶ積分路を $\gamma'_R$ とする。
+  $\gamma'_R$ と $\gamma_R$ をつないだ積分路について、
+  留数定理より、
+  \begin{align}
+  \int_{\gamma'_R} f(z) dz + \int_{\gamma_R} f(z) dz
+  &= 2 \mathrm{i} \pi \cdot \frac{e^{-2}}{4i}
+  \\
+  \therefore \ \ 
+  \int_{-R}^R \frac{e^{\mathrm{i} x}}{x^2 + 4} dx
+  + \int_{\gamma_R} f(z) dz
+  &= \frac{\pi}{2} e^{-2}
+  \end{align}
+  がわかる。
+  $R \to \infty$ とすると、 (1) より左辺第2項は $0$ となるので、
+  \begin{align}
+  \int_{- \infty}^\infty \frac{e^{\mathrm{i} x}}{x^2 + 4} dx
+  &= \frac{\pi}{2} e^{-2}
+  \end{align}
+  を得る。
+  両辺の実部を考えると、
+  \begin{align}
+  \int_{- \infty}^\infty \frac{\cos x}{x^2 + 4} dx
+  &= \frac{\pi}{2} e^{-2}
+  \end{align}
+  がわかる。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  <a href="./index.html">理学研究科 数学専攻</a> &gt;
+  2025年度 II-11
+  </nav>
+
+</body>
+</html>
+
