@@ -148,6 +148,7 @@
   \therefore \ \ 
   T
   &= \frac{1}{n} \ln (2)
+  .
   \end{align}
   これに $n=1/50$ [回/年] を代入すると、
   \begin{align}
@@ -159,6 +160,7 @@
   \end{align}
   を得る。
   $1987+34.65=2021.65$ であるから、求める $Y$ は $2021$ であろう。
+  （1987年1月1日から2021年12月31年までの35年間を考えれば、確率 0.5 を超える。）
   </p>
 
   <hr>
@@ -167,15 +169,17 @@
   <h3>(a)</h3>
 
   <p>
-  $X_s$ は期待値 $mt$ 分散 $mt$ の正規分布に従うとしてよい。
+  $X_s$ は正規分布 $\mathrm{N}(mt, mt)$ に従うとしてよい。
   $X_s$ と $X_r$ が独立であるとすると、
   与えられた性質 (正規分布の再生性) より、
-  $X_m$ は期待値 $mt$ 分散 $\sigma_r^2$ に従うことがわかるので、
+  $X_m$ は正規分布 $\mathrm{N}(mt, mt+\sigma_r^2)$
+  に従うことがわかるので、
   \begin{align}
   h(X_m)
   &= \frac{1}{\sqrt{2 \pi (mt + \sigma_r^2)}}
   \exp \left( - \frac{(X_m-mt)^2}{2(mt+\sigma_r^2)} \right)
   \end{align}
+  がわかる。
   </p>
 
   <h3>(b)</h3>
@@ -184,7 +188,7 @@
   $X_m$ の期待値と標準偏差はそれぞれ
   \begin{align}
   mt &= 40t
-  \\
+  , \\
   \sqrt{mt+\sigma_r^2} &= \sqrt{40t+400}
   \end{align}
   であり、
@@ -200,23 +204,25 @@
 
   <p>
   $\alpha \ (=1,2,\cdots,k)$ 番目のセットの
-  $i \ (=1,2,\cdots,j)$ 番目の乱数 $q_i^{(\alpha)}$ とする。
+  $i \ (=1,2,\cdots,j)$ 番目の乱数を $q_i^{(\alpha)}$ とする。
   (5)式を考慮して、
   \begin{align}
   z^{(\alpha)}
   &= \frac{1}{\sqrt{\frac{1}{12}} \cdot \sqrt{j}}
-  \left( \sum_{i=1}^j q_j^{(\alpha)} - j \cdot \frac{1}{2} \right)
+  \left( \sum_{i=1}^j q_i^{(\alpha)} - j \cdot \frac{1}{2} \right)
   \\
-  &= 2 \sqrt{\frac{3}{j}} \sum_{i=1}^j q_j^{(\alpha)} - \sqrt{3j}
+  &= 2 \sqrt{\frac{3}{j}} \sum_{i=1}^j q_i^{(\alpha)} - \sqrt{3j}
   \end{align}
-  とおくと、与えられた性質 (中心極限定理) より、これは標準正規分布に従う。
+  とおくと、与えられた性質 (中心極限定理) より、
+  これは標準正規分布 $\mathrm{N}(0,1)$ に従う。
   よって、さらに
   \begin{align}
   w_\alpha
   &= \sqrt{mt+\sigma_r^2} z^{(\alpha)} + mt
   \end{align}
   とおくと、与えられた性質 (標準正規分布の線形変換) により、
-  これの期待値は $mt$ で分散は $mt+\sigma_r^2$ であることがわかる。
+  これは正規分布 $\mathrm{N}(mt, mt+\sigma_r^2)$
+  に従うことがわかる。
   このようにして $w_1, w_2, \cdots, w_k$ を生成すればよい。
   </p>
 
