@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      大阪公立大学 大学院
+      理学研究科 物理学専攻
+      2025年度 II-2
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 II-2
+  </nav>
+  <hr>
+
+  <h1>
+    大阪公立大学 大学院
+    <br>
+    理学研究科 物理学専攻
+    <br>
+    2025年度 II-2
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.omu.ac.jp/sci/phys/admission/admin-grad.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+
+  <h2>(1)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  \begin{align}
+  \langle s_i \rangle
+  &= \frac{
+  \sum_{s_i = \pm 1} s_i \exp \left( - \frac{H_i}{k_BT} \right)
+  }{
+  \sum_{s_i = \pm 1} \exp \left( - \frac{H_i}{k_BT} \right)
+  }
+  \\
+  &= \frac{
+  \sum_{s_i = \pm 1} s_i \exp \left( \frac{zJms_i}{k_BT} \right)
+  }{
+  \sum_{s_i = \pm 1} \exp \left( - \frac{zJms_i}{k_BT} \right)
+  }
+  \\
+  &= \frac{
+  \exp \left( \frac{zJm}{k_BT} \right)
+  - \exp \left( - \frac{zJm}{k_BT} \right)
+  }{
+  \exp \left( \frac{zJm}{k_BT} \right)
+  + \exp \left( - \frac{zJm}{k_BT} \right)
+  }
+  \\
+  &= \tanh \left( \frac{zJm}{k_BT} \right)
+  \end{align}
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  (i) で求めた式で $\langle s_i \rangle = m$ とすると、
+  \begin{align}
+  m &= \tanh \left( \frac{zJm}{k_BT} \right)
+  \end{align}
+  となる。
+  </p>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  \begin{align}
+  E(m)
+  &= \frac{1}{2} \sum_{i=1}^N H_i
+  \\
+  &= - \frac{1}{2} zJm \sum_{i=1}^N s_i
+  &( \because \text{ 式 ③ } )
+  \\
+  &= - \frac{1}{2} zJm \cdot Nm
+  \\
+  &= - \frac{1}{2} NzJm^2
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>(3)</h2>
+
+  <p>
+  $N$ 個のスピンのうち、状態 $\pm 1$ のスピンの数を $N_\pm$
+  とする（複合同順）と、
+  \begin{align}
+  N = N_+ + N_-
+  , \ \ 
+  m = \frac{N_+ - N_-}{N}
+  \\
+  \therefore \ \ 
+  N_+ = \frac{1+m}{2} N
+  , \ \ 
+  N_- = \frac{1-m}{2} N
+  \end{align}
+  である。
+  よって、
+  \begin{align}
+  W(m)
+  &= \frac{N!}{N_+!N_-!}
+  \\
+  &= \frac{N!}{
+  \left( \frac{1+m}{2} N \right)!
+  \left( \frac{1-m}{2} N \right)!
+  }
+  ,
+  \\
+
+  S(m)
+  &= k_B \log W(m)
+  \\
+  &= k_B \log \frac{N!}{N_+! N_-!}
+  \\
+  &= k_B \left[ \left( N \log N - N \right)
+  - \left( N_+ \log N_+ - N_+ \right)
+  - \left( N_- \log N_- - N_- \right)
+  \right]
+  & ( \because \text{ スターリングの公式 } )
+  \\
+  &= k_B \left[
+  N \log N - N_+ \log N_+ - N_- \log N_- 
+  \right]
+  \\
+  &= k_B \left[
+  N \log N
+  - N_+ \left( \log N + \log (1+m) - \log 2 \right)
+  - N_- \left( \log N + \log (1-m) - \log 2 \right)
+  \right]
+  \\
+  &= k_B \left(
+  N \log 2
+  - \frac{1+m}{2} N \log (1+m)
+  - \frac{1-m}{2} N \log (1-m)
+  \right)
+  \\
+  &= \frac{1}{2} N k_B \left[
+  2 \log 2 - (1+m) \log (1+m) - (1-m) \log (1-m)
+  \right]
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>(4)</h2>
+
+  <p>
+  \begin{align}
+  \frac{\partial F}{\partial m}
+  &= \frac{\partial E}{\partial m}
+  - T \frac{\partial S}{\partial m}
+  \\
+  &= - NzJm - T \cdot \frac{1}{2} N k_B
+  \left[ - \log (1+m) + \log (1-m) \right]
+  \\
+  &= - NzJm + N k_B T \tanh^{-1} m
+  \end{align}
+  であり、これが $0$ であるとすると
+  \begin{align}
+  \tanh^{-1} m &= \frac{zJm}{k_BT}
+  \end{align}
+  となり、式 ④ が導かれる。
+  </p>
+
+  <hr>
+  <h2>(5)</h2>
+
+  <ul>
+    <li>
+      <a href="https://www.wolframalpha.com/input?i=y+%3D+2x%2C+y+%3D+tanh%28x%29&lang=ja">
+        $T \gt T_c $ のとき
+      </a>
+    </li>
+    <li>
+      <a href="https://www.wolframalpha.com/input?i=y+%3D+x%2C+y+%3D+tanh%28x%29&lang=ja">
+        $T = T_c $ のとき
+      </a>
+    </li>
+    <li>
+      <a href="https://www.wolframalpha.com/input?i=y+%3D+%283%2F4%29+x%2C+y+%3D+tanh%28x%29&lang=ja">
+        $T \lt T_c $ のとき
+      </a>
+    </li>
+  </ul>
+
+  <hr>
+  <h2>(6)</h2>
+
+  <p>
+  $T \lt T_c$ のとき、次のような増減表が得られる：
+  \begin{array}
+  {|c|ccccccc|}
+  \hline
+  m     & \cdots & -m_0 & \cdots & 0 & \cdots & m_0 & \cdots \\
+  \hline
+  x     & \cdots & -x_0 & \cdots & 0 & \cdots & x_0 & \cdots \\
+  \hline
+  - \tanh x + (T/T_c) x & - & 0 & + & 0 & - & 0 & +   \\
+  \hline
+  - m + T/T_c \tanh^{-1} m & - & 0 & + & 0 & - & 0 & +   \\
+  \hline
+  \partial F / \partial m & - & 0 & + & 0 & - & 0 & +   \\
+  \hline
+  F & \searrow &  & \nearrow & & \searrow & & \nearrow \\
+  \hline
+  \end{array}
+  $F(m)$ は $m$ に関して偶関数であるから、
+  $F(m)$ が最小になるのは $|m| = m_0$ のときであることがわかる。
+  </p>
+
+  <hr>
+  <h2>(7)</h2>
+
+  <p>
+  (5) の $T \lt T_c$ のときのグラフからわかるように、
+  $T / T_c \to +0$ のとき、 $x_0 \to \infty$ であり、
+  $m_0 \to 1$ である。
+  </p>
+
+  <hr>
+  <h2>(8)</h2>
+
+  <p>
+  $0 \lt T_c - T \ll T_c$ のとき、 $0 \lt x_0 \ll 1$ であり、
+  式 ⑧ は
+  \begin{align}
+  \frac{T}{T_c} x_0 \simeq x_0 - \frac{1}{3} x_0^3
+  \end{align}
+  となり、 $x_0 \gt 0$ を考慮して、
+  \begin{align}
+  x_0 &\simeq \sqrt{\frac{3(T_c-T)}{T_c}}
+  \\
+  \therefore \ \ 
+  m_0 &\simeq \sqrt{\frac{3(T_c-T)}{T_c}}
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/大阪公立大学/index.html">大阪公立大学</a> &gt;
+  <a href="./index.html">理学研究科 物理学専攻</a> &gt;
+  2025年度 II-2
+  </nav>
+
+</body>
+</html>
+
