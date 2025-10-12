@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京大学 大学院 情報理工学系研究科 電子情報学専攻
+      2025年度 第4問
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  <a href="./index.html">情報理工学系研究科 電子情報学専攻</a> &gt;
+  2025年度 第4問
+  </nav>
+  <hr>
+
+  <h1>
+    東京大学 大学院
+    <br>
+    情報理工学系研究科 電子情報学専攻
+    <br>
+    2025年度 第4問
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.i.u-tokyo.ac.jp/edu/course/ice/admission.shtml">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!--
+  <hr>
+  <p>
+  \begin{align}
+  \boldsymbol{x}_i
+  &= \begin{bmatrix}
+  x_{i1} \\ x_{i2} \\ \vdots \\ x_{iD}
+  \end{bmatrix}
+  & ( i = 1, 2, \cdots, N)
+  \end{align}
+  とおく。
+  このとき、
+  \begin{align}
+  \boldsymbol{X}
+  &= \begin{bmatrix}
+  \boldsymbol{x}_1 & \boldsymbol{x}_2 & \cdots & \boldsymbol{x}_N
+  \end{bmatrix}^T
+  \\
+  &= \begin{bmatrix}
+  \boldsymbol{x}_1^T \\ \boldsymbol{x}_2^T \\ \cdots \\ \boldsymbol{x}_N^T
+  \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+  x_{11} & x_{12} & \cdots & x_{1D} \\
+  x_{i1} & x_{i2} & \cdots & x_{2D} \\
+  \vdots & \vdots &  & \vdots \\
+  x_{N1} & x_{N2} & \cdots & x_{ND}
+  \end{bmatrix}
+  \end{align}
+  である。
+  つまり、 $\boldsymbol{X}$ の第 $(i,j)$ 成分は $x_{ij}$ である。
+  </p>
+-->
+
+  <hr>
+  <h2>(1)</h2>
+
+  <p>
+  $i = 1, 2, \cdots, N$ について
+  \begin{align}
+  e_i
+  &= y_i - \hat{y}_i
+  \\
+  &= y_i - \boldsymbol{\beta}^T \boldsymbol{x}_i
+  \\
+  &= y_i - \boldsymbol{x}_i^T \boldsymbol{\beta}
+  \end{align}
+  なので、
+  \begin{align}
+  \begin{bmatrix} e_1 \\ e_2 \\ \vdots \\ e_N \end{bmatrix}
+  &= 
+  \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_N \end{bmatrix}
+  -
+  \begin{bmatrix} \boldsymbol{x}_1^T \\ \boldsymbol{x}_2^T \\
+  \vdots \\ \boldsymbol{x}_N^T \end{bmatrix} \boldsymbol{\beta}
+  \\
+  &=
+  \boldsymbol{y} - \boldsymbol{X} \boldsymbol{\beta}
+  \end{align}
+  であるから、
+  \begin{align}
+  E
+  &= \sum_{i=1}^N e_i^2
+  \\
+  &=
+  \begin{bmatrix} e_1 & e_2 & \cdots & e_N \end{bmatrix}
+  \begin{bmatrix} e_1 \\ e_2 \\ \vdots \\ e_N \end{bmatrix}
+  \\
+  &=
+  \left( \boldsymbol{y} - \boldsymbol{X} \boldsymbol{\beta} \right)^T
+  \left( \boldsymbol{y} - \boldsymbol{X} \boldsymbol{\beta} \right)
+  \end{align}
+  と書ける。
+  </p>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  $E \geq 0$ であり、 $E$ は $\boldsymbol{\beta}$ の2次形式であるから、
+  $E$ を最小化する $\beta$ の満たすべき必要十分条件は
+  \begin{align}
+  \boldsymbol{0}
+  &= \frac{\partial E}{\partial \boldsymbol{\beta}}
+  \\
+  &= \frac{\partial}{\partial \boldsymbol{\beta}} \left(
+  \boldsymbol{y}^T \boldsymbol{y}
+  - 2 \boldsymbol{y}^T \boldsymbol{X} \boldsymbol{\beta}
+  + \boldsymbol{\beta}^T \boldsymbol{X}^T \boldsymbol{X} \boldsymbol{\beta} 
+  \right)
+  \\
+  &= -2 \boldsymbol{X}^T \boldsymbol{y} + \left(
+  \boldsymbol{X}^T \boldsymbol{X}
+  + \left( \boldsymbol{X}^T \boldsymbol{X} \right)^T
+  \right) \boldsymbol{\beta}
+  & \left( \because \text{ 与えられた関係式 } \right)
+  \\
+  &= -2 \boldsymbol{X}^T \boldsymbol{y}
+  + 2 \boldsymbol{X}^T \boldsymbol{X} \boldsymbol{\beta}
+  \\
+  \therefore \ \ 
+  \boldsymbol{X}^T \boldsymbol{X} \boldsymbol{\beta}
+  &= \boldsymbol{X}^T \boldsymbol{y}
+  & \left( \text{ 正規方程式と呼ばれる } \right)
+  \end{align}
+  である。
+  よって、求める必要十分条件は、
+  $\boldsymbol{X}^T \boldsymbol{X}$ が正則であること（ランクが $D$ であること）、
+  すなわち、 $\boldsymbol{X}$ のランクが $D$ であることである。
+  </p>
+
+  <hr>
+  <h2>(3)</h2>
+
+  <p>
+  $E$ を最小化する $\beta$ が一意に決まらないということは、
+  $\boldsymbol{X}$ のランクが $D$ より小さいということであり、
+  \begin{align}
+  \boldsymbol{X} = \begin{bmatrix}
+  \boldsymbol{\xi}_1 & \boldsymbol{\xi}_2 & \cdots & \boldsymbol{\xi}_D
+  \end{bmatrix}
+  \end{align}
+  と書いたとき、 $D$ 個の $N$ 次元ベクトル
+  $\boldsymbol{\xi}_1, \boldsymbol{\xi}_2, \cdots, \boldsymbol{\xi}_D$
+  が線形従属であるということである。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(4)</h2>
+
+  <p>
+  $N \times N$ の対角行列 $\boldsymbol{W}$ を
+  \begin{align}
+  \boldsymbol{W} = \begin{bmatrix}
+  w_1 & & & \\
+  & w_2 & & \\
+  & & \ddots & \\
+  & & & w_N
+  \end{bmatrix}
+  \end{align}
+  と定義すると、
+  \begin{align}
+  E_w
+  &= \sum_{i=1}^N w_i e_i^2
+  \\
+  &=
+  \begin{bmatrix} e_1 & e_2 & \cdots & e_N \end{bmatrix}
+  \boldsymbol{W}
+  \begin{bmatrix} e_1 \\ e_2 \\ \vdots \\ e_N \end{bmatrix}
+  \\
+  &=
+  \left( \boldsymbol{y} - \boldsymbol{X} \boldsymbol{\beta} \right)^T
+  \boldsymbol{W}
+  \left( \boldsymbol{y} - \boldsymbol{X} \boldsymbol{\beta} \right)
+  \end{align}
+  と書ける。
+
+  $E_w \geq 0$ であり、 $E_w$ は $\boldsymbol{\beta}$ の2次形式であるから、
+  $E_w$ を最小化する $\beta$ の満たすべき必要十分条件は
+  \begin{align}
+  \boldsymbol{0}
+  &= \frac{\partial E_w}{\partial \boldsymbol{\beta}}
+  \\
+  &= \frac{\partial}{\partial \boldsymbol{\beta}} \left(
+  \boldsymbol{y}^T \boldsymbol{W} \boldsymbol{y}
+  - 2 \boldsymbol{y}^T \boldsymbol{W} \boldsymbol{X} \boldsymbol{\beta}
+  + \boldsymbol{\beta}^T \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \boldsymbol{\beta} 
+  \right)
+  \\
+  &= -2 \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{y} + \left(
+  \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X}
+  + \left( \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \right)^T
+  \right) \boldsymbol{\beta}
+  & \left( \because \text{ (2) で与えられた関係式 } \right)
+  \\
+  &= -2 \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{y}
+  + 2 \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \boldsymbol{\beta}
+  \\
+  \therefore \ \ 
+  \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \boldsymbol{\beta}
+  &= \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{y}
+  \end{align}
+  である。
+  よって、 $E_w$ を最小化する $\boldsymbol{\beta}$ が一意に求める必要十分条件は
+  $\boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X}$
+  が正則であることであり、この際に得られる $\boldsymbol{\beta}$ は
+  \begin{align}
+  \boldsymbol{\beta}
+  &= \left( \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \right)^{-1}
+  \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{y}
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+  <h2>(5)</h2>
+
+  <p>
+  \begin{align}
+  \boldsymbol{X}
+  = \begin{bmatrix}
+  \boldsymbol{x}_1^T \\
+  \boldsymbol{x}_2^T \\
+  \boldsymbol{x}_3^T \\
+  \boldsymbol{x}_4^T
+  \end{bmatrix}
+  = \begin{bmatrix}
+  1 & 0 & 1 \\
+  0 & 1 & 1 \\
+  2 & 0 & 1 \\
+  1 & 1 & 0
+  \end{bmatrix}
+  , \ \ 
+  \boldsymbol{y}
+  = \begin{bmatrix} 2 \\ 3 \\ 3 \\ 1 \end{bmatrix}
+  , \ \ 
+  \boldsymbol{W} = \begin{bmatrix}
+  1 & 0 & 0 & 0 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & 2 & 0 \\
+  0 & 0 & 0 & 1
+  \end{bmatrix}
+  \end{align}
+  なので、
+  (4) で得た式
+  $
+  \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{X} \boldsymbol{\beta}
+  = \boldsymbol{X}^T \boldsymbol{W} \boldsymbol{y}
+  $
+  は
+  \begin{align}
+  \begin{bmatrix}
+  10 & 1 & 5 \\
+   1 & 2 & 1 \\
+   5 & 1 & 4
+  \end{bmatrix}
+  \begin{bmatrix} \beta_1 \\ \beta_2 \\ \beta_3 \end{bmatrix}
+  =
+  \begin{bmatrix} 5 \\ 10 \\ 27 \end{bmatrix}
+  \end{align}
+  となる。
+  この連立1次方程式の拡大係数行列
+  \begin{align}
+  \begin{bmatrix}
+  10 & 1 & 5 &  5 \\
+   1 & 2 & 1 & 10 \\
+   5 & 1 & 4 & 27
+  \end{bmatrix}
+  \end{align}
+  は、次のように行基本変形できる：
+  \begin{align}
+  \begin{bmatrix}
+  0 & -19 & -5 & -25 \\
+  1 &   2 &  1 &  10 \\
+  0 & - 9 & -1 & - 9
+  \end{bmatrix}
+  \\
+  \begin{bmatrix}
+  0 & -19 & -5 & -25 \\
+  1 &   2 &  1 &  10 \\
+  0 &   1 & 1/9 &  1
+  \end{bmatrix}
+  \\
+  \begin{bmatrix}
+  0 & 0 & -26/9 & -6 \\
+  1 & 0 &   7/9 &  2 \\
+  0 & 1 &   1/9 &  1
+  \end{bmatrix}
+  \\
+  \begin{bmatrix}
+  0 & 0 &   1   & 27/13 \\
+  1 & 0 &   7/9 &  2 \\
+  0 & 1 &   1/9 &  1
+  \end{bmatrix}
+  \\
+  \begin{bmatrix}
+  0 & 0 & 1 & 27/13 \\
+  1 & 0 & 0 &  5/13 \\
+  0 & 1 & 0 & 10/13
+  \end{bmatrix}
+  \end{align}
+  よって、
+  \begin{align}
+  \beta_1 =  \frac{5}{13}, \ \ \beta_2 = \frac{10}{13}, \ \ \beta_3 = \frac{27}{13}
+  \end{align}
+  がわかる。
+  </p>
+
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  <a href="./index.html">情報理工学系研究科 電子情報学専攻</a> &gt;
+  2025年度 第4問
+  </nav>
+
+</body>
+</html>
+
