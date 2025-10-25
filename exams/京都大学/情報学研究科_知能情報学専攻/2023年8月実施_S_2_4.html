@@ -81,7 +81,6 @@
 </script>
 
   <hr>
-
   <h2>(1)</h2>
 
   <p>
@@ -91,31 +90,183 @@
   求める確率は
   \begin{align}
   \frac{{}_4\mathrm{C}_3 \cdot {}_5\mathrm{C}_2}{{}_9\mathrm{C}_5}
-  = \frac{5}{189}
+  &= \frac{40}{126}
+  \tag{d}
+  \\
+  &= \frac{20}{63}
   \end{align}
   である。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <h2>(2)</h2>
 
   <p>
-  与えられた分割表は、薬Aの方が効果があるように見える。
-  さらに薬Aの方が効果が見えるのは、
-  薬A群の効果ありが4人で薬B群の効果ありが1人の場合である。
-  帰無仮説のもとで、このことが起こる確率は、
+  帰無仮説のもとで、
+  </p>
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>効果あり</td>
+      <td>効果なし</td>
+      <td>計</td>
+    </tr>
+    <tr>
+      <td>薬 A</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>薬 B</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>計</td>
+      <td>5</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <p>
+  が得られる確率は
+  \begin{align}
+  \frac{{}_4\mathrm{C}_0 \cdot {}_5\mathrm{C}_5}{{}_9\mathrm{C}_5}
+  = \frac{1}{126}
+  \tag{a}
+  \end{align}
+  であり、
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>効果あり</td>
+      <td>効果なし</td>
+      <td>計</td>
+    </tr>
+    <tr>
+      <td>薬 A</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>薬 B</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>計</td>
+      <td>5</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <p>
+  が得られる確率は
+  \begin{align}
+  \frac{{}_4\mathrm{C}_1 \cdot {}_5\mathrm{C}_4}{{}_9\mathrm{C}_5}
+  = \frac{20}{126}
+  \tag{b}
+  \end{align}
+  であり、
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>効果あり</td>
+      <td>効果なし</td>
+      <td>計</td>
+    </tr>
+    <tr>
+      <td>薬 A</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>薬 B</td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>計</td>
+      <td>5</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <p>
+  が得られる確率は
+  \begin{align}
+  \frac{{}_4\mathrm{C}_2 \cdot {}_5\mathrm{C}_3}{{}_9\mathrm{C}_5}
+  = \frac{60}{126}
+  \tag{c}
+  \end{align}
+  であり、
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>効果あり</td>
+      <td>効果なし</td>
+      <td>計</td>
+    </tr>
+    <tr>
+      <td>薬 A</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>薬 B</td>
+      <td>1</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>計</td>
+      <td>5</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <p>
+  が得られる確率は
   \begin{align}
   \frac{{}_4\mathrm{C}_4 \cdot {}_5\mathrm{C}_1}{{}_9\mathrm{C}_5}
-  = \frac{5}{3024}
-  \end{align}
-  である。
-  よって、求めるp値は
-  \begin{align}
-  \left( \frac{5}{189} + \frac{5}{3024} \right) \cdot 2
-  = \frac{85}{1512}
+  = \frac{5}{126}
+  \tag{e}
   \end{align}
   である。
   </p>
 
+  <p>
+  よって、問題文で与えられた「p値（両側検定）」は、
+  (a), (b), (d), (e) を足して
+  \begin{align}
+  \frac{1+20+40+5}{126}
+  = \frac{11}{21}
+  \end{align}
+  となる。
+  </p>
 
   <hr>
 <!-- 横長タイプ -->
