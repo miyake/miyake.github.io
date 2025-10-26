@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      神戸大学 大学院 システム情報学研究科
+      2025年度 数学 2
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/神戸大学/index.html">神戸大学</a> &gt;
+  <a href="./index.html">システム情報学研究科</a> &gt;
+  2025年度 数学 2
+  </nav>
+
+  <hr>
+
+  <h1>
+    神戸大学 大学院
+    <br>
+    システム情報学研究科
+    <br>
+    2025年度 数学 2
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://www.csi.kobe-u.ac.jp/exam/master_exam.html">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(1)</h2>
+
+  <p>
+  $g(z)=0$ とすると、
+  \begin{align}
+  e^z &= -1
+  \\
+  &= e^{\pi i}
+  \\
+  \therefore \ \ 
+  z &= \pi i + 2n \pi i
+  & \left( n \text{ は整数 } \right)
+  \\
+  &= (2n+1) \pi i
+  & \left( n \text{ は整数 } \right)
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(2)</h2>
+
+  <p>
+  $C$ の内側にある $f(z)/g(z)$ の特異点は $z=\pi i$ (1位の極) のみであり、
+  このときの留数は
+  \begin{align}
+  s
+  &= \lim_{z \to \pi i} \left( z - \pi i \right) \frac{f(z)}{g(z)}
+  \\
+  &= \lim_{z \to \pi i} \frac{f(z)}{\frac{g(z)-g(\pi i)}{z - \pi i}}
+  \\
+  &= \frac{f(\pi i)}{g'(\pi i)}
+  \\
+  &= \frac{e^{(\pi/4)i}}{e^{\pi i}}
+  \\
+  &= - \frac{1+i}{\sqrt{2}}
+  \end{align}
+  である。
+  よって、留数定理より
+  \begin{align}
+  \int_C \frac{f(z)}{g(z)} dz
+  &= 2 \pi i \cdot s
+  \\
+  &= \sqrt{2} \pi (1-i)
+  \end{align}
+  を得る。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(3)</h2>
+
+  <h3>(i)</h3>
+
+  <p>
+  $C_2$ 上において、
+  \begin{align}
+  z = R + yi \ \ \ \ (0 \leq y \leq 2 \pi)
+  \end{align}
+  と表せるので、
+  \begin{align}
+  \left| f(z) \right|
+  &= \left| e^{R/4} e^{yi/4} \right|
+  \\
+  &= e^{R/4}
+  ,\\
+  \left| g(z) \right|
+  &= \left| e^z + 1 \right|
+  \\
+  &\geq \left| e^z \right| - 1
+  \\
+  &= e^R - 1
+  ,
+  &\left( \gt 0, \ \ \because R \gt 0 \right)
+  \\
+  \left| \frac{f(z)}{g(z)} \right|
+  &\leq \frac{e^{R/4}}{e^R - 1}
+  \\
+  &= \frac{e^{-3R/4}}{1 - e^{-R}}
+  \end{align}
+  であり、
+  \begin{align}
+  \left| \int_{C_2} \frac{f(z)}{g(z)} dz \right|
+  &\leq 2 \pi \left| \frac{f(z)}{g(z)} \right|
+  \\
+  &\leq 2 \pi \frac{e^{-3R/4}}{1 - e^{-R}}
+  \to 0 \ \ \ \ (R \to \infty)
+  \end{align}
+  となるので、
+  \begin{align}
+  \lim_{R \to \infty} \int_{C_2} \frac{f(z)}{g(z)} dz
+  &= 0
+  \end{align}
+  がわかる。
+  </p>
+
+  <h3>(ii)</h3>
+
+  <p>
+  $C_4$ 上において、
+  \begin{align}
+  z = -R + yi \ \ \ \ (0 \leq y \leq 2 \pi)
+  \end{align}
+  と表せるので、
+  \begin{align}
+  \left| f(z) \right|
+  &= \left| e^{-R/4} e^{yi/4} \right|
+  \\
+  &= e^{-R/4}
+  ,\\
+  \left| g(z) \right|
+  &= \left| e^z + 1 \right|
+  \\
+  &\geq 1 - \left| e^z \right|
+  \\
+  &= 1 - e^{-R}
+  ,
+  &\left( \gt 0, \ \ \because R \gt 0 \right)
+  \\
+  \left| \frac{f(z)}{g(z)} \right|
+  &\leq \frac{e^{-R/4}}{1 - e^{-R}}
+  \end{align}
+  であり、
+  \begin{align}
+  \left| \int_{C_4} \frac{f(z)}{g(z)} dz \right|
+  &\leq 2 \pi \left| \frac{f(z)}{g(z)} \right|
+  \\
+  &\leq 2 \pi \frac{e^{-R/4}}{1 - e^{-R}}
+  \to 0 \ \ \ \ (R \to \infty)
+  \end{align}
+  となるので、
+  \begin{align}
+  \lim_{R \to \infty} \int_{C_4} \frac{f(z)}{g(z)} dz
+  &= 0
+  \end{align}
+  がわかる。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>(4)</h2>
+
+  <p>
+  \begin{align}
+  I_R = \int_{-R}^R \frac{e^{x/4}}{e^x+1} dx
+  \end{align}
+  とおくと、求める積分 $I$ は
+  \begin{align}
+  I = \lim_{R \to \infty} I_R
+  \end{align}
+  と表せる。
+  </p>
+
+  <p>
+  まず、
+  \begin{align}
+  \int_{C_1} \frac{f(z)}{g(z)} dz = I_R
+  \end{align}
+  である。
+  次に、 $C_3$ 上において
+  $z = x + 2 \pi i \ \ \ \ (-R \leq y \leq R)$
+  と表せるので、
+  \begin{align}
+  \int_{C_3} \frac{f(z)}{g(z)} dz
+  &= \int_R^{-R} \frac{e^{(x+2 \pi i)/4}}{e^{x+2 \pi i} + 1} dx
+  \\
+  &= -i \int_{-R}^R \frac{e^{x/4}}{e^x + 1} dx
+  \\
+  &= -i I_R
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  よって、 (2) より
+  \begin{align}
+  (1-i) I_R
+  + \int_{C_2} \frac{f(z)}{g(z)} dz
+  + \int_{C_4} \frac{f(z)}{g(z)} dz
+  &= \sqrt{2} \pi (1-i)
+  \end{align}
+  がわかる。
+  ここで $R \to \infty$ とすると、 (3) より
+  \begin{align}
+  (1-i) I &= \sqrt{2} \pi (1-i)
+  \end{align}
+  となり、
+  \begin{align}
+  I &= \sqrt{2} \pi
+  \end{align}
+  を得る。
+  </p>
+
+  <!--
+https://www.wolframalpha.com/input?i=%E5%AE%9A%E7%A9%8D%E5%88%86&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangeend%22%7D+-%3E%22infty%22&assumption=%7B%22C%22%2C+%22%E5%AE%9A%E7%A9%8D%E5%88%86%22%7D+-%3E+%7B%22Calculator%22%2C+%22dflt%22%7D&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22integrand%22%7D+-%3E%22exp%28x%2F4%29%2F%28exp%28x%29%2B1%29%22&assumption=%7B%22F%22%2C+%22Integral%22%2C+%22rangestart%22%7D+-%3E%22-infty%22&lang=ja
+  -->
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/神戸大学/index.html">神戸大学</a> &gt;
+  <a href="./index.html">システム情報学研究科</a> &gt;
+  2025年度 数学 2
+  </nav>
+
+</body>
+</html>
+
