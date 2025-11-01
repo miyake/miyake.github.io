@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
+    <title>
+      東京科学大学 大学院
+      生命理工学院 生命理工学系
+      2024年度 午前 ⑦
+      | 院試 過去問の解答
+      | miyake.github.io
+    </title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+          }
+        });
+      </script>
+    </head>
+
+<body>
+
+  <nav id="breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京科学大学</a> &gt;
+  <a href="./index.html">生命理工学院 生命理工学系</a> &gt;
+  2024年度 午前 ⑦
+  </nav>
+  <hr>
+
+  <h1>
+    東京工業大学 大学院
+    <br>
+    生命理工学院 生命理工学系
+    <br>
+    2024年度 午前 ⑦
+  </h1>
+
+  <hr>
+  <ul>
+    <li>
+    <a href="https://admissions.isct.ac.jp/ja/013/graduate/examination-questions">
+      問題はこちらから入手してください。
+    </a>
+    </li>
+    <li>
+    以下の解答はドラフト版です。
+    </li>
+    <li>
+    環境によっては、数式の表示に時間がかかる場合があります。
+    </li>
+  </ul>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>1)</h2>
+
+  <p>
+  \begin{align}
+  [A]_0 = [A] + [B] + [C]
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>2)</h2>
+
+  <p>
+  1次反応であるから、
+  \begin{align}
+  \frac{d}{dt} [A] = - k_a [A]
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+  <h2>3)</h2>
+
+  <p>
+  各ステップが1次反応であるから、
+  \begin{align}
+  \frac{d}{dt} [B] = k_a [A] - k_b [B]
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>4)</h2>
+
+  <p>
+  設問から、 $k_a \ne k_b$ を暗に仮定していることが読み取れる。
+  </p>
+
+  <p>
+  2) で得た微分方程式より、初期条件を考慮して、
+  \begin{align}
+  [A] = [A]_0 e^{-k_a t}
+  \end{align}
+  である。
+  したがって、 3) で得た微分方程式より、
+  \begin{align}
+  \frac{d}{dt} [B] &= k_a [A]_0 e^{-k_a t} - k_b [B]
+  \\
+  \frac{d}{dt} [B] + k_b [B] &= k_a [A]_0 e^{-k_a t}
+  \\
+  e^{k_b t} \frac{d}{dt} [B] + k_b e^{k_b t} [B]
+  &= k_a [A]_0 e^{(k_b-k_a) t}
+  \\
+  \frac{d}{dt} \left( e^{k_b t} [B] \right)
+  &= k_a [A]_0 e^{(k_b-k_a) t}
+  \\
+  e^{k_b t} [B]
+  &= k_a [A]_0 \int e^{(k_b-k_a) t} dt
+  \\
+  e^{k_b t} [B]
+  &= \frac{k_a}{k_b-k_a} [A]_0 e^{(k_b-k_a) t} + D
+  &\left( D \text{ は積分定数 } \right)
+  \end{align}
+  となるが、 $t=0$ のとき $[B]=0$ なので、
+  \begin{align}
+  0 &= \frac{k_a}{k_b-k_a} [A]_0 + D
+  \\
+  \therefore \ \ 
+  D &= - \frac{k_a}{k_b-k_a} [A]_0
+  \end{align}
+  であり、
+  \begin{align}
+  e^{k_b t} [B]
+  &= \frac{k_a}{k_b-k_a} [A]_0 \left( e^{(k_b-k_a) t} - 1 \right)
+  \\
+  \therefore \ \ 
+  [B]
+  &= \frac{k_a}{k_b-k_a} [A]_0
+  \left( e^{-k_a t} - e^{-k_b t} \right)
+  \end{align}
+  がわかる。
+  よって、 1) より、
+  \begin{align}
+  [C]
+  &= [A]_0 - [A] - [B]
+  \\
+  &= [A]_0 - [A]_0 e^{-k_a t}
+  - \frac{k_a}{k_b-k_a} [A]_0
+  \left( e^{-k_a t} - e^{-k_b t} \right)
+  \\
+  &= \left\{ 1 + \frac{k_a e^{-k_b t} - k_b e^{-k_a t}}{k_b-k_a} \right\}
+  [A]_0
+  \end{align}
+  となるので、 (ア) に該当するのは
+  \begin{align}
+  k_a e^{-k_b t} - k_b e^{-k_a t}
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>5)</h2>
+
+  <p>
+  4) で得た
+  \begin{align}
+  [B]
+  &= \frac{k_a}{k_b-k_a}
+  \left( e^{-k_a t} - e^{-k_b t} \right) [A]_0
+  \end{align}
+  より、
+  \begin{align}
+  \frac{d}{dt} [B]
+  &= \frac{k_a}{k_b-k_a}
+  \left( -k_a e^{-k_a t} + k_b e^{-k_b t} \right) [A]_0
+  \end{align}
+  であるから、 $d[B]/dt=0$ となる $t$ は
+  \begin{align}
+  k_a e^{-k_a t} &= k_b e^{-k_b t}
+  \\
+  e^{(k_b-k_a) t} &= \frac{k_b}{k_a}
+  \\
+  (k_b-k_a) t &= \ln \frac{k_b}{k_a}
+  \\
+  \therefore \ \ 
+  t &= \frac{1}{k_b-k_a} \ln \frac{k_b}{k_a}
+  \end{align}
+  である。
+  よって、増減表は
+  \begin{array}
+  {|c|ccccc|}
+  \hline
+  t & 0 & \cdots & \frac{1}{k_b-k_a} \ln \frac{k_b}{k_a} & \cdots & \\ \hline
+  d[B]/dt & & + & 0 & – & & \\ \hline
+  [B] & 0 & \nearrow &   & \searrow & 0 \\ \hline
+  \end{array}
+  となるから、
+  \begin{align}
+  t_\text{max} &= \frac{1}{k_b-k_a} \ln \frac{k_b}{k_a}
+  \end{align}
+  を得る。
+  </p>
+
+  <p>
+  ※ ちなみに、
+  \begin{align}
+  \lim_{k_b \to k_a} t_\text{max} &= \frac{1}{k_a}
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <nav id="footer_breadcrumbs">
+  <a href="../../../">miyake.github.io</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
+  <a href="../../../院試_過去問_解答/東京工業大学/index.html">東京科学大学</a> &gt;
+  <a href="./index.html">生命理工学院 生命理工学系</a> &gt;
+  2024年度 午前 ⑦
+  </nav>
+
+</body>
+</html>
+
