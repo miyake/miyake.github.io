@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
-      総合研究大学院大学 複合科学研究科 統計科学専攻
+      総合研究大学院大学 先端学術院 統計科学コース
       2018年1月実施 数理 第2問
       | 院試 過去問の解答
       | miyake.github.io
@@ -45,9 +45,9 @@
   <hr>
 
   <h1>
-    総合研究大学院大学 複合科学研究科
+    総合研究大学院大学 先端学術院
     <br>
-    統計科学専攻
+    統計科学コース
     <br>
     2018年1月実施 数理 第2問
   </h1>
@@ -80,26 +80,37 @@
 </script>
 
   <hr>
-
   <h2>[問1]</h2>
 
   <h3>(i)</h3>
 
   <p>
-  $f(x)$ を最小多項式 $\varphi_A(x)$ で割ったときの商を $g(x)$ 、
-  余りを $h(x)$ とする（ $h(x)$ は $\varphi_A(x)$ より次数が低い）：
+  $f(x)$ を最小多項式 $\varphi_A(x)$ で割ったときの商を $g(x),$
+  余りを $h(x)$ とする：
   \begin{align}
   f(x) = g(x) \varphi_A(x) + h(x)
+  , \ \ \ \ h(x) \text{ は } \varphi_A(x) \text{ より次数が低い }
+  .
   \end{align}
-  $f(A)=0, \varphi_A(A)=0$ であるから、
+  $f(A)=0$ であるから、
   \begin{align}
-  f(A) = g(A) \varphi_A(A) + h(A) = h(A) = 0
+  0
+  &= f(A)
+  \\
+  &= g(A) \varphi_A(A) + h(A)
+  \\
+  &= h(A)
+  &( \because \varphi_A(A) = 0 )
   \end{align}
-  ところが、最小多項式は $\varphi_A(x)$ であって、 $h(x)$ ではないので、
-  $h(x)$ は恒等的に $0$ である必要がある。
+  となるが、 $h(x)$ は最小多項式ではない（最小多項式は $\varphi_A(x)$ である）ので、
+  $h(x)$ は恒等的に $0$ である：
+  \begin{align}
+  h(x) = 0.
+  \end{align}
   よって、 $f(x)$ は $\varphi_A(x)$ で割り切れる：
   \begin{align}
   f(x) = g(x) \varphi_A(x)
+  .
   \end{align}
   </p>
 
@@ -122,25 +133,49 @@
   である。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <h2>[問2]</h2>
 
   <p>
-  まず、
+  $\varphi_A(x)$ は $x$ の多項式であり、
+  \begin{align}
+  \varphi_A(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{m-1} x^{m-1} + x^m
+  \end{align}
+  と書けるから、
   \begin{align}
   \varphi_A \left( P^{-1} A P \right)
-  = P^{-1} \varphi_A (A) P
-  = 0
+  &= a_0 + a_1 \left( P^{-1} A P \right) + a_2 \left( P^{-1} A P \right)^2
+  + \cdots + a_{m-1} \left( P^{-1} A P \right)^{m-1} + \left( P^{-1} A P \right)^m
+  \\
+  &= P^{-1} \left( a_0 + a_1 A + a_2 A^2 + \cdots + a_{m-1} A^{m-1} + A^m \right) P
+  \\
+  &= P^{-1} \varphi_A(A) P
+  \\
+  &= 0
   \end{align}
-  であるから、[問1]より、
-  $\varphi_A(x)$ は $\varphi_{P^{-1}AP}(x)$ で割り切れる。
+  がわかり、
+  [問1] より $\varphi_A(x)$ は $\varphi_{P^{-1}AP}(x)$ で割り切れることがわかる。
   同様に、
   \begin{align}
   \varphi_{P^{-1}AP} (A)
-  = P \varphi_{P^{-1}AP} \left( P^{-1} A P \right) P^{-1}
-  = 0
+  &= P \varphi_{P^{-1}AP} \left( P^{-1} A P \right) P^{-1}
+  \\
+  &= 0
   \end{align}
-  であるから $\varphi_{P^{-1}AP}(x)$ は $\varphi_A(x)$ で割り切れる。
-  したがって、適当な定数 $c$ を使って、
+  であり、 $\varphi_{P^{-1}AP}(x)$ は $\varphi_A(x)$ で割り切れることがわかる。
+  したがって、適当な定数 $c$ を使って
   \begin{align}
   \varphi_{P^{-1}AP} (x) = c \varphi_A (x)
   \end{align}
@@ -150,70 +185,135 @@
   \begin{align}
   \varphi_{P^{-1}AP} (x) = \varphi_A (x)
   \end{align}
-  である。
+  がわかる。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <h2>[問3]</h2>
 
   <p>
+  $A$ は対角化可能とし、
+  ある正則行列 $P$ によって
   \begin{align}
-  P^{-1} A P = \text{diag} (\alpha_1, \cdots, \alpha_1,
+  P^{-1} A P
+  &= \text{diag} (\alpha_1, \cdots, \alpha_1,
   \alpha_2, \cdots, \alpha_2, \cdots, \alpha_s, \cdots, \alpha_s)
-  \tag{1}
+  \\
+  &\left( = B \text{ とおく } \right)
   \end{align}
-  のとき、$P^{-1} A P$ の固有多項式 $f_{P^{-1} A P}(x)$ は、
+  と書けるとする（
+  $\alpha_1, \alpha_2, \cdots, \alpha_s$ はすべて異なっており、
+  $i=1,2,\cdots,s$ について $\alpha_i$ の個数を $n_i$ とする
+  ）。
+  </p>
+
+  <p>
+  $B$ の固有多項式 $f_B(x)$ は
   \begin{align}
-  f_{P^{-1} A P}(x)
+  f_B(x)
   = (x-\alpha_1)^{n_1} (x-\alpha_2)^{n_2} \cdots (x-\alpha_s)^{n_s}
   \end{align}
-  ここで、$n_1, n_2, \cdots, n_s$ はそれぞれ、
-  (1)式で $\alpha_1, \alpha_2, \cdots, \alpha_s$ が現れる回数である。
-  したがって、$P^{-1} A P$ の最小多項式は、
-  次のような形をもつ：
+  である。
+  Hamilton-Cayley の定理より $f_B(B)=0$ であるから、
+  [問1] より $f_B(x)$ は $B$ の最小多項式 $\varphi_B(x)$ で割り切れるため、
   \begin{align}
-  g(x) = (x-\alpha_1)^{m_1} (x-\alpha_2)^{m_2} \cdots (x-\alpha_s)^{m_s}
+  \varphi_B(x) = (x-\alpha_1)^{m_1} (x-\alpha_2)^{m_2} \cdots (x-\alpha_s)^{m_s}
   \end{align}
-  ここで、 $m_1, m_2, \cdots, m_s$ は、
+  と書ける。
+  ただし、 $m_1, m_2, \cdots, m_s$ は、
   \begin{align}
-  0 \leq m_1 \leq n_1,
-  0 \leq m_2 \leq n_2,
-  \cdots
+  0 \leq m_1 \leq n_1, \ 
+  0 \leq m_2 \leq n_2, \ 
+  \cdots, \ 
   0 \leq m_s \leq n_s
   \end{align}
   を満たす整数である。
   ところが、
-  $m_1 = m_2 = \cdots = m_s = 1$ すなわち、
   \begin{align}
   g(x) = (x-\alpha_1) (x-\alpha_2) \cdots (x-\alpha_s)
   \end{align}
-  のとき、
+  は、
   \begin{align}
-  g(A) = 0
+  g(B)
+  &=
+  \text{diag} (0, \cdots, 0, \alpha_2-\alpha_1, \cdots,
+  \alpha_2-\alpha_1, \cdots, \alpha_s-\alpha_1, \cdots, \alpha_s-\alpha_1)
+  \\
+  &\ \ \ \ \ \ \ \ 
+  \text{diag} (\alpha_1-\alpha_2 \cdots, \alpha_1-\alpha_2,
+  0, \cdots, 0, \cdots, \alpha_s-\alpha_2, \cdots, \alpha_s-\alpha_2)
+  \\
+  &\ \ \ \ \ \ \ \ 
+  \cdots
+  \\
+  &\ \ \ \ \ \ \ \ 
+  \text{diag} (\alpha_1-\alpha_s \cdots, \alpha_1-\alpha_s,
+  \alpha_2-\alpha_s, \cdots, \alpha_2-\alpha_s, \cdots, 0, \cdots, 0)
+  \\
+  &= 0
   \end{align}
-  である。
-  よって、 $g(x)$ が最小多項式になるのは、
-  $m_1 \leq 1, m_2 \leq 1, \cdots, m_s \leq 1$
-  のときであり、重根をもたない。
-  </p>
+  を満たすから、
+  \begin{align}
+  0 \leq m_1 \leq 1, \ 
+  0 \leq m_2 \leq 1, \ 
+  \cdots, \ 
+  0 \leq m_s \leq 1
+  \end{align}
+  がわかる。
+  したがって、 $\varphi_B(x)$ は重根をもたない。
+  （実際には、
+  \begin{align}
+  m_1 = m_2 = \cdots = m_s = 1
+  \end{align}
+  であるが、
+  重根をもたないことを言うためには、そこまで示す必要はない。）
 
   <p>
-  [問2] より $A$ の最小多項式は $P^{-1} A P$ の最小多項式に等しいので、
-  $A$ の最小多項式も重根をもたない。
+  [問2] より、 $A$ の最小多項式 $\varphi_A(x)$ について、
+  $\varphi_A(x) = \varphi_B(x)$ が成り立つから、
+  $\varphi_A(x)$ も重根をもたない。
   </p>
 
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
   <h2>[問4]</h2>
 
   <p>
   与えられた行列 $A$ の固有多項式は、
   \begin{align}
   \begin{vmatrix} x & -1 & 0 \\ 0 & x-1 & -1 \\ -1 & 1 & x-2 \end{vmatrix}
-  = x(x-1)(x-2)-1+x
-  = x^3 - 3x^2+3x-1
-  = (x-1)^3
+  &= x(x-1)(x-2)-1+x
+  \\
+  &= x^3 - 3x^2+3x-1
+  \\
+  &= (x-1)^3
   \end{align}
   であるから、 $A$ の最小多項式の候補は
   $x-1, (x-1)^2, (x-1)^3$ の3つである。
-  ところが、$A-1 \neq 0$ であるから、 $x-1$ は最小多項式ではない。
+  ところが、$A-E \neq 0$ であるから、 $x-1$ は最小多項式ではない。
   よって、最小多項式は $(x-1)^2, (x-1)^3$ のいずれかであり、重根をもつ。
   したがって、[問3] の対偶より、 $A$ は対角化可能ではない。
   </p>

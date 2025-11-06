@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
-      総合研究大学院大学 複合科学研究科 統計科学専攻
+      総合研究大学院大学 先端学術院 統計科学コース
       2020年1月実施 数理 第3問
       | 院試 過去問の解答
       | miyake.github.io
@@ -45,9 +45,9 @@
   <hr>
 
   <h1>
-    総合研究大学院大学 複合科学研究科
+    総合研究大学院大学 先端学術院
     <br>
-    統計科学専攻
+    統計科学コース
     <br>
     2020年1月実施 数理 第3問
   </h1>
@@ -80,7 +80,6 @@
 </script>
 
   <hr>
-
   <h2>[問1]</h2>
 
   <p>
@@ -110,7 +109,7 @@
   Q_2
   &=
   A_{11}^{-1} A_{12}
-  \\
+  ,\\
   Q_1
   &=
   A_{22} - A_{21} Q_2
@@ -120,6 +119,7 @@
   \end{align}
   </p>
 
+  <hr>
   <h2>[問2]</h2>
 
   <p>
@@ -151,6 +151,7 @@
   \end{align}
   </p>
 
+  <hr>
   <h2>[問3]</h2>
 
   <p>
@@ -176,6 +177,7 @@
   O & I
   \end{pmatrix}
   \right]^{-1}
+  &\left( \because \text{ [問1] } \right)
   \\
   &=
   \begin{pmatrix}
@@ -196,8 +198,10 @@
   A_{11}^{-1} & O \\
   Q_4 & Q_1^{-1}
   \end{pmatrix}
-  \ \ \ \ \ \ \ \ 
-  (Q_4 = - Q_1^{-1} A_{21} A_{11}^{-1})
+  &\left(
+  Q_4 = - Q_1^{-1} A_{21} A_{11}^{-1}
+  , \ \ \because \text{ [問2] }
+  \right)
   \\
   &=
   \begin{pmatrix}
@@ -225,21 +229,22 @@
   \end{align}
   </p>
 
+  <hr>
   <h2>[問4]</h2>
 
   <p>
   \begin{align}
+  &
   \left( A_{22} - A_{21} A_{11}^{-1} A_{12} \right)
   \left[
   A_{22}^{-1} + A_{22}^{-1} A_{21}
   \left( A_{11} - A_{12} A_{22}^{-1} A_{21} \right)^{-1}
   A_{12} A_{22}^{-1}
   \right]
-  &=
-  \cdots
   \\
-  &=
-  I
+  &= \cdots
+  \\
+  &= I
   \end{align}
   より、
   \begin{align}
