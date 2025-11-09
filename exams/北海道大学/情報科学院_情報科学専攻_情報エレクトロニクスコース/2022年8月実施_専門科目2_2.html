@@ -170,28 +170,47 @@
   \begin{pmatrix} 0 \\ 1 \end{pmatrix}
   \end{align}
   がわかる。
+
   よって、
   \begin{align}
-  \langle \lambda_1 | \hat{\sigma} | \varphi(t) \rangle
-  &= \langle \lambda_1 | \varphi(t) \rangle
+  \langle \lambda_1 | \varphi(t) \rangle
   \\
   &= \cos^2 \theta \exp \left( -i \frac{\varepsilon_1 t}{\hbar} \right)
   + \sin^2 \theta \exp \left( -i \frac{\varepsilon_2 t}{\hbar} \right)
   \end{align}
-  となり、求める確率は、
+  となり、求める確率は
   \begin{align}
-  \left| \langle \lambda_1 | \hat{\sigma} | \varphi(t) \rangle \right|^2
+  \left| \langle \lambda_1 | \varphi(t) \rangle \right|^2
   &= \cos^4 \theta + \sin^4 \theta
-  + \cos^2 \theta \sin^2 \theta \left(
+  + \sin^2 \theta \cos^2 \theta \left(
   \exp \left( i \frac{(\varepsilon_1-\varepsilon_2) t}{\hbar} \right)
   + \exp \left( -i \frac{(\varepsilon_1-\varepsilon_2) t}{\hbar} \right)
   \right)
   \\
-  &= 1 + \frac{1}{2} \sin^2 2 \theta \left(
-  \cos \left( \frac{(\varepsilon_1-\varepsilon_2)t}{\hbar} - 1 \right) \right)
+  &= \left( 1 - 2 \sin^2 \theta \cos^2 \theta \right)
+  + 2 \sin^2 \theta \cos^2 \theta
+  \cos \left( \frac{(\varepsilon_1-\varepsilon_2)t}{\hbar} \right)
+  \\
+  &= 1 - 2 \sin^2 \theta \cos^2 \theta \left(
+  1 - \cos \left( \frac{(\varepsilon_1-\varepsilon_2)t}{\hbar} \right) \right)
+  \\
+  &= 1 - \sin^2 \left( 2 \theta \right)
+  \sin^2 \left( \frac{(\varepsilon_1-\varepsilon_2)t}{2 \hbar} \right)
   \end{align}
   である。
   </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
   <hr>
   <h2>2.</h2>
