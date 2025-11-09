@@ -81,7 +81,6 @@
 </script>
 
   <hr>
-
   <h2>(a)</h2>
 
   <p>
@@ -97,6 +96,7 @@
   \end{align}
   </p>
 
+  <hr>
   <h2>(b)</h2>
 
   <p>
@@ -112,23 +112,26 @@
   \end{align}
   </p>
 
+  <hr>
   <h2>(c)</h2>
 
   <p>
-  逆関数の定義より、
+  $p = \sigma(x)$ とすると $0 \lt p \lt 1$ であり、
+  逆関数の定義より $x = \sigma^{-1}(p)$ であるから、
+  シグモイド関数 $\sigma$ の定義より、
   \begin{align}
-  p &= \frac{1}{1 + \exp(-\sigma^{-1}(x))}
+  p &= \frac{1}{1 + \exp(-\sigma^{-1}(p))}
   \end{align}
   であり、次のように計算できる：
   \begin{align}
-  \exp(-\sigma^{-1}(x))
+  \exp(-\sigma^{-1}(p))
   &= \frac{1}{p} - 1
   \\
   &= \frac{1-p}{p}
   \\
-  - \sigma^{-1}(x) &= \log \left( \frac{1-p}{p} \right)
+  - \sigma^{-1}(p) &= \log \left( \frac{1-p}{p} \right)
   \\
-  \sigma^{-1}(x)
+  \sigma^{-1}(p)
   &= - \log \left( \frac{1-p}{p} \right)
   \\
   &= \log \left( \frac{p}{1-p} \right)

@@ -85,6 +85,7 @@
   時刻を $t$ で表し、時間微分を $d/dt$ や $\dot{}$ で表す。
   </p>
 
+  <hr>
   <h2>1.</h2>
 
   <h3>(1)</h3>
@@ -116,7 +117,7 @@
   x(t)
   &= \left(
   A \sin \left( \frac{\sqrt{4mk - c^2}}{2m} t \right)
-  + B \sin \left( \frac{\sqrt{4mk - c^2}}{2m} t \right)
+  + B \cos \left( \frac{\sqrt{4mk - c^2}}{2m} t \right)
   \right) \exp \left( - \frac{c}{2m} t \right)
   \end{align}
   である。
@@ -218,25 +219,59 @@ https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%
   - \frac{\omega_1^2}{4}
   \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
   \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+  \tag{a}
+  .
   \end{align}
-  $x_1 = \xi, x_2 = - \xi, x_3 = 0$ の場合を考えると、
+  棒の中点が静止した状態で棒の両端が逆位相で振動する運動は
   \begin{align}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
+  =
+  \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
+  \end{align}
+  と書けるから、これを運動方程式 (a) に代入すると、
+  \begin{align}
+  \frac{d^2}{dt^2} \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
+  &= - \frac{\omega_1^2}{4}
   \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
   \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
-  = 4 \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
+  \\
+  &= - \omega_1^2
+  \begin{pmatrix} \xi \\ - \xi \\ 0 \end{pmatrix}
   \end{align}
-  となるので、これは角振動数 $\omega_1$ の固有振動モードであることがわかる。
+  となり、角振動数 $\omega_1$ の固有振動モードであることがわかる。
   </p>
 
   <h3>(4)</h3>
 
   <p>
-  (3) で現れた行列
+  運動方程式 (a) に現れた行列
   \begin{align}
   \Lambda
   = \begin{pmatrix} 5 & 1 & -2 \\ 1 & 5 & -2 \\ -2 & -2 & 4 \end{pmatrix}
   \end{align}
-  の固有値を $\lambda$ とすると、
+  の固有値を $\lambda$ とし、
+  それに対応する固有ベクトルを $\boldsymbol{v}$ とすると、
+  $\boldsymbol{v} \sin \omega t$
+  は $\omega \ (\gt 0)$ を適切に選べば固有振動モードになる。
+  実際、運動方程式 (a) に代入すると、
+  \begin{align}
+  \frac{d^2}{dt^2} \boldsymbol{v} \sin \omega t
+  &= - \frac{\omega_1^2}{4} \Lambda \boldsymbol{v} \sin \omega t
+  \\
+  - \omega^2 \boldsymbol{v} \sin \omega t
+  &= - \frac{\omega_1^2}{4} \lambda \boldsymbol{v} \sin \omega t
+  \\
+  \therefore \ \ 
+  \omega^2 &= \frac{\omega_1^2}{4} \lambda
+  \tag{b}
+  \end{align}
+  となるので、これを満たすように $\omega$ を選べば
+  $\boldsymbol{v} \sin \omega t$ は固有振動モードになる
+  （このときの $\omega$ が固有振動数である）。
+  </p>
+
+  <p>
+  $\lambda$ を具体的に求めると、
   \begin{align}
   0
   &= \det \begin{pmatrix}
@@ -248,9 +283,15 @@ https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%
   \therefore \ \ 
   \lambda &= 2, 4, 8
   \end{align}
-  なので、 $\omega_1$ 以外の固有角振動数は
-  $\omega_1 / \sqrt{2}, 2 \omega_1$
   である。
+  よって、式 (b) より、
+  \begin{align}
+  \omega^2 &= \frac{\omega_1^2}{2}, \ \omega_1^2, \ 2 \omega_1^2
+  \end{align}
+  がわかり、
+  $\omega_1$ 以外の固有角振動数は
+  $\omega_1 / \sqrt{2}, \sqrt{2} \omega_1$
+  であることがわかる。
   </p>
 
   <h3>(5)</h3>
@@ -264,7 +305,7 @@ https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%
   , \ \ 
   \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}
   \end{align}
-  であるので、固有角振動数 $\omega_1 / \sqrt{2}, \omega_1, 2 \omega_1$
+  であるので、固有角振動数 $\omega_1 / \sqrt{2}, \omega_1, \sqrt{2} \omega_1$
   の固有振動モードはそれぞれ
   \begin{align}
   \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
@@ -275,7 +316,7 @@ https://www.wolframalpha.com/input?i=%E5%9B%BA%E6%9C%89%E5%80%A4&assumption=%7B%
   B \sin \left( \omega_1 t + \beta \right)
   \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
   ,
-  C \sin \left( 2 \omega_1 t + \gamma \right)
+  C \sin \left( \sqrt{2} \omega_1 t + \gamma \right)
   \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}
   \end{align}
   と書ける。
