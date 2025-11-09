@@ -81,7 +81,6 @@
 </script>
 
   <hr>
-
   <h2>(1)</h2>
 
   <p>
@@ -89,6 +88,7 @@
   が成り立つので、 $a=-1$ がわかる。
   </p>
 
+  <hr>
   <h2>(2)</h2>
 
   <p>
@@ -104,48 +104,97 @@
   \lambda &= 1, -2
   \end{align}
   がわかる。
+  </p>
+
+  <p>
+  (i)
   固有値 $\lambda=1$ に属する固有ベクトルを求めるため、
   \begin{align}
-  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
-  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \\
+  \therefore \ \ 
+  \begin{pmatrix} -1 & 2 & 0 \\ 1 & -2 & 1 \\ 0 & 0 & 0 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
   \end{align}
-  とおくと、 $x=2y,z=0$ がわかるので、規格化された固有ベクトルとして、
+  とおくと、 $x=2y,z=0$ がわかるので、
   \begin{align}
-  \boldsymbol{u} = \frac{1}{\sqrt{5}} \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
+  \boldsymbol{u} = \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
   \end{align}
-  を得る。
+  は固有値 $\lambda=1$ に属する固有ベクトルである。
+  </p>
+
+  <p>
+  (ii)
   固有値 $\lambda=1$ に属する一般化固有ベクトルを求めるため、
   \begin{align}
   \left( A - E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  = \boldsymbol{u}
+  &= \boldsymbol{u}
+  \\
+  \therefore \ \ 
+  \begin{pmatrix} -1 & 2 & 0 \\ 1 & -2 & 1 \\ 0 & 0 & 0 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}
   \end{align}
-  とおくと、 $-x+2y=2/\sqrt{5}, z=3/\sqrt{5}$ がわかるので、
+  とおくと、 $-x+2y=2, z=3$ がわかるので、
   \begin{align}
-  \boldsymbol{v} = \frac{1}{\sqrt{5}} \begin{pmatrix} -2 \\ 0 \\ 3 \end{pmatrix}
+  \boldsymbol{v} = \begin{pmatrix} -2 \\ 0 \\ 3 \end{pmatrix}
   \end{align}
-  とすればよい。
+  は固有値 $\lambda=1$ に属する一般化固有ベクトルである。
+  </p>
+
+  <p>
+  (iii)
   固有値 $\lambda=-2$ に属する固有ベクトルを求めるため、
   \begin{align}
-  \left( A + 2E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
-  \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \left( A + 2E \right) \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+  \\
+  \therefore \ \ 
+  \begin{pmatrix} 2 & 2 & 0 \\ 1 & 1 & 1 \\ 0 & 0 & 3 \end{pmatrix}
+  \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
   \end{align}
-  とおくと、 $x+y=0,z=0$ がわかるので、規格化された固有ベクトルとして、
+  とおくと、 $x+y=0,z=0$ がわかるので、
   \begin{align}
-  \boldsymbol{w} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+  \boldsymbol{w} = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
   \end{align}
-  を得る。
-  以上より、求める $P$ は
+  は固有値 $\lambda=-2$ に属する固有ベクトルである。
+  </p>
+
+  <p>
+  (i), (ii), (iii) より、
   \begin{align}
-  P
+  Q
   &= \begin{pmatrix} \boldsymbol{u} & \boldsymbol{v} & \boldsymbol{w} \end{pmatrix}
   \\
   &= \begin{pmatrix}
-  \frac{2}{\sqrt{5}} & -\frac{2}{\sqrt{5}} &  \frac{1}{\sqrt{2}} \\
-  \frac{1}{\sqrt{5}} &                   0 & -\frac{1}{\sqrt{2}} \\
-                   0 &  \frac{3}{\sqrt{5}} &                   0
+  2 & -2 &  1 \\
+  1 &  0 & -1 \\
+  0 &  3 &  0
   \end{pmatrix}
   \end{align}
-  である。
+  とおくと、
+  \begin{align}
+  Q^{-1} A Q
+  &= \begin{pmatrix}
+  1 & 1 &  0 \\
+  0 & 1 &  0 \\
+  0 & 0 & -2
+  \end{pmatrix}
+  \end{align}
+  が成り立ち、これは求める $P$ の条件を満たす。
+  つまり、
+  \begin{align}
+  P
+  &= \begin{pmatrix}
+  2 & -2 &  1 \\
+  1 &  0 & -1 \\
+  0 &  3 &  0
+  \end{pmatrix}
+  \end{align}
+  とすればよい（一意的ではない）。
   </p>
 
   <hr>
