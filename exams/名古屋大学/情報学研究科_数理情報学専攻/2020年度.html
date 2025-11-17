@@ -81,14 +81,19 @@
 </script>
 
   <hr>
-
   <h2>(1)</h2>
 
+  <p>
+  （ $\boldsymbol{v} \cdot \boldsymbol{\sigma}$
+  がエルミート行列であることを示せば良い？）
+  </p>
+
+  <hr>
   <h2>(2)</h2>
 
   <p>
   \begin{align}
-  \left( \vec{v} \cdot \vec{\sigma} \right)^2
+  \left( \boldsymbol{v} \cdot \boldsymbol{\sigma} \right)^2
   &=
   \begin{pmatrix}
   z & x-iy \\ x+iy & -z
@@ -104,50 +109,52 @@
   \end{align}
   であるから、すべての $n \in \mathbb{N}$ に対して、
   \begin{align}
-  \left( \vec{v} \cdot \vec{\sigma} \right)^{2n} = I
+  \left( \boldsymbol{v} \cdot \boldsymbol{\sigma} \right)^{2n} = I
   , \ \ \ \ 
-  \left( \vec{v} \cdot \vec{\sigma} \right)^{2n+1}
-  = \vec{v} \cdot \vec{\sigma}
+  \left( \boldsymbol{v} \cdot \boldsymbol{\sigma} \right)^{2n+1}
+  = \boldsymbol{v} \cdot \boldsymbol{\sigma}
   \end{align}
   が成り立つ。
   </p>
 
+  <hr>
   <h2>(3)</h2>
 
   <p>
   \begin{align}
-  e^{i t \vec{v} \cdot \vec{\sigma}}
+  e^{i t \boldsymbol{v} \cdot \boldsymbol{\sigma}}
   &=
   \sum_{k=0}^\infty \frac{1}{k!}
-  \left( it \vec{v} \cdot \vec{\sigma} \right)^k
+  \left( it \boldsymbol{v} \cdot \boldsymbol{\sigma} \right)^k
   \\
   &=
   \left( 1 - \frac{1}{2!} t^2 + \frac{1}{4!} t^4 - \cdots \right) I
   + i \left( t - \frac{1}{3!} t^3 + \frac{1}{5!} t^5 - \cdots \right)
-  \vec{v} \cdot \vec{\sigma}
+  \boldsymbol{v} \cdot \boldsymbol{\sigma}
   \\
   &=
-  (\cos t) I + (i \sin t) \vec{v} \cdot \vec{\sigma}
+  (\cos t) I + (i \sin t) \boldsymbol{v} \cdot \boldsymbol{\sigma}
   \end{align}
   </p>
 
+  <hr>
   <h2>(4)</h2>
 
   <p>
-  $ (\vec{v} \cdot \vec{\sigma})^\dagger
-  = \vec{v} \cdot \vec{\sigma} $ であるから、
+  $ (\boldsymbol{v} \cdot \boldsymbol{\sigma})^\dagger
+  = \boldsymbol{v} \cdot \boldsymbol{\sigma} $ であるから、
   すべての $ t \in \mathbb{R} $ に対して、
   \begin{align}
   U_t^\dagger
   &=
-  (\cos t) I - (i \sin t) \vec{v} \cdot \vec{\sigma}
+  (\cos t) I - (i \sin t) \boldsymbol{v} \cdot \boldsymbol{\sigma}
   \end{align}
   であり、
   \begin{align}
   U_t U_t^\dagger
   &=
-  \left\{ (\cos t) I + (i \sin t) \vec{v} \cdot \vec{\sigma} \right\}
-  \left\{ (\cos t) I - (i \sin t) \vec{v} \cdot \vec{\sigma} \right\}
+  \left\{ (\cos t) I + (i \sin t) \boldsymbol{v} \cdot \boldsymbol{\sigma} \right\}
+  \left\{ (\cos t) I - (i \sin t) \boldsymbol{v} \cdot \boldsymbol{\sigma} \right\}
   \\
   &=
   I
@@ -155,6 +162,7 @@
   であるから、 $U_t$ はユニタリー行列である。
   </p>
 
+  <hr>
   <h2>(5)</h2>
 
   <p>
@@ -168,7 +176,7 @@
   U_t \left| \psi \right\rangle
   \\
   &=
-  \left\{ (\cos t) I + (i \sin t) \vec{v} \cdot \vec{\sigma} \right\}
+  \left\{ (\cos t) I + (i \sin t) \boldsymbol{v} \cdot \boldsymbol{\sigma} \right\}
   \left| \psi \right\rangle
   \\
   &=
@@ -227,12 +235,25 @@
   を得る。
   </p>
 
+  <hr>
   <h2>[参考]</h2>
 
   <ul>
-    <li><a href="https://www.amazon.co.jp/dp/4781910629/ref=nosim?tag=msscee0a-22">清水明「量子論の基礎」</a></li>
-    <li><a href="https://www.amazon.co.jp/dp/4065239230/ref=nosim?tag=msscee0a-22">堀田昌寛「入門 現代の量子力学」</a></li>
-    <li><a href="https://www.amazon.co.jp/dp/4815810494/ref=nosim?tag=msscee0a-22">谷村省吾「量子力学10講」</a></li>
+    <li>
+      <a href="https://www.amazon.co.jp/dp/4781910629/ref=nosim?tag=msscee0a-22">
+        清水明「量子論の基礎」
+      </a>
+    </li>
+    <li>
+      <a href="https://www.amazon.co.jp/dp/4065239230/ref=nosim?tag=msscee0a-22">
+        堀田昌寛「入門 現代の量子力学」
+      </a>
+    </li>
+    <li>
+      <a href="https://www.amazon.co.jp/dp/4815810494/ref=nosim?tag=msscee0a-22">
+        谷村省吾「量子力学10講」
+      </a>
+    </li>
   </ul>
 
   <hr>
