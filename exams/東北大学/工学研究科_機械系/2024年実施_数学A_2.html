@@ -153,14 +153,15 @@
   <h2>(3)</h2>
 
   <p>
+  (2) より、
   \begin{align}
   \begin{pmatrix} A^{2n} & A^{2n+1} \\ A^{2n+1} & A^{2n} \end{pmatrix}
   &=
   \begin{pmatrix}
-    a & 1-a &   1 & 0   \\
-  1+a &  -a &   0 & 1   \\
     1 &   0 &   a & 1-a \\
-    0 &   1 & 1+a &  -a
+    0 &   1 & 1+a &  -a \\
+    a & 1-a &   1 &   0 \\
+  1+a &  -a &   0 &   1
   \end{pmatrix}
   &\left( =
   \begin{pmatrix}
@@ -169,11 +170,12 @@
   \end{pmatrix}
   \text{ とおく } \right)
   \end{align}
-  $\boldsymbol{a},\boldsymbol{b}$ が1次独立であるのは明らかであり、
+  である。
+  $\boldsymbol{c},\boldsymbol{d}$ が1次独立であるのは明らかであり、
   \begin{align}
-  \boldsymbol{c} &= a \boldsymbol{a} + (1+a) \boldsymbol{b}
+  \boldsymbol{a} &= a \boldsymbol{c} + (1+a) \boldsymbol{d}
   ,\\
-  \boldsymbol{d} &= (1-a) \boldsymbol{a} - a \boldsymbol{b}
+  \boldsymbol{b} &= (1-a) \boldsymbol{c} - a \boldsymbol{d}
   \end{align}
   であるから、求めるランクは $2$ である。
   </p>
