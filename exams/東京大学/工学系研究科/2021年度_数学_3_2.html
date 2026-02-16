@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東京大学 大学院 工学系研究科
-      2023年度 数学 第1問 I
+      2021年度 数学3 II
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2021年度 数学3 II
   </nav>
   <hr>
 
@@ -50,7 +50,9 @@
     <br>
     工学系研究科 共通問題
     <br>
-    2023年度 数学 第1問 I
+    2021年度 数学3
+    (主に複素関数論)
+    II
   </h1>
 
   <hr>
@@ -83,18 +85,28 @@
   <hr>
 
   <p>
+  $0$ でない複素数 $z$ を極形式で $z=re^{i \theta} \ \ (r \gt 0, 0 \leq \theta \lt 2 \pi)$
+  と表すと、
   \begin{align}
-  \lim_{x \to 0} \frac{b^x - c^x}{ax}
-  &= \lim_{x \to 0} \frac{e^{x \log b} - e^{x \log c}}{ax}
+  J(z)
+  &= e^{-i \alpha} z + e^{i \alpha} z^{-1}
   \\
-  &= \lim_{x \to 0}
-  \frac{\log b \cdot e^{x \log b} - \log c \cdot e^{x \log c}}{a}
+  &= r e^{i (\theta - \alpha)} + \frac{1}{r} e^{-i (\theta - \alpha)}
   \\
-  &= \frac{\log b - \log c}{a}
-  \\
-  &= \frac{1}{a} \log \frac{b}{c}
+  &= \left( r + \frac{1}{r} \right) \cos (\theta - \alpha) + i \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
   \end{align}
+  なので、これの虚部
+  \begin{align}
+  \left( r - \frac{1}{r} \right) \sin (\theta - \alpha)
+  \end{align}
+  が正となるのは、「 $r \gt 1$ かつ $ \alpha \lt \theta \lt \alpha + \pi$ 」
+  または「 $r \lt 1$ かつ $ 0 \lt \theta \lt \alpha, \alpha + \pi \lt \theta \lt 2 \pi$ 」
+  のときである。
+  （図示は省略。）
   </p>
+
+
+
 
   <hr>
 <!-- 横長タイプ -->
@@ -114,7 +126,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2021年度 数学3 II
   </nav>
 
 </body>

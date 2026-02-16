@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東京大学 大学院 工学系研究科
-      2022年度 数学 2
+      2022年度 数学2 I
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2022年度 数学 2
+  2022年度 数学2 I
   </nav>
   <hr>
 
@@ -50,8 +50,9 @@
     <br>
     工学系研究科 共通問題
     <br>
-    2022年度 数学 2
+    2022年度 数学2
     (主に「ベクトル・行列・固有値（線形代数）」と「曲線・曲面」)
+    I
   </h1>
 
   <hr>
@@ -82,9 +83,7 @@
 </script>
 
   <hr>
-  <h2>I.</h2>
-
-  <h3>1.</h3>
+  <h2>1.</h2>
 
   <p>
   \begin{align}
@@ -95,7 +94,8 @@
   \end{align}
   </p>
 
-  <h3>2.</h3>
+  <hr>
+  <h2>2.</h2>
 
   <p>
   2つの $n$ 次実対称行列 $C, D$ を考え、 $CD=DC$ が成り立つとする。
@@ -139,7 +139,8 @@
   つまり、 $C$ と $D$ は同時対角化可能である。
   </p>
 
-  <h3>3.</h3>
+  <hr>
+  <h2>3.</h2>
 
   <p>
   $A$ の固有値を $\lambda$ とすると、
@@ -295,141 +296,12 @@
 </script>
 
   <hr>
-  <h2>II.</h2>
-
-  <h3>1.</h3>
-
-  <p>
-  \begin{align}
-  A = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 2 \\ 0 & 2 & 2 \end{pmatrix}
-  , \ \ 
-  \boldsymbol{b} = \frac{1}{2 \sqrt{2}} \begin{pmatrix} 0 \\ -1 \\ 1 \end{pmatrix}
-  \end{align}
-  </p>
-
-  <h3>2.</h3>
-
-  <p>
-  $A$ の固有値を $\lambda$ とすると、
-  \begin{align}
-  0
-  &= \det
-  \begin{pmatrix} 2-\lambda & 0 & 0 \\ 0 & 2-\lambda & 2 \\ 0 & 2 & 2-\lambda \end{pmatrix}
-  \\
-  &= - \lambda(\lambda-2)(\lambda-4)
-  \end{align}
-  となるので、
-  \begin{align}
-  d_1 = 4, d_2 = 2, d_3 = 0
-  \end{align}
-  つまり、
-  \begin{align}
-  D
-  = \begin{pmatrix} 4 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{pmatrix}
-  \end{align}
-  である。
-
-  固有値 $d_1, d_2, d_3$ に属する規格化された固有ベクトルは、それぞれ、
-  \begin{align}
-  \boldsymbol{v}_1 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
-  , \ \ 
-  \boldsymbol{v}_2 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}
-  , \ \ 
-  \boldsymbol{v}_3 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}
-  \end{align}
-  なので、
-  \begin{align}
-  P^T
-  = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 & \sqrt{2} & 0 \\ 1 & 0 & 1 \\ 1 & 0 & -1 \end{pmatrix}
-  , \ \ 
-  P
-  = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 & 1 & 1 \\ \sqrt{2} & 0 & 0 \\ 0 & 1 & -1 \end{pmatrix}
-  \end{align}
-  とすると、 $A = P^T DP$ となる。
-  </p>
-
-  <h3>3.</h3>
-
-  <p>
-  \begin{align}
-  f(x,y,z)
-  &=
-  \begin{pmatrix} x & y & z \end{pmatrix} A \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  + 2 \boldsymbol{b}^T \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  \\
-  &=
-  \begin{pmatrix} x & y & z \end{pmatrix} P^T P A P^T P \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  + 2 \boldsymbol{b}^T P^T P \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  \\
-  &=
-  \begin{pmatrix} X & Y & Z \end{pmatrix} D \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
-  + 2 \boldsymbol{b}^T P^T \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
-  \\
-  &=
-  4X^2+2Y^2-Z
-  \end{align}
-  </p>
-
-  <h3>4.</h3>
-
-  <p>
-  平面 $y-z-\sqrt{2}=0$ は次のように書き直せる：
-  \begin{align}
-  \begin{pmatrix} 0 & 1 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix}
-  &= \sqrt{2}
-  \\
-  \begin{pmatrix} 0 & 1 & -1 \end{pmatrix} P^T \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
-  &= \sqrt{2}
-  \end{align}
-  これを整理して $Z=1$ を得る。
-  </p>
-
-  <p>
-  また、 3. で得た
-  \begin{align}
-  4X^2 + 2Y^2 - Z = 0
-  \end{align}
-  は、 $Z (\gt 0)$ を固定すると、 $X,Y$ に関する楕円の方程式であり、その面積 $S(Z)$ は、
-  \begin{align}
-  S(Z)
-  = \pi \sqrt{\frac{Z}{4}} \sqrt{\frac{Z}{2}}
-  = \frac{\pi}{2 \sqrt{2}} Z
-  \end{align}
-  である。
-  </p>
-
-  <p>
-  よって、求める体積は、
-  \begin{align}
-  \int_0^1 S(Z) dZ
-  = \frac{\pi}{2 \sqrt{2}} \int_0^1 Z dZ
-  = \frac{\pi}{4 \sqrt{2}}
-  \end{align}
-  である。
-  </p>
-
-
-
-
-  <hr>
-<!-- 横長タイプ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6792495598564208"
-     data-ad-slot="4005025709"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  <hr>
   <nav id="footer_breadcrumbs">
   <a href="../../../">miyake.github.io</a> &gt;
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2022年度 数学 2
+  2022年度 数学2 I
   </nav>
 
 </body>

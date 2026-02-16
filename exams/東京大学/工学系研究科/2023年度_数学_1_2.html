@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東京大学 大学院 工学系研究科
-      2023年度 数学 第1問 I
+      2023年度 数学 第1問 II
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2023年度 数学 第1問 II
   </nav>
   <hr>
 
@@ -50,7 +50,7 @@
     <br>
     工学系研究科 共通問題
     <br>
-    2023年度 数学 第1問 I
+    2023年度 数学 第1問 II
   </h1>
 
   <hr>
@@ -81,19 +81,89 @@
 </script>
 
   <hr>
+  <h2>1.</h2>
 
   <p>
+  $x$ の関数 $f(x)$ を使って、 $y=f(x)x$ を (2) に代入すると、
   \begin{align}
-  \lim_{x \to 0} \frac{b^x - c^x}{ax}
-  &= \lim_{x \to 0} \frac{e^{x \log b} - e^{x \log c}}{ax}
+  \frac{df(x)}{dx} x &= \log x
   \\
-  &= \lim_{x \to 0}
-  \frac{\log b \cdot e^{x \log b} - \log c \cdot e^{x \log c}}{a}
+  \therefore \ \ 
+  f(x)
+  &= \int \frac{\log x}{x} dx
   \\
-  &= \frac{\log b - \log c}{a}
+  &= \int \left( \log x \right)' \log x dx
   \\
-  &= \frac{1}{a} \log \frac{b}{c}
+  &= \left( \log x \right)^2 - \int \frac{\log x}{x} dx
+  \\
+  \therefore \ \ 
+  f(x) &= \frac{1}{2} \left( \log x \right)^2 + C
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
   \end{align}
+  となるので、求める一般解は
+  \begin{align}
+  y &= \frac{1}{2} x \left( \log x \right)^2 + Cx
+  \ \ \ \ \ \ \ \ ( C \text{ は積分定数 } )
+  \end{align}
+  である。
+  </p>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <hr>
+  <h2>2.</h2>
+
+  <p>
+  まず、
+  \begin{align}
+  \frac{d^2y}{dx^2} - \frac{dy}{dx} - 2y = 0
+  \end{align}
+  に $y=e^{\lambda x}$ （ $\lambda$ は $x$ によらない定数）
+  を代入すると、
+  \begin{align}
+  \lambda^2 - \lambda - 2 &= 0
+  \\
+  (\lambda - 2)(\lambda + 1) &= 0
+  \\
+  \therefore \ \ \lambda &= 2, -1
+  \end{align}
+  となるので、この微分方程式の一般解は
+  \begin{align}
+  y = A e^{2x} + B e^{-x}
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  次に、 (3) に $y=Cx^2+Dx+E$ （ $C,D,E$ は $x$ によらない定数） を代入すると、
+  \begin{align}
+  C = -1, \ \ D = 0, \ \ E = -1
+  \end{align}
+  を得るので、
+  \begin{align}
+  y = -x^2 - 1
+  \end{align}
+  は (3) の特殊解である。
+  </p>
+
+  <p>
+  以上より、 (3) の一般解は
+  \begin{align}
+  y = A e^{2x} + B e^{-x} -x^2 - 1
+  \ \ \ \ \ \ \ \ ( A, B \text{ は積分定数 } )
+  \end{align}
+  である。
   </p>
 
   <hr>
@@ -114,7 +184,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2023年度 数学 第1問 II
   </nav>
 
 </body>

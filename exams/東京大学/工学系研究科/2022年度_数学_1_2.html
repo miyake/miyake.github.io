@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東京大学 大学院 工学系研究科
-      2023年度 数学 第1問 I
+      2022年度 数学1 II
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2022年度 数学1 II
   </nav>
   <hr>
 
@@ -50,7 +50,9 @@
     <br>
     工学系研究科 共通問題
     <br>
-    2023年度 数学 第1問 I
+    2022年度 数学1
+    (主に「微分積分および微分方程式」と「級数・フーリエ解析および積分変換」)
+    II
   </h1>
 
   <hr>
@@ -81,20 +83,96 @@
 </script>
 
   <hr>
+  <h2>1.</h2>
 
   <p>
   \begin{align}
-  \lim_{x \to 0} \frac{b^x - c^x}{ax}
-  &= \lim_{x \to 0} \frac{e^{x \log b} - e^{x \log c}}{ax}
+  \mathcal{L} \left[ f'(t) \right]
+  &= \int_0^\infty e^{-st} f'(t) dt
   \\
-  &= \lim_{x \to 0}
-  \frac{\log b \cdot e^{x \log b} - \log c \cdot e^{x \log c}}{a}
+  &= \left[ e^{-st} f(t) \right]_0^\infty + s \int_0^\infty e^{-st} f(t) dt
   \\
-  &= \frac{\log b - \log c}{a}
+  &= -f(0) + s \mathcal{L} \left[ f(t) \right]
   \\
-  &= \frac{1}{a} \log \frac{b}{c}
+  \mathcal{L} \left[ f''(t) \right]
+  &= \int_0^\infty e^{-st} f''(t) dt
+  \\
+  &= \left[ e^{-st} f'(t) \right]_0^\infty + s \int_0^\infty e^{-st} f'(t) dt
+  \\
+  &= -f'(0) - s f(0) + s^2 \mathcal{L} \left[ f(t) \right]
   \end{align}
   </p>
+
+  <hr>
+  <h2>2.</h2>
+
+  <p>
+  \begin{align}
+  \mathcal{L} \left[ g(t) \right]
+  &= \int_0^\infty e^{-(s+a)t} \cos (\omega t) dt
+  \\
+  &= \frac{1}{\omega} \left[ e^{-(s+a)t} \sin (\omega t) \right]_0^\infty
+  + \frac{s+a}{\omega} \int_0^\infty e^{-(s+a)t} \sin (\omega t) dt
+  \\
+  &= \frac{s+a}{\omega} \mathcal{L} \left[ h(t) \right]
+  \\
+  \mathcal{L} \left[ h(t) \right]
+  &= \int_0^\infty e^{-(s+a)t} \sin (\omega t) dt
+  \\
+  &= - \frac{1}{\omega} \left[ e^{-(s+a)t} \cos (\omega t) \right]_0^\infty
+  - \frac{s+a}{\omega} \int_0^\infty e^{-(s+a)t} \cos (\omega t) dt
+  \\
+  &= \frac{1}{\omega} - \frac{s+a}{\omega} \mathcal{L} \left[ g(t) \right]
+  \end{align}
+  より、
+  \begin{align}
+  \mathcal{L} \left[ g(t) \right]
+  &= \frac{s+a}{(s+a)^2 + \omega^2}
+  \\
+  \mathcal{L} \left[ h(t) \right]
+  &= \frac{\omega}{(s+a)^2 + \omega^2}
+  \end{align}
+  </p>
+
+  <hr>
+  <h2>3.</h2>
+
+  <p>
+  与えられた微分方程式をラプラス変換して、上の 1. で得た式を使うと、
+  \begin{align}
+  \left( -f'(0) - s f(0) + s^2 \mathcal{L} \left[ f(t) \right] \right)
+  + 6 \left( -f(0) + s \mathcal{L} \left[ f(t) \right] \right)
+  + 13 \mathcal{L} \left[ f(t) \right]
+  = 0
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  -f'(0) - (s+6) f(0) + (s^2+6s+13) \mathcal{L} \left[ f(t) \right] = 0
+  \end{align}
+  さらに、初期値 $f(0)=5, f'(0)=-11$ を代入して整理すると、
+  \begin{align}
+  (s^2+6s+13) \mathcal{L} \left[ f(t) \right] = 5s+19
+  \end{align}
+  \begin{align}
+  \therefore \ \ 
+  \mathcal{L} \left[ f(t) \right]
+  &= \frac{5s+19}{s^2+6s+13}
+  \\
+  &= 2 \cdot \frac{2}{(s+3)^2+2^2} + 5 \cdot \frac{s+3}{(s+3)^2+2^2}
+  \end{align}
+  となる。
+  これは、上の 2. で $a=3, \omega=2$ の場合に相当するので、
+  \begin{align}
+  f(t)
+  &= 2 e^{-3t} \sin (2t) + 5 e^{-3t} \cos (2t)
+  \\
+  &= e^{-3t} \left( 2 \sin (2t) + 5 \cos (2t) \right)
+  \end{align}
+  がわかる。
+  </p>
+
+
+
 
   <hr>
 <!-- 横長タイプ -->
@@ -114,7 +192,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2022年度 数学1 II
   </nav>
 
 </body>

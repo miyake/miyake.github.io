@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/base.css">
     <title>
       東京大学 大学院 工学系研究科
-      2023年度 数学 第1問 I
+      2021年度 数学2 III
       | 院試 過去問の解答
       | miyake.github.io
     </title>
@@ -41,7 +41,7 @@
   <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
   <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2021年度 数学2 III
   </nav>
   <hr>
 
@@ -50,7 +50,9 @@
     <br>
     工学系研究科 共通問題
     <br>
-    2023年度 数学 第1問 I
+    2021年度 数学2
+    (主に線形代数)
+    III
   </h1>
 
   <hr>
@@ -84,16 +86,47 @@
 
   <p>
   \begin{align}
-  \lim_{x \to 0} \frac{b^x - c^x}{ax}
-  &= \lim_{x \to 0} \frac{e^{x \log b} - e^{x \log c}}{ax}
-  \\
-  &= \lim_{x \to 0}
-  \frac{\log b \cdot e^{x \log b} - \log c \cdot e^{x \log c}}{a}
-  \\
-  &= \frac{\log b - \log c}{a}
-  \\
-  &= \frac{1}{a} \log \frac{b}{c}
+  c_1 (\boldsymbol{a}_1 + \boldsymbol{a}_2) +
+  c_2 (\boldsymbol{a}_2 + \boldsymbol{a}_3) + \cdots +
+  c_m (\boldsymbol{a}_m + \boldsymbol{a}_1)
+  = \boldsymbol{0}
   \end{align}
+  が成り立つとしたとき $c_1 = c_2 = \cdots = c_m = 0$
+  が導かれるかを検討する。
+  </p>
+
+  <p>
+  上の式を整理すると、
+  \begin{align}
+  (c_1+c_m) \boldsymbol{a}_1 +
+  (c_1+c_2) \boldsymbol{a}_2 +
+  (c_2+c_3) \boldsymbol{a}_3 + \cdots +
+  (c_{m-1}+c_m) \boldsymbol{a}_m
+  = \boldsymbol{0}
+  \end{align}
+  となり、
+  $\boldsymbol{a}_1, \boldsymbol{a}_2, \cdots, \boldsymbol{a}_m$
+  が1次独立であることから、
+  \begin{align}
+  c_1+c_m = c_1+c_2 = c_2+c_3 = \cdots = c_{m-1}+c_m = 0
+  \end{align}
+  よって、
+  \begin{align}
+  c_2 &= c_4 = \cdots = -c_1
+  , \\
+  c_3 &= c_5 = \cdots =  c_1
+  , \\
+  c_m &= -c_1
+  \end{align}
+  を得る。
+  したがって、 $m$ が奇数のときは
+  $c_1 = c_2 = \cdots = c_m = 0$ が導かれるので
+  $
+  \boldsymbol{a}_1 + \boldsymbol{a}_2,
+  \boldsymbol{a}_2 + \boldsymbol{a}_3, \cdots,
+  \boldsymbol{a}_m + \boldsymbol{a}_1
+  $ は1次独立となる。
+  $m$ が偶数のときはそうは言えない。
   </p>
 
   <hr>
@@ -111,10 +144,9 @@
   <hr>
   <nav id="footer_breadcrumbs">
   <a href="../../../">miyake.github.io</a> &gt;
-  <a href="../../index.html">大学院入試 過去問題の解答</a> &gt;
-  <a href="../../../院試_過去問_解答/東京大学/index.html">東京大学</a> &gt;
+  <a href="../../index.html">大学院入試 過去問題の解答</a>
   <a href="./index.html">工学系研究科 共通問題</a> &gt;
-  2023年度 数学 第1問 I
+  2021年度 数学2 III
   </nav>
 
 </body>
