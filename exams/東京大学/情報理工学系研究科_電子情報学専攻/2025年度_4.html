@@ -167,6 +167,12 @@
   よって、求める必要十分条件は、
   $\boldsymbol{X}^T \boldsymbol{X}$ が正則であること（ランクが $D$ であること）、
   すなわち、 $\boldsymbol{X}$ のランクが $D$ であることである。
+  また、このとき、
+  \begin{align}
+   \boldsymbol{\beta}
+   &= \left( \boldsymbol{X}^T \boldsymbol{X} \right)^{-1} \boldsymbol{X}^T \boldsymbol{y}
+  \end{align}
+  である。
   </p>
 
   <hr>
@@ -332,15 +338,15 @@
   \end{bmatrix}
   \begin{bmatrix} \beta_1 \\ \beta_2 \\ \beta_3 \end{bmatrix}
   =
-  \begin{bmatrix} 5 \\ 10 \\ 27 \end{bmatrix}
+  \begin{bmatrix} 15 \\ 4 \\ 11 \end{bmatrix}
   \end{align}
   となる。
   この連立1次方程式の拡大係数行列
   \begin{align}
   \begin{bmatrix}
-  10 & 1 & 5 &  5 \\
-   1 & 2 & 1 & 10 \\
-   5 & 1 & 4 & 27
+  10 & 1 & 5 & 15 \\
+   1 & 2 & 1 &  4 \\
+   5 & 1 & 4 & 11
   \end{bmatrix}
   \end{align}
   は、次のように行基本変形できる：
