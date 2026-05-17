@@ -126,13 +126,6 @@
   \end{align}
   とすると、次のように計算できる：
   \begin{align}
-  \alpha^{-1}
-  &=
-  \begin{pmatrix}
-  1 & 2 & 3 & 4 & 5 \\
-  4 & 5 & 1 & 2 & 3
-  \end{pmatrix}
-  \\
   \alpha^2
   &=
   \begin{pmatrix}
@@ -148,13 +141,6 @@
   \begin{pmatrix}
   1 & 2 & 3 & 4 & 5 \\
   5 & 1 & 2 & 3 & 4
-  \end{pmatrix}
-  \\
-  \alpha^{-2}
-  &=
-  \begin{pmatrix}
-  1 & 2 & 3 & 4 & 5 \\
-  2 & 3 & 4 & 5 & 1
   \end{pmatrix}
   \\
   \alpha^3
@@ -174,11 +160,38 @@
   2 & 3 & 4 & 5 & 1
   \end{pmatrix}
   \\
+  \alpha^4
   &=
-  \alpha^{-2}
+  \begin{pmatrix}
+  1 & 2 & 3 & 4 & 5 \\
+  2 & 3 & 4 & 5 & 1
+  \end{pmatrix}
+  \begin{pmatrix}
+  2 & 3 & 4 & 5 & 1 \\
+  4 & 5 & 1 & 2 & 3
+  \end{pmatrix}
+  \\
+  &=
+  \begin{pmatrix}
+  1 & 2 & 3 & 4 & 5 \\
+  4 & 5 & 1 & 2 & 3
+  \end{pmatrix}
+  \\
+  \alpha^5
+  &=
+  \begin{pmatrix}
+  1 & 2 & 3 & 4 & 5 \\
+  4 & 5 & 1 & 2 & 3
+  \end{pmatrix}
+  \begin{pmatrix}
+  4 & 5 & 1 & 2 & 3 \\
+  1 & 2 & 3 & 4 & 5
+  \end{pmatrix}
+  \\
+  &= e
   \end{align}
-  よって、求める $S_5$ の部分群は、
-  $ \left\{ e, \alpha, \alpha^{-1}, \alpha^2, \alpha^{-2} \right\} $
+  となるので、求める $S_5$ の部分群は、
+  $ \left\{ e, \alpha, \alpha^2, \alpha^3, \alpha^4 \right\} $
   である。
   </p>
 
