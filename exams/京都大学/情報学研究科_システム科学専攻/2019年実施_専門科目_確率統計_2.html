@@ -107,6 +107,7 @@
   \begin{align}
   \hat{\mu} = X
   \end{align}
+  がわかる。
   </p>
 
   <h3>(1-2)</h3>
@@ -114,7 +115,10 @@
   <p>
   期待値を $E$ を表すと、
   \begin{align}
+  E \left( \hat{\mu} \right)
+  &=
   E(X)
+  \\
   &=
   \int_0^\infty x f(x; \mu) dx
   \\
@@ -132,7 +136,6 @@
   &= \mu
   \end{align}
   であるから、
-  $E(\hat{\mu}) = \mu$ であり、
   $\hat{\mu}$ は $\mu$ の不偏推定量である。
   </p>
 
@@ -162,6 +165,70 @@
   </p>
 
   <h3>(1-4)</h3>
+
+  <p>
+  \begin{align}
+  1 - \alpha
+  &= P \left( \mu \in S(X) \right)
+  \\
+  &= P \left( \mu \geq L(X) \right)
+  \\
+  &= P \left( L^{-1}(\mu) \geq X \right)
+  \ \ \ \ \left( L \text{ は狭義単調増加で、逆関数 } L^{-1} \text{ が存在すると仮定した } \right)
+  \\
+  &= \int_{-\infty}^{L^{-1}(\mu)} f(x; \mu) dx
+  \\
+  &= \frac{1}{\mu} \int_0^{L^{-1}(\mu)}
+  \exp \left( - \frac{x}{\mu} \right) dx
+  \\
+  &= - \left[ \exp \left( - \frac{x}{\mu} \right) \right]_0^{L^{-1}(\mu)}
+  \\
+  &= - \exp \left( - \frac{L^{-1}(\mu)}{\mu} \right) + 1
+  \\
+  \therefore \ \ 
+  \exp \left( - \frac{L^{-1}(\mu)}{\mu} \right) &= \alpha
+  \\
+  \therefore \ \ 
+  - \frac{L^{-1}(\mu)}{\mu} &= \log \alpha
+  \\
+  \therefore \ \ 
+  - \frac{\mu}{L(\mu)} &= \log \alpha
+  \\
+  \therefore \ \ 
+  L(\mu) &= - \frac{\mu}{\log \alpha}
+  \end{align}
+  であるから、
+  \begin{align}
+  L(x) &= - \frac{x}{\log \alpha}
+  , \ \ \ \ x \gt 0
+  \end{align}
+  がわかる
+  （ $0 \lt \alpha \lt 1$ であるから $\log \alpha \lt 0$ であり、
+  $L$ は狭義単調増加関数である）。
+  </p>
+
+  <p>
+  実際、このとき、
+  \begin{align}
+  P \left( \mu \in S(X) \right)
+  &= P \left( \mu \leq L(X) \right)
+  \\
+  &= P \left( \mu \leq - \frac{X}{\log \alpha}, \ X \gt 0 \right)
+  \\
+  &= P \left( 0 \lt X \leq - \mu \log \alpha \right)
+  \\
+  &= \int_0^{- \mu \log \alpha} f(x; \mu) dx
+  \\
+  &= \frac{1}{\mu} \int_0^{- \mu \log \alpha} \exp \left( - \frac{x}{\mu} \right) dx
+  \\
+  &= - \left[ \exp \left( - \frac{x}{\mu} \right) \right]_0^{- \mu \log \alpha}
+  \\
+  &= - \exp \left( \log \alpha \right)  + 1
+  \\
+  &= 1 - \alpha
+  \end{align}
+  となる。
+  </p>
 
   <hr>
 <!-- 横長タイプ -->
