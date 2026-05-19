@@ -1,7 +1,7 @@
 
 body {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /*
@@ -35,10 +35,21 @@ a:hover {
   // color: purple;
 }
 
-p { margin-left: 2em; }
-ul { margin-left: 2em; }
-ol { margin-left: 2em; }
-table { margin-left: 2em; }
+p { margin-left: 1em; }
+ul { margin-left: 1em; }
+ol { margin-left: 1em; }
+table { margin-left: 1em; }
+div { margin-left: 1em; }
 
-div { margin-left: 2em; }
+@media (min-width: 768px) {
+  body {
+    margin-left:  2em;
+    margin-right: 2em;
+  }
+  p     { margin-left: 2em; }
+  ul    { margin-left: 2em; }
+  ol    { margin-left: 2em; }
+  table { margin-left: 2em; }
+  div   { margin-left: 2em; }
+}
 
