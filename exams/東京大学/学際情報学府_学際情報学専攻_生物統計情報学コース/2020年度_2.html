@@ -106,6 +106,7 @@
   <h2>(2-2)</h2>
 
   <p>
+  $x \gt 0$ のときは、
   \begin{align}
   P \left( X_{(1)} \leq x \right)
   &=
@@ -138,14 +139,76 @@
   &= \frac{d}{dx} \left( 1 - e^{ - nx / \gamma } \right)
   \\
   &= \frac{n}{\gamma} e^{ - nx / \gamma }
-  \\
+  \end{align}
+  がわかる。
+  $x \leq 0$ のときは $f_{(1)}(x; \gamma) = 0$ である。
+  </p>
+
+  <p>
+  また、(2-1) と同様の計算をすることにより、
+  \begin{align}
   E[X_{(1)}]
   &= \frac{\gamma}{n}
   \end{align}
+  がわかる。
   </p>
 
   <hr>
   <h2>(2-3)</h2>
+
+  <p>
+  \begin{align}
+  E \left[ X_1^2 \right]
+  &= \int_{- \infty}^\infty x^2 f(x; \gamma) dx
+  \\
+  &= \frac{1}{\gamma} \int_0^\infty x^2 e^{- x / \gamma } dx
+  \\
+  &= - \left[ x^2 e^{- x / \gamma } \right]_0^\infty
+  + 2 \int_0^\infty x e^{- x / \gamma } dx
+  \\
+  &= 2 \gamma E \left[ X_1 \right]
+  \\
+  &= 2 \gamma^2
+  \\
+
+  E \left[ X_1^3 \right]
+  &= \int_{- \infty}^\infty x^3 f(x; \gamma) dx
+  \\
+  &= \frac{1}{\gamma} \int_0^\infty x^3 e^{- x / \gamma } dx
+  \\
+  &= - \left[ x^3 e^{- x / \gamma } \right]_0^\infty
+  + 3 \int_0^\infty x^2 e^{- x / \gamma } dx
+  \\
+  &= 3 \gamma E \left[ X_1^2 \right]
+  \\
+  &= 6 \gamma^3
+  \\
+
+  E \left[ \left( X_1 - E[X_1] \right)^2 \right]
+  &= E \left[ X_1^2 \right] - E \left[ X_1 \right]^2
+  \\
+  &= \gamma^2
+  \\
+
+  E \left[ \left( X_1 - E[X_1] \right)^3 \right]
+  &= E \left[ X_1^3 \right]
+  - 3 E \left[ X_1^2 \right] E \left[ X_1 \right]
+  + 2 E \left[ X_1 \right]^3
+  \\
+  &= 2 \gamma^3
+  \end{align}
+  であるから、 $X_1$ の歪度は
+  \begin{align}
+  \frac{2 \gamma^3}{\left( \gamma^2 \right)^{3/2}} = 2
+  \end{align}
+  である。
+  </p>
+
+  <p>
+  $X_{(1)}$ については、
+  上の計算の $\gamma$ を $\gamma/n$ を置き換えればいいので、
+  歪度は同じく $2$ であることがわかる。
+  </p>
 
   <hr>
   <h2>(2-4)</h2>
@@ -163,9 +226,9 @@
   &=
   \frac{1}{n-1} \sum_{i=1}^n X_i
   - \frac{1}{n-1} X_{(1)}
-  \end{align}
-  であるから、
-  \begin{align}
+  \\
+
+  \therefore \ \ 
   E[T_n]
   &=
   \frac{1}{n-1} \sum_{i=1}^n E[X_i]
@@ -176,12 +239,12 @@
   \\
   &=
   \left( 1 + \frac{1}{n} \right) \gamma
-  \end{align}
-  より、
-  \begin{align}
+  \\
+
+  \therefore \ \ 
   E[T_n] - \gamma
   &=
-  \frac{1}{n} \gamma
+  \frac{\gamma}{n}
   \end{align}
   </p>
 
