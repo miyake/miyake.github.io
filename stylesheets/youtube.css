@@ -1,0 +1,23 @@
+
+h3 {
+  margin-left: 1em;
+}
+
+iframe {
+  margin-left: 3em;
+}
+
+button.copy {
+  margin-left: 3em;
+}
+
+p.ankitext {
+  margin-left: 3em;
+  font-size: 90%;
+  border: solid 1px #000000;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  /* margin-right: 2em; */
+  white-space: pre-wrap;
+}
+
