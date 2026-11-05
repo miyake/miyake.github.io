@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPYT21F66Y"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6792495598564208"
+     crossorigin="anonymous"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPYT21F66Y');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../../../../stylesheets/base.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../stylesheets/youtube.css">
+    <script src="../../../../../../javascripts/copy.js" defer></script>
+    <title>強化学習における世界モデル (World Models in Reinforcement Learning) | English Sentences | miyake.github.io</title>
+  </head>
+
+  <body>
+
+    <nav id="breadcrumbs">
+    <a href="../../../../../../">miyake.github.io</a> &gt;
+    <a href="../../../../../index.html">YouTube 動画</a> &gt;
+    English Sentences &gt;
+    </nav>
+
+    <hr>
+    <h1>
+      強化学習における世界モデル
+      (World Models in Reinforcement Learning)
+    </h1>
+
+    <hr>
+    <h2>
+      動画
+    </h2>
+
+    <h3>
+      強化学習における世界モデル — 100 English Sentences | Read Once
+    </h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/35VDLBKn3QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>
+      強化学習における世界モデル — 100 English Sentences | Read Twice
+    </h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WjttkYRY6gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <hr>
+    <h2>
+      Anki インポート用
+    </h2>
+
+    <h3>English|日本語</h3>
+
+<button type="button" data-copy="#target-en" class="copy">コピー</button>
+<button type="button" data-download="#target-en" data-filename="en_ja.txt">ダウンロード</button>
+
+<section id="target-en">
+<p class="ankitext">World Models in Reinforcement Learning|強化学習における世界モデル
+A world model is a learned representation of how an environment behaves.|世界モデルとは、環境がどのように振る舞うかを学習した表現である。
+In reinforcement learning, a world model can predict how the environment will change after an action.|強化学習では、世界モデルによって、ある行動の後に環境がどのように変化するかを予測できる。
+An agent can use a world model to reason about possible future states.|エージェントは世界モデルを使って、起こり得る将来の状態について推論できる。
+World models can reduce the amount of interaction required with the real environment.|世界モデルは、実際の環境との相互作用に必要な量を減らすことができる。
+A world model typically learns from observations, actions, and rewards.|世界モデルは通常、観測、行動、報酬から学習する。
+The model attempts to capture the important dynamics of the environment.|モデルは、環境の重要なダイナミクスを捉えようとする。
+State transitions describe how one state changes into another.|状態遷移とは、ある状態が別の状態へどのように変化するかを表す。
+A world model can approximate these state transitions.|世界モデルは、このような状態遷移を近似できる。
+The predicted state does not need to reproduce every detail of the real environment.|予測された状態は、現実の環境の細部をすべて再現する必要はない。
+It should preserve information that is useful for decision making.|重要なのは、意思決定に役立つ情報を保持することである。
+Many world models use latent representations of observations.|多くの世界モデルは、観測の潜在表現を利用する。
+A latent state is a compact representation of information about the environment.|潜在状態とは、環境に関する情報をコンパクトに表現したものである。
+Learning a useful latent state can simplify planning.|有用な潜在状態を学習することで、計画が容易になる場合がある。
+Images can be encoded into latent vectors by neural networks.|画像はニューラルネットワークによって潜在ベクトルに符号化できる。
+The latent vectors can then be used by a dynamics model.|その後、潜在ベクトルをダイナミクスモデルに利用できる。
+A dynamics model predicts how latent states evolve over time.|ダイナミクスモデルは、潜在状態が時間とともにどのように変化するかを予測する。
+An agent can imagine future trajectories inside its learned model.|エージェントは、学習したモデルの中で将来の軌跡を想像できる。
+These imagined trajectories can be used to select actions.|こうした想像上の軌跡を使って、行動を選択できる。
+Planning with a learned model is called model-based reinforcement learning.|学習したモデルを使った計画は、モデルベース強化学習と呼ばれる。
+Model-free reinforcement learning does not explicitly learn a model of the environment.|モデルフリー強化学習では、環境のモデルを明示的に学習することはない。
+World models provide a bridge between perception, prediction, and control.|世界モデルは、知覚、予測、制御の橋渡しをする。
+A model can predict both future states and future rewards.|モデルは、将来の状態と将来の報酬の両方を予測できる。
+Reward prediction helps an agent evaluate imagined trajectories.|報酬予測は、想像上の軌跡を評価するのに役立つ。
+Accurate reward prediction is important for effective planning.|効果的な計画には、正確な報酬予測が重要である。
+A model can also estimate the uncertainty of its predictions.|モデルは、予測の不確実性を推定することもできる。
+Prediction uncertainty tends to increase as the model predicts farther into the future.|一般に、モデルが遠い未来を予測するほど、予測の不確実性は増加する。
+Long-horizon prediction is particularly difficult in complex environments.|長期的な予測は、複雑な環境では特に難しい。
+Small prediction errors can accumulate over many simulated steps.|小さな予測誤差でも、多数のシミュレーションステップを通じて蓄積する可能性がある。
+This accumulation of errors is one challenge in model-based reinforcement learning.|この誤差の蓄積は、モデルベース強化学習における課題の一つである。
+Short imagined rollouts can sometimes reduce the effect of model errors.|短い想像上のロールアウトを使うことで、モデル誤差の影響を小さくできる場合がある。
+The agent can repeatedly update its model using newly collected data.|エージェントは、新たに収集したデータを使ってモデルを継続的に更新できる。
+This creates a feedback loop between learning and acting.|これによって、学習と行動の間にフィードバックループが形成される。
+Exploration provides data that can improve the world model.|探索によって、世界モデルを改善するためのデータが得られる。
+The agent should explore states that provide useful information.|エージェントは、有用な情報をもたらす状態を探索すべきである。
+This idea is closely related to curiosity-driven exploration.|この考え方は、好奇心駆動型探索と密接に関連している。
+Some agents use prediction errors as intrinsic rewards.|一部のエージェントは、予測誤差を内発的報酬として利用する。
+An unexpected observation can provide a signal for exploration.|予想外の観測は、探索のためのシグナルとなることがある。
+However, prediction error alone does not always produce useful exploration.|しかし、予測誤差だけでは、必ずしも有用な探索につながるとは限らない。
+A world model can learn from both real and simulated experience.|世界モデルは、実際の経験とシミュレーションされた経験の両方から学習できる。
+Simulated experience is generated by the learned dynamics model.|シミュレーションされた経験は、学習したダイナミクスモデルによって生成される。
+Real experience comes from interacting with the actual environment.|実際の経験は、実際の環境と相互作用することによって得られる。
+Combining real and simulated experience can improve sample efficiency.|実際の経験とシミュレーションされた経験を組み合わせることで、サンプル効率を向上させられる。
+Sample efficiency measures how effectively an agent learns from limited experience.|サンプル効率とは、限られた経験からエージェントがどれだけ効果的に学習できるかを表す。
+World models are especially useful when real-world interaction is expensive.|世界モデルは、実環境との相互作用に費用がかかる場合に特に有用である。
+Robotics is an important application area for learned world models.|ロボティクスは、学習された世界モデルの重要な応用分野である。
+A robot can use a world model to predict the consequences of a movement.|ロボットは世界モデルを使って、ある動作の結果を予測できる。
+Predictive models can help robots avoid dangerous actions.|予測モデルは、ロボットが危険な行動を避けるのに役立つ。
+A model can also simulate different control strategies before execution.|モデルは、実行する前にさまざまな制御戦略をシミュレーションすることもできる。
+This allows an agent to evaluate actions without physically performing all of them.|これにより、エージェントはすべての行動を実際に実行することなく、行動を評価できる。
+World models can therefore reduce the cost of trial and error.|したがって、世界モデルは試行錯誤のコストを削減できる。
+Recurrent neural networks can be used to model temporal dynamics.|再帰型ニューラルネットワークは、時間的なダイナミクスをモデル化するために利用できる。
+Transformers can also model sequences of observations and actions.|Transformerも、観測と行動の系列をモデル化できる。
+Sequence models can capture long-range dependencies in environmental data.|系列モデルは、環境データにおける長期的な依存関係を捉えることができる。
+Some world models represent the environment using discrete latent variables.|一部の世界モデルは、離散的な潜在変数を使って環境を表現する。
+Others use continuous latent representations.|それ以外のモデルは、連続的な潜在表現を利用する。
+Variational methods can be used to learn probabilistic latent states.|変分法は、確率的な潜在状態を学習するために利用できる。
+A probabilistic world model can represent multiple possible futures.|確率的世界モデルは、複数の可能な未来を表現できる。
+Multiple possible futures are important when the environment is stochastic.|環境が確率的である場合、複数の可能な未来を扱うことが重要である。
+A stochastic environment does not always produce the same outcome for the same action.|確率的環境では、同じ行動に対して必ずしも同じ結果が生じるとは限らない。
+Modeling stochasticity can improve the reliability of planning.|確率性をモデル化することで、計画の信頼性を高められる。
+A deterministic model predicts one specific future for a given state and action.|決定論的モデルは、ある状態と行動に対して一つの特定の未来を予測する。
+A probabilistic model can instead predict a distribution over possible futures.|一方、確率的モデルは、起こり得る未来についての確率分布を予測できる。
+The transition model describes the probability of future states.|遷移モデルは、将来の状態の確率を表す。
+The observation model describes how observations are generated from hidden states.|観測モデルは、隠れ状態から観測がどのように生成されるかを表す。
+These ideas are closely related to partially observable environments.|これらの考え方は、部分観測環境と密接に関連している。
+In a partially observable environment, the agent cannot directly observe the complete state.|部分観測環境では、エージェントは完全な状態を直接観測できない。
+The agent may need to maintain a belief about the current state.|エージェントは、現在の状態についての信念を保持する必要がある場合がある。
+A world model can help maintain and update this belief.|世界モデルは、この信念を維持・更新するのに役立つ。
+Memory is important when past observations contain information about the current state.|過去の観測に現在の状態に関する情報が含まれている場合、記憶は重要になる。
+Planning can be performed directly in latent space.|計画は、潜在空間上で直接実行できる。
+Latent-space planning avoids generating complete high-resolution observations.|潜在空間上で計画することで、高解像度の完全な観測を生成する必要がなくなる。
+This can make imagination computationally cheaper.|これによって、想像を行うための計算コストを削減できる。
+Some world models learn representations specifically for control.|一部の世界モデルは、制御に特化した表現を学習する。
+A representation useful for image reconstruction is not necessarily optimal for decision making.|画像再構成に有用な表現が、必ずしも意思決定に最適とは限らない。
+Therefore, representation learning is a central problem in world-model research.|したがって、表現学習は世界モデル研究における中心的な問題である。
+The model should preserve features that affect future rewards and transitions.|モデルは、将来の報酬や遷移に影響する特徴を保持すべきである。
+Irrelevant visual details can sometimes be discarded.|無関係な視覚的詳細は、場合によっては捨てることができる。
+A good world model should generalize to situations that were not seen during training.|優れた世界モデルは、訓練中に見ていない状況にも一般化できるべきである。
+Generalization is difficult when the environment changes significantly.|環境が大きく変化すると、一般化は難しくなる。
+Distribution shifts can cause a learned model to make unreliable predictions.|分布シフトによって、学習したモデルが信頼できない予測をする可能性がある。
+Online adaptation can help the model respond to changing environments.|オンライン適応によって、モデルが変化する環境に対応できる場合がある。
+Continual learning allows an agent to update its knowledge over time.|継続学習によって、エージェントは時間の経過とともに知識を更新できる。
+World models can also support hierarchical planning.|世界モデルは、階層的な計画にも利用できる。
+A high-level planner can select goals for a lower-level controller.|高レベルのプランナーは、低レベルのコントローラーに目標を設定できる。
+The lower-level controller can then execute actions toward those goals.|その後、低レベルのコントローラーが、その目標に向けて行動を実行する。
+Hierarchical world models can represent dynamics at multiple time scales.|階層的な世界モデルは、複数の時間スケールにおけるダイナミクスを表現できる。
+Abstract planning can be easier when the model represents meaningful events rather than individual pixels.|モデルが個々の画素ではなく意味のあるイベントを表現すると、抽象的な計画が容易になる場合がある。
+Some research combines world models with model predictive control.|一部の研究では、世界モデルとモデル予測制御を組み合わせている。
+Model predictive control repeatedly predicts future trajectories and executes selected actions.|モデル予測制御では、将来の軌跡を繰り返し予測し、選択した行動を実行する。
+After each action, the planner can update its predictions using new observations.|各行動の後に、プランナーは新しい観測を使って予測を更新できる。
+This process can compensate for some model inaccuracies.|このプロセスによって、モデルの不正確さをある程度補正できる。
+World models can also be combined with reinforcement learning value functions.|世界モデルは、強化学習の価値関数と組み合わせることもできる。
+A value function estimates the expected future return from a state or action.|価値関数は、ある状態または行動から得られる将来の期待収益を推定する。
+The model can provide hypothetical states for evaluating the value function.|モデルは、価値関数を評価するための仮想的な状態を提供できる。
+Planning and value estimation can therefore complement each other.|したがって、計画と価値推定は互いに補完し合うことができる。
+Learning a world model does not guarantee better control performance.|世界モデルを学習したからといって、制御性能が必ず向上するとは限らない。
+A model can be accurate in irrelevant details while failing to predict important consequences.|モデルは、重要でない細部については正確でも、重要な結果を予測できない場合がある。
+Reliable world models require careful evaluation of both prediction and decision-making performance.|信頼できる世界モデルには、予測性能と意思決定性能の両方について慎重な評価が必要である。
+Research on world models aims to build agents that can learn, imagine, plan, and act efficiently.|世界モデルの研究は、効率的に学習し、想像し、計画し、行動できるエージェントの構築を目指している。
+World models provide a promising framework for connecting learned representations with intelligent decision making.|世界モデルは、学習された表現と知的な意思決定を結び付けるための有望な枠組みを提供する。
+</p>
+</section>
+
+    <h3>日本語|English</h3>
+
+<button type="button" data-copy="#target-ja" class="copy">コピー</button>
+<button type="button" data-download="#target-ja" data-filename="ja_en.txt">ダウンロード</button>
+
+<section id="target-ja">
+<p class="ankitext">強化学習における世界モデル|World Models in Reinforcement Learning
+世界モデルとは、環境がどのように振る舞うかを学習した表現である。|A world model is a learned representation of how an environment behaves.
+強化学習では、世界モデルによって、ある行動の後に環境がどのように変化するかを予測できる。|In reinforcement learning, a world model can predict how the environment will change after an action.
+エージェントは世界モデルを使って、起こり得る将来の状態について推論できる。|An agent can use a world model to reason about possible future states.
+世界モデルは、実際の環境との相互作用に必要な量を減らすことができる。|World models can reduce the amount of interaction required with the real environment.
+世界モデルは通常、観測、行動、報酬から学習する。|A world model typically learns from observations, actions, and rewards.
+モデルは、環境の重要なダイナミクスを捉えようとする。|The model attempts to capture the important dynamics of the environment.
+状態遷移とは、ある状態が別の状態へどのように変化するかを表す。|State transitions describe how one state changes into another.
+世界モデルは、このような状態遷移を近似できる。|A world model can approximate these state transitions.
+予測された状態は、現実の環境の細部をすべて再現する必要はない。|The predicted state does not need to reproduce every detail of the real environment.
+重要なのは、意思決定に役立つ情報を保持することである。|It should preserve information that is useful for decision making.
+多くの世界モデルは、観測の潜在表現を利用する。|Many world models use latent representations of observations.
+潜在状態とは、環境に関する情報をコンパクトに表現したものである。|A latent state is a compact representation of information about the environment.
+有用な潜在状態を学習することで、計画が容易になる場合がある。|Learning a useful latent state can simplify planning.
+画像はニューラルネットワークによって潜在ベクトルに符号化できる。|Images can be encoded into latent vectors by neural networks.
+その後、潜在ベクトルをダイナミクスモデルに利用できる。|The latent vectors can then be used by a dynamics model.
+ダイナミクスモデルは、潜在状態が時間とともにどのように変化するかを予測する。|A dynamics model predicts how latent states evolve over time.
+エージェントは、学習したモデルの中で将来の軌跡を想像できる。|An agent can imagine future trajectories inside its learned model.
+こうした想像上の軌跡を使って、行動を選択できる。|These imagined trajectories can be used to select actions.
+学習したモデルを使った計画は、モデルベース強化学習と呼ばれる。|Planning with a learned model is called model-based reinforcement learning.
+モデルフリー強化学習では、環境のモデルを明示的に学習することはない。|Model-free reinforcement learning does not explicitly learn a model of the environment.
+世界モデルは、知覚、予測、制御の橋渡しをする。|World models provide a bridge between perception, prediction, and control.
+モデルは、将来の状態と将来の報酬の両方を予測できる。|A model can predict both future states and future rewards.
+報酬予測は、想像上の軌跡を評価するのに役立つ。|Reward prediction helps an agent evaluate imagined trajectories.
+効果的な計画には、正確な報酬予測が重要である。|Accurate reward prediction is important for effective planning.
+モデルは、予測の不確実性を推定することもできる。|A model can also estimate the uncertainty of its predictions.
+一般に、モデルが遠い未来を予測するほど、予測の不確実性は増加する。|Prediction uncertainty tends to increase as the model predicts farther into the future.
+長期的な予測は、複雑な環境では特に難しい。|Long-horizon prediction is particularly difficult in complex environments.
+小さな予測誤差でも、多数のシミュレーションステップを通じて蓄積する可能性がある。|Small prediction errors can accumulate over many simulated steps.
+この誤差の蓄積は、モデルベース強化学習における課題の一つである。|This accumulation of errors is one challenge in model-based reinforcement learning.
+短い想像上のロールアウトを使うことで、モデル誤差の影響を小さくできる場合がある。|Short imagined rollouts can sometimes reduce the effect of model errors.
+エージェントは、新たに収集したデータを使ってモデルを継続的に更新できる。|The agent can repeatedly update its model using newly collected data.
+これによって、学習と行動の間にフィードバックループが形成される。|This creates a feedback loop between learning and acting.
+探索によって、世界モデルを改善するためのデータが得られる。|Exploration provides data that can improve the world model.
+エージェントは、有用な情報をもたらす状態を探索すべきである。|The agent should explore states that provide useful information.
+この考え方は、好奇心駆動型探索と密接に関連している。|This idea is closely related to curiosity-driven exploration.
+一部のエージェントは、予測誤差を内発的報酬として利用する。|Some agents use prediction errors as intrinsic rewards.
+予想外の観測は、探索のためのシグナルとなることがある。|An unexpected observation can provide a signal for exploration.
+しかし、予測誤差だけでは、必ずしも有用な探索につながるとは限らない。|However, prediction error alone does not always produce useful exploration.
+世界モデルは、実際の経験とシミュレーションされた経験の両方から学習できる。|A world model can learn from both real and simulated experience.
+シミュレーションされた経験は、学習したダイナミクスモデルによって生成される。|Simulated experience is generated by the learned dynamics model.
+実際の経験は、実際の環境と相互作用することによって得られる。|Real experience comes from interacting with the actual environment.
+実際の経験とシミュレーションされた経験を組み合わせることで、サンプル効率を向上させられる。|Combining real and simulated experience can improve sample efficiency.
+サンプル効率とは、限られた経験からエージェントがどれだけ効果的に学習できるかを表す。|Sample efficiency measures how effectively an agent learns from limited experience.
+世界モデルは、実環境との相互作用に費用がかかる場合に特に有用である。|World models are especially useful when real-world interaction is expensive.
+ロボティクスは、学習された世界モデルの重要な応用分野である。|Robotics is an important application area for learned world models.
+ロボットは世界モデルを使って、ある動作の結果を予測できる。|A robot can use a world model to predict the consequences of a movement.
+予測モデルは、ロボットが危険な行動を避けるのに役立つ。|Predictive models can help robots avoid dangerous actions.
+モデルは、実行する前にさまざまな制御戦略をシミュレーションすることもできる。|A model can also simulate different control strategies before execution.
+これにより、エージェントはすべての行動を実際に実行することなく、行動を評価できる。|This allows an agent to evaluate actions without physically performing all of them.
+したがって、世界モデルは試行錯誤のコストを削減できる。|World models can therefore reduce the cost of trial and error.
+再帰型ニューラルネットワークは、時間的なダイナミクスをモデル化するために利用できる。|Recurrent neural networks can be used to model temporal dynamics.
+Transformerも、観測と行動の系列をモデル化できる。|Transformers can also model sequences of observations and actions.
+系列モデルは、環境データにおける長期的な依存関係を捉えることができる。|Sequence models can capture long-range dependencies in environmental data.
+一部の世界モデルは、離散的な潜在変数を使って環境を表現する。|Some world models represent the environment using discrete latent variables.
+それ以外のモデルは、連続的な潜在表現を利用する。|Others use continuous latent representations.
+変分法は、確率的な潜在状態を学習するために利用できる。|Variational methods can be used to learn probabilistic latent states.
+確率的世界モデルは、複数の可能な未来を表現できる。|A probabilistic world model can represent multiple possible futures.
+環境が確率的である場合、複数の可能な未来を扱うことが重要である。|Multiple possible futures are important when the environment is stochastic.
+確率的環境では、同じ行動に対して必ずしも同じ結果が生じるとは限らない。|A stochastic environment does not always produce the same outcome for the same action.
+確率性をモデル化することで、計画の信頼性を高められる。|Modeling stochasticity can improve the reliability of planning.
+決定論的モデルは、ある状態と行動に対して一つの特定の未来を予測する。|A deterministic model predicts one specific future for a given state and action.
+一方、確率的モデルは、起こり得る未来についての確率分布を予測できる。|A probabilistic model can instead predict a distribution over possible futures.
+遷移モデルは、将来の状態の確率を表す。|The transition model describes the probability of future states.
+観測モデルは、隠れ状態から観測がどのように生成されるかを表す。|The observation model describes how observations are generated from hidden states.
+これらの考え方は、部分観測環境と密接に関連している。|These ideas are closely related to partially observable environments.
+部分観測環境では、エージェントは完全な状態を直接観測できない。|In a partially observable environment, the agent cannot directly observe the complete state.
+エージェントは、現在の状態についての信念を保持する必要がある場合がある。|The agent may need to maintain a belief about the current state.
+世界モデルは、この信念を維持・更新するのに役立つ。|A world model can help maintain and update this belief.
+過去の観測に現在の状態に関する情報が含まれている場合、記憶は重要になる。|Memory is important when past observations contain information about the current state.
+計画は、潜在空間上で直接実行できる。|Planning can be performed directly in latent space.
+潜在空間上で計画することで、高解像度の完全な観測を生成する必要がなくなる。|Latent-space planning avoids generating complete high-resolution observations.
+これによって、想像を行うための計算コストを削減できる。|This can make imagination computationally cheaper.
+一部の世界モデルは、制御に特化した表現を学習する。|Some world models learn representations specifically for control.
+画像再構成に有用な表現が、必ずしも意思決定に最適とは限らない。|A representation useful for image reconstruction is not necessarily optimal for decision making.
+したがって、表現学習は世界モデル研究における中心的な問題である。|Therefore, representation learning is a central problem in world-model research.
+モデルは、将来の報酬や遷移に影響する特徴を保持すべきである。|The model should preserve features that affect future rewards and transitions.
+無関係な視覚的詳細は、場合によっては捨てることができる。|Irrelevant visual details can sometimes be discarded.
+優れた世界モデルは、訓練中に見ていない状況にも一般化できるべきである。|A good world model should generalize to situations that were not seen during training.
+環境が大きく変化すると、一般化は難しくなる。|Generalization is difficult when the environment changes significantly.
+分布シフトによって、学習したモデルが信頼できない予測をする可能性がある。|Distribution shifts can cause a learned model to make unreliable predictions.
+オンライン適応によって、モデルが変化する環境に対応できる場合がある。|Online adaptation can help the model respond to changing environments.
+継続学習によって、エージェントは時間の経過とともに知識を更新できる。|Continual learning allows an agent to update its knowledge over time.
+世界モデルは、階層的な計画にも利用できる。|World models can also support hierarchical planning.
+高レベルのプランナーは、低レベルのコントローラーに目標を設定できる。|A high-level planner can select goals for a lower-level controller.
+その後、低レベルのコントローラーが、その目標に向けて行動を実行する。|The lower-level controller can then execute actions toward those goals.
+階層的な世界モデルは、複数の時間スケールにおけるダイナミクスを表現できる。|Hierarchical world models can represent dynamics at multiple time scales.
+モデルが個々の画素ではなく意味のあるイベントを表現すると、抽象的な計画が容易になる場合がある。|Abstract planning can be easier when the model represents meaningful events rather than individual pixels.
+一部の研究では、世界モデルとモデル予測制御を組み合わせている。|Some research combines world models with model predictive control.
+モデル予測制御では、将来の軌跡を繰り返し予測し、選択した行動を実行する。|Model predictive control repeatedly predicts future trajectories and executes selected actions.
+各行動の後に、プランナーは新しい観測を使って予測を更新できる。|After each action, the planner can update its predictions using new observations.
+このプロセスによって、モデルの不正確さをある程度補正できる。|This process can compensate for some model inaccuracies.
+世界モデルは、強化学習の価値関数と組み合わせることもできる。|World models can also be combined with reinforcement learning value functions.
+価値関数は、ある状態または行動から得られる将来の期待収益を推定する。|A value function estimates the expected future return from a state or action.
+モデルは、価値関数を評価するための仮想的な状態を提供できる。|The model can provide hypothetical states for evaluating the value function.
+したがって、計画と価値推定は互いに補完し合うことができる。|Planning and value estimation can therefore complement each other.
+世界モデルを学習したからといって、制御性能が必ず向上するとは限らない。|Learning a world model does not guarantee better control performance.
+モデルは、重要でない細部については正確でも、重要な結果を予測できない場合がある。|A model can be accurate in irrelevant details while failing to predict important consequences.
+信頼できる世界モデルには、予測性能と意思決定性能の両方について慎重な評価が必要である。|Reliable world models require careful evaluation of both prediction and decision-making performance.
+世界モデルの研究は、効率的に学習し、想像し、計画し、行動できるエージェントの構築を目指している。|Research on world models aims to build agents that can learn, imagine, plan, and act efficiently.
+世界モデルは、学習された表現と知的な意思決定を結び付けるための有望な枠組みを提供する。|World models provide a promising framework for connecting learned representations with intelligent decision making.
+</p>
+</section>
+
+
+    <hr>
+<!-- 横長タイプ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6792495598564208"
+     data-ad-slot="4005025709"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <hr>
+    <nav id="footer_breadcrumbs">
+    <a href="../../../../../../">miyake.github.io</a> &gt;
+    <a href="../../../../../index.html">YouTube 動画</a> &gt;
+    English Sentences
+    </nav>
+
+</body>
+</html>
+
